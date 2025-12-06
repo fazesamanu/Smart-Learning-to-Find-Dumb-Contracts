@@ -1,0 +1,22 @@
+{
+    "0x920147c4025e19c36cea49e6ff31377c33f81232.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 5\nFunction: fallback\nNode: \nEXPRESSION d = 0x890DD170737ca84c383138fcf39dD513C6c34BCc\nIRS: \nd := 782439890023340223766705803497229708002930674636\"",
+                        "\"BlockID: 3\nFunction: fallback\nNode: \nEXPRESSION d.transfer(msg.value)\nIRS: \nTransfer dest:d value:msg.value\""
+                    ],
+                    "state_variable": "d"
+                }
+            ]
+        }
+    ]
+}

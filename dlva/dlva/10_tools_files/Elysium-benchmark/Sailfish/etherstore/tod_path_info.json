@@ -1,0 +1,44 @@
+{
+    "tod_symex_path_1.json": {
+        "file_name": "",
+        "from_function": "withdrawFunds",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 65\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 66\nCall context: \nNone\nREF_1 -> balances[msg.sender]\nTMP_0 = REF_1 >= _weiToWithdraw\nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\""
+        ],
+        "executable_instructions": 23,
+        "state_variable": "balances",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_2.json": {
+        "file_name": "",
+        "from_function": "withdrawFunds",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 74\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 75\nCall context: \nNone\nREF_1 -> balances[msg.sender]\nTMP_0 = REF_1 >= _weiToWithdraw\nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\""
+        ],
+        "executable_instructions": 23,
+        "state_variable": "balances",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_3.json": {
+        "file_name": "",
+        "from_function": "withdrawFunds",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 83\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 86\nCall context: \nTrue\nREF_2 -> lastWithdrawTime[msg.sender]\nTMP_4 = REF_2 + 604800\nTMP_5 = now >= TMP_4\nTMP_6 = SOLIDITY_CALL require(bool)(TMP_5)\""
+        ],
+        "executable_instructions": 31,
+        "state_variable": "lastWithdrawTime",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    }
+}

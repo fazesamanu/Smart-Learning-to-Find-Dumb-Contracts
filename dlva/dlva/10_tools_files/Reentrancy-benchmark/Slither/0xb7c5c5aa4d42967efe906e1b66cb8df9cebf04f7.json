@@ -1,0 +1,628 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 13 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[93m1\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 13 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[93m1\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\n",
+        "first_markdown_element": "",
+        "id": "06281174c60b0acb59ff5f5b843b56ec76a807f9f0e3504870461a0f613fda6b",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "keepMyEther",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 283,
+                  "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                  "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "keepMyEther",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": [
+                    "Receive ETH",
+                    "Send ETH"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 13,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 4,
+            "low_issues": 0,
+            "medium_issues": 1,
+            "high_issues": 1
+          },
+          "detectors": [
+            {
+              "elements": [],
+              "description": "solc-0.4.23 is not recommended for deployment\n",
+              "markdown": "solc-0.4.23 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "382fda39bb161fb6bd84dab76b9e9c2b52aca3c7e5a51e412552f94dbe59a506",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.23",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".23"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.23 (cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.23](cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L1",
+              "id": "65a2890481cff3b6f28962f8b11b452400eeda1c11faa75fef76ac802fa1352c",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "withdraw",
+                  "source_mapping": {
+                    "start": 185,
+                    "length": 123,
+                    "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "keepMyEther",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 283,
+                        "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "withdraw()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "msg.sender.call.value(balances[msg.sender])()",
+                  "source_mapping": {
+                    "start": 222,
+                    "length": 45,
+                    "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 54
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdraw",
+                      "source_mapping": {
+                        "start": 185,
+                        "length": 123,
+                        "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "keepMyEther",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 283,
+                            "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                            "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "withdraw()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Low level call in keepMyEther.withdraw() (cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#9-12):\n\t- msg.sender.call.value(balances[msg.sender])() (cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#10)\n",
+              "markdown": "Low level call in [keepMyEther.withdraw()](cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L9-L12):\n\t- [msg.sender.call.value(balances[msg.sender])()](cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L10)\n",
+              "first_markdown_element": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L9-L12",
+              "id": "c2d87441db14e68e96b938cd9c901744f96274a9fcf58f5ce558fd35f07ebc24",
+              "check": "low-level-calls",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "contract",
+                  "name": "keepMyEther",
+                  "source_mapping": {
+                    "start": 27,
+                    "length": 283,
+                    "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  },
+                  "additional_fields": {
+                    "target": "contract",
+                    "convention": "CapWords"
+                  }
+                }
+              ],
+              "description": "Contract keepMyEther (cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#4-14) is not in CapWords\n",
+              "markdown": "Contract [keepMyEther](cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L4-L14) is not in CapWords\n",
+              "first_markdown_element": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L4-L14",
+              "id": "922aeffeab6f639431276a689c231d8123cba174f5513bb77e77f198b2fb12c3",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "withdraw",
+                  "source_mapping": {
+                    "start": 185,
+                    "length": 123,
+                    "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "keepMyEther",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 283,
+                        "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "withdraw()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "msg.sender.call.value(balances[msg.sender])()",
+                  "source_mapping": {
+                    "start": 222,
+                    "length": 45,
+                    "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 54
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdraw",
+                      "source_mapping": {
+                        "start": 185,
+                        "length": 123,
+                        "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "keepMyEther",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 283,
+                            "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                            "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "withdraw()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "keepMyEther.withdraw() (cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#9-12) ignores return value by msg.sender.call.value(balances[msg.sender])() (cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#10)\n",
+              "markdown": "[keepMyEther.withdraw()](cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L9-L12) ignores return value by [msg.sender.call.value(balances[msg.sender])()](cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L10)\n",
+              "first_markdown_element": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L9-L12",
+              "id": "42bef0c302402724539cb135bdde37c234c7c866d272e96504e4c07f9a0a4b06",
+              "check": "unchecked-lowlevel",
+              "impact": "Medium",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "withdraw",
+                  "source_mapping": {
+                    "start": 185,
+                    "length": 123,
+                    "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "keepMyEther",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 283,
+                        "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "withdraw()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "msg.sender.call.value(balances[msg.sender])()",
+                  "source_mapping": {
+                    "start": 222,
+                    "length": 45,
+                    "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 54
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdraw",
+                      "source_mapping": {
+                        "start": 185,
+                        "length": 123,
+                        "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "keepMyEther",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 283,
+                            "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                            "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "withdraw()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "external_calls"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "balances[msg.sender] = 0",
+                  "source_mapping": {
+                    "start": 277,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 33
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdraw",
+                      "source_mapping": {
+                        "start": 185,
+                        "length": 123,
+                        "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "keepMyEther",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 283,
+                            "filename_relative": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                            "filename_short": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "withdraw()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "variables_written",
+                    "variable_name": "balances"
+                  }
+                }
+              ],
+              "description": "Reentrancy in keepMyEther.withdraw() (cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#9-12):\n\tExternal calls:\n\t- msg.sender.call.value(balances[msg.sender])() (cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#10)\n\tState variables written after the call(s):\n\t- balances[msg.sender] = 0 (cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#11)\n",
+              "markdown": "Reentrancy in [keepMyEther.withdraw()](cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L9-L12):\n\tExternal calls:\n\t- [msg.sender.call.value(balances[msg.sender])()](cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L10)\n\tState variables written after the call(s):\n\t- [balances[msg.sender] = 0](cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L11)\n",
+              "first_markdown_element": "cleanSource/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol#L9-L12",
+              "id": "ba78ad54ce90ac3b0674272def9046947c1d2e9172fda93ce21f15ec7e5b00eb",
+              "check": "reentrancy-eth",
+              "impact": "High",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

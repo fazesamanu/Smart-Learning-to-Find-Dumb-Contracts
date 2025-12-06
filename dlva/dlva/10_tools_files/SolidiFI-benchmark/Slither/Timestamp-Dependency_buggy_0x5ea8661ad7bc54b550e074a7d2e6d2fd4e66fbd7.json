@@ -1,0 +1,1073 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 63 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m6\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[93m1\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\nERCs: ERC20\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 63 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m6\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[93m1\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\nERCs: ERC20\n",
+        "first_markdown_element": "",
+        "id": "0089e47e43c526c2f851c5259fcc68fca125de86746e6c6e8d9eb68acec459fb",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "SPCtoken",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 2193,
+                  "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                  "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "SPCtoken",
+                  "is_complex_code": false,
+                  "is_erc20": true,
+                  "number_functions": 10,
+                  "features": [],
+                  "erc20_pause": false,
+                  "erc20_can_mint": false,
+                  "erc20_race_condition_mitigated": false
+                }
+              },
+              {
+                "type": "contract",
+                "name": "SafeMath",
+                "source_mapping": {
+                  "start": 2220,
+                  "length": 284,
+                  "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                  "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59,
+                    60,
+                    61,
+                    62,
+                    63,
+                    64
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "SafeMath",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 63,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [
+            "ERC20"
+          ],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 6,
+            "low_issues": 1,
+            "medium_issues": 1,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.26",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".26"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.26 (FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.26](FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#L1) allows old versions\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#L1",
+              "id": "ba4cd48320191ee2083e4080677972ffa4e1d5e1281d319e61155a139a04e6cb",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.26 is not recommended for deployment\n",
+              "markdown": "solc-0.4.26 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "e85e93c612cb109c115ab31accf43cd25c590bd8f9b6a43b662115b987f777c3",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "bugv_tmstmp4",
+                  "source_mapping": {
+                    "start": 438,
+                    "length": 38,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 41
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "SPCtoken",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 2193,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable SPCtoken.bugv_tmstmp4 (FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#12) is not in mixedCase\n",
+              "markdown": "Variable [SPCtoken.bugv_tmstmp4](FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#L12) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#L12",
+              "id": "6ba5b000af0b821e2fc45ea22bd7cc5b0d488c1a64bf179bb005d544f6eceae8",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "winner_tmstmp30",
+                  "source_mapping": {
+                    "start": 191,
+                    "length": 23,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 26
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "SPCtoken",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 2193,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable SPCtoken.winner_tmstmp30 (FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#7) is not in mixedCase\n",
+              "markdown": "Variable [SPCtoken.winner_tmstmp30](FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#L7) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#L7",
+              "id": "6bb7d0e38c966660a7cba597ccb52269edff009b697295b55e0dad0d8e96f513",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "play_tmstmp30",
+                  "source_mapping": {
+                    "start": 216,
+                    "length": 132,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 34
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "SPCtoken",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 2193,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "play_tmstmp30(uint256)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function SPCtoken.play_tmstmp30(uint256) (FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#8-10) is not in mixedCase\n",
+              "markdown": "Function [SPCtoken.play_tmstmp30(uint256)](FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#L8-L10) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#L8-L10",
+              "id": "79f86561292446542b72f64abecfc76a61528f3ec6eb4d75c3f7fb4ce435fcd9",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "bugv_tmstmp4",
+                  "source_mapping": {
+                    "start": 438,
+                    "length": 38,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 41
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "SPCtoken",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 2193,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "SPCtoken",
+                  "source_mapping": {
+                    "start": 26,
+                    "length": 2193,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39,
+                      40,
+                      41,
+                      42,
+                      43,
+                      44,
+                      45,
+                      46,
+                      47,
+                      48,
+                      49,
+                      50,
+                      51,
+                      52
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  }
+                }
+              ],
+              "description": "SPCtoken.bugv_tmstmp4 (FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#12) is never used in SPCtoken (FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#3-52)\n",
+              "markdown": "[SPCtoken.bugv_tmstmp4](FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#L12) is never used in [SPCtoken](FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#L3-L52)\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#L12",
+              "id": "5d2e21acec8b1a4a4d1fcde976452973dcceef72bfb7e9287273b93840d4cd3f",
+              "check": "unused-state",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "play_tmstmp30",
+                  "source_mapping": {
+                    "start": 216,
+                    "length": 132,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 34
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "SPCtoken",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 2193,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "play_tmstmp30(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "startTime + (5 * 86400) == block.timestamp",
+                  "source_mapping": {
+                    "start": 269,
+                    "length": 43,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      9
+                    ],
+                    "starting_column": 6,
+                    "ending_column": 49
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "play_tmstmp30",
+                      "source_mapping": {
+                        "start": 216,
+                        "length": 132,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 34
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "SPCtoken",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 2193,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "play_tmstmp30(uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "SPCtoken.play_tmstmp30(uint256) (FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#8-10) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- startTime + (5 * 86400) == block.timestamp (FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#9)\n",
+              "markdown": "[SPCtoken.play_tmstmp30(uint256)](FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#L8-L10) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [startTime + (5 * 86400) == block.timestamp](FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#L9)\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#L8-L10",
+              "id": "1f740426dae5224db9141f48c838f70e856823fad1f744e09bfa2cf999dc4287",
+              "check": "timestamp",
+              "impact": "Low",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "play_tmstmp30",
+                  "source_mapping": {
+                    "start": 216,
+                    "length": 132,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 34
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "SPCtoken",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 2193,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "play_tmstmp30(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "startTime + (5 * 86400) == block.timestamp",
+                  "source_mapping": {
+                    "start": 269,
+                    "length": 43,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      9
+                    ],
+                    "starting_column": 6,
+                    "ending_column": 49
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "play_tmstmp30",
+                      "source_mapping": {
+                        "start": 216,
+                        "length": 132,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 34
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "SPCtoken",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 2193,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "play_tmstmp30(uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "SPCtoken.play_tmstmp30(uint256) (FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#8-10) uses a dangerous strict equality:\n\t- startTime + (5 * 86400) == block.timestamp (FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#9)\n",
+              "markdown": "[SPCtoken.play_tmstmp30(uint256)](FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#L8-L10) uses a dangerous strict equality:\n\t- [startTime + (5 * 86400) == block.timestamp](FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#L9)\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x5ea8661ad7bc54b550e074a7d2e6d2fd4e66fbd7.sol#L8-L10",
+              "id": "d4b2740cbad5b06d180e6bc90cdb463d477654e6fbabb9a762cf72f7eee3bd27",
+              "check": "incorrect-equality",
+              "impact": "Medium",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+    "tod_symex_path_1.json": {
+        "file_name": "",
+        "from_function": "Try",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 76\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 79\nCall context: \nTrue\nREF_1 -> BALANCE this\nTransfer dest:msg.sender value:REF_1\""
+        ],
+        "executable_instructions": 36,
+        "state_variable": "responseHash",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_2.json": {
+        "file_name": "",
+        "from_function": "Try",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 82\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 85\nCall context: \nTrue\nREF_1 -> BALANCE this\nTransfer dest:msg.sender value:REF_1\""
+        ],
+        "executable_instructions": 36,
+        "state_variable": "responseHash",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_3.json": {
+        "file_name": "",
+        "from_function": "StopGame",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 89\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 90\nCall context: \nNone\nTMP_9 = msg.sender == questionSender\nTMP_10 = SOLIDITY_CALL require(bool)(TMP_9)\""
+        ],
+        "executable_instructions": 26,
+        "state_variable": "questionSender",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_4.json": {
+        "file_name": "",
+        "from_function": "StopGame",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 94\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 95\nCall context: \nNone\nTMP_9 = msg.sender == questionSender\nTMP_10 = SOLIDITY_CALL require(bool)(TMP_9)\""
+        ],
+        "executable_instructions": 26,
+        "state_variable": "questionSender",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_5.json": {
+        "file_name": "",
+        "from_function": "withdrawFunds_re_ent38",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 99\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 100\nCall context: \nNone\nREF_4 -> balances_re_ent38[msg.sender]\nTMP_14 = REF_4 >= _weiToWithdraw\nTMP_15 = SOLIDITY_CALL require(bool)(TMP_14)\""
+        ],
+        "executable_instructions": 28,
+        "state_variable": "balances_re_ent38",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    }
+}

@@ -1,0 +1,1258 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 46 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m2\u001b[0m\nNumber of informational issues: \u001b[92m7\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 46 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m2\u001b[0m\nNumber of informational issues: \u001b[92m7\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\n",
+        "first_markdown_element": "",
+        "id": "e2c02f77044c55d9738ea38341f5322f5c17abe3779557804d4410647e190f91",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "TokenReclaim",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 2189,
+                  "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                  "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "TokenReclaim",
+                  "is_complex_code": true,
+                  "is_erc20": false,
+                  "number_functions": 5,
+                  "features": [
+                    "Send ETH"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 46,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 2,
+            "informational_issues": 7,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 1
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "register",
+                  "source_mapping": {
+                    "start": 495,
+                    "length": 899,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "TokenReclaim",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 2189,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "register(string,string)"
+                  }
+                }
+              ],
+              "description": "register(string,string) should be declared external:\n\t- TokenReclaim.register(string,string) (FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#13-26)\n",
+              "markdown": "register(string,string) should be declared external:\n\t- [TokenReclaim.register(string,string)](FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L13-L26)\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L13-L26",
+              "id": "a14d1b62a52929597267308af8e5e3a1fa7d4e6412387c073adac01f38ceadf7",
+              "check": "external-function",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "nameAvailable",
+                  "source_mapping": {
+                    "start": 1632,
+                    "length": 581,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39,
+                      40,
+                      41,
+                      42,
+                      43,
+                      44,
+                      45
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "TokenReclaim",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 2189,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "nameAvailable(string)"
+                  }
+                }
+              ],
+              "description": "nameAvailable(string) should be declared external:\n\t- TokenReclaim.nameAvailable(string) (FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#33-45)\n",
+              "markdown": "nameAvailable(string) should be declared external:\n\t- [TokenReclaim.nameAvailable(string)](FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L33-L45)\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L33-L45",
+              "id": "a30643e615ab7cf5d40686f37f6fd413271fcf019d3f128c7549ef19a076d6f5",
+              "check": "external-function",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.26",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".26"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.26 (FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.26](FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L1) allows old versions\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L1",
+              "id": "87410dc3ecad18f029f1ef4985185fb8b2660e11b7afc757c2486d5ddbf428e4",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.26 is not recommended for deployment\n",
+              "markdown": "solc-0.4.26 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "e85e93c612cb109c115ab31accf43cd25c590bd8f9b6a43b662115b987f777c3",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "withdraw_balances_re_ent8",
+                  "source_mapping": {
+                    "start": 207,
+                    "length": 201,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 8
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "TokenReclaim",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 2189,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "withdraw_balances_re_ent8()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "(success) = msg.sender.call.value(balances_re_ent8[msg.sender])()",
+                  "source_mapping": {
+                    "start": 261,
+                    "length": 74,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 8,
+                    "ending_column": 82
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdraw_balances_re_ent8",
+                      "source_mapping": {
+                        "start": 207,
+                        "length": 201,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          7,
+                          8,
+                          9,
+                          10,
+                          11
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 8
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "TokenReclaim",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 2189,
+                            "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                            "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "withdraw_balances_re_ent8()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Low level call in TokenReclaim.withdraw_balances_re_ent8() (FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#7-11):\n\t- (success) = msg.sender.call.value(balances_re_ent8[msg.sender])() (FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#8)\n",
+              "markdown": "Low level call in [TokenReclaim.withdraw_balances_re_ent8()](FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L7-L11):\n\t- [(success) = msg.sender.call.value(balances_re_ent8[msg.sender])()](FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L8)\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L7-L11",
+              "id": "2cf0c438ec10f3f3c4454405e31ee661562eb58cc4381b61ddc1765767a3fef8",
+              "check": "low-level-calls",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_ethToSphtx",
+                  "source_mapping": {
+                    "start": 53,
+                    "length": 46,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 51
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "TokenReclaim",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 2189,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable TokenReclaim._ethToSphtx (FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#4) is not in mixedCase\n",
+              "markdown": "Variable [TokenReclaim._ethToSphtx](FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L4) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L4",
+              "id": "1cc27bda9997c47160a57e93d85f33d6c859e3fc04f039713a096a3978fa4c66",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "balances_re_ent8",
+                  "source_mapping": {
+                    "start": 160,
+                    "length": 41,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 44
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "TokenReclaim",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 2189,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable TokenReclaim.balances_re_ent8 (FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#6) is not in mixedCase\n",
+              "markdown": "Variable [TokenReclaim.balances_re_ent8](FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L6) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L6",
+              "id": "2bad672a0f5c2f433a4a7c2e88f8e32055c6b99d1709550cb9a4b3b9182749a4",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_accountToPubKey",
+                  "source_mapping": {
+                    "start": 105,
+                    "length": 51,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 56
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "TokenReclaim",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 2189,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable TokenReclaim._accountToPubKey (FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#5) is not in mixedCase\n",
+              "markdown": "Variable [TokenReclaim._accountToPubKey](FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L5) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L5",
+              "id": "482ab2f61a8a1c3ff900de349a1c70feabf0e5f4dc8d6aef59487393ffa3d901",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "withdraw_balances_re_ent8",
+                  "source_mapping": {
+                    "start": 207,
+                    "length": 201,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 8
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "TokenReclaim",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 2189,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "withdraw_balances_re_ent8()"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function TokenReclaim.withdraw_balances_re_ent8() (FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#7-11) is not in mixedCase\n",
+              "markdown": "Function [TokenReclaim.withdraw_balances_re_ent8()](FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L7-L11) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L7-L11",
+              "id": "5ec50aa9dabc9309f1cdf377a47b430644484fad6b49a1d1a9c708aab20fcb62",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "withdraw_balances_re_ent8",
+                  "source_mapping": {
+                    "start": 207,
+                    "length": 201,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 8
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "TokenReclaim",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 2189,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "withdraw_balances_re_ent8()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "(success) = msg.sender.call.value(balances_re_ent8[msg.sender])()",
+                  "source_mapping": {
+                    "start": 261,
+                    "length": 74,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 8,
+                    "ending_column": 82
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdraw_balances_re_ent8",
+                      "source_mapping": {
+                        "start": 207,
+                        "length": 201,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          7,
+                          8,
+                          9,
+                          10,
+                          11
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 8
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "TokenReclaim",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 2189,
+                            "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                            "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "withdraw_balances_re_ent8()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "external_calls"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "balances_re_ent8[msg.sender] = 0",
+                  "source_mapping": {
+                    "start": 367,
+                    "length": 32,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 11,
+                    "ending_column": 43
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdraw_balances_re_ent8",
+                      "source_mapping": {
+                        "start": 207,
+                        "length": 201,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          7,
+                          8,
+                          9,
+                          10,
+                          11
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 8
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "TokenReclaim",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 2189,
+                            "filename_relative": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                            "filename_short": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "withdraw_balances_re_ent8()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "variables_written",
+                    "variable_name": "balances_re_ent8"
+                  }
+                }
+              ],
+              "description": "Reentrancy in TokenReclaim.withdraw_balances_re_ent8() (FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#7-11):\n\tExternal calls:\n\t- (success) = msg.sender.call.value(balances_re_ent8[msg.sender])() (FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#8)\n\tState variables written after the call(s):\n\t- balances_re_ent8[msg.sender] = 0 (FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#10)\n",
+              "markdown": "Reentrancy in [TokenReclaim.withdraw_balances_re_ent8()](FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L7-L11):\n\tExternal calls:\n\t- [(success) = msg.sender.call.value(balances_re_ent8[msg.sender])()](FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L8)\n\tState variables written after the call(s):\n\t- [balances_re_ent8[msg.sender] = 0](FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L10)\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol#L7-L11",
+              "id": "831b57eadc1ad9f3f3a0a616a2eefa7c86bac700d91bc6637fc593b9cc585f1c",
+              "check": "reentrancy-eth",
+              "impact": "High",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

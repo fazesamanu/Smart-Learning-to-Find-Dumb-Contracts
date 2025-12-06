@@ -1,0 +1,374 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 15 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 15 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "bdb7cdfe12ea80ffee1ba0c568e1d5a5f5b2e1717263f079d09ddc3d431ba7f6",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "EtheremonTradeData",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 101,
+                  "filename_relative": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                  "filename_short": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "EtheremonTradeData",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              },
+              {
+                "type": "contract",
+                "name": "EtheremonTradingVerifier",
+                "source_mapping": {
+                  "start": 128,
+                  "length": 382,
+                  "filename_relative": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                  "filename_short": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "EtheremonTradingVerifier",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 15,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 3,
+            "low_issues": 1,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.19",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                    "filename_short": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".19"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.19 (cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.19](cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol#L1",
+              "id": "011990411ccfd24dcc62fbf42eb550b0fe8a3ae119dc9d610ad6acf2d2c885d7",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.19 is not recommended for deployment\n",
+              "markdown": "solc-0.4.19 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "6c57d3efd769b2c1ca361b3d06ff1f2677845be92f7b50762125a4196d71725a",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_objId",
+                  "source_mapping": {
+                    "start": 332,
+                    "length": 13,
+                    "filename_relative": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                    "filename_short": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11
+                    ],
+                    "starting_column": 26,
+                    "ending_column": 39
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "isOnTrading",
+                      "source_mapping": {
+                        "start": 311,
+                        "length": 197,
+                        "filename_relative": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                        "filename_short": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          11,
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EtheremonTradingVerifier",
+                          "source_mapping": {
+                            "start": 128,
+                            "length": 382,
+                            "filename_relative": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                            "filename_short": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "isOnTrading(uint64)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter EtheremonTradingVerifier.isOnTrading(uint64)._objId (cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol#11) is not in mixedCase\n",
+              "markdown": "Parameter [EtheremonTradingVerifier.isOnTrading(uint64)._objId](cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol#L11) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol#L11",
+              "id": "f524d7d63692cf44266c56f4a5ce299973f80c275f4b88c1239b21787fa2916d",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_tradingData",
+                  "source_mapping": {
+                    "start": 234,
+                    "length": 20,
+                    "filename_relative": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                    "filename_short": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 39,
+                    "ending_column": 59
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "EtheremonTradingVerifier",
+                      "source_mapping": {
+                        "start": 200,
+                        "length": 106,
+                        "filename_relative": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                        "filename_short": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EtheremonTradingVerifier",
+                          "source_mapping": {
+                            "start": 128,
+                            "length": 382,
+                            "filename_relative": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                            "filename_short": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "EtheremonTradingVerifier(address)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "tradingData = _tradingData",
+                  "source_mapping": {
+                    "start": 273,
+                    "length": 26,
+                    "filename_relative": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                    "filename_short": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      9
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 35
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "EtheremonTradingVerifier",
+                      "source_mapping": {
+                        "start": 200,
+                        "length": 106,
+                        "filename_relative": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                        "filename_short": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EtheremonTradingVerifier",
+                          "source_mapping": {
+                            "start": 128,
+                            "length": 382,
+                            "filename_relative": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                            "filename_short": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "EtheremonTradingVerifier(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "EtheremonTradingVerifier.EtheremonTradingVerifier(address)._tradingData (cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol#8) lacks a zero-check on :\n\t\t- tradingData = _tradingData (cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol#9)\n",
+              "markdown": "[EtheremonTradingVerifier.EtheremonTradingVerifier(address)._tradingData](cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol#L8) lacks a zero-check on :\n\t\t- [tradingData = _tradingData](cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol#L9)\n",
+              "first_markdown_element": "cleanSource/0xd7a729dcc836265218a71511b27e078338e578f1.sol#L8",
+              "id": "8c281e1b86c54eab060bcf1392342b6db29144f9a01a65cad2a172764a666268",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

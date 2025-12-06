@@ -1,0 +1,453 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 65 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\nERCs: ERC20\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 65 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\nERCs: ERC20\n",
+        "first_markdown_element": "",
+        "id": "8372c1d21a250c7f8e5aa02cdebad42156382bf3404deef7cf670e79790ebe4f",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "ERC20TOKEN",
+                "source_mapping": {
+                  "start": 1162,
+                  "length": 1752,
+                  "filename_relative": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                  "filename_short": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59,
+                    60,
+                    61,
+                    62,
+                    63,
+                    64,
+                    65,
+                    66
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "ERC20TOKEN",
+                  "is_complex_code": false,
+                  "is_erc20": true,
+                  "number_functions": 17,
+                  "features": [],
+                  "erc20_pause": false,
+                  "erc20_can_mint": false,
+                  "erc20_race_condition_mitigated": false
+                }
+              }
+            ]
+          },
+          "number_lines": 65,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [
+            "ERC20"
+          ],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 4,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.5.0",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                    "filename_short": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.5",
+                      ".0"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.5.0 (cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.5.0](cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol#L1",
+              "id": "09b52c1c7b2f8f532cdf9689ced1d0d9c8f3b34fe16d5fd782e5354778d6eea6",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.5.0 is not recommended for deployment\n",
+              "markdown": "solc-0.5.0 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "21539c75e015cde5bdae3a77b39cf5d17be24d0b87a05da1d6b5d5020b7aef22",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_totalSupply",
+                  "source_mapping": {
+                    "start": 1294,
+                    "length": 27,
+                    "filename_relative": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                    "filename_short": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      27
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 32
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ERC20TOKEN",
+                      "source_mapping": {
+                        "start": 1162,
+                        "length": 1752,
+                        "filename_relative": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                        "filename_short": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable ERC20TOKEN._totalSupply (cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol#27) is not in mixedCase\n",
+              "markdown": "Variable [ERC20TOKEN._totalSupply](cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol#L27) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol#L27",
+              "id": "9a286fd9ba36ad295ad9e23c1b8c05d52892855357e17b4ee4a63f45bb53cdd3",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "constructor",
+                  "source_mapping": {
+                    "start": 1424,
+                    "length": 257,
+                    "filename_relative": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                    "filename_short": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ERC20TOKEN",
+                      "source_mapping": {
+                        "start": 1162,
+                        "length": 1752,
+                        "filename_relative": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                        "filename_short": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "constructor()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "_totalSupply = 100000000000000000000000",
+                  "source_mapping": {
+                    "start": 1529,
+                    "length": 39,
+                    "filename_relative": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                    "filename_short": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      34
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 48
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "constructor",
+                      "source_mapping": {
+                        "start": 1424,
+                        "length": 257,
+                        "filename_relative": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                        "filename_short": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ERC20TOKEN",
+                          "source_mapping": {
+                            "start": 1162,
+                            "length": 1752,
+                            "filename_relative": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                            "filename_short": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "constructor()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "ERC20TOKEN.constructor() (cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol#30-37) uses literals with too many digits:\n\t- _totalSupply = 100000000000000000000000 (cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol#34)\n",
+              "markdown": "[ERC20TOKEN.constructor()](cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol#L30-L37) uses literals with too many digits:\n\t- [_totalSupply = 100000000000000000000000](cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol#L34)\n",
+              "first_markdown_element": "cleanSource/0x5555319d96a1d5267aed88eb7d4184ba09a2a60a.sol#L30-L37",
+              "id": "6c4a65bc8533755847a6e1c29b9238a0a7bb33303c0f90b4294a8143bb5afc2f",
+              "check": "too-many-digits",
+              "impact": "Informational",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

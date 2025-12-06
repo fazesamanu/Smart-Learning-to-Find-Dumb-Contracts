@@ -1,0 +1,82 @@
+{
+    "Timestamp-Dependency_buggy_0x46ee746d396bb2808e8fa41dc658036aee51d857.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "userWithdraw",
+                "userWithdraw"
+            ],
+            "First_function": "userWithdraw",
+            "Second_function": "userWithdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 34\nFunction: userWithdraw\nNode: \nEXPRESSION balances[msg.sender] = 0\nIRS: \nREF_7 := 0\"",
+                        "\"BlockID: 16\nFunction: userWithdraw\nNode: \nEXPRESSION require(bool)(balances[msg.sender] > 0)\nIRS: \nTMP_13 = SOLIDITY_CALL require(bool)(TMP_12)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 34\nFunction: userWithdraw\nNode: \nEXPRESSION balances[msg.sender] = 0\nIRS: \nREF_7 := 0\"",
+                        "\"BlockID: 19\nFunction: userWithdraw\nNode: \nEXPRESSION msg.sender.transfer(amount)\nIRS: \nTransfer dest:msg.sender value:amount\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "userWithdraw",
+                "userChallenge"
+            ],
+            "First_function": "userChallenge",
+            "Second_function": "userWithdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: userChallenge\nNode: \nEXPRESSION balances[leaders[index]] += (buyins[index] * 95 \/ 100)\nIRS: \nREF_19 = REF_19 + TMP_35\"",
+                        "\"BlockID: 16\nFunction: userWithdraw\nNode: \nEXPRESSION require(bool)(balances[msg.sender] > 0)\nIRS: \nTMP_13 = SOLIDITY_CALL require(bool)(TMP_12)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: userChallenge\nNode: \nEXPRESSION balances[owner] += (buyins[index] * 5 \/ 100)\nIRS: \nREF_21 = REF_21 + TMP_37\"",
+                        "\"BlockID: 16\nFunction: userWithdraw\nNode: \nEXPRESSION require(bool)(balances[msg.sender] > 0)\nIRS: \nTMP_13 = SOLIDITY_CALL require(bool)(TMP_12)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: userChallenge\nNode: \nEXPRESSION balances[msg.sender] += buyins[index]\nIRS: \nREF_13 = REF_13 + REF_14\"",
+                        "\"BlockID: 16\nFunction: userWithdraw\nNode: \nEXPRESSION require(bool)(balances[msg.sender] > 0)\nIRS: \nTMP_13 = SOLIDITY_CALL require(bool)(TMP_12)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: userChallenge\nNode: \nEXPRESSION balances[leaders[index]] += (buyins[index] * 95 \/ 100)\nIRS: \nREF_19 = REF_19 + TMP_35\"",
+                        "\"BlockID: 19\nFunction: userWithdraw\nNode: \nEXPRESSION msg.sender.transfer(amount)\nIRS: \nTransfer dest:msg.sender value:amount\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: userChallenge\nNode: \nEXPRESSION balances[owner] += (buyins[index] * 5 \/ 100)\nIRS: \nREF_21 = REF_21 + TMP_37\"",
+                        "\"BlockID: 19\nFunction: userWithdraw\nNode: \nEXPRESSION msg.sender.transfer(amount)\nIRS: \nTransfer dest:msg.sender value:amount\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: userChallenge\nNode: \nEXPRESSION balances[msg.sender] += buyins[index]\nIRS: \nREF_13 = REF_13 + REF_14\"",
+                        "\"BlockID: 19\nFunction: userWithdraw\nNode: \nEXPRESSION msg.sender.transfer(amount)\nIRS: \nTransfer dest:msg.sender value:amount\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        }
+    ]
+}

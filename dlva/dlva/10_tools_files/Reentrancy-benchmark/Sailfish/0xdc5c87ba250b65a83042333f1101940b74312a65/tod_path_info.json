@@ -1,0 +1,30 @@
+{
+    "tod_symex_path_1.json": {
+        "file_name": "",
+        "from_function": "refund",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 74\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 75\nCall context: \nNone\nREF_3 -> gotTakoyaki[msg.sender]\nTMP_6 = SOLIDITY_CALL require(bool)(REF_3)\""
+        ],
+        "executable_instructions": 19,
+        "state_variable": "gotTakoyaki",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_2.json": {
+        "file_name": "",
+        "from_function": "refund",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 82\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 83\nCall context: \nNone\nREF_3 -> gotTakoyaki[msg.sender]\nTMP_6 = SOLIDITY_CALL require(bool)(REF_3)\""
+        ],
+        "executable_instructions": 19,
+        "state_variable": "gotTakoyaki",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    }
+}

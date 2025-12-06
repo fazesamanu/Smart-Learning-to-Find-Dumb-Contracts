@@ -1,0 +1,568 @@
+{
+    "file": "0xdddc5b65208287168bb640e8b303eaaafe2ea95f.sol",
+    "global_structs": [
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x32"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x33"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x34"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "fundAddress",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x3"
+            ]
+        },
+        {
+            "name": "invested",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "lastPaymentBlock",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "dailyPayment",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "totalPaid",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "FiveForty",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ToAddress",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3",
+            "instructions": [
+                "fundAddress = 228325350826733262237364118204326287004759633522"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x32",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x33",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x34",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "totalPaid",
+            "addrs": [
+                "0x2",
+                "0x5"
+            ]
+        },
+        {
+            "name": "lastPaymentBlock",
+            "addrs": [
+                "0x2",
+                "0x9"
+            ]
+        },
+        {
+            "name": "invested",
+            "addrs": [
+                "0x2",
+                "0xc",
+                "0xe",
+                "0x11"
+            ]
+        },
+        {
+            "name": "dailyPayment",
+            "addrs": [
+                "0x2",
+                "0x13"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5",
+            "instructions": [
+                "CLR_0 = msg.sender",
+                "CLR_1 = invested[CLR_0]",
+                "REF_20 = CLR_1",
+                "TMP_24 = REF_20 * 2",
+                "CLR_2 = msg.sender",
+                "CLR_3 = totalPaid[CLR_2]",
+                "REF_21 = CLR_3",
+                "RTMP_25 = TMP_24 > REF_21",
+                "CONDITION RTMP_25 0x6 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x6",
+            "instructions": [
+                "CLR_4 = msg.sender",
+                "CLR_5 = lastPaymentBlock[CLR_4]",
+                "REF_22 = CLR_5",
+                "CLR_6 = block.number",
+                "TMP_26 = CLR_6 - REF_22",
+                "RTMP_27 = TMP_26 > 5900",
+                "CONDITION RTMP_27 0x7 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x7",
+            "instructions": [
+                "CLR_7 = msg.value",
+                "RTMP_23 = CLR_7 >= 1000",
+                "CONDITION RTMP_23 0x1 0x4"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4",
+            "instructions": [
+                "CLR_8 = msg.sender",
+                "CLR_9 = totalPaid[CLR_8]",
+                "REF_18 = CLR_9",
+                "CLR_10 = msg.sender",
+                "CLR_11 = dailyPayment[CLR_10]",
+                "REF_19 = CLR_11",
+                "TMP_22 = REF_18 + REF_19",
+                "CLR_12 = msg.sender",
+                "totalPaid[CLR_12] = TMP_22"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x9",
+            "instructions": [
+                "CLR_13 = msg.sender",
+                "CLR_14 = invested[CLR_13]",
+                "REF_24 = CLR_14",
+                "RTMP_28 = REF_24 == 0",
+                "CONDITION RTMP_28 0xa 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa",
+            "instructions": [
+                "CLR_15 = msg.value",
+                "RTMP_29 = CLR_15 >= 1000",
+                "CONDITION RTMP_29 0x8 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x8",
+            "instructions": [
+                "CLR_16 = msg.sender",
+                "CLR_17 = lastPaymentBlock[CLR_16]",
+                "REF_23 = CLR_17",
+                "CLR_18 = msg.sender",
+                "CLR_19 = block.number",
+                "lastPaymentBlock[CLR_18] = CLR_19"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xc",
+            "instructions": [
+                "CLR_20 = msg.value",
+                "RTMP_31 = CLR_20 >= 1000",
+                "CONDITION RTMP_31 0xb 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb",
+            "instructions": [
+                "CLR_21 = msg.sender",
+                "CLR_22 = invested[CLR_21]",
+                "REF_25 = CLR_22",
+                "CLR_23 = msg.value",
+                "TMP_30 = REF_25 + CLR_23",
+                "CLR_24 = msg.sender",
+                "invested[CLR_24] = TMP_30"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xe",
+            "instructions": [
+                "CLR_25 = msg.value",
+                "RTMP_32 = CLR_25 >= 1000",
+                "CONDITION RTMP_32 0xf 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf",
+            "instructions": [
+                "CLR_26 = invested[U]",
+                "REF_27 = CLR_26",
+                "RTMP_33 = REF_27 != 0",
+                "CONDITION RTMP_33 0xd 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xd",
+            "instructions": [
+                "CLR_27 = invested[U]",
+                "REF_26 = CLR_27",
+                "invested[0] = REF_26",
+                "invested[1] = REF_26",
+                "invested[2] = REF_26",
+                "invested[3] = REF_26",
+                "invested[4] = REF_26",
+                "invested[5] = REF_26",
+                "invested[6] = REF_26",
+                "invested[7] = REF_26",
+                "invested[8] = REF_26",
+                "invested[9] = REF_26"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11",
+            "instructions": [
+                "CLR_28 = msg.value",
+                "RTMP_34 = CLR_28 >= 1000",
+                "CONDITION RTMP_34 0x10 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10",
+            "instructions": [
+                "CLR_29 = msg.sender",
+                "CLR_30 = invested[CLR_29]",
+                "REF_28 = CLR_30",
+                "CLR_31 = msg.sender",
+                "invested[CLR_31] = REF_28"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x13",
+            "instructions": [
+                "CLR_32 = msg.value",
+                "RTMP_35 = CLR_32 >= 1000",
+                "CONDITION RTMP_35 0x12 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x12",
+            "instructions": [
+                "CLR_33 = msg.sender",
+                "CLR_34 = dailyPayment[CLR_33]",
+                "REF_29 = CLR_34",
+                "CLR_35 = msg.sender",
+                "dailyPayment[CLR_35] = U"
+            ]
+        }
+    ],
+    "root_addr": "0x39",
+    "dest_addrs": [
+        "0x35"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "fallback",
+            "addr": "0x35",
+            "instructions": [
+                "CLR_36 = msg.sender",
+                "CLR_37 = totalPaid[CLR_36]",
+                "REF_14 = CLR_37",
+                "CLR_38 = msg.sender",
+                "CLR_39 = dailyPayment[CLR_38]",
+                "REF_15 = CLR_39",
+                "CLR_40 = msg.sender",
+                "WRP_0 = REF_14 + REF_15",
+                "totalPaid[CLR_40] = WRP_0",
+                "CLR_41 = msg.sender",
+                "sender = CLR_41",
+                "CLR_42 = msg.sender",
+                "CLR_43 = dailyPayment[CLR_42]",
+                "REF_17 = CLR_43",
+                "CLR_44 = this.balance",
+                "WRP_1 = CLR_44 - REF_17",
+                "this.balance = WRP_1"
+            ]
+        },
+        {
+            "scope": "fallback",
+            "addr": "0x36",
+            "instructions": [
+                "CLR_45 = msg.value",
+                "TMP_0 = CLR_45 >= 1000",
+                "CONDITION TMP_0 0x38 0x37"
+            ]
+        },
+        {
+            "scope": "fallback",
+            "addr": "0x39",
+            "instructions": [
+                "NOP",
+                "sender = NEW_VAL integer",
+                "refAddress = NEW_VAL integer",
+                "addr = NEW_VAL integer",
+                "JUMP 0x36"
+            ]
+        },
+        {
+            "scope": "fallback",
+            "addr": "0x37",
+            "instructions": [
+                "CLR_46 = msg.sender",
+                "CLR_47 = invested[CLR_46]",
+                "REF_11 = CLR_47",
+                "TMP_13 = REF_11 * 2",
+                "CLR_48 = msg.sender",
+                "CLR_49 = totalPaid[CLR_48]",
+                "REF_12 = CLR_49",
+                "TMP_14 = TMP_13 > REF_12",
+                "CLR_50 = msg.sender",
+                "CLR_51 = lastPaymentBlock[CLR_50]",
+                "REF_13 = CLR_51",
+                "CLR_52 = block.number",
+                "TMP_15 = CLR_52 - REF_13",
+                "TMP_16 = TMP_15 > 5900",
+                "TMP_17 = TMP_14 && TMP_16",
+                "CONDITION TMP_17 0x35 0x38"
+            ]
+        },
+        {
+            "scope": "fallback",
+            "addr": "0x38",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

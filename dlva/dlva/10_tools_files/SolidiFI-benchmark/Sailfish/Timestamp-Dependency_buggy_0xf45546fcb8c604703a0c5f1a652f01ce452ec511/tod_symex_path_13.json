@@ -1,0 +1,1074 @@
+{
+    "file": "Timestamp-Dependency_buggy_0xf45546fcb8c604703a0c5f1a652f01ce452ec511.sol",
+    "global_structs": [
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x14a"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x14b"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x14c"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "weiRaised",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "balanceOf",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "winner_tmstmp15",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "pendingEthWithdrawal",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "crowdsaleClosed",
+            "type": [
+                "boolean"
+            ],
+            "init": [
+                "0x12"
+            ]
+        },
+        {
+            "name": "bugv_tmstmp1",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x11"
+            ]
+        },
+        {
+            "name": "wallet",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x4"
+            ]
+        },
+        {
+            "name": "addressOfTokenUsedAsReward",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x5"
+            ]
+        },
+        {
+            "name": "fundingGoalReached",
+            "type": [
+                "boolean"
+            ],
+            "init": [
+                "0x10"
+            ]
+        },
+        {
+            "name": "tokenReward",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x9"
+            ]
+        },
+        {
+            "name": "endTime",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xf"
+            ]
+        },
+        {
+            "name": "stage4Bounty",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xe"
+            ]
+        },
+        {
+            "name": "startTime",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xa"
+            ]
+        },
+        {
+            "name": "stage3Bounty",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xd"
+            ]
+        },
+        {
+            "name": "fundingGoal",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x7"
+            ]
+        },
+        {
+            "name": "stage2Bounty",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xc"
+            ]
+        },
+        {
+            "name": "minimumFundingGoal",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x8"
+            ]
+        },
+        {
+            "name": "stage1Bounty",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xb"
+            ]
+        },
+        {
+            "name": "price",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x6"
+            ]
+        },
+        {
+            "name": "SafeMath",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "token",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ECT2Crowdsale2",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4",
+            "instructions": [
+                "wallet = 489515436699221726415079330769447239494985737319"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5",
+            "instructions": [
+                "addressOfTokenUsedAsReward = 333833691836922430383510153898912110995815685996"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6",
+            "instructions": [
+                "price = 100000000000000000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x7",
+            "instructions": [
+                "fundingGoal = 50000000000000000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x8",
+            "instructions": [
+                "minimumFundingGoal = 10000000000000000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x9",
+            "instructions": [
+                "tokenReward = addressOfTokenUsedAsReward"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xa",
+            "instructions": [
+                "startTime = 1511355600"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb",
+            "instructions": [
+                "stage1Bounty = 1511356800"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc",
+            "instructions": [
+                "stage2Bounty = 1511358000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xd",
+            "instructions": [
+                "stage3Bounty = 1511359200"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xe",
+            "instructions": [
+                "stage4Bounty = 1511360100"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xf",
+            "instructions": [
+                "endTime = 1511361000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x10",
+            "instructions": [
+                "fundingGoalReached = false"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x11",
+            "instructions": [
+                "CLR_0 = block.timestamp",
+                "bugv_tmstmp1 = CLR_0"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x12",
+            "instructions": [
+                "crowdsaleClosed = false"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x14a",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x14b",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x14c",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "winner_tmstmp15",
+            "addrs": [
+                "0x2",
+                "0x3"
+            ]
+        },
+        {
+            "name": "balanceOf",
+            "addrs": [
+                "0x2",
+                "0x13",
+                "0x1b",
+                "0x1f",
+                "0x24"
+            ]
+        },
+        {
+            "name": "weiRaised",
+            "addrs": [
+                "0x2",
+                "0x14",
+                "0x26"
+            ]
+        },
+        {
+            "name": "fundingGoalReached",
+            "addrs": [
+                "0x2",
+                "0x16"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3",
+            "instructions": [
+                "CLR_1 = msg.sender",
+                "winner_tmstmp15 = CLR_1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x13",
+            "instructions": [
+                "CLR_2 = msg.sender",
+                "CLR_3 = balanceOf[CLR_2]",
+                "REF_12 = CLR_3",
+                "CLR_4 = msg.sender",
+                "balanceOf[CLR_4] = REF_12"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x14",
+            "instructions": [
+                "weiRaised = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x16",
+            "instructions": [
+                "RTMP_89 = weiRaised >= fundingGoal",
+                "CONDITION RTMP_89 0x17 0x17"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x17",
+            "instructions": [
+                "RTMP_90 = weiRaised >= minimumFundingGoal",
+                "CONDITION RTMP_90 0x18 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x18",
+            "instructions": [
+                "CLR_5 = msg.sender",
+                "RTMP_91 = wallet == CLR_5",
+                "CONDITION RTMP_91 0x19 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x19",
+            "instructions": [
+                "RTMP_88 = now <= endTime",
+                "CONDITION RTMP_88 0x1 0x15"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x15",
+            "instructions": [
+                "fundingGoalReached = false"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b",
+            "instructions": [
+                "RTMP_93 = weiRaised < fundingGoal",
+                "CONDITION RTMP_93 0x1c 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1c",
+            "instructions": [
+                "RTMP_94 = weiRaised < minimumFundingGoal",
+                "CONDITION RTMP_94 0x1d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1d",
+            "instructions": [
+                "RTMP_92 = now <= endTime",
+                "CONDITION RTMP_92 0x1 0x1a"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a",
+            "instructions": [
+                "CLR_6 = msg.sender",
+                "CLR_7 = balanceOf[CLR_6]",
+                "REF_13 = CLR_7",
+                "CLR_8 = msg.sender",
+                "balanceOf[CLR_8] = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1f",
+            "instructions": [
+                "RTMP_97 = weiRaised < fundingGoal",
+                "CONDITION RTMP_97 0x20 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x20",
+            "instructions": [
+                "RTMP_98 = weiRaised < minimumFundingGoal",
+                "CONDITION RTMP_98 0x21 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x21",
+            "instructions": [
+                "RTMP_95 = now <= endTime",
+                "CONDITION RTMP_95 0x1 0x22"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x22",
+            "instructions": [
+                "CLR_9 = msg.sender",
+                "CLR_10 = balanceOf[CLR_9]",
+                "REF_15 = CLR_10",
+                "RTMP_96 = REF_15 > 0",
+                "CONDITION RTMP_96 0x1e 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e",
+            "instructions": [
+                "CLR_11 = msg.sender",
+                "CLR_12 = balanceOf[CLR_11]",
+                "REF_14 = CLR_12",
+                "CLR_13 = msg.sender",
+                "balanceOf[CLR_13] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x24",
+            "instructions": [
+                "CLR_14 = msg.value",
+                "RTMP_99 = CLR_14 < 1000000000000000",
+                "CONDITION RTMP_99 0x1 0x23"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x23",
+            "instructions": [
+                "CLR_15 = msg.sender",
+                "CLR_16 = balanceOf[CLR_15]",
+                "REF_12 = CLR_16",
+                "CLR_17 = msg.sender",
+                "balanceOf[CLR_17] = REF_12"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x26",
+            "instructions": [
+                "CLR_18 = msg.value",
+                "RTMP_100 = CLR_18 < 1000000000000000",
+                "CONDITION RTMP_100 0x1 0x25"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x25",
+            "instructions": [
+                "weiRaised = U"
+            ]
+        }
+    ],
+    "root_addr": "0x156",
+    "dest_addrs": [
+        "0x153"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "buyTokens",
+            "addr": "0x14d",
+            "instructions": [
+                "NOP",
+                "JUMP 0x14e"
+            ]
+        },
+        {
+            "scope": "buyTokens",
+            "addr": "0x14f",
+            "instructions": [
+                "NOP",
+                "amount = NEW_VAL integer",
+                "JUMP 0x150"
+            ]
+        },
+        {
+            "scope": "buyTokens",
+            "addr": "0x151",
+            "instructions": [
+                "NOP",
+                "JUMP 0x14d"
+            ]
+        },
+        {
+            "scope": "buyTokens",
+            "addr": "0x152",
+            "instructions": [
+                "NOP",
+                "JUMP 0x151"
+            ]
+        },
+        {
+            "scope": "buyTokens",
+            "addr": "0x153",
+            "instructions": [
+                "CLR_19 = this.balance",
+                "WRP_0 = CLR_19 - amount",
+                "this.balance = WRP_0",
+                "TMP_47 = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "buyTokens",
+            "addr": "0x154",
+            "instructions": [
+                "CLR_20 = msg.sender",
+                "CLR_21 = balanceOf[CLR_20]",
+                "REF_3 = CLR_21",
+                "amount = REF_3",
+                "CLR_22 = msg.sender",
+                "CLR_23 = balanceOf[CLR_22]",
+                "REF_4 = CLR_23",
+                "CLR_24 = msg.sender",
+                "balanceOf[CLR_24] = 0",
+                "TMP_46 = amount > 0",
+                "CONDITION TMP_46 0x153 0x155"
+            ]
+        },
+        {
+            "scope": "buyTokens",
+            "addr": "0x150",
+            "instructions": [
+                "TMP_70 = now <= endTime",
+                "CONDITION TMP_70 0x155 0x152"
+            ]
+        },
+        {
+            "scope": "buyTokens",
+            "addr": "0x14e",
+            "instructions": [
+                "TMP_43 = weiRaised < fundingGoal",
+                "TMP_44 = weiRaised < minimumFundingGoal",
+                "TMP_45 = TMP_43 && TMP_44",
+                "CONDITION TMP_45 0x154 0x155"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x156",
+            "instructions": [
+                "NOP",
+                "beneficiary = NEW_VAL integer",
+                "b = NEW_VAL integer",
+                "weiAmount = NEW_VAL integer",
+                "withinPeriod = NEW_VAL boolean",
+                "tokens = NEW_VAL integer",
+                "nonZeroPurchase = NEW_VAL boolean",
+                "a = NEW_VAL integer",
+                "c = NEW_VAL integer",
+                "JUMP 0x157"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x157",
+            "instructions": [
+                "TMP_23 = beneficiary != 0",
+                "CONDITION TMP_23 0x157_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x157_r0",
+            "instructions": [
+                "JUMP 0x158"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x159",
+            "instructions": [
+                "CONDITION TMP_25 0x159_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x159_r0",
+            "instructions": [
+                "JUMP 0x15a"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x15a",
+            "instructions": [
+                "CLR_25 = msg.value",
+                "weiAmount = CLR_25",
+                "TMP_27 = weiAmount * price",
+                "tokens = TMP_27",
+                "TMP_28 = now < stage1Bounty",
+                "CONDITION TMP_28 0x15b 0x15c"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x15b",
+            "instructions": [
+                "TMP_29 = tokens * 50",
+                "TMP_30 = TMP_29 \/ 100",
+                "tokens = tokens + TMP_30",
+                "JUMP 0x15d"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x15c",
+            "instructions": [
+                "TMP_31 = now < stage2Bounty",
+                "CONDITION TMP_31 0x15e 0x15f"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x15e",
+            "instructions": [
+                "TMP_32 = tokens * 40",
+                "TMP_33 = TMP_32 \/ 100",
+                "tokens = tokens + TMP_33",
+                "JUMP 0x160"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x15f",
+            "instructions": [
+                "TMP_34 = now < stage3Bounty",
+                "CONDITION TMP_34 0x161 0x162"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x161",
+            "instructions": [
+                "TMP_35 = tokens * 25",
+                "TMP_36 = TMP_35 \/ 100",
+                "tokens = tokens + TMP_36",
+                "JUMP 0x163"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x162",
+            "instructions": [
+                "TMP_37 = now < stage4Bounty",
+                "CONDITION TMP_37 0x164 0x155"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x164",
+            "instructions": [
+                "TMP_38 = tokens * 10",
+                "TMP_39 = TMP_38 \/ 100",
+                "tokens = tokens + TMP_39",
+                "JUMP 0x165"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x165",
+            "instructions": [
+                "NOP",
+                "JUMP 0x163"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x163",
+            "instructions": [
+                "NOP",
+                "JUMP 0x160"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x160",
+            "instructions": [
+                "NOP",
+                "JUMP 0x15d"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x15d",
+            "instructions": [
+                "NOP",
+                "JUMP 0x166"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x167",
+            "instructions": [
+                "weiRaised = TMP_40",
+                "NOP",
+                "JUMP 0x168"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x168",
+            "instructions": [
+                "NOP",
+                "JUMP 0x14f"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x158",
+            "instructions": [
+                "NOP",
+                "JUMP 0x169"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x169",
+            "instructions": [
+                "TMP_63 = now >= startTime",
+                "TMP_64 = now <= endTime",
+                "TMP_65 = TMP_63 && TMP_64",
+                "withinPeriod = TMP_65",
+                "CLR_26 = msg.value",
+                "TMP_66 = CLR_26 != 0",
+                "nonZeroPurchase = TMP_66",
+                "TMP_67 = withinPeriod && nonZeroPurchase",
+                "TMP_83 = TMP_67",
+                "JUMP 0x16a"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x16a",
+            "instructions": [
+                "TMP_25 = TMP_83",
+                "JUMP 0x159"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x16b",
+            "instructions": [
+                "NOP",
+                "JUMP 0x16c"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x16c",
+            "instructions": [
+                "TMP_10 = a + b",
+                "c = TMP_10",
+                "TMP_11 = c >= a",
+                "CONDITION TMP_11 0x16c_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x16c_r0",
+            "instructions": [
+                "JUMP 0x16d"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x16d",
+            "instructions": [
+                "TMP_76 = c",
+                "JUMP 0x16e"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x166",
+            "instructions": [
+                "CLR_27 = msg.sender",
+                "CLR_28 = balanceOf[CLR_27]",
+                "REF_0 = CLR_28",
+                "CLR_29 = msg.sender",
+                "WRP_1 = REF_0 + weiAmount",
+                "balanceOf[CLR_29] = WRP_1",
+                "a = weiRaised",
+                "b = weiAmount",
+                "JUMP 0x16b"
+            ]
+        },
+        {
+            "scope": "safeWithdrawal",
+            "addr": "0x16e",
+            "instructions": [
+                "TMP_40 = TMP_76",
+                "JUMP 0x167"
+            ]
+        },
+        {
+            "scope": "buyTokens",
+            "addr": "0x155",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

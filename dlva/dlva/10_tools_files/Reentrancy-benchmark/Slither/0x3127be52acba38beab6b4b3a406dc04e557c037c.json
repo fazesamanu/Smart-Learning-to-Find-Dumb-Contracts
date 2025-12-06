@@ -1,0 +1,944 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 20 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m9\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 20 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m9\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "22c54ff2b792af46b54c2c3f98cc7043c5c8883b7a76326660057b643fe173f0",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "PLATPriceOracle",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 539,
+                  "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                  "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "PLATPriceOracle",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 4,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 20,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 9,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "updatePrice",
+                  "source_mapping": {
+                    "start": 244,
+                    "length": 181,
+                    "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PLATPriceOracle",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 539,
+                        "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "updatePrice(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "require(bool)(admins[msg.sender] == true)",
+                  "source_mapping": {
+                    "start": 325,
+                    "length": 35,
+                    "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 40
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "updatePrice",
+                      "source_mapping": {
+                        "start": 244,
+                        "length": 181,
+                        "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PLATPriceOracle",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 539,
+                            "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                            "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "updatePrice(uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "PLATPriceOracle.updatePrice(uint256) (cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#10-15) compares to a boolean constant:\n\t-require(bool)(admins[msg.sender] == true) (cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#12)\n",
+              "markdown": "[PLATPriceOracle.updatePrice(uint256)](cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#L10-L15) compares to a boolean constant:\n\t-[require(bool)(admins[msg.sender] == true)](cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#L12)\n",
+              "first_markdown_element": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#L10-L15",
+              "id": "0b4086d1b70a5f820b84c67b8a4c8fdcb23eea89fb94f4282b6ad7eccb7bcf68",
+              "check": "boolean-equal",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "setAdmin",
+                  "source_mapping": {
+                    "start": 428,
+                    "length": 135,
+                    "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      16,
+                      17,
+                      18,
+                      19
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PLATPriceOracle",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 539,
+                        "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "setAdmin(address,bool)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "require(bool)(admins[msg.sender] == true)",
+                  "source_mapping": {
+                    "start": 491,
+                    "length": 35,
+                    "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 40
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "setAdmin",
+                      "source_mapping": {
+                        "start": 428,
+                        "length": 135,
+                        "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PLATPriceOracle",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 539,
+                            "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                            "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "setAdmin(address,bool)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "PLATPriceOracle.setAdmin(address,bool) (cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#16-19) compares to a boolean constant:\n\t-require(bool)(admins[msg.sender] == true) (cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#17)\n",
+              "markdown": "[PLATPriceOracle.setAdmin(address,bool)](cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#L16-L19) compares to a boolean constant:\n\t-[require(bool)(admins[msg.sender] == true)](cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#L17)\n",
+              "first_markdown_element": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#L16-L19",
+              "id": "5fc9f9fda65ecc27df8465c79ad0c9e9f45566c2e88e5e41334909e4fec84988",
+              "check": "boolean-equal",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.23 is not recommended for deployment\n",
+              "markdown": "solc-0.4.23 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "382fda39bb161fb6bd84dab76b9e9c2b52aca3c7e5a51e412552f94dbe59a506",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.23",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".23"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.23 (cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.23](cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#L1",
+              "id": "ff32e4823e762eba85a40b5f3309db17220ecaa271d9ab80e28ca017757982a7",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_value",
+                  "source_mapping": {
+                    "start": 465,
+                    "length": 11,
+                    "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      16
+                    ],
+                    "starting_column": 40,
+                    "ending_column": 51
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "setAdmin",
+                      "source_mapping": {
+                        "start": 428,
+                        "length": 135,
+                        "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PLATPriceOracle",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 539,
+                            "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                            "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "setAdmin(address,bool)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter PLATPriceOracle.setAdmin(address,bool)._value (cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#16) is not in mixedCase\n",
+              "markdown": "Parameter [PLATPriceOracle.setAdmin(address,bool)._value](cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#L16) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#L16",
+              "id": "3feac5dc3b0dc8d07031d8afa47c4b80294f8e55c13c9a044b30f5b3b97ee8dc",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "ETHPrice",
+                  "source_mapping": {
+                    "start": 91,
+                    "length": 49,
+                    "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 52
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PLATPriceOracle",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 539,
+                        "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable PLATPriceOracle.ETHPrice (cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#5) is not in mixedCase\n",
+              "markdown": "Variable [PLATPriceOracle.ETHPrice](cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#L5) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#L5",
+              "id": "548c29d378edd4ce0f02b7ae99af544afd0cdd555a7fc6aabe13f7990c362ca6",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_newAdmin",
+                  "source_mapping": {
+                    "start": 446,
+                    "length": 17,
+                    "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      16
+                    ],
+                    "starting_column": 21,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "setAdmin",
+                      "source_mapping": {
+                        "start": 428,
+                        "length": 135,
+                        "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PLATPriceOracle",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 539,
+                            "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                            "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "setAdmin(address,bool)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter PLATPriceOracle.setAdmin(address,bool)._newAdmin (cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#16) is not in mixedCase\n",
+              "markdown": "Parameter [PLATPriceOracle.setAdmin(address,bool)._newAdmin](cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#L16) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#L16",
+              "id": "a4129e93d52bfa2a2a1a46fb2cc0c56e2534416866029fc4f8966d245db3db26",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_newPrice",
+                  "source_mapping": {
+                    "start": 265,
+                    "length": 17,
+                    "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 24,
+                    "ending_column": 41
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "updatePrice",
+                      "source_mapping": {
+                        "start": 244,
+                        "length": 181,
+                        "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PLATPriceOracle",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 539,
+                            "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                            "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "updatePrice(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter PLATPriceOracle.updatePrice(uint256)._newPrice (cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#10) is not in mixedCase\n",
+              "markdown": "Parameter [PLATPriceOracle.updatePrice(uint256)._newPrice](cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#L10) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#L10",
+              "id": "d792928355eb7943112b4ebd6d6f0c6a639917e1786d2bdf9eb004fc3421a245",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "slitherConstructorVariables",
+                  "source_mapping": {
+                    "start": 26,
+                    "length": 539,
+                    "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PLATPriceOracle",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 539,
+                        "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "slitherConstructorVariables()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "ETHPrice = 60000000000000000000000",
+                  "source_mapping": {
+                    "start": 91,
+                    "length": 49,
+                    "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 52
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "slitherConstructorVariables",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 539,
+                        "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PLATPriceOracle",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 539,
+                            "filename_relative": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                            "filename_short": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "slitherConstructorVariables()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "PLATPriceOracle.slitherConstructorVariables() (cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#3-21) uses literals with too many digits:\n\t- ETHPrice = 60000000000000000000000 (cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#5)\n",
+              "markdown": "[PLATPriceOracle.slitherConstructorVariables()](cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#L3-L21) uses literals with too many digits:\n\t- [ETHPrice = 60000000000000000000000](cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#L5)\n",
+              "first_markdown_element": "cleanSource/0x3127be52acba38beab6b4b3a406dc04e557c037c.sol#L3-L21",
+              "id": "38b37abe0bb03add78fea96335f8c1eec6c2d50b7768bf0ab6039acc8d863feb",
+              "check": "too-many-digits",
+              "impact": "Informational",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

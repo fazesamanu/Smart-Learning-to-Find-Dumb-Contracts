@@ -1,0 +1,16 @@
+{
+    "tod_symex_path_1.json": {
+        "file_name": "",
+        "from_function": "claim",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 50\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 53\nCall context: \nTrue\nREF_62 -> people[msg.sender]\nTMP_5 = REF_62 == 1\nTMP_6 = SOLIDITY_CALL require(bool)(TMP_5)\""
+        ],
+        "executable_instructions": 26,
+        "state_variable": "people",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    }
+}

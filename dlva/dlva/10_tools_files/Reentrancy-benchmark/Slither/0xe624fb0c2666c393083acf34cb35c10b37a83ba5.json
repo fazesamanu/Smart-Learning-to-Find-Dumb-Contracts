@@ -1,0 +1,380 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 7 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m3\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 7 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m3\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "f06b529e3e8a7094c6fc4426f80d92097980f997677764f0143d0b4a4b14766e",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "Danakil",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 255,
+                  "filename_relative": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                  "filename_short": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "Danakil",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 7,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 3,
+            "informational_issues": 4,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "IPFShash",
+                  "source_mapping": {
+                    "start": 212,
+                    "length": 66,
+                    "filename_relative": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                    "filename_short": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 71
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Danakil",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 255,
+                        "filename_relative": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                        "filename_short": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Danakil.IPFShash (cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol#6) should be constant\n",
+              "markdown": "[Danakil.IPFShash](cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol#L6) should be constant\n",
+              "first_markdown_element": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol#L6",
+              "id": "1ee71197975b7a02652f3f8f4c3e30bcee1498826e5c7aa8ed1046d16cce1f32",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "title",
+                  "source_mapping": {
+                    "start": 49,
+                    "length": 95,
+                    "filename_relative": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                    "filename_short": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 100
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Danakil",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 255,
+                        "filename_relative": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                        "filename_short": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Danakil.title (cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol#4) should be constant\n",
+              "markdown": "[Danakil.title](cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol#L4) should be constant\n",
+              "first_markdown_element": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol#L4",
+              "id": "d45243833e05b67a895bd598027d29c0388fe7c9025df78f4bd26dd26009d6e7",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "PDF",
+                  "source_mapping": {
+                    "start": 150,
+                    "length": 56,
+                    "filename_relative": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                    "filename_short": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 61
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Danakil",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 255,
+                        "filename_relative": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                        "filename_short": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Danakil.PDF (cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol#5) should be constant\n",
+              "markdown": "[Danakil.PDF](cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol#L5) should be constant\n",
+              "first_markdown_element": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol#L5",
+              "id": "d65f8edfb912a696fb20543552b97e1ab82bf49a4ef8c5302e957155de491d4b",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.24",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                    "filename_short": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".24"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.24 (cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.24](cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol#L1",
+              "id": "476df868848956cc20ee241aa21c4b7b47fd8e453b3ab24c2e021c3c6e3d3358",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.24 is not recommended for deployment\n",
+              "markdown": "solc-0.4.24 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "4fdaa1943fda7c6196f21cde2a89972a5de2e49314548f4161996d6ef6af4a38",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "PDF",
+                  "source_mapping": {
+                    "start": 150,
+                    "length": 56,
+                    "filename_relative": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                    "filename_short": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 61
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Danakil",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 255,
+                        "filename_relative": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                        "filename_short": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable Danakil.PDF (cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol#5) is not in mixedCase\n",
+              "markdown": "Variable [Danakil.PDF](cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol#L5) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol#L5",
+              "id": "ae7e5f851e021de9b3db078650c8bd702e65a7dabdd43f39c0a5ee3f6dd9413f",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "IPFShash",
+                  "source_mapping": {
+                    "start": 212,
+                    "length": 66,
+                    "filename_relative": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                    "filename_short": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 71
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Danakil",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 255,
+                        "filename_relative": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                        "filename_short": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable Danakil.IPFShash (cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol#6) is not in mixedCase\n",
+              "markdown": "Variable [Danakil.IPFShash](cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol#L6) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xe624fb0c2666c393083acf34cb35c10b37a83ba5.sol#L6",
+              "id": "c764a9f7e2d23f9c12785e8be71764a541eba86a8935ecd60ef2db388b47828a",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2034 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 33 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m9\u001b[0m\nNumber of informational issues: \u001b[92m21\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 33 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m9\u001b[0m\nNumber of informational issues: \u001b[92m21\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "319d8b7249e6b585b9ff2c24dcf39cde48aabbe02537a863ba94f68c55dc7610",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "DebtLockerV4Migrator",
+                "source_mapping": {
+                  "start": 663,
+                  "length": 547,
+                  "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                  "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "DebtLockerV4Migrator",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 5,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 33,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 9,
+            "informational_issues": 21,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_liquidator",
+                  "source_mapping": {
+                    "start": 305,
+                    "length": 28,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      9
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 33
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DebtLockerStorage._liquidator (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#9) should be constant\n",
+              "markdown": "[DebtLockerStorage._liquidator](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L9) should be constant\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L9",
+              "id": "2965be9f9e68b221632290fc262e592e3db44fc261d86ad3a6af43fefe429def",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_principalRemainingAtLastClaim",
+                  "source_mapping": {
+                    "start": 575,
+                    "length": 47,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 52
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DebtLockerStorage._principalRemainingAtLastClaim (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#17) should be constant\n",
+              "markdown": "[DebtLockerStorage._principalRemainingAtLastClaim](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L17) should be constant\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L17",
+              "id": "2fd7ff79a1c6c73a3f5b053c546c82ec4dea45ad06f2833d31dad5246594187d",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_allowedSlippage",
+                  "source_mapping": {
+                    "start": 427,
+                    "length": 33,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DebtLockerStorage._allowedSlippage (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#13) should be constant\n",
+              "markdown": "[DebtLockerStorage._allowedSlippage](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L13) should be constant\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L13",
+              "id": "5b21ab4358a76aef64f2bf7d732cfc913ce2436a96e61086bc6649728b20e8ef",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_minRatio",
+                  "source_mapping": {
+                    "start": 543,
+                    "length": 26,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      16
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 31
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DebtLockerStorage._minRatio (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#16) should be constant\n",
+              "markdown": "[DebtLockerStorage._minRatio](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L16) should be constant\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L16",
+              "id": "64632f8c6b61f2a2289cea54934433a0682f453d225ce7c437d682d99cb50e5d",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_loan",
+                  "source_mapping": {
+                    "start": 339,
+                    "length": 22,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 27
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DebtLockerStorage._loan (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#10) should be constant\n",
+              "markdown": "[DebtLockerStorage._loan](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L10) should be constant\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L10",
+              "id": "6a121cc5e83e127f0f14ce0ffa99f492934544694ef15ce2106a33e5258d863c",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_repossessed",
+                  "source_mapping": {
+                    "start": 395,
+                    "length": 26,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 31
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DebtLockerStorage._repossessed (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#12) should be constant\n",
+              "markdown": "[DebtLockerStorage._repossessed](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L12) should be constant\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L12",
+              "id": "6f5f165f8cfb64992cc635bb4ae21be0eba939db08adff8f9a57605884337bd6",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_fundsToCapture",
+                  "source_mapping": {
+                    "start": 505,
+                    "length": 32,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      15
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 37
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DebtLockerStorage._fundsToCapture (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#15) should be constant\n",
+              "markdown": "[DebtLockerStorage._fundsToCapture](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L15) should be constant\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L15",
+              "id": "71952dea25f5474f44edd91b8dc6691fb5d17dc4f8424d4d28011d01ca4bb8b7",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_amountRecovered",
+                  "source_mapping": {
+                    "start": 466,
+                    "length": 33,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      14
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DebtLockerStorage._amountRecovered (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#14) should be constant\n",
+              "markdown": "[DebtLockerStorage._amountRecovered](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L14) should be constant\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L14",
+              "id": "9f249de97116b4123832b8da9b6573a9654b9094784dd8fa0d0a9decb3b41b4d",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_pool",
+                  "source_mapping": {
+                    "start": 367,
+                    "length": 22,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 27
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DebtLockerStorage._pool (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#11) should be constant\n",
+              "markdown": "[DebtLockerStorage._pool](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L11) should be constant\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L11",
+              "id": "fc7849bc99cc9f159ed5334c58fe888e580ba0e782ce123b8584773c2e7a9e23",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.8.7",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.8",
+                      ".7"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.8.7 (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.8.7](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L1",
+              "id": "30c760f7ff5b7385cbe06aab652d9d25065c201aebfa88b5427c886e64af2efb",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.8.7 is not recommended for deployment\n",
+              "markdown": "solc-0.8.7 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "7625fc0b76e6d47f90acb00bf7e2271fd51795d3b2a30f085edbbc0db8832c0c",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_principalRemainingAtLastClaim",
+                  "source_mapping": {
+                    "start": 575,
+                    "length": 47,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 52
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable DebtLockerStorage._principalRemainingAtLastClaim (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#17) is not in mixedCase\n",
+              "markdown": "Variable [DebtLockerStorage._principalRemainingAtLastClaim](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L17) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L17",
+              "id": "1d83b7010cbf185d34e6db5491d0f55f8af29219a6c9c66cba36106ed6953298",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_loanMigrator",
+                  "source_mapping": {
+                    "start": 628,
+                    "length": 30,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      18
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 35
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable DebtLockerStorage._loanMigrator (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#18) is not in mixedCase\n",
+              "markdown": "Variable [DebtLockerStorage._loanMigrator](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L18) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L18",
+              "id": "1ef077e3bc14134bfa887c92aea8d71566ee03aa1692022d028a93c62d16d728",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_allowedSlippage",
+                  "source_mapping": {
+                    "start": 427,
+                    "length": 33,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable DebtLockerStorage._allowedSlippage (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#13) is not in mixedCase\n",
+              "markdown": "Variable [DebtLockerStorage._allowedSlippage](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L13) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L13",
+              "id": "25c881e1997a7e4b53df95c27a940b5cc40f8686ef12e6c41016459417a1f2c9",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_fundsToCapture",
+                  "source_mapping": {
+                    "start": 505,
+                    "length": 32,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      15
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 37
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable DebtLockerStorage._fundsToCapture (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#15) is not in mixedCase\n",
+              "markdown": "Variable [DebtLockerStorage._fundsToCapture](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L15) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L15",
+              "id": "2c83da9c6afc976f55a92cb8d7b5b343d178bd78b0b8ba1ef847aefd8012b352",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_pool",
+                  "source_mapping": {
+                    "start": 367,
+                    "length": 22,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 27
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable DebtLockerStorage._pool (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#11) is not in mixedCase\n",
+              "markdown": "Variable [DebtLockerStorage._pool](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L11) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L11",
+              "id": "869b98050aa2227a95a6920bf2fb22cfe334bc02f1f5d02b82a517ea8c1f26dc",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_minRatio",
+                  "source_mapping": {
+                    "start": 543,
+                    "length": 26,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      16
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 31
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable DebtLockerStorage._minRatio (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#16) is not in mixedCase\n",
+              "markdown": "Variable [DebtLockerStorage._minRatio](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L16) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L16",
+              "id": "93f68573d31ce3317f56497c2401cfdc351e03f3d5d081b1a3fc6c691e7c52fc",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_repossessed",
+                  "source_mapping": {
+                    "start": 395,
+                    "length": 26,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 31
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable DebtLockerStorage._repossessed (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#12) is not in mixedCase\n",
+              "markdown": "Variable [DebtLockerStorage._repossessed](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L12) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L12",
+              "id": "98fbce2d77bcc42ef36a7120ad7f1ba3c114955dc47f665c3137c919c6a7328a",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_liquidator",
+                  "source_mapping": {
+                    "start": 305,
+                    "length": 28,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      9
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 33
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable DebtLockerStorage._liquidator (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#9) is not in mixedCase\n",
+              "markdown": "Variable [DebtLockerStorage._liquidator](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L9) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L9",
+              "id": "bf7c46bbdf2fb113f3cf092bd8d8c0ec0a210f16c76c391113059729571813d1",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_amountRecovered",
+                  "source_mapping": {
+                    "start": 466,
+                    "length": 33,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      14
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable DebtLockerStorage._amountRecovered (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#14) is not in mixedCase\n",
+              "markdown": "Variable [DebtLockerStorage._amountRecovered](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L14) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L14",
+              "id": "d51978d18301057795551872a8efbcb872a60ff7454cd1ebc0bf015658ec39b6",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_loan",
+                  "source_mapping": {
+                    "start": 339,
+                    "length": 22,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 27
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable DebtLockerStorage._loan (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#10) is not in mixedCase\n",
+              "markdown": "Variable [DebtLockerStorage._loan](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L10) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L10",
+              "id": "de2cc982b12b07386dc7d5aacb60f32d69a5a6c3e111b02ee9c573dd41f348cf",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_pool",
+                  "source_mapping": {
+                    "start": 367,
+                    "length": 22,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 27
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "DebtLockerV4Migrator",
+                  "source_mapping": {
+                    "start": 663,
+                    "length": 547,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  }
+                }
+              ],
+              "description": "DebtLockerStorage._pool (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#11) is never used in DebtLockerV4Migrator (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#21-32)\n",
+              "markdown": "[DebtLockerStorage._pool](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L11) is never used in [DebtLockerV4Migrator](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L21-L32)\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L11",
+              "id": "1b582923711fe767857c7654f709ab4d4cf99ec5dbf3e8ade5d3353aedd8580d",
+              "check": "unused-state",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_principalRemainingAtLastClaim",
+                  "source_mapping": {
+                    "start": 575,
+                    "length": 47,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 52
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "DebtLockerV4Migrator",
+                  "source_mapping": {
+                    "start": 663,
+                    "length": 547,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  }
+                }
+              ],
+              "description": "DebtLockerStorage._principalRemainingAtLastClaim (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#17) is never used in DebtLockerV4Migrator (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#21-32)\n",
+              "markdown": "[DebtLockerStorage._principalRemainingAtLastClaim](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L17) is never used in [DebtLockerV4Migrator](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L21-L32)\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L17",
+              "id": "56e6ab98d3740299873231efca9697c1333de9793c3b152280df086ac2fe6623",
+              "check": "unused-state",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_minRatio",
+                  "source_mapping": {
+                    "start": 543,
+                    "length": 26,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      16
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 31
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "DebtLockerV4Migrator",
+                  "source_mapping": {
+                    "start": 663,
+                    "length": 547,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  }
+                }
+              ],
+              "description": "DebtLockerStorage._minRatio (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#16) is never used in DebtLockerV4Migrator (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#21-32)\n",
+              "markdown": "[DebtLockerStorage._minRatio](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L16) is never used in [DebtLockerV4Migrator](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L21-L32)\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L16",
+              "id": "749bb346a6a7ce24a1bb86aef31bf989cff995fffda27f82aabd5c7586f82b84",
+              "check": "unused-state",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_repossessed",
+                  "source_mapping": {
+                    "start": 395,
+                    "length": 26,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 31
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "DebtLockerV4Migrator",
+                  "source_mapping": {
+                    "start": 663,
+                    "length": 547,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  }
+                }
+              ],
+              "description": "DebtLockerStorage._repossessed (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#12) is never used in DebtLockerV4Migrator (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#21-32)\n",
+              "markdown": "[DebtLockerStorage._repossessed](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L12) is never used in [DebtLockerV4Migrator](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L21-L32)\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L12",
+              "id": "7cd14c7c42106df74a8000d953de3601810921f848ca7955f00c99e471db5875",
+              "check": "unused-state",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_allowedSlippage",
+                  "source_mapping": {
+                    "start": 427,
+                    "length": 33,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "DebtLockerV4Migrator",
+                  "source_mapping": {
+                    "start": 663,
+                    "length": 547,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  }
+                }
+              ],
+              "description": "DebtLockerStorage._allowedSlippage (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#13) is never used in DebtLockerV4Migrator (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#21-32)\n",
+              "markdown": "[DebtLockerStorage._allowedSlippage](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L13) is never used in [DebtLockerV4Migrator](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L21-L32)\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L13",
+              "id": "97daa3c5fe9d2fa24e472e71135b73fd04dd64d0045248e7ac51c1201908e12e",
+              "check": "unused-state",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_fundsToCapture",
+                  "source_mapping": {
+                    "start": 505,
+                    "length": 32,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      15
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 37
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "DebtLockerV4Migrator",
+                  "source_mapping": {
+                    "start": 663,
+                    "length": 547,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  }
+                }
+              ],
+              "description": "DebtLockerStorage._fundsToCapture (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#15) is never used in DebtLockerV4Migrator (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#21-32)\n",
+              "markdown": "[DebtLockerStorage._fundsToCapture](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L15) is never used in [DebtLockerV4Migrator](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L21-L32)\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L15",
+              "id": "cd9d7631452cf955552419dae9419fed07e8a13b2d61dfaf45d6e0574617afbe",
+              "check": "unused-state",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_liquidator",
+                  "source_mapping": {
+                    "start": 305,
+                    "length": 28,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      9
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 33
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "DebtLockerV4Migrator",
+                  "source_mapping": {
+                    "start": 663,
+                    "length": 547,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  }
+                }
+              ],
+              "description": "DebtLockerStorage._liquidator (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#9) is never used in DebtLockerV4Migrator (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#21-32)\n",
+              "markdown": "[DebtLockerStorage._liquidator](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L9) is never used in [DebtLockerV4Migrator](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L21-L32)\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L9",
+              "id": "e0c60f23f8f0668b3e14064004f993fa3a8da04d8dc7c89ca8e929dbd590cdb7",
+              "check": "unused-state",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_amountRecovered",
+                  "source_mapping": {
+                    "start": 466,
+                    "length": 33,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      14
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "DebtLockerV4Migrator",
+                  "source_mapping": {
+                    "start": 663,
+                    "length": 547,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  }
+                }
+              ],
+              "description": "DebtLockerStorage._amountRecovered (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#14) is never used in DebtLockerV4Migrator (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#21-32)\n",
+              "markdown": "[DebtLockerStorage._amountRecovered](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L14) is never used in [DebtLockerV4Migrator](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L21-L32)\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L14",
+              "id": "e45795e393771f1abee878889b09280079d775d7bb612bbbd6fac9c11cd3e1f4",
+              "check": "unused-state",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_loan",
+                  "source_mapping": {
+                    "start": 339,
+                    "length": 22,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 27
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DebtLockerStorage",
+                      "source_mapping": {
+                        "start": 272,
+                        "length": 389,
+                        "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "DebtLockerV4Migrator",
+                  "source_mapping": {
+                    "start": 663,
+                    "length": 547,
+                    "filename_relative": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "filename_short": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  }
+                }
+              ],
+              "description": "DebtLockerStorage._loan (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#10) is never used in DebtLockerV4Migrator (cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#21-32)\n",
+              "markdown": "[DebtLockerStorage._loan](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L10) is never used in [DebtLockerV4Migrator](cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L21-L32)\n",
+              "first_markdown_element": "cleanSource/0x5bf3863b0355a547eca79ab489addd6092717431.sol#L10",
+              "id": "fa6ad147472aae78bbee01fb2a1657db98af07c07f897fa191a790f4188179d8",
+              "check": "unused-state",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2103 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 61 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m2\u001b[0m\nNumber of informational issues: \u001b[92m15\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[91m2\u001b[0m\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 61 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m2\u001b[0m\nNumber of informational issues: \u001b[92m15\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[91m2\u001b[0m\n",
+        "first_markdown_element": "",
+        "id": "94eb1f006be27a50558c14404385dab42baae085db0743c67b937f83668a7ba2",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "PrivateBank",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 855,
+                  "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                  "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "PrivateBank",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 6,
+                  "features": [
+                    "Receive ETH",
+                    "Send ETH"
+                  ]
+                }
+              },
+              {
+                "type": "contract",
+                "name": "Log",
+                "source_mapping": {
+                  "start": 882,
+                  "length": 415,
+                  "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                  "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59,
+                    60,
+                    61,
+                    62
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "Log",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 61,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 2,
+            "informational_issues": 15,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 2
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "MinDeposit",
+                  "source_mapping": {
+                    "start": 195,
+                    "length": 32,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 37
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PrivateBank",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 855,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "PrivateBank.MinDeposit (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#12) should be constant\n",
+              "markdown": "[PrivateBank.MinDeposit](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L12) should be constant\n",
+              "first_markdown_element": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L12",
+              "id": "7d5de10506ad1b850eaaef53d9ff5b401e39d4ee2a71dc8c0e104d9369503271",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "AddMessage",
+                  "source_mapping": {
+                    "start": 1068,
+                    "length": 227,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      52,
+                      53,
+                      54,
+                      55,
+                      56,
+                      57,
+                      58,
+                      59,
+                      60
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Log",
+                      "source_mapping": {
+                        "start": 882,
+                        "length": 415,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "AddMessage(address,uint256,string)"
+                  }
+                }
+              ],
+              "description": "AddMessage(address,uint256,string) should be declared external:\n\t- Log.AddMessage(address,uint256,string) (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#52-60)\n",
+              "markdown": "AddMessage(address,uint256,string) should be declared external:\n\t- [Log.AddMessage(address,uint256,string)](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L52-L60)\n",
+              "first_markdown_element": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L52-L60",
+              "id": "4c8a4094e2c32c05d0bef5e9b094853cb3f7403b260edf76439824f829f297b6",
+              "check": "external-function",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.19",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".19"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.19 (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.19](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L1",
+              "id": "4e2b55fd67f9cd5799839e4886db8b1a83cbd793852400d2d0fe8e5b83d6bf41",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.19 is not recommended for deployment\n",
+              "markdown": "solc-0.4.19 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "6c57d3efd769b2c1ca361b3d06ff1f2677845be92f7b50762125a4196d71725a",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "CashOut",
+                  "source_mapping": {
+                    "start": 565,
+                    "length": 278,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PrivateBank",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 855,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "CashOut(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "msg.sender.call.value(_am)()",
+                  "source_mapping": {
+                    "start": 661,
+                    "length": 28,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      32
+                    ],
+                    "starting_column": 16,
+                    "ending_column": 44
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "CashOut",
+                      "source_mapping": {
+                        "start": 565,
+                        "length": 278,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PrivateBank",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 855,
+                            "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "CashOut(uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Low level call in PrivateBank.CashOut(uint256) (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#28-38):\n\t- msg.sender.call.value(_am)() (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#32)\n",
+              "markdown": "Low level call in [PrivateBank.CashOut(uint256)](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L28-L38):\n\t- [msg.sender.call.value(_am)()](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L32)\n",
+              "first_markdown_element": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L28-L38",
+              "id": "6b72e796e10051370fe76e607e44c52b656085b0bdba482c1bd461d9e1e05931",
+              "check": "low-level-calls",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "History",
+                  "source_mapping": {
+                    "start": 1017,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      50
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 29
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Log",
+                      "source_mapping": {
+                        "start": 882,
+                        "length": 415,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable Log.History (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#50) is not in mixedCase\n",
+              "markdown": "Variable [Log.History](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L50) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L50",
+              "id": "090079b92801e672b64f5cf8142250c73d1664e3eed3713db0903af415c9a693",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "LastMsg",
+                  "source_mapping": {
+                    "start": 1047,
+                    "length": 15,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      51
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 20
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Log",
+                      "source_mapping": {
+                        "start": 882,
+                        "length": 415,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable Log.LastMsg (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#51) is not in mixedCase\n",
+              "markdown": "Variable [Log.LastMsg](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L51) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L51",
+              "id": "09c76985dbe5bf29a2f821cb43652fc650f0254c08215e77779e7a73be035074",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "TransferLog",
+                  "source_mapping": {
+                    "start": 233,
+                    "length": 15,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 20
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PrivateBank",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 855,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable PrivateBank.TransferLog (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#13) is not in mixedCase\n",
+              "markdown": "Variable [PrivateBank.TransferLog](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L13) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L13",
+              "id": "0f981b726cba5ee7993dc2fb76252dcc6db1aca917ab7ac7a7686d6a514031e9",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_adr",
+                  "source_mapping": {
+                    "start": 1088,
+                    "length": 12,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      52
+                    ],
+                    "starting_column": 25,
+                    "ending_column": 37
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "AddMessage",
+                      "source_mapping": {
+                        "start": 1068,
+                        "length": 227,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Log",
+                          "source_mapping": {
+                            "start": 882,
+                            "length": 415,
+                            "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "AddMessage(address,uint256,string)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Log.AddMessage(address,uint256,string)._adr (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#52) is not in mixedCase\n",
+              "markdown": "Parameter [Log.AddMessage(address,uint256,string)._adr](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L52) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L52",
+              "id": "448884c0105492c21390b147b3b28938f500bd38e5c7db3e49f77082b4ae5901",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "AddMessage",
+                  "source_mapping": {
+                    "start": 1068,
+                    "length": 227,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      52,
+                      53,
+                      54,
+                      55,
+                      56,
+                      57,
+                      58,
+                      59,
+                      60
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Log",
+                      "source_mapping": {
+                        "start": 882,
+                        "length": 415,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "AddMessage(address,uint256,string)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function Log.AddMessage(address,uint256,string) (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#52-60) is not in mixedCase\n",
+              "markdown": "Function [Log.AddMessage(address,uint256,string)](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L52-L60) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L52-L60",
+              "id": "66845808355de3f3587edbe6bbedff5a7c9999f313d0d294df63fe67cab6561d",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_data",
+                  "source_mapping": {
+                    "start": 1111,
+                    "length": 12,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      52
+                    ],
+                    "starting_column": 48,
+                    "ending_column": 60
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "AddMessage",
+                      "source_mapping": {
+                        "start": 1068,
+                        "length": 227,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Log",
+                          "source_mapping": {
+                            "start": 882,
+                            "length": 415,
+                            "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "AddMessage(address,uint256,string)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Log.AddMessage(address,uint256,string)._data (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#52) is not in mixedCase\n",
+              "markdown": "Parameter [Log.AddMessage(address,uint256,string)._data](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L52) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L52",
+              "id": "88ef89222b78c5ba078f8cd13354a82ff13db1aa11aa346db18dff995e21d93a",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "GetBal",
+                  "source_mapping": {
+                    "start": 93,
+                    "length": 97,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PrivateBank",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 855,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "GetBal()"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function PrivateBank.GetBal() (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#6-11) is not in mixedCase\n",
+              "markdown": "Function [PrivateBank.GetBal()](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L6-L11) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L6-L11",
+              "id": "9f52856aad4e36f1e7ea8fe503d5eb9145a053bbf82b8f2d9696efbb9ab8fd6c",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "Deposit",
+                  "source_mapping": {
+                    "start": 338,
+                    "length": 222,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PrivateBank",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 855,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "Deposit()"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function PrivateBank.Deposit() (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#18-27) is not in mixedCase\n",
+              "markdown": "Function [PrivateBank.Deposit()](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L18-L27) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L18-L27",
+              "id": "a01fb01a0255b50557f6436199ff32b22a18639587c2fdc10eff1c4fc6951262",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "CashOut",
+                  "source_mapping": {
+                    "start": 565,
+                    "length": 278,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PrivateBank",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 855,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "CashOut(uint256)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function PrivateBank.CashOut(uint256) (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#28-38) is not in mixedCase\n",
+              "markdown": "Function [PrivateBank.CashOut(uint256)](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L28-L38) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L28-L38",
+              "id": "bfbf6bc5467ae87cfc71939b5bed47db0924100899aae6cb3beb2c8cca9eb8ba",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_val",
+                  "source_mapping": {
+                    "start": 1101,
+                    "length": 9,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      52
+                    ],
+                    "starting_column": 38,
+                    "ending_column": 47
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "AddMessage",
+                      "source_mapping": {
+                        "start": 1068,
+                        "length": 227,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Log",
+                          "source_mapping": {
+                            "start": 882,
+                            "length": 415,
+                            "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "AddMessage(address,uint256,string)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Log.AddMessage(address,uint256,string)._val (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#52) is not in mixedCase\n",
+              "markdown": "Parameter [Log.AddMessage(address,uint256,string)._val](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L52) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L52",
+              "id": "cf299a7fd737d25b044f24bab1472ef4ad0e03e2e83f1589cc97dcd942c3b397",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "MinDeposit",
+                  "source_mapping": {
+                    "start": 195,
+                    "length": 32,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 37
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PrivateBank",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 855,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable PrivateBank.MinDeposit (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#12) is not in mixedCase\n",
+              "markdown": "Variable [PrivateBank.MinDeposit](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L12) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L12",
+              "id": "e76b9dd1a3ec31dd45e1ccefeb684475be5aa4aa039f0db2210824bc06f78fe0",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_am",
+                  "source_mapping": {
+                    "start": 582,
+                    "length": 8,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      28
+                    ],
+                    "starting_column": 22,
+                    "ending_column": 30
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "CashOut",
+                      "source_mapping": {
+                        "start": 565,
+                        "length": 278,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PrivateBank",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 855,
+                            "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "CashOut(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter PrivateBank.CashOut(uint256)._am (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#28) is not in mixedCase\n",
+              "markdown": "Parameter [PrivateBank.CashOut(uint256)._am](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L28) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L28",
+              "id": "f66f3e07c2e8a682391e4b2bcec6786e1697498b6f441a3e4f129278e8ec4f75",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "contract",
+                  "name": "Log",
+                  "source_mapping": {
+                    "start": 882,
+                    "length": 415,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      41,
+                      42,
+                      43,
+                      44,
+                      45,
+                      46,
+                      47,
+                      48,
+                      49,
+                      50,
+                      51,
+                      52,
+                      53,
+                      54,
+                      55,
+                      56,
+                      57,
+                      58,
+                      59,
+                      60,
+                      61,
+                      62
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "History.push(LastMsg)",
+                  "source_mapping": {
+                    "start": 1267,
+                    "length": 21,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      59
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 30
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "AddMessage",
+                      "source_mapping": {
+                        "start": 1068,
+                        "length": 227,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Log",
+                          "source_mapping": {
+                            "start": 882,
+                            "length": 415,
+                            "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "AddMessage(address,uint256,string)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Log (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#41-62) contract sets array length with a user-controlled value:\n\t- History.push(LastMsg) (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#59)\n",
+              "markdown": "[Log](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L41-L62) contract sets array length with a user-controlled value:\n\t- [History.push(LastMsg)](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L59)\n",
+              "first_markdown_element": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L41-L62",
+              "id": "7a07787748c93b2d5462d35ae7f0da7cf8e51b3711fec1cea5a3599785cd86ee",
+              "check": "controlled-array-length",
+              "impact": "High",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "CashOut",
+                  "source_mapping": {
+                    "start": 565,
+                    "length": 278,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PrivateBank",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 855,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "CashOut(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "msg.sender.call.value(_am)()",
+                  "source_mapping": {
+                    "start": 661,
+                    "length": 28,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      32
+                    ],
+                    "starting_column": 16,
+                    "ending_column": 44
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "CashOut",
+                      "source_mapping": {
+                        "start": 565,
+                        "length": 278,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PrivateBank",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 855,
+                            "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "CashOut(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "external_calls"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "balances[msg.sender] -= _am",
+                  "source_mapping": {
+                    "start": 721,
+                    "length": 25,
+                    "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      34
+                    ],
+                    "starting_column": 17,
+                    "ending_column": 42
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "CashOut",
+                      "source_mapping": {
+                        "start": 565,
+                        "length": 278,
+                        "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PrivateBank",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 855,
+                            "filename_relative": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "filename_short": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "CashOut(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "variables_written",
+                    "variable_name": "balances"
+                  }
+                }
+              ],
+              "description": "Reentrancy in PrivateBank.CashOut(uint256) (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#28-38):\n\tExternal calls:\n\t- msg.sender.call.value(_am)() (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#32)\n\tState variables written after the call(s):\n\t- balances[msg.sender] -= _am (cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#34)\n",
+              "markdown": "Reentrancy in [PrivateBank.CashOut(uint256)](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L28-L38):\n\tExternal calls:\n\t- [msg.sender.call.value(_am)()](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L32)\n\tState variables written after the call(s):\n\t- [balances[msg.sender] -= _am](cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L34)\n",
+              "first_markdown_element": "cleanSource/0x463f235748bc7862deaa04d85b4b16ac8fafef39.sol#L28-L38",
+              "id": "de03634a45f40a4df9d523b723e35bda0f01fea71c64be5c3b9ecf176dc0cd02",
+              "check": "reentrancy-eth",
+              "impact": "High",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

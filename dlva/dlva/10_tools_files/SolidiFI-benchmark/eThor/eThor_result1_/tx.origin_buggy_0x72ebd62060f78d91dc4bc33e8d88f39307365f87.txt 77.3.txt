@@ -1,0 +1,42 @@
+Results for tx.origin_buggy_0x72ebd62060f78d91dc4bc33e8d88f39307365f87.txt:
+Queries
+query id:       reentrancyCall_0_4951
+execution time: 2389
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_7780(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_7768(#8,#9,#10,#3,#4,#5,#6,#7),
+ (> (:var 8) 6),
+ (= (:var 0) (- (:var 8) 5)),
+ (let ((a!1 (store (store (store (:var 10) (- (:var 8) 3) (:var 16))
+                         (- (:var 8) 2)
+                         (:var 18))
+                  (- (:var 8) 7)
+                  (:var 16))))
+  (= (:var 2)
+     (store (store a!1 (- (:var 8) 4) (:var 22)) (- (:var 8) 6) (:var 20)))),
+ (let ((a!1 (store (store (store (:var 9) (- (:var 8) 3) (:var 15))
+                         (- (:var 8) 2)
+                         (:var 17))
+                  (- (:var 8) 7)
+                  (:var 15))))
+  (= (:var 1)
+     (store (store a!1 (- (:var 8) 4) (:var 21)) (- (:var 8) 6) (:var 19)))),
+ (= (:var 22) (select (:var 10) (- (:var 8) 6))),
+ (= (:var 21) (select (:var 9) (- (:var 8) 6))),
+ (= (:var 20) (select (:var 10) (- (:var 8) 7))),
+ (= (:var 19) (select (:var 9) (- (:var 8) 7))),
+ (= (:var 18) (select (:var 10) (- (:var 8) 4))),
+ (= (:var 17) (select (:var 9) (- (:var 8) 4))),
+ (= (:var 16)
+   (ite (and (:var 11) (:var 13))
+        (ite (= (:var 14) 0) 0 (div (:var 12) (:var 14)))
+        0)),
+ (= (:var 15) (and (:var 11) (:var 13))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 1))),
+ (< (:var 8) 1026).
+
+

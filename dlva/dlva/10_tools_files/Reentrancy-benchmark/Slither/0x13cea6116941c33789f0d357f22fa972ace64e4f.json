@@ -1,0 +1,468 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 19 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 19 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "535804da7c10b70b709045f734b58729b245e617051da6113324db77e759547d",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "GCTransfer",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 408,
+                  "filename_relative": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                  "filename_short": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "GCTransfer",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 4,
+                  "features": [
+                    "Receive ETH",
+                    "Send ETH"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 19,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 4,
+            "low_issues": 1,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.5.7",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                    "filename_short": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.5",
+                      ".7"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.5.7 (cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.5.7](cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol#L1",
+              "id": "0445bb278b9dcabd98e8f741f70bb32c704240ab3c2b87988f593712a805b45c",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.5.7 is not recommended for deployment\n",
+              "markdown": "solc-0.5.7 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "198d7f1df469662424720d03245311877e3b860e9b1ef666447ec8b3c03d557b",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_to",
+                  "source_mapping": {
+                    "start": 260,
+                    "length": 19,
+                    "filename_relative": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                    "filename_short": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 26,
+                    "ending_column": 45
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferETH",
+                      "source_mapping": {
+                        "start": 239,
+                        "length": 112,
+                        "filename_relative": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                        "filename_short": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "GCTransfer",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 408,
+                            "filename_relative": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                            "filename_short": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferETH(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter GCTransfer.transferETH(address,uint256)._to (cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol#12) is not in mixedCase\n",
+              "markdown": "Parameter [GCTransfer.transferETH(address,uint256)._to](cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol#L12) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol#L12",
+              "id": "1b5db96e50d400c1fc8fc4183573d879b442bdfe950376c6fae4160f39ec2c41",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_value",
+                  "source_mapping": {
+                    "start": 281,
+                    "length": 14,
+                    "filename_relative": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                    "filename_short": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 47,
+                    "ending_column": 61
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferETH",
+                      "source_mapping": {
+                        "start": 239,
+                        "length": 112,
+                        "filename_relative": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                        "filename_short": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "GCTransfer",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 408,
+                            "filename_relative": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                            "filename_short": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferETH(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter GCTransfer.transferETH(address,uint256)._value (cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol#12) is not in mixedCase\n",
+              "markdown": "Parameter [GCTransfer.transferETH(address,uint256)._value](cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol#L12) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol#L12",
+              "id": "c2a03b4f22890b30427e13a76b718cd9226d8bcbce22eae6461ec57b88fd0a04",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_to",
+                  "source_mapping": {
+                    "start": 260,
+                    "length": 19,
+                    "filename_relative": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                    "filename_short": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 26,
+                    "ending_column": 45
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferETH",
+                      "source_mapping": {
+                        "start": 239,
+                        "length": 112,
+                        "filename_relative": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                        "filename_short": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "GCTransfer",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 408,
+                            "filename_relative": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                            "filename_short": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferETH(address,uint256)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "_to.transfer(_value)",
+                  "source_mapping": {
+                    "start": 324,
+                    "length": 20,
+                    "filename_relative": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                    "filename_short": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 29
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferETH",
+                      "source_mapping": {
+                        "start": 239,
+                        "length": 112,
+                        "filename_relative": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                        "filename_short": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "GCTransfer",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 408,
+                            "filename_relative": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                            "filename_short": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferETH(address,uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "GCTransfer.transferETH(address,uint256)._to (cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol#12) lacks a zero-check on :\n\t\t- _to.transfer(_value) (cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol#13)\n",
+              "markdown": "[GCTransfer.transferETH(address,uint256)._to](cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol#L12) lacks a zero-check on :\n\t\t- [_to.transfer(_value)](cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol#L13)\n",
+              "first_markdown_element": "cleanSource/0x13cea6116941c33789f0d357f22fa972ace64e4f.sol#L12",
+              "id": "6ecb61f6a4f5e38cfd9fcec3a176cb4feb15ecca47eba10c46125e884111ea46",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

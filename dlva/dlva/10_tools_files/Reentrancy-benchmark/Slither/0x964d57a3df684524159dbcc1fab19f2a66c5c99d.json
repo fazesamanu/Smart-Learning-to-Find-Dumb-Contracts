@@ -1,0 +1,220 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 25 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m0\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 25 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m0\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "bbc81b8a9af4db4e3c97799c3a5df6f2b9a19047db2de1e41438615099eb8152",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "CustomPriceGetter",
+                "source_mapping": {
+                  "start": 114,
+                  "length": 463,
+                  "filename_relative": "cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol",
+                  "filename_short": "cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "CustomPriceGetter",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 4,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 25,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 0,
+            "low_issues": 1,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "setPrice",
+                  "source_mapping": {
+                    "start": 384,
+                    "length": 83,
+                    "filename_relative": "cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol",
+                    "filename_short": "cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17,
+                      18,
+                      19
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "CustomPriceGetter",
+                      "source_mapping": {
+                        "start": 114,
+                        "length": 463,
+                        "filename_relative": "cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol",
+                        "filename_short": "cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "setPrice(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "_price = newPrice",
+                  "source_mapping": {
+                    "start": 445,
+                    "length": 17,
+                    "filename_relative": "cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol",
+                    "filename_short": "cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      18
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 22
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "setPrice",
+                      "source_mapping": {
+                        "start": 384,
+                        "length": 83,
+                        "filename_relative": "cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol",
+                        "filename_short": "cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "CustomPriceGetter",
+                          "source_mapping": {
+                            "start": 114,
+                            "length": 463,
+                            "filename_relative": "cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol",
+                            "filename_short": "cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "setPrice(uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "CustomPriceGetter.setPrice(uint256) (cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol#17-19) should emit an event for: \n\t- _price = newPrice (cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol#18) \n",
+              "markdown": "[CustomPriceGetter.setPrice(uint256)](cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol#L17-L19) should emit an event for: \n\t- [_price = newPrice](cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol#L18) \n",
+              "first_markdown_element": "cleanSource/0x964d57a3df684524159dbcc1fab19f2a66c5c99d.sol#L17-L19",
+              "id": "bfa7522283015c678353d9e5b6adcc222f3fbb39490239e03cb2fa655abe847f",
+              "check": "events-maths",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1592 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 34 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m4\u001b[0m\nNumber of informational issues: \u001b[92m13\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 34 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m4\u001b[0m\nNumber of informational issues: \u001b[92m13\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "415e691b421bfcc1b7ee1952e830c48eaa26c73f43423572330fb726190c34e7",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "Governance",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 1059,
+                  "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                  "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "Governance",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 8,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 34,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 4,
+            "informational_issues": 13,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_STAKE_AMOUNT",
+                  "source_mapping": {
+                    "start": 948,
+                    "length": 39,
+                    "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      29
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 44
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Governance",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1059,
+                        "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Governance._STAKE_AMOUNT (cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#29) should be constant\n",
+              "markdown": "[Governance._STAKE_AMOUNT](cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L29) should be constant\n",
+              "first_markdown_element": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L29",
+              "id": "193ea1b52bc5b8734fa3f0abf17498d34b4d08c3fdec39a3870972d8b52df5d0",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_MIN_GAS_LIMIT_LEFT",
+                  "source_mapping": {
+                    "start": 641,
+                    "length": 43,
+                    "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      21
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 48
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Governance",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1059,
+                        "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Governance._MIN_GAS_LIMIT_LEFT (cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#21) should be constant\n",
+              "markdown": "[Governance._MIN_GAS_LIMIT_LEFT](cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L21) should be constant\n",
+              "first_markdown_element": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L21",
+              "id": "a40d65bf9841d6f0add0652ae793baf81ca7d1cba20277ae11577ab3074ff4c8",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_TIME_TO_FINALISE",
+                  "source_mapping": {
+                    "start": 490,
+                    "length": 41,
+                    "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 46
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Governance",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1059,
+                        "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Governance._TIME_TO_FINALISE (cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#17) should be constant\n",
+              "markdown": "[Governance._TIME_TO_FINALISE](cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L17) should be constant\n",
+              "first_markdown_element": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L17",
+              "id": "a63476e797cfe57bc6f97f0f3de882a95003b71298882cc97ca39e1453f43434",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_MAX_TXS_PER_BATCH",
+                  "source_mapping": {
+                    "start": 798,
+                    "length": 38,
+                    "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      25
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 43
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Governance",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1059,
+                        "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Governance._MAX_TXS_PER_BATCH (cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#25) should be constant\n",
+              "markdown": "[Governance._MAX_TXS_PER_BATCH](cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L25) should be constant\n",
+              "first_markdown_element": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L25",
+              "id": "e8f8a38a77b462a8129b687fad382a77e7a988f470ff835a7561a444666285f0",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_STAKE_AMOUNT",
+                  "source_mapping": {
+                    "start": 948,
+                    "length": 39,
+                    "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      29
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 44
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Governance",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1059,
+                        "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable Governance._STAKE_AMOUNT (cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#29) is not in mixedCase\n",
+              "markdown": "Variable [Governance._STAKE_AMOUNT](cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L29) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L29",
+              "id": "012c646fcf0451fdbd5daecd2bb8e6fec5a3c6546a3cb7cc504459d909f1e3e9",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_MAX_DEPTH",
+                  "source_mapping": {
+                    "start": 210,
+                    "length": 29,
+                    "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      9
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 34
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Governance",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1059,
+                        "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable Governance._MAX_DEPTH (cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#9) is not in mixedCase\n",
+              "markdown": "Variable [Governance._MAX_DEPTH](cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L9) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L9",
+              "id": "08b3e8a9730941368b624e77f8c7f01cdf377a8ce03da836f1fee884a26648ce",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_MAX_TXS_PER_BATCH",
+                  "source_mapping": {
+                    "start": 798,
+                    "length": 38,
+                    "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      25
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 43
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Governance",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1059,
+                        "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable Governance._MAX_TXS_PER_BATCH (cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#25) is not in mixedCase\n",
+              "markdown": "Variable [Governance._MAX_TXS_PER_BATCH](cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L25) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L25",
+              "id": "0e9f11656465288283c858742e0b5e90eed3df49b67adf94160552a184c1047f",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "MAX_DEPTH",
+                  "source_mapping": {
+                    "start": 245,
+                    "length": 85,
+                    "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10,
+                      11,
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Governance",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1059,
+                        "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "MAX_DEPTH()"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function Governance.MAX_DEPTH() (cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#10-12) is not in mixedCase\n",
+              "markdown": "Function [Governance.MAX_DEPTH()](cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L10-L12) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L10-L12",
+              "id": "36e5e18fe363169aad069620c83f93eca82314674295283768eccb2d692e805a",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "TIME_TO_FINALISE",
+                  "source_mapping": {
+                    "start": 537,
+                    "length": 99,
+                    "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      18,
+                      19,
+                      20
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Governance",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1059,
+                        "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "TIME_TO_FINALISE()"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function Governance.TIME_TO_FINALISE() (cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#18-20) is not in mixedCase\n",
+              "markdown": "Function [Governance.TIME_TO_FINALISE()](cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L18-L20) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L18-L20",
+              "id": "4f6343313182dd37d3587b106e42cc6601de429b72ed3128da35f1379684589e",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "MAX_DEPOSIT_SUBTREE",
+                  "source_mapping": {
+                    "start": 380,
+                    "length": 105,
+                    "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      14,
+                      15,
+                      16
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Governance",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1059,
+                        "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "MAX_DEPOSIT_SUBTREE()"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function Governance.MAX_DEPOSIT_SUBTREE() (cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#14-16) is not in mixedCase\n",
+              "markdown": "Function [Governance.MAX_DEPOSIT_SUBTREE()](cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L14-L16) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L14-L16",
+              "id": "57f8a64233af2ee8b630e418c5426ed03ddee4d13a18bdf6616eb80bc69ca446",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "MIN_GAS_LIMIT_LEFT",
+                  "source_mapping": {
+                    "start": 690,
+                    "length": 103,
+                    "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      22,
+                      23,
+                      24
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Governance",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1059,
+                        "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "MIN_GAS_LIMIT_LEFT()"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function Governance.MIN_GAS_LIMIT_LEFT() (cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#22-24) is not in mixedCase\n",
+              "markdown": "Function [Governance.MIN_GAS_LIMIT_LEFT()](cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L22-L24) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L22-L24",
+              "id": "5a5d491e4abb31b5104e9dc65280515b0047037a48905c790611a2b1dcffff80",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_MIN_GAS_LIMIT_LEFT",
+                  "source_mapping": {
+                    "start": 641,
+                    "length": 43,
+                    "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      21
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 48
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Governance",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1059,
+                        "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable Governance._MIN_GAS_LIMIT_LEFT (cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#21) is not in mixedCase\n",
+              "markdown": "Variable [Governance._MIN_GAS_LIMIT_LEFT](cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L21) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L21",
+              "id": "9ee86dcdd6efc6eaa9db34086a009feea27e27daceee368081ee8ab72ffd41a0",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_TIME_TO_FINALISE",
+                  "source_mapping": {
+                    "start": 490,
+                    "length": 41,
+                    "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 46
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Governance",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1059,
+                        "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable Governance._TIME_TO_FINALISE (cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#17) is not in mixedCase\n",
+              "markdown": "Variable [Governance._TIME_TO_FINALISE](cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L17) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L17",
+              "id": "a64533cbeba54f3b7379ad6187ab356fb5b75322f02e29a520bd4f7c4a88b51e",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "MAX_TXS_PER_BATCH",
+                  "source_mapping": {
+                    "start": 842,
+                    "length": 101,
+                    "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      26,
+                      27,
+                      28
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Governance",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1059,
+                        "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "MAX_TXS_PER_BATCH()"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function Governance.MAX_TXS_PER_BATCH() (cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#26-28) is not in mixedCase\n",
+              "markdown": "Function [Governance.MAX_TXS_PER_BATCH()](cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L26-L28) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L26-L28",
+              "id": "b9fb9127d8be533d0282988f775c5e60a171a7111b975cc620b3dfd18be52c14",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_MAX_DEPOSIT_SUBTREE",
+                  "source_mapping": {
+                    "start": 335,
+                    "length": 39,
+                    "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 44
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Governance",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1059,
+                        "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable Governance._MAX_DEPOSIT_SUBTREE (cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#13) is not in mixedCase\n",
+              "markdown": "Variable [Governance._MAX_DEPOSIT_SUBTREE](cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L13) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L13",
+              "id": "ec2a63b598e3f46a435d4036092549ca4e5954c339541233c4b26214c870aa31",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "STAKE_AMOUNT",
+                  "source_mapping": {
+                    "start": 993,
+                    "length": 91,
+                    "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      30,
+                      31,
+                      32
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Governance",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1059,
+                        "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "STAKE_AMOUNT()"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function Governance.STAKE_AMOUNT() (cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#30-32) is not in mixedCase\n",
+              "markdown": "Function [Governance.STAKE_AMOUNT()](cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L30-L32) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L30-L32",
+              "id": "ffca0ff57b60ecffdf29600807e264d76ecf8bb3079d1a00418e989b173bfe63",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "slitherConstructorVariables",
+                  "source_mapping": {
+                    "start": 27,
+                    "length": 1059,
+                    "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Governance",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1059,
+                        "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "slitherConstructorVariables()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "_MIN_GAS_LIMIT_LEFT = 100000",
+                  "source_mapping": {
+                    "start": 641,
+                    "length": 43,
+                    "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      21
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 48
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "slitherConstructorVariables",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1059,
+                        "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Governance",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 1059,
+                            "filename_relative": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                            "filename_short": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "slitherConstructorVariables()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Governance.slitherConstructorVariables() (cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#4-33) uses literals with too many digits:\n\t- _MIN_GAS_LIMIT_LEFT = 100000 (cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#21)\n",
+              "markdown": "[Governance.slitherConstructorVariables()](cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L4-L33) uses literals with too many digits:\n\t- [_MIN_GAS_LIMIT_LEFT = 100000](cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L21)\n",
+              "first_markdown_element": "cleanSource/0xe182420fecbd462282d6514722d8ee862f95a9af.sol#L4-L33",
+              "id": "db002580067d4fbc86d5f2cc7bd3852c1150bae4caaf0faba943de3d3a3f3c8b",
+              "check": "too-many-digits",
+              "impact": "Informational",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

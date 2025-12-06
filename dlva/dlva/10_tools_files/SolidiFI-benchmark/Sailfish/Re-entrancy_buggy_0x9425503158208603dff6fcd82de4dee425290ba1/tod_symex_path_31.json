@@ -1,0 +1,801 @@
+{
+    "file": "Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1.sol",
+    "global_structs": [
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x2c3"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x2c4"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x2c5"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "gambler1",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "gambler2",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "bet1",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "bet2",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "lastblocknumberused",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "lastblockhashused",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "hashymchasherton",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "userBalance_re_ent19",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "fee",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x7"
+            ]
+        },
+        {
+            "name": "name",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0x6"
+            ]
+        },
+        {
+            "name": "gamblers",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x5"
+            ]
+        },
+        {
+            "name": "Game",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5",
+            "instructions": [
+                "gamblers = 0"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6",
+            "instructions": [
+                "name = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x7",
+            "instructions": [
+                "fee = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x28",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x29",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2a",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2c3",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2c4",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2c5",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "userBalance_re_ent19",
+            "addrs": [
+                "0x2",
+                "0x4"
+            ]
+        },
+        {
+            "name": "gamblers",
+            "addrs": [
+                "0x2",
+                "0x9",
+                "0xb"
+            ]
+        },
+        {
+            "name": "gambler1",
+            "addrs": [
+                "0x2",
+                "0xe",
+                "0x11"
+            ]
+        },
+        {
+            "name": "gambler2",
+            "addrs": [
+                "0x2",
+                "0x14",
+                "0x17"
+            ]
+        },
+        {
+            "name": "lastblocknumberused",
+            "addrs": [
+                "0x2",
+                "0x1a"
+            ]
+        },
+        {
+            "name": "lastblockhashused",
+            "addrs": [
+                "0x2",
+                "0x1d"
+            ]
+        },
+        {
+            "name": "hashymchasherton",
+            "addrs": [
+                "0x2",
+                "0x20"
+            ]
+        },
+        {
+            "name": "bet2",
+            "addrs": [
+                "0x2",
+                "0x23"
+            ]
+        },
+        {
+            "name": "bet1",
+            "addrs": [
+                "0x2",
+                "0x26"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4",
+            "instructions": [
+                "RTMP_32 = ! U",
+                "CONDITION RTMP_32 0x1 0x3"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3",
+            "instructions": [
+                "CLR_0 = msg.sender",
+                "CLR_1 = userBalance_re_ent19[CLR_0]",
+                "REF_9 = CLR_1",
+                "CLR_2 = msg.sender",
+                "userBalance_re_ent19[CLR_2] = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb",
+            "instructions": [
+                "RTMP_46 = gamblers == 2",
+                "CONDITION RTMP_46 0xc 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xc",
+            "instructions": [
+                "CLR_3 = msg.value",
+                "RTMP_47 = CLR_3 == 100000000000000000",
+                "CONDITION RTMP_47 0xa 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa",
+            "instructions": [
+                "gamblers = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11",
+            "instructions": [
+                "RTMP_48 = gamblers == 2",
+                "CONDITION RTMP_48 0x12 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x12",
+            "instructions": [
+                "CLR_4 = msg.value",
+                "RTMP_49 = CLR_4 == 100000000000000000",
+                "CONDITION RTMP_49 0x10 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10",
+            "instructions": [
+                "gambler1 = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x17",
+            "instructions": [
+                "RTMP_50 = gamblers == 2",
+                "CONDITION RTMP_50 0x18 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x18",
+            "instructions": [
+                "CLR_5 = msg.value",
+                "RTMP_51 = CLR_5 == 100000000000000000",
+                "CONDITION RTMP_51 0x16 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x16",
+            "instructions": [
+                "gambler2 = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a",
+            "instructions": [
+                "RTMP_40 = gamblers == 2",
+                "CONDITION RTMP_40 0x1b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b",
+            "instructions": [
+                "CLR_6 = msg.value",
+                "RTMP_41 = CLR_6 == 100000000000000000",
+                "CONDITION RTMP_41 0x19 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x19",
+            "instructions": [
+                "CLR_7 = block.number",
+                "TMP_39 = CLR_7 - 1",
+                "lastblocknumberused = TMP_39"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1d",
+            "instructions": [
+                "RTMP_42 = gamblers == 2",
+                "CONDITION RTMP_42 0x1e 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e",
+            "instructions": [
+                "CLR_8 = msg.value",
+                "RTMP_43 = CLR_8 == 100000000000000000",
+                "CONDITION RTMP_43 0x1c 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1c",
+            "instructions": [
+                "lastblockhashused = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x20",
+            "instructions": [
+                "RTMP_44 = gamblers == 2",
+                "CONDITION RTMP_44 0x21 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x21",
+            "instructions": [
+                "CLR_9 = msg.value",
+                "RTMP_45 = CLR_9 == 100000000000000000",
+                "CONDITION RTMP_45 0x1f 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1f",
+            "instructions": [
+                "hashymchasherton = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x23",
+            "instructions": [
+                "RTMP_52 = gamblers == 2",
+                "CONDITION RTMP_52 0x24 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x24",
+            "instructions": [
+                "CLR_10 = msg.value",
+                "RTMP_53 = CLR_10 == 100000000000000000",
+                "CONDITION RTMP_53 0x22 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x22",
+            "instructions": [
+                "CLR_11 = msg.value",
+                "bet2 = CLR_11"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x26",
+            "instructions": [
+                "RTMP_54 = gamblers == 1",
+                "CONDITION RTMP_54 0x27 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x27",
+            "instructions": [
+                "CLR_12 = msg.value",
+                "RTMP_55 = CLR_12 == 100000000000000000",
+                "CONDITION RTMP_55 0x25 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x25",
+            "instructions": [
+                "CLR_13 = msg.value",
+                "bet1 = CLR_13"
+            ]
+        }
+    ],
+    "root_addr": "0x2c6",
+    "dest_addrs": [
+        "0x2d3"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "bet",
+            "addr": "0x2c6",
+            "instructions": [
+                "NOP",
+                "wager = NEW_VAL integer",
+                "JUMP 0x2c7"
+            ]
+        },
+        {
+            "scope": "bet",
+            "addr": "0x2c7",
+            "instructions": [
+                "CLR_14 = msg.value",
+                "TMP_4 = CLR_14 == 100000000000000000",
+                "CONDITION TMP_4 0x2c7_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "bet",
+            "addr": "0x2c7_r0",
+            "instructions": [
+                "JUMP 0x2c8"
+            ]
+        },
+        {
+            "scope": "bet",
+            "addr": "0x2c8",
+            "instructions": [
+                "NOP",
+                "JUMP 0x2c9"
+            ]
+        },
+        {
+            "scope": "bet",
+            "addr": "0x2c9",
+            "instructions": [
+                "TMP_7 = gamblers",
+                "gamblers = gamblers + 1",
+                "TMP_8 = gamblers == 1",
+                "CONDITION TMP_8 0x2ca 0x2cb"
+            ]
+        },
+        {
+            "scope": "bet",
+            "addr": "0x2ca",
+            "instructions": [
+                "CLR_15 = msg.sender",
+                "gambler1 = CLR_15",
+                "CLR_16 = msg.value",
+                "bet1 = CLR_16",
+                "JUMP 0x2cc"
+            ]
+        },
+        {
+            "scope": "bet",
+            "addr": "0x2cc",
+            "instructions": [
+                "NOP",
+                "JUMP 0x2cd"
+            ]
+        },
+        {
+            "scope": "bet",
+            "addr": "0x2cd",
+            "instructions": [
+                "TMP_9 = gamblers == 2",
+                "CONDITION TMP_9 0x2ce 0x2cb"
+            ]
+        },
+        {
+            "scope": "bet",
+            "addr": "0x2ce",
+            "instructions": [
+                "CLR_17 = msg.sender",
+                "gambler2 = CLR_17",
+                "CLR_18 = msg.value",
+                "bet2 = CLR_18",
+                "JUMP 0x2cf"
+            ]
+        },
+        {
+            "scope": "bet",
+            "addr": "0x2cf",
+            "instructions": [
+                "NOP",
+                "JUMP 0x2d0"
+            ]
+        },
+        {
+            "scope": "bet",
+            "addr": "0x2d0",
+            "instructions": [
+                "TMP_10 = gamblers == 2",
+                "CONDITION TMP_10 0x2d1 0x2cb"
+            ]
+        },
+        {
+            "scope": "bet",
+            "addr": "0x2d2",
+            "instructions": [
+                "hashymchasherton = TMP_14",
+                "TMP_15 = hashymchasherton % 2",
+                "TMP_16 = TMP_15 == 0",
+                "CONDITION TMP_16 0x2d3 0x2cb"
+            ]
+        },
+        {
+            "scope": "bet",
+            "addr": "0x2d3",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "bet",
+            "addr": "0x2d4",
+            "instructions": [
+                "NOP",
+                "JUMP 0x2d5"
+            ]
+        },
+        {
+            "scope": "bet",
+            "addr": "0x2d5",
+            "instructions": [
+                "CLR_19 = block.difficulty",
+                "TMP_26 = CALL1 sha3 CLR_19",
+                "TMP_27 = NEW_VAL unknown",
+                "TMP_31 = TMP_27",
+                "JUMP 0x2d6"
+            ]
+        },
+        {
+            "scope": "bet",
+            "addr": "0x2d1",
+            "instructions": [
+                "CLR_20 = block.number",
+                "TMP_11 = CLR_20 - 1",
+                "lastblocknumberused = TMP_11",
+                "TMP_12 = CALL1 blockhash lastblocknumberused",
+                "lastblockhashused = TMP_12",
+                "TMP_13 = NEW_VAL unknown",
+                "wager = TMP_13",
+                "JUMP 0x2d4"
+            ]
+        },
+        {
+            "scope": "bet",
+            "addr": "0x2d6",
+            "instructions": [
+                "TMP_14 = TMP_31",
+                "JUMP 0x2d2"
+            ]
+        },
+        {
+            "scope": "bet",
+            "addr": "0x2cb",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

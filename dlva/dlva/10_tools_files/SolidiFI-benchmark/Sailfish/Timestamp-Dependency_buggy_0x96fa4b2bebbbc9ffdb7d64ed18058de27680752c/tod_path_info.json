@@ -1,0 +1,44 @@
+{
+    "tod_symex_path_1.json": {
+        "file_name": "",
+        "from_function": "Answer",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 52\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 54\nCall context: \nTrue\nREF_1 -> BALANCE this\nTransfer dest:msg.sender value:REF_1\""
+        ],
+        "executable_instructions": 30,
+        "state_variable": "responseHash",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_2.json": {
+        "file_name": "",
+        "from_function": "Answer",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 57\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 59\nCall context: \nTrue\nREF_1 -> BALANCE this\nTransfer dest:msg.sender value:REF_1\""
+        ],
+        "executable_instructions": 30,
+        "state_variable": "responseHash",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_3.json": {
+        "file_name": "",
+        "from_function": "StopGame",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 62\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 64\nCall context: \nTrue\nREF_3 -> BALANCE this\nTransfer dest:msg.sender value:REF_3\""
+        ],
+        "executable_instructions": 25,
+        "state_variable": "questionSender",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    }
+}

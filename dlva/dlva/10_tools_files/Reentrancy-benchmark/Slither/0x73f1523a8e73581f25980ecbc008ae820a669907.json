@@ -1,0 +1,551 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 31 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m5\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 31 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m5\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "2f58511bf5d851f0ed9c845afeb586e3b70a2ebdbc637e448b4f50b7e673fab4",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "Disteth",
+                "source_mapping": {
+                  "start": 462,
+                  "length": 219,
+                  "filename_relative": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                  "filename_short": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "Disteth",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 4,
+                  "features": [
+                    "Receive ETH",
+                    "Send ETH"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 31,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 1,
+            "informational_issues": 5,
+            "low_issues": 1,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "distribute",
+                  "source_mapping": {
+                    "start": 494,
+                    "length": 160,
+                    "filename_relative": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "filename_short": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      25,
+                      26,
+                      27,
+                      28,
+                      29
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Disteth",
+                      "source_mapping": {
+                        "start": 462,
+                        "length": 219,
+                        "filename_relative": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                        "filename_short": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "distribute(address[],uint256[])"
+                  }
+                }
+              ],
+              "description": "distribute(address[],uint256[]) should be declared external:\n\t- Disteth.distribute(address[],uint256[]) (cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#25-29)\n",
+              "markdown": "distribute(address[],uint256[]) should be declared external:\n\t- [Disteth.distribute(address[],uint256[])](cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#L25-L29)\n",
+              "first_markdown_element": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#L25-L29",
+              "id": "884708c7a92321d08bcc681588145bc289509a306eea5e1560de2c4b0a0d35c3",
+              "check": "external-function",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "node",
+                  "name": "",
+                  "source_mapping": {
+                    "start": 638,
+                    "length": 5,
+                    "filename_relative": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "filename_short": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      27
+                    ],
+                    "starting_column": 37,
+                    "ending_column": 42
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "distribute",
+                      "source_mapping": {
+                        "start": 494,
+                        "length": 160,
+                        "filename_relative": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                        "filename_short": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          25,
+                          26,
+                          27,
+                          28,
+                          29
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Disteth",
+                          "source_mapping": {
+                            "start": 462,
+                            "length": 219,
+                            "filename_relative": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                            "filename_short": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "distribute(address[],uint256[])"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Deprecated standard detected THROW (cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#27):\n\t- Usage of \"throw\" should be replaced with \"revert()\"\n",
+              "markdown": "Deprecated standard detected [THROW](cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#L27):\n\t- Usage of \"throw\" should be replaced with \"revert()\"\n",
+              "first_markdown_element": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#L27",
+              "id": "75ecd2342fab3ad25424c6c78c892a51eb4f35b74643b230d77b319dfad82718",
+              "check": "deprecated-standards",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.25 is not recommended for deployment\n",
+              "markdown": "solc-0.4.25 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "4d64003d70a62b1c6963f871e841b6cbd633d07d95554e1a50e0f25d9b71ebb3",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.25",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "filename_short": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".25"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.25 (cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.25](cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#L1",
+              "id": "dedae421fc4beeac77eff5a255cfcf23cbc683836e47dac66f254ec787e7564f",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_addrs",
+                  "source_mapping": {
+                    "start": 514,
+                    "length": 16,
+                    "filename_relative": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "filename_short": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      25
+                    ],
+                    "starting_column": 23,
+                    "ending_column": 39
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "distribute",
+                      "source_mapping": {
+                        "start": 494,
+                        "length": 160,
+                        "filename_relative": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                        "filename_short": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          25,
+                          26,
+                          27,
+                          28,
+                          29
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Disteth",
+                          "source_mapping": {
+                            "start": 462,
+                            "length": 219,
+                            "filename_relative": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                            "filename_short": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "distribute(address[],uint256[])"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Disteth.distribute(address[],uint256[])._addrs (cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#25) is not in mixedCase\n",
+              "markdown": "Parameter [Disteth.distribute(address[],uint256[])._addrs](cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#L25) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#L25",
+              "id": "088d3049b445329b846f16df5c2f942294affec6c4dd9a534896a5d72e77b275",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_bals",
+                  "source_mapping": {
+                    "start": 532,
+                    "length": 12,
+                    "filename_relative": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "filename_short": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      25
+                    ],
+                    "starting_column": 41,
+                    "ending_column": 53
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "distribute",
+                      "source_mapping": {
+                        "start": 494,
+                        "length": 160,
+                        "filename_relative": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                        "filename_short": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          25,
+                          26,
+                          27,
+                          28,
+                          29
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Disteth",
+                          "source_mapping": {
+                            "start": 462,
+                            "length": 219,
+                            "filename_relative": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                            "filename_short": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "distribute(address[],uint256[])"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Disteth.distribute(address[],uint256[])._bals (cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#25) is not in mixedCase\n",
+              "markdown": "Parameter [Disteth.distribute(address[],uint256[])._bals](cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#L25) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#L25",
+              "id": "9b197004b80f161639d5c8409fb93be94054a810c6ad59d2f02abd4ed3435ae4",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "distribute",
+                  "source_mapping": {
+                    "start": 494,
+                    "length": 160,
+                    "filename_relative": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "filename_short": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      25,
+                      26,
+                      27,
+                      28,
+                      29
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Disteth",
+                      "source_mapping": {
+                        "start": 462,
+                        "length": 219,
+                        "filename_relative": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                        "filename_short": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "distribute(address[],uint256[])"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "! _addrs[i].send(_bals[i])",
+                  "source_mapping": {
+                    "start": 611,
+                    "length": 25,
+                    "filename_relative": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "filename_short": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      27
+                    ],
+                    "starting_column": 10,
+                    "ending_column": 35
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "distribute",
+                      "source_mapping": {
+                        "start": 494,
+                        "length": 160,
+                        "filename_relative": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                        "filename_short": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          25,
+                          26,
+                          27,
+                          28,
+                          29
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Disteth",
+                          "source_mapping": {
+                            "start": 462,
+                            "length": 219,
+                            "filename_relative": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                            "filename_short": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "distribute(address[],uint256[])"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Disteth.distribute(address[],uint256[]) (cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#25-29) has external calls inside a loop: ! _addrs[i].send(_bals[i]) (cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#27)\n",
+              "markdown": "[Disteth.distribute(address[],uint256[])](cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#L25-L29) has external calls inside a loop: [! _addrs[i].send(_bals[i])](cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#L27)\n",
+              "first_markdown_element": "cleanSource/0x73f1523a8e73581f25980ecbc008ae820a669907.sol#L25-L29",
+              "id": "cd16ed8ea0a41d56559dae4d34f7f9584d1a5e96ead95e11227f1daa1c001ca1",
+              "check": "calls-loop",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

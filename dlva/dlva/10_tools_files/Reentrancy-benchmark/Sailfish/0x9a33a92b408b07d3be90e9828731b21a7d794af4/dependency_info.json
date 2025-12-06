@@ -1,0 +1,22 @@
+{
+    "0x9a33a92b408b07d3be90e9828731b21a7d794af4.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "registerProxy",
+                "registerProxy"
+            ],
+            "from_function": "registerProxy",
+            "to_function": "registerProxy",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 122\nFunction: registerProxy\nNode: \nEXPRESSION require(bool)(proxies[msg.sender] == address(0))\nIRS: \nTMP_58 = SOLIDITY_CALL require(bool)(TMP_57)\"",
+                        "\"BlockID: 70\nFunction: registerProxy\nNode: \nEXPRESSION proxies[msg.sender] = proxy\nIRS: \nREF_17 := proxy\""
+                    ],
+                    "state_variable": "proxies"
+                }
+            ]
+        }
+    ]
+}

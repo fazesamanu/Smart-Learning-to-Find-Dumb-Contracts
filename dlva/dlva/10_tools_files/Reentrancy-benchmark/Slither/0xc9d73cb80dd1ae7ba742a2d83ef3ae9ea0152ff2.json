@@ -1,0 +1,342 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 15 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 15 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "fcf66221f1fbcb9918e1ce87891be3b0a74d57e8c2822442ace538fecc6f14bc",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "TxnFee",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 393,
+                  "filename_relative": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                  "filename_short": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "TxnFee",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": [
+                    "Receive ETH",
+                    "Send ETH"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 15,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 3,
+            "low_issues": 1,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [],
+              "description": "solc-0.4.25 is not recommended for deployment\n",
+              "markdown": "solc-0.4.25 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "4d64003d70a62b1c6963f871e841b6cbd633d07d95554e1a50e0f25d9b71ebb3",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.25",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                    "filename_short": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".25"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.25 (cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.25](cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol#L1",
+              "id": "a45e0288dbd54a65d35111bfb283d650044db7461117d4594e46a5b3c2a10669",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "primary_wallet",
+                  "source_mapping": {
+                    "start": 74,
+                    "length": 29,
+                    "filename_relative": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                    "filename_short": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 34
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "TxnFee",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 393,
+                        "filename_relative": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                        "filename_short": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable TxnFee.primary_wallet (cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol#5) is not in mixedCase\n",
+              "markdown": "Variable [TxnFee.primary_wallet](cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol#L5) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol#L5",
+              "id": "85b7c5d097c9230c2ee057e6205153fc955a17945cfc273108614a9d1632a602",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "main_wallet",
+                  "source_mapping": {
+                    "start": 122,
+                    "length": 19,
+                    "filename_relative": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                    "filename_short": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 18,
+                    "ending_column": 37
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "constructor",
+                      "source_mapping": {
+                        "start": 109,
+                        "length": 114,
+                        "filename_relative": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                        "filename_short": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6,
+                          7,
+                          8,
+                          9
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "TxnFee",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 393,
+                            "filename_relative": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                            "filename_short": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "constructor(address)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "primary_wallet = main_wallet",
+                  "source_mapping": {
+                    "start": 188,
+                    "length": 28,
+                    "filename_relative": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                    "filename_short": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 37
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "constructor",
+                      "source_mapping": {
+                        "start": 109,
+                        "length": 114,
+                        "filename_relative": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                        "filename_short": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6,
+                          7,
+                          8,
+                          9
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "TxnFee",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 393,
+                            "filename_relative": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                            "filename_short": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "constructor(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "TxnFee.constructor(address).main_wallet (cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol#6) lacks a zero-check on :\n\t\t- primary_wallet = main_wallet (cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol#8)\n",
+              "markdown": "[TxnFee.constructor(address).main_wallet](cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol#L6) lacks a zero-check on :\n\t\t- [primary_wallet = main_wallet](cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol#L8)\n",
+              "first_markdown_element": "cleanSource/0xc9d73cb80dd1ae7ba742a2d83ef3ae9ea0152ff2.sol#L6",
+              "id": "321ec34bea2e5e6d5986290c59dd0ca4b1237a0cdf3f8523e2bfcf00d7fa9759",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

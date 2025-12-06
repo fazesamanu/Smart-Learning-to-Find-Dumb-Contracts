@@ -1,0 +1,22 @@
+{
+    "Overflow-Underflow_buggy_0x81865b1899a78d21265cd0ecd5ce2062ecac81d0.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw_intou21",
+                "increaseLockTime_intou21"
+            ],
+            "First_function": "increaseLockTime_intou21",
+            "Second_function": "withdraw_intou21",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: increaseLockTime_intou21\nNode: \nEXPRESSION lockTime_intou21[msg.sender] += _secondsToIncrease\nIRS: \nREF_4 = REF_4 + _secondsToIncrease\"",
+                        "\"BlockID: 12\nFunction: withdraw_intou21\nNode: \nEXPRESSION require(bool)(now > lockTime_intou21[msg.sender])\nIRS: \nTMP_6 = SOLIDITY_CALL require(bool)(TMP_5)\""
+                    ],
+                    "state_variable": "lockTime_intou21"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,265 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 33 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 33 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "5eca302f38591ccc0227b2e2062dceefa6b205ea7e0fdcd4aa420af9a88f7005",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "ERC20",
+                "source_mapping": {
+                  "start": 291,
+                  "length": 526,
+                  "filename_relative": "cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                  "filename_short": "cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "ERC20",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 8,
+                  "features": []
+                }
+              },
+              {
+                "type": "contract",
+                "name": "EnzymeAssetAdapter",
+                "source_mapping": {
+                  "start": 820,
+                  "length": 330,
+                  "filename_relative": "cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                  "filename_short": "cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "EnzymeAssetAdapter",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 5,
+                  "features": [
+                    "Tokens interaction"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 33,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 4,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.6.5",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                    "filename_short": "cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.6",
+                      ".5"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.6.5 (cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.6.5](cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol#L1",
+              "id": "8f6af5eddfb2e0b24c92056883a11cb8037b38389e26f30623c9f9ea2178420c",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.6.5 is not recommended for deployment\n",
+              "markdown": "solc-0.6.5 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "9886f0142432896cffa3477d9e656b3ba5a2bb573a8e07322b7577bcdda7f4c9",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "tokenType",
+                  "source_mapping": {
+                    "start": 932,
+                    "length": 57,
+                    "filename_relative": "cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                    "filename_short": "cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      27
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 62
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "EnzymeAssetAdapter",
+                      "source_mapping": {
+                        "start": 820,
+                        "length": 330,
+                        "filename_relative": "cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                        "filename_short": "cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable_constant",
+                    "convention": "UPPER_CASE_WITH_UNDERSCORES"
+                  }
+                }
+              ],
+              "description": "Constant EnzymeAssetAdapter.tokenType (cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol#27) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "markdown": "Constant [EnzymeAssetAdapter.tokenType](cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol#L27) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "first_markdown_element": "cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol#L27",
+              "id": "06038d30ba6de4774c95486e8e6a7fe8614259e11cf4bcaae8da9011cac65b78",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "adapterType",
+                  "source_mapping": {
+                    "start": 873,
+                    "length": 53,
+                    "filename_relative": "cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                    "filename_short": "cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      26
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 58
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "EnzymeAssetAdapter",
+                      "source_mapping": {
+                        "start": 820,
+                        "length": 330,
+                        "filename_relative": "cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                        "filename_short": "cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable_constant",
+                    "convention": "UPPER_CASE_WITH_UNDERSCORES"
+                  }
+                }
+              ],
+              "description": "Constant EnzymeAssetAdapter.adapterType (cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol#26) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "markdown": "Constant [EnzymeAssetAdapter.adapterType](cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol#L26) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "first_markdown_element": "cleanSource/0x4fee0353e1c415f0f1b90881aff9566e0e23b694.sol#L26",
+              "id": "57458ee14dceab3ed3beb9403725bcabe99e97a8392362efbaf58c8cba151eca",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

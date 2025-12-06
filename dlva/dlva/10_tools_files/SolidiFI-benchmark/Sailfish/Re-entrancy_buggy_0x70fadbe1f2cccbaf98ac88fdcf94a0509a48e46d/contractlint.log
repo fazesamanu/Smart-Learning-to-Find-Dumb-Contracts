@@ -1,0 +1,70 @@
+[INFO] | 2023-06-04 02:28:21 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Analysis started at: 2023-06-04 02:28:21 PM
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Version constraints: ['^0.4.26']
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | solc version: v0.4.26
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Callgraph generation started!
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Callgraph generation finished!
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Interprocedural CFG generation started!
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Interprocedural CFG generation finished!
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Storage dependency graph generation started!
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Storage dependency graph generation finished!
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Value Range Analysis started
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Generating return summary for receiveApproval
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Return summary generated for receiveApproval
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | State variable assignement do not exist
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Processed function receiveApproval
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Generating return summary for withdrawFunds_re_ent10
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Return summary generated for withdrawFunds_re_ent10
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Range graph generated
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Processed function withdrawFunds_re_ent10
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Generating return summary for GL_ERC20
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Return summary generated for GL_ERC20
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Range graph generated
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Processed function GL_ERC20
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Generating return summary for _transfer
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Return summary generated for _transfer
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Range graph generated
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Processed function _transfer
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Generating return summary for approve
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Return summary generated for approve
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Range graph generated
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Processed function approve
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Generating return summary for burn
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Return summary generated for burn
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Range graph generated
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Processed function burn
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Generating return summary for burnFrom
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Return summary generated for burnFrom
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Range graph generated
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Processed function burnFrom
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Generating return summary for slitherConstructorVariables
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Return summary generated for slitherConstructorVariables
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Range graph generated
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Processed function slitherConstructorVariables
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Generating return summary for approveAndCall
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Return summary generated for approveAndCall
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Range graph generated
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Processed function approveAndCall
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Generating return summary for transfer
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Return summary generated for transfer
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Range graph generated
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Processed function transfer
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Generating return summary for transferFrom
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Return summary generated for transferFrom
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Range graph generated
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Processed function transferFrom
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Value Range Analysis took 0.009620 seconds
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Value Range Analysis finished
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Storage dependency graph compostion started!
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Storage dependency graph compostion finished!
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Dependency detection started!
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | DAO dependency detected in file Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d.sol in contract GL_ERC20 in by composing functions withdrawFunds_re_ent10 and withdrawFunds_re_ent10
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | TOD dependency detected in file Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d.sol in contract GL_ERC20 in by composing functions withdrawFunds_re_ent10 and withdrawFunds_re_ent10
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Dependency detection finished!
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Static Analysis took 0.615485 seconds
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Dependency exists
+[INFO] | 2023-06-04 02:28:22 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Invoking symbolic executor!
+[INFO] | 2023-06-04 02:28:25 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Symbolic execution took 2.688403 seconds
+[INFO] | 2023-06-04 02:28:25 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Symbolic execution finished!
+[INFO] | 2023-06-04 02:28:25 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Analysis finished!
+[INFO] | 2023-06-04 02:28:25 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Analysis took 3.305078 seconds
+[INFO] | 2023-06-04 02:28:25 PM | analyzer.Re-entrancy_buggy_0x70fadbe1f2cccbaf98ac88fdcf94a0509a48e46d | Analysis finished at: 2023-06-04 02:28:25 PM

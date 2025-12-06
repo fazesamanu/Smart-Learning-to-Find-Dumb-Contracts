@@ -1,0 +1,115 @@
+{
+    "reentrancy_bonus.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "getFirstWithdrawalBonus",
+                "getFirstWithdrawalBonus"
+            ],
+            "from_function": "getFirstWithdrawalBonus",
+            "to_function": "getFirstWithdrawalBonus",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: getFirstWithdrawalBonus\nNode: \nEXPRESSION require(bool)(! claimedBonus[recipient])\nIRS: \nTMP_4 = SOLIDITY_CALL require(bool)(TMP_3)\"",
+                        "\"BlockID: 7\nFunction: getFirstWithdrawalBonus\nNode: \nEXPRESSION claimedBonus[recipient] = true\nIRS: \nREF_6 := true\""
+                    ],
+                    "state_variable": "claimedBonus"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawReward",
+                "withdrawReward"
+            ],
+            "First_function": "withdrawReward",
+            "Second_function": "withdrawReward",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: withdrawReward\nNode: \nEXPRESSION rewardsForA[recipient] = 0\nIRS: \nREF_1 := 0\"",
+                        "\"BlockID: 3\nFunction: withdrawReward\nNode: \nEXPRESSION (success) = recipient.call.value(amountToWithdraw)()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[''] value:amountToWithdraw \""
+                    ],
+                    "state_variable": "rewardsForA"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawReward",
+                "getFirstWithdrawalBonus"
+            ],
+            "First_function": "getFirstWithdrawalBonus",
+            "Second_function": "withdrawReward",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: withdrawReward\nNode: \nEXPRESSION rewardsForA[recipient] = 0\nIRS: \nREF_1 := 0\"",
+                        "\"BlockID: 3\nFunction: withdrawReward\nNode: \nEXPRESSION (success) = recipient.call.value(amountToWithdraw)()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[''] value:amountToWithdraw \""
+                    ],
+                    "state_variable": "rewardsForA"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 11\nFunction: getFirstWithdrawalBonus\nNode: \nEXPRESSION rewardsForA[recipient] += 100\nIRS: \nREF_5 = REF_5 + 100\"",
+                        "\"BlockID: 3\nFunction: withdrawReward\nNode: \nEXPRESSION (success) = recipient.call.value(amountToWithdraw)()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[''] value:amountToWithdraw \""
+                    ],
+                    "state_variable": "rewardsForA"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getFirstWithdrawalBonus",
+                "withdrawReward"
+            ],
+            "First_function": "withdrawReward",
+            "Second_function": "getFirstWithdrawalBonus",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 2\nFunction: withdrawReward\nNode: \nEXPRESSION rewardsForA[recipient] = 0\nIRS: \nREF_1 := 0\"",
+                        "\"BlockID: 9\nFunction: withdrawReward\nNode: \nEXPRESSION (success) = recipient.call.value(amountToWithdraw)()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[''] value:amountToWithdraw \""
+                    ],
+                    "state_variable": "rewardsForA"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getFirstWithdrawalBonus",
+                "getFirstWithdrawalBonus"
+            ],
+            "First_function": "getFirstWithdrawalBonus",
+            "Second_function": "getFirstWithdrawalBonus",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: getFirstWithdrawalBonus\nNode: \nEXPRESSION claimedBonus[recipient] = true\nIRS: \nREF_6 := true\"",
+                        "\"BlockID: 6\nFunction: getFirstWithdrawalBonus\nNode: \nEXPRESSION require(bool)(! claimedBonus[recipient])\nIRS: \nTMP_4 = SOLIDITY_CALL require(bool)(TMP_3)\""
+                    ],
+                    "state_variable": "claimedBonus"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: withdrawReward\nNode: \nEXPRESSION rewardsForA[recipient] = 0\nIRS: \nREF_1 := 0\"",
+                        "\"BlockID: 9\nFunction: withdrawReward\nNode: \nEXPRESSION (success) = recipient.call.value(amountToWithdraw)()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[''] value:amountToWithdraw \""
+                    ],
+                    "state_variable": "rewardsForA"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 33\nFunction: getFirstWithdrawalBonus\nNode: \nEXPRESSION rewardsForA[recipient] += 100\nIRS: \nREF_5 = REF_5 + 100\"",
+                        "\"BlockID: 9\nFunction: withdrawReward\nNode: \nEXPRESSION (success) = recipient.call.value(amountToWithdraw)()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[''] value:amountToWithdraw \""
+                    ],
+                    "state_variable": "rewardsForA"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,575 @@
+{
+    "file": "Re-entrancy_buggy_0x5eccf63c457ac210e8ed3275df05801972ad9e96.sol",
+    "global_structs": [
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x22"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x23"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x24"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "balanceOf",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "allowance",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer",
+                    "integer"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "balances_re_ent10",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "decimals",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xe"
+            ]
+        },
+        {
+            "name": "name",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0x6"
+            ]
+        },
+        {
+            "name": "symbol",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0x7"
+            ]
+        },
+        {
+            "name": "totalSupply",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x4"
+            ]
+        },
+        {
+            "name": "TravelToken",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4",
+            "instructions": [
+                "totalSupply = 100000000000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5",
+            "instructions": [
+                "CLR_0 = balanceOf[msg_sender]",
+                "REF_28 = CLR_0",
+                "balanceOf[msg_sender] = totalSupply"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6",
+            "instructions": [
+                "name = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x7",
+            "instructions": [
+                "symbol = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xe",
+            "instructions": [
+                "decimals = 18"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x14",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x15",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x16",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x22",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x23",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x24",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "balances_re_ent10",
+            "addrs": [
+                "0x2",
+                "0x3"
+            ]
+        },
+        {
+            "name": "allowance",
+            "addrs": [
+                "0x2",
+                "0x8",
+                "0xc",
+                "0x13"
+            ]
+        },
+        {
+            "name": "balanceOf",
+            "addrs": [
+                "0x2",
+                "0x9",
+                "0xb",
+                "0xf",
+                "0x10",
+                "0x11",
+                "0x12"
+            ]
+        },
+        {
+            "name": "totalSupply",
+            "addrs": [
+                "0x2",
+                "0xa",
+                "0xd"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3",
+            "instructions": [
+                "CLR_1 = msg.sender",
+                "balances_re_ent10[CLR_1] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x8",
+            "instructions": [
+                "CLR_2 = msg.sender",
+                "CLR_3 = allowance[CLR_2]",
+                "REF_29 = CLR_3",
+                "CLR_4 = REF_29[U]",
+                "REF_30 = CLR_4",
+                "REF_29[0] = U",
+                "REF_29[1] = U",
+                "REF_29[2] = U",
+                "REF_29[3] = U",
+                "REF_29[4] = U",
+                "REF_29[5] = U",
+                "REF_29[6] = U",
+                "REF_29[7] = U",
+                "REF_29[8] = U",
+                "REF_29[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x9",
+            "instructions": [
+                "CLR_5 = msg.sender",
+                "balanceOf[CLR_5] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa",
+            "instructions": [
+                "totalSupply = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb",
+            "instructions": [
+                "balanceOf[0] = U",
+                "balanceOf[1] = U",
+                "balanceOf[2] = U",
+                "balanceOf[3] = U",
+                "balanceOf[4] = U",
+                "balanceOf[5] = U",
+                "balanceOf[6] = U",
+                "balanceOf[7] = U",
+                "balanceOf[8] = U",
+                "balanceOf[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xc",
+            "instructions": [
+                "CLR_6 = msg.sender",
+                "CLR_7 = allowance[U]",
+                "CLR_7[CLR_6] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xd",
+            "instructions": [
+                "totalSupply = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf",
+            "instructions": [
+                "balanceOf[0] = U",
+                "balanceOf[1] = U",
+                "balanceOf[2] = U",
+                "balanceOf[3] = U",
+                "balanceOf[4] = U",
+                "balanceOf[5] = U",
+                "balanceOf[6] = U",
+                "balanceOf[7] = U",
+                "balanceOf[8] = U",
+                "balanceOf[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10",
+            "instructions": [
+                "balanceOf[0] = U",
+                "balanceOf[1] = U",
+                "balanceOf[2] = U",
+                "balanceOf[3] = U",
+                "balanceOf[4] = U",
+                "balanceOf[5] = U",
+                "balanceOf[6] = U",
+                "balanceOf[7] = U",
+                "balanceOf[8] = U",
+                "balanceOf[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11",
+            "instructions": [
+                "balanceOf[0] = U",
+                "balanceOf[1] = U",
+                "balanceOf[2] = U",
+                "balanceOf[3] = U",
+                "balanceOf[4] = U",
+                "balanceOf[5] = U",
+                "balanceOf[6] = U",
+                "balanceOf[7] = U",
+                "balanceOf[8] = U",
+                "balanceOf[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x12",
+            "instructions": [
+                "balanceOf[0] = U",
+                "balanceOf[1] = U",
+                "balanceOf[2] = U",
+                "balanceOf[3] = U",
+                "balanceOf[4] = U",
+                "balanceOf[5] = U",
+                "balanceOf[6] = U",
+                "balanceOf[7] = U",
+                "balanceOf[8] = U",
+                "balanceOf[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x13",
+            "instructions": [
+                "CLR_8 = msg.sender",
+                "CLR_9 = allowance[U]",
+                "CLR_9[CLR_8] = U"
+            ]
+        }
+    ],
+    "root_addr": "0x25",
+    "dest_addrs": [
+        "0x26"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "withdrawFunds_re_ent10",
+            "addr": "0x25",
+            "instructions": [
+                "NOP",
+                "_weiToWithdraw = NEW_VAL integer",
+                "JUMP 0x26"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent10",
+            "addr": "0x26",
+            "instructions": [
+                "CLR_10 = msg.sender",
+                "CLR_11 = balances_re_ent10[CLR_10]",
+                "REF_0 = CLR_11",
+                "TMP_0 = REF_0 >= _weiToWithdraw",
+                "CONDITION TMP_0 0x26_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent10",
+            "addr": "0x26_r0",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent10",
+            "addr": "0x27",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

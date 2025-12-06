@@ -1,0 +1,17 @@
+{
+    "tod_symex_path_1.json": {
+        "file_name": "",
+        "from_function": "withdraw_balances_re_ent29",
+        "to_function": "withdraw_balances_re_ent29",
+        "bug_type": "tod_amount_or_receiver",
+        "src_node": "\"BlockID: 111\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 117\nCall context: \nNone\nREF_2 -> balances_re_ent29[msg.sender]\nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_2 \""
+        ],
+        "executable_instructions": 36,
+        "state_variable": "balances_re_ent29",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    }
+}

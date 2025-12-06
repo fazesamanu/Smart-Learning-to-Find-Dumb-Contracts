@@ -1,0 +1,42 @@
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Analysis started at: 2023-05-29 03:28:04 AM
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Version constraints: ['^0.4.24']
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | solc version: v0.4.24
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Callgraph generation started!
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Callgraph generation finished!
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Interprocedural CFG generation started!
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Interprocedural CFG generation finished!
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Storage dependency graph generation started!
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Storage dependency graph generation finished!
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Value Range Analysis started
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Generating return summary for deposit
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Return summary generated for deposit
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Range graph generated
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Processed function deposit
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Generating return summary for hasEarnings
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Return summary generated for hasEarnings
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | State variable assignement do not exist
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Processed function hasEarnings
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Generating return summary for myEarnings
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Return summary generated for myEarnings
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | State variable assignement do not exist
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Processed function myEarnings
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Generating return summary for withdraw
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Return summary generated for withdraw
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Range graph generated
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Processed function withdraw
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Value Range Analysis took 0.004408 seconds
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Value Range Analysis finished
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Storage dependency graph compostion started!
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Storage dependency graph compostion finished!
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Dependency detection started!
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | TOD dependency detected in file 0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece.sol in contract demo1 in by composing functions withdraw and withdraw
+[INFO] | 2023-05-29 03:28:04 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | TOD dependency detected in file 0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece.sol in contract demo1 in by composing functions withdraw and deposit
+[INFO] | 2023-05-29 03:28:05 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Dependency detection finished!
+[INFO] | 2023-05-29 03:28:05 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Static Analysis took 0.668997 seconds
+[INFO] | 2023-05-29 03:28:05 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Dependency exists
+[INFO] | 2023-05-29 03:28:05 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Invoking symbolic executor!
+[INFO] | 2023-05-29 03:28:09 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Symbolic execution took 4.654913 seconds
+[INFO] | 2023-05-29 03:28:09 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Symbolic execution finished!
+[INFO] | 2023-05-29 03:28:09 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Analysis finished!
+[INFO] | 2023-05-29 03:28:09 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Analysis took 5.327701 seconds
+[INFO] | 2023-05-29 03:28:09 AM | analyzer.0x2b943c2a0df32de5edec2c0a3638a28bc4c84ece | Analysis finished at: 2023-05-29 03:28:09 AM

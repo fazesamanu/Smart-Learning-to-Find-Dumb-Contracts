@@ -1,0 +1,639 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 21 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 21 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "0381bf2cb2ed5f511b61fbec615f4ec4ffd35d5c9302ff699548a28857b5300a",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "FlightDelayAddressResolver",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 467,
+                  "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                  "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "FlightDelayAddressResolver",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 4,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 21,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 4,
+            "low_issues": 2,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [],
+              "description": "solc-0.4.15 is not recommended for deployment\n",
+              "markdown": "solc-0.4.15 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "24aab652ab7a85bb6a06efb47ac54d3ac570e6c1c8549ade915f170c764ee912",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.15",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".15"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.15 (cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.15](cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol#L1",
+              "id": "3dda5e50c745a4b3d820db4265c30f113730d3a58421ff3a29e7ba0470f0667c",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_owner",
+                  "source_mapping": {
+                    "start": 212,
+                    "length": 14,
+                    "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 26,
+                    "ending_column": 40
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "changeOwner",
+                      "source_mapping": {
+                        "start": 191,
+                        "length": 106,
+                        "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                        "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "FlightDelayAddressResolver",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 467,
+                            "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                            "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "changeOwner(address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter FlightDelayAddressResolver.changeOwner(address)._owner (cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol#10) is not in mixedCase\n",
+              "markdown": "Parameter [FlightDelayAddressResolver.changeOwner(address)._owner](cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol#L10) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol#L10",
+              "id": "1449cf3db78c8d115deae5c800f975d23a9e048275f3629d6805e4b364a645fe",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_addr",
+                  "source_mapping": {
+                    "start": 410,
+                    "length": 13,
+                    "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17
+                    ],
+                    "starting_column": 25,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "setAddress",
+                      "source_mapping": {
+                        "start": 390,
+                        "length": 102,
+                        "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                        "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          17,
+                          18,
+                          19,
+                          20
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "FlightDelayAddressResolver",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 467,
+                            "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                            "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "setAddress(address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter FlightDelayAddressResolver.setAddress(address)._addr (cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol#17) is not in mixedCase\n",
+              "markdown": "Parameter [FlightDelayAddressResolver.setAddress(address)._addr](cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol#L17) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol#L17",
+              "id": "f210fd3dc4479d857a14463ee56402685578fbcbab9cf0bab407e709644cd53a",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_addr",
+                  "source_mapping": {
+                    "start": 410,
+                    "length": 13,
+                    "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17
+                    ],
+                    "starting_column": 25,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "setAddress",
+                      "source_mapping": {
+                        "start": 390,
+                        "length": 102,
+                        "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                        "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          17,
+                          18,
+                          19,
+                          20
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "FlightDelayAddressResolver",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 467,
+                            "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                            "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "setAddress(address)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "addr = _addr",
+                  "source_mapping": {
+                    "start": 473,
+                    "length": 12,
+                    "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      19
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 21
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "setAddress",
+                      "source_mapping": {
+                        "start": 390,
+                        "length": 102,
+                        "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                        "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          17,
+                          18,
+                          19,
+                          20
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "FlightDelayAddressResolver",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 467,
+                            "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                            "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "setAddress(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "FlightDelayAddressResolver.setAddress(address)._addr (cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol#17) lacks a zero-check on :\n\t\t- addr = _addr (cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol#19)\n",
+              "markdown": "[FlightDelayAddressResolver.setAddress(address)._addr](cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol#L17) lacks a zero-check on :\n\t\t- [addr = _addr](cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol#L19)\n",
+              "first_markdown_element": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol#L17",
+              "id": "50dc540d4fcb0e9dd652482413f1612cc22c731a2f5a15372cbb383bdc3ab1d3",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_owner",
+                  "source_mapping": {
+                    "start": 212,
+                    "length": 14,
+                    "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 26,
+                    "ending_column": 40
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "changeOwner",
+                      "source_mapping": {
+                        "start": 191,
+                        "length": 106,
+                        "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                        "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "FlightDelayAddressResolver",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 467,
+                            "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                            "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "changeOwner(address)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "owner = _owner",
+                  "source_mapping": {
+                    "start": 276,
+                    "length": 14,
+                    "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 23
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "changeOwner",
+                      "source_mapping": {
+                        "start": 191,
+                        "length": 106,
+                        "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                        "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "FlightDelayAddressResolver",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 467,
+                            "filename_relative": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                            "filename_short": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "changeOwner(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "FlightDelayAddressResolver.changeOwner(address)._owner (cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol#10) lacks a zero-check on :\n\t\t- owner = _owner (cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol#12)\n",
+              "markdown": "[FlightDelayAddressResolver.changeOwner(address)._owner](cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol#L10) lacks a zero-check on :\n\t\t- [owner = _owner](cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol#L12)\n",
+              "first_markdown_element": "cleanSource/0x63338bb37bc3a0d55d2e9505f11e56c613b51494.sol#L10",
+              "id": "f35ff61964c8073066cff38c7eca8099816b44cac48fa49ac73fc5b642bc56ba",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

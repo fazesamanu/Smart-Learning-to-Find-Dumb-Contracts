@@ -1,0 +1,1017 @@
+{
+    "file": "0x903643251af408a3c5269c836b9a2a4a1f04d1cf.sol",
+    "global_structs": [
+        {
+            "name": "Escrow",
+            "fields": {
+                "exists": [
+                    "boolean"
+                ],
+                "seller": [
+                    "integer"
+                ],
+                "buyer": [
+                    "integer"
+                ],
+                "summ": [
+                    "integer"
+                ],
+                "buyerCanCancelAfter": [
+                    "integer"
+                ],
+                "buyerApprovedTheTransaction": [
+                    "boolean"
+                ],
+                "arbitratorStopTransaction": [
+                    "boolean"
+                ]
+            }
+        },
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x129"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x12a"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x12b"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ARBITRATOR_PERCENT",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x3"
+            ]
+        },
+        {
+            "name": "escrows",
+            "type": [
+                "array",
+                "integer",
+                "Escrow"
+            ],
+            "init": []
+        },
+        {
+            "name": "MinDeposit",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xc"
+            ]
+        },
+        {
+            "name": "owner",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x4"
+            ]
+        },
+        {
+            "name": "arbitrator",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x5"
+            ]
+        },
+        {
+            "name": "SysEscrow",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3",
+            "instructions": [
+                "ARBITRATOR_PERCENT = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4",
+            "instructions": [
+                "owner = msg_sender"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5",
+            "instructions": [
+                "arbitrator = msg_sender"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc",
+            "instructions": [
+                "MinDeposit = 600000000000000000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x11",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x12",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x13",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1e",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1f",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x20",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2d",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2e",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2f",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3c",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3d",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3e",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4d",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4e",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4f",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x61",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x62",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x63",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x75",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x76",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x77",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x89",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x8a",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x8b",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x9d",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x9e",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x9f",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb1",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb2",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb3",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc5",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc6",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc7",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xd9",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xda",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xdb",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xed",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xee",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xef",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xfc",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xfd",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xfe",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x10b",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x10c",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x10d",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x11a",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x11b",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x11c",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x129",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x12a",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x12b",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "escrows",
+            "addrs": [
+                "0x2",
+                "0x7",
+                "0xa"
+            ]
+        },
+        {
+            "name": "arbitrator",
+            "addrs": [
+                "0x2",
+                "0xe"
+            ]
+        },
+        {
+            "name": "owner",
+            "addrs": [
+                "0x2",
+                "0x10"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x7",
+            "instructions": [
+                "CLR_0 = msg.value",
+                "RTMP_52 = CLR_0 >= MinDeposit",
+                "CONDITION RTMP_52 0x8 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x8",
+            "instructions": [
+                "CLR_1 = escrows[U]",
+                "REF_42 = CLR_1",
+                "CLR_2 = REF_42.exists",
+                "REF_43 = CLR_2",
+                "RTMP_53 = ! REF_43",
+                "CONDITION RTMP_53 0x6 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x6",
+            "instructions": [
+                "CLR_3 = escrows[U]",
+                "REF_41 = CLR_3",
+                "escrows[0] = U",
+                "escrows[1] = U",
+                "escrows[2] = U",
+                "escrows[3] = U",
+                "escrows[4] = U",
+                "escrows[5] = U",
+                "escrows[6] = U",
+                "escrows[7] = U",
+                "escrows[8] = U",
+                "escrows[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa",
+            "instructions": [
+                "CLR_4 = escrows[U]",
+                "REF_46 = CLR_4",
+                "CLR_5 = REF_46.exists",
+                "REF_47 = CLR_5",
+                "RTMP_54 = REF_47 == true",
+                "CONDITION RTMP_54 0xb 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb",
+            "instructions": [
+                "CLR_6 = escrows[U]",
+                "REF_48 = CLR_6",
+                "CLR_7 = REF_48.buyer",
+                "REF_49 = CLR_7",
+                "CLR_8 = msg.sender",
+                "RTMP_55 = REF_49 == CLR_8",
+                "CONDITION RTMP_55 0x9 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x9",
+            "instructions": [
+                "CLR_9 = escrows[U]",
+                "REF_44 = CLR_9",
+                "CLR_10 = REF_44.buyerApprovedTheTransaction",
+                "REF_45 = CLR_10",
+                "REF_44.buyerApprovedTheTransaction = true"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xe",
+            "instructions": [
+                "CLR_11 = tx.origin",
+                "RTMP_56 = CLR_11 == owner",
+                "CONDITION RTMP_56 0xd 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xd",
+            "instructions": [
+                "arbitrator = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10",
+            "instructions": [
+                "CLR_12 = tx.origin",
+                "RTMP_57 = CLR_12 == owner",
+                "CONDITION RTMP_57 0xf 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf",
+            "instructions": [
+                "owner = U"
+            ]
+        }
+    ],
+    "root_addr": "0x130",
+    "dest_addrs": [
+        "0x139"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "cancelEscrow",
+            "addr": "0x12c",
+            "instructions": [
+                "TMP_11 = CALL1 keccak _tradeID",
+                "_tradeHash = TMP_11",
+                "CLR_13 = escrows[_tradeHash]",
+                "REF_3 = CLR_13",
+                "CLR_14 = REF_3.exists",
+                "REF_4 = CLR_14",
+                "CONDITION REF_4 0x12c_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "cancelEscrow",
+            "addr": "0x12c_r0",
+            "instructions": [
+                "JUMP 0x12d"
+            ]
+        },
+        {
+            "scope": "cancelEscrow",
+            "addr": "0x12e",
+            "instructions": [
+                "CLR_15 = escrows[_tradeHash]",
+                "REF_7 = CLR_15",
+                "CLR_16 = REF_7.summ",
+                "REF_8 = CLR_16",
+                "TMP_15 = REF_8 * ARBITRATOR_PERCENT",
+                "TMP_16 = TMP_15 \/ 100",
+                "arbitratorValue = TMP_16",
+                "CLR_17 = escrows[_tradeHash]",
+                "REF_9 = CLR_17",
+                "CLR_18 = REF_9.summ",
+                "REF_10 = CLR_18",
+                "TMP_17 = REF_10 - arbitratorValue",
+                "buyerValue = TMP_17",
+                "CLR_19 = escrows[_tradeHash]",
+                "REF_11 = CLR_19",
+                "CLR_20 = REF_11.buyer",
+                "REF_12 = CLR_20",
+                "ATTACK",
+                "TMP_19 = NEW_VAL boolean",
+                "JUMP 0x12f"
+            ]
+        },
+        {
+            "scope": "cancelEscrow",
+            "addr": "0x130",
+            "instructions": [
+                "NOP",
+                "_buyer = NEW_VAL integer",
+                "buyerValue = NEW_VAL integer",
+                "_tradeHash = NEW_VAL integer",
+                "_value = NEW_VAL integer",
+                "buyerReceivedMoney = NEW_VAL boolean",
+                "arbitratorReceivedMoney = NEW_VAL boolean",
+                "_tradeID = NEW_VAL integer",
+                "_seller = NEW_VAL integer",
+                "arbitratorValue = NEW_VAL integer",
+                "JUMP 0x12c"
+            ]
+        },
+        {
+            "scope": "cancelEscrow",
+            "addr": "0x12d",
+            "instructions": [
+                "CLR_21 = escrows[_tradeHash]",
+                "REF_5 = CLR_21",
+                "CLR_22 = REF_5.buyerCanCancelAfter",
+                "REF_6 = CLR_22",
+                "TMP_13 = REF_6 < now",
+                "CONDITION TMP_13 0x12d_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "cancelEscrow",
+            "addr": "0x12d_r0",
+            "instructions": [
+                "JUMP 0x12e"
+            ]
+        },
+        {
+            "scope": "releaseEscrow",
+            "addr": "0x12f",
+            "instructions": [
+                "NOP",
+                "_seller = NEW_VAL integer",
+                "sellerReceivedMoney = NEW_VAL boolean",
+                "_tradeHash = NEW_VAL integer",
+                "_tradeID = NEW_VAL integer",
+                "arbitratorReceivedMoney = NEW_VAL boolean",
+                "_buyer = NEW_VAL integer",
+                "arbitratorValue = NEW_VAL integer",
+                "_value = NEW_VAL integer",
+                "buyerValue = NEW_VAL integer",
+                "JUMP 0x131"
+            ]
+        },
+        {
+            "scope": "releaseEscrow",
+            "addr": "0x131",
+            "instructions": [
+                "TMP_27 = CALL1 keccak _tradeID",
+                "_tradeHash = TMP_27",
+                "CLR_23 = escrows[_tradeHash]",
+                "REF_24 = CLR_23",
+                "CLR_24 = REF_24.exists",
+                "REF_25 = CLR_24",
+                "CONDITION REF_25 0x131_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "releaseEscrow",
+            "addr": "0x131_r0",
+            "instructions": [
+                "JUMP 0x132"
+            ]
+        },
+        {
+            "scope": "releaseEscrow",
+            "addr": "0x132",
+            "instructions": [
+                "CLR_25 = escrows[_tradeHash]",
+                "REF_26 = CLR_25",
+                "CLR_26 = REF_26.buyerApprovedTheTransaction",
+                "REF_27 = CLR_26",
+                "CONDITION REF_27 0x132_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "releaseEscrow",
+            "addr": "0x132_r0",
+            "instructions": [
+                "JUMP 0x133"
+            ]
+        },
+        {
+            "scope": "releaseEscrow",
+            "addr": "0x133",
+            "instructions": [
+                "CLR_27 = escrows[_tradeHash]",
+                "REF_28 = CLR_27",
+                "CLR_28 = REF_28.summ",
+                "REF_29 = CLR_28",
+                "TMP_30 = REF_29 * ARBITRATOR_PERCENT",
+                "TMP_31 = TMP_30 \/ 100",
+                "arbitratorValue = TMP_31",
+                "CLR_29 = escrows[_tradeHash]",
+                "REF_30 = CLR_29",
+                "CLR_30 = REF_30.summ",
+                "REF_31 = CLR_30",
+                "TMP_32 = REF_31 - arbitratorValue",
+                "buyerValue = TMP_32",
+                "CLR_31 = escrows[_tradeHash]",
+                "REF_32 = CLR_31",
+                "CLR_32 = REF_32.seller",
+                "REF_33 = CLR_32",
+                "CLR_33 = this.balance",
+                "WRP_0 = CLR_33 - buyerValue",
+                "this.balance = WRP_0",
+                "TMP_34 = NEW_VAL boolean",
+                "JUMP 0x134"
+            ]
+        },
+        {
+            "scope": "releaseEscrow",
+            "addr": "0x134",
+            "instructions": [
+                "sellerReceivedMoney = TMP_34",
+                "CLR_34 = this.balance",
+                "WRP_1 = CLR_34 - arbitratorValue",
+                "this.balance = WRP_1",
+                "TMP_36 = NEW_VAL boolean",
+                "JUMP 0x135"
+            ]
+        },
+        {
+            "scope": "releaseEscrow",
+            "addr": "0x135",
+            "instructions": [
+                "arbitratorReceivedMoney = TMP_36",
+                "TMP_37 = sellerReceivedMoney && arbitratorReceivedMoney",
+                "CONDITION TMP_37 0x136 0x137"
+            ]
+        },
+        {
+            "scope": "releaseEscrow",
+            "addr": "0x136",
+            "instructions": [
+                "CLR_35 = escrows[_tradeHash]",
+                "REF_38 = CLR_35",
+                "NOP",
+                "JUMP 0x138"
+            ]
+        },
+        {
+            "scope": "releaseEscrow",
+            "addr": "0x138",
+            "instructions": [
+                "NOP",
+                "JUMP 0x139"
+            ]
+        },
+        {
+            "scope": "cancelEscrow",
+            "addr": "0x139",
+            "instructions": [
+                "buyerReceivedMoney = TMP_19",
+                "CLR_36 = this.balance",
+                "WRP_2 = CLR_36 - arbitratorValue",
+                "this.balance = WRP_2",
+                "TMP_21 = NEW_VAL boolean"
+            ]
+        },
+        {
+            "scope": "trap",
+            "addr": "0x137",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

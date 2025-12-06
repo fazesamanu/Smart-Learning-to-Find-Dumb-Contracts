@@ -1,0 +1,642 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 24 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 24 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "2f5ebe001b8e9bfe216c1b682c3c3d8b6b11ef932f209363dcda3b5c2c75b560",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "PasserBy",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 558,
+                  "filename_relative": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                  "filename_short": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "PasserBy",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 3,
+                  "features": [
+                    "Receive ETH",
+                    "Send ETH"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 24,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 4,
+            "low_issues": 1,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [],
+              "description": "solc-0.4.21 is not recommended for deployment\n",
+              "markdown": "solc-0.4.21 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "11c23ced8dbc94c44bd7809b5adfe4054fff8cd744f85723555d37f0b714b15f",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.21",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "filename_short": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".21"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.21 (cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.21](cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol#L1",
+              "id": "55f5e41e9515a70352d54bcca0e30f94af7e9180978de60daa71489d55ad24b8",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_newVault",
+                  "source_mapping": {
+                    "start": 298,
+                    "length": 17,
+                    "filename_relative": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "filename_short": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 24,
+                    "ending_column": 41
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "changeVault",
+                      "source_mapping": {
+                        "start": 277,
+                        "length": 85,
+                        "filename_relative": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                        "filename_short": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PasserBy",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 558,
+                            "filename_relative": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                            "filename_short": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "changeVault(address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter PasserBy.changeVault(address)._newVault (cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol#12) is not in mixedCase\n",
+              "markdown": "Parameter [PasserBy.changeVault(address)._newVault](cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol#L12) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol#L12",
+              "id": "d9828770a628d1ab85dcd29198b2e930a0de0303081300c55e742644316b74f0",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "fallback",
+                  "source_mapping": {
+                    "start": 365,
+                    "length": 149,
+                    "filename_relative": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "filename_short": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      15,
+                      16,
+                      17,
+                      18,
+                      19
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PasserBy",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 558,
+                        "filename_relative": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                        "filename_short": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "fallback()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "vault.transfer(msg.value)",
+                  "source_mapping": {
+                    "start": 428,
+                    "length": 25,
+                    "filename_relative": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "filename_short": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 30
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "fallback",
+                      "source_mapping": {
+                        "start": 365,
+                        "length": 149,
+                        "filename_relative": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                        "filename_short": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PasserBy",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 558,
+                            "filename_relative": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                            "filename_short": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "fallback()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "external_calls"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "PasserByTracker(msg.sender,vault,msg.value)",
+                  "source_mapping": {
+                    "start": 459,
+                    "length": 50,
+                    "filename_relative": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "filename_short": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      18
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 55
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "fallback",
+                      "source_mapping": {
+                        "start": 365,
+                        "length": 149,
+                        "filename_relative": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                        "filename_short": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PasserBy",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 558,
+                            "filename_relative": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                            "filename_short": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "fallback()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "event"
+                  }
+                }
+              ],
+              "description": "Reentrancy in PasserBy.fallback() (cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol#15-19):\n\tExternal calls:\n\t- vault.transfer(msg.value) (cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol#17)\n\tEvent emitted after the call(s):\n\t- PasserByTracker(msg.sender,vault,msg.value) (cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol#18)\n",
+              "markdown": "Reentrancy in [PasserBy.fallback()](cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol#L15-L19):\n\tExternal calls:\n\t- [vault.transfer(msg.value)](cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol#L17)\n\tEvent emitted after the call(s):\n\t- [PasserByTracker(msg.sender,vault,msg.value)](cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol#L18)\n",
+              "first_markdown_element": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol#L15-L19",
+              "id": "b61142fd8b271016fbebd78f23afcab37082aa0dddcd9fc5270e62b267232ef3",
+              "check": "reentrancy-unlimited-gas",
+              "impact": "Informational",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_newVault",
+                  "source_mapping": {
+                    "start": 298,
+                    "length": 17,
+                    "filename_relative": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "filename_short": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 24,
+                    "ending_column": 41
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "changeVault",
+                      "source_mapping": {
+                        "start": 277,
+                        "length": 85,
+                        "filename_relative": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                        "filename_short": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PasserBy",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 558,
+                            "filename_relative": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                            "filename_short": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "changeVault(address)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "vault = _newVault",
+                  "source_mapping": {
+                    "start": 340,
+                    "length": 17,
+                    "filename_relative": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "filename_short": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 22
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "changeVault",
+                      "source_mapping": {
+                        "start": 277,
+                        "length": 85,
+                        "filename_relative": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                        "filename_short": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PasserBy",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 558,
+                            "filename_relative": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                            "filename_short": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "changeVault(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "PasserBy.changeVault(address)._newVault (cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol#12) lacks a zero-check on :\n\t\t- vault = _newVault (cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol#13)\n",
+              "markdown": "[PasserBy.changeVault(address)._newVault](cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol#L12) lacks a zero-check on :\n\t\t- [vault = _newVault](cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol#L13)\n",
+              "first_markdown_element": "cleanSource/0x2c793ecf55c53a149a76e895dcb335da47e46526.sol#L12",
+              "id": "cd443aa643edb29547fefef6b4495ddd3a6e95c5b0dc14e1ef66290a77016677",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

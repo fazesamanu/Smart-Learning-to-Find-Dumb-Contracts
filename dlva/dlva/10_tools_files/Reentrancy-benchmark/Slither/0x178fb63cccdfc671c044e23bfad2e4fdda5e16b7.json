@@ -1,0 +1,466 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 11 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m7\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 11 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m7\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "2ffa793b86cf4953b3e45bb7909ff3aa99359867f34a2e93784d5fd41052709b",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "Stateholder",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 294,
+                  "filename_relative": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                  "filename_short": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "Stateholder",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 11,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 7,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [],
+              "description": "solc-0.8.2 is not recommended for deployment\n",
+              "markdown": "solc-0.8.2 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "d989ba8f728e7c2f755b30684e6f45fec617ae1d2844fc5c1574140f6882826e",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.8.2",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                    "filename_short": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.8",
+                      ".2"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.8.2 (cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.8.2](cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol#L1",
+              "id": "e7c3586d1fcd2d7764a7894dfbc64a2ff971bff6dff211ebb35428310571c33c",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "Values",
+                  "source_mapping": {
+                    "start": 52,
+                    "length": 57,
+                    "filename_relative": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                    "filename_short": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 62
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Stateholder",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 294,
+                        "filename_relative": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                        "filename_short": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable Stateholder.Values (cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol#4) is not in mixedCase\n",
+              "markdown": "Variable [Stateholder.Values](cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol#L4) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol#L4",
+              "id": "018572b6e64aee862e1ce5209eb1debb8d39b797e8680e28c434bf66f2b6fbbe",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "ID",
+                  "source_mapping": {
+                    "start": 233,
+                    "length": 7,
+                    "filename_relative": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                    "filename_short": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 23,
+                    "ending_column": 30
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "GetValue",
+                      "source_mapping": {
+                        "start": 215,
+                        "length": 102,
+                        "filename_relative": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                        "filename_short": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Stateholder",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 294,
+                            "filename_relative": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                            "filename_short": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "GetValue(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Stateholder.GetValue(uint256).ID (cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol#8) is not in mixedCase\n",
+              "markdown": "Parameter [Stateholder.GetValue(uint256).ID](cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol#L8) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol#L8",
+              "id": "705ceb624fbfac91d65d0b6b55a632667389024fd7cc7532f497f6362f7399af",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "GetValue",
+                  "source_mapping": {
+                    "start": 215,
+                    "length": 102,
+                    "filename_relative": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                    "filename_short": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Stateholder",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 294,
+                        "filename_relative": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                        "filename_short": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "GetValue(uint256)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function Stateholder.GetValue(uint256) (cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol#8-10) is not in mixedCase\n",
+              "markdown": "Function [Stateholder.GetValue(uint256)](cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol#L8-L10) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol#L8-L10",
+              "id": "8d119e2cce68bef4b417689aeb5e01b9e28a10084a6a5db1cc8fd93bea09de33",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "ID",
+                  "source_mapping": {
+                    "start": 145,
+                    "length": 7,
+                    "filename_relative": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                    "filename_short": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 35,
+                    "ending_column": 42
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "SetValue",
+                      "source_mapping": {
+                        "start": 115,
+                        "length": 95,
+                        "filename_relative": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                        "filename_short": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Stateholder",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 294,
+                            "filename_relative": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                            "filename_short": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "SetValue(uint256,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Stateholder.SetValue(uint256,uint256).ID (cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol#5) is not in mixedCase\n",
+              "markdown": "Parameter [Stateholder.SetValue(uint256,uint256).ID](cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol#L5) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol#L5",
+              "id": "9397244efa83e9801636ecd1e3889d3e5e942616f08479750d46a29b00bb3f62",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "SetValue",
+                  "source_mapping": {
+                    "start": 115,
+                    "length": 95,
+                    "filename_relative": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                    "filename_short": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5,
+                      6,
+                      7
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Stateholder",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 294,
+                        "filename_relative": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                        "filename_short": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "SetValue(uint256,uint256)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function Stateholder.SetValue(uint256,uint256) (cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol#5-7) is not in mixedCase\n",
+              "markdown": "Function [Stateholder.SetValue(uint256,uint256)](cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol#L5-L7) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x178fb63cccdfc671c044e23bfad2e4fdda5e16b7.sol#L5-L7",
+              "id": "fd39b7699b3fc797030f06523e03f86c04097c77198b87bcf6cbed1cc29904ca",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

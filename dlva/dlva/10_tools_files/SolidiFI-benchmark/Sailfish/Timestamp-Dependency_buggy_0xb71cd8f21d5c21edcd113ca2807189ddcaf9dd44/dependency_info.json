@@ -1,0 +1,408 @@
+{
+    "Timestamp-Dependency_buggy_0xb71cd8f21d5c21edcd113ca2807189ddcaf9dd44.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 67\nFunction: fallback\nNode: \nEXPRESSION lastBlock = block.number + blocksRemaining\nIRS: \nlastBlock := TMP_30\"",
+                        "\"BlockID: 17\nFunction: fallback\nNode: \nIF lastBlock > 0 && block.number > lastBlock\nIRS: \nCONDITION TMP_11\""
+                    ],
+                    "state_variable": "lastBlock"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 82\nFunction: fallback\nNode: \nEXPRESSION lastBlock = block.number + blocksRemaining\nIRS: \nlastBlock := TMP_30\"",
+                        "\"BlockID: 17\nFunction: fallback\nNode: \nIF lastBlock > 0 && block.number > lastBlock\nIRS: \nCONDITION TMP_11\""
+                    ],
+                    "state_variable": "lastBlock"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 78\nFunction: fallback\nNode: \nEXPRESSION highestBet = msg.value\nIRS: \nhighestBet := msg.value\"",
+                        "\"BlockID: 19\nFunction: fallback\nNode: \nIF msg.value < minBet\nIRS: \nCONDITION TMP_14\""
+                    ],
+                    "state_variable": "highestBet"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 97\nFunction: fallback\nNode: \nEXPRESSION lastBlock = block.number + blocksRemaining\nIRS: \nlastBlock := TMP_30\"",
+                        "\"BlockID: 17\nFunction: fallback\nNode: \nIF lastBlock > 0 && block.number > lastBlock\nIRS: \nCONDITION TMP_11\""
+                    ],
+                    "state_variable": "lastBlock"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 93\nFunction: fallback\nNode: \nEXPRESSION highestBet = msg.value\nIRS: \nhighestBet := msg.value\"",
+                        "\"BlockID: 19\nFunction: fallback\nNode: \nIF msg.value < minBet\nIRS: \nCONDITION TMP_14\""
+                    ],
+                    "state_variable": "highestBet"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 93\nFunction: fallback\nNode: \nEXPRESSION highestBet = msg.value\nIRS: \nhighestBet := msg.value\"",
+                        "\"BlockID: 21\nFunction: fallback\nNode: \nIF pot < 1000000000000000000\nIRS: \nCONDITION TMP_16\""
+                    ],
+                    "state_variable": "highestBet"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 93\nFunction: fallback\nNode: \nEXPRESSION highestBet = msg.value\nIRS: \nhighestBet := msg.value\"",
+                        "\"BlockID: 22\nFunction: fallback\nNode: \nIF msg.value > maxBet\nIRS: \nCONDITION TMP_20\""
+                    ],
+                    "state_variable": "highestBet"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 95\nFunction: fallback\nNode: \nEXPRESSION pot += highestBet\nIRS: \npot = pot + highestBet\"",
+                        "\"BlockID: 21\nFunction: fallback\nNode: \nIF pot < 1000000000000000000\nIRS: \nCONDITION TMP_16\""
+                    ],
+                    "state_variable": "pot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 95\nFunction: fallback\nNode: \nEXPRESSION pot += highestBet\nIRS: \npot = pot + highestBet\"",
+                        "\"BlockID: 22\nFunction: fallback\nNode: \nIF msg.value > maxBet\nIRS: \nCONDITION TMP_20\""
+                    ],
+                    "state_variable": "pot"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "rewardKoth"
+            ],
+            "First_function": "rewardKoth",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 43\nFunction: resetKoth\nNode: \nEXPRESSION lastBlock = 0\nIRS: \nlastBlock := 0\"",
+                        "\"BlockID: 17\nFunction: fallback\nNode: \nIF lastBlock > 0 && block.number > lastBlock\nIRS: \nCONDITION TMP_11\""
+                    ],
+                    "state_variable": "lastBlock"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "rewardKoth"
+            ],
+            "First_function": "rewardKoth",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 43\nFunction: resetKoth\nNode: \nEXPRESSION lastBlock = 0\nIRS: \nlastBlock := 0\"",
+                        "\"BlockID: 17\nFunction: fallback\nNode: \nIF lastBlock > 0 && block.number > lastBlock\nIRS: \nCONDITION TMP_11\""
+                    ],
+                    "state_variable": "lastBlock"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 40\nFunction: resetKoth\nNode: \nEXPRESSION highestBet = 0\nIRS: \nhighestBet := 0\"",
+                        "\"BlockID: 19\nFunction: fallback\nNode: \nIF msg.value < minBet\nIRS: \nCONDITION TMP_14\""
+                    ],
+                    "state_variable": "highestBet"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "rewardKoth"
+            ],
+            "First_function": "rewardKoth",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 43\nFunction: resetKoth\nNode: \nEXPRESSION lastBlock = 0\nIRS: \nlastBlock := 0\"",
+                        "\"BlockID: 17\nFunction: fallback\nNode: \nIF lastBlock > 0 && block.number > lastBlock\nIRS: \nCONDITION TMP_11\""
+                    ],
+                    "state_variable": "lastBlock"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 40\nFunction: resetKoth\nNode: \nEXPRESSION highestBet = 0\nIRS: \nhighestBet := 0\"",
+                        "\"BlockID: 19\nFunction: fallback\nNode: \nIF msg.value < minBet\nIRS: \nCONDITION TMP_14\""
+                    ],
+                    "state_variable": "highestBet"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 40\nFunction: resetKoth\nNode: \nEXPRESSION highestBet = 0\nIRS: \nhighestBet := 0\"",
+                        "\"BlockID: 21\nFunction: fallback\nNode: \nIF pot < 1000000000000000000\nIRS: \nCONDITION TMP_16\""
+                    ],
+                    "state_variable": "highestBet"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 40\nFunction: resetKoth\nNode: \nEXPRESSION highestBet = 0\nIRS: \nhighestBet := 0\"",
+                        "\"BlockID: 22\nFunction: fallback\nNode: \nIF msg.value > maxBet\nIRS: \nCONDITION TMP_20\""
+                    ],
+                    "state_variable": "highestBet"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 42\nFunction: resetKoth\nNode: \nEXPRESSION pot = minPot\nIRS: \npot := minPot\"",
+                        "\"BlockID: 21\nFunction: fallback\nNode: \nIF pot < 1000000000000000000\nIRS: \nCONDITION TMP_16\""
+                    ],
+                    "state_variable": "pot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 42\nFunction: resetKoth\nNode: \nEXPRESSION pot = minPot\nIRS: \npot := minPot\"",
+                        "\"BlockID: 22\nFunction: fallback\nNode: \nIF msg.value > maxBet\nIRS: \nCONDITION TMP_20\""
+                    ],
+                    "state_variable": "pot"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "rewardKoth",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "rewardKoth",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: fallback\nNode: \nEXPRESSION lastBlock = block.number + blocksRemaining\nIRS: \nlastBlock := TMP_30\"",
+                        "\"BlockID: 32\nFunction: rewardKoth\nNode: \nIF msg.sender == feeAddress && lastBlock > 0 && block.number > lastBlock\nIRS: \nCONDITION TMP_38\""
+                    ],
+                    "state_variable": "lastBlock"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: fallback\nNode: \nEXPRESSION pot += highestBet\nIRS: \npot = pot + highestBet\"",
+                        "\"BlockID: 35\nFunction: rewardKoth\nNode: \nEXPRESSION winner.transfer(netPot)\nIRS: \nTransfer dest:winner value:netPot\""
+                    ],
+                    "state_variable": "pot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: fallback\nNode: \nEXPRESSION koth = msg.sender\nIRS: \nkoth := msg.sender\"",
+                        "\"BlockID: 35\nFunction: rewardKoth\nNode: \nEXPRESSION winner.transfer(netPot)\nIRS: \nTransfer dest:winner value:netPot\""
+                    ],
+                    "state_variable": "koth"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: fallback\nNode: \nEXPRESSION highestBet = msg.value\nIRS: \nhighestBet := msg.value\"",
+                        "\"BlockID: 35\nFunction: rewardKoth\nNode: \nEXPRESSION winner.transfer(netPot)\nIRS: \nTransfer dest:winner value:netPot\""
+                    ],
+                    "state_variable": "highestBet"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "rewardKoth",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "rewardKoth",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: fallback\nNode: \nEXPRESSION lastBlock = block.number + blocksRemaining\nIRS: \nlastBlock := TMP_30\"",
+                        "\"BlockID: 32\nFunction: rewardKoth\nNode: \nIF msg.sender == feeAddress && lastBlock > 0 && block.number > lastBlock\nIRS: \nCONDITION TMP_38\""
+                    ],
+                    "state_variable": "lastBlock"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: fallback\nNode: \nEXPRESSION pot += highestBet\nIRS: \npot = pot + highestBet\"",
+                        "\"BlockID: 35\nFunction: rewardKoth\nNode: \nEXPRESSION winner.transfer(netPot)\nIRS: \nTransfer dest:winner value:netPot\""
+                    ],
+                    "state_variable": "pot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: fallback\nNode: \nEXPRESSION pot += highestBet\nIRS: \npot = pot + highestBet\"",
+                        "\"BlockID: 36\nFunction: rewardKoth\nNode: \nIF this.balance - fee >= minPot\nIRS: \nCONDITION TMP_45\""
+                    ],
+                    "state_variable": "pot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: fallback\nNode: \nEXPRESSION pot += highestBet\nIRS: \npot = pot + highestBet\"",
+                        "\"BlockID: 37\nFunction: rewardKoth\nNode: \nEXPRESSION feeAddress.transfer(fee)\nIRS: \nTransfer dest:feeAddress value:fee\""
+                    ],
+                    "state_variable": "pot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: fallback\nNode: \nEXPRESSION koth = msg.sender\nIRS: \nkoth := msg.sender\"",
+                        "\"BlockID: 35\nFunction: rewardKoth\nNode: \nEXPRESSION winner.transfer(netPot)\nIRS: \nTransfer dest:winner value:netPot\""
+                    ],
+                    "state_variable": "koth"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: fallback\nNode: \nEXPRESSION highestBet = msg.value\nIRS: \nhighestBet := msg.value\"",
+                        "\"BlockID: 35\nFunction: rewardKoth\nNode: \nEXPRESSION winner.transfer(netPot)\nIRS: \nTransfer dest:winner value:netPot\""
+                    ],
+                    "state_variable": "highestBet"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: fallback\nNode: \nEXPRESSION highestBet = msg.value\nIRS: \nhighestBet := msg.value\"",
+                        "\"BlockID: 36\nFunction: rewardKoth\nNode: \nIF this.balance - fee >= minPot\nIRS: \nCONDITION TMP_45\""
+                    ],
+                    "state_variable": "highestBet"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: fallback\nNode: \nEXPRESSION highestBet = msg.value\nIRS: \nhighestBet := msg.value\"",
+                        "\"BlockID: 37\nFunction: rewardKoth\nNode: \nEXPRESSION feeAddress.transfer(fee)\nIRS: \nTransfer dest:feeAddress value:fee\""
+                    ],
+                    "state_variable": "highestBet"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "rewardKoth",
+                "rewardKoth"
+            ],
+            "First_function": "rewardKoth",
+            "Second_function": "rewardKoth",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 111\nFunction: resetKoth\nNode: \nEXPRESSION lastBlock = 0\nIRS: \nlastBlock := 0\"",
+                        "\"BlockID: 32\nFunction: rewardKoth\nNode: \nIF msg.sender == feeAddress && lastBlock > 0 && block.number > lastBlock\nIRS: \nCONDITION TMP_38\""
+                    ],
+                    "state_variable": "lastBlock"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 110\nFunction: resetKoth\nNode: \nEXPRESSION pot = minPot\nIRS: \npot := minPot\"",
+                        "\"BlockID: 35\nFunction: rewardKoth\nNode: \nEXPRESSION winner.transfer(netPot)\nIRS: \nTransfer dest:winner value:netPot\""
+                    ],
+                    "state_variable": "pot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 109\nFunction: resetKoth\nNode: \nEXPRESSION koth = address(0)\nIRS: \nkoth := TMP_33\"",
+                        "\"BlockID: 35\nFunction: rewardKoth\nNode: \nEXPRESSION winner.transfer(netPot)\nIRS: \nTransfer dest:winner value:netPot\""
+                    ],
+                    "state_variable": "koth"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 108\nFunction: resetKoth\nNode: \nEXPRESSION highestBet = 0\nIRS: \nhighestBet := 0\"",
+                        "\"BlockID: 35\nFunction: rewardKoth\nNode: \nEXPRESSION winner.transfer(netPot)\nIRS: \nTransfer dest:winner value:netPot\""
+                    ],
+                    "state_variable": "highestBet"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "rewardKoth",
+                "rewardKoth"
+            ],
+            "First_function": "rewardKoth",
+            "Second_function": "rewardKoth",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 126\nFunction: resetKoth\nNode: \nEXPRESSION lastBlock = 0\nIRS: \nlastBlock := 0\"",
+                        "\"BlockID: 32\nFunction: rewardKoth\nNode: \nIF msg.sender == feeAddress && lastBlock > 0 && block.number > lastBlock\nIRS: \nCONDITION TMP_38\""
+                    ],
+                    "state_variable": "lastBlock"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 125\nFunction: resetKoth\nNode: \nEXPRESSION pot = minPot\nIRS: \npot := minPot\"",
+                        "\"BlockID: 35\nFunction: rewardKoth\nNode: \nEXPRESSION winner.transfer(netPot)\nIRS: \nTransfer dest:winner value:netPot\""
+                    ],
+                    "state_variable": "pot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 125\nFunction: resetKoth\nNode: \nEXPRESSION pot = minPot\nIRS: \npot := minPot\"",
+                        "\"BlockID: 36\nFunction: rewardKoth\nNode: \nIF this.balance - fee >= minPot\nIRS: \nCONDITION TMP_45\""
+                    ],
+                    "state_variable": "pot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 125\nFunction: resetKoth\nNode: \nEXPRESSION pot = minPot\nIRS: \npot := minPot\"",
+                        "\"BlockID: 37\nFunction: rewardKoth\nNode: \nEXPRESSION feeAddress.transfer(fee)\nIRS: \nTransfer dest:feeAddress value:fee\""
+                    ],
+                    "state_variable": "pot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 124\nFunction: resetKoth\nNode: \nEXPRESSION koth = address(0)\nIRS: \nkoth := TMP_33\"",
+                        "\"BlockID: 35\nFunction: rewardKoth\nNode: \nEXPRESSION winner.transfer(netPot)\nIRS: \nTransfer dest:winner value:netPot\""
+                    ],
+                    "state_variable": "koth"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 123\nFunction: resetKoth\nNode: \nEXPRESSION highestBet = 0\nIRS: \nhighestBet := 0\"",
+                        "\"BlockID: 35\nFunction: rewardKoth\nNode: \nEXPRESSION winner.transfer(netPot)\nIRS: \nTransfer dest:winner value:netPot\""
+                    ],
+                    "state_variable": "highestBet"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 123\nFunction: resetKoth\nNode: \nEXPRESSION highestBet = 0\nIRS: \nhighestBet := 0\"",
+                        "\"BlockID: 36\nFunction: rewardKoth\nNode: \nIF this.balance - fee >= minPot\nIRS: \nCONDITION TMP_45\""
+                    ],
+                    "state_variable": "highestBet"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 123\nFunction: resetKoth\nNode: \nEXPRESSION highestBet = 0\nIRS: \nhighestBet := 0\"",
+                        "\"BlockID: 37\nFunction: rewardKoth\nNode: \nEXPRESSION feeAddress.transfer(fee)\nIRS: \nTransfer dest:feeAddress value:fee\""
+                    ],
+                    "state_variable": "highestBet"
+                }
+            ]
+        }
+    ]
+}

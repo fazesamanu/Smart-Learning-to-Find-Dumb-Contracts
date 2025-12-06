@@ -1,0 +1,902 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 19 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 19 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\n",
+        "first_markdown_element": "",
+        "id": "6a1d03527ed19dab048b44dbdd9bab374bd5319fed814bae215880ba86bdcf58",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "EtherStore",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 660,
+                  "filename_relative": "cleanSource/etherstore.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                  "filename_short": "cleanSource/etherstore.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "EtherStore",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 3,
+                  "features": [
+                    "Receive ETH",
+                    "Send ETH"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 19,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 1,
+            "informational_issues": 4,
+            "low_issues": 1,
+            "medium_issues": 0,
+            "high_issues": 1
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "withdrawalLimit",
+                  "source_mapping": {
+                    "start": 53,
+                    "length": 40,
+                    "filename_relative": "cleanSource/etherstore.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                    "filename_short": "cleanSource/etherstore.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 45
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "EtherStore",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 660,
+                        "filename_relative": "cleanSource/etherstore.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                        "filename_short": "cleanSource/etherstore.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "EtherStore.withdrawalLimit (cleanSource/etherstore.sol#5) should be constant\n",
+              "markdown": "[EtherStore.withdrawalLimit](cleanSource/etherstore.sol#L5) should be constant\n",
+              "first_markdown_element": "cleanSource/etherstore.sol#L5",
+              "id": "835b8c55ba1d1c4720b25749b504753ac6301cdd1f1cf3eaa560e7b09500f154",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.26",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/etherstore.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                    "filename_short": "cleanSource/etherstore.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".26"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.26 (cleanSource/etherstore.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.26](cleanSource/etherstore.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/etherstore.sol#L1",
+              "id": "30c287cf7e2ad7a0946823a2bee519e652bcdd4c81a5774128e2df1f8ae4a906",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.26 is not recommended for deployment\n",
+              "markdown": "solc-0.4.26 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "e85e93c612cb109c115ab31accf43cd25c590bd8f9b6a43b662115b987f777c3",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "withdrawFunds",
+                  "source_mapping": {
+                    "start": 299,
+                    "length": 385,
+                    "filename_relative": "cleanSource/etherstore.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                    "filename_short": "cleanSource/etherstore.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "EtherStore",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 660,
+                        "filename_relative": "cleanSource/etherstore.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                        "filename_short": "cleanSource/etherstore.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "withdrawFunds(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "require(bool)(msg.sender.call.value(_weiToWithdraw)())",
+                  "source_mapping": {
+                    "start": 537,
+                    "length": 48,
+                    "filename_relative": "cleanSource/etherstore.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                    "filename_short": "cleanSource/etherstore.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      15
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 57
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdrawFunds",
+                      "source_mapping": {
+                        "start": 299,
+                        "length": 385,
+                        "filename_relative": "cleanSource/etherstore.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                        "filename_short": "cleanSource/etherstore.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EtherStore",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 660,
+                            "filename_relative": "cleanSource/etherstore.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                            "filename_short": "cleanSource/etherstore.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "withdrawFunds(uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Low level call in EtherStore.withdrawFunds(uint256) (cleanSource/etherstore.sol#11-18):\n\t- require(bool)(msg.sender.call.value(_weiToWithdraw)()) (cleanSource/etherstore.sol#15)\n",
+              "markdown": "Low level call in [EtherStore.withdrawFunds(uint256)](cleanSource/etherstore.sol#L11-L18):\n\t- [require(bool)(msg.sender.call.value(_weiToWithdraw)())](cleanSource/etherstore.sol#L15)\n",
+              "first_markdown_element": "cleanSource/etherstore.sol#L11-L18",
+              "id": "a923e285ec04973da321bd6535de207cac011ebb90d6caadcb51fd97da3658e1",
+              "check": "low-level-calls",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_weiToWithdraw",
+                  "source_mapping": {
+                    "start": 323,
+                    "length": 22,
+                    "filename_relative": "cleanSource/etherstore.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                    "filename_short": "cleanSource/etherstore.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11
+                    ],
+                    "starting_column": 29,
+                    "ending_column": 51
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdrawFunds",
+                      "source_mapping": {
+                        "start": 299,
+                        "length": 385,
+                        "filename_relative": "cleanSource/etherstore.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                        "filename_short": "cleanSource/etherstore.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EtherStore",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 660,
+                            "filename_relative": "cleanSource/etherstore.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                            "filename_short": "cleanSource/etherstore.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "withdrawFunds(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter EtherStore.withdrawFunds(uint256)._weiToWithdraw (cleanSource/etherstore.sol#11) is not in mixedCase\n",
+              "markdown": "Parameter [EtherStore.withdrawFunds(uint256)._weiToWithdraw](cleanSource/etherstore.sol#L11) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/etherstore.sol#L11",
+              "id": "c06bf6a774dd5bdf4384a132979c1d9255a2cdf61336e243d90ff7ee228bfc4e",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "withdrawFunds",
+                  "source_mapping": {
+                    "start": 299,
+                    "length": 385,
+                    "filename_relative": "cleanSource/etherstore.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                    "filename_short": "cleanSource/etherstore.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "EtherStore",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 660,
+                        "filename_relative": "cleanSource/etherstore.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                        "filename_short": "cleanSource/etherstore.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "withdrawFunds(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "require(bool)(now >= lastWithdrawTime[msg.sender] + 604800)",
+                  "source_mapping": {
+                    "start": 473,
+                    "length": 54,
+                    "filename_relative": "cleanSource/etherstore.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                    "filename_short": "cleanSource/etherstore.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      14
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 63
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdrawFunds",
+                      "source_mapping": {
+                        "start": 299,
+                        "length": 385,
+                        "filename_relative": "cleanSource/etherstore.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                        "filename_short": "cleanSource/etherstore.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EtherStore",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 660,
+                            "filename_relative": "cleanSource/etherstore.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                            "filename_short": "cleanSource/etherstore.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "withdrawFunds(uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "EtherStore.withdrawFunds(uint256) (cleanSource/etherstore.sol#11-18) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- require(bool)(now >= lastWithdrawTime[msg.sender] + 604800) (cleanSource/etherstore.sol#14)\n",
+              "markdown": "[EtherStore.withdrawFunds(uint256)](cleanSource/etherstore.sol#L11-L18) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [require(bool)(now >= lastWithdrawTime[msg.sender] + 604800)](cleanSource/etherstore.sol#L14)\n",
+              "first_markdown_element": "cleanSource/etherstore.sol#L11-L18",
+              "id": "2419be46ee47c16f8a56810597a1757adecc4f14b7c4843d6c09b420730106fb",
+              "check": "timestamp",
+              "impact": "Low",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "withdrawFunds",
+                  "source_mapping": {
+                    "start": 299,
+                    "length": 385,
+                    "filename_relative": "cleanSource/etherstore.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                    "filename_short": "cleanSource/etherstore.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "EtherStore",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 660,
+                        "filename_relative": "cleanSource/etherstore.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                        "filename_short": "cleanSource/etherstore.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "withdrawFunds(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "require(bool)(msg.sender.call.value(_weiToWithdraw)())",
+                  "source_mapping": {
+                    "start": 537,
+                    "length": 48,
+                    "filename_relative": "cleanSource/etherstore.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                    "filename_short": "cleanSource/etherstore.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      15
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 57
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdrawFunds",
+                      "source_mapping": {
+                        "start": 299,
+                        "length": 385,
+                        "filename_relative": "cleanSource/etherstore.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                        "filename_short": "cleanSource/etherstore.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EtherStore",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 660,
+                            "filename_relative": "cleanSource/etherstore.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                            "filename_short": "cleanSource/etherstore.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "withdrawFunds(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "external_calls"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "balances[msg.sender] -= _weiToWithdraw",
+                  "source_mapping": {
+                    "start": 595,
+                    "length": 38,
+                    "filename_relative": "cleanSource/etherstore.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                    "filename_short": "cleanSource/etherstore.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      16
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 47
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdrawFunds",
+                      "source_mapping": {
+                        "start": 299,
+                        "length": 385,
+                        "filename_relative": "cleanSource/etherstore.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                        "filename_short": "cleanSource/etherstore.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EtherStore",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 660,
+                            "filename_relative": "cleanSource/etherstore.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                            "filename_short": "cleanSource/etherstore.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "withdrawFunds(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "variables_written",
+                    "variable_name": "balances"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "lastWithdrawTime[msg.sender] = now",
+                  "source_mapping": {
+                    "start": 643,
+                    "length": 34,
+                    "filename_relative": "cleanSource/etherstore.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                    "filename_short": "cleanSource/etherstore.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 43
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "withdrawFunds",
+                      "source_mapping": {
+                        "start": 299,
+                        "length": 385,
+                        "filename_relative": "cleanSource/etherstore.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                        "filename_short": "cleanSource/etherstore.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EtherStore",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 660,
+                            "filename_relative": "cleanSource/etherstore.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/etherstore.sol",
+                            "filename_short": "cleanSource/etherstore.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "withdrawFunds(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "variables_written",
+                    "variable_name": "lastWithdrawTime"
+                  }
+                }
+              ],
+              "description": "Reentrancy in EtherStore.withdrawFunds(uint256) (cleanSource/etherstore.sol#11-18):\n\tExternal calls:\n\t- require(bool)(msg.sender.call.value(_weiToWithdraw)()) (cleanSource/etherstore.sol#15)\n\tState variables written after the call(s):\n\t- balances[msg.sender] -= _weiToWithdraw (cleanSource/etherstore.sol#16)\n\t- lastWithdrawTime[msg.sender] = now (cleanSource/etherstore.sol#17)\n",
+              "markdown": "Reentrancy in [EtherStore.withdrawFunds(uint256)](cleanSource/etherstore.sol#L11-L18):\n\tExternal calls:\n\t- [require(bool)(msg.sender.call.value(_weiToWithdraw)())](cleanSource/etherstore.sol#L15)\n\tState variables written after the call(s):\n\t- [balances[msg.sender] -= _weiToWithdraw](cleanSource/etherstore.sol#L16)\n\t- [lastWithdrawTime[msg.sender] = now](cleanSource/etherstore.sol#L17)\n",
+              "first_markdown_element": "cleanSource/etherstore.sol#L11-L18",
+              "id": "155c400f2cda1e4bc9e9a0ad4c3ccc6f0bb081da232614cbfc6c3c038cd593a0",
+              "check": "reentrancy-eth",
+              "impact": "High",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

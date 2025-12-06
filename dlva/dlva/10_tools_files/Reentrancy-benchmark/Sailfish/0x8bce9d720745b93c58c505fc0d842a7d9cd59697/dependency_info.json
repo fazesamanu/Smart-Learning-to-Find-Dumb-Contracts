@@ -1,0 +1,47 @@
+{
+    "0x8bce9d720745b93c58c505fc0d842a7d9cd59697.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "GetGift",
+                "PutGift"
+            ],
+            "First_function": "PutGift",
+            "Second_function": "GetGift",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 4\nFunction: PutGift\nNode: \nEXPRESSION reciver = _reciver\nIRS: \nreciver := _reciver\"",
+                        "\"BlockID: 12\nFunction: GetGift\nNode: \nIF reciver == msg.sender && now > unlockTime\nIRS: \nCONDITION TMP_8\""
+                    ],
+                    "state_variable": "reciver"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 5\nFunction: PutGift\nNode: \nEXPRESSION unlockTime = now\nIRS: \nunlockTime := now\"",
+                        "\"BlockID: 12\nFunction: GetGift\nNode: \nIF reciver == msg.sender && now > unlockTime\nIRS: \nCONDITION TMP_8\""
+                    ],
+                    "state_variable": "unlockTime"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "GetGift",
+                "SetGiftTime"
+            ],
+            "First_function": "SetGiftTime",
+            "Second_function": "GetGift",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: SetGiftTime\nNode: \nEXPRESSION unlockTime = _unixTime\nIRS: \nunlockTime := _unixTime\"",
+                        "\"BlockID: 12\nFunction: GetGift\nNode: \nIF reciver == msg.sender && now > unlockTime\nIRS: \nCONDITION TMP_8\""
+                    ],
+                    "state_variable": "unlockTime"
+                }
+            ]
+        }
+    ]
+}

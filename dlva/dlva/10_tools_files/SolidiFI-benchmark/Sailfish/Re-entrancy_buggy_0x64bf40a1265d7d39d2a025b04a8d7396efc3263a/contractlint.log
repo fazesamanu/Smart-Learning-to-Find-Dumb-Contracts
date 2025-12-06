@@ -1,0 +1,50 @@
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Analysis started at: 2023-06-04 02:23:38 PM
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Version constraints: ['^0.4.26']
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | solc version: v0.4.26
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Callgraph generation started!
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Callgraph generation finished!
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Interprocedural CFG generation started!
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Interprocedural CFG generation finished!
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Storage dependency graph generation started!
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Storage dependency graph generation finished!
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Value Range Analysis started
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Generating return summary for constructor
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Return summary generated for constructor
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Range graph generated
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Processed function constructor
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Generating return summary for transfer
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Return summary generated for transfer
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Range graph generated
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Processed function transfer
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Generating return summary for withdrawBalance_re_ent5
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Return summary generated for withdrawBalance_re_ent5
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Range graph generated
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Processed function withdrawBalance_re_ent5
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Generating return summary for approve
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Return summary generated for approve
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Range graph generated
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Processed function approve
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Generating return summary for transferFrom
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Return summary generated for transferFrom
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Range graph generated
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Processed function transferFrom
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Generating return summary for slitherConstructorVariables
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Return summary generated for slitherConstructorVariables
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Range graph generated
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Processed function slitherConstructorVariables
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Value Range Analysis took 0.005387 seconds
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Value Range Analysis finished
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Storage dependency graph compostion started!
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Storage dependency graph compostion finished!
+[INFO] | 2023-06-04 02:23:38 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Dependency detection started!
+[INFO] | 2023-06-04 02:23:39 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | DAO dependency detected in file Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a.sol in contract THATCoin in by composing functions withdrawBalance_re_ent5 and withdrawBalance_re_ent5
+[INFO] | 2023-06-04 02:23:39 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | TOD dependency detected in file Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a.sol in contract THATCoin in by composing functions withdrawBalance_re_ent5 and withdrawBalance_re_ent5
+[INFO] | 2023-06-04 02:23:39 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Dependency detection finished!
+[INFO] | 2023-06-04 02:23:39 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Static Analysis took 0.509364 seconds
+[INFO] | 2023-06-04 02:23:39 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Dependency exists
+[INFO] | 2023-06-04 02:23:39 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Invoking symbolic executor!
+[INFO] | 2023-06-04 02:23:41 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Symbolic execution took 2.287227 seconds
+[INFO] | 2023-06-04 02:23:41 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Symbolic execution finished!
+[INFO] | 2023-06-04 02:23:41 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Analysis finished!
+[INFO] | 2023-06-04 02:23:41 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Analysis took 2.797577 seconds
+[INFO] | 2023-06-04 02:23:41 PM | analyzer.Re-entrancy_buggy_0x64bf40a1265d7d39d2a025b04a8d7396efc3263a | Analysis finished at: 2023-06-04 02:23:41 PM

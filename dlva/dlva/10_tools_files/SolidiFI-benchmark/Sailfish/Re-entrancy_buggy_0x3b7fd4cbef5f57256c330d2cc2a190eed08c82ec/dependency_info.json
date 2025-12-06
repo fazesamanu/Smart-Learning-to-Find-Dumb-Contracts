@@ -1,0 +1,112 @@
+{
+    "Re-entrancy_buggy_0x3b7fd4cbef5f57256c330d2cc2a190eed08c82ec.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawFunds_re_ent38",
+                "withdrawFunds_re_ent38"
+            ],
+            "from_function": "withdrawFunds_re_ent38",
+            "to_function": "withdrawFunds_re_ent38",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 42\nFunction: withdrawFunds_re_ent38\nNode: \nEXPRESSION require(bool)(balances_re_ent38[msg.sender] >= _weiToWithdraw)\nIRS: \nTMP_15 = SOLIDITY_CALL require(bool)(TMP_14)\"",
+                        "\"BlockID: 31\nFunction: withdrawFunds_re_ent38\nNode: \nEXPRESSION balances_re_ent38[msg.sender] -= _weiToWithdraw\nIRS: \nREF_7 = REF_7 - _weiToWithdraw\""
+                    ],
+                    "state_variable": "balances_re_ent38"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "Try",
+                "set_game"
+            ],
+            "First_function": "set_game",
+            "Second_function": "Try",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: set_game\nNode: \nEXPRESSION responseHash = keccak256()(_response)\nIRS: \nresponseHash := TMP_8\"",
+                        "\"BlockID: 4\nFunction: Try\nNode: \nIF responseHash == keccak256()(_response) && msg.value > 3000000000000000000\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "responseHash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "Try",
+                "NewQuestion"
+            ],
+            "First_function": "NewQuestion",
+            "Second_function": "Try",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: NewQuestion\nNode: \nEXPRESSION responseHash = _responseHash\nIRS: \nresponseHash := _responseHash\"",
+                        "\"BlockID: 4\nFunction: Try\nNode: \nIF responseHash == keccak256()(_response) && msg.value > 3000000000000000000\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "responseHash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "StopGame",
+                "set_game"
+            ],
+            "First_function": "set_game",
+            "Second_function": "StopGame",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: set_game\nNode: \nEXPRESSION questionSender = msg.sender\nIRS: \nquestionSender := msg.sender\"",
+                        "\"BlockID: 15\nFunction: StopGame\nNode: \nEXPRESSION require(bool)(msg.sender == questionSender)\nIRS: \nTMP_10 = SOLIDITY_CALL require(bool)(TMP_9)\""
+                    ],
+                    "state_variable": "questionSender"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "StopGame",
+                "newQuestioner"
+            ],
+            "First_function": "newQuestioner",
+            "Second_function": "StopGame",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: newQuestioner\nNode: \nEXPRESSION questionSender = newAddress\nIRS: \nquestionSender := newAddress\"",
+                        "\"BlockID: 15\nFunction: StopGame\nNode: \nEXPRESSION require(bool)(msg.sender == questionSender)\nIRS: \nTMP_10 = SOLIDITY_CALL require(bool)(TMP_9)\""
+                    ],
+                    "state_variable": "questionSender"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawFunds_re_ent38",
+                "withdrawFunds_re_ent38"
+            ],
+            "First_function": "withdrawFunds_re_ent38",
+            "Second_function": "withdrawFunds_re_ent38",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 50\nFunction: withdrawFunds_re_ent38\nNode: \nEXPRESSION balances_re_ent38[msg.sender] -= _weiToWithdraw\nIRS: \nREF_7 = REF_7 - _weiToWithdraw\"",
+                        "\"BlockID: 28\nFunction: withdrawFunds_re_ent38\nNode: \nEXPRESSION require(bool)(balances_re_ent38[msg.sender] >= _weiToWithdraw)\nIRS: \nTMP_15 = SOLIDITY_CALL require(bool)(TMP_14)\""
+                    ],
+                    "state_variable": "balances_re_ent38"
+                }
+            ]
+        }
+    ]
+}

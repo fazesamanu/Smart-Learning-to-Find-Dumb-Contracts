@@ -1,0 +1,2434 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 74 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m18\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\nERCs: ERC20\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 74 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m18\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\nERCs: ERC20\n",
+        "first_markdown_element": "",
+        "id": "ad01a353b956cf0578faf5fe8552307a2173bfa39bbf4e413b9089f2fc9dba7c",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "SafeMath",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 591,
+                  "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                  "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "SafeMath",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 4,
+                  "features": []
+                }
+              },
+              {
+                "type": "contract",
+                "name": "BitcoinGold",
+                "source_mapping": {
+                  "start": 618,
+                  "length": 1978,
+                  "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                  "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59,
+                    60,
+                    61,
+                    62,
+                    63,
+                    64,
+                    65,
+                    66,
+                    67,
+                    68,
+                    69,
+                    70,
+                    71,
+                    72,
+                    73,
+                    74,
+                    75
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "BitcoinGold",
+                  "is_complex_code": false,
+                  "is_erc20": true,
+                  "number_functions": 9,
+                  "features": [],
+                  "erc20_pause": false,
+                  "erc20_can_mint": false,
+                  "erc20_race_condition_mitigated": false
+                }
+              }
+            ]
+          },
+          "number_lines": 74,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [
+            "ERC20"
+          ],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 18,
+            "low_issues": 1,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "mul",
+                  "source_mapping": {
+                    "start": 49,
+                    "length": 160,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "SafeMath",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 591,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "mul(uint256,uint256)"
+                  }
+                }
+              ],
+              "description": "SafeMath.mul(uint256,uint256) (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#4-8) is never used and should be removed\n",
+              "markdown": "[SafeMath.mul(uint256,uint256)](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L4-L8) is never used and should be removed\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L4-L8",
+              "id": "01304cc4312b37902daca45f84c38ca41bb71ffe24e353e8143a18f4c9731983",
+              "check": "dead-code",
+              "impact": "Informational",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "div",
+                  "source_mapping": {
+                    "start": 214,
+                    "length": 122,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "SafeMath",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 591,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "div(uint256,uint256)"
+                  }
+                }
+              ],
+              "description": "SafeMath.div(uint256,uint256) (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#9-12) is never used and should be removed\n",
+              "markdown": "[SafeMath.div(uint256,uint256)](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L9-L12) is never used and should be removed\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L9-L12",
+              "id": "b49b4889f1b304a84f2984119b9a2fc4e67dfb2f730e0a6de8fe6113d3fbcc39",
+              "check": "dead-code",
+              "impact": "Informational",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.26",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".26"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.26 (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.26](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L1) allows old versions\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L1",
+              "id": "73377abcd2a5887399514f6d285ddee2941a4ad23dd8a90cb52175a2fbedaf99",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.26 is not recommended for deployment\n",
+              "markdown": "solc-0.4.26 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "e85e93c612cb109c115ab31accf43cd25c590bd8f9b6a43b662115b987f777c3",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_value",
+                  "source_mapping": {
+                    "start": 2327,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      65
+                    ],
+                    "starting_column": 40,
+                    "ending_column": 54
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "approve",
+                      "source_mapping": {
+                        "start": 2292,
+                        "length": 261,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          65,
+                          66,
+                          67,
+                          68,
+                          69,
+                          70
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "BitcoinGold",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 1978,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "approve(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter BitcoinGold.approve(address,uint256)._value (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#65) is not in mixedCase\n",
+              "markdown": "Parameter [BitcoinGold.approve(address,uint256)._value](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L65) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L65",
+              "id": "028114e80186fb4085c33f4de9921ea5a26e35a93c9ef76ebfc333861a1eaaa5",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_spender",
+                  "source_mapping": {
+                    "start": 2309,
+                    "length": 16,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      65
+                    ],
+                    "starting_column": 22,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "approve",
+                      "source_mapping": {
+                        "start": 2292,
+                        "length": 261,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          65,
+                          66,
+                          67,
+                          68,
+                          69,
+                          70
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "BitcoinGold",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 1978,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "approve(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter BitcoinGold.approve(address,uint256)._spender (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#65) is not in mixedCase\n",
+              "markdown": "Parameter [BitcoinGold.approve(address,uint256)._spender](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L65) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L65",
+              "id": "14b6769b8bd3818ea56c24a190956df05cef698e5e35660a9b99cdf6dc685012",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_from",
+                  "source_mapping": {
+                    "start": 1943,
+                    "length": 13,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      57
+                    ],
+                    "starting_column": 27,
+                    "ending_column": 40
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferFrom",
+                      "source_mapping": {
+                        "start": 1921,
+                        "length": 366,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "BitcoinGold",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 1978,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferFrom(address,address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter BitcoinGold.transferFrom(address,address,uint256)._from (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#57) is not in mixedCase\n",
+              "markdown": "Parameter [BitcoinGold.transferFrom(address,address,uint256)._from](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L57) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L57",
+              "id": "1f29669498b0256b45077b4311785a988975d6cceb2e0bd2b43a4c1c0a953775",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_owner",
+                  "source_mapping": {
+                    "start": 1430,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      45
+                    ],
+                    "starting_column": 24,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "balanceOf",
+                      "source_mapping": {
+                        "start": 1411,
+                        "length": 109,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          45,
+                          46,
+                          47
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "BitcoinGold",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 1978,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "balanceOf(address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter BitcoinGold.balanceOf(address)._owner (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#45) is not in mixedCase\n",
+              "markdown": "Parameter [BitcoinGold.balanceOf(address)._owner](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L45) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L45",
+              "id": "471f3cb8a5d81328b4ffb355e58611d42eb27d79506e879f02d89f8d94bd578f",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "bugv_tmstmp2",
+                  "source_mapping": {
+                    "start": 1072,
+                    "length": 38,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      36
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 41
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "BitcoinGold",
+                      "source_mapping": {
+                        "start": 618,
+                        "length": 1978,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68,
+                          69,
+                          70,
+                          71,
+                          72,
+                          73,
+                          74,
+                          75
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable BitcoinGold.bugv_tmstmp2 (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#36) is not in mixedCase\n",
+              "markdown": "Variable [BitcoinGold.bugv_tmstmp2](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L36) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L36",
+              "id": "5c37386ba5c5fef3ddd4cfb3f4a5fdaeff4cd6dc663319285aa5e7e699e4a37f",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_owner",
+                  "source_mapping": {
+                    "start": 1544,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      48
+                    ],
+                    "starting_column": 24,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "allowance",
+                      "source_mapping": {
+                        "start": 1525,
+                        "length": 138,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          48,
+                          49,
+                          50
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "BitcoinGold",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 1978,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "allowance(address,address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter BitcoinGold.allowance(address,address)._owner (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#48) is not in mixedCase\n",
+              "markdown": "Parameter [BitcoinGold.allowance(address,address)._owner](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L48) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L48",
+              "id": "6b1f93a43e387a7337304889a57eb1a688527ca31d898cffd8752ce418d96235",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_spender",
+                  "source_mapping": {
+                    "start": 1560,
+                    "length": 16,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      48
+                    ],
+                    "starting_column": 40,
+                    "ending_column": 56
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "allowance",
+                      "source_mapping": {
+                        "start": 1525,
+                        "length": 138,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          48,
+                          49,
+                          50
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "BitcoinGold",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 1978,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "allowance(address,address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter BitcoinGold.allowance(address,address)._spender (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#48) is not in mixedCase\n",
+              "markdown": "Parameter [BitcoinGold.allowance(address,address)._spender](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L48) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L48",
+              "id": "6c453486cb19f2e68817c04f0122fa820d6184468af5fe5bfd548594e15b47fc",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_to",
+                  "source_mapping": {
+                    "start": 1686,
+                    "length": 11,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      51
+                    ],
+                    "starting_column": 23,
+                    "ending_column": 34
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transfer",
+                      "source_mapping": {
+                        "start": 1668,
+                        "length": 248,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "BitcoinGold",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 1978,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transfer(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter BitcoinGold.transfer(address,uint256)._to (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#51) is not in mixedCase\n",
+              "markdown": "Parameter [BitcoinGold.transfer(address,uint256)._to](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L51) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L51",
+              "id": "721f1167c2dee7cfd363e73ba0397802d98267072eb8bba10db18ad78170e337",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_to",
+                  "source_mapping": {
+                    "start": 1958,
+                    "length": 11,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      57
+                    ],
+                    "starting_column": 42,
+                    "ending_column": 53
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferFrom",
+                      "source_mapping": {
+                        "start": 1921,
+                        "length": 366,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "BitcoinGold",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 1978,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferFrom(address,address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter BitcoinGold.transferFrom(address,address,uint256)._to (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#57) is not in mixedCase\n",
+              "markdown": "Parameter [BitcoinGold.transferFrom(address,address,uint256)._to](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L57) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L57",
+              "id": "73c33d343918769c213ddc6b65347decf7fddd852d41dc048c9ab206d3af949e",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_value",
+                  "source_mapping": {
+                    "start": 1971,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      57
+                    ],
+                    "starting_column": 55,
+                    "ending_column": 69
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferFrom",
+                      "source_mapping": {
+                        "start": 1921,
+                        "length": 366,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "BitcoinGold",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 1978,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferFrom(address,address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter BitcoinGold.transferFrom(address,address,uint256)._value (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#57) is not in mixedCase\n",
+              "markdown": "Parameter [BitcoinGold.transferFrom(address,address,uint256)._value](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L57) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L57",
+              "id": "cd45d8a561edeb791d08fed1cf1cde04b3865c80e0a27aa603c3b3d3d95d409b",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_value",
+                  "source_mapping": {
+                    "start": 1699,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      51
+                    ],
+                    "starting_column": 36,
+                    "ending_column": 50
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transfer",
+                      "source_mapping": {
+                        "start": 1668,
+                        "length": 248,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "BitcoinGold",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 1978,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transfer(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter BitcoinGold.transfer(address,uint256)._value (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#51) is not in mixedCase\n",
+              "markdown": "Parameter [BitcoinGold.transfer(address,uint256)._value](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L51) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L51",
+              "id": "d2f707d594856ed365be22df508215b0228c20d66d4c715bc8c035cbe8ceca8b",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "bug_tmstmp13",
+                  "source_mapping": {
+                    "start": 896,
+                    "length": 98,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      32,
+                      33,
+                      34
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "BitcoinGold",
+                      "source_mapping": {
+                        "start": 618,
+                        "length": 1978,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68,
+                          69,
+                          70,
+                          71,
+                          72,
+                          73,
+                          74,
+                          75
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "bug_tmstmp13()"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function BitcoinGold.bug_tmstmp13() (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#32-34) is not in mixedCase\n",
+              "markdown": "Function [BitcoinGold.bug_tmstmp13()](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L32-L34) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L32-L34",
+              "id": "f0d8406ef4a6b79d4ea2ad16bc8ad671dbe184a3240936a20aa4fa5f8d73b514",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "BitcoinGold",
+                  "source_mapping": {
+                    "start": 1198,
+                    "length": 208,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      38,
+                      39,
+                      40,
+                      41,
+                      42,
+                      43,
+                      44
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "BitcoinGold",
+                      "source_mapping": {
+                        "start": 618,
+                        "length": 1978,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68,
+                          69,
+                          70,
+                          71,
+                          72,
+                          73,
+                          74,
+                          75
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "BitcoinGold()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "totalSupply = 21000000",
+                  "source_mapping": {
+                    "start": 1231,
+                    "length": 22,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      39
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 31
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "BitcoinGold",
+                      "source_mapping": {
+                        "start": 1198,
+                        "length": 208,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "BitcoinGold",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 1978,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "BitcoinGold()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "BitcoinGold.BitcoinGold() (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#38-44) uses literals with too many digits:\n\t- totalSupply = 21000000 (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#39)\n",
+              "markdown": "[BitcoinGold.BitcoinGold()](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L38-L44) uses literals with too many digits:\n\t- [totalSupply = 21000000](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L39)\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L38-L44",
+              "id": "01500eb53a8b0b0aadd64845ea5b72b56739ce00fecfd0c133dd9fcbe8fe2d00",
+              "check": "too-many-digits",
+              "impact": "Informational",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "bugv_tmstmp2",
+                  "source_mapping": {
+                    "start": 1072,
+                    "length": 38,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      36
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 41
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "BitcoinGold",
+                      "source_mapping": {
+                        "start": 618,
+                        "length": 1978,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68,
+                          69,
+                          70,
+                          71,
+                          72,
+                          73,
+                          74,
+                          75
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "BitcoinGold",
+                  "source_mapping": {
+                    "start": 618,
+                    "length": 1978,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39,
+                      40,
+                      41,
+                      42,
+                      43,
+                      44,
+                      45,
+                      46,
+                      47,
+                      48,
+                      49,
+                      50,
+                      51,
+                      52,
+                      53,
+                      54,
+                      55,
+                      56,
+                      57,
+                      58,
+                      59,
+                      60,
+                      61,
+                      62,
+                      63,
+                      64,
+                      65,
+                      66,
+                      67,
+                      68,
+                      69,
+                      70,
+                      71,
+                      72,
+                      73,
+                      74,
+                      75
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  }
+                }
+              ],
+              "description": "BitcoinGold.bugv_tmstmp2 (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#36) is never used in BitcoinGold (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#23-75)\n",
+              "markdown": "[BitcoinGold.bugv_tmstmp2](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L36) is never used in [BitcoinGold](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L23-L75)\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L36",
+              "id": "78e382dafadb7d6b428f9ff133bf96d8d824f06f0d75da96fe4c7253efcb2469",
+              "check": "unused-state",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "bug_tmstmp13",
+                  "source_mapping": {
+                    "start": 896,
+                    "length": 98,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      32,
+                      33,
+                      34
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "BitcoinGold",
+                      "source_mapping": {
+                        "start": 618,
+                        "length": 1978,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68,
+                          69,
+                          70,
+                          71,
+                          72,
+                          73,
+                          74,
+                          75
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "bug_tmstmp13()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "block.timestamp >= 1546300800",
+                  "source_mapping": {
+                    "start": 953,
+                    "length": 36,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      33
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 41
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "bug_tmstmp13",
+                      "source_mapping": {
+                        "start": 896,
+                        "length": 98,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          32,
+                          33,
+                          34
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "BitcoinGold",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 1978,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "bug_tmstmp13()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "BitcoinGold.bug_tmstmp13() (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#32-34) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- block.timestamp >= 1546300800 (FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#33)\n",
+              "markdown": "[BitcoinGold.bug_tmstmp13()](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L32-L34) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [block.timestamp >= 1546300800](FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L33)\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x2766fe4f903cfba335e2e156e53e14312ce31ca0.sol#L32-L34",
+              "id": "88a70b64dadd17ea50c2bd1605461cd1587625f55f50c7d1415cf0d6d127e455",
+              "check": "timestamp",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

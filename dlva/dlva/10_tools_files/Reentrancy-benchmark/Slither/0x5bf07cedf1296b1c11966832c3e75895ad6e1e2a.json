@@ -1,0 +1,529 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 20 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 5\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 20 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 5\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "083ee7e07bc38396b4d3855b2dc65688c1023a007a13d12247a6e8c29fbbac31",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "DharmaUpgradeBeaconPrototypeSmartWallet",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 398,
+                  "filename_relative": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                  "filename_short": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "DharmaUpgradeBeaconPrototypeSmartWallet",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": [
+                    "Assembly"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 20,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 5,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 1,
+            "informational_issues": 4,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_implementation",
+                  "source_mapping": {
+                    "start": 80,
+                    "length": 31,
+                    "filename_relative": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "filename_short": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 34
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DharmaUpgradeBeaconPrototypeSmartWallet",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 398,
+                        "filename_relative": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                        "filename_short": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DharmaUpgradeBeaconPrototypeSmartWallet._implementation (cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol#5) should be constant\n",
+              "markdown": "[DharmaUpgradeBeaconPrototypeSmartWallet._implementation](cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol#L5) should be constant\n",
+              "first_markdown_element": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol#L5",
+              "id": "4746977e48ebd2d3ac83f52292aa6bdce5e8d99f9e3b6e2eae0a2351cbb1b0db",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "fallback",
+                  "source_mapping": {
+                    "start": 220,
+                    "length": 203,
+                    "filename_relative": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "filename_short": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DharmaUpgradeBeaconPrototypeSmartWallet",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 398,
+                        "filename_relative": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                        "filename_short": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "fallback()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "",
+                  "source_mapping": {
+                    "start": 286,
+                    "length": 68,
+                    "filename_relative": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "filename_short": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "starting_column": 7,
+                    "ending_column": 8
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "fallback",
+                      "source_mapping": {
+                        "start": 220,
+                        "length": 203,
+                        "filename_relative": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                        "filename_short": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "DharmaUpgradeBeaconPrototypeSmartWallet",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 398,
+                            "filename_relative": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                            "filename_short": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "fallback()"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "",
+                  "source_mapping": {
+                    "start": 374,
+                    "length": 39,
+                    "filename_relative": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "filename_short": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17
+                    ],
+                    "starting_column": 7,
+                    "ending_column": 46
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "fallback",
+                      "source_mapping": {
+                        "start": 220,
+                        "length": 203,
+                        "filename_relative": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                        "filename_short": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "DharmaUpgradeBeaconPrototypeSmartWallet",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 398,
+                            "filename_relative": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                            "filename_short": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "fallback()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DharmaUpgradeBeaconPrototypeSmartWallet.fallback() (cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol#10-19) uses assembly\n\t- INLINE ASM (cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol#12-15)\n\t- INLINE ASM (cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol#17)\n",
+              "markdown": "[DharmaUpgradeBeaconPrototypeSmartWallet.fallback()](cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol#L10-L19) uses assembly\n\t- [INLINE ASM](cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol#L12-L15)\n\t- [INLINE ASM](cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol#L17)\n",
+              "first_markdown_element": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol#L10-L19",
+              "id": "6abc950aa3ef39228cbb8b8b289c0f6d4f63cdcb301cf8c82c1cd86eac9eec09",
+              "check": "assembly",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.5.11",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "filename_short": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.5",
+                      ".11"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.5.11 (cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.5.11](cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol#L1",
+              "id": "bdfa510884ac1cc0d8fe13fe955e93c7dff6041688c609059fa360eb32dab0c2",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.5.11 is not recommended for deployment\n",
+              "markdown": "solc-0.5.11 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "d3bcf07a6ef1efa85e2deea753a2feee14d3b263b881c698197d19af627735a7",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_implementation",
+                  "source_mapping": {
+                    "start": 80,
+                    "length": 31,
+                    "filename_relative": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "filename_short": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 34
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DharmaUpgradeBeaconPrototypeSmartWallet",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 398,
+                        "filename_relative": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                        "filename_short": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "DharmaUpgradeBeaconPrototypeSmartWallet",
+                  "source_mapping": {
+                    "start": 27,
+                    "length": 398,
+                    "filename_relative": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "filename_short": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  }
+                }
+              ],
+              "description": "DharmaUpgradeBeaconPrototypeSmartWallet._implementation (cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol#5) is never used in DharmaUpgradeBeaconPrototypeSmartWallet (cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol#4-21)\n",
+              "markdown": "[DharmaUpgradeBeaconPrototypeSmartWallet._implementation](cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol#L5) is never used in [DharmaUpgradeBeaconPrototypeSmartWallet](cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol#L4-L21)\n",
+              "first_markdown_element": "cleanSource/0x5bf07cedf1296b1c11966832c3e75895ad6e1e2a.sol#L5",
+              "id": "6038a3efce33617993e1562abfdc8c7f17a8b0e223fdb2219d97cb4f2d49a730",
+              "check": "unused-state",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

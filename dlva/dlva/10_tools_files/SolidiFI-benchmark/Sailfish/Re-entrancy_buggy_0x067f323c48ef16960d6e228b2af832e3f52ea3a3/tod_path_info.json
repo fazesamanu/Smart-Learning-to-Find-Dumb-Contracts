@@ -1,0 +1,31 @@
+{
+    "tod_symex_path_1.json": {
+        "file_name": "",
+        "from_function": "claimReward_re_ent39",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 122\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 123\nCall context: \nNone\nREF_0 -> redeemableEther_re_ent39[msg.sender]\nTMP_0 = REF_0 > 0\nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\""
+        ],
+        "executable_instructions": 61,
+        "state_variable": "redeemableEther_re_ent39",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_2.json": {
+        "file_name": "",
+        "from_function": "claimReward_re_ent39",
+        "to_function": "claimReward_re_ent39",
+        "bug_type": "tod_amount_or_receiver",
+        "src_node": "\"BlockID: 131\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 133\nCall context: \nTrue\nREF_1 -> redeemableEther_re_ent39[msg.sender]\ntransferValue_re_ent39 := REF_1\nTMP_3(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:transferValue_re_ent39 \""
+        ],
+        "executable_instructions": 65,
+        "state_variable": "redeemableEther_re_ent39",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    }
+}

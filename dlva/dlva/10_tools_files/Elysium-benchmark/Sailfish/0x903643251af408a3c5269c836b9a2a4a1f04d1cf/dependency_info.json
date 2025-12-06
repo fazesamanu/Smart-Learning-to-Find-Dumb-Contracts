@@ -1,0 +1,992 @@
+{
+    "0x903643251af408a3c5269c836b9a2a4a1f04d1cf.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "cancelEscrow",
+                "createEscrow"
+            ],
+            "from_function": "createEscrow",
+            "to_function": "cancelEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: createEscrow\nNode: \nEXPRESSION escrows[_tradeHash] = Escrow(true,_seller,_buyer,_value,_buyerCanCancelAfter,false,false)\nIRS: \nREF_2 := TMP_6\"",
+                        "\"BlockID: 20\nFunction: cancelEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_21(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 7\nFunction: createEscrow\nNode: \nEXPRESSION require(bool)(! escrows[_tradeHash].exists)\nIRS: \nTMP_4 = SOLIDITY_CALL require(bool)(TMP_3)\"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "cancelEscrow",
+                "createEscrow"
+            ],
+            "from_function": "createEscrow",
+            "to_function": "cancelEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 7\nFunction: createEscrow\nNode: \nEXPRESSION require(bool)(! escrows[_tradeHash].exists)\nIRS: \nTMP_4 = SOLIDITY_CALL require(bool)(TMP_3)\"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "cancelEscrow",
+                "cancelEscrow"
+            ],
+            "from_function": "cancelEscrow",
+            "to_function": "cancelEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 47\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \"",
+                        "\"BlockID: 20\nFunction: cancelEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_21(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 42\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_12 = SOLIDITY_CALL require(bool)(REF_4)\"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 43\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerCanCancelAfter < now)\nIRS: \nTMP_14 = SOLIDITY_CALL require(bool)(TMP_13)\"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: cancelEscrow\nNode: \nNEW VARIABLE buyerReceivedMoney = escrows[_tradeHash].buyer.call.value(buyerValue)()\nIRS: \nTMP_19(bool) = LOW_LEVEL_CALL, dest:REF_12, function:call, arguments:[] value:buyerValue \"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 45\nFunction: cancelEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_21(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "cancelEscrow",
+                "cancelEscrow"
+            ],
+            "from_function": "cancelEscrow",
+            "to_function": "cancelEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 50\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_12 = SOLIDITY_CALL require(bool)(REF_4)\"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 51\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerCanCancelAfter < now)\nIRS: \nTMP_14 = SOLIDITY_CALL require(bool)(TMP_13)\"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: cancelEscrow\nNode: \nNEW VARIABLE buyerReceivedMoney = escrows[_tradeHash].buyer.call.value(buyerValue)()\nIRS: \nTMP_19(bool) = LOW_LEVEL_CALL, dest:REF_12, function:call, arguments:[] value:buyerValue \"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 53\nFunction: cancelEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_21(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "cancelEscrow",
+                "approveEscrow"
+            ],
+            "from_function": "approveEscrow",
+            "to_function": "cancelEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: approveEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_24 = SOLIDITY_CALL require(bool)(REF_19)\"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: approveEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyer == msg.sender)\nIRS: \nTMP_26 = SOLIDITY_CALL require(bool)(TMP_25)\"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "cancelEscrow",
+                "approveEscrow"
+            ],
+            "from_function": "approveEscrow",
+            "to_function": "cancelEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: approveEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_24 = SOLIDITY_CALL require(bool)(REF_19)\"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: approveEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyer == msg.sender)\nIRS: \nTMP_26 = SOLIDITY_CALL require(bool)(TMP_25)\"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "cancelEscrow",
+                "releaseEscrow"
+            ],
+            "from_function": "releaseEscrow",
+            "to_function": "cancelEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \"",
+                        "\"BlockID: 20\nFunction: cancelEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_21(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_28 = SOLIDITY_CALL require(bool)(REF_25)\"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerApprovedTheTransaction)\nIRS: \nTMP_29 = SOLIDITY_CALL require(bool)(REF_27)\"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 32\nFunction: releaseEscrow\nNode: \nNEW VARIABLE sellerReceivedMoney = escrows[_tradeHash].seller.call.value(buyerValue)()\nIRS: \nTMP_34(bool) = LOW_LEVEL_CALL, dest:REF_33, function:call, arguments:[] value:buyerValue \"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 33\nFunction: releaseEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_36(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "cancelEscrow",
+                "releaseEscrow"
+            ],
+            "from_function": "releaseEscrow",
+            "to_function": "cancelEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_28 = SOLIDITY_CALL require(bool)(REF_25)\"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerApprovedTheTransaction)\nIRS: \nTMP_29 = SOLIDITY_CALL require(bool)(REF_27)\"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 32\nFunction: releaseEscrow\nNode: \nNEW VARIABLE sellerReceivedMoney = escrows[_tradeHash].seller.call.value(buyerValue)()\nIRS: \nTMP_34(bool) = LOW_LEVEL_CALL, dest:REF_33, function:call, arguments:[] value:buyerValue \"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 33\nFunction: releaseEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_36(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \"",
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "releaseEscrow",
+                "createEscrow"
+            ],
+            "from_function": "createEscrow",
+            "to_function": "releaseEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: createEscrow\nNode: \nEXPRESSION escrows[_tradeHash] = Escrow(true,_seller,_buyer,_value,_buyerCanCancelAfter,false,false)\nIRS: \nREF_2 := TMP_6\"",
+                        "\"BlockID: 33\nFunction: releaseEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_36(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 7\nFunction: createEscrow\nNode: \nEXPRESSION require(bool)(! escrows[_tradeHash].exists)\nIRS: \nTMP_4 = SOLIDITY_CALL require(bool)(TMP_3)\"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "releaseEscrow",
+                "createEscrow"
+            ],
+            "from_function": "createEscrow",
+            "to_function": "releaseEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 7\nFunction: createEscrow\nNode: \nEXPRESSION require(bool)(! escrows[_tradeHash].exists)\nIRS: \nTMP_4 = SOLIDITY_CALL require(bool)(TMP_3)\"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "releaseEscrow",
+                "cancelEscrow"
+            ],
+            "from_function": "cancelEscrow",
+            "to_function": "releaseEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \"",
+                        "\"BlockID: 33\nFunction: releaseEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_36(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_12 = SOLIDITY_CALL require(bool)(REF_4)\"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 18\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerCanCancelAfter < now)\nIRS: \nTMP_14 = SOLIDITY_CALL require(bool)(TMP_13)\"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 19\nFunction: cancelEscrow\nNode: \nNEW VARIABLE buyerReceivedMoney = escrows[_tradeHash].buyer.call.value(buyerValue)()\nIRS: \nTMP_19(bool) = LOW_LEVEL_CALL, dest:REF_12, function:call, arguments:[] value:buyerValue \"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: cancelEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_21(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "releaseEscrow",
+                "cancelEscrow"
+            ],
+            "from_function": "cancelEscrow",
+            "to_function": "releaseEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_12 = SOLIDITY_CALL require(bool)(REF_4)\"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 18\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerCanCancelAfter < now)\nIRS: \nTMP_14 = SOLIDITY_CALL require(bool)(TMP_13)\"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 19\nFunction: cancelEscrow\nNode: \nNEW VARIABLE buyerReceivedMoney = escrows[_tradeHash].buyer.call.value(buyerValue)()\nIRS: \nTMP_19(bool) = LOW_LEVEL_CALL, dest:REF_12, function:call, arguments:[] value:buyerValue \"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: cancelEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_21(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "releaseEscrow",
+                "approveEscrow"
+            ],
+            "from_function": "approveEscrow",
+            "to_function": "releaseEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: approveEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_24 = SOLIDITY_CALL require(bool)(REF_19)\"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: approveEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyer == msg.sender)\nIRS: \nTMP_26 = SOLIDITY_CALL require(bool)(TMP_25)\"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "releaseEscrow",
+                "approveEscrow"
+            ],
+            "from_function": "approveEscrow",
+            "to_function": "releaseEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: approveEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_24 = SOLIDITY_CALL require(bool)(REF_19)\"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: approveEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyer == msg.sender)\nIRS: \nTMP_26 = SOLIDITY_CALL require(bool)(TMP_25)\"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "releaseEscrow",
+                "releaseEscrow"
+            ],
+            "from_function": "releaseEscrow",
+            "to_function": "releaseEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 79\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \"",
+                        "\"BlockID: 33\nFunction: releaseEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_36(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 74\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_28 = SOLIDITY_CALL require(bool)(REF_25)\"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 75\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerApprovedTheTransaction)\nIRS: \nTMP_29 = SOLIDITY_CALL require(bool)(REF_27)\"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 76\nFunction: releaseEscrow\nNode: \nNEW VARIABLE sellerReceivedMoney = escrows[_tradeHash].seller.call.value(buyerValue)()\nIRS: \nTMP_34(bool) = LOW_LEVEL_CALL, dest:REF_33, function:call, arguments:[] value:buyerValue \"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 77\nFunction: releaseEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_36(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "releaseEscrow",
+                "releaseEscrow"
+            ],
+            "from_function": "releaseEscrow",
+            "to_function": "releaseEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 82\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_28 = SOLIDITY_CALL require(bool)(REF_25)\"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 83\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerApprovedTheTransaction)\nIRS: \nTMP_29 = SOLIDITY_CALL require(bool)(REF_27)\"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 84\nFunction: releaseEscrow\nNode: \nNEW VARIABLE sellerReceivedMoney = escrows[_tradeHash].seller.call.value(buyerValue)()\nIRS: \nTMP_34(bool) = LOW_LEVEL_CALL, dest:REF_33, function:call, arguments:[] value:buyerValue \"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 85\nFunction: releaseEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_36(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \"",
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "cancelEscrow",
+                "createEscrow"
+            ],
+            "First_function": "createEscrow",
+            "Second_function": "cancelEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: createEscrow\nNode: \nEXPRESSION escrows[_tradeHash] = Escrow(true,_seller,_buyer,_value,_buyerCanCancelAfter,false,false)\nIRS: \nREF_2 := TMP_6\"",
+                        "\"BlockID: 17\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_12 = SOLIDITY_CALL require(bool)(REF_4)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: createEscrow\nNode: \nEXPRESSION escrows[_tradeHash] = Escrow(true,_seller,_buyer,_value,_buyerCanCancelAfter,false,false)\nIRS: \nREF_2 := TMP_6\"",
+                        "\"BlockID: 18\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerCanCancelAfter < now)\nIRS: \nTMP_14 = SOLIDITY_CALL require(bool)(TMP_13)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: createEscrow\nNode: \nEXPRESSION escrows[_tradeHash] = Escrow(true,_seller,_buyer,_value,_buyerCanCancelAfter,false,false)\nIRS: \nREF_2 := TMP_6\"",
+                        "\"BlockID: 19\nFunction: cancelEscrow\nNode: \nNEW VARIABLE buyerReceivedMoney = escrows[_tradeHash].buyer.call.value(buyerValue)()\nIRS: \nTMP_19(bool) = LOW_LEVEL_CALL, dest:REF_12, function:call, arguments:[] value:buyerValue \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "cancelEscrow",
+                "createEscrow"
+            ],
+            "First_function": "createEscrow",
+            "Second_function": "cancelEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: createEscrow\nNode: \nEXPRESSION escrows[_tradeHash] = Escrow(true,_seller,_buyer,_value,_buyerCanCancelAfter,false,false)\nIRS: \nREF_2 := TMP_6\"",
+                        "\"BlockID: 17\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_12 = SOLIDITY_CALL require(bool)(REF_4)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: createEscrow\nNode: \nEXPRESSION escrows[_tradeHash] = Escrow(true,_seller,_buyer,_value,_buyerCanCancelAfter,false,false)\nIRS: \nREF_2 := TMP_6\"",
+                        "\"BlockID: 18\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerCanCancelAfter < now)\nIRS: \nTMP_14 = SOLIDITY_CALL require(bool)(TMP_13)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: createEscrow\nNode: \nEXPRESSION escrows[_tradeHash] = Escrow(true,_seller,_buyer,_value,_buyerCanCancelAfter,false,false)\nIRS: \nREF_2 := TMP_6\"",
+                        "\"BlockID: 19\nFunction: cancelEscrow\nNode: \nNEW VARIABLE buyerReceivedMoney = escrows[_tradeHash].buyer.call.value(buyerValue)()\nIRS: \nTMP_19(bool) = LOW_LEVEL_CALL, dest:REF_12, function:call, arguments:[] value:buyerValue \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: createEscrow\nNode: \nEXPRESSION escrows[_tradeHash] = Escrow(true,_seller,_buyer,_value,_buyerCanCancelAfter,false,false)\nIRS: \nREF_2 := TMP_6\"",
+                        "\"BlockID: 20\nFunction: cancelEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_21(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "cancelEscrow",
+                "cancelEscrow"
+            ],
+            "First_function": "cancelEscrow",
+            "Second_function": "cancelEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 63\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \"",
+                        "\"BlockID: 17\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_12 = SOLIDITY_CALL require(bool)(REF_4)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 63\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \"",
+                        "\"BlockID: 18\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerCanCancelAfter < now)\nIRS: \nTMP_14 = SOLIDITY_CALL require(bool)(TMP_13)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 63\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \"",
+                        "\"BlockID: 19\nFunction: cancelEscrow\nNode: \nNEW VARIABLE buyerReceivedMoney = escrows[_tradeHash].buyer.call.value(buyerValue)()\nIRS: \nTMP_19(bool) = LOW_LEVEL_CALL, dest:REF_12, function:call, arguments:[] value:buyerValue \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "cancelEscrow",
+                "cancelEscrow"
+            ],
+            "First_function": "cancelEscrow",
+            "Second_function": "cancelEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 71\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \"",
+                        "\"BlockID: 17\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_12 = SOLIDITY_CALL require(bool)(REF_4)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 71\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \"",
+                        "\"BlockID: 18\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerCanCancelAfter < now)\nIRS: \nTMP_14 = SOLIDITY_CALL require(bool)(TMP_13)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 71\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \"",
+                        "\"BlockID: 19\nFunction: cancelEscrow\nNode: \nNEW VARIABLE buyerReceivedMoney = escrows[_tradeHash].buyer.call.value(buyerValue)()\nIRS: \nTMP_19(bool) = LOW_LEVEL_CALL, dest:REF_12, function:call, arguments:[] value:buyerValue \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 71\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \"",
+                        "\"BlockID: 20\nFunction: cancelEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_21(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "cancelEscrow",
+                "releaseEscrow"
+            ],
+            "First_function": "releaseEscrow",
+            "Second_function": "cancelEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \"",
+                        "\"BlockID: 17\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_12 = SOLIDITY_CALL require(bool)(REF_4)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \"",
+                        "\"BlockID: 18\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerCanCancelAfter < now)\nIRS: \nTMP_14 = SOLIDITY_CALL require(bool)(TMP_13)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \"",
+                        "\"BlockID: 19\nFunction: cancelEscrow\nNode: \nNEW VARIABLE buyerReceivedMoney = escrows[_tradeHash].buyer.call.value(buyerValue)()\nIRS: \nTMP_19(bool) = LOW_LEVEL_CALL, dest:REF_12, function:call, arguments:[] value:buyerValue \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "cancelEscrow",
+                "releaseEscrow"
+            ],
+            "First_function": "releaseEscrow",
+            "Second_function": "cancelEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \"",
+                        "\"BlockID: 17\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_12 = SOLIDITY_CALL require(bool)(REF_4)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \"",
+                        "\"BlockID: 18\nFunction: cancelEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerCanCancelAfter < now)\nIRS: \nTMP_14 = SOLIDITY_CALL require(bool)(TMP_13)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \"",
+                        "\"BlockID: 19\nFunction: cancelEscrow\nNode: \nNEW VARIABLE buyerReceivedMoney = escrows[_tradeHash].buyer.call.value(buyerValue)()\nIRS: \nTMP_19(bool) = LOW_LEVEL_CALL, dest:REF_12, function:call, arguments:[] value:buyerValue \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 35\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \"",
+                        "\"BlockID: 20\nFunction: cancelEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_21(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "releaseEscrow",
+                "createEscrow"
+            ],
+            "First_function": "createEscrow",
+            "Second_function": "releaseEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: createEscrow\nNode: \nEXPRESSION escrows[_tradeHash] = Escrow(true,_seller,_buyer,_value,_buyerCanCancelAfter,false,false)\nIRS: \nREF_2 := TMP_6\"",
+                        "\"BlockID: 30\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_28 = SOLIDITY_CALL require(bool)(REF_25)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: createEscrow\nNode: \nEXPRESSION escrows[_tradeHash] = Escrow(true,_seller,_buyer,_value,_buyerCanCancelAfter,false,false)\nIRS: \nREF_2 := TMP_6\"",
+                        "\"BlockID: 31\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerApprovedTheTransaction)\nIRS: \nTMP_29 = SOLIDITY_CALL require(bool)(REF_27)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: createEscrow\nNode: \nEXPRESSION escrows[_tradeHash] = Escrow(true,_seller,_buyer,_value,_buyerCanCancelAfter,false,false)\nIRS: \nREF_2 := TMP_6\"",
+                        "\"BlockID: 32\nFunction: releaseEscrow\nNode: \nNEW VARIABLE sellerReceivedMoney = escrows[_tradeHash].seller.call.value(buyerValue)()\nIRS: \nTMP_34(bool) = LOW_LEVEL_CALL, dest:REF_33, function:call, arguments:[] value:buyerValue \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "releaseEscrow",
+                "createEscrow"
+            ],
+            "First_function": "createEscrow",
+            "Second_function": "releaseEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: createEscrow\nNode: \nEXPRESSION escrows[_tradeHash] = Escrow(true,_seller,_buyer,_value,_buyerCanCancelAfter,false,false)\nIRS: \nREF_2 := TMP_6\"",
+                        "\"BlockID: 30\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_28 = SOLIDITY_CALL require(bool)(REF_25)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: createEscrow\nNode: \nEXPRESSION escrows[_tradeHash] = Escrow(true,_seller,_buyer,_value,_buyerCanCancelAfter,false,false)\nIRS: \nREF_2 := TMP_6\"",
+                        "\"BlockID: 31\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerApprovedTheTransaction)\nIRS: \nTMP_29 = SOLIDITY_CALL require(bool)(REF_27)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: createEscrow\nNode: \nEXPRESSION escrows[_tradeHash] = Escrow(true,_seller,_buyer,_value,_buyerCanCancelAfter,false,false)\nIRS: \nREF_2 := TMP_6\"",
+                        "\"BlockID: 32\nFunction: releaseEscrow\nNode: \nNEW VARIABLE sellerReceivedMoney = escrows[_tradeHash].seller.call.value(buyerValue)()\nIRS: \nTMP_34(bool) = LOW_LEVEL_CALL, dest:REF_33, function:call, arguments:[] value:buyerValue \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: createEscrow\nNode: \nEXPRESSION escrows[_tradeHash] = Escrow(true,_seller,_buyer,_value,_buyerCanCancelAfter,false,false)\nIRS: \nREF_2 := TMP_6\"",
+                        "\"BlockID: 33\nFunction: releaseEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_36(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "releaseEscrow",
+                "cancelEscrow"
+            ],
+            "First_function": "cancelEscrow",
+            "Second_function": "releaseEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \"",
+                        "\"BlockID: 30\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_28 = SOLIDITY_CALL require(bool)(REF_25)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \"",
+                        "\"BlockID: 31\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerApprovedTheTransaction)\nIRS: \nTMP_29 = SOLIDITY_CALL require(bool)(REF_27)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \"",
+                        "\"BlockID: 32\nFunction: releaseEscrow\nNode: \nNEW VARIABLE sellerReceivedMoney = escrows[_tradeHash].seller.call.value(buyerValue)()\nIRS: \nTMP_34(bool) = LOW_LEVEL_CALL, dest:REF_33, function:call, arguments:[] value:buyerValue \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "releaseEscrow",
+                "cancelEscrow"
+            ],
+            "First_function": "cancelEscrow",
+            "Second_function": "releaseEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \"",
+                        "\"BlockID: 30\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_28 = SOLIDITY_CALL require(bool)(REF_25)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \"",
+                        "\"BlockID: 31\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerApprovedTheTransaction)\nIRS: \nTMP_29 = SOLIDITY_CALL require(bool)(REF_27)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \"",
+                        "\"BlockID: 32\nFunction: releaseEscrow\nNode: \nNEW VARIABLE sellerReceivedMoney = escrows[_tradeHash].seller.call.value(buyerValue)()\nIRS: \nTMP_34(bool) = LOW_LEVEL_CALL, dest:REF_33, function:call, arguments:[] value:buyerValue \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: cancelEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_17 = delete REF_17 \"",
+                        "\"BlockID: 33\nFunction: releaseEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_36(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "releaseEscrow",
+                "approveEscrow"
+            ],
+            "First_function": "approveEscrow",
+            "Second_function": "releaseEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: approveEscrow\nNode: \nEXPRESSION escrows[_tradeHash].buyerApprovedTheTransaction = true\nIRS: \nREF_23 := true\"",
+                        "\"BlockID: 31\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerApprovedTheTransaction)\nIRS: \nTMP_29 = SOLIDITY_CALL require(bool)(REF_27)\""
+                    ],
+                    "state_variable": "escrows.buyerApprovedTheTransaction"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "releaseEscrow",
+                "approveEscrow"
+            ],
+            "First_function": "approveEscrow",
+            "Second_function": "releaseEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: approveEscrow\nNode: \nEXPRESSION escrows[_tradeHash].buyerApprovedTheTransaction = true\nIRS: \nREF_23 := true\"",
+                        "\"BlockID: 31\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerApprovedTheTransaction)\nIRS: \nTMP_29 = SOLIDITY_CALL require(bool)(REF_27)\""
+                    ],
+                    "state_variable": "escrows.buyerApprovedTheTransaction"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "releaseEscrow",
+                "releaseEscrow"
+            ],
+            "First_function": "releaseEscrow",
+            "Second_function": "releaseEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 95\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \"",
+                        "\"BlockID: 30\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_28 = SOLIDITY_CALL require(bool)(REF_25)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 95\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \"",
+                        "\"BlockID: 31\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerApprovedTheTransaction)\nIRS: \nTMP_29 = SOLIDITY_CALL require(bool)(REF_27)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 95\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \"",
+                        "\"BlockID: 32\nFunction: releaseEscrow\nNode: \nNEW VARIABLE sellerReceivedMoney = escrows[_tradeHash].seller.call.value(buyerValue)()\nIRS: \nTMP_34(bool) = LOW_LEVEL_CALL, dest:REF_33, function:call, arguments:[] value:buyerValue \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "releaseEscrow",
+                "releaseEscrow"
+            ],
+            "First_function": "releaseEscrow",
+            "Second_function": "releaseEscrow",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 103\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \"",
+                        "\"BlockID: 30\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].exists)\nIRS: \nTMP_28 = SOLIDITY_CALL require(bool)(REF_25)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 103\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \"",
+                        "\"BlockID: 31\nFunction: releaseEscrow\nNode: \nEXPRESSION require(bool)(escrows[_tradeHash].buyerApprovedTheTransaction)\nIRS: \nTMP_29 = SOLIDITY_CALL require(bool)(REF_27)\""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 103\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \"",
+                        "\"BlockID: 32\nFunction: releaseEscrow\nNode: \nNEW VARIABLE sellerReceivedMoney = escrows[_tradeHash].seller.call.value(buyerValue)()\nIRS: \nTMP_34(bool) = LOW_LEVEL_CALL, dest:REF_33, function:call, arguments:[] value:buyerValue \""
+                    ],
+                    "state_variable": "escrows"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 103\nFunction: releaseEscrow\nNode: \nEXPRESSION delete escrows[_tradeHash]\nIRS: \nREF_38 = delete REF_38 \"",
+                        "\"BlockID: 33\nFunction: releaseEscrow\nNode: \nNEW VARIABLE arbitratorReceivedMoney = arbitrator.call.value(arbitratorValue)()\nIRS: \nTMP_36(bool) = LOW_LEVEL_CALL, dest:arbitrator, function:call, arguments:[] value:arbitratorValue \""
+                    ],
+                    "state_variable": "escrows"
+                }
+            ]
+        }
+    ]
+}

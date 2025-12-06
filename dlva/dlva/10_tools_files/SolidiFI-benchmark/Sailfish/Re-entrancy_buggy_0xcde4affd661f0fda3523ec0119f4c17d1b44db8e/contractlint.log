@@ -1,0 +1,70 @@
+[INFO] | 2023-06-04 02:33:06 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Analysis started at: 2023-06-04 02:33:06 PM
+[INFO] | 2023-06-04 02:33:06 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Version constraints: ['^0.4.26']
+[INFO] | 2023-06-04 02:33:06 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | solc version: v0.4.26
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Callgraph generation started!
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Callgraph generation finished!
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Interprocedural CFG generation started!
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Interprocedural CFG generation finished!
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Storage dependency graph generation started!
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Storage dependency graph generation finished!
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Value Range Analysis started
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Generating return summary for receiveApproval
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Return summary generated for receiveApproval
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | State variable assignement do not exist
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Processed function receiveApproval
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Generating return summary for withdraw_balances_re_ent29
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Return summary generated for withdraw_balances_re_ent29
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Range graph generated
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Processed function withdraw_balances_re_ent29
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Generating return summary for XChain
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Return summary generated for XChain
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Range graph generated
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Processed function XChain
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Generating return summary for _transfer
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Return summary generated for _transfer
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Range graph generated
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Processed function _transfer
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Generating return summary for approve
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Return summary generated for approve
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Range graph generated
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Processed function approve
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Generating return summary for burn
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Return summary generated for burn
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Range graph generated
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Processed function burn
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Generating return summary for burnFrom
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Return summary generated for burnFrom
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Range graph generated
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Processed function burnFrom
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Generating return summary for slitherConstructorVariables
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Return summary generated for slitherConstructorVariables
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Range graph generated
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Processed function slitherConstructorVariables
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Generating return summary for approveAndCall
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Return summary generated for approveAndCall
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Range graph generated
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Processed function approveAndCall
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Generating return summary for transfer
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Return summary generated for transfer
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Range graph generated
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Processed function transfer
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Generating return summary for transferFrom
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Return summary generated for transferFrom
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Range graph generated
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Processed function transferFrom
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Value Range Analysis took 0.008651 seconds
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Value Range Analysis finished
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Storage dependency graph compostion started!
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Storage dependency graph compostion finished!
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Dependency detection started!
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | DAO dependency detected in file Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e.sol in contract XChain in by composing functions withdraw_balances_re_ent29 and withdraw_balances_re_ent29
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | TOD dependency detected in file Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e.sol in contract XChain in by composing functions withdraw_balances_re_ent29 and withdraw_balances_re_ent29
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Dependency detection finished!
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Static Analysis took 0.630781 seconds
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Dependency exists
+[INFO] | 2023-06-04 02:33:07 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Invoking symbolic executor!
+[INFO] | 2023-06-04 02:33:09 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Symbolic execution took 2.306389 seconds
+[INFO] | 2023-06-04 02:33:09 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Symbolic execution finished!
+[INFO] | 2023-06-04 02:33:09 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Analysis finished!
+[INFO] | 2023-06-04 02:33:09 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Analysis took 2.938323 seconds
+[INFO] | 2023-06-04 02:33:09 PM | analyzer.Re-entrancy_buggy_0xcde4affd661f0fda3523ec0119f4c17d1b44db8e | Analysis finished at: 2023-06-04 02:33:09 PM

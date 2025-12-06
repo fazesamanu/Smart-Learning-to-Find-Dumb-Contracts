@@ -1,0 +1,2265 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 37 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m3\u001b[0m\nNumber of informational issues: \u001b[92m15\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[93m1\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 37 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m3\u001b[0m\nNumber of informational issues: \u001b[92m15\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[93m1\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\n",
+        "first_markdown_element": "",
+        "id": "e9572ebfd069d4c5a5adc7c981e50990913933dd4c93932f99d65ede77d5ddb8",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "QuestionGame",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 1139,
+                  "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                  "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "QuestionGame",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 7,
+                  "features": [
+                    "Receive ETH",
+                    "Send ETH"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 37,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 3,
+            "informational_issues": 15,
+            "low_issues": 1,
+            "medium_issues": 1,
+            "high_issues": 1
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "StartGame",
+                  "source_mapping": {
+                    "start": 327,
+                    "length": 243,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "QuestionGame",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1139,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "StartGame(string,string)"
+                  }
+                }
+              ],
+              "description": "StartGame(string,string) should be declared external:\n\t- QuestionGame.StartGame(string,string) (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#13-19)\n",
+              "markdown": "StartGame(string,string) should be declared external:\n\t- [QuestionGame.StartGame(string,string)](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L13-L19)\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L13-L19",
+              "id": "330dedf44ede8bf6a0fad0bda24775524ec66910c36974be386766c0f3599d86",
+              "check": "external-function",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "NewQuestion",
+                  "source_mapping": {
+                    "start": 721,
+                    "length": 212,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "QuestionGame",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1139,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "NewQuestion(string,bytes32)"
+                  }
+                }
+              ],
+              "description": "NewQuestion(string,bytes32) should be declared external:\n\t- QuestionGame.NewQuestion(string,bytes32) (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#25-30)\n",
+              "markdown": "NewQuestion(string,bytes32) should be declared external:\n\t- [QuestionGame.NewQuestion(string,bytes32)](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L25-L30)\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L25-L30",
+              "id": "a9baf8e9f55e36afd0924fdae2d4a77322f7b6a0c2027114550ce48e726870f5",
+              "check": "external-function",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "Answer",
+                  "source_mapping": {
+                    "start": 136,
+                    "length": 186,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "QuestionGame",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1139,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "Answer(string)"
+                  }
+                }
+              ],
+              "description": "Answer(string) should be declared external:\n\t- QuestionGame.Answer(string) (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#8-12)\n",
+              "markdown": "Answer(string) should be declared external:\n\t- [QuestionGame.Answer(string)](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L8-L12)\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L8-L12",
+              "id": "c9a8191649b19642f6488ec34ff62265fd1be0aff3e04916c42f8b24a963362b",
+              "check": "external-function",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.26",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".26"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.26 (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.26](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L1) allows old versions\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L1",
+              "id": "248820fd28e3844948ab9b48005dfba32737047b9034abf5f58eb32715315ad0",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.26 is not recommended for deployment\n",
+              "markdown": "solc-0.4.26 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "e85e93c612cb109c115ab31accf43cd25c590bd8f9b6a43b662115b987f777c3",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_responseHash",
+                  "source_mapping": {
+                    "start": 760,
+                    "length": 21,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      25
+                    ],
+                    "starting_column": 44,
+                    "ending_column": 65
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "NewQuestion",
+                      "source_mapping": {
+                        "start": 721,
+                        "length": 212,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "QuestionGame",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1139,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "NewQuestion(string,bytes32)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter QuestionGame.NewQuestion(string,bytes32)._responseHash (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#25) is not in mixedCase\n",
+              "markdown": "Parameter [QuestionGame.NewQuestion(string,bytes32)._responseHash](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L25) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L25",
+              "id": "2ba09e69a4c41aabba5e6c56f0d2b0dab9448ab008679a11253a0e08a69fd061",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "winner_tmstmp2",
+                  "source_mapping": {
+                    "start": 934,
+                    "length": 22,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      31
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 23
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "QuestionGame",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1139,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable QuestionGame.winner_tmstmp2 (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#31) is not in mixedCase\n",
+              "markdown": "Variable [QuestionGame.winner_tmstmp2](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L31) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L31",
+              "id": "3b39a9959868922eca6d221bad452568000ca45f93c151921da4732c8c6bbb27",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "play_tmstmp2",
+                  "source_mapping": {
+                    "start": 958,
+                    "length": 130,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      32,
+                      33,
+                      34
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 33
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "QuestionGame",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1139,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "play_tmstmp2(uint256)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function QuestionGame.play_tmstmp2(uint256) (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#32-34) is not in mixedCase\n",
+              "markdown": "Function [QuestionGame.play_tmstmp2(uint256)](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L32-L34) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L32-L34",
+              "id": "57ccebbd3661ca28c552bea9ed4e2f8cf121931c82d5fead03f721247dbd5d3e",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "Answer",
+                  "source_mapping": {
+                    "start": 136,
+                    "length": 186,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "QuestionGame",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1139,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "Answer(string)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function QuestionGame.Answer(string) (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#8-12) is not in mixedCase\n",
+              "markdown": "Function [QuestionGame.Answer(string)](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L8-L12) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L8-L12",
+              "id": "5d273423eb157132ee6ef158215d6afba4d22c9ba8c60c96518ac02db18b1cc8",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_response",
+                  "source_mapping": {
+                    "start": 363,
+                    "length": 16,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13
+                    ],
+                    "starting_column": 41,
+                    "ending_column": 57
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "StartGame",
+                      "source_mapping": {
+                        "start": 327,
+                        "length": 243,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "QuestionGame",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1139,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "StartGame(string,string)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter QuestionGame.StartGame(string,string)._response (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#13) is not in mixedCase\n",
+              "markdown": "Parameter [QuestionGame.StartGame(string,string)._response](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L13) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L13",
+              "id": "6d564a64151d16a40970c07beab3fd0dedc394d90737a89c2546dedfa76cc7d1",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "NewQuestion",
+                  "source_mapping": {
+                    "start": 721,
+                    "length": 212,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "QuestionGame",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1139,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "NewQuestion(string,bytes32)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function QuestionGame.NewQuestion(string,bytes32) (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#25-30) is not in mixedCase\n",
+              "markdown": "Function [QuestionGame.NewQuestion(string,bytes32)](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L25-L30) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L25-L30",
+              "id": "851e77f52ad123f39e065d812aa00811f9f1920696c16fd86436f505904d6111",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_response",
+                  "source_mapping": {
+                    "start": 152,
+                    "length": 16,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 21,
+                    "ending_column": 37
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "Answer",
+                      "source_mapping": {
+                        "start": 136,
+                        "length": 186,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "QuestionGame",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1139,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "Answer(string)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter QuestionGame.Answer(string)._response (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#8) is not in mixedCase\n",
+              "markdown": "Parameter [QuestionGame.Answer(string)._response](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L8) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L8",
+              "id": "8da3656b6976ad500839f229c5dcc118b644edde6e013f02cdb848c0e27d2728",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "StartGame",
+                  "source_mapping": {
+                    "start": 327,
+                    "length": 243,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "QuestionGame",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1139,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "StartGame(string,string)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function QuestionGame.StartGame(string,string) (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#13-19) is not in mixedCase\n",
+              "markdown": "Function [QuestionGame.StartGame(string,string)](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L13-L19) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L13-L19",
+              "id": "bdef741495cdfde4709ca1b12c8b5e50b5b38addc8aefdde3df4ab5dd9a19703",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "StopGame",
+                  "source_mapping": {
+                    "start": 575,
+                    "length": 141,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      20,
+                      21,
+                      22,
+                      23,
+                      24
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "QuestionGame",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1139,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "StopGame()"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function QuestionGame.StopGame() (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#20-24) is not in mixedCase\n",
+              "markdown": "Function [QuestionGame.StopGame()](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L20-L24) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L20-L24",
+              "id": "e1939404968ea756fcb36699349ed4a6498ebe5c2e559a55a3b661790b04999e",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "bugv_tmstmp2",
+                  "source_mapping": {
+                    "start": 1124,
+                    "length": 38,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      36
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 39
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "QuestionGame",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1139,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable QuestionGame.bugv_tmstmp2 (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#36) is not in mixedCase\n",
+              "markdown": "Variable [QuestionGame.bugv_tmstmp2](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L36) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L36",
+              "id": "ea395ee7239a01ffd9e813ba328cecda447aff08ebfaae6f2c04ab1a226bbe3c",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_question",
+                  "source_mapping": {
+                    "start": 346,
+                    "length": 16,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13
+                    ],
+                    "starting_column": 24,
+                    "ending_column": 40
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "StartGame",
+                      "source_mapping": {
+                        "start": 327,
+                        "length": 243,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "QuestionGame",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1139,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "StartGame(string,string)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter QuestionGame.StartGame(string,string)._question (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#13) is not in mixedCase\n",
+              "markdown": "Parameter [QuestionGame.StartGame(string,string)._question](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L13) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L13",
+              "id": "ed198cc766d9edff105399ea344a4c307fb51df2b44476c64130ce4a48801e18",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_question",
+                  "source_mapping": {
+                    "start": 742,
+                    "length": 16,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      25
+                    ],
+                    "starting_column": 26,
+                    "ending_column": 42
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "NewQuestion",
+                      "source_mapping": {
+                        "start": 721,
+                        "length": 212,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "QuestionGame",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1139,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "NewQuestion(string,bytes32)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter QuestionGame.NewQuestion(string,bytes32)._question (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#25) is not in mixedCase\n",
+              "markdown": "Parameter [QuestionGame.NewQuestion(string,bytes32)._question](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L25) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L25",
+              "id": "f201752115d580f05e085c8bfb9716507f16fb2fc72325ed7572dfcfdd72a0a6",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "bugv_tmstmp2",
+                  "source_mapping": {
+                    "start": 1124,
+                    "length": 38,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      36
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 39
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "QuestionGame",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1139,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "QuestionGame",
+                  "source_mapping": {
+                    "start": 26,
+                    "length": 1139,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  }
+                }
+              ],
+              "description": "QuestionGame.bugv_tmstmp2 (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#36) is never used in QuestionGame (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#3-38)\n",
+              "markdown": "[QuestionGame.bugv_tmstmp2](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L36) is never used in [QuestionGame](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L3-L38)\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L36",
+              "id": "16ec40219b41d922d63906d9d1c66a42cbf7ba5f65f0b6206b175bc162bfe691",
+              "check": "unused-state",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "play_tmstmp2",
+                  "source_mapping": {
+                    "start": 958,
+                    "length": 130,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      32,
+                      33,
+                      34
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 33
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "QuestionGame",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1139,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "play_tmstmp2(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "startTime + (5 * 86400) == block.timestamp",
+                  "source_mapping": {
+                    "start": 1010,
+                    "length": 43,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      33
+                    ],
+                    "starting_column": 6,
+                    "ending_column": 49
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "play_tmstmp2",
+                      "source_mapping": {
+                        "start": 958,
+                        "length": 130,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          32,
+                          33,
+                          34
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 33
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "QuestionGame",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1139,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "play_tmstmp2(uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "QuestionGame.play_tmstmp2(uint256) (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#32-34) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- startTime + (5 * 86400) == block.timestamp (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#33)\n",
+              "markdown": "[QuestionGame.play_tmstmp2(uint256)](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L32-L34) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [startTime + (5 * 86400) == block.timestamp](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L33)\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L32-L34",
+              "id": "368f8a4402fbe3bd721844ce7e3d1fa9d1bbf564bd1170275fc4c1590aba6ba5",
+              "check": "timestamp",
+              "impact": "Low",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "play_tmstmp2",
+                  "source_mapping": {
+                    "start": 958,
+                    "length": 130,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      32,
+                      33,
+                      34
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 33
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "QuestionGame",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1139,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "play_tmstmp2(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "startTime + (5 * 86400) == block.timestamp",
+                  "source_mapping": {
+                    "start": 1010,
+                    "length": 43,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      33
+                    ],
+                    "starting_column": 6,
+                    "ending_column": 49
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "play_tmstmp2",
+                      "source_mapping": {
+                        "start": 958,
+                        "length": 130,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          32,
+                          33,
+                          34
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 33
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "QuestionGame",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1139,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "play_tmstmp2(uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "QuestionGame.play_tmstmp2(uint256) (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#32-34) uses a dangerous strict equality:\n\t- startTime + (5 * 86400) == block.timestamp (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#33)\n",
+              "markdown": "[QuestionGame.play_tmstmp2(uint256)](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L32-L34) uses a dangerous strict equality:\n\t- [startTime + (5 * 86400) == block.timestamp](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L33)\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L32-L34",
+              "id": "2393dc7326ce679f9f98b2ad4b6b4c15f3a39751a5130ace42155310e5406239",
+              "check": "incorrect-equality",
+              "impact": "Medium",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "Answer",
+                  "source_mapping": {
+                    "start": 136,
+                    "length": 186,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "QuestionGame",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1139,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "Answer(string)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "msg.sender.transfer(this.balance)",
+                  "source_mapping": {
+                    "start": 272,
+                    "length": 33,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 13,
+                    "ending_column": 46
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "Answer",
+                      "source_mapping": {
+                        "start": 136,
+                        "length": 186,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "QuestionGame",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1139,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "Answer(string)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "QuestionGame.Answer(string) (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#8-12) sends eth to arbitrary user\n\tDangerous calls:\n\t- msg.sender.transfer(this.balance) (FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#10)\n",
+              "markdown": "[QuestionGame.Answer(string)](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L8-L12) sends eth to arbitrary user\n\tDangerous calls:\n\t- [msg.sender.transfer(this.balance)](FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L10)\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol#L8-L12",
+              "id": "6883b427136d9c9ec453b0d535d6e7974899b2ac6eb57955e6713423568041d9",
+              "check": "arbitrary-send-eth",
+              "impact": "High",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

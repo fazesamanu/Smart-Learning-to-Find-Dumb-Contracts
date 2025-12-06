@@ -1,0 +1,221 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 14 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m1\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 14 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m1\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "cfc262b4439fe9155818fecb05bd52f2bc8b81b4e709b150d8f683298588ce3d",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "Create2",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 371,
+                  "filename_relative": "cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol",
+                  "filename_short": "cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "Create2",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": [
+                    "Assembly"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 14,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 1,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "deploy",
+                  "source_mapping": {
+                    "start": 99,
+                    "length": 296,
+                    "filename_relative": "cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol",
+                    "filename_short": "cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Create2",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 371,
+                        "filename_relative": "cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol",
+                        "filename_short": "cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "deploy(bytes32,bytes)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "",
+                  "source_mapping": {
+                    "start": 241,
+                    "length": 82,
+                    "filename_relative": "cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol",
+                    "filename_short": "cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 10
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "deploy",
+                      "source_mapping": {
+                        "start": 99,
+                        "length": 296,
+                        "filename_relative": "cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol",
+                        "filename_short": "cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Create2",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 371,
+                            "filename_relative": "cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol",
+                            "filename_short": "cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "deploy(bytes32,bytes)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Create2.deploy(bytes32,bytes) (cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol#5-13) uses assembly\n\t- INLINE ASM (cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol#8-10)\n",
+              "markdown": "[Create2.deploy(bytes32,bytes)](cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol#L5-L13) uses assembly\n\t- [INLINE ASM](cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol#L8-L10)\n",
+              "first_markdown_element": "cleanSource/0xcc6b626faba67507d2328364085e9c614879fbd5.sol#L5-L13",
+              "id": "bc7d817251a18a8a22a66e8d0b16a7818e2ff3e3574b913ebefa65d08a6e15c6",
+              "check": "assembly",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

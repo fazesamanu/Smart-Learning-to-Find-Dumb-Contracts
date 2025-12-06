@@ -1,0 +1,3841 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 81 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m24\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[91m2\u001b[0m\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 81 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m24\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[91m2\u001b[0m\n",
+        "first_markdown_element": "",
+        "id": "485d8b0832eec756dec3fd136ae45987e2d6d42f09aeb8436b995a259783dbbd",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "PENNY_BY_PENNY",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 1212,
+                  "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                  "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59,
+                    60
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "PENNY_BY_PENNY",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 6,
+                  "features": [
+                    "Receive ETH",
+                    "Send ETH"
+                  ]
+                }
+              },
+              {
+                "type": "contract",
+                "name": "LogFile",
+                "source_mapping": {
+                  "start": 1239,
+                  "length": 418,
+                  "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                  "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    61,
+                    62,
+                    63,
+                    64,
+                    65,
+                    66,
+                    67,
+                    68,
+                    69,
+                    70,
+                    71,
+                    72,
+                    73,
+                    74,
+                    75,
+                    76,
+                    77,
+                    78,
+                    79,
+                    80,
+                    81,
+                    82
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "LogFile",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 81,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 1,
+            "informational_issues": 24,
+            "low_issues": 2,
+            "medium_issues": 0,
+            "high_issues": 2
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "AddMessage",
+                  "source_mapping": {
+                    "start": 1428,
+                    "length": 227,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      72,
+                      73,
+                      74,
+                      75,
+                      76,
+                      77,
+                      78,
+                      79,
+                      80
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "LogFile",
+                      "source_mapping": {
+                        "start": 1239,
+                        "length": 418,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68,
+                          69,
+                          70,
+                          71,
+                          72,
+                          73,
+                          74,
+                          75,
+                          76,
+                          77,
+                          78,
+                          79,
+                          80,
+                          81,
+                          82
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "AddMessage(address,uint256,string)"
+                  }
+                }
+              ],
+              "description": "AddMessage(address,uint256,string) should be declared external:\n\t- LogFile.AddMessage(address,uint256,string) (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#72-80)\n",
+              "markdown": "AddMessage(address,uint256,string) should be declared external:\n\t- [LogFile.AddMessage(address,uint256,string)](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L72-L80)\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L72-L80",
+              "id": "25d2235fb844b90cf9e56ea1c1b8b9cc6e32b18540f2108e0523adc1b1b6c004",
+              "check": "external-function",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "node",
+                  "name": "",
+                  "source_mapping": {
+                    "start": 429,
+                    "length": 5,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      23
+                    ],
+                    "starting_column": 24,
+                    "ending_column": 29
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "SetLogFile",
+                      "source_mapping": {
+                        "start": 355,
+                        "length": 115,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PENNY_BY_PENNY",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1212,
+                            "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "SetLogFile(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Deprecated standard detected THROW (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#23):\n\t- Usage of \"throw\" should be replaced with \"revert()\"\n",
+              "markdown": "Deprecated standard detected [THROW](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L23):\n\t- Usage of \"throw\" should be replaced with \"revert()\"\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L23",
+              "id": "39ba90addc7d5df8471ba20dc6fbef3286baee38f13ca3807a691dc6d533d199",
+              "check": "deprecated-standards",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "node",
+                  "name": "",
+                  "source_mapping": {
+                    "start": 315,
+                    "length": 5,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17
+                    ],
+                    "starting_column": 24,
+                    "ending_column": 29
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "SetMinSum",
+                      "source_mapping": {
+                        "start": 245,
+                        "length": 105,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PENNY_BY_PENNY",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1212,
+                            "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "SetMinSum(uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Deprecated standard detected THROW (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#17):\n\t- Usage of \"throw\" should be replaced with \"revert()\"\n",
+              "markdown": "Deprecated standard detected [THROW](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L17):\n\t- Usage of \"throw\" should be replaced with \"revert()\"\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L17",
+              "id": "adff89793e1e470ed3e5136535a05ff046ea7dd96b2b4bc3205ff3dc04a138a7",
+              "check": "deprecated-standards",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.19 is not recommended for deployment\n",
+              "markdown": "solc-0.4.19 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "6c57d3efd769b2c1ca361b3d06ff1f2677845be92f7b50762125a4196d71725a",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.19",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".19"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.19 (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.19](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L1",
+              "id": "d2dda96bef12f6b850d219b212c1dc35c884dd196cab5b6008ba96133f1d7fbb",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "Collect",
+                  "source_mapping": {
+                    "start": 812,
+                    "length": 356,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      40,
+                      41,
+                      42,
+                      43,
+                      44,
+                      45,
+                      46,
+                      47,
+                      48,
+                      49,
+                      50,
+                      51,
+                      52,
+                      53
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PENNY_BY_PENNY",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1212,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "Collect(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "msg.sender.call.value(_am)()",
+                  "source_mapping": {
+                    "start": 1003,
+                    "length": 28,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      47
+                    ],
+                    "starting_column": 16,
+                    "ending_column": 44
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "Collect",
+                      "source_mapping": {
+                        "start": 812,
+                        "length": 356,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PENNY_BY_PENNY",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1212,
+                            "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "Collect(uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Low level call in PENNY_BY_PENNY.Collect(uint256) (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#40-53):\n\t- msg.sender.call.value(_am)() (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#47)\n",
+              "markdown": "Low level call in [PENNY_BY_PENNY.Collect(uint256)](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L40-L53):\n\t- [msg.sender.call.value(_am)()](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L47)\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L40-L53",
+              "id": "9f800953fcca0d3cf9a0d70372bf03bba24a360e83d908e1325ea537c3266a41",
+              "check": "low-level-calls",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "contract",
+                  "name": "PENNY_BY_PENNY",
+                  "source_mapping": {
+                    "start": 26,
+                    "length": 1212,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39,
+                      40,
+                      41,
+                      42,
+                      43,
+                      44,
+                      45,
+                      46,
+                      47,
+                      48,
+                      49,
+                      50,
+                      51,
+                      52,
+                      53,
+                      54,
+                      55,
+                      56,
+                      57,
+                      58,
+                      59,
+                      60
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  },
+                  "additional_fields": {
+                    "target": "contract",
+                    "convention": "CapWords"
+                  }
+                }
+              ],
+              "description": "Contract PENNY_BY_PENNY (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#3-60) is not in CapWords\n",
+              "markdown": "Contract [PENNY_BY_PENNY](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L3-L60) is not in CapWords\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L3-L60",
+              "id": "1ce432cd38e32461fb8e9016d532ec893b06c22833e779aacad145ee8167536d",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "SetLogFile",
+                  "source_mapping": {
+                    "start": 355,
+                    "length": 115,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PENNY_BY_PENNY",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1212,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "SetLogFile(address)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function PENNY_BY_PENNY.SetLogFile(address) (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#20-25) is not in mixedCase\n",
+              "markdown": "Function [PENNY_BY_PENNY.SetLogFile(address)](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L20-L25) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L20-L25",
+              "id": "317fb6bf1ee91cc84c39b5be96da70d5ac0f331a98baea282e43945e447e5693",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "Collect",
+                  "source_mapping": {
+                    "start": 812,
+                    "length": 356,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      40,
+                      41,
+                      42,
+                      43,
+                      44,
+                      45,
+                      46,
+                      47,
+                      48,
+                      49,
+                      50,
+                      51,
+                      52,
+                      53
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PENNY_BY_PENNY",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1212,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "Collect(uint256)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function PENNY_BY_PENNY.Collect(uint256) (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#40-53) is not in mixedCase\n",
+              "markdown": "Function [PENNY_BY_PENNY.Collect(uint256)](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L40-L53) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L40-L53",
+              "id": "3f960d15dde780bee3e795eabe983c88f53fed0b16fad539a9c3e15a205ba52c",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "Put",
+                  "source_mapping": {
+                    "start": 553,
+                    "length": 254,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PENNY_BY_PENNY",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1212,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "Put(uint256)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function PENNY_BY_PENNY.Put(uint256) (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#31-39) is not in mixedCase\n",
+              "markdown": "Function [PENNY_BY_PENNY.Put(uint256)](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L31-L39) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L31-L39",
+              "id": "497170a7117f9c4dc1ce8a7f11324a4b773775f56b96d4a0a3c46acab4f3beb2",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_adr",
+                  "source_mapping": {
+                    "start": 1448,
+                    "length": 12,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      72
+                    ],
+                    "starting_column": 25,
+                    "ending_column": 37
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "AddMessage",
+                      "source_mapping": {
+                        "start": 1428,
+                        "length": 227,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          72,
+                          73,
+                          74,
+                          75,
+                          76,
+                          77,
+                          78,
+                          79,
+                          80
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "LogFile",
+                          "source_mapping": {
+                            "start": 1239,
+                            "length": 418,
+                            "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75,
+                              76,
+                              77,
+                              78,
+                              79,
+                              80,
+                              81,
+                              82
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "AddMessage(address,uint256,string)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter LogFile.AddMessage(address,uint256,string)._adr (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#72) is not in mixedCase\n",
+              "markdown": "Parameter [LogFile.AddMessage(address,uint256,string)._adr](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L72) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L72",
+              "id": "7b7de59d0d9e60917cb218805b775a225e9faf2333b016b49958c53a659e18df",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "LastMsg",
+                  "source_mapping": {
+                    "start": 1407,
+                    "length": 15,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      71
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 20
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "LogFile",
+                      "source_mapping": {
+                        "start": 1239,
+                        "length": 418,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68,
+                          69,
+                          70,
+                          71,
+                          72,
+                          73,
+                          74,
+                          75,
+                          76,
+                          77,
+                          78,
+                          79,
+                          80,
+                          81,
+                          82
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable LogFile.LastMsg (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#71) is not in mixedCase\n",
+              "markdown": "Variable [LogFile.LastMsg](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L71) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L71",
+              "id": "7f7486569b8c251dba34fa1cbdb901b671516d3339b1fb0d7a8260fc460724a6",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_val",
+                  "source_mapping": {
+                    "start": 1461,
+                    "length": 9,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      72
+                    ],
+                    "starting_column": 38,
+                    "ending_column": 47
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "AddMessage",
+                      "source_mapping": {
+                        "start": 1428,
+                        "length": 227,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          72,
+                          73,
+                          74,
+                          75,
+                          76,
+                          77,
+                          78,
+                          79,
+                          80
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "LogFile",
+                          "source_mapping": {
+                            "start": 1239,
+                            "length": 418,
+                            "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75,
+                              76,
+                              77,
+                              78,
+                              79,
+                              80,
+                              81,
+                              82
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "AddMessage(address,uint256,string)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter LogFile.AddMessage(address,uint256,string)._val (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#72) is not in mixedCase\n",
+              "markdown": "Parameter [LogFile.AddMessage(address,uint256,string)._val](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L72) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L72",
+              "id": "83f648c50c08d6777cac9b9404c7cd5ebdded4db0b3aaf3ae8767a405e3d34d6",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "Initialized",
+                  "source_mapping": {
+                    "start": 475,
+                    "length": 73,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      26,
+                      27,
+                      28,
+                      29,
+                      30
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PENNY_BY_PENNY",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1212,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "Initialized()"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function PENNY_BY_PENNY.Initialized() (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#26-30) is not in mixedCase\n",
+              "markdown": "Function [PENNY_BY_PENNY.Initialized()](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L26-L30) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L26-L30",
+              "id": "93446a809f285b25777a107bb01af3b3f50a093e6f9e65459acd899ca6ffbed5",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_am",
+                  "source_mapping": {
+                    "start": 829,
+                    "length": 8,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      40
+                    ],
+                    "starting_column": 22,
+                    "ending_column": 30
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "Collect",
+                      "source_mapping": {
+                        "start": 812,
+                        "length": 356,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PENNY_BY_PENNY",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1212,
+                            "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "Collect(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter PENNY_BY_PENNY.Collect(uint256)._am (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#40) is not in mixedCase\n",
+              "markdown": "Parameter [PENNY_BY_PENNY.Collect(uint256)._am](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L40) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L40",
+              "id": "9c585e064efe8de09f6b27fcd899dddcacddf702af9ebc9a5da7f3008929ad3e",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "Acc",
+                  "source_mapping": {
+                    "start": 138,
+                    "length": 38,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 43
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PENNY_BY_PENNY",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1212,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable PENNY_BY_PENNY.Acc (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#10) is not in mixedCase\n",
+              "markdown": "Variable [PENNY_BY_PENNY.Acc](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L10) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L10",
+              "id": "9c7bc9d0eebad918d1804a7848b2923668ffe8a38b31f72751c6991445bc47f3",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_lockTime",
+                  "source_mapping": {
+                    "start": 566,
+                    "length": 14,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      31
+                    ],
+                    "starting_column": 18,
+                    "ending_column": 32
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "Put",
+                      "source_mapping": {
+                        "start": 553,
+                        "length": 254,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PENNY_BY_PENNY",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1212,
+                            "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "Put(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter PENNY_BY_PENNY.Put(uint256)._lockTime (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#31) is not in mixedCase\n",
+              "markdown": "Parameter [PENNY_BY_PENNY.Put(uint256)._lockTime](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L31) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L31",
+              "id": "a2183c3950d706a4d6534d93050899fa49b4bf8fd38dc1e3586120a9849afab7",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_data",
+                  "source_mapping": {
+                    "start": 1471,
+                    "length": 12,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      72
+                    ],
+                    "starting_column": 48,
+                    "ending_column": 60
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "AddMessage",
+                      "source_mapping": {
+                        "start": 1428,
+                        "length": 227,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          72,
+                          73,
+                          74,
+                          75,
+                          76,
+                          77,
+                          78,
+                          79,
+                          80
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "LogFile",
+                          "source_mapping": {
+                            "start": 1239,
+                            "length": 418,
+                            "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75,
+                              76,
+                              77,
+                              78,
+                              79,
+                              80,
+                              81,
+                              82
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "AddMessage(address,uint256,string)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter LogFile.AddMessage(address,uint256,string)._data (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#72) is not in mixedCase\n",
+              "markdown": "Parameter [LogFile.AddMessage(address,uint256,string)._data](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L72) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L72",
+              "id": "a6f2a0ac722b4593384968d36061cec8fc4a6b47fc330ab890529adb383f824c",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "History",
+                  "source_mapping": {
+                    "start": 1377,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      70
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 29
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "LogFile",
+                      "source_mapping": {
+                        "start": 1239,
+                        "length": 418,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68,
+                          69,
+                          70,
+                          71,
+                          72,
+                          73,
+                          74,
+                          75,
+                          76,
+                          77,
+                          78,
+                          79,
+                          80,
+                          81,
+                          82
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable LogFile.History (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#70) is not in mixedCase\n",
+              "markdown": "Variable [LogFile.History](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L70) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L70",
+              "id": "b8959d9d2a75b6d3dc23575557af2bbedbf431be60d598fd962b395014d6161c",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "AddMessage",
+                  "source_mapping": {
+                    "start": 1428,
+                    "length": 227,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      72,
+                      73,
+                      74,
+                      75,
+                      76,
+                      77,
+                      78,
+                      79,
+                      80
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "LogFile",
+                      "source_mapping": {
+                        "start": 1239,
+                        "length": 418,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68,
+                          69,
+                          70,
+                          71,
+                          72,
+                          73,
+                          74,
+                          75,
+                          76,
+                          77,
+                          78,
+                          79,
+                          80,
+                          81,
+                          82
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "AddMessage(address,uint256,string)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function LogFile.AddMessage(address,uint256,string) (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#72-80) is not in mixedCase\n",
+              "markdown": "Function [LogFile.AddMessage(address,uint256,string)](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L72-L80) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L72-L80",
+              "id": "c41211972cdd4933efc27c9f5968e9bc2825027b81e30a2717370b67b0dc86e9",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_val",
+                  "source_mapping": {
+                    "start": 264,
+                    "length": 9,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      14
+                    ],
+                    "starting_column": 24,
+                    "ending_column": 33
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "SetMinSum",
+                      "source_mapping": {
+                        "start": 245,
+                        "length": 105,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PENNY_BY_PENNY",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1212,
+                            "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "SetMinSum(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter PENNY_BY_PENNY.SetMinSum(uint256)._val (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#14) is not in mixedCase\n",
+              "markdown": "Parameter [PENNY_BY_PENNY.SetMinSum(uint256)._val](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L14) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L14",
+              "id": "c7e04d96db786b40ab76166066a8c4821d2c537fb73332a42404029380dbfcee",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "MinSum",
+                  "source_mapping": {
+                    "start": 182,
+                    "length": 18,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 23
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PENNY_BY_PENNY",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1212,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable PENNY_BY_PENNY.MinSum (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#11) is not in mixedCase\n",
+              "markdown": "Variable [PENNY_BY_PENNY.MinSum](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L11) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L11",
+              "id": "d29e42baf53f0e351c1a2475f04c100e906bb96ea305699a011d4973dbfa8160",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_log",
+                  "source_mapping": {
+                    "start": 375,
+                    "length": 12,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      20
+                    ],
+                    "starting_column": 25,
+                    "ending_column": 37
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "SetLogFile",
+                      "source_mapping": {
+                        "start": 355,
+                        "length": 115,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PENNY_BY_PENNY",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1212,
+                            "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "SetLogFile(address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter PENNY_BY_PENNY.SetLogFile(address)._log (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#20) is not in mixedCase\n",
+              "markdown": "Parameter [PENNY_BY_PENNY.SetLogFile(address)._log](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L20) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L20",
+              "id": "eae625e3f819610205777b08793845a49025911e50499f59e2d08ecab1e4205e",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "Log",
+                  "source_mapping": {
+                    "start": 206,
+                    "length": 11,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 16
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PENNY_BY_PENNY",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1212,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable PENNY_BY_PENNY.Log (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#12) is not in mixedCase\n",
+              "markdown": "Variable [PENNY_BY_PENNY.Log](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L12) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L12",
+              "id": "efcf689d15205e11a3b0d17a11cd7dba9630f45f4a47df4511a28557bc9f6a1a",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "SetMinSum",
+                  "source_mapping": {
+                    "start": 245,
+                    "length": 105,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PENNY_BY_PENNY",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1212,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "SetMinSum(uint256)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function PENNY_BY_PENNY.SetMinSum(uint256) (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#14-19) is not in mixedCase\n",
+              "markdown": "Function [PENNY_BY_PENNY.SetMinSum(uint256)](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L14-L19) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L14-L19",
+              "id": "f5e1491b96d8bf7144b47f85cdac899f7dfd94bee926e8d29fbba92956112db8",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "Collect",
+                  "source_mapping": {
+                    "start": 812,
+                    "length": 356,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      40,
+                      41,
+                      42,
+                      43,
+                      44,
+                      45,
+                      46,
+                      47,
+                      48,
+                      49,
+                      50,
+                      51,
+                      52,
+                      53
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PENNY_BY_PENNY",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1212,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "Collect(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "acc.balance >= MinSum && acc.balance >= _am && now > acc.unlockTime",
+                  "source_mapping": {
+                    "start": 915,
+                    "length": 61,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      45
+                    ],
+                    "starting_column": 13,
+                    "ending_column": 74
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "Collect",
+                      "source_mapping": {
+                        "start": 812,
+                        "length": 356,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PENNY_BY_PENNY",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1212,
+                            "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "Collect(uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "PENNY_BY_PENNY.Collect(uint256) (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#40-53) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- acc.balance >= MinSum && acc.balance >= _am && now > acc.unlockTime (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#45)\n",
+              "markdown": "[PENNY_BY_PENNY.Collect(uint256)](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L40-L53) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [acc.balance >= MinSum && acc.balance >= _am && now > acc.unlockTime](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L45)\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L40-L53",
+              "id": "27dbc4bb0a2dbe010efe074a0c7601b0b505114f2a09c084f336f85baae3ea8a",
+              "check": "timestamp",
+              "impact": "Low",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "Put",
+                  "source_mapping": {
+                    "start": 553,
+                    "length": 254,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PENNY_BY_PENNY",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1212,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "Put(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "now + _lockTime > acc.unlockTime",
+                  "source_mapping": {
+                    "start": 691,
+                    "length": 28,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      37
+                    ],
+                    "starting_column": 12,
+                    "ending_column": 40
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "Put",
+                      "source_mapping": {
+                        "start": 553,
+                        "length": 254,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PENNY_BY_PENNY",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1212,
+                            "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "Put(uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "PENNY_BY_PENNY.Put(uint256) (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#31-39) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- now + _lockTime > acc.unlockTime (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#37)\n",
+              "markdown": "[PENNY_BY_PENNY.Put(uint256)](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L31-L39) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [now + _lockTime > acc.unlockTime](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L37)\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L31-L39",
+              "id": "e85e42e83252b61b3283f446604ea4d029ec560115fc0b5a5fbe7bfc313ee3cb",
+              "check": "timestamp",
+              "impact": "Low",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "contract",
+                  "name": "LogFile",
+                  "source_mapping": {
+                    "start": 1239,
+                    "length": 418,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      61,
+                      62,
+                      63,
+                      64,
+                      65,
+                      66,
+                      67,
+                      68,
+                      69,
+                      70,
+                      71,
+                      72,
+                      73,
+                      74,
+                      75,
+                      76,
+                      77,
+                      78,
+                      79,
+                      80,
+                      81,
+                      82
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "History.push(LastMsg)",
+                  "source_mapping": {
+                    "start": 1627,
+                    "length": 21,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      79
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 30
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "AddMessage",
+                      "source_mapping": {
+                        "start": 1428,
+                        "length": 227,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          72,
+                          73,
+                          74,
+                          75,
+                          76,
+                          77,
+                          78,
+                          79,
+                          80
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "LogFile",
+                          "source_mapping": {
+                            "start": 1239,
+                            "length": 418,
+                            "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75,
+                              76,
+                              77,
+                              78,
+                              79,
+                              80,
+                              81,
+                              82
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "AddMessage(address,uint256,string)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "LogFile (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#61-82) contract sets array length with a user-controlled value:\n\t- History.push(LastMsg) (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#79)\n",
+              "markdown": "[LogFile](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L61-L82) contract sets array length with a user-controlled value:\n\t- [History.push(LastMsg)](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L79)\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L61-L82",
+              "id": "2168d8a2c2807b0713ceb561c781edadcde54fce9dcdc9fe474f9b5d9bf832ee",
+              "check": "controlled-array-length",
+              "impact": "High",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "Collect",
+                  "source_mapping": {
+                    "start": 812,
+                    "length": 356,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      40,
+                      41,
+                      42,
+                      43,
+                      44,
+                      45,
+                      46,
+                      47,
+                      48,
+                      49,
+                      50,
+                      51,
+                      52,
+                      53
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "PENNY_BY_PENNY",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1212,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "Collect(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "msg.sender.call.value(_am)()",
+                  "source_mapping": {
+                    "start": 1003,
+                    "length": 28,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      47
+                    ],
+                    "starting_column": 16,
+                    "ending_column": 44
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "Collect",
+                      "source_mapping": {
+                        "start": 812,
+                        "length": 356,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PENNY_BY_PENNY",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1212,
+                            "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "Collect(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "external_calls"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "acc.balance -= _am",
+                  "source_mapping": {
+                    "start": 1063,
+                    "length": 16,
+                    "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      49
+                    ],
+                    "starting_column": 17,
+                    "ending_column": 33
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "Collect",
+                      "source_mapping": {
+                        "start": 812,
+                        "length": 356,
+                        "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "PENNY_BY_PENNY",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1212,
+                            "filename_relative": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "filename_short": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "Collect(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "variables_written",
+                    "variable_name": "Acc"
+                  }
+                }
+              ],
+              "description": "Reentrancy in PENNY_BY_PENNY.Collect(uint256) (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#40-53):\n\tExternal calls:\n\t- msg.sender.call.value(_am)() (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#47)\n\tState variables written after the call(s):\n\t- acc.balance -= _am (cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#49)\n",
+              "markdown": "Reentrancy in [PENNY_BY_PENNY.Collect(uint256)](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L40-L53):\n\tExternal calls:\n\t- [msg.sender.call.value(_am)()](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L47)\n\tState variables written after the call(s):\n\t- [acc.balance -= _am](cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L49)\n",
+              "first_markdown_element": "cleanSource/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#L40-L53",
+              "id": "a5b42c6fe83ce9c7d5cb5dc34df71dea3ef1ad423f8c303a8c8c9920f6bf9f79",
+              "check": "reentrancy-eth",
+              "impact": "High",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

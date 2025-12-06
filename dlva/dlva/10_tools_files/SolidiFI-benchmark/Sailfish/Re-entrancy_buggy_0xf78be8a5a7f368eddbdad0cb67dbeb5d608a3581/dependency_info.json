@@ -1,0 +1,40 @@
+{
+    "Re-entrancy_buggy_0xf78be8a5a7f368eddbdad0cb67dbeb5d608a3581.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawBalance_re_ent5",
+                "withdrawBalance_re_ent5"
+            ],
+            "from_function": "withdrawBalance_re_ent5",
+            "to_function": "withdrawBalance_re_ent5",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 48\nFunction: withdrawBalance_re_ent5\nNode: \nIF ! (msg.sender.call.value(userBalance_re_ent5[msg.sender])())\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_2 \"",
+                        "\"BlockID: 5\nFunction: withdrawBalance_re_ent5\nNode: \nEXPRESSION userBalance_re_ent5[msg.sender] = 0\nIRS: \nREF_3 := 0\""
+                    ],
+                    "state_variable": "userBalance_re_ent5"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawBalance_re_ent5",
+                "withdrawBalance_re_ent5"
+            ],
+            "First_function": "withdrawBalance_re_ent5",
+            "Second_function": "withdrawBalance_re_ent5",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 56\nFunction: withdrawBalance_re_ent5\nNode: \nEXPRESSION userBalance_re_ent5[msg.sender] = 0\nIRS: \nREF_3 := 0\"",
+                        "\"BlockID: 2\nFunction: withdrawBalance_re_ent5\nNode: \nIF ! (msg.sender.call.value(userBalance_re_ent5[msg.sender])())\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_2 \""
+                    ],
+                    "state_variable": "userBalance_re_ent5"
+                }
+            ]
+        }
+    ]
+}

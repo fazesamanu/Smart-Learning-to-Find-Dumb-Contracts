@@ -1,0 +1,114 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 5 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m0\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 5 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m0\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "8e1850655f00764ee435dc876d885f7941b13d92ea4c1761fd8b0bb7b92567c5",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "SeeByteCodeForVariable",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 64,
+                  "filename_relative": "cleanSource/0x1fbccc3e0e6aeefdd9ad6f0292f5176d498a813b.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x1fbccc3e0e6aeefdd9ad6f0292f5176d498a813b.sol",
+                  "filename_short": "cleanSource/0x1fbccc3e0e6aeefdd9ad6f0292f5176d498a813b.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "SeeByteCodeForVariable",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 5,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 1,
+            "informational_issues": 0,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "a",
+                  "source_mapping": {
+                    "start": 64,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0x1fbccc3e0e6aeefdd9ad6f0292f5176d498a813b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x1fbccc3e0e6aeefdd9ad6f0292f5176d498a813b.sol",
+                    "filename_short": "cleanSource/0x1fbccc3e0e6aeefdd9ad6f0292f5176d498a813b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 28
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "SeeByteCodeForVariable",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 64,
+                        "filename_relative": "cleanSource/0x1fbccc3e0e6aeefdd9ad6f0292f5176d498a813b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x1fbccc3e0e6aeefdd9ad6f0292f5176d498a813b.sol",
+                        "filename_short": "cleanSource/0x1fbccc3e0e6aeefdd9ad6f0292f5176d498a813b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "SeeByteCodeForVariable.a (cleanSource/0x1fbccc3e0e6aeefdd9ad6f0292f5176d498a813b.sol#4) should be constant\n",
+              "markdown": "[SeeByteCodeForVariable.a](cleanSource/0x1fbccc3e0e6aeefdd9ad6f0292f5176d498a813b.sol#L4) should be constant\n",
+              "first_markdown_element": "cleanSource/0x1fbccc3e0e6aeefdd9ad6f0292f5176d498a813b.sol#L4",
+              "id": "a8c6dc4bee1a619de199be4f336736c51dec61951a7e142beb621eb6c2559b82",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

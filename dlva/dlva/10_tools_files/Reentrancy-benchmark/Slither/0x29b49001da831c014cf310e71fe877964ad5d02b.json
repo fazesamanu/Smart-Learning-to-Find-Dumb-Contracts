@@ -1,0 +1,206 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 9 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m2\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 9 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m2\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "5b978b7330bd15c84fd4344c28fbe45b452569e99682bdbd0ef586de2f25914d",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "SmartWalletChecker",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 274,
+                  "filename_relative": "cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol",
+                  "filename_short": "cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "SmartWalletChecker",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 9,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 2,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "yearn",
+                  "source_mapping": {
+                    "start": 108,
+                    "length": 83,
+                    "filename_relative": "cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol",
+                    "filename_short": "cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 88
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "SmartWalletChecker",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 274,
+                        "filename_relative": "cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol",
+                        "filename_short": "cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable_constant",
+                    "convention": "UPPER_CASE_WITH_UNDERSCORES"
+                  }
+                }
+              ],
+              "description": "Constant SmartWalletChecker.yearn (cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol#5) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "markdown": "Constant [SmartWalletChecker.yearn](cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol#L5) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "first_markdown_element": "cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol#L5",
+              "id": "d6061e84e3983711b7cf76306e90148a363aa41eed7e32e26b22a7d8a1de73d6",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_wallet",
+                  "source_mapping": {
+                    "start": 212,
+                    "length": 15,
+                    "filename_relative": "cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol",
+                    "filename_short": "cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 20,
+                    "ending_column": 35
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "check",
+                      "source_mapping": {
+                        "start": 197,
+                        "length": 101,
+                        "filename_relative": "cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol",
+                        "filename_short": "cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6,
+                          7,
+                          8
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "SmartWalletChecker",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 274,
+                            "filename_relative": "cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol",
+                            "filename_short": "cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "check(address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter SmartWalletChecker.check(address)._wallet (cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol#6) is not in mixedCase\n",
+              "markdown": "Parameter [SmartWalletChecker.check(address)._wallet](cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol#L6) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x29b49001da831c014cf310e71fe877964ad5d02b.sol#L6",
+              "id": "f1f31767ed71b2d307132443248da8a11780ebea2efd5f2562a1a482b5dd3f41",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

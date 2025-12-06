@@ -1,0 +1,457 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 66 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\nERCs: ERC20\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 66 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\nERCs: ERC20\n",
+        "first_markdown_element": "",
+        "id": "2eebc48dfb34adb572feb6f064f3cd0eca7586c41b6bf7a40dd3645b137dc7a9",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "TRISTOcode",
+                "source_mapping": {
+                  "start": 1161,
+                  "length": 1756,
+                  "filename_relative": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                  "filename_short": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59,
+                    60,
+                    61,
+                    62,
+                    63,
+                    64,
+                    65,
+                    66,
+                    67
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "TRISTOcode",
+                  "is_complex_code": false,
+                  "is_erc20": true,
+                  "number_functions": 17,
+                  "features": [],
+                  "erc20_pause": false,
+                  "erc20_can_mint": false,
+                  "erc20_race_condition_mitigated": false
+                }
+              }
+            ]
+          },
+          "number_lines": 66,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [
+            "ERC20"
+          ],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 4,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [],
+              "description": "solc-0.5.0 is not recommended for deployment\n",
+              "markdown": "solc-0.5.0 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "21539c75e015cde5bdae3a77b39cf5d17be24d0b87a05da1d6b5d5020b7aef22",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.5.0",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                    "filename_short": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.5",
+                      ".0"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.5.0 (cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.5.0](cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol#L1",
+              "id": "bb43e3c6361fce46192d1baa413fca722f8387af7600e596fcb4e6897b4a6be8",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_totalSupply",
+                  "source_mapping": {
+                    "start": 1292,
+                    "length": 27,
+                    "filename_relative": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                    "filename_short": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      27
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 32
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "TRISTOcode",
+                      "source_mapping": {
+                        "start": 1161,
+                        "length": 1756,
+                        "filename_relative": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                        "filename_short": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable TRISTOcode._totalSupply (cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol#27) is not in mixedCase\n",
+              "markdown": "Variable [TRISTOcode._totalSupply](cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol#L27) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol#L27",
+              "id": "c53d72cdf416b9dbc0a57da69984d52a9ac39a3839ebbdc71946af009b613326",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "constructor",
+                  "source_mapping": {
+                    "start": 1427,
+                    "length": 257,
+                    "filename_relative": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                    "filename_short": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "TRISTOcode",
+                      "source_mapping": {
+                        "start": 1161,
+                        "length": 1756,
+                        "filename_relative": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                        "filename_short": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "constructor()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "_totalSupply = 21000000000000000000000000",
+                  "source_mapping": {
+                    "start": 1530,
+                    "length": 41,
+                    "filename_relative": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                    "filename_short": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      35
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 50
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "constructor",
+                      "source_mapping": {
+                        "start": 1427,
+                        "length": 257,
+                        "filename_relative": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                        "filename_short": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "TRISTOcode",
+                          "source_mapping": {
+                            "start": 1161,
+                            "length": 1756,
+                            "filename_relative": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                            "filename_short": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "constructor()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "TRISTOcode.constructor() (cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol#31-38) uses literals with too many digits:\n\t- _totalSupply = 21000000000000000000000000 (cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol#35)\n",
+              "markdown": "[TRISTOcode.constructor()](cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol#L31-L38) uses literals with too many digits:\n\t- [_totalSupply = 21000000000000000000000000](cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol#L35)\n",
+              "first_markdown_element": "cleanSource/0x12d145e3dbeee14f05e14d91065a371f929ce058.sol#L31-L38",
+              "id": "f32657c76f4a2b183b6588a040336f88d43f87fdb7d466e2c35c00290796f7db",
+              "check": "too-many-digits",
+              "impact": "Informational",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

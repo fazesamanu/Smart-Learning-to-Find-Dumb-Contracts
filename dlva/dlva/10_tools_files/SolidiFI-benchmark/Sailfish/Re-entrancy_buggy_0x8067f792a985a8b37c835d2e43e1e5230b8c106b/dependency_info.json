@@ -1,0 +1,340 @@
+{
+    "Re-entrancy_buggy_0x8067f792a985a8b37c835d2e43e1e5230b8c106b.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawBalance_re_ent33",
+                "withdrawBalance_re_ent33"
+            ],
+            "from_function": "withdrawBalance_re_ent33",
+            "to_function": "withdrawBalance_re_ent33",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 70\nFunction: withdrawBalance_re_ent33\nNode: \nEXPRESSION (success) = msg.sender.call.value(userBalance_re_ent33[msg.sender])()\nIRS: \nTMP_45(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_37 \"",
+                        "\"BlockID: 52\nFunction: withdrawBalance_re_ent33\nNode: \nEXPRESSION userBalance_re_ent33[msg.sender] = 0\nIRS: \nREF_38 := 0\""
+                    ],
+                    "state_variable": "userBalance_re_ent33"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 56\nFunction: createTokens\nNode: \nEXPRESSION balances[msg.sender] = balances[msg.sender].add(tokens)\nIRS: \nREF_5 := TMP_24\"",
+                        "\"BlockID: 3\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(balances[owner] >= tokens)\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 60\nFunction: createTokens\nNode: \nEXPRESSION balances[owner] = balances[owner].sub(tokens)\nIRS: \nREF_2 := TMP_23\"",
+                        "\"BlockID: 3\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(balances[owner] >= tokens)\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "changeRate"
+            ],
+            "First_function": "changeRate",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 14\nFunction: changeRate\nNode: \nEXPRESSION RATE = _rate\nIRS: \nRATE := _rate\"",
+                        "\"BlockID: 3\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(balances[owner] >= tokens)\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "RATE"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 14\nFunction: changeRate\nNode: \nEXPRESSION RATE = _rate\nIRS: \nRATE := _rate\"",
+                        "\"BlockID: 4\nFunction: createTokens\nNode: \nEXPRESSION balances[msg.sender] = balances[msg.sender].add(tokens)\nIRS: \nREF_5 := TMP_24\""
+                    ],
+                    "state_variable": "RATE"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 14\nFunction: changeRate\nNode: \nEXPRESSION RATE = _rate\nIRS: \nRATE := _rate\"",
+                        "\"BlockID: 8\nFunction: createTokens\nNode: \nEXPRESSION balances[owner] = balances[owner].sub(tokens)\nIRS: \nREF_2 := TMP_23\""
+                    ],
+                    "state_variable": "RATE"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "toggleActive"
+            ],
+            "First_function": "toggleActive",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: toggleActive\nNode: \nEXPRESSION isActive = _isActive\nIRS: \nisActive := _isActive\"",
+                        "\"BlockID: 2\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(msg.value > 0 && isActive)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "isActive"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "createTokens"
+            ],
+            "First_function": "createTokens",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: createTokens\nNode: \nEXPRESSION balances[msg.sender] = balances[msg.sender].add(tokens)\nIRS: \nREF_5 := TMP_24\"",
+                        "\"BlockID: 3\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(balances[owner] >= tokens)\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: createTokens\nNode: \nEXPRESSION balances[owner] = balances[owner].sub(tokens)\nIRS: \nREF_2 := TMP_23\"",
+                        "\"BlockID: 3\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(balances[owner] >= tokens)\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "transfer"
+            ],
+            "First_function": "transfer",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: transfer\nNode: \nEXPRESSION balances[_owner] = balances[_owner].add(_value)\nIRS: \nREF_14 := TMP_31\"",
+                        "\"BlockID: 3\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(balances[owner] >= tokens)\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 34\nFunction: transfer\nNode: \nEXPRESSION balances[msg.sender] = balances[msg.sender].sub(_value)\nIRS: \nREF_11 := TMP_30\"",
+                        "\"BlockID: 3\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(balances[owner] >= tokens)\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "transferFrom"
+            ],
+            "First_function": "transferFrom",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 42\nFunction: transferFrom\nNode: \nEXPRESSION balances[_from] = balances[_from].sub(_value)\nIRS: \nREF_22 := TMP_39\"",
+                        "\"BlockID: 3\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(balances[owner] >= tokens)\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: transferFrom\nNode: \nEXPRESSION balances[_to] = balances[_to].add(_value)\nIRS: \nREF_25 := TMP_40\"",
+                        "\"BlockID: 3\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(balances[owner] >= tokens)\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "createTokens",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "createTokens",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 4\nFunction: createTokens\nNode: \nEXPRESSION balances[msg.sender] = balances[msg.sender].add(tokens)\nIRS: \nREF_5 := TMP_24\"",
+                        "\"BlockID: 20\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(balances[owner] >= tokens)\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: createTokens\nNode: \nEXPRESSION balances[owner] = balances[owner].sub(tokens)\nIRS: \nREF_2 := TMP_23\"",
+                        "\"BlockID: 20\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(balances[owner] >= tokens)\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "createTokens",
+                "changeRate"
+            ],
+            "First_function": "changeRate",
+            "Second_function": "createTokens",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 14\nFunction: changeRate\nNode: \nEXPRESSION RATE = _rate\nIRS: \nRATE := _rate\"",
+                        "\"BlockID: 20\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(balances[owner] >= tokens)\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "RATE"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 14\nFunction: changeRate\nNode: \nEXPRESSION RATE = _rate\nIRS: \nRATE := _rate\"",
+                        "\"BlockID: 21\nFunction: createTokens\nNode: \nEXPRESSION balances[msg.sender] = balances[msg.sender].add(tokens)\nIRS: \nREF_5 := TMP_24\""
+                    ],
+                    "state_variable": "RATE"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 14\nFunction: changeRate\nNode: \nEXPRESSION RATE = _rate\nIRS: \nRATE := _rate\"",
+                        "\"BlockID: 25\nFunction: createTokens\nNode: \nEXPRESSION balances[owner] = balances[owner].sub(tokens)\nIRS: \nREF_2 := TMP_23\""
+                    ],
+                    "state_variable": "RATE"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "createTokens",
+                "toggleActive"
+            ],
+            "First_function": "toggleActive",
+            "Second_function": "createTokens",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: toggleActive\nNode: \nEXPRESSION isActive = _isActive\nIRS: \nisActive := _isActive\"",
+                        "\"BlockID: 19\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(msg.value > 0 && isActive)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "isActive"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "createTokens",
+                "createTokens"
+            ],
+            "First_function": "createTokens",
+            "Second_function": "createTokens",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 64\nFunction: createTokens\nNode: \nEXPRESSION balances[msg.sender] = balances[msg.sender].add(tokens)\nIRS: \nREF_5 := TMP_24\"",
+                        "\"BlockID: 20\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(balances[owner] >= tokens)\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 68\nFunction: createTokens\nNode: \nEXPRESSION balances[owner] = balances[owner].sub(tokens)\nIRS: \nREF_2 := TMP_23\"",
+                        "\"BlockID: 20\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(balances[owner] >= tokens)\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "createTokens",
+                "transfer"
+            ],
+            "First_function": "transfer",
+            "Second_function": "createTokens",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: transfer\nNode: \nEXPRESSION balances[_owner] = balances[_owner].add(_value)\nIRS: \nREF_14 := TMP_31\"",
+                        "\"BlockID: 20\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(balances[owner] >= tokens)\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 34\nFunction: transfer\nNode: \nEXPRESSION balances[msg.sender] = balances[msg.sender].sub(_value)\nIRS: \nREF_11 := TMP_30\"",
+                        "\"BlockID: 20\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(balances[owner] >= tokens)\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "createTokens",
+                "transferFrom"
+            ],
+            "First_function": "transferFrom",
+            "Second_function": "createTokens",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 42\nFunction: transferFrom\nNode: \nEXPRESSION balances[_from] = balances[_from].sub(_value)\nIRS: \nREF_22 := TMP_39\"",
+                        "\"BlockID: 20\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(balances[owner] >= tokens)\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: transferFrom\nNode: \nEXPRESSION balances[_to] = balances[_to].add(_value)\nIRS: \nREF_25 := TMP_40\"",
+                        "\"BlockID: 20\nFunction: createTokens\nNode: \nEXPRESSION require(bool)(balances[owner] >= tokens)\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawBalance_re_ent33",
+                "withdrawBalance_re_ent33"
+            ],
+            "First_function": "withdrawBalance_re_ent33",
+            "Second_function": "withdrawBalance_re_ent33",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 78\nFunction: withdrawBalance_re_ent33\nNode: \nEXPRESSION userBalance_re_ent33[msg.sender] = 0\nIRS: \nREF_38 := 0\"",
+                        "\"BlockID: 49\nFunction: withdrawBalance_re_ent33\nNode: \nEXPRESSION (success) = msg.sender.call.value(userBalance_re_ent33[msg.sender])()\nIRS: \nTMP_45(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_37 \""
+                    ],
+                    "state_variable": "userBalance_re_ent33"
+                }
+            ]
+        }
+    ]
+}

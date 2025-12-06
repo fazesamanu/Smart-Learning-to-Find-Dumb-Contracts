@@ -1,0 +1,879 @@
+{
+    "file": "Re-entrancy_buggy_0x11ab8e468a6e4e0f69bfd35e4e5a941043f51fd3.sol",
+    "global_structs": [
+        {
+            "name": "Transfer",
+            "fields": {
+                "from": [
+                    "integer"
+                ],
+                "amount": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x44"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x45"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x46"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "owner",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "totalFee",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "transferToPassword",
+            "type": [
+                "array",
+                "integer",
+                "Transfer"
+            ],
+            "init": []
+        },
+        {
+            "name": "indexToAddress",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "passwordToAddress",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer",
+                    "integer"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "balances_re_ent29",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "commissionFee",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x4"
+            ]
+        },
+        {
+            "name": "PasswordEscrow",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4",
+            "instructions": [
+                "commissionFee = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2c",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2d",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2e",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x44",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x45",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x46",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "balances_re_ent29",
+            "addrs": [
+                "0x2",
+                "0x3"
+            ]
+        },
+        {
+            "name": "transferToPassword",
+            "addrs": [
+                "0x2",
+                "0x6",
+                "0x11",
+                "0x13",
+                "0x1e",
+                "0x2a"
+            ]
+        },
+        {
+            "name": "indexToAddress",
+            "addrs": [
+                "0x2",
+                "0x9",
+                "0x16"
+            ]
+        },
+        {
+            "name": "passwordToAddress",
+            "addrs": [
+                "0x2",
+                "0xc",
+                "0x19"
+            ]
+        },
+        {
+            "name": "totalFee",
+            "addrs": [
+                "0x2",
+                "0xf",
+                "0x1c",
+                "0x24",
+                "0x27"
+            ]
+        },
+        {
+            "name": "commissionFee",
+            "addrs": [
+                "0x2",
+                "0x20"
+            ]
+        },
+        {
+            "name": "owner",
+            "addrs": [
+                "0x2",
+                "0x22"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3",
+            "instructions": [
+                "CLR_0 = msg.sender",
+                "CLR_1 = balances_re_ent29[CLR_0]",
+                "REF_53 = CLR_1",
+                "CLR_2 = msg.sender",
+                "balances_re_ent29[CLR_2] = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x6",
+            "instructions": [
+                "CLR_3 = msg.value",
+                "RTMP_84 = CLR_3 > commissionFee",
+                "CONDITION RTMP_84 0x7 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x7",
+            "instructions": [
+                "CLR_4 = transferToPassword[U]",
+                "REF_55 = CLR_4",
+                "CLR_5 = REF_55.amount",
+                "REF_56 = CLR_5",
+                "RTMP_85 = REF_56 == 0",
+                "CONDITION RTMP_85 0x5 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5",
+            "instructions": [
+                "CLR_6 = transferToPassword[U]",
+                "REF_54 = CLR_6",
+                "transferToPassword[0] = U",
+                "transferToPassword[1] = U",
+                "transferToPassword[2] = U",
+                "transferToPassword[3] = U",
+                "transferToPassword[4] = U",
+                "transferToPassword[5] = U",
+                "transferToPassword[6] = U",
+                "transferToPassword[7] = U",
+                "transferToPassword[8] = U",
+                "transferToPassword[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x9",
+            "instructions": [
+                "CLR_7 = msg.value",
+                "RTMP_87 = CLR_7 > commissionFee",
+                "CONDITION RTMP_87 0xa 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa",
+            "instructions": [
+                "CLR_8 = transferToPassword[U]",
+                "REF_58 = CLR_8",
+                "CLR_9 = REF_58.amount",
+                "REF_59 = CLR_9",
+                "RTMP_88 = REF_59 == 0",
+                "CONDITION RTMP_88 0x8 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x8",
+            "instructions": [
+                "CLR_10 = msg.sender",
+                "CLR_11 = indexToAddress[CLR_10]",
+                "REF_57 = CLR_11",
+                "TMP_86 = REF_57 + 1",
+                "CLR_12 = msg.sender",
+                "indexToAddress[CLR_12] = TMP_86"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xc",
+            "instructions": [
+                "CLR_13 = msg.value",
+                "RTMP_89 = CLR_13 > commissionFee",
+                "CONDITION RTMP_89 0xd 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xd",
+            "instructions": [
+                "CLR_14 = transferToPassword[U]",
+                "REF_62 = CLR_14",
+                "CLR_15 = REF_62.amount",
+                "REF_63 = CLR_15",
+                "RTMP_90 = REF_63 == 0",
+                "CONDITION RTMP_90 0xb 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb",
+            "instructions": [
+                "CLR_16 = msg.sender",
+                "CLR_17 = passwordToAddress[CLR_16]",
+                "REF_60 = CLR_17",
+                "CLR_18 = REF_60[U]",
+                "REF_61 = CLR_18",
+                "REF_60[0] = U",
+                "REF_60[1] = U",
+                "REF_60[2] = U",
+                "REF_60[3] = U",
+                "REF_60[4] = U",
+                "REF_60[5] = U",
+                "REF_60[6] = U",
+                "REF_60[7] = U",
+                "REF_60[8] = U",
+                "REF_60[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf",
+            "instructions": [
+                "CLR_19 = transferToPassword[U]",
+                "REF_64 = CLR_19",
+                "CLR_20 = REF_64.amount",
+                "REF_65 = CLR_20",
+                "RTMP_92 = REF_65 > 0",
+                "CONDITION RTMP_92 0xe 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xe",
+            "instructions": [
+                "TMP_91 = totalFee + commissionFee",
+                "totalFee = TMP_91"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11",
+            "instructions": [
+                "CLR_21 = transferToPassword[U]",
+                "REF_68 = CLR_21",
+                "CLR_22 = REF_68.amount",
+                "REF_69 = CLR_22",
+                "RTMP_93 = REF_69 > 0",
+                "CONDITION RTMP_93 0x10 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10",
+            "instructions": [
+                "CLR_23 = transferToPassword[U]",
+                "REF_66 = CLR_23",
+                "CLR_24 = REF_66.amount",
+                "REF_67 = CLR_24",
+                "REF_66.amount = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x13",
+            "instructions": [
+                "CLR_25 = msg.value",
+                "RTMP_94 = CLR_25 >= commissionFee",
+                "CONDITION RTMP_94 0x14 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x14",
+            "instructions": [
+                "CLR_26 = transferToPassword[U]",
+                "REF_71 = CLR_26",
+                "CLR_27 = REF_71.amount",
+                "REF_72 = CLR_27",
+                "RTMP_95 = REF_72 == 0",
+                "CONDITION RTMP_95 0x12 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x12",
+            "instructions": [
+                "CLR_28 = transferToPassword[U]",
+                "REF_70 = CLR_28",
+                "transferToPassword[0] = U",
+                "transferToPassword[1] = U",
+                "transferToPassword[2] = U",
+                "transferToPassword[3] = U",
+                "transferToPassword[4] = U",
+                "transferToPassword[5] = U",
+                "transferToPassword[6] = U",
+                "transferToPassword[7] = U",
+                "transferToPassword[8] = U",
+                "transferToPassword[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x16",
+            "instructions": [
+                "CLR_29 = msg.value",
+                "RTMP_97 = CLR_29 >= commissionFee",
+                "CONDITION RTMP_97 0x17 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x17",
+            "instructions": [
+                "CLR_30 = transferToPassword[U]",
+                "REF_74 = CLR_30",
+                "CLR_31 = REF_74.amount",
+                "REF_75 = CLR_31",
+                "RTMP_98 = REF_75 == 0",
+                "CONDITION RTMP_98 0x15 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x15",
+            "instructions": [
+                "CLR_32 = msg.sender",
+                "CLR_33 = indexToAddress[CLR_32]",
+                "REF_73 = CLR_33",
+                "TMP_96 = REF_73 + 1",
+                "CLR_34 = msg.sender",
+                "indexToAddress[CLR_34] = TMP_96"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x19",
+            "instructions": [
+                "CLR_35 = msg.value",
+                "RTMP_99 = CLR_35 >= commissionFee",
+                "CONDITION RTMP_99 0x1a 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a",
+            "instructions": [
+                "CLR_36 = transferToPassword[U]",
+                "REF_78 = CLR_36",
+                "CLR_37 = REF_78.amount",
+                "REF_79 = CLR_37",
+                "RTMP_100 = REF_79 == 0",
+                "CONDITION RTMP_100 0x18 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x18",
+            "instructions": [
+                "CLR_38 = msg.sender",
+                "CLR_39 = passwordToAddress[CLR_38]",
+                "REF_76 = CLR_39",
+                "CLR_40 = REF_76[U]",
+                "REF_77 = CLR_40",
+                "REF_76[0] = U",
+                "REF_76[1] = U",
+                "REF_76[2] = U",
+                "REF_76[3] = U",
+                "REF_76[4] = U",
+                "REF_76[5] = U",
+                "REF_76[6] = U",
+                "REF_76[7] = U",
+                "REF_76[8] = U",
+                "REF_76[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1c",
+            "instructions": [
+                "CLR_41 = transferToPassword[U]",
+                "REF_80 = CLR_41",
+                "CLR_42 = REF_80.amount",
+                "REF_81 = CLR_42",
+                "RTMP_102 = REF_81 > 0",
+                "CONDITION RTMP_102 0x1b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b",
+            "instructions": [
+                "TMP_101 = totalFee + commissionFee",
+                "totalFee = TMP_101"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e",
+            "instructions": [
+                "CLR_43 = transferToPassword[U]",
+                "REF_84 = CLR_43",
+                "CLR_44 = REF_84.amount",
+                "REF_85 = CLR_44",
+                "RTMP_103 = REF_85 > 0",
+                "CONDITION RTMP_103 0x1d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1d",
+            "instructions": [
+                "CLR_45 = transferToPassword[U]",
+                "REF_82 = CLR_45",
+                "CLR_46 = REF_82.amount",
+                "REF_83 = CLR_46",
+                "REF_82.amount = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x20",
+            "instructions": [
+                "CLR_47 = msg.sender",
+                "RTMP_104 = CLR_47 == owner",
+                "CONDITION RTMP_104 0x1f 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1f",
+            "instructions": [
+                "commissionFee = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x22",
+            "instructions": [
+                "CLR_48 = msg.sender",
+                "RTMP_105 = CLR_48 == owner",
+                "CONDITION RTMP_105 0x21 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x21",
+            "instructions": [
+                "owner = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x24",
+            "instructions": [
+                "CLR_49 = msg.sender",
+                "RTMP_106 = CLR_49 == owner",
+                "CONDITION RTMP_106 0x25 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x25",
+            "instructions": [
+                "RTMP_107 = totalFee > 0",
+                "CONDITION RTMP_107 0x23 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x23",
+            "instructions": [
+                "totalFee = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x27",
+            "instructions": [
+                "CLR_50 = transferToPassword[U]",
+                "REF_86 = CLR_50",
+                "CLR_51 = REF_86.from",
+                "REF_87 = CLR_51",
+                "CLR_52 = msg.sender",
+                "RTMP_108 = REF_87 == CLR_52",
+                "CONDITION RTMP_108 0x28 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x28",
+            "instructions": [
+                "CLR_53 = transferToPassword[U]",
+                "REF_88 = CLR_53",
+                "CLR_54 = REF_88.amount",
+                "REF_89 = CLR_54",
+                "RTMP_109 = REF_89 > 0",
+                "CONDITION RTMP_109 0x26 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x26",
+            "instructions": [
+                "totalFee = totalFee"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2a",
+            "instructions": [
+                "CLR_55 = transferToPassword[U]",
+                "REF_92 = CLR_55",
+                "CLR_56 = REF_92.from",
+                "REF_93 = CLR_56",
+                "CLR_57 = msg.sender",
+                "RTMP_110 = REF_93 == CLR_57",
+                "CONDITION RTMP_110 0x2b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2b",
+            "instructions": [
+                "CLR_58 = transferToPassword[U]",
+                "REF_94 = CLR_58",
+                "CLR_59 = REF_94.amount",
+                "REF_95 = CLR_59",
+                "RTMP_111 = REF_95 > 0",
+                "CONDITION RTMP_111 0x29 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x29",
+            "instructions": [
+                "CLR_60 = transferToPassword[U]",
+                "REF_90 = CLR_60",
+                "CLR_61 = REF_90.amount",
+                "REF_91 = CLR_61",
+                "REF_90.amount = 0"
+            ]
+        }
+    ],
+    "root_addr": "0x47",
+    "dest_addrs": [
+        "0x48"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "getTransfer",
+            "addr": "0x47",
+            "instructions": [
+                "NOP",
+                "amount = NEW_VAL integer",
+                "pass = NEW_VAL integer",
+                "from = NEW_VAL integer",
+                "_password = NEW_VAL integer",
+                "JUMP 0x48"
+            ]
+        },
+        {
+            "scope": "getTransfer",
+            "addr": "0x48",
+            "instructions": [
+                "TMP_17 = CALL1 sha3 _password",
+                "CLR_62 = transferToPassword[TMP_17]",
+                "REF_11 = CLR_62",
+                "CLR_63 = REF_11.amount",
+                "REF_12 = CLR_63",
+                "TMP_18 = REF_12 > 0",
+                "CONDITION TMP_18 0x48_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "getTransfer",
+            "addr": "0x48_r0",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "getTransfer",
+            "addr": "0x49",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,614 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 36 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[93m1\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 36 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[93m1\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "9299cc32e5f5924b34f07f5a073872a90d28b8d1d5585798b3929002758175ae",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "ModifierEntrancy",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 427,
+                  "filename_relative": "cleanSource/modifier_reentrancy.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/modifier_reentrancy.sol",
+                  "filename_short": "cleanSource/modifier_reentrancy.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "ModifierEntrancy",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": []
+                }
+              },
+              {
+                "type": "contract",
+                "name": "Bank",
+                "source_mapping": {
+                  "start": 455,
+                  "length": 140,
+                  "filename_relative": "cleanSource/modifier_reentrancy.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/modifier_reentrancy.sol",
+                  "filename_short": "cleanSource/modifier_reentrancy.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    19,
+                    20,
+                    21,
+                    22,
+                    23
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "Bank",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              },
+              {
+                "type": "contract",
+                "name": "attack",
+                "source_mapping": {
+                  "start": 596,
+                  "length": 375,
+                  "filename_relative": "cleanSource/modifier_reentrancy.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/modifier_reentrancy.sol",
+                  "filename_short": "cleanSource/modifier_reentrancy.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "attack",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 36,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 4,
+            "low_issues": 0,
+            "medium_issues": 1,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.26",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/modifier_reentrancy.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/modifier_reentrancy.sol",
+                    "filename_short": "cleanSource/modifier_reentrancy.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".26"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.26 (cleanSource/modifier_reentrancy.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.26](cleanSource/modifier_reentrancy.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/modifier_reentrancy.sol#L1",
+              "id": "663f3be449dec0808d8d74f42d0b3ccf929576c443e0873057fba7b7a3df58af",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.26 is not recommended for deployment\n",
+              "markdown": "solc-0.4.26 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "e85e93c612cb109c115ab31accf43cd25c590bd8f9b6a43b662115b987f777c3",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "contract",
+                  "name": "attack",
+                  "source_mapping": {
+                    "start": 596,
+                    "length": 375,
+                    "filename_relative": "cleanSource/modifier_reentrancy.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/modifier_reentrancy.sol",
+                    "filename_short": "cleanSource/modifier_reentrancy.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  },
+                  "additional_fields": {
+                    "target": "contract",
+                    "convention": "CapWords"
+                  }
+                }
+              ],
+              "description": "Contract attack (cleanSource/modifier_reentrancy.sol#24-37) is not in CapWords\n",
+              "markdown": "Contract [attack](cleanSource/modifier_reentrancy.sol#L24-L37) is not in CapWords\n",
+              "first_markdown_element": "cleanSource/modifier_reentrancy.sol#L24-L37",
+              "id": "aef00341fec101347b9a82f1a9d42668bf5b7bb698532fa700dff2de82c09c92",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "name",
+                  "source_mapping": {
+                    "start": 106,
+                    "length": 33,
+                    "filename_relative": "cleanSource/modifier_reentrancy.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/modifier_reentrancy.sol",
+                    "filename_short": "cleanSource/modifier_reentrancy.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 36
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ModifierEntrancy",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 427,
+                        "filename_relative": "cleanSource/modifier_reentrancy.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/modifier_reentrancy.sol",
+                        "filename_short": "cleanSource/modifier_reentrancy.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "ModifierEntrancy",
+                  "source_mapping": {
+                    "start": 27,
+                    "length": 427,
+                    "filename_relative": "cleanSource/modifier_reentrancy.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/modifier_reentrancy.sol",
+                    "filename_short": "cleanSource/modifier_reentrancy.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  }
+                }
+              ],
+              "description": "ModifierEntrancy.name (cleanSource/modifier_reentrancy.sol#6) is never used in ModifierEntrancy (cleanSource/modifier_reentrancy.sol#4-18)\n",
+              "markdown": "[ModifierEntrancy.name](cleanSource/modifier_reentrancy.sol#L6) is never used in [ModifierEntrancy](cleanSource/modifier_reentrancy.sol#L4-L18)\n",
+              "first_markdown_element": "cleanSource/modifier_reentrancy.sol#L6",
+              "id": "fb6db1638f5f3aa71b4ea90a122f0b5f83a2b1f7629a93b0f396c1bb1600911c",
+              "check": "unused-state",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "airDrop",
+                  "source_mapping": {
+                    "start": 143,
+                    "length": 94,
+                    "filename_relative": "cleanSource/modifier_reentrancy.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/modifier_reentrancy.sol",
+                    "filename_short": "cleanSource/modifier_reentrancy.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7,
+                      8,
+                      9
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ModifierEntrancy",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 427,
+                        "filename_relative": "cleanSource/modifier_reentrancy.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/modifier_reentrancy.sol",
+                        "filename_short": "cleanSource/modifier_reentrancy.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "airDrop()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "supportsToken()",
+                  "source_mapping": {
+                    "start": 175,
+                    "length": 13,
+                    "filename_relative": "cleanSource/modifier_reentrancy.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/modifier_reentrancy.sol",
+                    "filename_short": "cleanSource/modifier_reentrancy.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7
+                    ],
+                    "starting_column": 35,
+                    "ending_column": 48
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "airDrop",
+                      "source_mapping": {
+                        "start": 143,
+                        "length": 94,
+                        "filename_relative": "cleanSource/modifier_reentrancy.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/modifier_reentrancy.sol",
+                        "filename_short": "cleanSource/modifier_reentrancy.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          7,
+                          8,
+                          9
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ModifierEntrancy",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 427,
+                            "filename_relative": "cleanSource/modifier_reentrancy.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/modifier_reentrancy.sol",
+                            "filename_short": "cleanSource/modifier_reentrancy.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "airDrop()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "external_calls"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "require(bool)(keccak256()(abi.encodePacked(Nu Token)) == Bank(msg.sender).supportsToken())",
+                  "source_mapping": {
+                    "start": 271,
+                    "length": 84,
+                    "filename_relative": "cleanSource/modifier_reentrancy.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/modifier_reentrancy.sol",
+                    "filename_short": "cleanSource/modifier_reentrancy.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 89
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "supportsToken",
+                      "source_mapping": {
+                        "start": 240,
+                        "length": 127,
+                        "filename_relative": "cleanSource/modifier_reentrancy.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/modifier_reentrancy.sol",
+                        "filename_short": "cleanSource/modifier_reentrancy.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ModifierEntrancy",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 427,
+                            "filename_relative": "cleanSource/modifier_reentrancy.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/modifier_reentrancy.sol",
+                            "filename_short": "cleanSource/modifier_reentrancy.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "supportsToken()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "external_calls_sending_eth"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "tokenBalance[msg.sender] += 20",
+                  "source_mapping": {
+                    "start": 202,
+                    "length": 30,
+                    "filename_relative": "cleanSource/modifier_reentrancy.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/modifier_reentrancy.sol",
+                    "filename_short": "cleanSource/modifier_reentrancy.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 35
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "airDrop",
+                      "source_mapping": {
+                        "start": 143,
+                        "length": 94,
+                        "filename_relative": "cleanSource/modifier_reentrancy.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/modifier_reentrancy.sol",
+                        "filename_short": "cleanSource/modifier_reentrancy.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          7,
+                          8,
+                          9
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ModifierEntrancy",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 427,
+                            "filename_relative": "cleanSource/modifier_reentrancy.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Elysiumbenchmark/cleanSource/modifier_reentrancy.sol",
+                            "filename_short": "cleanSource/modifier_reentrancy.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "airDrop()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "variables_written",
+                    "variable_name": "tokenBalance"
+                  }
+                }
+              ],
+              "description": "Reentrancy in ModifierEntrancy.airDrop() (cleanSource/modifier_reentrancy.sol#7-9):\n\tExternal calls:\n\t- supportsToken() (cleanSource/modifier_reentrancy.sol#7)\n\t\t- require(bool)(keccak256()(abi.encodePacked(Nu Token)) == Bank(msg.sender).supportsToken()) (cleanSource/modifier_reentrancy.sol#11)\n\tState variables written after the call(s):\n\t- tokenBalance[msg.sender] += 20 (cleanSource/modifier_reentrancy.sol#8)\n",
+              "markdown": "Reentrancy in [ModifierEntrancy.airDrop()](cleanSource/modifier_reentrancy.sol#L7-L9):\n\tExternal calls:\n\t- [supportsToken()](cleanSource/modifier_reentrancy.sol#L7)\n\t\t- [require(bool)(keccak256()(abi.encodePacked(Nu Token)) == Bank(msg.sender).supportsToken())](cleanSource/modifier_reentrancy.sol#L11)\n\tState variables written after the call(s):\n\t- [tokenBalance[msg.sender] += 20](cleanSource/modifier_reentrancy.sol#L8)\n",
+              "first_markdown_element": "cleanSource/modifier_reentrancy.sol#L7-L9",
+              "id": "d38765688eec432bed0c50ff94ec12eff6d267da4c921b785ee11357a34f23b5",
+              "check": "reentrancy-no-eth",
+              "impact": "Medium",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

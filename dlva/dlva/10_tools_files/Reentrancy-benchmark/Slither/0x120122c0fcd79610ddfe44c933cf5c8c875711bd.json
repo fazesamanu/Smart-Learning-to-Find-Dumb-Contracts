@@ -1,0 +1,630 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 40 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m6\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 40 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m6\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "332fc9c6f56987b78e1532bea6cee671ae18e33486e134404eafd33a013f35e5",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "ERC1003Caller",
+                "source_mapping": {
+                  "start": 762,
+                  "length": 192,
+                  "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                  "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "ERC1003Caller",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 5,
+                  "features": [
+                    "Receive ETH",
+                    "Send ETH"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 40,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 6,
+            "low_issues": 1,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [],
+              "description": "solc-0.4.24 is not recommended for deployment\n",
+              "markdown": "solc-0.4.24 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "4fdaa1943fda7c6196f21cde2a89972a5de2e49314548f4161996d6ef6af4a38",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.24",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".24"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.24 (cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.24](cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#L1",
+              "id": "aba6b3182bf70052cc51411216eb427717786714f1f6e1fbb23946756575a74e",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "makeCall",
+                  "source_mapping": {
+                    "start": 802,
+                    "length": 150,
+                    "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      37,
+                      38,
+                      39
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ERC1003Caller",
+                      "source_mapping": {
+                        "start": 762,
+                        "length": 192,
+                        "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "makeCall(address,bytes)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "_target.call.value(msg.value)(_data)",
+                  "source_mapping": {
+                    "start": 902,
+                    "length": 43,
+                    "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      38
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 52
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "makeCall",
+                      "source_mapping": {
+                        "start": 802,
+                        "length": 150,
+                        "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          37,
+                          38,
+                          39
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ERC1003Caller",
+                          "source_mapping": {
+                            "start": 762,
+                            "length": 192,
+                            "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                            "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "makeCall(address,bytes)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Low level call in ERC1003Caller.makeCall(address,bytes) (cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#37-39):\n\t- _target.call.value(msg.value)(_data) (cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#38)\n",
+              "markdown": "Low level call in [ERC1003Caller.makeCall(address,bytes)](cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#L37-L39):\n\t- [_target.call.value(msg.value)(_data)](cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#L38)\n",
+              "first_markdown_element": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#L37-L39",
+              "id": "ec6227272e55b214242984f65abd97ca0fb05aeb3e498077a7981bd27c967920",
+              "check": "low-level-calls",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_target",
+                  "source_mapping": {
+                    "start": 820,
+                    "length": 15,
+                    "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      37
+                    ],
+                    "starting_column": 23,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "makeCall",
+                      "source_mapping": {
+                        "start": 802,
+                        "length": 150,
+                        "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          37,
+                          38,
+                          39
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ERC1003Caller",
+                          "source_mapping": {
+                            "start": 762,
+                            "length": 192,
+                            "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                            "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "makeCall(address,bytes)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter ERC1003Caller.makeCall(address,bytes)._target (cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#37) is not in mixedCase\n",
+              "markdown": "Parameter [ERC1003Caller.makeCall(address,bytes)._target](cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#L37) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#L37",
+              "id": "7f8e2327f7de24ad8e47beaf331e4d900b5575cef42546b872763bd66eff4412",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_newOwner",
+                  "source_mapping": {
+                    "start": 506,
+                    "length": 17,
+                    "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      26
+                    ],
+                    "starting_column": 30,
+                    "ending_column": 47
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferOwnership",
+                      "source_mapping": {
+                        "start": 479,
+                        "length": 103,
+                        "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          26,
+                          27,
+                          28
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Ownable",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 734,
+                            "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                            "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "transferOwnership(address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Ownable.transferOwnership(address)._newOwner (cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#26) is not in mixedCase\n",
+              "markdown": "Parameter [Ownable.transferOwnership(address)._newOwner](cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#L26) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#L26",
+              "id": "d3c2fb5d8122c23f32efa2e8abca71edf28dfbf644c45f99af28a91029723542",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_data",
+                  "source_mapping": {
+                    "start": 837,
+                    "length": 11,
+                    "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      37
+                    ],
+                    "starting_column": 40,
+                    "ending_column": 51
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "makeCall",
+                      "source_mapping": {
+                        "start": 802,
+                        "length": 150,
+                        "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          37,
+                          38,
+                          39
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ERC1003Caller",
+                          "source_mapping": {
+                            "start": 762,
+                            "length": 192,
+                            "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                            "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "makeCall(address,bytes)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter ERC1003Caller.makeCall(address,bytes)._data (cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#37) is not in mixedCase\n",
+              "markdown": "Parameter [ERC1003Caller.makeCall(address,bytes)._data](cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#L37) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#L37",
+              "id": "dabf03856cfa8d9c1447d87ee0a0e7ba6c0e11d91824f022c128b1d85d9a3456",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_target",
+                  "source_mapping": {
+                    "start": 820,
+                    "length": 15,
+                    "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      37
+                    ],
+                    "starting_column": 23,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "makeCall",
+                      "source_mapping": {
+                        "start": 802,
+                        "length": 150,
+                        "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          37,
+                          38,
+                          39
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ERC1003Caller",
+                          "source_mapping": {
+                            "start": 762,
+                            "length": 192,
+                            "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                            "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "makeCall(address,bytes)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "_target.call.value(msg.value)(_data)",
+                  "source_mapping": {
+                    "start": 902,
+                    "length": 43,
+                    "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      38
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 52
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "makeCall",
+                      "source_mapping": {
+                        "start": 802,
+                        "length": 150,
+                        "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          37,
+                          38,
+                          39
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ERC1003Caller",
+                          "source_mapping": {
+                            "start": 762,
+                            "length": 192,
+                            "filename_relative": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                            "filename_short": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "makeCall(address,bytes)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "ERC1003Caller.makeCall(address,bytes)._target (cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#37) lacks a zero-check on :\n\t\t- _target.call.value(msg.value)(_data) (cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#38)\n",
+              "markdown": "[ERC1003Caller.makeCall(address,bytes)._target](cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#L37) lacks a zero-check on :\n\t\t- [_target.call.value(msg.value)(_data)](cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#L38)\n",
+              "first_markdown_element": "cleanSource/0x120122c0fcd79610ddfe44c933cf5c8c875711bd.sol#L37",
+              "id": "6d29fe2ecbcd4f2422a9e0c281bb2e8122b755c853521f98b6023df4c32b6792",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

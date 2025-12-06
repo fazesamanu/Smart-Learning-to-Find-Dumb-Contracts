@@ -1,0 +1,40 @@
+{
+    "Re-entrancy_buggy_0xbe066a1a964a0be4e57525a67bb20b2e659c3696.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawFunds_re_ent3",
+                "withdrawFunds_re_ent3"
+            ],
+            "from_function": "withdrawFunds_re_ent3",
+            "to_function": "withdrawFunds_re_ent3",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 59\nFunction: withdrawFunds_re_ent3\nNode: \nEXPRESSION require(bool)(balances_re_ent3[msg.sender] >= _weiToWithdraw)\nIRS: \nTMP_12 = SOLIDITY_CALL require(bool)(TMP_11)\"",
+                        "\"BlockID: 20\nFunction: withdrawFunds_re_ent3\nNode: \nEXPRESSION balances_re_ent3[msg.sender] -= _weiToWithdraw\nIRS: \nREF_10 = REF_10 - _weiToWithdraw\""
+                    ],
+                    "state_variable": "balances_re_ent3"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawFunds_re_ent3",
+                "withdrawFunds_re_ent3"
+            ],
+            "First_function": "withdrawFunds_re_ent3",
+            "Second_function": "withdrawFunds_re_ent3",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 67\nFunction: withdrawFunds_re_ent3\nNode: \nEXPRESSION balances_re_ent3[msg.sender] -= _weiToWithdraw\nIRS: \nREF_10 = REF_10 - _weiToWithdraw\"",
+                        "\"BlockID: 17\nFunction: withdrawFunds_re_ent3\nNode: \nEXPRESSION require(bool)(balances_re_ent3[msg.sender] >= _weiToWithdraw)\nIRS: \nTMP_12 = SOLIDITY_CALL require(bool)(TMP_11)\""
+                    ],
+                    "state_variable": "balances_re_ent3"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,567 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 25 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 25 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "33393c34fefc2cec64d0a34d0c72eb616095654235076212826d9af51c99b2c5",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "EtherPrice",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 718,
+                  "filename_relative": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                  "filename_short": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "EtherPrice",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 3,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 25,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 4,
+            "low_issues": 1,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [],
+              "description": "solc-0.4.14 is not recommended for deployment\n",
+              "markdown": "solc-0.4.14 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "0dfc19233515d1940559b2d539651aca575d67ed4e622ec0b88c38158e2a734a",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.14",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                    "filename_short": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".14"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.14 (cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.14](cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol#L1",
+              "id": "a536b315dcd420bba37c24d3aa7eb43b19f9a51844c1dc15c58abf176af522ed",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_cents",
+                  "source_mapping": {
+                    "start": 500,
+                    "length": 12,
+                    "filename_relative": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                    "filename_short": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17
+                    ],
+                    "starting_column": 41,
+                    "ending_column": 53
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "setPrice",
+                      "source_mapping": {
+                        "start": 464,
+                        "length": 179,
+                        "filename_relative": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                        "filename_short": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          17,
+                          18,
+                          19,
+                          20,
+                          21
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EtherPrice",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 718,
+                            "filename_relative": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                            "filename_short": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "setPrice(uint256,uint8)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter EtherPrice.setPrice(uint256,uint8)._cents (cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol#17) is not in mixedCase\n",
+              "markdown": "Parameter [EtherPrice.setPrice(uint256,uint8)._cents](cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol#L17) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol#L17",
+              "id": "019ead9aba4eb4ce92fed5993fe3c51cdc025ca3958a0e51cb303ef6adec3a4b",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_dollars",
+                  "source_mapping": {
+                    "start": 482,
+                    "length": 16,
+                    "filename_relative": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                    "filename_short": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17
+                    ],
+                    "starting_column": 23,
+                    "ending_column": 39
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "setPrice",
+                      "source_mapping": {
+                        "start": 464,
+                        "length": 179,
+                        "filename_relative": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                        "filename_short": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          17,
+                          18,
+                          19,
+                          20,
+                          21
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EtherPrice",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 718,
+                            "filename_relative": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                            "filename_short": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "setPrice(uint256,uint8)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter EtherPrice.setPrice(uint256,uint8)._dollars (cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol#17) is not in mixedCase\n",
+              "markdown": "Parameter [EtherPrice.setPrice(uint256,uint8)._dollars](cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol#L17) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol#L17",
+              "id": "2944d258e688c937f2816495ea2c730a3deb5a48052e756d8db8461342b8a6dd",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "setPrice",
+                  "source_mapping": {
+                    "start": 464,
+                    "length": 179,
+                    "filename_relative": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                    "filename_short": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17,
+                      18,
+                      19,
+                      20,
+                      21
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "EtherPrice",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 718,
+                        "filename_relative": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                        "filename_short": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "setPrice(uint256,uint8)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "dollars = _dollars",
+                  "source_mapping": {
+                    "start": 594,
+                    "length": 18,
+                    "filename_relative": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                    "filename_short": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      19
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 27
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "setPrice",
+                      "source_mapping": {
+                        "start": 464,
+                        "length": 179,
+                        "filename_relative": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                        "filename_short": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          17,
+                          18,
+                          19,
+                          20,
+                          21
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EtherPrice",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 718,
+                            "filename_relative": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                            "filename_short": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "setPrice(uint256,uint8)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "cents = _cents",
+                  "source_mapping": {
+                    "start": 622,
+                    "length": 14,
+                    "filename_relative": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                    "filename_short": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      20
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 23
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "setPrice",
+                      "source_mapping": {
+                        "start": 464,
+                        "length": 179,
+                        "filename_relative": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                        "filename_short": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          17,
+                          18,
+                          19,
+                          20,
+                          21
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EtherPrice",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 718,
+                            "filename_relative": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                            "filename_short": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "setPrice(uint256,uint8)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "EtherPrice.setPrice(uint256,uint8) (cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol#17-21) should emit an event for: \n\t- dollars = _dollars (cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol#19) \n\t- cents = _cents (cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol#20) \n",
+              "markdown": "[EtherPrice.setPrice(uint256,uint8)](cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol#L17-L21) should emit an event for: \n\t- [dollars = _dollars](cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol#L19) \n\t- [cents = _cents](cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol#L20) \n",
+              "first_markdown_element": "cleanSource/0x227f786028e1b5ecb60c2252aee3306c067ec978.sol#L17-L21",
+              "id": "4a33c3c35311dbc03a6efd579c2a7488071a10afcf2f8d46f1a8f3c994e45970",
+              "check": "events-maths",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

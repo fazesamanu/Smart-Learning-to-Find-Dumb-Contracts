@@ -1,0 +1,541 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 19 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m6\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 19 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m6\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "3573da8b34b950449c0965e72f5cf410fd3d5254ade2c278fcc0b7086c15f868",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "hashGenerator",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 728,
+                  "filename_relative": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                  "filename_short": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "hashGenerator",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 19,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 6,
+            "informational_issues": 3,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "c",
+                  "source_mapping": {
+                    "start": 229,
+                    "length": 77,
+                    "filename_relative": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "filename_short": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 82
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "hashGenerator",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 728,
+                        "filename_relative": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                        "filename_short": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "hashGenerator.c (cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#7) should be constant\n",
+              "markdown": "[hashGenerator.c](cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#L7) should be constant\n",
+              "first_markdown_element": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#L7",
+              "id": "39af6dc1a4de4c79dd2027d9251e74c6cea94b02d9ef27104f91307ef78feed7",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "d",
+                  "source_mapping": {
+                    "start": 313,
+                    "length": 77,
+                    "filename_relative": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "filename_short": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 82
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "hashGenerator",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 728,
+                        "filename_relative": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                        "filename_short": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "hashGenerator.d (cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#8) should be constant\n",
+              "markdown": "[hashGenerator.d](cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#L8) should be constant\n",
+              "first_markdown_element": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#L8",
+              "id": "757595a26d783cc6e62a9095f90096866b35e83d17816e8e25af5592f55e1803",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "e",
+                  "source_mapping": {
+                    "start": 397,
+                    "length": 77,
+                    "filename_relative": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "filename_short": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      9
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 82
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "hashGenerator",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 728,
+                        "filename_relative": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                        "filename_short": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "hashGenerator.e (cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#9) should be constant\n",
+              "markdown": "[hashGenerator.e](cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#L9) should be constant\n",
+              "first_markdown_element": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#L9",
+              "id": "9a85488f9ea4f2262e82bf5c227f8cc4b95e1b461d0e48aff58435bc48c23693",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "b",
+                  "source_mapping": {
+                    "start": 145,
+                    "length": 77,
+                    "filename_relative": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "filename_short": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 82
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "hashGenerator",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 728,
+                        "filename_relative": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                        "filename_short": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "hashGenerator.b (cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#6) should be constant\n",
+              "markdown": "[hashGenerator.b](cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#L6) should be constant\n",
+              "first_markdown_element": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#L6",
+              "id": "a4c85551a1a819e12f2ceeac1dc5d856c1ce681742225cc0491e770f9fbd3deb",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "f",
+                  "source_mapping": {
+                    "start": 481,
+                    "length": 77,
+                    "filename_relative": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "filename_short": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 82
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "hashGenerator",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 728,
+                        "filename_relative": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                        "filename_short": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "hashGenerator.f (cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#10) should be constant\n",
+              "markdown": "[hashGenerator.f](cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#L10) should be constant\n",
+              "first_markdown_element": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#L10",
+              "id": "b514d349caddfd4a0c7a53a8c08bb1fb73919189ad3b927694f921538fa33ab6",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "a",
+                  "source_mapping": {
+                    "start": 61,
+                    "length": 77,
+                    "filename_relative": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "filename_short": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 82
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "hashGenerator",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 728,
+                        "filename_relative": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                        "filename_short": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "hashGenerator.a (cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#5) should be constant\n",
+              "markdown": "[hashGenerator.a](cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#L5) should be constant\n",
+              "first_markdown_element": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#L5",
+              "id": "c2afcc5064c14cedf92b95d7169c9832fc4ddc605b7c66c2de505829dd5b0727",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.8.4 is not recommended for deployment\n",
+              "markdown": "solc-0.8.4 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "2d6b35864ac3d65d7e6d059f2d4d759caf96afb3e33f0c5c78a032aa1ee2c310",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.8.4",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "filename_short": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.8",
+                      ".4"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.8.4 (cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.8.4](cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#L1",
+              "id": "8e5ead18243e65b9b985201416fe783baf2692b7568d2be7cbc3b3aa7ec52b44",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "contract",
+                  "name": "hashGenerator",
+                  "source_mapping": {
+                    "start": 25,
+                    "length": 728,
+                    "filename_relative": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "filename_short": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  },
+                  "additional_fields": {
+                    "target": "contract",
+                    "convention": "CapWords"
+                  }
+                }
+              ],
+              "description": "Contract hashGenerator (cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#3-18) is not in CapWords\n",
+              "markdown": "Contract [hashGenerator](cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#L3-L18) is not in CapWords\n",
+              "first_markdown_element": "cleanSource/0xbe70b3e4a610ad92058fdfd0c35c0d5aa3ae1bfd.sol#L3-L18",
+              "id": "a48ce1998537e5a8c4876cb7984c72be59623e41256d0c7906416ab0966f17b5",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

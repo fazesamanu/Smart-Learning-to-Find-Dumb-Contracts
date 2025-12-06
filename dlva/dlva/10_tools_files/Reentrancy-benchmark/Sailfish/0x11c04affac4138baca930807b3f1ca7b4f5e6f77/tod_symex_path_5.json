@@ -1,0 +1,620 @@
+{
+    "file": "0x11c04affac4138baca930807b3f1ca7b4f5e6f77.sol",
+    "global_structs": [
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x35"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x36"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x37"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "balances",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "allowed",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer",
+                    "integer"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "totalEthInWei",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "version",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0x1c"
+            ]
+        },
+        {
+            "name": "fundsWallet",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x15"
+            ]
+        },
+        {
+            "name": "totalSupply",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x10"
+            ]
+        },
+        {
+            "name": "unitsOneEthCanBuy",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x14"
+            ]
+        },
+        {
+            "name": "name",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0x11"
+            ]
+        },
+        {
+            "name": "decimals",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x12"
+            ]
+        },
+        {
+            "name": "symbol",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0x13"
+            ]
+        },
+        {
+            "name": "Token",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "StandardToken",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "HashnodeTestCoin",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xf",
+            "instructions": [
+                "CLR_0 = balances[msg_sender]",
+                "REF_44 = CLR_0",
+                "balances[msg_sender] = 226000000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x10",
+            "instructions": [
+                "totalSupply = 226000000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x11",
+            "instructions": [
+                "name = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x12",
+            "instructions": [
+                "decimals = 18"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x13",
+            "instructions": [
+                "symbol = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x14",
+            "instructions": [
+                "unitsOneEthCanBuy = 10"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x15",
+            "instructions": [
+                "fundsWallet = msg_sender"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1c",
+            "instructions": [
+                "version = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x35",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x36",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x37",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "balances",
+            "addrs": [
+                "0x2",
+                "0x9",
+                "0xa",
+                "0xb",
+                "0xc",
+                "0x18",
+                "0x1a"
+            ]
+        },
+        {
+            "name": "allowed",
+            "addrs": [
+                "0x2",
+                "0xd",
+                "0xe",
+                "0x1b"
+            ]
+        },
+        {
+            "name": "totalEthInWei",
+            "addrs": [
+                "0x2",
+                "0x16"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x9",
+            "instructions": [
+                "CLR_1 = msg.sender",
+                "balances[CLR_1] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa",
+            "instructions": [
+                "balances[0] = U",
+                "balances[1] = U",
+                "balances[2] = U",
+                "balances[3] = U",
+                "balances[4] = U",
+                "balances[5] = U",
+                "balances[6] = U",
+                "balances[7] = U",
+                "balances[8] = U",
+                "balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb",
+            "instructions": [
+                "balances[0] = U",
+                "balances[1] = U",
+                "balances[2] = U",
+                "balances[3] = U",
+                "balances[4] = U",
+                "balances[5] = U",
+                "balances[6] = U",
+                "balances[7] = U",
+                "balances[8] = U",
+                "balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xc",
+            "instructions": [
+                "balances[0] = U",
+                "balances[1] = U",
+                "balances[2] = U",
+                "balances[3] = U",
+                "balances[4] = U",
+                "balances[5] = U",
+                "balances[6] = U",
+                "balances[7] = U",
+                "balances[8] = U",
+                "balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xd",
+            "instructions": [
+                "CLR_2 = msg.sender",
+                "CLR_3 = allowed[U]",
+                "CLR_3[CLR_2] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xe",
+            "instructions": [
+                "CLR_4 = msg.sender",
+                "CLR_5 = allowed[CLR_4]",
+                "REF_42 = CLR_5",
+                "CLR_6 = REF_42[U]",
+                "REF_43 = CLR_6",
+                "REF_42[0] = U",
+                "REF_42[1] = U",
+                "REF_42[2] = U",
+                "REF_42[3] = U",
+                "REF_42[4] = U",
+                "REF_42[5] = U",
+                "REF_42[6] = U",
+                "REF_42[7] = U",
+                "REF_42[8] = U",
+                "REF_42[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x16",
+            "instructions": [
+                "totalEthInWei = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x18",
+            "instructions": [
+                "CLR_7 = balances[fundsWallet]",
+                "REF_46 = CLR_7",
+                "CLR_8 = msg.value",
+                "TMP_68 = CLR_8 * unitsOneEthCanBuy",
+                "RTMP_69 = REF_46 >= TMP_68",
+                "CONDITION RTMP_69 0x17 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x17",
+            "instructions": [
+                "CLR_9 = balances[fundsWallet]",
+                "REF_45 = CLR_9",
+                "balances[fundsWallet] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a",
+            "instructions": [
+                "CLR_10 = balances[fundsWallet]",
+                "REF_48 = CLR_10",
+                "CLR_11 = msg.value",
+                "TMP_70 = CLR_11 * unitsOneEthCanBuy",
+                "RTMP_71 = REF_48 >= TMP_70",
+                "CONDITION RTMP_71 0x19 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x19",
+            "instructions": [
+                "CLR_12 = msg.sender",
+                "CLR_13 = balances[CLR_12]",
+                "REF_47 = CLR_13",
+                "CLR_14 = msg.sender",
+                "balances[CLR_14] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b",
+            "instructions": [
+                "CLR_15 = msg.sender",
+                "CLR_16 = allowed[CLR_15]",
+                "REF_49 = CLR_16",
+                "CLR_17 = REF_49[U]",
+                "REF_50 = CLR_17",
+                "REF_49[0] = U",
+                "REF_49[1] = U",
+                "REF_49[2] = U",
+                "REF_49[3] = U",
+                "REF_49[4] = U",
+                "REF_49[5] = U",
+                "REF_49[6] = U",
+                "REF_49[7] = U",
+                "REF_49[8] = U",
+                "REF_49[9] = U"
+            ]
+        }
+    ],
+    "root_addr": "0x38",
+    "dest_addrs": [
+        "0x39"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "fallback",
+            "addr": "0x38",
+            "instructions": [
+                "NOP",
+                "amount = NEW_VAL integer",
+                "JUMP 0x39"
+            ]
+        },
+        {
+            "scope": "fallback",
+            "addr": "0x39",
+            "instructions": [
+                "CLR_18 = msg.value",
+                "TMP_22 = totalEthInWei + CLR_18",
+                "totalEthInWei = TMP_22",
+                "CLR_19 = msg.value",
+                "TMP_23 = CLR_19 * unitsOneEthCanBuy",
+                "amount = TMP_23",
+                "CLR_20 = balances[fundsWallet]",
+                "REF_31 = CLR_20",
+                "TMP_24 = REF_31 >= amount",
+                "CONDITION TMP_24 0x39_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "fallback",
+            "addr": "0x39_r0",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "fallback",
+            "addr": "0x3a",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

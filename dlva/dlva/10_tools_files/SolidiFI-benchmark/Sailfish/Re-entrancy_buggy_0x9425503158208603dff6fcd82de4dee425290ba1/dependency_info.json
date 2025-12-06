@@ -1,0 +1,690 @@
+{
+    "Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawBalance_re_ent19",
+                "withdrawBalance_re_ent19"
+            ],
+            "from_function": "withdrawBalance_re_ent19",
+            "to_function": "withdrawBalance_re_ent19",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: withdrawBalance_re_ent19\nNode: \nIF ! (msg.sender.call.value(userBalance_re_ent19[msg.sender])())\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_2 \"",
+                        "\"BlockID: 5\nFunction: withdrawBalance_re_ent19\nNode: \nEXPRESSION userBalance_re_ent19[msg.sender] = 0\nIRS: \nREF_3 := 0\""
+                    ],
+                    "state_variable": "userBalance_re_ent19"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawBalance_re_ent19",
+                "withdrawBalance_re_ent19"
+            ],
+            "First_function": "withdrawBalance_re_ent19",
+            "Second_function": "withdrawBalance_re_ent19",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: withdrawBalance_re_ent19\nNode: \nEXPRESSION userBalance_re_ent19[msg.sender] = 0\nIRS: \nREF_3 := 0\"",
+                        "\"BlockID: 2\nFunction: withdrawBalance_re_ent19\nNode: \nIF ! (msg.sender.call.value(userBalance_re_ent19[msg.sender])())\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_2 \""
+                    ],
+                    "state_variable": "userBalance_re_ent19"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "bet",
+                "bet"
+            ],
+            "First_function": "bet",
+            "Second_function": "bet",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 56\nFunction: bet\nNode: \nEXPRESSION gamblers ++\nIRS: \ngamblers = gamblers + 1\"",
+                        "\"BlockID: 14\nFunction: bet\nNode: \nIF gamblers == 1\nIRS: \nCONDITION TMP_8\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 76\nFunction: bet\nNode: \nEXPRESSION gamblers = 0\nIRS: \ngamblers := 0\"",
+                        "\"BlockID: 14\nFunction: bet\nNode: \nIF gamblers == 1\nIRS: \nCONDITION TMP_8\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 56\nFunction: bet\nNode: \nEXPRESSION gamblers ++\nIRS: \ngamblers = gamblers + 1\"",
+                        "\"BlockID: 18\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_9\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 76\nFunction: bet\nNode: \nEXPRESSION gamblers = 0\nIRS: \ngamblers := 0\"",
+                        "\"BlockID: 18\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_9\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 56\nFunction: bet\nNode: \nEXPRESSION gamblers ++\nIRS: \ngamblers = gamblers + 1\"",
+                        "\"BlockID: 22\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_10\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 76\nFunction: bet\nNode: \nEXPRESSION gamblers = 0\nIRS: \ngamblers := 0\"",
+                        "\"BlockID: 22\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_10\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 62\nFunction: bet\nNode: \nEXPRESSION gambler2 = msg.sender\nIRS: \ngambler2 := msg.sender\"",
+                        "\"BlockID: 28\nFunction: bet\nNode: \nEXPRESSION gambler2.transfer(199500000000000000)\nIRS: \nTransfer dest:gambler2 value:199500000000000000\""
+                    ],
+                    "state_variable": "gambler2"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 78\nFunction: bet\nNode: \nEXPRESSION gambler2 = 0\nIRS: \ngambler2 := 0\"",
+                        "\"BlockID: 28\nFunction: bet\nNode: \nEXPRESSION gambler2.transfer(199500000000000000)\nIRS: \nTransfer dest:gambler2 value:199500000000000000\""
+                    ],
+                    "state_variable": "gambler2"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 67\nFunction: bet\nNode: \nEXPRESSION hashymchasherton = sha(uint128(lastblockhashused))\nIRS: \nhashymchasherton := TMP_14\"",
+                        "\"BlockID: 25\nFunction: bet\nNode: \nIF hashymchasherton % 2 == 0\nIRS: \nCONDITION TMP_16\""
+                    ],
+                    "state_variable": "hashymchasherton"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 85\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nlastblockhashused := TMP_12\"",
+                        "\"BlockID: 24\nFunction: bet\nNode: \nEXPRESSION hashymchasherton = sha(uint128(lastblockhashused))\nIRS: \nhashymchasherton := TMP_14\""
+                    ],
+                    "state_variable": "lastblockhashused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 85\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nlastblockhashused := TMP_12\"",
+                        "\"BlockID: 25\nFunction: bet\nNode: \nIF hashymchasherton % 2 == 0\nIRS: \nCONDITION TMP_16\""
+                    ],
+                    "state_variable": "lastblockhashused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 83\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 24\nFunction: bet\nNode: \nEXPRESSION hashymchasherton = sha(uint128(lastblockhashused))\nIRS: \nhashymchasherton := TMP_14\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 83\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 25\nFunction: bet\nNode: \nIF hashymchasherton % 2 == 0\nIRS: \nCONDITION TMP_16\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 83\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 41\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nTMP_12 = SOLIDITY_CALL blockhash(uint256)(lastblocknumberused)\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 83\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 42\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nlastblockhashused := TMP_12\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "bet",
+                "bet"
+            ],
+            "First_function": "bet",
+            "Second_function": "bet",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 89\nFunction: bet\nNode: \nEXPRESSION gamblers ++\nIRS: \ngamblers = gamblers + 1\"",
+                        "\"BlockID: 14\nFunction: bet\nNode: \nIF gamblers == 1\nIRS: \nCONDITION TMP_8\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 109\nFunction: bet\nNode: \nEXPRESSION gamblers = 0\nIRS: \ngamblers := 0\"",
+                        "\"BlockID: 14\nFunction: bet\nNode: \nIF gamblers == 1\nIRS: \nCONDITION TMP_8\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 89\nFunction: bet\nNode: \nEXPRESSION gamblers ++\nIRS: \ngamblers = gamblers + 1\"",
+                        "\"BlockID: 18\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_9\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 109\nFunction: bet\nNode: \nEXPRESSION gamblers = 0\nIRS: \ngamblers := 0\"",
+                        "\"BlockID: 18\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_9\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 89\nFunction: bet\nNode: \nEXPRESSION gamblers ++\nIRS: \ngamblers = gamblers + 1\"",
+                        "\"BlockID: 22\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_10\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 109\nFunction: bet\nNode: \nEXPRESSION gamblers = 0\nIRS: \ngamblers := 0\"",
+                        "\"BlockID: 22\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_10\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 91\nFunction: bet\nNode: \nEXPRESSION gambler1 = msg.sender\nIRS: \ngambler1 := msg.sender\"",
+                        "\"BlockID: 30\nFunction: bet\nNode: \nEXPRESSION gambler1.transfer(300000000000000)\nIRS: \nTransfer dest:gambler1 value:300000000000000\""
+                    ],
+                    "state_variable": "gambler1"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 110\nFunction: bet\nNode: \nEXPRESSION gambler1 = 0\nIRS: \ngambler1 := 0\"",
+                        "\"BlockID: 30\nFunction: bet\nNode: \nEXPRESSION gambler1.transfer(300000000000000)\nIRS: \nTransfer dest:gambler1 value:300000000000000\""
+                    ],
+                    "state_variable": "gambler1"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 95\nFunction: bet\nNode: \nEXPRESSION gambler2 = msg.sender\nIRS: \ngambler2 := msg.sender\"",
+                        "\"BlockID: 28\nFunction: bet\nNode: \nEXPRESSION gambler2.transfer(199500000000000000)\nIRS: \nTransfer dest:gambler2 value:199500000000000000\""
+                    ],
+                    "state_variable": "gambler2"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 111\nFunction: bet\nNode: \nEXPRESSION gambler2 = 0\nIRS: \ngambler2 := 0\"",
+                        "\"BlockID: 28\nFunction: bet\nNode: \nEXPRESSION gambler2.transfer(199500000000000000)\nIRS: \nTransfer dest:gambler2 value:199500000000000000\""
+                    ],
+                    "state_variable": "gambler2"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 100\nFunction: bet\nNode: \nEXPRESSION hashymchasherton = sha(uint128(lastblockhashused))\nIRS: \nhashymchasherton := TMP_14\"",
+                        "\"BlockID: 25\nFunction: bet\nNode: \nIF hashymchasherton % 2 == 0\nIRS: \nCONDITION TMP_16\""
+                    ],
+                    "state_variable": "hashymchasherton"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 118\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nlastblockhashused := TMP_12\"",
+                        "\"BlockID: 24\nFunction: bet\nNode: \nEXPRESSION hashymchasherton = sha(uint128(lastblockhashused))\nIRS: \nhashymchasherton := TMP_14\""
+                    ],
+                    "state_variable": "lastblockhashused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 118\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nlastblockhashused := TMP_12\"",
+                        "\"BlockID: 25\nFunction: bet\nNode: \nIF hashymchasherton % 2 == 0\nIRS: \nCONDITION TMP_16\""
+                    ],
+                    "state_variable": "lastblockhashused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 116\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 24\nFunction: bet\nNode: \nEXPRESSION hashymchasherton = sha(uint128(lastblockhashused))\nIRS: \nhashymchasherton := TMP_14\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 116\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 25\nFunction: bet\nNode: \nIF hashymchasherton % 2 == 0\nIRS: \nCONDITION TMP_16\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 116\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 41\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nTMP_12 = SOLIDITY_CALL blockhash(uint256)(lastblocknumberused)\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 116\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 42\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nlastblockhashused := TMP_12\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "bet",
+                "bet"
+            ],
+            "First_function": "bet",
+            "Second_function": "bet",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 122\nFunction: bet\nNode: \nEXPRESSION gamblers ++\nIRS: \ngamblers = gamblers + 1\"",
+                        "\"BlockID: 14\nFunction: bet\nNode: \nIF gamblers == 1\nIRS: \nCONDITION TMP_8\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 142\nFunction: bet\nNode: \nEXPRESSION gamblers = 0\nIRS: \ngamblers := 0\"",
+                        "\"BlockID: 14\nFunction: bet\nNode: \nIF gamblers == 1\nIRS: \nCONDITION TMP_8\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 122\nFunction: bet\nNode: \nEXPRESSION gamblers ++\nIRS: \ngamblers = gamblers + 1\"",
+                        "\"BlockID: 18\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_9\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 142\nFunction: bet\nNode: \nEXPRESSION gamblers = 0\nIRS: \ngamblers := 0\"",
+                        "\"BlockID: 18\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_9\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 122\nFunction: bet\nNode: \nEXPRESSION gamblers ++\nIRS: \ngamblers = gamblers + 1\"",
+                        "\"BlockID: 22\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_10\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 142\nFunction: bet\nNode: \nEXPRESSION gamblers = 0\nIRS: \ngamblers := 0\"",
+                        "\"BlockID: 22\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_10\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 124\nFunction: bet\nNode: \nEXPRESSION gambler1 = msg.sender\nIRS: \ngambler1 := msg.sender\"",
+                        "\"BlockID: 30\nFunction: bet\nNode: \nEXPRESSION gambler1.transfer(300000000000000)\nIRS: \nTransfer dest:gambler1 value:300000000000000\""
+                    ],
+                    "state_variable": "gambler1"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 143\nFunction: bet\nNode: \nEXPRESSION gambler1 = 0\nIRS: \ngambler1 := 0\"",
+                        "\"BlockID: 30\nFunction: bet\nNode: \nEXPRESSION gambler1.transfer(300000000000000)\nIRS: \nTransfer dest:gambler1 value:300000000000000\""
+                    ],
+                    "state_variable": "gambler1"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 124\nFunction: bet\nNode: \nEXPRESSION gambler1 = msg.sender\nIRS: \ngambler1 := msg.sender\"",
+                        "\"BlockID: 36\nFunction: bet\nNode: \nEXPRESSION gambler1.transfer(199500000000000000)\nIRS: \nTransfer dest:gambler1 value:199500000000000000\""
+                    ],
+                    "state_variable": "gambler1"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 143\nFunction: bet\nNode: \nEXPRESSION gambler1 = 0\nIRS: \ngambler1 := 0\"",
+                        "\"BlockID: 36\nFunction: bet\nNode: \nEXPRESSION gambler1.transfer(199500000000000000)\nIRS: \nTransfer dest:gambler1 value:199500000000000000\""
+                    ],
+                    "state_variable": "gambler1"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 128\nFunction: bet\nNode: \nEXPRESSION gambler2 = msg.sender\nIRS: \ngambler2 := msg.sender\"",
+                        "\"BlockID: 28\nFunction: bet\nNode: \nEXPRESSION gambler2.transfer(199500000000000000)\nIRS: \nTransfer dest:gambler2 value:199500000000000000\""
+                    ],
+                    "state_variable": "gambler2"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 144\nFunction: bet\nNode: \nEXPRESSION gambler2 = 0\nIRS: \ngambler2 := 0\"",
+                        "\"BlockID: 28\nFunction: bet\nNode: \nEXPRESSION gambler2.transfer(199500000000000000)\nIRS: \nTransfer dest:gambler2 value:199500000000000000\""
+                    ],
+                    "state_variable": "gambler2"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 128\nFunction: bet\nNode: \nEXPRESSION gambler2 = msg.sender\nIRS: \ngambler2 := msg.sender\"",
+                        "\"BlockID: 38\nFunction: bet\nNode: \nEXPRESSION gambler2.transfer(300000000000000)\nIRS: \nTransfer dest:gambler2 value:300000000000000\""
+                    ],
+                    "state_variable": "gambler2"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 144\nFunction: bet\nNode: \nEXPRESSION gambler2 = 0\nIRS: \ngambler2 := 0\"",
+                        "\"BlockID: 38\nFunction: bet\nNode: \nEXPRESSION gambler2.transfer(300000000000000)\nIRS: \nTransfer dest:gambler2 value:300000000000000\""
+                    ],
+                    "state_variable": "gambler2"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 133\nFunction: bet\nNode: \nEXPRESSION hashymchasherton = sha(uint128(lastblockhashused))\nIRS: \nhashymchasherton := TMP_14\"",
+                        "\"BlockID: 25\nFunction: bet\nNode: \nIF hashymchasherton % 2 == 0\nIRS: \nCONDITION TMP_16\""
+                    ],
+                    "state_variable": "hashymchasherton"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 151\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nlastblockhashused := TMP_12\"",
+                        "\"BlockID: 24\nFunction: bet\nNode: \nEXPRESSION hashymchasherton = sha(uint128(lastblockhashused))\nIRS: \nhashymchasherton := TMP_14\""
+                    ],
+                    "state_variable": "lastblockhashused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 151\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nlastblockhashused := TMP_12\"",
+                        "\"BlockID: 25\nFunction: bet\nNode: \nIF hashymchasherton % 2 == 0\nIRS: \nCONDITION TMP_16\""
+                    ],
+                    "state_variable": "lastblockhashused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 149\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 24\nFunction: bet\nNode: \nEXPRESSION hashymchasherton = sha(uint128(lastblockhashused))\nIRS: \nhashymchasherton := TMP_14\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 149\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 25\nFunction: bet\nNode: \nIF hashymchasherton % 2 == 0\nIRS: \nCONDITION TMP_16\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 149\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 41\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nTMP_12 = SOLIDITY_CALL blockhash(uint256)(lastblocknumberused)\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 149\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 42\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nlastblockhashused := TMP_12\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "bet",
+                "bet"
+            ],
+            "First_function": "bet",
+            "Second_function": "bet",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 155\nFunction: bet\nNode: \nEXPRESSION gamblers ++\nIRS: \ngamblers = gamblers + 1\"",
+                        "\"BlockID: 14\nFunction: bet\nNode: \nIF gamblers == 1\nIRS: \nCONDITION TMP_8\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 175\nFunction: bet\nNode: \nEXPRESSION gamblers = 0\nIRS: \ngamblers := 0\"",
+                        "\"BlockID: 14\nFunction: bet\nNode: \nIF gamblers == 1\nIRS: \nCONDITION TMP_8\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 155\nFunction: bet\nNode: \nEXPRESSION gamblers ++\nIRS: \ngamblers = gamblers + 1\"",
+                        "\"BlockID: 18\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_9\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 175\nFunction: bet\nNode: \nEXPRESSION gamblers = 0\nIRS: \ngamblers := 0\"",
+                        "\"BlockID: 18\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_9\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 155\nFunction: bet\nNode: \nEXPRESSION gamblers ++\nIRS: \ngamblers = gamblers + 1\"",
+                        "\"BlockID: 22\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_10\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 175\nFunction: bet\nNode: \nEXPRESSION gamblers = 0\nIRS: \ngamblers := 0\"",
+                        "\"BlockID: 22\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_10\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 157\nFunction: bet\nNode: \nEXPRESSION gambler1 = msg.sender\nIRS: \ngambler1 := msg.sender\"",
+                        "\"BlockID: 36\nFunction: bet\nNode: \nEXPRESSION gambler1.transfer(199500000000000000)\nIRS: \nTransfer dest:gambler1 value:199500000000000000\""
+                    ],
+                    "state_variable": "gambler1"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 176\nFunction: bet\nNode: \nEXPRESSION gambler1 = 0\nIRS: \ngambler1 := 0\"",
+                        "\"BlockID: 36\nFunction: bet\nNode: \nEXPRESSION gambler1.transfer(199500000000000000)\nIRS: \nTransfer dest:gambler1 value:199500000000000000\""
+                    ],
+                    "state_variable": "gambler1"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 166\nFunction: bet\nNode: \nEXPRESSION hashymchasherton = sha(uint128(lastblockhashused))\nIRS: \nhashymchasherton := TMP_14\"",
+                        "\"BlockID: 25\nFunction: bet\nNode: \nIF hashymchasherton % 2 == 0\nIRS: \nCONDITION TMP_16\""
+                    ],
+                    "state_variable": "hashymchasherton"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 184\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nlastblockhashused := TMP_12\"",
+                        "\"BlockID: 24\nFunction: bet\nNode: \nEXPRESSION hashymchasherton = sha(uint128(lastblockhashused))\nIRS: \nhashymchasherton := TMP_14\""
+                    ],
+                    "state_variable": "lastblockhashused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 184\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nlastblockhashused := TMP_12\"",
+                        "\"BlockID: 25\nFunction: bet\nNode: \nIF hashymchasherton % 2 == 0\nIRS: \nCONDITION TMP_16\""
+                    ],
+                    "state_variable": "lastblockhashused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 182\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 24\nFunction: bet\nNode: \nEXPRESSION hashymchasherton = sha(uint128(lastblockhashused))\nIRS: \nhashymchasherton := TMP_14\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 182\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 25\nFunction: bet\nNode: \nIF hashymchasherton % 2 == 0\nIRS: \nCONDITION TMP_16\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 182\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 41\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nTMP_12 = SOLIDITY_CALL blockhash(uint256)(lastblocknumberused)\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 182\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 42\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nlastblockhashused := TMP_12\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "bet",
+                "bet"
+            ],
+            "First_function": "bet",
+            "Second_function": "bet",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 188\nFunction: bet\nNode: \nEXPRESSION gamblers ++\nIRS: \ngamblers = gamblers + 1\"",
+                        "\"BlockID: 14\nFunction: bet\nNode: \nIF gamblers == 1\nIRS: \nCONDITION TMP_8\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 208\nFunction: bet\nNode: \nEXPRESSION gamblers = 0\nIRS: \ngamblers := 0\"",
+                        "\"BlockID: 14\nFunction: bet\nNode: \nIF gamblers == 1\nIRS: \nCONDITION TMP_8\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 188\nFunction: bet\nNode: \nEXPRESSION gamblers ++\nIRS: \ngamblers = gamblers + 1\"",
+                        "\"BlockID: 18\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_9\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 208\nFunction: bet\nNode: \nEXPRESSION gamblers = 0\nIRS: \ngamblers := 0\"",
+                        "\"BlockID: 18\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_9\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 188\nFunction: bet\nNode: \nEXPRESSION gamblers ++\nIRS: \ngamblers = gamblers + 1\"",
+                        "\"BlockID: 22\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_10\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 208\nFunction: bet\nNode: \nEXPRESSION gamblers = 0\nIRS: \ngamblers := 0\"",
+                        "\"BlockID: 22\nFunction: bet\nNode: \nIF gamblers == 2\nIRS: \nCONDITION TMP_10\""
+                    ],
+                    "state_variable": "gamblers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 190\nFunction: bet\nNode: \nEXPRESSION gambler1 = msg.sender\nIRS: \ngambler1 := msg.sender\"",
+                        "\"BlockID: 36\nFunction: bet\nNode: \nEXPRESSION gambler1.transfer(199500000000000000)\nIRS: \nTransfer dest:gambler1 value:199500000000000000\""
+                    ],
+                    "state_variable": "gambler1"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 209\nFunction: bet\nNode: \nEXPRESSION gambler1 = 0\nIRS: \ngambler1 := 0\"",
+                        "\"BlockID: 36\nFunction: bet\nNode: \nEXPRESSION gambler1.transfer(199500000000000000)\nIRS: \nTransfer dest:gambler1 value:199500000000000000\""
+                    ],
+                    "state_variable": "gambler1"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 194\nFunction: bet\nNode: \nEXPRESSION gambler2 = msg.sender\nIRS: \ngambler2 := msg.sender\"",
+                        "\"BlockID: 38\nFunction: bet\nNode: \nEXPRESSION gambler2.transfer(300000000000000)\nIRS: \nTransfer dest:gambler2 value:300000000000000\""
+                    ],
+                    "state_variable": "gambler2"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 210\nFunction: bet\nNode: \nEXPRESSION gambler2 = 0\nIRS: \ngambler2 := 0\"",
+                        "\"BlockID: 38\nFunction: bet\nNode: \nEXPRESSION gambler2.transfer(300000000000000)\nIRS: \nTransfer dest:gambler2 value:300000000000000\""
+                    ],
+                    "state_variable": "gambler2"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 199\nFunction: bet\nNode: \nEXPRESSION hashymchasherton = sha(uint128(lastblockhashused))\nIRS: \nhashymchasherton := TMP_14\"",
+                        "\"BlockID: 25\nFunction: bet\nNode: \nIF hashymchasherton % 2 == 0\nIRS: \nCONDITION TMP_16\""
+                    ],
+                    "state_variable": "hashymchasherton"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 217\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nlastblockhashused := TMP_12\"",
+                        "\"BlockID: 24\nFunction: bet\nNode: \nEXPRESSION hashymchasherton = sha(uint128(lastblockhashused))\nIRS: \nhashymchasherton := TMP_14\""
+                    ],
+                    "state_variable": "lastblockhashused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 217\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nlastblockhashused := TMP_12\"",
+                        "\"BlockID: 25\nFunction: bet\nNode: \nIF hashymchasherton % 2 == 0\nIRS: \nCONDITION TMP_16\""
+                    ],
+                    "state_variable": "lastblockhashused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 215\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 24\nFunction: bet\nNode: \nEXPRESSION hashymchasherton = sha(uint128(lastblockhashused))\nIRS: \nhashymchasherton := TMP_14\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 215\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 25\nFunction: bet\nNode: \nIF hashymchasherton % 2 == 0\nIRS: \nCONDITION TMP_16\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 215\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 41\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nTMP_12 = SOLIDITY_CALL blockhash(uint256)(lastblocknumberused)\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 215\nFunction: bet\nNode: \nEXPRESSION lastblocknumberused = block.number - 1\nIRS: \nlastblocknumberused := TMP_11\"",
+                        "\"BlockID: 42\nFunction: bet\nNode: \nEXPRESSION lastblockhashused = block.blockhash(lastblocknumberused)\nIRS: \nlastblockhashused := TMP_12\""
+                    ],
+                    "state_variable": "lastblocknumberused"
+                }
+            ]
+        }
+    ]
+}

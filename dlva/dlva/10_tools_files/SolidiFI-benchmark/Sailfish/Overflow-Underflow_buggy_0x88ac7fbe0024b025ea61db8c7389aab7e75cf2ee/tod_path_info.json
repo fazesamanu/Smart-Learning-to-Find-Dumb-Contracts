@@ -1,0 +1,16 @@
+{
+    "tod_symex_path_1.json": {
+        "file_name": "",
+        "from_function": "withdraw_intou21",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 124\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 125\nCall context: \nNone\nREF_1 -> lockTime_intou21[msg.sender]\nTMP_17 = now > REF_1\nTMP_18 = SOLIDITY_CALL require(bool)(TMP_17)\""
+        ],
+        "executable_instructions": 28,
+        "state_variable": "lockTime_intou21",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    }
+}

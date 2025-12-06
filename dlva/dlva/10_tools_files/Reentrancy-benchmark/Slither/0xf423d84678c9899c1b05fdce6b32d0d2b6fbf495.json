@@ -1,0 +1,275 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 11 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m1\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 11 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m1\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "ea836298859167a74246fcd3ef396b67e9f1977b1ce66b2d37e11a5ff2176784",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "GiftToMiners2",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 250,
+                  "filename_relative": "cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                  "filename_short": "cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "GiftToMiners2",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": [
+                    "Receive ETH",
+                    "Send ETH"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 11,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 1,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "makeAGift",
+                  "source_mapping": {
+                    "start": 139,
+                    "length": 135,
+                    "filename_relative": "cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                    "filename_short": "cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "GiftToMiners2",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 250,
+                        "filename_relative": "cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                        "filename_short": "cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "makeAGift()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "block.coinbase.transfer(msg.value)",
+                  "source_mapping": {
+                    "start": 181,
+                    "length": 34,
+                    "filename_relative": "cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                    "filename_short": "cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 39
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "makeAGift",
+                      "source_mapping": {
+                        "start": 139,
+                        "length": 135,
+                        "filename_relative": "cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                        "filename_short": "cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          7,
+                          8,
+                          9,
+                          10
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "GiftToMiners2",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 250,
+                            "filename_relative": "cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                            "filename_short": "cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "makeAGift()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "external_calls"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "Gift(msg.sender,block.coinbase,msg.value)",
+                  "source_mapping": {
+                    "start": 221,
+                    "length": 48,
+                    "filename_relative": "cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                    "filename_short": "cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      9
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 53
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "makeAGift",
+                      "source_mapping": {
+                        "start": 139,
+                        "length": 135,
+                        "filename_relative": "cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                        "filename_short": "cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          7,
+                          8,
+                          9,
+                          10
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "GiftToMiners2",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 250,
+                            "filename_relative": "cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                            "filename_short": "cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "makeAGift()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "event"
+                  }
+                }
+              ],
+              "description": "Reentrancy in GiftToMiners2.makeAGift() (cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol#7-10):\n\tExternal calls:\n\t- block.coinbase.transfer(msg.value) (cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol#8)\n\tEvent emitted after the call(s):\n\t- Gift(msg.sender,block.coinbase,msg.value) (cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol#9)\n",
+              "markdown": "Reentrancy in [GiftToMiners2.makeAGift()](cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol#L7-L10):\n\tExternal calls:\n\t- [block.coinbase.transfer(msg.value)](cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol#L8)\n\tEvent emitted after the call(s):\n\t- [Gift(msg.sender,block.coinbase,msg.value)](cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol#L9)\n",
+              "first_markdown_element": "cleanSource/0xf423d84678c9899c1b05fdce6b32d0d2b6fbf495.sol#L7-L10",
+              "id": "07a7898ae87f67c4911e6113f8d6728e8a230da37a2398df1b3f9cce118cea03",
+              "check": "reentrancy-unlimited-gas",
+              "impact": "Informational",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+[INFO] | 2023-06-04 02:29:08 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Analysis started at: 2023-06-04 02:29:08 PM
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Version constraints: ['^0.4.26']
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | solc version: v0.4.26
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Callgraph generation started!
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Callgraph generation finished!
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Interprocedural CFG generation started!
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Interprocedural CFG generation finished!
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Storage dependency graph generation started!
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Storage dependency graph generation finished!
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Value Range Analysis started
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Generating return summary for withdrawBalance_re_ent19
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Return summary generated for withdrawBalance_re_ent19
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Range graph generated
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Processed function withdrawBalance_re_ent19
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Generating return summary for Game
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Return summary generated for Game
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Range graph generated
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Processed function Game
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Generating return summary for sha
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Return summary generated for sha
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | State variable assignement do not exist
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Processed function sha
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Generating return summary for bet
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Return summary generated for bet
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Range graph generated
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Processed function bet
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Value Range Analysis took 0.004677 seconds
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Value Range Analysis finished
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Storage dependency graph compostion started!
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Storage dependency graph compostion finished!
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Dependency detection started!
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | DAO dependency detected in file Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1.sol in contract Game in by composing functions withdrawBalance_re_ent19 and withdrawBalance_re_ent19
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | TOD dependency detected in file Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1.sol in contract Game in by composing functions withdrawBalance_re_ent19 and withdrawBalance_re_ent19
+[INFO] | 2023-06-04 02:29:09 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | TOD dependency detected in file Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1.sol in contract Game in by composing functions bet and bet
+[INFO] | 2023-06-04 02:29:10 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | TOD dependency detected in file Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1.sol in contract Game in by composing functions bet and bet
+[INFO] | 2023-06-04 02:29:10 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | TOD dependency detected in file Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1.sol in contract Game in by composing functions bet and bet
+[INFO] | 2023-06-04 02:29:10 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | TOD dependency detected in file Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1.sol in contract Game in by composing functions bet and bet
+[INFO] | 2023-06-04 02:29:11 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | TOD dependency detected in file Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1.sol in contract Game in by composing functions bet and bet
+[INFO] | 2023-06-04 02:29:11 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Dependency detection finished!
+[INFO] | 2023-06-04 02:29:11 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Static Analysis took 2.544445 seconds
+[INFO] | 2023-06-04 02:29:11 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Dependency exists
+[INFO] | 2023-06-04 02:29:11 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Invoking symbolic executor!
+[INFO] | 2023-06-04 02:29:18 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Symbolic execution took 7.591707 seconds
+[INFO] | 2023-06-04 02:29:18 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Symbolic execution finished!
+[INFO] | 2023-06-04 02:29:18 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Analysis finished!
+[INFO] | 2023-06-04 02:29:18 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Analysis took 10.137552 seconds
+[INFO] | 2023-06-04 02:29:18 PM | analyzer.Re-entrancy_buggy_0x9425503158208603dff6fcd82de4dee425290ba1 | Analysis finished at: 2023-06-04 02:29:18 PM

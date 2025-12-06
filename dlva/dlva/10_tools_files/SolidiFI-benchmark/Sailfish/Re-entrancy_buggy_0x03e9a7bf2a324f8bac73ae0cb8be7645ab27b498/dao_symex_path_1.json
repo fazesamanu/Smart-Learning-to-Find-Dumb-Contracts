@@ -1,0 +1,870 @@
+{
+    "file": "Re-entrancy_buggy_0x03e9a7bf2a324f8bac73ae0cb8be7645ab27b498.sol",
+    "global_structs": [
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x2c"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x2d"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x2e"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "valueFounder",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x3"
+            ]
+        },
+        {
+            "name": "balanceOf",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "allowance",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer",
+                    "integer"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "symbol",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0x12"
+            ]
+        },
+        {
+            "name": "decimals",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x11"
+            ]
+        },
+        {
+            "name": "stopped",
+            "type": [
+                "boolean"
+            ],
+            "init": [
+                "0xf"
+            ]
+        },
+        {
+            "name": "not_called_re_ent6",
+            "type": [
+                "boolean"
+            ],
+            "init": [
+                "0xd"
+            ]
+        },
+        {
+            "name": "name",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0xc"
+            ]
+        },
+        {
+            "name": "totalSupply",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x5",
+                "0x10"
+            ]
+        },
+        {
+            "name": "owner",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x4",
+                "0xe"
+            ]
+        },
+        {
+            "name": "SFToken",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3",
+            "instructions": [
+                "valueFounder = 2100000000000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4",
+            "instructions": [
+                "owner = msg_sender"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5",
+            "instructions": [
+                "totalSupply = 2100000000000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6",
+            "instructions": [
+                "CLR_0 = balanceOf[U]",
+                "REF_24 = CLR_0",
+                "balanceOf[0] = 2100000000000",
+                "balanceOf[1] = 2100000000000",
+                "balanceOf[2] = 2100000000000",
+                "balanceOf[3] = 2100000000000",
+                "balanceOf[4] = 2100000000000",
+                "balanceOf[5] = 2100000000000",
+                "balanceOf[6] = 2100000000000",
+                "balanceOf[7] = 2100000000000",
+                "balanceOf[8] = 2100000000000",
+                "balanceOf[9] = 2100000000000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc",
+            "instructions": [
+                "name = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xd",
+            "instructions": [
+                "not_called_re_ent6 = true"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xe",
+            "instructions": [
+                "owner = 0"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xf",
+            "instructions": [
+                "stopped = false"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x10",
+            "instructions": [
+                "totalSupply = 0"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x11",
+            "instructions": [
+                "decimals = 4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x12",
+            "instructions": [
+                "symbol = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2c",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2d",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2e",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "balanceOf",
+            "addrs": [
+                "0x2",
+                "0x7",
+                "0x8",
+                "0x14",
+                "0x17",
+                "0x1a",
+                "0x1d"
+            ]
+        },
+        {
+            "name": "not_called_re_ent6",
+            "addrs": [
+                "0x2",
+                "0xa"
+            ]
+        },
+        {
+            "name": "allowance",
+            "addrs": [
+                "0x2",
+                "0x20",
+                "0x23"
+            ]
+        },
+        {
+            "name": "stopped",
+            "addrs": [
+                "0x2",
+                "0x27",
+                "0x29"
+            ]
+        },
+        {
+            "name": "name",
+            "addrs": [
+                "0x2",
+                "0x2b"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x7",
+            "instructions": [
+                "CLR_1 = msg.sender",
+                "balanceOf[CLR_1] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x8",
+            "instructions": [
+                "balanceOf[0] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa",
+            "instructions": [
+                "RTMP_66 = ! U",
+                "CONDITION RTMP_66 0x1 0xb"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb",
+            "instructions": [
+                "RTMP_67 = not_called_re_ent6 == true",
+                "CONDITION RTMP_67 0x9 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x9",
+            "instructions": [
+                "not_called_re_ent6 = false"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x14",
+            "instructions": [
+                "RTMP_68 = ! stopped",
+                "CONDITION RTMP_68 0x15 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x15",
+            "instructions": [
+                "CLR_2 = msg.sender",
+                "RTMP_69 = 0 != CLR_2",
+                "CONDITION RTMP_69 0x13 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x13",
+            "instructions": [
+                "CLR_3 = msg.sender",
+                "balanceOf[CLR_3] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x17",
+            "instructions": [
+                "RTMP_70 = ! stopped",
+                "CONDITION RTMP_70 0x18 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x18",
+            "instructions": [
+                "CLR_4 = msg.sender",
+                "RTMP_71 = 0 != CLR_4",
+                "CONDITION RTMP_71 0x16 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x16",
+            "instructions": [
+                "balanceOf[0] = U",
+                "balanceOf[1] = U",
+                "balanceOf[2] = U",
+                "balanceOf[3] = U",
+                "balanceOf[4] = U",
+                "balanceOf[5] = U",
+                "balanceOf[6] = U",
+                "balanceOf[7] = U",
+                "balanceOf[8] = U",
+                "balanceOf[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a",
+            "instructions": [
+                "CLR_5 = msg.sender",
+                "RTMP_72 = 0 != CLR_5",
+                "CONDITION RTMP_72 0x1b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b",
+            "instructions": [
+                "RTMP_73 = ! stopped",
+                "CONDITION RTMP_73 0x19 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x19",
+            "instructions": [
+                "balanceOf[0] = U",
+                "balanceOf[1] = U",
+                "balanceOf[2] = U",
+                "balanceOf[3] = U",
+                "balanceOf[4] = U",
+                "balanceOf[5] = U",
+                "balanceOf[6] = U",
+                "balanceOf[7] = U",
+                "balanceOf[8] = U",
+                "balanceOf[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1d",
+            "instructions": [
+                "CLR_6 = msg.sender",
+                "RTMP_74 = 0 != CLR_6",
+                "CONDITION RTMP_74 0x1e 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e",
+            "instructions": [
+                "RTMP_75 = ! stopped",
+                "CONDITION RTMP_75 0x1c 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1c",
+            "instructions": [
+                "balanceOf[0] = U",
+                "balanceOf[1] = U",
+                "balanceOf[2] = U",
+                "balanceOf[3] = U",
+                "balanceOf[4] = U",
+                "balanceOf[5] = U",
+                "balanceOf[6] = U",
+                "balanceOf[7] = U",
+                "balanceOf[8] = U",
+                "balanceOf[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x20",
+            "instructions": [
+                "CLR_7 = msg.sender",
+                "RTMP_76 = 0 != CLR_7",
+                "CONDITION RTMP_76 0x21 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x21",
+            "instructions": [
+                "RTMP_77 = ! stopped",
+                "CONDITION RTMP_77 0x1f 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1f",
+            "instructions": [
+                "CLR_8 = msg.sender",
+                "CLR_9 = allowance[U]",
+                "CLR_9[CLR_8] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x23",
+            "instructions": [
+                "CLR_10 = msg.sender",
+                "RTMP_78 = 0 != CLR_10",
+                "CONDITION RTMP_78 0x24 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x24",
+            "instructions": [
+                "CLR_11 = msg.sender",
+                "CLR_12 = allowance[CLR_11]",
+                "REF_27 = CLR_12",
+                "CLR_13 = REF_27[U]",
+                "REF_28 = CLR_13",
+                "RTMP_79 = REF_28 == 0",
+                "CONDITION RTMP_79 0x25 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x25",
+            "instructions": [
+                "RTMP_80 = ! stopped",
+                "CONDITION RTMP_80 0x22 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x22",
+            "instructions": [
+                "CLR_14 = msg.sender",
+                "CLR_15 = allowance[CLR_14]",
+                "REF_25 = CLR_15",
+                "CLR_16 = REF_25[U]",
+                "REF_26 = CLR_16",
+                "REF_25[0] = U",
+                "REF_25[1] = U",
+                "REF_25[2] = U",
+                "REF_25[3] = U",
+                "REF_25[4] = U",
+                "REF_25[5] = U",
+                "REF_25[6] = U",
+                "REF_25[7] = U",
+                "REF_25[8] = U",
+                "REF_25[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x27",
+            "instructions": [
+                "CLR_17 = msg.sender",
+                "RTMP_81 = owner == CLR_17",
+                "CONDITION RTMP_81 0x26 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x26",
+            "instructions": [
+                "stopped = true"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x29",
+            "instructions": [
+                "CLR_18 = msg.sender",
+                "RTMP_82 = owner == CLR_18",
+                "CONDITION RTMP_82 0x28 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x28",
+            "instructions": [
+                "stopped = false"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2b",
+            "instructions": [
+                "CLR_19 = msg.sender",
+                "RTMP_83 = owner == CLR_19",
+                "CONDITION RTMP_83 0x2a 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2a",
+            "instructions": [
+                "name = U"
+            ]
+        }
+    ],
+    "root_addr": "0x32",
+    "dest_addrs": [
+        "0x3a"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "bug_re_ent6_v1",
+            "addr": "0x2f",
+            "instructions": [
+                "CONDITION not_called_re_ent6 0x2f_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "bug_re_ent6_v1",
+            "addr": "0x2f_r0",
+            "instructions": [
+                "JUMP 0x30"
+            ]
+        },
+        {
+            "scope": "bug_re_ent6_v1",
+            "addr": "0x30",
+            "instructions": [
+                "ATTACK",
+                "TMP_43 = NEW_VAL boolean",
+                "JUMP 0x31"
+            ]
+        },
+        {
+            "scope": "bug_re_ent6_v1",
+            "addr": "0x32",
+            "instructions": [
+                "NOP",
+                "JUMP 0x2f"
+            ]
+        },
+        {
+            "scope": "bug_re_ent6_v2",
+            "addr": "0x31",
+            "instructions": [
+                "NOP",
+                "JUMP 0x33"
+            ]
+        },
+        {
+            "scope": "bug_re_ent6_v2",
+            "addr": "0x33",
+            "instructions": [
+                "CONDITION not_called_re_ent6 0x33_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "bug_re_ent6_v2",
+            "addr": "0x33_r0",
+            "instructions": [
+                "JUMP 0x34"
+            ]
+        },
+        {
+            "scope": "bug_re_ent6_v2",
+            "addr": "0x34",
+            "instructions": [
+                "CLR_20 = this.balance",
+                "WRP_0 = CLR_20 - 1000000000000000000",
+                "this.balance = WRP_0",
+                "TMP_43 = NEW_VAL boolean",
+                "JUMP 0x35"
+            ]
+        },
+        {
+            "scope": "bug_re_ent6_v2",
+            "addr": "0x35",
+            "instructions": [
+                "TMP_44 = ! TMP_43",
+                "CONDITION TMP_44 0x36 0x37"
+            ]
+        },
+        {
+            "scope": "bug_re_ent6_v2",
+            "addr": "0x36",
+            "instructions": [
+                "TMP_45 = NEW_VAL integer",
+                "JUMP 0x38"
+            ]
+        },
+        {
+            "scope": "bug_re_ent6_v2",
+            "addr": "0x37",
+            "instructions": [
+                "NOP",
+                "JUMP 0x39"
+            ]
+        },
+        {
+            "scope": "bug_re_ent6_v2",
+            "addr": "0x39",
+            "instructions": [
+                "not_called_re_ent6 = false",
+                "JUMP 0x38"
+            ]
+        },
+        {
+            "scope": "bug_re_ent6_v1",
+            "addr": "0x3a",
+            "instructions": [
+                "not_called_re_ent6 = false"
+            ]
+        },
+        {
+            "scope": "bug_re_ent6_v1",
+            "addr": "0x38",
+            "instructions": [
+                "TMP_44 = ! TMP_43",
+                "CONDITION TMP_44 0x3c 0x3b"
+            ]
+        },
+        {
+            "scope": "bug_re_ent6_v1",
+            "addr": "0x3b",
+            "instructions": [
+                "NOP",
+                "JUMP 0x3a"
+            ]
+        },
+        {
+            "scope": "trap",
+            "addr": "0x3c",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

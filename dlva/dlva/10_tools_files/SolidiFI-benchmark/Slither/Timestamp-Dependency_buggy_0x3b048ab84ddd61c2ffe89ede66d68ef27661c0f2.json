@@ -1,0 +1,2331 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 51 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m2\u001b[0m\nNumber of informational issues: \u001b[92m15\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[93m1\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 51 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m2\u001b[0m\nNumber of informational issues: \u001b[92m15\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[93m1\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "6c2e3bf0f6614ed10421edbf67f4344088b7c3319fc9e4b180651bb25b6f3f39",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "ENIGMA",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 1232,
+                  "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                  "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "ENIGMA",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 7,
+                  "features": [
+                    "Receive ETH",
+                    "Send ETH"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 51,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 2,
+            "informational_issues": 15,
+            "low_issues": 1,
+            "medium_issues": 1,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "NewQuestion",
+                  "source_mapping": {
+                    "start": 794,
+                    "length": 209,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      36,
+                      37,
+                      38,
+                      39,
+                      40,
+                      41,
+                      42,
+                      43
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ENIGMA",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1232,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "NewQuestion(string,bytes32)"
+                  }
+                }
+              ],
+              "description": "NewQuestion(string,bytes32) should be declared external:\n\t- ENIGMA.NewQuestion(string,bytes32) (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#36-43)\n",
+              "markdown": "NewQuestion(string,bytes32) should be declared external:\n\t- [ENIGMA.NewQuestion(string,bytes32)](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L36-L43)\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L36-L43",
+              "id": "247b969ca10b865c7cd199c97cff01d853843651b342f81df5ee8eafed809775",
+              "check": "external-function",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "StartGame",
+                  "source_mapping": {
+                    "start": 130,
+                    "length": 262,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ENIGMA",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1232,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "StartGame(string,string)"
+                  }
+                }
+              ],
+              "description": "StartGame(string,string) should be declared external:\n\t- ENIGMA.StartGame(string,string) (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#8-18)\n",
+              "markdown": "StartGame(string,string) should be declared external:\n\t- [ENIGMA.StartGame(string,string)](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L8-L18)\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L8-L18",
+              "id": "76f1a95bfd7bdcb526cf1816474549086f6b3f8fca1c23f56c883e23f086c616",
+              "check": "external-function",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.26",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".26"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.26 (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.26](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L1) allows old versions\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L1",
+              "id": "2a0bdda1d44448a92e81c8bf2eb58cb6dbe2dbf22af9e2291be3dfb946044b54",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.26 is not recommended for deployment\n",
+              "markdown": "solc-0.4.26 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "e85e93c612cb109c115ab31accf43cd25c590bd8f9b6a43b662115b987f777c3",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "play_tmstmp27",
+                  "source_mapping": {
+                    "start": 1029,
+                    "length": 155,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      45,
+                      46,
+                      47,
+                      48
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 34
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ENIGMA",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1232,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "play_tmstmp27(uint256)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function ENIGMA.play_tmstmp27(uint256) (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#45-48) is not in mixedCase\n",
+              "markdown": "Function [ENIGMA.play_tmstmp27(uint256)](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L45-L48) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L45-L48",
+              "id": "002259c415faf80f0c59eac317a15e0f213171eb088c2ba60fb9b450cf8507bc",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_response",
+                  "source_mapping": {
+                    "start": 411,
+                    "length": 16,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      19
+                    ],
+                    "starting_column": 19,
+                    "ending_column": 35
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "Play",
+                      "source_mapping": {
+                        "start": 397,
+                        "length": 247,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ENIGMA",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1232,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "Play(string)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter ENIGMA.Play(string)._response (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#19) is not in mixedCase\n",
+              "markdown": "Parameter [ENIGMA.Play(string)._response](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L19) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L19",
+              "id": "19a7c9a8623831df26003b23ca1d1c9c2163fecffea91fdf0d412a430c55852f",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "Play",
+                  "source_mapping": {
+                    "start": 397,
+                    "length": 247,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ENIGMA",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1232,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "Play(string)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function ENIGMA.Play(string) (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#19-28) is not in mixedCase\n",
+              "markdown": "Function [ENIGMA.Play(string)](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L19-L28) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L19-L28",
+              "id": "1a51eba05e5270fe435aaa18fed48ef52cd56ff8974b19d01d32691463318c87",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_question",
+                  "source_mapping": {
+                    "start": 149,
+                    "length": 16,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 24,
+                    "ending_column": 40
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "StartGame",
+                      "source_mapping": {
+                        "start": 130,
+                        "length": 262,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ENIGMA",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1232,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "StartGame(string,string)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter ENIGMA.StartGame(string,string)._question (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#8) is not in mixedCase\n",
+              "markdown": "Parameter [ENIGMA.StartGame(string,string)._question](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L8) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L8",
+              "id": "1b851363ad1fa8669525161c483894b3106d80b225d126065649910d52341583",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "StopGame",
+                  "source_mapping": {
+                    "start": 649,
+                    "length": 140,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ENIGMA",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1232,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "StopGame()"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function ENIGMA.StopGame() (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#29-35) is not in mixedCase\n",
+              "markdown": "Function [ENIGMA.StopGame()](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L29-L35) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L29-L35",
+              "id": "428bb3242f6660d32445bd850f9f60e34351c90aa04bb4838fa753069cc1e3d9",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_response",
+                  "source_mapping": {
+                    "start": 166,
+                    "length": 16,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 41,
+                    "ending_column": 57
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "StartGame",
+                      "source_mapping": {
+                        "start": 130,
+                        "length": 262,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ENIGMA",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1232,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "StartGame(string,string)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter ENIGMA.StartGame(string,string)._response (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#8) is not in mixedCase\n",
+              "markdown": "Parameter [ENIGMA.StartGame(string,string)._response](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L8) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L8",
+              "id": "47ba89d8d4ad22ba2f3931ba497a8bf66d314d1e93cc052a42fdd90b7f86d1ee",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "NewQuestion",
+                  "source_mapping": {
+                    "start": 794,
+                    "length": 209,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      36,
+                      37,
+                      38,
+                      39,
+                      40,
+                      41,
+                      42,
+                      43
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ENIGMA",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1232,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "NewQuestion(string,bytes32)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function ENIGMA.NewQuestion(string,bytes32) (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#36-43) is not in mixedCase\n",
+              "markdown": "Function [ENIGMA.NewQuestion(string,bytes32)](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L36-L43) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L36-L43",
+              "id": "7cce74982021b0972b4d4b2bd8b80a430f325c685fa12950b42255bdf005370f",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "bugv_tmstmp2",
+                  "source_mapping": {
+                    "start": 1217,
+                    "length": 38,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      50
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 39
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ENIGMA",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1232,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable ENIGMA.bugv_tmstmp2 (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#50) is not in mixedCase\n",
+              "markdown": "Variable [ENIGMA.bugv_tmstmp2](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L50) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L50",
+              "id": "8b80a89f95f3d02773ac60c1421eb4612ad27d177aef623cfce4ce2bb0b362ea",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "winner_tmstmp27",
+                  "source_mapping": {
+                    "start": 1004,
+                    "length": 23,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      44
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ENIGMA",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1232,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable ENIGMA.winner_tmstmp27 (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#44) is not in mixedCase\n",
+              "markdown": "Variable [ENIGMA.winner_tmstmp27](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L44) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L44",
+              "id": "8ddeb6e1ae8ed7d2adc2c62d79dc87b1b9ab0e071ed3e00d115929aacc9ffe4e",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "StartGame",
+                  "source_mapping": {
+                    "start": 130,
+                    "length": 262,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ENIGMA",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1232,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "StartGame(string,string)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function ENIGMA.StartGame(string,string) (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#8-18) is not in mixedCase\n",
+              "markdown": "Function [ENIGMA.StartGame(string,string)](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L8-L18) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L8-L18",
+              "id": "8f457754e900128654a844a2e7784bf4f1854d3dfbd05507e9f570ad7b014557",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_question",
+                  "source_mapping": {
+                    "start": 815,
+                    "length": 16,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      36
+                    ],
+                    "starting_column": 26,
+                    "ending_column": 42
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "NewQuestion",
+                      "source_mapping": {
+                        "start": 794,
+                        "length": 209,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ENIGMA",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1232,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "NewQuestion(string,bytes32)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter ENIGMA.NewQuestion(string,bytes32)._question (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#36) is not in mixedCase\n",
+              "markdown": "Parameter [ENIGMA.NewQuestion(string,bytes32)._question](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L36) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L36",
+              "id": "9022ba035fbfdda78e6b5bb4e6944cbeb6c5f6404e0cda875f649db914587d4e",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_responseHash",
+                  "source_mapping": {
+                    "start": 833,
+                    "length": 21,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      36
+                    ],
+                    "starting_column": 44,
+                    "ending_column": 65
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "NewQuestion",
+                      "source_mapping": {
+                        "start": 794,
+                        "length": 209,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ENIGMA",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1232,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "NewQuestion(string,bytes32)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter ENIGMA.NewQuestion(string,bytes32)._responseHash (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#36) is not in mixedCase\n",
+              "markdown": "Parameter [ENIGMA.NewQuestion(string,bytes32)._responseHash](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L36) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L36",
+              "id": "c257407b742b4c5c0e075631ee663fe6e69f621dc366e816709158b468032d0a",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "bugv_tmstmp2",
+                  "source_mapping": {
+                    "start": 1217,
+                    "length": 38,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      50
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 39
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ENIGMA",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1232,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "ENIGMA",
+                  "source_mapping": {
+                    "start": 26,
+                    "length": 1232,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39,
+                      40,
+                      41,
+                      42,
+                      43,
+                      44,
+                      45,
+                      46,
+                      47,
+                      48,
+                      49,
+                      50,
+                      51,
+                      52
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  }
+                }
+              ],
+              "description": "ENIGMA.bugv_tmstmp2 (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#50) is never used in ENIGMA (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#3-52)\n",
+              "markdown": "[ENIGMA.bugv_tmstmp2](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L50) is never used in [ENIGMA](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L3-L52)\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L50",
+              "id": "2423b788106b83d7f48648fe8b30c4a7579f1748baa50e7875df8e209d7c77cd",
+              "check": "unused-state",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "play_tmstmp27",
+                  "source_mapping": {
+                    "start": 1029,
+                    "length": 155,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      45,
+                      46,
+                      47,
+                      48
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 34
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ENIGMA",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1232,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "play_tmstmp27(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "startTime + (5 * 86400) == _vtime",
+                  "source_mapping": {
+                    "start": 1114,
+                    "length": 34,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      47
+                    ],
+                    "starting_column": 6,
+                    "ending_column": 40
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "play_tmstmp27",
+                      "source_mapping": {
+                        "start": 1029,
+                        "length": 155,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          45,
+                          46,
+                          47,
+                          48
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 34
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ENIGMA",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1232,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "play_tmstmp27(uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "ENIGMA.play_tmstmp27(uint256) (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#45-48) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- startTime + (5 * 86400) == _vtime (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#47)\n",
+              "markdown": "[ENIGMA.play_tmstmp27(uint256)](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L45-L48) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [startTime + (5 * 86400) == _vtime](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L47)\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L45-L48",
+              "id": "645926b625812ed00b583b302db67cfd4ce36d12cf9eca457fde49caeac363e0",
+              "check": "timestamp",
+              "impact": "Low",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "play_tmstmp27",
+                  "source_mapping": {
+                    "start": 1029,
+                    "length": 155,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      45,
+                      46,
+                      47,
+                      48
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 34
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ENIGMA",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1232,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "play_tmstmp27(uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "startTime + (5 * 86400) == _vtime",
+                  "source_mapping": {
+                    "start": 1114,
+                    "length": 34,
+                    "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      47
+                    ],
+                    "starting_column": 6,
+                    "ending_column": 40
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "play_tmstmp27",
+                      "source_mapping": {
+                        "start": 1029,
+                        "length": 155,
+                        "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          45,
+                          46,
+                          47,
+                          48
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 34
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ENIGMA",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1232,
+                            "filename_relative": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "filename_short": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "play_tmstmp27(uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "ENIGMA.play_tmstmp27(uint256) (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#45-48) uses a dangerous strict equality:\n\t- startTime + (5 * 86400) == _vtime (FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#47)\n",
+              "markdown": "[ENIGMA.play_tmstmp27(uint256)](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L45-L48) uses a dangerous strict equality:\n\t- [startTime + (5 * 86400) == _vtime](FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L47)\n",
+              "first_markdown_element": "FinalTestset444/Timestamp-Dependency_buggy_0x3b048ab84ddd61c2ffe89ede66d68ef27661c0f2.sol#L45-L48",
+              "id": "0fd6fe4790804f7228dba4de6a5d61a94be8307e7907ee11eb6b285afc589946",
+              "check": "incorrect-equality",
+              "impact": "Medium",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

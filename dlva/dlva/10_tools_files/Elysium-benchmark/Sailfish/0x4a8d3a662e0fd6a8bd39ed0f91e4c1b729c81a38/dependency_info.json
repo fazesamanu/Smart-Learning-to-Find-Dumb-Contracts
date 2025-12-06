@@ -1,0 +1,980 @@
+{
+    "0x4a8d3a662e0fd6a8bd39ed0f91e4c1b729c81a38.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdraw",
+                "withdraw"
+            ],
+            "from_function": "withdraw",
+            "to_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 78\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\"",
+                        "\"BlockID: 25\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdraw",
+                "withdrawTo"
+            ],
+            "from_function": "withdrawTo",
+            "to_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\"",
+                        "\"BlockID: 25\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdraw",
+                "withdrawFor"
+            ],
+            "from_function": "withdrawFor",
+            "to_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 41\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\"",
+                        "\"BlockID: 25\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdraw",
+                "withdrawForTo"
+            ],
+            "from_function": "withdrawForTo",
+            "to_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 51\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\"",
+                        "\"BlockID: 25\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawTo",
+                "withdraw"
+            ],
+            "from_function": "withdraw",
+            "to_function": "withdrawTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\"",
+                        "\"BlockID: 34\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawTo",
+                "withdrawTo"
+            ],
+            "from_function": "withdrawTo",
+            "to_function": "withdrawTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 96\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\"",
+                        "\"BlockID: 34\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawTo",
+                "withdrawFor"
+            ],
+            "from_function": "withdrawFor",
+            "to_function": "withdrawTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 41\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\"",
+                        "\"BlockID: 34\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawTo",
+                "withdrawForTo"
+            ],
+            "from_function": "withdrawForTo",
+            "to_function": "withdrawTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 51\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\"",
+                        "\"BlockID: 34\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawFor",
+                "withdraw"
+            ],
+            "from_function": "withdraw",
+            "to_function": "withdrawFor",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\"",
+                        "\"BlockID: 44\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawFor",
+                "withdrawTo"
+            ],
+            "from_function": "withdrawTo",
+            "to_function": "withdrawFor",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\"",
+                        "\"BlockID: 44\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawFor",
+                "withdrawFor"
+            ],
+            "from_function": "withdrawFor",
+            "to_function": "withdrawFor",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 115\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\"",
+                        "\"BlockID: 44\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawFor",
+                "withdrawForTo"
+            ],
+            "from_function": "withdrawForTo",
+            "to_function": "withdrawFor",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 51\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\"",
+                        "\"BlockID: 44\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawForTo",
+                "withdraw"
+            ],
+            "from_function": "withdraw",
+            "to_function": "withdrawForTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\"",
+                        "\"BlockID: 54\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawForTo",
+                "withdrawTo"
+            ],
+            "from_function": "withdrawTo",
+            "to_function": "withdrawForTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\"",
+                        "\"BlockID: 54\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawForTo",
+                "withdrawFor"
+            ],
+            "from_function": "withdrawFor",
+            "to_function": "withdrawForTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 41\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\"",
+                        "\"BlockID: 54\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawForTo",
+                "withdrawForTo"
+            ],
+            "from_function": "withdrawForTo",
+            "to_function": "withdrawForTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 135\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\"",
+                        "\"BlockID: 54\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: doDeposit\nNode: \nEXPRESSION balances[to] = balances[to].add(msg.value)\nIRS: \nREF_18 := TMP_29\"",
+                        "\"BlockID: 21\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "deposit"
+            ],
+            "First_function": "deposit",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 13\nFunction: doDeposit\nNode: \nEXPRESSION balances[to] = balances[to].add(msg.value)\nIRS: \nREF_18 := TMP_29\"",
+                        "\"BlockID: 21\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "depositTo"
+            ],
+            "First_function": "depositTo",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: doDeposit\nNode: \nEXPRESSION balances[to] = balances[to].add(msg.value)\nIRS: \nREF_18 := TMP_29\"",
+                        "\"BlockID: 21\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "withdraw"
+            ],
+            "First_function": "withdraw",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 88\nFunction: doWithdraw\nNode: \nEXPRESSION balances[from] = balances[from].sub(amount)\nIRS: \nREF_10 := TMP_22\"",
+                        "\"BlockID: 21\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 90\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\"",
+                        "\"BlockID: 22\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "withdrawTo"
+            ],
+            "First_function": "withdrawTo",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 32\nFunction: doWithdraw\nNode: \nEXPRESSION balances[from] = balances[from].sub(amount)\nIRS: \nREF_10 := TMP_22\"",
+                        "\"BlockID: 21\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 34\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\"",
+                        "\"BlockID: 22\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "withdrawFor"
+            ],
+            "First_function": "withdrawFor",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 42\nFunction: doWithdraw\nNode: \nEXPRESSION balances[from] = balances[from].sub(amount)\nIRS: \nREF_10 := TMP_22\"",
+                        "\"BlockID: 21\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\"",
+                        "\"BlockID: 22\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "withdrawForTo"
+            ],
+            "First_function": "withdrawForTo",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: doWithdraw\nNode: \nEXPRESSION balances[from] = balances[from].sub(amount)\nIRS: \nREF_10 := TMP_22\"",
+                        "\"BlockID: 21\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 54\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\"",
+                        "\"BlockID: 22\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawTo",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "withdrawTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: doDeposit\nNode: \nEXPRESSION balances[to] = balances[to].add(msg.value)\nIRS: \nREF_18 := TMP_29\"",
+                        "\"BlockID: 30\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawTo",
+                "deposit"
+            ],
+            "First_function": "deposit",
+            "Second_function": "withdrawTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 13\nFunction: doDeposit\nNode: \nEXPRESSION balances[to] = balances[to].add(msg.value)\nIRS: \nREF_18 := TMP_29\"",
+                        "\"BlockID: 30\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawTo",
+                "depositTo"
+            ],
+            "First_function": "depositTo",
+            "Second_function": "withdrawTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: doDeposit\nNode: \nEXPRESSION balances[to] = balances[to].add(msg.value)\nIRS: \nREF_18 := TMP_29\"",
+                        "\"BlockID: 30\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawTo",
+                "withdraw"
+            ],
+            "First_function": "withdraw",
+            "Second_function": "withdrawTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 23\nFunction: doWithdraw\nNode: \nEXPRESSION balances[from] = balances[from].sub(amount)\nIRS: \nREF_10 := TMP_22\"",
+                        "\"BlockID: 30\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\"",
+                        "\"BlockID: 31\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawTo",
+                "withdrawTo"
+            ],
+            "First_function": "withdrawTo",
+            "Second_function": "withdrawTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 106\nFunction: doWithdraw\nNode: \nEXPRESSION balances[from] = balances[from].sub(amount)\nIRS: \nREF_10 := TMP_22\"",
+                        "\"BlockID: 30\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 108\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\"",
+                        "\"BlockID: 31\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawTo",
+                "withdrawFor"
+            ],
+            "First_function": "withdrawFor",
+            "Second_function": "withdrawTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 42\nFunction: doWithdraw\nNode: \nEXPRESSION balances[from] = balances[from].sub(amount)\nIRS: \nREF_10 := TMP_22\"",
+                        "\"BlockID: 30\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\"",
+                        "\"BlockID: 31\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawTo",
+                "withdrawForTo"
+            ],
+            "First_function": "withdrawForTo",
+            "Second_function": "withdrawTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: doWithdraw\nNode: \nEXPRESSION balances[from] = balances[from].sub(amount)\nIRS: \nREF_10 := TMP_22\"",
+                        "\"BlockID: 30\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 54\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\"",
+                        "\"BlockID: 31\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawFor",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "withdrawFor",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: doDeposit\nNode: \nEXPRESSION balances[to] = balances[to].add(msg.value)\nIRS: \nREF_18 := TMP_29\"",
+                        "\"BlockID: 40\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawFor",
+                "deposit"
+            ],
+            "First_function": "deposit",
+            "Second_function": "withdrawFor",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 13\nFunction: doDeposit\nNode: \nEXPRESSION balances[to] = balances[to].add(msg.value)\nIRS: \nREF_18 := TMP_29\"",
+                        "\"BlockID: 40\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawFor",
+                "depositTo"
+            ],
+            "First_function": "depositTo",
+            "Second_function": "withdrawFor",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: doDeposit\nNode: \nEXPRESSION balances[to] = balances[to].add(msg.value)\nIRS: \nREF_18 := TMP_29\"",
+                        "\"BlockID: 40\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawFor",
+                "withdraw"
+            ],
+            "First_function": "withdraw",
+            "Second_function": "withdrawFor",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 23\nFunction: doWithdraw\nNode: \nEXPRESSION balances[from] = balances[from].sub(amount)\nIRS: \nREF_10 := TMP_22\"",
+                        "\"BlockID: 40\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\"",
+                        "\"BlockID: 41\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawFor",
+                "withdrawTo"
+            ],
+            "First_function": "withdrawTo",
+            "Second_function": "withdrawFor",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 32\nFunction: doWithdraw\nNode: \nEXPRESSION balances[from] = balances[from].sub(amount)\nIRS: \nREF_10 := TMP_22\"",
+                        "\"BlockID: 40\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 34\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\"",
+                        "\"BlockID: 41\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawFor",
+                "withdrawFor"
+            ],
+            "First_function": "withdrawFor",
+            "Second_function": "withdrawFor",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 126\nFunction: doWithdraw\nNode: \nEXPRESSION balances[from] = balances[from].sub(amount)\nIRS: \nREF_10 := TMP_22\"",
+                        "\"BlockID: 40\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 128\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\"",
+                        "\"BlockID: 41\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawFor",
+                "withdrawForTo"
+            ],
+            "First_function": "withdrawForTo",
+            "Second_function": "withdrawFor",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: doWithdraw\nNode: \nEXPRESSION balances[from] = balances[from].sub(amount)\nIRS: \nREF_10 := TMP_22\"",
+                        "\"BlockID: 40\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 54\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\"",
+                        "\"BlockID: 41\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawFor",
+                "approve"
+            ],
+            "First_function": "approve",
+            "Second_function": "withdrawFor",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 69\nFunction: approve\nNode: \nEXPRESSION approvals[msg.sender][toApprove] = true\nIRS: \nREF_36 := true\"",
+                        "\"BlockID: 38\nFunction: withdrawFor\nNode: \nEXPRESSION require(bool)(approvals[from][msg.sender])\nIRS: \nTMP_34 = SOLIDITY_CALL require(bool)(REF_22)\""
+                    ],
+                    "state_variable": "approvals"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawFor",
+                "unapprove"
+            ],
+            "First_function": "unapprove",
+            "Second_function": "withdrawFor",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 72\nFunction: unapprove\nNode: \nEXPRESSION approvals[msg.sender][toUnapprove] = false\nIRS: \nREF_39 := false\"",
+                        "\"BlockID: 38\nFunction: withdrawFor\nNode: \nEXPRESSION require(bool)(approvals[from][msg.sender])\nIRS: \nTMP_34 = SOLIDITY_CALL require(bool)(REF_22)\""
+                    ],
+                    "state_variable": "approvals"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawForTo",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "withdrawForTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: doDeposit\nNode: \nEXPRESSION balances[to] = balances[to].add(msg.value)\nIRS: \nREF_18 := TMP_29\"",
+                        "\"BlockID: 50\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawForTo",
+                "deposit"
+            ],
+            "First_function": "deposit",
+            "Second_function": "withdrawForTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 13\nFunction: doDeposit\nNode: \nEXPRESSION balances[to] = balances[to].add(msg.value)\nIRS: \nREF_18 := TMP_29\"",
+                        "\"BlockID: 50\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawForTo",
+                "depositTo"
+            ],
+            "First_function": "depositTo",
+            "Second_function": "withdrawForTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: doDeposit\nNode: \nEXPRESSION balances[to] = balances[to].add(msg.value)\nIRS: \nREF_18 := TMP_29\"",
+                        "\"BlockID: 50\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawForTo",
+                "withdraw"
+            ],
+            "First_function": "withdraw",
+            "Second_function": "withdrawForTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 23\nFunction: doWithdraw\nNode: \nEXPRESSION balances[from] = balances[from].sub(amount)\nIRS: \nREF_10 := TMP_22\"",
+                        "\"BlockID: 50\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\"",
+                        "\"BlockID: 51\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawForTo",
+                "withdrawTo"
+            ],
+            "First_function": "withdrawTo",
+            "Second_function": "withdrawForTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 32\nFunction: doWithdraw\nNode: \nEXPRESSION balances[from] = balances[from].sub(amount)\nIRS: \nREF_10 := TMP_22\"",
+                        "\"BlockID: 50\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 34\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\"",
+                        "\"BlockID: 51\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawForTo",
+                "withdrawFor"
+            ],
+            "First_function": "withdrawFor",
+            "Second_function": "withdrawForTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 42\nFunction: doWithdraw\nNode: \nEXPRESSION balances[from] = balances[from].sub(amount)\nIRS: \nREF_10 := TMP_22\"",
+                        "\"BlockID: 50\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\"",
+                        "\"BlockID: 51\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawForTo",
+                "withdrawForTo"
+            ],
+            "First_function": "withdrawForTo",
+            "Second_function": "withdrawForTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 146\nFunction: doWithdraw\nNode: \nEXPRESSION balances[from] = balances[from].sub(amount)\nIRS: \nREF_10 := TMP_22\"",
+                        "\"BlockID: 50\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(balances[from] >= amount)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 148\nFunction: doWithdraw\nNode: \nEXPRESSION withdrawalCount[from] = withdrawalCount[from].add(1)\nIRS: \nREF_15 := TMP_25\"",
+                        "\"BlockID: 51\nFunction: doWithdraw\nNode: \nEXPRESSION require(bool)(withdrawalCount[from] < 3)\nIRS: \nTMP_21 = SOLIDITY_CALL require(bool)(TMP_20)\""
+                    ],
+                    "state_variable": "withdrawalCount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawForTo",
+                "approve"
+            ],
+            "First_function": "approve",
+            "Second_function": "withdrawForTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 69\nFunction: approve\nNode: \nEXPRESSION approvals[msg.sender][toApprove] = true\nIRS: \nREF_36 := true\"",
+                        "\"BlockID: 48\nFunction: withdrawForTo\nNode: \nEXPRESSION require(bool)(approvals[from][msg.sender])\nIRS: \nTMP_36 = SOLIDITY_CALL require(bool)(REF_24)\""
+                    ],
+                    "state_variable": "approvals"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawForTo",
+                "unapprove"
+            ],
+            "First_function": "unapprove",
+            "Second_function": "withdrawForTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 72\nFunction: unapprove\nNode: \nEXPRESSION approvals[msg.sender][toUnapprove] = false\nIRS: \nREF_39 := false\"",
+                        "\"BlockID: 48\nFunction: withdrawForTo\nNode: \nEXPRESSION require(bool)(approvals[from][msg.sender])\nIRS: \nTMP_36 = SOLIDITY_CALL require(bool)(REF_24)\""
+                    ],
+                    "state_variable": "approvals"
+                }
+            ]
+        }
+    ]
+}

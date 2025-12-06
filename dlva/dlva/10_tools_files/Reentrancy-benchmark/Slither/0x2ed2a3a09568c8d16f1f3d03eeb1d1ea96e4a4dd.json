@@ -1,0 +1,359 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 19 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 19 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "0c02deda85e9b779ada0d2843fdca89d9763c2a0756dc0f983bffab287160e30",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "Doubler",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 296,
+                  "filename_relative": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                  "filename_short": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "Doubler",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 3,
+                  "features": [
+                    "Receive ETH",
+                    "Selfdestruct"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 19,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 4,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "node",
+                  "name": "suicide(address)(owner)",
+                  "source_mapping": {
+                    "start": 299,
+                    "length": 14,
+                    "filename_relative": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                    "filename_short": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17
+                    ],
+                    "starting_column": 13,
+                    "ending_column": 27
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "kill",
+                      "source_mapping": {
+                        "start": 234,
+                        "length": 86,
+                        "filename_relative": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                        "filename_short": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Doubler",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 296,
+                            "filename_relative": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                            "filename_short": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "kill()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Deprecated standard detected suicide(address)(owner) (cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol#17):\n\t- Usage of \"suicide()\" should be replaced with \"selfdestruct()\"\n",
+              "markdown": "Deprecated standard detected [suicide(address)(owner)](cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol#L17):\n\t- Usage of \"suicide()\" should be replaced with \"selfdestruct()\"\n",
+              "first_markdown_element": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol#L17",
+              "id": "5c5153fb9a6592e3eec225fd3cee20fae371873febda95f49368f02e2b9814cb",
+              "check": "deprecated-standards",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.14 is not recommended for deployment\n",
+              "markdown": "solc-0.4.14 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "0dfc19233515d1940559b2d539651aca575d67ed4e622ec0b88c38158e2a734a",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.14",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                    "filename_short": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".14"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.14 (cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.14](cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol#L1",
+              "id": "38f32f47e23821772fc7692c3ad794de4c90bbcae7415be3320914ad879e8da3",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "fallback",
+                  "source_mapping": {
+                    "start": 139,
+                    "length": 90,
+                    "filename_relative": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                    "filename_short": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Doubler",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 296,
+                        "filename_relative": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                        "filename_short": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "fallback()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "! msg.sender.call(msg.value * 2)",
+                  "source_mapping": {
+                    "start": 171,
+                    "length": 29,
+                    "filename_relative": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                    "filename_short": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11
+                    ],
+                    "starting_column": 13,
+                    "ending_column": 42
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "fallback",
+                      "source_mapping": {
+                        "start": 139,
+                        "length": 90,
+                        "filename_relative": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                        "filename_short": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Doubler",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 296,
+                            "filename_relative": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                            "filename_short": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "fallback()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Low level call in Doubler.fallback() (cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol#10-13):\n\t- ! msg.sender.call(msg.value * 2) (cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol#11)\n",
+              "markdown": "Low level call in [Doubler.fallback()](cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol#L10-L13):\n\t- [! msg.sender.call(msg.value * 2)](cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol#L11)\n",
+              "first_markdown_element": "cleanSource/0x2ed2a3a09568c8d16f1f3d03eeb1d1ea96e4a4dd.sol#L10-L13",
+              "id": "f267020d794c4875d97f7b9b414888a073bd2118ff88805424dde0c2d483b96c",
+              "check": "low-level-calls",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

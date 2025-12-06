@@ -1,0 +1,917 @@
+{
+    "file": "0xce8c84c5b1b8e1242a1303a61d40f8d74a6e04c6.sol",
+    "global_structs": [
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x44"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x45"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x46"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "people",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "claim_amount",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x43"
+            ]
+        },
+        {
+            "name": "ceoAddress",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x3"
+            ]
+        },
+        {
+            "name": "BrandsRefundFond",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3",
+            "instructions": [
+                "ceoAddress = msg_sender"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4",
+            "instructions": [
+                "CLR_0 = people[752180421556321703533816132954626702293071168133]",
+                "REF_67 = CLR_0",
+                "people[752180421556321703533816132954626702293071168133] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5",
+            "instructions": [
+                "CLR_1 = people[1062828303329407222530125523971976688386386013953]",
+                "REF_68 = CLR_1",
+                "people[1062828303329407222530125523971976688386386013953] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6",
+            "instructions": [
+                "CLR_2 = people[85630571739491232776802055945719199088812068843]",
+                "REF_69 = CLR_2",
+                "people[85630571739491232776802055945719199088812068843] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x7",
+            "instructions": [
+                "CLR_3 = people[934626198746365830858945726128246329061112519944]",
+                "REF_70 = CLR_3",
+                "people[934626198746365830858945726128246329061112519944] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x8",
+            "instructions": [
+                "CLR_4 = people[1149551624801044548116583744966287094979173063139]",
+                "REF_71 = CLR_4",
+                "people[1149551624801044548116583744966287094979173063139] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x9",
+            "instructions": [
+                "CLR_5 = people[482611875964423341281972166010949492323967950372]",
+                "REF_72 = CLR_5",
+                "people[482611875964423341281972166010949492323967950372] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xa",
+            "instructions": [
+                "CLR_6 = people[132366252073007889862744169876068708178897665517]",
+                "REF_73 = CLR_6",
+                "people[132366252073007889862744169876068708178897665517] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb",
+            "instructions": [
+                "CLR_7 = people[1180726369186380574374268878063434691098135704960]",
+                "REF_74 = CLR_7",
+                "people[1180726369186380574374268878063434691098135704960] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc",
+            "instructions": [
+                "CLR_8 = people[336713312210733846322210505649847517979656523234]",
+                "REF_75 = CLR_8",
+                "people[336713312210733846322210505649847517979656523234] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xd",
+            "instructions": [
+                "CLR_9 = people[454444999236507084704963211578637247182779735331]",
+                "REF_76 = CLR_9",
+                "people[454444999236507084704963211578637247182779735331] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xe",
+            "instructions": [
+                "CLR_10 = people[1053274272557558130802847127052781221873017137643]",
+                "REF_77 = CLR_10",
+                "people[1053274272557558130802847127052781221873017137643] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xf",
+            "instructions": [
+                "CLR_11 = people[525302041890720488082594151189452824639491467606]",
+                "REF_78 = CLR_11",
+                "people[525302041890720488082594151189452824639491467606] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x10",
+            "instructions": [
+                "CLR_12 = people[1175552049359212629319628144582537130433233110774]",
+                "REF_79 = CLR_12",
+                "people[1175552049359212629319628144582537130433233110774] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x11",
+            "instructions": [
+                "CLR_13 = people[33056726898871216574561420126537743725237548358]",
+                "REF_80 = CLR_13",
+                "people[33056726898871216574561420126537743725237548358] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x12",
+            "instructions": [
+                "CLR_14 = people[926106926667958411085282462103566913671561402428]",
+                "REF_81 = CLR_14",
+                "people[926106926667958411085282462103566913671561402428] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x13",
+            "instructions": [
+                "CLR_15 = people[353787605343241071588606761187473520895646240358]",
+                "REF_82 = CLR_15",
+                "people[353787605343241071588606761187473520895646240358] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x14",
+            "instructions": [
+                "CLR_16 = people[492105892260473902118111576363595136811456914861]",
+                "REF_83 = CLR_16",
+                "people[492105892260473902118111576363595136811456914861] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x15",
+            "instructions": [
+                "CLR_17 = people[1059975370784542600115856301728390894442590365136]",
+                "REF_84 = CLR_17",
+                "people[1059975370784542600115856301728390894442590365136] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x16",
+            "instructions": [
+                "CLR_18 = people[499154326850970250754038352468373759807376274627]",
+                "REF_85 = CLR_18",
+                "people[499154326850970250754038352468373759807376274627] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x17",
+            "instructions": [
+                "CLR_19 = people[233002315226407088075087257871611990713438804788]",
+                "REF_86 = CLR_19",
+                "people[233002315226407088075087257871611990713438804788] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x18",
+            "instructions": [
+                "CLR_20 = people[1226916367699980652003749820211195764584219950666]",
+                "REF_87 = CLR_20",
+                "people[1226916367699980652003749820211195764584219950666] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x19",
+            "instructions": [
+                "CLR_21 = people[465976455944342980500951731229077123730535718735]",
+                "REF_88 = CLR_21",
+                "people[465976455944342980500951731229077123730535718735] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1a",
+            "instructions": [
+                "CLR_22 = people[937780095300303781939783306423594567411990059058]",
+                "REF_89 = CLR_22",
+                "people[937780095300303781939783306423594567411990059058] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1b",
+            "instructions": [
+                "CLR_23 = people[572617425489192766232257031594062513148940863537]",
+                "REF_90 = CLR_23",
+                "people[572617425489192766232257031594062513148940863537] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1c",
+            "instructions": [
+                "CLR_24 = people[539390984555252046745686501089174032762284788867]",
+                "REF_91 = CLR_24",
+                "people[539390984555252046745686501089174032762284788867] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1d",
+            "instructions": [
+                "CLR_25 = people[1086900220586860663348487789295539115135482196241]",
+                "REF_92 = CLR_25",
+                "people[1086900220586860663348487789295539115135482196241] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1e",
+            "instructions": [
+                "CLR_26 = people[1325220436383408366761267674573172622980577024150]",
+                "REF_93 = CLR_26",
+                "people[1325220436383408366761267674573172622980577024150] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1f",
+            "instructions": [
+                "CLR_27 = people[1081376826369394967642042084856358767411836895322]",
+                "REF_94 = CLR_27",
+                "people[1081376826369394967642042084856358767411836895322] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x20",
+            "instructions": [
+                "CLR_28 = people[36250158186623217653881386099236873893446726117]",
+                "REF_95 = CLR_28",
+                "people[36250158186623217653881386099236873893446726117] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x21",
+            "instructions": [
+                "CLR_29 = people[769824695684641054328766836139673535836466329882]",
+                "REF_96 = CLR_29",
+                "people[769824695684641054328766836139673535836466329882] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x22",
+            "instructions": [
+                "CLR_30 = people[1391632236076270386697000593993115303465070216371]",
+                "REF_97 = CLR_30",
+                "people[1391632236076270386697000593993115303465070216371] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x23",
+            "instructions": [
+                "CLR_31 = people[635924360267877003083281610891280650113051824651]",
+                "REF_98 = CLR_31",
+                "people[635924360267877003083281610891280650113051824651] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x24",
+            "instructions": [
+                "CLR_32 = people[1006118949536082808115647198315003910635704333548]",
+                "REF_99 = CLR_32",
+                "people[1006118949536082808115647198315003910635704333548] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x25",
+            "instructions": [
+                "CLR_33 = people[54172620692824558201923333299995680434823835763]",
+                "REF_100 = CLR_33",
+                "people[54172620692824558201923333299995680434823835763] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x26",
+            "instructions": [
+                "CLR_34 = people[264803782873111951560760131157288302942272704497]",
+                "REF_101 = CLR_34",
+                "people[264803782873111951560760131157288302942272704497] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x27",
+            "instructions": [
+                "CLR_35 = people[956173709732460817553530681680340885963902863584]",
+                "REF_102 = CLR_35",
+                "people[956173709732460817553530681680340885963902863584] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x28",
+            "instructions": [
+                "CLR_36 = people[862090344985643471569142486754098905259480562357]",
+                "REF_103 = CLR_36",
+                "people[862090344985643471569142486754098905259480562357] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x29",
+            "instructions": [
+                "CLR_37 = people[748979240117847146658430129238332642226808468659]",
+                "REF_104 = CLR_37",
+                "people[748979240117847146658430129238332642226808468659] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2a",
+            "instructions": [
+                "CLR_38 = people[194098842359720220802668703745191259843317828232]",
+                "REF_105 = CLR_38",
+                "people[194098842359720220802668703745191259843317828232] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2b",
+            "instructions": [
+                "CLR_39 = people[170669200122199624755945796278092539164215831019]",
+                "REF_106 = CLR_39",
+                "people[170669200122199624755945796278092539164215831019] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2c",
+            "instructions": [
+                "CLR_40 = people[288214428910181195786899449198926408503543755547]",
+                "REF_107 = CLR_40",
+                "people[288214428910181195786899449198926408503543755547] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2d",
+            "instructions": [
+                "CLR_41 = people[192419000059181969062179915920567778879551806208]",
+                "REF_108 = CLR_41",
+                "people[192419000059181969062179915920567778879551806208] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2e",
+            "instructions": [
+                "CLR_42 = people[633348132945553681674312537499818079272075733239]",
+                "REF_109 = CLR_42",
+                "people[633348132945553681674312537499818079272075733239] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2f",
+            "instructions": [
+                "CLR_43 = people[554907364628811595680443357668861130197566714146]",
+                "REF_110 = CLR_43",
+                "people[554907364628811595680443357668861130197566714146] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x30",
+            "instructions": [
+                "CLR_44 = people[1004129127973748794044691916521418270402893794305]",
+                "REF_111 = CLR_44",
+                "people[1004129127973748794044691916521418270402893794305] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x31",
+            "instructions": [
+                "CLR_45 = people[848998029871417851073983571212019543671537091549]",
+                "REF_112 = CLR_45",
+                "people[848998029871417851073983571212019543671537091549] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x32",
+            "instructions": [
+                "CLR_46 = people[1375802799424526785760134149694718148640563225593]",
+                "REF_113 = CLR_46",
+                "people[1375802799424526785760134149694718148640563225593] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x33",
+            "instructions": [
+                "CLR_47 = people[313288551841530353464523690356703502833608505483]",
+                "REF_114 = CLR_47",
+                "people[313288551841530353464523690356703502833608505483] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x34",
+            "instructions": [
+                "CLR_48 = people[871663817394405935590905041318612344600686530340]",
+                "REF_115 = CLR_48",
+                "people[871663817394405935590905041318612344600686530340] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x35",
+            "instructions": [
+                "CLR_49 = people[282409297499277438037389390107866239152731821942]",
+                "REF_116 = CLR_49",
+                "people[282409297499277438037389390107866239152731821942] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x36",
+            "instructions": [
+                "CLR_50 = people[808646640319947891626084216755779278999298868593]",
+                "REF_117 = CLR_50",
+                "people[808646640319947891626084216755779278999298868593] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x37",
+            "instructions": [
+                "CLR_51 = people[26313231549332068240610762064088901122310385030]",
+                "REF_118 = CLR_51",
+                "people[26313231549332068240610762064088901122310385030] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x38",
+            "instructions": [
+                "CLR_52 = people[280814260436303044445921797006589536901356374688]",
+                "REF_119 = CLR_52",
+                "people[280814260436303044445921797006589536901356374688] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x39",
+            "instructions": [
+                "CLR_53 = people[1039815821526314785346117489866127273604264069568]",
+                "REF_120 = CLR_53",
+                "people[1039815821526314785346117489866127273604264069568] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3a",
+            "instructions": [
+                "CLR_54 = people[1186773018823606514426402029016077234641480036438]",
+                "REF_121 = CLR_54",
+                "people[1186773018823606514426402029016077234641480036438] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3b",
+            "instructions": [
+                "CLR_55 = people[402011344808987337005851579057605086850533786845]",
+                "REF_122 = CLR_55",
+                "people[402011344808987337005851579057605086850533786845] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3c",
+            "instructions": [
+                "CLR_56 = people[33958555570909179313517579367450214325608965592]",
+                "REF_123 = CLR_56",
+                "people[33958555570909179313517579367450214325608965592] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3d",
+            "instructions": [
+                "CLR_57 = people[138441270508984112078556368810434969570933799941]",
+                "REF_124 = CLR_57",
+                "people[138441270508984112078556368810434969570933799941] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3e",
+            "instructions": [
+                "CLR_58 = people[1415778292081627778554619981076241108848685769398]",
+                "REF_125 = CLR_58",
+                "people[1415778292081627778554619981076241108848685769398] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x43",
+            "instructions": [
+                "claim_amount = 16129032250000000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x44",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x45",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x46",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "people",
+            "addrs": [
+                "0x2",
+                "0x40"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x40",
+            "instructions": [
+                "CLR_59 = msg.sender",
+                "CLR_60 = people[CLR_59]",
+                "REF_127 = CLR_60",
+                "RTMP_21 = REF_127 == 1",
+                "CONDITION RTMP_21 0x41 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x41",
+            "instructions": [
+                "CLR_61 = msg.sender",
+                "RTMP_22 = CLR_61 != 0",
+                "CONDITION RTMP_22 0x42 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x42",
+            "instructions": [
+                "CLR_62 = this.balance",
+                "REF_128 = CLR_62",
+                "RTMP_23 = REF_128 > claim_amount",
+                "CONDITION RTMP_23 0x3f 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3f",
+            "instructions": [
+                "CLR_63 = msg.sender",
+                "CLR_64 = people[CLR_63]",
+                "REF_126 = CLR_64",
+                "CLR_65 = msg.sender",
+                "people[CLR_65] = 0"
+            ]
+        }
+    ],
+    "root_addr": "0x47",
+    "dest_addrs": [
+        "0x4a"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "claim",
+            "addr": "0x47",
+            "instructions": [
+                "NOP",
+                "JUMP 0x48"
+            ]
+        },
+        {
+            "scope": "claim",
+            "addr": "0x48",
+            "instructions": [
+                "TMP_0 = 0",
+                "CLR_66 = msg.sender",
+                "TMP_1 = CLR_66 != TMP_0",
+                "CONDITION TMP_1 0x48_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "claim",
+            "addr": "0x48_r0",
+            "instructions": [
+                "JUMP 0x49"
+            ]
+        },
+        {
+            "scope": "claim",
+            "addr": "0x49",
+            "instructions": [
+                "REF_61 = BALANCE this",
+                "TMP_3 = REF_61 > claim_amount",
+                "CONDITION TMP_3 0x49_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "claim",
+            "addr": "0x49_r0",
+            "instructions": [
+                "JUMP 0x4a"
+            ]
+        },
+        {
+            "scope": "claim",
+            "addr": "0x4a",
+            "instructions": [
+                "CLR_67 = msg.sender",
+                "CLR_68 = people[CLR_67]",
+                "REF_62 = CLR_68",
+                "TMP_5 = REF_62 == 1",
+                "CONDITION TMP_5 0x4a_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "claim",
+            "addr": "0x4a_r0",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "claim",
+            "addr": "0x4b",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

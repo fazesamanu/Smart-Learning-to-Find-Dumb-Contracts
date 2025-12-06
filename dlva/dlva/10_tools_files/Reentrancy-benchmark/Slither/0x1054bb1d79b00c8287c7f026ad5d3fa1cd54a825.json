@@ -1,0 +1,164 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 9 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m2\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 9 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m2\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "6fbf8f3ffe1a72d274b2d17b717e9bb73414b25ec7d0fde219afced6ce7c254a",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "DamienFont",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 18097,
+                  "filename_relative": "cleanSource/0x1054bb1d79b00c8287c7f026ad5d3fa1cd54a825.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x1054bb1d79b00c8287c7f026ad5d3fa1cd54a825.sol",
+                  "filename_short": "cleanSource/0x1054bb1d79b00c8287c7f026ad5d3fa1cd54a825.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "DamienFont",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 9,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 1,
+            "informational_issues": 2,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "damien",
+                  "source_mapping": {
+                    "start": 49,
+                    "length": 17987,
+                    "filename_relative": "cleanSource/0x1054bb1d79b00c8287c7f026ad5d3fa1cd54a825.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x1054bb1d79b00c8287c7f026ad5d3fa1cd54a825.sol",
+                    "filename_short": "cleanSource/0x1054bb1d79b00c8287c7f026ad5d3fa1cd54a825.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 17990
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DamienFont",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 18097,
+                        "filename_relative": "cleanSource/0x1054bb1d79b00c8287c7f026ad5d3fa1cd54a825.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x1054bb1d79b00c8287c7f026ad5d3fa1cd54a825.sol",
+                        "filename_short": "cleanSource/0x1054bb1d79b00c8287c7f026ad5d3fa1cd54a825.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DamienFont.damien (cleanSource/0x1054bb1d79b00c8287c7f026ad5d3fa1cd54a825.sol#4) should be constant\n",
+              "markdown": "[DamienFont.damien](cleanSource/0x1054bb1d79b00c8287c7f026ad5d3fa1cd54a825.sol#L4) should be constant\n",
+              "first_markdown_element": "cleanSource/0x1054bb1d79b00c8287c7f026ad5d3fa1cd54a825.sol#L4",
+              "id": "407cbc8f9d120903781ea7b9a55da890f7ef62c66faed98d60b2cf07224fc506",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.8.0",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0x1054bb1d79b00c8287c7f026ad5d3fa1cd54a825.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x1054bb1d79b00c8287c7f026ad5d3fa1cd54a825.sol",
+                    "filename_short": "cleanSource/0x1054bb1d79b00c8287c7f026ad5d3fa1cd54a825.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.8",
+                      ".0"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.8.0 (cleanSource/0x1054bb1d79b00c8287c7f026ad5d3fa1cd54a825.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.8.0](cleanSource/0x1054bb1d79b00c8287c7f026ad5d3fa1cd54a825.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x1054bb1d79b00c8287c7f026ad5d3fa1cd54a825.sol#L1",
+              "id": "5034bb7ceb85dfc5184178d3c210e8a87290df7f4148f5cd28a8ac6ded29c5a6",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.8.0 is not recommended for deployment\n",
+              "markdown": "solc-0.8.0 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "c298e4718eba1e635e63e4c3206d561ac1974eaef1a3bba154ff9c56bcf6282a",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

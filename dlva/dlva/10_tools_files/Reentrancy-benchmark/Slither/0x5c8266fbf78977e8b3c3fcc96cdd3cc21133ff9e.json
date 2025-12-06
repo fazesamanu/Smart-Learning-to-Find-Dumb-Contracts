@@ -1,0 +1,466 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 14 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 14 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "474ad8b81226e51fa35f3cbb9d287326a71fea9a102c43d4c33f9cdaf04e0d5a",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "ERC20",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 65,
+                  "filename_relative": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                  "filename_short": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "ERC20",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 0,
+                  "features": []
+                }
+              },
+              {
+                "type": "contract",
+                "name": "balanceChecker",
+                "source_mapping": {
+                  "start": 92,
+                  "length": 307,
+                  "filename_relative": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                  "filename_short": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "balanceChecker",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 14,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 1,
+            "informational_issues": 4,
+            "low_issues": 1,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "checkBals",
+                  "source_mapping": {
+                    "start": 122,
+                    "length": 275,
+                    "filename_relative": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                    "filename_short": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "balanceChecker",
+                      "source_mapping": {
+                        "start": 92,
+                        "length": 307,
+                        "filename_relative": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                        "filename_short": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "checkBals(ERC20,address[])"
+                  }
+                }
+              ],
+              "description": "checkBals(ERC20,address[]) should be declared external:\n\t- balanceChecker.checkBals(ERC20,address[]) (cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol#7-13)\n",
+              "markdown": "checkBals(ERC20,address[]) should be declared external:\n\t- [balanceChecker.checkBals(ERC20,address[])](cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol#L7-L13)\n",
+              "first_markdown_element": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol#L7-L13",
+              "id": "d6779affb8c4b89d6704b96bd076b6613e921ca5efa8b8b2b5dd3f7693c205de",
+              "check": "external-function",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.24",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                    "filename_short": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".24"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.24 (cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.24](cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol#L1",
+              "id": "14b8fd6a5afd8b5e10b233638d5cf0b9aab478d97ee23a1ad6d621b1c7638c4c",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.24 is not recommended for deployment\n",
+              "markdown": "solc-0.4.24 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "4fdaa1943fda7c6196f21cde2a89972a5de2e49314548f4161996d6ef6af4a38",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "contract",
+                  "name": "balanceChecker",
+                  "source_mapping": {
+                    "start": 92,
+                    "length": 307,
+                    "filename_relative": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                    "filename_short": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  },
+                  "additional_fields": {
+                    "target": "contract",
+                    "convention": "CapWords"
+                  }
+                }
+              ],
+              "description": "Contract balanceChecker (cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol#6-15) is not in CapWords\n",
+              "markdown": "Contract [balanceChecker](cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol#L6-L15) is not in CapWords\n",
+              "first_markdown_element": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol#L6-L15",
+              "id": "3301090d4ac4cdbeb6a014953e5ed78dc4eb6f307e0ccebb8452a1fbb907874c",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_location",
+                  "source_mapping": {
+                    "start": 141,
+                    "length": 15,
+                    "filename_relative": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                    "filename_short": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7
+                    ],
+                    "starting_column": 24,
+                    "ending_column": 39
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "checkBals",
+                      "source_mapping": {
+                        "start": 122,
+                        "length": 275,
+                        "filename_relative": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                        "filename_short": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "balanceChecker",
+                          "source_mapping": {
+                            "start": 92,
+                            "length": 307,
+                            "filename_relative": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                            "filename_short": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "checkBals(ERC20,address[])"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter balanceChecker.checkBals(ERC20,address[])._location (cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol#7) is not in mixedCase\n",
+              "markdown": "Parameter [balanceChecker.checkBals(ERC20,address[])._location](cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol#L7) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol#L7",
+              "id": "470db067c566f9e410a1affde1f37f4dc454fa918c608e7f72b76712fe65e24c",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "checkBals",
+                  "source_mapping": {
+                    "start": 122,
+                    "length": 275,
+                    "filename_relative": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                    "filename_short": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "balanceChecker",
+                      "source_mapping": {
+                        "start": 92,
+                        "length": 307,
+                        "filename_relative": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                        "filename_short": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "checkBals(ERC20,address[])"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "bals[i] = _location.balanceOf(addrs[i])",
+                  "source_mapping": {
+                    "start": 320,
+                    "length": 39,
+                    "filename_relative": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                    "filename_short": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 13,
+                    "ending_column": 52
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "checkBals",
+                      "source_mapping": {
+                        "start": 122,
+                        "length": 275,
+                        "filename_relative": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                        "filename_short": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "balanceChecker",
+                          "source_mapping": {
+                            "start": 92,
+                            "length": 307,
+                            "filename_relative": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                            "filename_short": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "checkBals(ERC20,address[])"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "balanceChecker.checkBals(ERC20,address[]) (cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol#7-13) has external calls inside a loop: bals[i] = _location.balanceOf(addrs[i]) (cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol#10)\n",
+              "markdown": "[balanceChecker.checkBals(ERC20,address[])](cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol#L7-L13) has external calls inside a loop: [bals[i] = _location.balanceOf(addrs[i])](cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol#L10)\n",
+              "first_markdown_element": "cleanSource/0x5c8266fbf78977e8b3c3fcc96cdd3cc21133ff9e.sol#L7-L13",
+              "id": "8464297c0261b69ea5328ee43627a4b6ef55a5eaaf1533d1b3f0c9f0dbdc6db7",
+              "check": "calls-loop",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

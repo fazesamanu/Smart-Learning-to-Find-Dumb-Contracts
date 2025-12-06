@@ -1,0 +1,16 @@
+{
+    "tod_symex_path_1.json": {
+        "file_name": "",
+        "from_function": "withdrawFunds_re_ent38",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 185\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 186\nCall context: \nNone\nREF_0 -> balances_re_ent38[msg.sender]\nTMP_16 = REF_0 >= _weiToWithdraw\nTMP_17 = SOLIDITY_CALL require(bool)(TMP_16)\""
+        ],
+        "executable_instructions": 33,
+        "state_variable": "balances_re_ent38",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    }
+}

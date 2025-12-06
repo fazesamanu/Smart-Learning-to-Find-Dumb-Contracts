@@ -1,0 +1,943 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 62 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 16\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 62 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 16\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "0358a11cc9cc7d6e2d879511222eb9fc08bfc358275c2d8528487fcc2df187b9",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "DfWalletFactory",
+                "source_mapping": {
+                  "start": 1722,
+                  "length": 530,
+                  "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                  "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59,
+                    60,
+                    61,
+                    62,
+                    63
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "DfWalletFactory",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 8,
+                  "features": [
+                    "Assembly"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 62,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 16,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 4,
+            "low_issues": 2,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "isClone",
+                  "source_mapping": {
+                    "start": 545,
+                    "length": 689,
+                    "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "CloneFactory",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1209,
+                        "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "isClone(address,address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "",
+                  "source_mapping": {
+                    "start": 686,
+                    "length": 542,
+                    "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 10
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "isClone",
+                      "source_mapping": {
+                        "start": 545,
+                        "length": 689,
+                        "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "CloneFactory",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 1209,
+                            "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "isClone(address,address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "CloneFactory.isClone(address,address) (cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#15-29) uses assembly\n\t- INLINE ASM (cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#17-28)\n",
+              "markdown": "[CloneFactory.isClone(address,address)](cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#L15-L29) uses assembly\n\t- [INLINE ASM](cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#L17-L28)\n",
+              "first_markdown_element": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#L15-L29",
+              "id": "18942947d9cbe157af5864578946a2b1bb3f41d7342d3027bd10a0eeea1445c4",
+              "check": "assembly",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "createClone",
+                  "source_mapping": {
+                    "start": 55,
+                    "length": 485,
+                    "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "CloneFactory",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1209,
+                        "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "createClone(address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "",
+                  "source_mapping": {
+                    "start": 183,
+                    "length": 351,
+                    "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 10
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "createClone",
+                      "source_mapping": {
+                        "start": 55,
+                        "length": 485,
+                        "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "CloneFactory",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 1209,
+                            "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "createClone(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "CloneFactory.createClone(address) (cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#5-14) uses assembly\n\t- INLINE ASM (cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#7-13)\n",
+              "markdown": "[CloneFactory.createClone(address)](cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#L5-L14) uses assembly\n\t- [INLINE ASM](cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#L7-L13)\n",
+              "first_markdown_element": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#L5-L14",
+              "id": "33c09e65b8e250f7d912e88d4b5801226b675031f805dfcaa17be5c5ae6a4f5c",
+              "check": "assembly",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "isClone",
+                  "source_mapping": {
+                    "start": 545,
+                    "length": 689,
+                    "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "CloneFactory",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1209,
+                        "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "isClone(address,address)"
+                  }
+                }
+              ],
+              "description": "CloneFactory.isClone(address,address) (cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#15-29) is never used and should be removed\n",
+              "markdown": "[CloneFactory.isClone(address,address)](cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#L15-L29) is never used and should be removed\n",
+              "first_markdown_element": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#L15-L29",
+              "id": "a15e2ffba7dc14483670e99a1a11eb6b837403012c17fb1a25e117c8897348a5",
+              "check": "dead-code",
+              "impact": "Informational",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_libraryAddress",
+                  "source_mapping": {
+                    "start": 1997,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      55
+                    ],
+                    "starting_column": 32,
+                    "ending_column": 55
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "setLibraryAddress",
+                      "source_mapping": {
+                        "start": 1970,
+                        "length": 118,
+                        "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          55,
+                          56,
+                          57
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "DfWalletFactory",
+                          "source_mapping": {
+                            "start": 1722,
+                            "length": 530,
+                            "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "setLibraryAddress(address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter DfWalletFactory.setLibraryAddress(address)._libraryAddress (cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#55) is not in mixedCase\n",
+              "markdown": "Parameter [DfWalletFactory.setLibraryAddress(address)._libraryAddress](cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#L55) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#L55",
+              "id": "346a14c9100b32ce931f0b24dda5af4933785af4d56b29baf2792e8497e0daa7",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_libraryAddress",
+                  "source_mapping": {
+                    "start": 1997,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      55
+                    ],
+                    "starting_column": 32,
+                    "ending_column": 55
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "setLibraryAddress",
+                      "source_mapping": {
+                        "start": 1970,
+                        "length": 118,
+                        "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          55,
+                          56,
+                          57
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "DfWalletFactory",
+                          "source_mapping": {
+                            "start": 1722,
+                            "length": 530,
+                            "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "setLibraryAddress(address)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "libraryAddress = _libraryAddress",
+                  "source_mapping": {
+                    "start": 2049,
+                    "length": 32,
+                    "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      56
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 41
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "setLibraryAddress",
+                      "source_mapping": {
+                        "start": 1970,
+                        "length": 118,
+                        "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          55,
+                          56,
+                          57
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "DfWalletFactory",
+                          "source_mapping": {
+                            "start": 1722,
+                            "length": 530,
+                            "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "setLibraryAddress(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DfWalletFactory.setLibraryAddress(address)._libraryAddress (cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#55) lacks a zero-check on :\n\t\t- libraryAddress = _libraryAddress (cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#56)\n",
+              "markdown": "[DfWalletFactory.setLibraryAddress(address)._libraryAddress](cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#L55) lacks a zero-check on :\n\t\t- [libraryAddress = _libraryAddress](cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#L56)\n",
+              "first_markdown_element": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#L55",
+              "id": "a6b386c260d260516b7d66e0fea9776bf5adbf4434f805226766abc5176baae0",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "newOwner",
+                  "source_mapping": {
+                    "start": 1504,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      41
+                    ],
+                    "starting_column": 26,
+                    "ending_column": 50
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "changeOwner",
+                      "source_mapping": {
+                        "start": 1483,
+                        "length": 109,
+                        "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          41,
+                          42,
+                          43
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Ownable",
+                          "source_mapping": {
+                            "start": 1237,
+                            "length": 484,
+                            "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "changeOwner(address)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "newOwnerCandidate = newOwner",
+                  "source_mapping": {
+                    "start": 1557,
+                    "length": 28,
+                    "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      42
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 37
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "changeOwner",
+                      "source_mapping": {
+                        "start": 1483,
+                        "length": 109,
+                        "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          41,
+                          42,
+                          43
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Ownable",
+                          "source_mapping": {
+                            "start": 1237,
+                            "length": 484,
+                            "filename_relative": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "filename_short": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "changeOwner(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Ownable.changeOwner(address).newOwner (cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#41) lacks a zero-check on :\n\t\t- newOwnerCandidate = newOwner (cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#42)\n",
+              "markdown": "[Ownable.changeOwner(address).newOwner](cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#L41) lacks a zero-check on :\n\t\t- [newOwnerCandidate = newOwner](cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#L42)\n",
+              "first_markdown_element": "cleanSource/0x125579a300db2a90d76aa81bf1c09b6b6fe282e8.sol#L41",
+              "id": "dc5d5c2a700a49c5644e3f31e347a295798e360123ad95dda6e7a051f98dcfd4",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

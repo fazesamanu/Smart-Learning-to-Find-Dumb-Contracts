@@ -1,0 +1,61 @@
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: MAIN
+Function name: GetGift()
+PC address: 449
+Estimated Gas Usage: 1822 - 2247
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+Initial State:
+
+Account: [ATTACKER], balance: 0x1, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x46180000000000, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [SOMEGUY], function: unknown, txdata: 0xbbcd99f1000000000000000000000000deadbeefdeadbeefdeadbeefdeadbeefdeadbeef, decoded_data: , value: 0x29a2241af62c0001
+Caller: [ATTACKER], function: GetGift(), txdata: 0xbea948c8, value: 0x0
+
+==== Unprotected Selfdestruct ====
+SWC ID: 106
+Severity: High
+Contract: MAIN
+Function name: GetGift()
+PC address: 460
+Estimated Gas Usage: 1859 - 2614
+Any sender can cause the contract to self-destruct.
+Any sender can trigger execution of the SELFDESTRUCT instruction to destroy this contract account and withdraw its balance to an arbitrary address. Review the transaction trace generated for this issue and make sure that appropriate security controls are in place to prevent unrestricted access.
+--------------------
+Initial State:
+
+Account: [ATTACKER], balance: 0x40000000000081000, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [ATTACKER], function: unknown, txdata: 0xbbcd99f1adadadadadadadadadadadaddeadbeefdeadbeefdeadbeefdeadbeefdeadbeef, decoded_data: , value: 0x29a2241af62c0001
+Caller: [ATTACKER], function: GetGift(), txdata: 0xbea948c8, value: 0x0
+
+==== Dependence on predictable environment variable ====
+SWC ID: 116
+Severity: Low
+Contract: MAIN
+Function name: SetGiftTime(uint256)
+PC address: 497
+Estimated Gas Usage: 1869 - 2294
+A control flow decision is made based on The block.timestamp environment variable.
+The block.timestamp environment variable is used to determine a control flow decision. Note that the values of variables like coinbase, gaslimit, block number and timestamp are predictable and can be manipulated by a malicious miner. Also keep in mind that attackers know hashes of earlier blocks. Don't use any of those environment variables as sources of randomness and be aware that use of these variables introduces a certain level of trust into miners.
+--------------------
+Initial State:
+
+Account: [ATTACKER], balance: 0x109a0000000000000, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x848000800010005, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [ATTACKER], function: unknown, txdata: 0xbbcd99f1, decoded_data: , value: 0x29a2241af62c0001
+Caller: [ATTACKER], function: SetGiftTime(uint256), txdata: 0xdac47a71, value: 0x0
+
+

@@ -1,0 +1,151 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 9 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 9 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "98eb033fa377609bc43c12fccb2abec776e1735e05811fc9e41e65d752094533",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "kektest",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 156,
+                  "filename_relative": "cleanSource/0x151cfc485ec5a9f45e7bd0983b54ee6504261b32.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x151cfc485ec5a9f45e7bd0983b54ee6504261b32.sol",
+                  "filename_short": "cleanSource/0x151cfc485ec5a9f45e7bd0983b54ee6504261b32.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "kektest",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 9,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 3,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [],
+              "description": "solc-0.4.20 is not recommended for deployment\n",
+              "markdown": "solc-0.4.20 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "5b4ca7acc4dbed4dfa921404789e9aaa4fb3f78022469f31090bf0ab6d035d9c",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.20",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x151cfc485ec5a9f45e7bd0983b54ee6504261b32.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x151cfc485ec5a9f45e7bd0983b54ee6504261b32.sol",
+                    "filename_short": "cleanSource/0x151cfc485ec5a9f45e7bd0983b54ee6504261b32.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".20"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.20 (cleanSource/0x151cfc485ec5a9f45e7bd0983b54ee6504261b32.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.20](cleanSource/0x151cfc485ec5a9f45e7bd0983b54ee6504261b32.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x151cfc485ec5a9f45e7bd0983b54ee6504261b32.sol#L1",
+              "id": "a697bb36653cbcdb96223386a318d22c8f5e2c3d50eb95b3863dfacd69f2034b",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "contract",
+                  "name": "kektest",
+                  "source_mapping": {
+                    "start": 27,
+                    "length": 156,
+                    "filename_relative": "cleanSource/0x151cfc485ec5a9f45e7bd0983b54ee6504261b32.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x151cfc485ec5a9f45e7bd0983b54ee6504261b32.sol",
+                    "filename_short": "cleanSource/0x151cfc485ec5a9f45e7bd0983b54ee6504261b32.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  },
+                  "additional_fields": {
+                    "target": "contract",
+                    "convention": "CapWords"
+                  }
+                }
+              ],
+              "description": "Contract kektest (cleanSource/0x151cfc485ec5a9f45e7bd0983b54ee6504261b32.sol#4-10) is not in CapWords\n",
+              "markdown": "Contract [kektest](cleanSource/0x151cfc485ec5a9f45e7bd0983b54ee6504261b32.sol#L4-L10) is not in CapWords\n",
+              "first_markdown_element": "cleanSource/0x151cfc485ec5a9f45e7bd0983b54ee6504261b32.sol#L4-L10",
+              "id": "254775df019090c7408793dabe45cbad4c5bd59b4b0db7902e8bf571d1bb2641",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

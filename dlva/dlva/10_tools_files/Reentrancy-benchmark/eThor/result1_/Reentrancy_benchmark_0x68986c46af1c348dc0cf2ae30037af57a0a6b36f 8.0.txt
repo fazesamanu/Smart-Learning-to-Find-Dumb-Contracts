@@ -1,0 +1,49 @@
+Results for Reentrancy_benchmark_0x68986c46af1c348dc0cf2ae30037af57a0a6b36f.json:
+Queries
+query id:       reentrancyStaticCall_0_330
+execution time: 4
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_420(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_381(#8,#9,#10,#3,#4,#5,#6,#7),
+ (>= (:var 8) 3),
+ (let ((a!1 (store (:var 10)
+                  (- (:var 8) 2)
+                  (ite (:var 13)
+                       (mod (* (:var 14) 1000000000000)
+                            115792089237316195423570985008687907853269984665640564039457584007913129639936)
+                       0))))
+(let ((a!2 (store (store (store a!1 (+ (:var 8) 1) (:var 16))
+                         (+ (:var 8) 2)
+                         408)
+                  (- (:var 8) 1)
+                  (ite (:var 18) (ite (= 1000000000000 (:var 19)) 1 0) 0))))
+  (= (:var 2) (store a!2 (:var 8) 431)))),
+ (let ((a!1 (store (store (store (:var 9) (- (:var 8) 2) (:var 13))
+                         (+ (:var 8) 1)
+                         (:var 15))
+                  (+ (:var 8) 2)
+                  true)))
+  (= (:var 1) (store (store a!1 (- (:var 8) 1) (:var 18)) (:var 8) true))),
+ (= (:var 0) (+ (:var 8) 1)),
+ (= (:var 19)
+   (ite (and (:var 13) (:var 15))
+        (ite (= (:var 16) 0) 0 (div (:var 17) (:var 16)))
+        0)),
+ (= (:var 18) (and (:var 13) (:var 15))),
+ (or (not (:var 15)) (not (= (:var 16) 0))),
+ (= (:var 17)
+   (ite (:var 13)
+        (mod (* (:var 14) 1000000000000)
+             115792089237316195423570985008687907853269984665640564039457584007913129639936)
+        0)),
+ (= (:var 16) (select (:var 10) (- (:var 8) 3))),
+ (= (:var 15) (select (:var 9) (- (:var 8) 3))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 3))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 3))),
+ (or (not (:var 11)) (not (= (:var 12) 0))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 2))),
+ (< (:var 8) 1022).
+
+

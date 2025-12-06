@@ -1,0 +1,1381 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 30 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 7\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m2\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 30 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 7\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m2\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\n",
+        "first_markdown_element": "",
+        "id": "9a1096578a8b10fc613ca4100f2b231f02fd644eb00587490783e1b8dee6d8c2",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "ArbitraryCaller",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 741,
+                  "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                  "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "ArbitraryCaller",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": [
+                    "Receive ETH",
+                    "Send ETH",
+                    "Assembly"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 30,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 7,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 2,
+            "low_issues": 2,
+            "medium_issues": 0,
+            "high_issues": 1
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "sendCall",
+                  "source_mapping": {
+                    "start": 58,
+                    "length": 708,
+                    "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ArbitraryCaller",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 741,
+                        "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "sendCall(address,address,bytes)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "",
+                  "source_mapping": {
+                    "start": 317,
+                    "length": 181,
+                    "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 10
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "sendCall",
+                      "source_mapping": {
+                        "start": 58,
+                        "length": 708,
+                        "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ArbitraryCaller",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 741,
+                            "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "sendCall(address,address,bytes)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "",
+                  "source_mapping": {
+                    "start": 710,
+                    "length": 50,
+                    "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      26,
+                      27,
+                      28
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 10
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "sendCall",
+                      "source_mapping": {
+                        "start": 58,
+                        "length": 708,
+                        "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ArbitraryCaller",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 741,
+                            "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "sendCall(address,address,bytes)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "ArbitraryCaller.sendCall(address,address,bytes) (cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#5-29) uses assembly\n\t- INLINE ASM (cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#15-20)\n\t- INLINE ASM (cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#26-28)\n",
+              "markdown": "[ArbitraryCaller.sendCall(address,address,bytes)](cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#L5-L29) uses assembly\n\t- [INLINE ASM](cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#L15-L20)\n\t- [INLINE ASM](cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#L26-L28)\n",
+              "first_markdown_element": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#L5-L29",
+              "id": "0f0ac3916c36b2ff41d806a7923de81166736968064de54315f127340647dd41",
+              "check": "assembly",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "sendCall",
+                  "source_mapping": {
+                    "start": 58,
+                    "length": 708,
+                    "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ArbitraryCaller",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 741,
+                        "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "sendCall(address,address,bytes)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "(success) = target.call.value(msg.value)(callData)",
+                  "source_mapping": {
+                    "start": 208,
+                    "length": 56,
+                    "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 65
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "sendCall",
+                      "source_mapping": {
+                        "start": 58,
+                        "length": 708,
+                        "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ArbitraryCaller",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 741,
+                            "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "sendCall(address,address,bytes)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "(success,None) = msgSender.call.value(ethBalance)()",
+                  "source_mapping": {
+                    "start": 594,
+                    "length": 49,
+                    "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      23
+                    ],
+                    "starting_column": 13,
+                    "ending_column": 62
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "sendCall",
+                      "source_mapping": {
+                        "start": 58,
+                        "length": 708,
+                        "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ArbitraryCaller",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 741,
+                            "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "sendCall(address,address,bytes)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Low level call in ArbitraryCaller.sendCall(address,address,bytes) (cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#5-29):\n\t- (success) = target.call.value(msg.value)(callData) (cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#12)\n\t- (success,None) = msgSender.call.value(ethBalance)() (cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#23)\n",
+              "markdown": "Low level call in [ArbitraryCaller.sendCall(address,address,bytes)](cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#L5-L29):\n\t- [(success) = target.call.value(msg.value)(callData)](cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#L12)\n\t- [(success,None) = msgSender.call.value(ethBalance)()](cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#L23)\n",
+              "first_markdown_element": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#L5-L29",
+              "id": "de2abd8f8363dd2e17ea895cd1e43264562db1a6316869b2eb2685a6e731b81e",
+              "check": "low-level-calls",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "msgSender",
+                  "source_mapping": {
+                    "start": 85,
+                    "length": 17,
+                    "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 26
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "sendCall",
+                      "source_mapping": {
+                        "start": 58,
+                        "length": 708,
+                        "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ArbitraryCaller",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 741,
+                            "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "sendCall(address,address,bytes)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "(success,None) = msgSender.call.value(ethBalance)()",
+                  "source_mapping": {
+                    "start": 594,
+                    "length": 49,
+                    "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      23
+                    ],
+                    "starting_column": 13,
+                    "ending_column": 62
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "sendCall",
+                      "source_mapping": {
+                        "start": 58,
+                        "length": 708,
+                        "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ArbitraryCaller",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 741,
+                            "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "sendCall(address,address,bytes)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "ArbitraryCaller.sendCall(address,address,bytes).msgSender (cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#6) lacks a zero-check on :\n\t\t- (success,None) = msgSender.call.value(ethBalance)() (cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#23)\n",
+              "markdown": "[ArbitraryCaller.sendCall(address,address,bytes).msgSender](cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#L6) lacks a zero-check on :\n\t\t- [(success,None) = msgSender.call.value(ethBalance)()](cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#L23)\n",
+              "first_markdown_element": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#L6",
+              "id": "56faafbfd5e7743f256230e8c1a8a5f073905d468369cf1cfb710009671b0276",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "target",
+                  "source_mapping": {
+                    "start": 112,
+                    "length": 14,
+                    "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 23
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "sendCall",
+                      "source_mapping": {
+                        "start": 58,
+                        "length": 708,
+                        "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ArbitraryCaller",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 741,
+                            "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "sendCall(address,address,bytes)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "(success) = target.call.value(msg.value)(callData)",
+                  "source_mapping": {
+                    "start": 208,
+                    "length": 56,
+                    "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 65
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "sendCall",
+                      "source_mapping": {
+                        "start": 58,
+                        "length": 708,
+                        "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ArbitraryCaller",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 741,
+                            "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "sendCall(address,address,bytes)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "ArbitraryCaller.sendCall(address,address,bytes).target (cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#7) lacks a zero-check on :\n\t\t- (success) = target.call.value(msg.value)(callData) (cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#12)\n",
+              "markdown": "[ArbitraryCaller.sendCall(address,address,bytes).target](cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#L7) lacks a zero-check on :\n\t\t- [(success) = target.call.value(msg.value)(callData)](cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#L12)\n",
+              "first_markdown_element": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#L7",
+              "id": "d6d70eaf29b5ff4258ab873eb380b316c4ed3eca138ad8d8bc5ee507f23b666d",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "sendCall",
+                  "source_mapping": {
+                    "start": 58,
+                    "length": 708,
+                    "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ArbitraryCaller",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 741,
+                        "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "sendCall(address,address,bytes)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "(success,None) = msgSender.call.value(ethBalance)()",
+                  "source_mapping": {
+                    "start": 594,
+                    "length": 49,
+                    "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      23
+                    ],
+                    "starting_column": 13,
+                    "ending_column": 62
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "sendCall",
+                      "source_mapping": {
+                        "start": 58,
+                        "length": 708,
+                        "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ArbitraryCaller",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 741,
+                            "filename_relative": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "filename_short": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "sendCall(address,address,bytes)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "ArbitraryCaller.sendCall(address,address,bytes) (cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#5-29) sends eth to arbitrary user\n\tDangerous calls:\n\t- (success,None) = msgSender.call.value(ethBalance)() (cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#23)\n",
+              "markdown": "[ArbitraryCaller.sendCall(address,address,bytes)](cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#L5-L29) sends eth to arbitrary user\n\tDangerous calls:\n\t- [(success,None) = msgSender.call.value(ethBalance)()](cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#L23)\n",
+              "first_markdown_element": "cleanSource/0x4c67b3db1d4474c0ebb2db8bec4e345526d9e2fd.sol#L5-L29",
+              "id": "498f7fad9a9798d1af560c87156eaabb3779b6f82686cdaf15958abf2cfef19a",
+              "check": "arbitrary-send-eth",
+              "impact": "High",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

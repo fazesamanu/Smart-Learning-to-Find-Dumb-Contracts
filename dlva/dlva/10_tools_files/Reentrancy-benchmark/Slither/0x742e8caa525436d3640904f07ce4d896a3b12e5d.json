@@ -1,0 +1,112 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 9 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m2\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 9 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m2\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "5b978b7330bd15c84fd4344c28fbe45b452569e99682bdbd0ef586de2f25914d",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "MxtterUtility",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 218,
+                  "filename_relative": "cleanSource/0x742e8caa525436d3640904f07ce4d896a3b12e5d.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x742e8caa525436d3640904f07ce4d896a3b12e5d.sol",
+                  "filename_short": "cleanSource/0x742e8caa525436d3640904f07ce4d896a3b12e5d.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "MxtterUtility",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 9,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 2,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.8.4",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0x742e8caa525436d3640904f07ce4d896a3b12e5d.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x742e8caa525436d3640904f07ce4d896a3b12e5d.sol",
+                    "filename_short": "cleanSource/0x742e8caa525436d3640904f07ce4d896a3b12e5d.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.8",
+                      ".4"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.8.4 (cleanSource/0x742e8caa525436d3640904f07ce4d896a3b12e5d.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.8.4](cleanSource/0x742e8caa525436d3640904f07ce4d896a3b12e5d.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x742e8caa525436d3640904f07ce4d896a3b12e5d.sol#L1",
+              "id": "2792a98c4faa07b76e5f1a0a49e85ed7c8733f4c94e21561e5538fffae397814",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.8.4 is not recommended for deployment\n",
+              "markdown": "solc-0.8.4 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "2d6b35864ac3d65d7e6d059f2d4d759caf96afb3e33f0c5c78a032aa1ee2c310",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+    "Re-entrancy_buggy_0x5c54142e962dc587fd37cb0e261b7e0851c384d2.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "claimReward_re_ent32",
+                "claimReward_re_ent32"
+            ],
+            "from_function": "claimReward_re_ent32",
+            "to_function": "claimReward_re_ent32",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 47\nFunction: claimReward_re_ent32\nNode: \nEXPRESSION require(bool)(redeemableEther_re_ent32[msg.sender] > 0)\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\"",
+                        "\"BlockID: 4\nFunction: claimReward_re_ent32\nNode: \nEXPRESSION redeemableEther_re_ent32[msg.sender] = 0\nIRS: \nREF_4 := 0\""
+                    ],
+                    "state_variable": "redeemableEther_re_ent32"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 48\nFunction: claimReward_re_ent32\nNode: \nEXPRESSION msg.sender.call.value(transferValue_re_ent32)()\nIRS: \nTMP_3(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:transferValue_re_ent32 \"",
+                        "\"BlockID: 4\nFunction: claimReward_re_ent32\nNode: \nEXPRESSION redeemableEther_re_ent32[msg.sender] = 0\nIRS: \nREF_4 := 0\""
+                    ],
+                    "state_variable": "redeemableEther_re_ent32"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_re_ent32",
+                "claimReward_re_ent32"
+            ],
+            "First_function": "claimReward_re_ent32",
+            "Second_function": "claimReward_re_ent32",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 53\nFunction: claimReward_re_ent32\nNode: \nEXPRESSION redeemableEther_re_ent32[msg.sender] = 0\nIRS: \nREF_4 := 0\"",
+                        "\"BlockID: 2\nFunction: claimReward_re_ent32\nNode: \nEXPRESSION require(bool)(redeemableEther_re_ent32[msg.sender] > 0)\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\""
+                    ],
+                    "state_variable": "redeemableEther_re_ent32"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 53\nFunction: claimReward_re_ent32\nNode: \nEXPRESSION redeemableEther_re_ent32[msg.sender] = 0\nIRS: \nREF_4 := 0\"",
+                        "\"BlockID: 3\nFunction: claimReward_re_ent32\nNode: \nEXPRESSION msg.sender.call.value(transferValue_re_ent32)()\nIRS: \nTMP_3(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:transferValue_re_ent32 \""
+                    ],
+                    "state_variable": "redeemableEther_re_ent32"
+                }
+            ]
+        }
+    ]
+}

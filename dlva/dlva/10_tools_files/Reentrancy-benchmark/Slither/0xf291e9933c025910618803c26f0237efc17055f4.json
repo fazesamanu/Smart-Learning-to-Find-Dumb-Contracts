@@ -1,0 +1,262 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 31 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 31 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "f3966cff71e95201f506dbf71a926dcf5ad3244e5ab2c7984f24500a977124f1",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "Migrations",
+                "source_mapping": {
+                  "start": 460,
+                  "length": 331,
+                  "filename_relative": "cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                  "filename_short": "cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "Migrations",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 4,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 31,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 4,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.15",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                    "filename_short": "cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".15"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.15 (cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.15](cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol#L1",
+              "id": "0ffab574b897c67f8d46b0f00a55db70a436731a6cf7df4a9c84a692fa0c1466",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.15 is not recommended for deployment\n",
+              "markdown": "solc-0.4.15 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "24aab652ab7a85bb6a06efb47ac54d3ac570e6c1c8549ade915f170c764ee912",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "last_completed_migration",
+                  "source_mapping": {
+                    "start": 494,
+                    "length": 36,
+                    "filename_relative": "cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                    "filename_short": "cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      23
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 39
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Migrations",
+                      "source_mapping": {
+                        "start": 460,
+                        "length": 331,
+                        "filename_relative": "cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                        "filename_short": "cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable Migrations.last_completed_migration (cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol#23) is not in mixedCase\n",
+              "markdown": "Variable [Migrations.last_completed_migration](cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol#L23) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol#L23",
+              "id": "1c519270c8b5a9bb371bf1748043cc37c217423cf64986d3d048bab9deef929e",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "new_address",
+                  "source_mapping": {
+                    "start": 649,
+                    "length": 19,
+                    "filename_relative": "cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                    "filename_short": "cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      27
+                    ],
+                    "starting_column": 20,
+                    "ending_column": 39
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "upgrade",
+                      "source_mapping": {
+                        "start": 632,
+                        "length": 157,
+                        "filename_relative": "cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                        "filename_short": "cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          27,
+                          28,
+                          29,
+                          30
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Migrations",
+                          "source_mapping": {
+                            "start": 460,
+                            "length": 331,
+                            "filename_relative": "cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                            "filename_short": "cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "upgrade(address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Migrations.upgrade(address).new_address (cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol#27) is not in mixedCase\n",
+              "markdown": "Parameter [Migrations.upgrade(address).new_address](cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol#L27) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xf291e9933c025910618803c26f0237efc17055f4.sol#L27",
+              "id": "55f7d6b26d892a277a781821b570896d26270a8b408f642dd6a113396099348e",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

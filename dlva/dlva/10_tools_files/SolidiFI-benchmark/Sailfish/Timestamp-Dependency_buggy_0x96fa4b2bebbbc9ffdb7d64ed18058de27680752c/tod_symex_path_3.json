@@ -1,0 +1,419 @@
+{
+    "file": "Timestamp-Dependency_buggy_0x96fa4b2bebbbc9ffdb7d64ed18058de27680752c.sol",
+    "global_structs": [
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x1d"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x1e"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x1f"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "question",
+            "type": [
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "questionSender",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "responseHash",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "winner_tmstmp2",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "bugv_tmstmp2",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xe"
+            ]
+        },
+        {
+            "name": "QuestionGame",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xe",
+            "instructions": [
+                "CLR_0 = block.timestamp",
+                "bugv_tmstmp2 = CLR_0"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1d",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1e",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1f",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "responseHash",
+            "addrs": [
+                "0x2",
+                "0x4",
+                "0xc"
+            ]
+        },
+        {
+            "name": "question",
+            "addrs": [
+                "0x2",
+                "0x6",
+                "0xa"
+            ]
+        },
+        {
+            "name": "questionSender",
+            "addrs": [
+                "0x2",
+                "0x8"
+            ]
+        },
+        {
+            "name": "winner_tmstmp2",
+            "addrs": [
+                "0x2",
+                "0xd"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4",
+            "instructions": [
+                "RTMP_20 = responseHash == 0",
+                "CONDITION RTMP_20 0x3 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3",
+            "instructions": [
+                "responseHash = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x6",
+            "instructions": [
+                "RTMP_21 = responseHash == 0",
+                "CONDITION RTMP_21 0x5 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5",
+            "instructions": [
+                "question = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x8",
+            "instructions": [
+                "RTMP_22 = responseHash == 0",
+                "CONDITION RTMP_22 0x7 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x7",
+            "instructions": [
+                "CLR_1 = msg.sender",
+                "questionSender = CLR_1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa",
+            "instructions": [
+                "CLR_2 = msg.sender",
+                "RTMP_23 = CLR_2 == questionSender",
+                "CONDITION RTMP_23 0x9 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x9",
+            "instructions": [
+                "question = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xc",
+            "instructions": [
+                "CLR_3 = msg.sender",
+                "RTMP_24 = CLR_3 == questionSender",
+                "CONDITION RTMP_24 0xb 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb",
+            "instructions": [
+                "responseHash = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xd",
+            "instructions": [
+                "CLR_4 = msg.sender",
+                "winner_tmstmp2 = CLR_4"
+            ]
+        }
+    ],
+    "root_addr": "0x20",
+    "dest_addrs": [
+        "0x22"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "StopGame",
+            "addr": "0x20",
+            "instructions": [
+                "NOP",
+                "JUMP 0x21"
+            ]
+        },
+        {
+            "scope": "StopGame",
+            "addr": "0x21",
+            "instructions": [
+                "CLR_5 = msg.sender",
+                "TMP_7 = CLR_5 == questionSender",
+                "CONDITION TMP_7 0x22 0x23"
+            ]
+        },
+        {
+            "scope": "StopGame",
+            "addr": "0x22",
+            "instructions": [
+                "REF_3 = BALANCE this",
+                "CLR_6 = this.balance",
+                "WRP_0 = CLR_6 - REF_3",
+                "this.balance = WRP_0"
+            ]
+        },
+        {
+            "scope": "StopGame",
+            "addr": "0x23",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

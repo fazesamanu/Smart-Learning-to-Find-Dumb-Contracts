@@ -1,0 +1,2026 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 47 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m4\u001b[0m\nNumber of informational issues: \u001b[92m7\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[93m2\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\nERCs: ERC20\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 47 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m4\u001b[0m\nNumber of informational issues: \u001b[92m7\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[93m2\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\nERCs: ERC20\n",
+        "first_markdown_element": "",
+        "id": "95245cdec2686993b4b4ec5d858f53343dd914ee54a17c9272b132a6d42b4517",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "FGRE_Portfolio_II_883",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 1854,
+                  "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                  "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48
+                  ],
+                  "starting_column": 2,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "FGRE_Portfolio_II_883",
+                  "is_complex_code": false,
+                  "is_erc20": true,
+                  "number_functions": 6,
+                  "features": [
+                    "Send ETH"
+                  ],
+                  "erc20_pause": false,
+                  "erc20_can_mint": false,
+                  "erc20_race_condition_mitigated": false
+                }
+              }
+            ]
+          },
+          "number_lines": 47,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [
+            "ERC20"
+          ],
+          "number_findings": {
+            "optimization_issues": 4,
+            "informational_issues": 7,
+            "low_issues": 1,
+            "medium_issues": 2,
+            "high_issues": 1
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "decimals",
+                  "source_mapping": {
+                    "start": 222,
+                    "length": 28,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 31
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "FGRE_Portfolio_II_883",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1854,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48
+                        ],
+                        "starting_column": 2,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "FGRE_Portfolio_II_883.decimals (FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#7) should be constant\n",
+              "markdown": "[FGRE_Portfolio_II_883.decimals](FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L7) should be constant\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L7",
+              "id": "3509fbc450543cf7ec5e46df32e8a4b8ac85acb0edd2ae246df433bb5dfe8dd8",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "totalSupply",
+                  "source_mapping": {
+                    "start": 257,
+                    "length": 59,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 62
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "FGRE_Portfolio_II_883",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1854,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48
+                        ],
+                        "starting_column": 2,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "FGRE_Portfolio_II_883.totalSupply (FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#8) should be constant\n",
+              "markdown": "[FGRE_Portfolio_II_883.totalSupply](FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L8) should be constant\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L8",
+              "id": "4155db52599480f31f3f81e28dedcd83f1bcaeeb43b3d5057bf2d195fa5ca6a2",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "symbol",
+                  "source_mapping": {
+                    "start": 179,
+                    "length": 38,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 41
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "FGRE_Portfolio_II_883",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1854,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48
+                        ],
+                        "starting_column": 2,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "FGRE_Portfolio_II_883.symbol (FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#6) should be constant\n",
+              "markdown": "[FGRE_Portfolio_II_883.symbol](FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L6) should be constant\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L6",
+              "id": "a385c2ee9cc53ea002a174dd05de5c652a96bf07efd7c3ca2f2311a6364eda52",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "name",
+                  "source_mapping": {
+                    "start": 126,
+                    "length": 48,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 51
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "FGRE_Portfolio_II_883",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1854,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48
+                        ],
+                        "starting_column": 2,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "FGRE_Portfolio_II_883.name (FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#5) should be constant\n",
+              "markdown": "[FGRE_Portfolio_II_883.name](FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L5) should be constant\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L5",
+              "id": "f51426beb432e4ecaaa6dfa56bce3d786436a2d4a69b2f43553ba078faea5cc3",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.26",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".26"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.26 (FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.26](FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L1) allows old versions\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L1",
+              "id": "229e2aad9ce2e044d2e47edd225547e9ca7e636fccfe4f6caf9e4ea30d4184e6",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.26 is not recommended for deployment\n",
+              "markdown": "solc-0.4.26 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "e85e93c612cb109c115ab31accf43cd25c590bd8f9b6a43b662115b987f777c3",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "transferTo_txorigin27",
+                  "source_mapping": {
+                    "start": 870,
+                    "length": 152,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      21,
+                      22,
+                      23,
+                      24
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "FGRE_Portfolio_II_883",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1854,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48
+                        ],
+                        "starting_column": 2,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "transferTo_txorigin27(address,uint256,address)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function FGRE_Portfolio_II_883.transferTo_txorigin27(address,uint256,address) (FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#21-24) is not in mixedCase\n",
+              "markdown": "Function [FGRE_Portfolio_II_883.transferTo_txorigin27(address,uint256,address)](FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L21-L24) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L21-L24",
+              "id": "324581dfe4a1d820d37e9bf0a8e04d020ecdb6b79288e137928ea5e914ea246f",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "SimpleERC20Token",
+                  "source_mapping": {
+                    "start": 409,
+                    "length": 157,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "FGRE_Portfolio_II_883",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1854,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48
+                        ],
+                        "starting_column": 2,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "SimpleERC20Token()"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function FGRE_Portfolio_II_883.SimpleERC20Token() (FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#10-13) is not in mixedCase\n",
+              "markdown": "Function [FGRE_Portfolio_II_883.SimpleERC20Token()](FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L10-L13) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L10-L13",
+              "id": "5828ae22f3f978ccb740b8e9e3688f0c0d0747707815aebbab007af420a5dc79",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "owner_txorigin27",
+                  "source_mapping": {
+                    "start": 925,
+                    "length": 24,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      21
+                    ],
+                    "starting_column": 56,
+                    "ending_column": 80
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferTo_txorigin27",
+                      "source_mapping": {
+                        "start": 870,
+                        "length": 152,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          21,
+                          22,
+                          23,
+                          24
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "FGRE_Portfolio_II_883",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 1854,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48
+                            ],
+                            "starting_column": 2,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferTo_txorigin27(address,uint256,address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter FGRE_Portfolio_II_883.transferTo_txorigin27(address,uint256,address).owner_txorigin27 (FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#21) is not in mixedCase\n",
+              "markdown": "Parameter [FGRE_Portfolio_II_883.transferTo_txorigin27(address,uint256,address).owner_txorigin27](FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L21) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L21",
+              "id": "5f99d0a80e27387f4c69cd37498bcd4958193b0364d69f403261a7125f2abe98",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "contract",
+                  "name": "FGRE_Portfolio_II_883",
+                  "source_mapping": {
+                    "start": 27,
+                    "length": 1854,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39,
+                      40,
+                      41,
+                      42,
+                      43,
+                      44,
+                      45,
+                      46,
+                      47,
+                      48
+                    ],
+                    "starting_column": 2,
+                    "ending_column": 0
+                  },
+                  "additional_fields": {
+                    "target": "contract",
+                    "convention": "CapWords"
+                  }
+                }
+              ],
+              "description": "Contract FGRE_Portfolio_II_883 (FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#3-48) is not in CapWords\n",
+              "markdown": "Contract [FGRE_Portfolio_II_883](FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L3-L48) is not in CapWords\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L3-L48",
+              "id": "ae04bd40fcda30dfa73bd8471136b913ede60f737c306f014fd0aded4842d95a",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "slitherConstructorVariables",
+                  "source_mapping": {
+                    "start": 27,
+                    "length": 1854,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39,
+                      40,
+                      41,
+                      42,
+                      43,
+                      44,
+                      45,
+                      46,
+                      47,
+                      48
+                    ],
+                    "starting_column": 2,
+                    "ending_column": 0
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "FGRE_Portfolio_II_883",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1854,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48
+                        ],
+                        "starting_column": 2,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "slitherConstructorVariables()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "totalSupply = 27616600125087200000000000000",
+                  "source_mapping": {
+                    "start": 257,
+                    "length": 59,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 62
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "slitherConstructorVariables",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1854,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48
+                        ],
+                        "starting_column": 2,
+                        "ending_column": 0
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "FGRE_Portfolio_II_883",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 1854,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48
+                            ],
+                            "starting_column": 2,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "slitherConstructorVariables()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "FGRE_Portfolio_II_883.slitherConstructorVariables() (FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#3-48) uses literals with too many digits:\n\t- totalSupply = 27616600125087200000000000000 (FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#8)\n",
+              "markdown": "[FGRE_Portfolio_II_883.slitherConstructorVariables()](FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L3-L48) uses literals with too many digits:\n\t- [totalSupply = 27616600125087200000000000000](FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L8)\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L3-L48",
+              "id": "93510239bb7107f13be6987a1c30349a738ab4eaa478f8c9d39b23cb9b443636",
+              "check": "too-many-digits",
+              "impact": "Informational",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "to",
+                  "source_mapping": {
+                    "start": 901,
+                    "length": 10,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      21
+                    ],
+                    "starting_column": 32,
+                    "ending_column": 42
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferTo_txorigin27",
+                      "source_mapping": {
+                        "start": 870,
+                        "length": 152,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          21,
+                          22,
+                          23,
+                          24
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "FGRE_Portfolio_II_883",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 1854,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48
+                            ],
+                            "starting_column": 2,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferTo_txorigin27(address,uint256,address)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "to.send(amount)",
+                  "source_mapping": {
+                    "start": 1004,
+                    "length": 15,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      23
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 18
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferTo_txorigin27",
+                      "source_mapping": {
+                        "start": 870,
+                        "length": 152,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          21,
+                          22,
+                          23,
+                          24
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "FGRE_Portfolio_II_883",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 1854,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48
+                            ],
+                            "starting_column": 2,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferTo_txorigin27(address,uint256,address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "FGRE_Portfolio_II_883.transferTo_txorigin27(address,uint256,address).to (FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#21) lacks a zero-check on :\n\t\t- to.send(amount) (FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#23)\n",
+              "markdown": "[FGRE_Portfolio_II_883.transferTo_txorigin27(address,uint256,address).to](FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L21) lacks a zero-check on :\n\t\t- [to.send(amount)](FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L23)\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L21",
+              "id": "37143eba1e658aedbd054fa8eb0303c0a95ea999e82463b5bdeabb034798421d",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "transferTo_txorigin27",
+                  "source_mapping": {
+                    "start": 870,
+                    "length": 152,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      21,
+                      22,
+                      23,
+                      24
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "FGRE_Portfolio_II_883",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1854,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48
+                        ],
+                        "starting_column": 2,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "transferTo_txorigin27(address,uint256,address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "require(bool)(tx.origin == owner_txorigin27)",
+                  "source_mapping": {
+                    "start": 962,
+                    "length": 38,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      22
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 41
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferTo_txorigin27",
+                      "source_mapping": {
+                        "start": 870,
+                        "length": 152,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          21,
+                          22,
+                          23,
+                          24
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "FGRE_Portfolio_II_883",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 1854,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48
+                            ],
+                            "starting_column": 2,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferTo_txorigin27(address,uint256,address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "FGRE_Portfolio_II_883.transferTo_txorigin27(address,uint256,address) (FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#21-24) uses tx.origin for authorization: require(bool)(tx.origin == owner_txorigin27) (FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#22)\n",
+              "markdown": "[FGRE_Portfolio_II_883.transferTo_txorigin27(address,uint256,address)](FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L21-L24) uses tx.origin for authorization: [require(bool)(tx.origin == owner_txorigin27)](FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L22)\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L21-L24",
+              "id": "6170373f9a13243cf0ba3401fac9f6ea7f32c89f4ee9124ddca6d3b53f24b06e",
+              "check": "tx-origin",
+              "impact": "Medium",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "transferTo_txorigin27",
+                  "source_mapping": {
+                    "start": 870,
+                    "length": 152,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      21,
+                      22,
+                      23,
+                      24
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "FGRE_Portfolio_II_883",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1854,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48
+                        ],
+                        "starting_column": 2,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "transferTo_txorigin27(address,uint256,address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "to.send(amount)",
+                  "source_mapping": {
+                    "start": 1004,
+                    "length": 15,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      23
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 18
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferTo_txorigin27",
+                      "source_mapping": {
+                        "start": 870,
+                        "length": 152,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          21,
+                          22,
+                          23,
+                          24
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "FGRE_Portfolio_II_883",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 1854,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48
+                            ],
+                            "starting_column": 2,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferTo_txorigin27(address,uint256,address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "FGRE_Portfolio_II_883.transferTo_txorigin27(address,uint256,address) (FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#21-24) ignores return value by to.send(amount) (FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#23)\n",
+              "markdown": "[FGRE_Portfolio_II_883.transferTo_txorigin27(address,uint256,address)](FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L21-L24) ignores return value by [to.send(amount)](FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L23)\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L21-L24",
+              "id": "130dcb8145fa3f9d865ee585b8e325658b15d77aab3c20e9e80c042f643ca143",
+              "check": "unchecked-send",
+              "impact": "Medium",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "transferTo_txorigin27",
+                  "source_mapping": {
+                    "start": 870,
+                    "length": 152,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      21,
+                      22,
+                      23,
+                      24
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "FGRE_Portfolio_II_883",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 1854,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48
+                        ],
+                        "starting_column": 2,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "transferTo_txorigin27(address,uint256,address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "to.send(amount)",
+                  "source_mapping": {
+                    "start": 1004,
+                    "length": 15,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      23
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 18
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferTo_txorigin27",
+                      "source_mapping": {
+                        "start": 870,
+                        "length": 152,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          21,
+                          22,
+                          23,
+                          24
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "FGRE_Portfolio_II_883",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 1854,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48
+                            ],
+                            "starting_column": 2,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferTo_txorigin27(address,uint256,address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "FGRE_Portfolio_II_883.transferTo_txorigin27(address,uint256,address) (FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#21-24) sends eth to arbitrary user\n\tDangerous calls:\n\t- to.send(amount) (FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#23)\n",
+              "markdown": "[FGRE_Portfolio_II_883.transferTo_txorigin27(address,uint256,address)](FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L21-L24) sends eth to arbitrary user\n\tDangerous calls:\n\t- [to.send(amount)](FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L23)\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x96f553b19540c8cdc03cd981c66b9964be4377d0.sol#L21-L24",
+              "id": "83a41a7b682ee85070ef0143068118ec7a85e89a7c1152ff76d8f07bd08f3760",
+              "check": "arbitrary-send-eth",
+              "impact": "High",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

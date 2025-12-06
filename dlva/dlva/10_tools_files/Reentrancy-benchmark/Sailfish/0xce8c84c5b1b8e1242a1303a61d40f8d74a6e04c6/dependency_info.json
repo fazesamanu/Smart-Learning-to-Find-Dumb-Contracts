@@ -1,0 +1,22 @@
+{
+    "0xce8c84c5b1b8e1242a1303a61d40f8d74a6e04c6.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claim",
+                "claim"
+            ],
+            "First_function": "claim",
+            "Second_function": "claim",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 80\nFunction: claim\nNode: \nEXPRESSION people[msg.sender] = 0\nIRS: \nREF_63 := 0\"",
+                        "\"BlockID: 67\nFunction: claim\nNode: \nEXPRESSION require(bool)(people[msg.sender] == 1)\nIRS: \nTMP_6 = SOLIDITY_CALL require(bool)(TMP_5)\""
+                    ],
+                    "state_variable": "people"
+                }
+            ]
+        }
+    ]
+}

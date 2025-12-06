@@ -1,0 +1,767 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 25 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m3\u001b[0m\nNumber of informational issues: \u001b[92m5\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 25 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m3\u001b[0m\nNumber of informational issues: \u001b[92m5\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "0560b29ba493880131bcc40841372f2db8ba556d747fa72890f3fd573957d47e",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "Comptroller",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 623,
+                  "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                  "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "Comptroller",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 25,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 3,
+            "informational_issues": 5,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "pendingAdmin",
+                  "source_mapping": {
+                    "start": 183,
+                    "length": 29,
+                    "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 34
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Comptroller",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 623,
+                        "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Comptroller.pendingAdmin (cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#10) should be constant\n",
+              "markdown": "[Comptroller.pendingAdmin](cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#L10) should be constant\n",
+              "first_markdown_element": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#L10",
+              "id": "0b883dbbe9d0fc23097f43d450fe6b7192e8d5af6028e143c085774a55b2562e",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "admin",
+                  "source_mapping": {
+                    "start": 150,
+                    "length": 22,
+                    "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 27
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Comptroller",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 623,
+                        "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Comptroller.admin (cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#8) should be constant\n",
+              "markdown": "[Comptroller.admin](cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#L8) should be constant\n",
+              "first_markdown_element": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#L8",
+              "id": "ab8a1f9498222fcfd78d771273a09ee5715f9f2dc2a002d10aa4ba2fdcbb64b4",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "fuseAdminHasRights",
+                  "source_mapping": {
+                    "start": 223,
+                    "length": 32,
+                    "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 37
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Comptroller",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 623,
+                        "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Comptroller.fuseAdminHasRights (cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#12) should be constant\n",
+              "markdown": "[Comptroller.fuseAdminHasRights](cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#L12) should be constant\n",
+              "first_markdown_element": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#L12",
+              "id": "ac18c95d0b9a5329ce9ae7567450a625ab1ad454d267ab8fde157fb5c0932c3d",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "_toggleAdminRights",
+                  "source_mapping": {
+                    "start": 356,
+                    "length": 292,
+                    "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Comptroller",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 623,
+                        "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "_toggleAdminRights(bool)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function Comptroller._toggleAdminRights(bool) (cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#18-24) is not in mixedCase\n",
+              "markdown": "Function [Comptroller._toggleAdminRights(bool)](cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#L18-L24) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#L18-L24",
+              "id": "34b02fed67056647ef428122bd1079d86cc9e0c12be7acdde88b2003e26ea402",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "fuseAdmin",
+                  "source_mapping": {
+                    "start": 59,
+                    "length": 80,
+                    "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 85
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Comptroller",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 623,
+                        "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable_constant",
+                    "convention": "UPPER_CASE_WITH_UNDERSCORES"
+                  }
+                }
+              ],
+              "description": "Constant Comptroller.fuseAdmin (cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#6) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "markdown": "Constant [Comptroller.fuseAdmin](cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#L6) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "first_markdown_element": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#L6",
+              "id": "5fc708ef9f5de32e85a8139d1daa661da05b6af81449c44072ee66f3f832ef3d",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "admin",
+                  "source_mapping": {
+                    "start": 150,
+                    "length": 22,
+                    "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 27
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Comptroller",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 623,
+                        "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "Comptroller",
+                  "source_mapping": {
+                    "start": 27,
+                    "length": 623,
+                    "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  }
+                }
+              ],
+              "description": "Comptroller.admin (cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#8) is never used in Comptroller (cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#4-26)\n",
+              "markdown": "[Comptroller.admin](cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#L8) is never used in [Comptroller](cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#L4-L26)\n",
+              "first_markdown_element": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#L8",
+              "id": "2db3ffbbd78700433752e41998151e04583a0ae8995e9fa4698deebaa809846c",
+              "check": "unused-state",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "pendingAdmin",
+                  "source_mapping": {
+                    "start": 183,
+                    "length": 29,
+                    "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 34
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Comptroller",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 623,
+                        "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "Comptroller",
+                  "source_mapping": {
+                    "start": 27,
+                    "length": 623,
+                    "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  }
+                }
+              ],
+              "description": "Comptroller.pendingAdmin (cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#10) is never used in Comptroller (cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#4-26)\n",
+              "markdown": "[Comptroller.pendingAdmin](cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#L10) is never used in [Comptroller](cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#L4-L26)\n",
+              "first_markdown_element": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#L10",
+              "id": "3846be846c7a159dbfb8aadce15ed0007512aa8f02093fec7c74e45fe5758c0f",
+              "check": "unused-state",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "fuseAdminHasRights",
+                  "source_mapping": {
+                    "start": 223,
+                    "length": 32,
+                    "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 37
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Comptroller",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 623,
+                        "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "Comptroller",
+                  "source_mapping": {
+                    "start": 27,
+                    "length": 623,
+                    "filename_relative": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "filename_short": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  }
+                }
+              ],
+              "description": "Comptroller.fuseAdminHasRights (cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#12) is never used in Comptroller (cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#4-26)\n",
+              "markdown": "[Comptroller.fuseAdminHasRights](cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#L12) is never used in [Comptroller](cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#L4-L26)\n",
+              "first_markdown_element": "cleanSource/0xddcbad54d536d9c5829492353b2967bfae4010d7.sol#L12",
+              "id": "60a65e8a8bd57faeed8c0cf1c7929f99be9520a7977996d71bb359ecfe3f16f6",
+              "check": "unused-state",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

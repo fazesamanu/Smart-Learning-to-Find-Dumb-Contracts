@@ -1,0 +1,92 @@
+{
+    "tod_symex_path_1.json": {
+        "file_name": "",
+        "from_function": "get",
+        "to_function": "put",
+        "bug_type": "tod_amount_or_receiver",
+        "src_node": "\"BlockID: 79\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 80\nCall context: \nNone\nNEW VARIABLE None\nNEW VARIABLE None\nREF_3 -> _balances[msg.sender]\nTUPLE_0(bool,bytes) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_3 \""
+        ],
+        "executable_instructions": 16,
+        "state_variable": "_balances",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_2.json": {
+        "file_name": "",
+        "from_function": "get",
+        "to_function": "get",
+        "bug_type": "tod_amount_or_receiver",
+        "src_node": "\"BlockID: 92\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 93\nCall context: \nNone\nNEW VARIABLE None\nNEW VARIABLE None\nREF_3 -> _balances[msg.sender]\nTUPLE_0(bool,bytes) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_3 \""
+        ],
+        "executable_instructions": 16,
+        "state_variable": "_balances",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_3.json": {
+        "file_name": "",
+        "from_function": "get",
+        "to_function": "withdraw",
+        "bug_type": "tod_amount_or_receiver",
+        "src_node": "\"BlockID: 99\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 105\nCall context: \nNone\nNEW VARIABLE None\nNEW VARIABLE None\nREF_3 -> _balances[msg.sender]\nTUPLE_0(bool,bytes) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_3 \""
+        ],
+        "executable_instructions": 34,
+        "state_variable": "_balances",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_4.json": {
+        "file_name": "",
+        "from_function": "withdraw",
+        "to_function": "put",
+        "bug_type": "tod_amount_or_receiver",
+        "src_node": "\"BlockID: 113\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 114\nCall context: \nNone\nNEW VARIABLE None\nNEW VARIABLE None\nREF_5 -> _balances[msg.sender]\nREF_5 := 0\nREF_8 -> _balances[msg.sender]\nTUPLE_1(bool,bytes) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_8 \""
+        ],
+        "executable_instructions": 18,
+        "state_variable": "_balances",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_5.json": {
+        "file_name": "",
+        "from_function": "withdraw",
+        "to_function": "get",
+        "bug_type": "tod_amount_or_receiver",
+        "src_node": "\"BlockID: 125\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 126\nCall context: \nNone\nNEW VARIABLE None\nNEW VARIABLE None\nREF_5 -> _balances[msg.sender]\nREF_5 := 0\nREF_8 -> _balances[msg.sender]\nTUPLE_1(bool,bytes) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_8 \""
+        ],
+        "executable_instructions": 18,
+        "state_variable": "_balances",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_6.json": {
+        "file_name": "",
+        "from_function": "withdraw",
+        "to_function": "withdraw",
+        "bug_type": "tod_amount_or_receiver",
+        "src_node": "\"BlockID: 131\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 137\nCall context: \nNone\nNEW VARIABLE None\nNEW VARIABLE None\nREF_5 -> _balances[msg.sender]\nREF_5 := 0\nREF_8 -> _balances[msg.sender]\nTUPLE_1(bool,bytes) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_8 \""
+        ],
+        "executable_instructions": 36,
+        "state_variable": "_balances",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    }
+}

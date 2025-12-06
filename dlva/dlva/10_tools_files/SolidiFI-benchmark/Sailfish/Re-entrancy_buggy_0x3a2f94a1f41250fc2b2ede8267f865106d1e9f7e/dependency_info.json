@@ -1,0 +1,40 @@
+{
+    "Re-entrancy_buggy_0x3a2f94a1f41250fc2b2ede8267f865106d1e9f7e.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "bug_re_ent13",
+                "bug_re_ent13"
+            ],
+            "from_function": "bug_re_ent13",
+            "to_function": "bug_re_ent13",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 35\nFunction: bug_re_ent13\nNode: \nEXPRESSION require(bool)(not_called_re_ent13)\nIRS: \nTMP_0 = SOLIDITY_CALL require(bool)(not_called_re_ent13)\"",
+                        "\"BlockID: 6\nFunction: bug_re_ent13\nNode: \nEXPRESSION not_called_re_ent13 = false\nIRS: \nnot_called_re_ent13 := false\""
+                    ],
+                    "state_variable": "not_called_re_ent13"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "bug_re_ent13",
+                "bug_re_ent13"
+            ],
+            "First_function": "bug_re_ent13",
+            "Second_function": "bug_re_ent13",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 45\nFunction: bug_re_ent13\nNode: \nEXPRESSION not_called_re_ent13 = false\nIRS: \nnot_called_re_ent13 := false\"",
+                        "\"BlockID: 2\nFunction: bug_re_ent13\nNode: \nEXPRESSION require(bool)(not_called_re_ent13)\nIRS: \nTMP_0 = SOLIDITY_CALL require(bool)(not_called_re_ent13)\""
+                    ],
+                    "state_variable": "not_called_re_ent13"
+                }
+            ]
+        }
+    ]
+}

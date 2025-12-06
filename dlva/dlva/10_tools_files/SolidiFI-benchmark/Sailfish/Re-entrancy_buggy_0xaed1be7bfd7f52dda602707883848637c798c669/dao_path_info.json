@@ -1,0 +1,17 @@
+{
+    "dao_symex_path_1.json": {
+        "file_name": "",
+        "from_function": "withdrawFunds_re_ent10",
+        "to_function": "withdrawFunds_re_ent10",
+        "bug_type": "dao",
+        "src_node": "\"BlockID: 47\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 61\nCall context: \nTrue\nREF_7 -> balances_re_ent10[msg.sender]\nREF_7 = REF_7 - _weiToWithdraw\""
+        ],
+        "executable_instructions": 42,
+        "state_variable": "balances_re_ent10",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    }
+}

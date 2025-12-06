@@ -1,0 +1,760 @@
+{
+    "file": "0x9a33a92b408b07d3be90e9828731b21a7d794af4.sol",
+    "global_structs": [
+        {
+            "name": "struct_HowToCall",
+            "fields": {
+                "Call": [
+                    "integer"
+                ],
+                "DelegateCall": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "HowToCall",
+            "type": [
+                "struct_HowToCall"
+            ],
+            "init": [
+                "0xEnumInit_HowToCall"
+            ]
+        },
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x21"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x22"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x23"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "totalSupply",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "user",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "registry",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "revoked",
+            "type": [
+                "boolean"
+            ],
+            "init": []
+        },
+        {
+            "name": "proxies",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "pending",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "contracts",
+            "type": [
+                "array",
+                "integer",
+                "boolean"
+            ],
+            "init": []
+        },
+        {
+            "name": "DELAY_PERIOD",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xb"
+            ]
+        },
+        {
+            "name": "owner",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x8"
+            ]
+        },
+        {
+            "name": "Ownable",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERC20Basic",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERC20",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "TokenRecipient",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "AuthenticatedProxy",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ProxyRegistry",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "TokenTransferProxy",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "WyvernTokenTransferProxy",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xEnumInit_HowToCall",
+            "instructions": [
+                "HowToCall.Call = 0",
+                "HowToCall.DelegateCall = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x8",
+            "instructions": [
+                "owner = msg_sender"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb",
+            "instructions": [
+                "DELAY_PERIOD = 1209600"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x21",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x22",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x23",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "proxies",
+            "addrs": [
+                "0x2",
+                "0xa"
+            ]
+        },
+        {
+            "name": "owner",
+            "addrs": [
+                "0x2",
+                "0x10"
+            ]
+        },
+        {
+            "name": "pending",
+            "addrs": [
+                "0x2",
+                "0x12",
+                "0x16"
+            ]
+        },
+        {
+            "name": "contracts",
+            "addrs": [
+                "0x2",
+                "0x1b",
+                "0x20"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa",
+            "instructions": [
+                "CLR_0 = msg.sender",
+                "CLR_1 = proxies[CLR_0]",
+                "REF_23 = CLR_1",
+                "RTMP_94 = REF_23 == 0",
+                "CONDITION RTMP_94 0x9 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x9",
+            "instructions": [
+                "CLR_2 = msg.sender",
+                "CLR_3 = proxies[CLR_2]",
+                "REF_22 = CLR_3",
+                "CLR_4 = msg.sender",
+                "proxies[CLR_4] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10",
+            "instructions": [
+                "CLR_5 = msg.sender",
+                "RTMP_96 = CLR_5 == owner",
+                "CONDITION RTMP_96 0xf 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf",
+            "instructions": [
+                "owner = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x12",
+            "instructions": [
+                "CLR_6 = contracts[U]",
+                "REF_25 = CLR_6",
+                "RTMP_97 = ! REF_25",
+                "CONDITION RTMP_97 0x13 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x13",
+            "instructions": [
+                "CLR_7 = pending[U]",
+                "REF_26 = CLR_7",
+                "RTMP_98 = REF_26 == 0",
+                "CONDITION RTMP_98 0x14 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x14",
+            "instructions": [
+                "CLR_8 = msg.sender",
+                "RTMP_99 = CLR_8 == owner",
+                "CONDITION RTMP_99 0x11 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11",
+            "instructions": [
+                "CLR_9 = pending[U]",
+                "REF_24 = CLR_9",
+                "pending[0] = now",
+                "pending[1] = now",
+                "pending[2] = now",
+                "pending[3] = now",
+                "pending[4] = now",
+                "pending[5] = now",
+                "pending[6] = now",
+                "pending[7] = now",
+                "pending[8] = now",
+                "pending[9] = now"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x16",
+            "instructions": [
+                "CLR_10 = contracts[U]",
+                "REF_28 = CLR_10",
+                "RTMP_100 = ! REF_28",
+                "CONDITION RTMP_100 0x17 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x17",
+            "instructions": [
+                "CLR_11 = pending[U]",
+                "REF_29 = CLR_11",
+                "RTMP_101 = REF_29 != 0",
+                "CONDITION RTMP_101 0x18 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x18",
+            "instructions": [
+                "CLR_12 = pending[U]",
+                "REF_30 = CLR_12",
+                "TMP_102 = REF_30 + DELAY_PERIOD",
+                "RTMP_103 = TMP_102 < now",
+                "CONDITION RTMP_103 0x19 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x19",
+            "instructions": [
+                "CLR_13 = msg.sender",
+                "RTMP_104 = CLR_13 == owner",
+                "CONDITION RTMP_104 0x15 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x15",
+            "instructions": [
+                "CLR_14 = pending[U]",
+                "REF_27 = CLR_14",
+                "pending[0] = 0",
+                "pending[1] = 0",
+                "pending[2] = 0",
+                "pending[3] = 0",
+                "pending[4] = 0",
+                "pending[5] = 0",
+                "pending[6] = 0",
+                "pending[7] = 0",
+                "pending[8] = 0",
+                "pending[9] = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b",
+            "instructions": [
+                "CLR_15 = contracts[U]",
+                "REF_32 = CLR_15",
+                "RTMP_105 = ! REF_32",
+                "CONDITION RTMP_105 0x1c 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1c",
+            "instructions": [
+                "CLR_16 = pending[U]",
+                "REF_33 = CLR_16",
+                "RTMP_106 = REF_33 != 0",
+                "CONDITION RTMP_106 0x1d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1d",
+            "instructions": [
+                "CLR_17 = pending[U]",
+                "REF_34 = CLR_17",
+                "TMP_107 = REF_34 + DELAY_PERIOD",
+                "RTMP_108 = TMP_107 < now",
+                "CONDITION RTMP_108 0x1e 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e",
+            "instructions": [
+                "CLR_18 = msg.sender",
+                "RTMP_109 = CLR_18 == owner",
+                "CONDITION RTMP_109 0x1a 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a",
+            "instructions": [
+                "CLR_19 = contracts[U]",
+                "REF_31 = CLR_19",
+                "contracts[0] = true",
+                "contracts[1] = true",
+                "contracts[2] = true",
+                "contracts[3] = true",
+                "contracts[4] = true",
+                "contracts[5] = true",
+                "contracts[6] = true",
+                "contracts[7] = true",
+                "contracts[8] = true",
+                "contracts[9] = true"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x20",
+            "instructions": [
+                "CLR_20 = msg.sender",
+                "RTMP_110 = CLR_20 == owner",
+                "CONDITION RTMP_110 0x1f 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1f",
+            "instructions": [
+                "CLR_21 = contracts[U]",
+                "REF_35 = CLR_21",
+                "contracts[0] = false",
+                "contracts[1] = false",
+                "contracts[2] = false",
+                "contracts[3] = false",
+                "contracts[4] = false",
+                "contracts[5] = false",
+                "contracts[6] = false",
+                "contracts[7] = false",
+                "contracts[8] = false",
+                "contracts[9] = false"
+            ]
+        }
+    ],
+    "root_addr": "0x24",
+    "dest_addrs": [
+        "0x2b"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "registerProxy_v1",
+            "addr": "0x24",
+            "instructions": [
+                "NOP",
+                "proxy = NEW_VAL integer",
+                "JUMP 0x25"
+            ]
+        },
+        {
+            "scope": "registerProxy_v1",
+            "addr": "0x25",
+            "instructions": [
+                "CLR_22 = msg.sender",
+                "CLR_23 = proxies[CLR_22]",
+                "REF_16 = CLR_23",
+                "TMP_56 = 0",
+                "TMP_57 = REF_16 == TMP_56",
+                "CONDITION TMP_57 0x25_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "registerProxy_v1",
+            "addr": "0x25_r0",
+            "instructions": [
+                "JUMP 0x26"
+            ]
+        },
+        {
+            "scope": "registerProxy_v1",
+            "addr": "0x26",
+            "instructions": [
+                "ATTACK",
+                "TMP_60 = NEW_VAL integer",
+                "JUMP 0x27"
+            ]
+        },
+        {
+            "scope": "registerProxy_v2",
+            "addr": "0x27",
+            "instructions": [
+                "NOP",
+                "proxy = NEW_VAL integer",
+                "JUMP 0x28"
+            ]
+        },
+        {
+            "scope": "registerProxy_v2",
+            "addr": "0x28",
+            "instructions": [
+                "CLR_24 = msg.sender",
+                "CLR_25 = proxies[CLR_24]",
+                "REF_16 = CLR_25",
+                "TMP_56 = 0",
+                "TMP_57 = REF_16 == TMP_56",
+                "CONDITION TMP_57 0x28_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "registerProxy_v2",
+            "addr": "0x28_r0",
+            "instructions": [
+                "JUMP 0x29"
+            ]
+        },
+        {
+            "scope": "registerProxy_v2",
+            "addr": "0x29",
+            "instructions": [
+                "TMP_60 = NEW_VAL integer",
+                "JUMP 0x2a"
+            ]
+        },
+        {
+            "scope": "registerProxy_v2",
+            "addr": "0x2a",
+            "instructions": [
+                "proxy = TMP_60",
+                "CLR_26 = msg.sender",
+                "CLR_27 = proxies[CLR_26]",
+                "REF_17 = CLR_27",
+                "CLR_28 = msg.sender",
+                "proxies[CLR_28] = proxy",
+                "NOP",
+                "JUMP 0x2b"
+            ]
+        },
+        {
+            "scope": "registerProxy_v1",
+            "addr": "0x2b",
+            "instructions": [
+                "proxy = TMP_60",
+                "CLR_29 = msg.sender",
+                "CLR_30 = proxies[CLR_29]",
+                "REF_17 = CLR_30",
+                "CLR_31 = msg.sender",
+                "proxies[CLR_31] = proxy",
+                "NOP"
+            ]
+        },
+        {
+            "scope": "trap",
+            "addr": "0x2c",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

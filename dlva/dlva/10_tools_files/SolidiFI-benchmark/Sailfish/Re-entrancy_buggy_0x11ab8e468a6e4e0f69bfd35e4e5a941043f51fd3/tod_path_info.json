@@ -1,0 +1,133 @@
+{
+    "tod_symex_path_1.json": {
+        "file_name": "",
+        "from_function": "withdraw_balances_re_ent29",
+        "to_function": "withdraw_balances_re_ent29",
+        "bug_type": "tod_amount_or_receiver",
+        "src_node": "\"BlockID: 161\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 167\nCall context: \nNone\nREF_2 -> balances_re_ent29[msg.sender]\nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_2 \""
+        ],
+        "executable_instructions": 129,
+        "state_variable": "balances_re_ent29",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_2.json": {
+        "file_name": "",
+        "from_function": "getTransfer",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 173\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 174\nCall context: \nNone\nTMP_17 = SOLIDITY_CALL sha3()(_password)\nREF_11 -> transferToPassword[TMP_17]\nREF_12 -> REF_11.amount\nTMP_18 = REF_12 > 0\nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+        ],
+        "executable_instructions": 125,
+        "state_variable": "transferToPassword.amount",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_3.json": {
+        "file_name": "",
+        "from_function": "getTransfer",
+        "to_function": "getTransfer",
+        "bug_type": "tod_amount_or_receiver",
+        "src_node": "\"BlockID: 178\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 184\nCall context: \nTrue\nTMP_20 = SOLIDITY_CALL sha3()(_password)\npass := TMP_20\nREF_13 -> transferToPassword[pass]\nREF_14 -> REF_13.from\nfrom := REF_14\nREF_15 -> transferToPassword[pass]\nREF_16 -> REF_15.amount\nTMP_21 = REF_16 - commissionFee\namount := TMP_21\ntotalFee = totalFee + commissionFee\nREF_17 -> transferToPassword[pass]\nREF_18 -> REF_17.amount\nREF_18 := 0\nTransfer dest:msg.sender value:amount\""
+        ],
+        "executable_instructions": 169,
+        "state_variable": "transferToPassword.amount",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_4.json": {
+        "file_name": "",
+        "from_function": "getTransfer",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 188\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 189\nCall context: \nNone\nTMP_17 = SOLIDITY_CALL sha3()(_password)\nREF_11 -> transferToPassword[TMP_17]\nREF_12 -> REF_11.amount\nTMP_18 = REF_12 > 0\nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+        ],
+        "executable_instructions": 125,
+        "state_variable": "transferToPassword.amount",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_5.json": {
+        "file_name": "",
+        "from_function": "getTransfer",
+        "to_function": "getAdvancedTransfer",
+        "bug_type": "tod_amount_or_receiver",
+        "src_node": "\"BlockID: 193\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 199\nCall context: \nTrue\nTMP_20 = SOLIDITY_CALL sha3()(_password)\npass := TMP_20\nREF_13 -> transferToPassword[pass]\nREF_14 -> REF_13.from\nfrom := REF_14\nREF_15 -> transferToPassword[pass]\nREF_16 -> REF_15.amount\nTMP_21 = REF_16 - commissionFee\namount := TMP_21\ntotalFee = totalFee + commissionFee\nREF_17 -> transferToPassword[pass]\nREF_18 -> REF_17.amount\nREF_18 := 0\nTransfer dest:msg.sender value:amount\""
+        ],
+        "executable_instructions": 174,
+        "state_variable": "transferToPassword.amount",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_6.json": {
+        "file_name": "",
+        "from_function": "getAdvancedTransfer",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 203\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 204\nCall context: \nNone\nTMP_37 = _num >= 0\nTMP_38 = _num < 1000000\nTMP_39 = TMP_37 && TMP_38\nTMP_40 = SOLIDITY_CALL sha3()(_password,_num)\nREF_27 -> transferToPassword[TMP_40]\nREF_28 -> REF_27.amount\nTMP_41 = REF_28 > 0\nTMP_42 = TMP_39 && TMP_41\nTMP_43 = SOLIDITY_CALL require(bool)(TMP_42)\""
+        ],
+        "executable_instructions": 130,
+        "state_variable": "transferToPassword.amount",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_7.json": {
+        "file_name": "",
+        "from_function": "getAdvancedTransfer",
+        "to_function": "getTransfer",
+        "bug_type": "tod_amount_or_receiver",
+        "src_node": "\"BlockID: 208\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 214\nCall context: \nTrue\nTMP_44 = SOLIDITY_CALL sha3()(_password,_num)\npass := TMP_44\nREF_29 -> transferToPassword[pass]\nREF_30 -> REF_29.from\nfrom := REF_30\nREF_31 -> transferToPassword[pass]\nREF_32 -> REF_31.amount\nTMP_45 = REF_32 - commissionFee\namount := TMP_45\ntotalFee = totalFee + commissionFee\nREF_33 -> transferToPassword[pass]\nREF_34 -> REF_33.amount\nREF_34 := 0\nTransfer dest:msg.sender value:amount\""
+        ],
+        "executable_instructions": 174,
+        "state_variable": "transferToPassword.amount",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_8.json": {
+        "file_name": "",
+        "from_function": "getAdvancedTransfer",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 218\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 219\nCall context: \nNone\nTMP_37 = _num >= 0\nTMP_38 = _num < 1000000\nTMP_39 = TMP_37 && TMP_38\nTMP_40 = SOLIDITY_CALL sha3()(_password,_num)\nREF_27 -> transferToPassword[TMP_40]\nREF_28 -> REF_27.amount\nTMP_41 = REF_28 > 0\nTMP_42 = TMP_39 && TMP_41\nTMP_43 = SOLIDITY_CALL require(bool)(TMP_42)\""
+        ],
+        "executable_instructions": 130,
+        "state_variable": "transferToPassword.amount",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_9.json": {
+        "file_name": "",
+        "from_function": "getAdvancedTransfer",
+        "to_function": "getAdvancedTransfer",
+        "bug_type": "tod_amount_or_receiver",
+        "src_node": "\"BlockID: 223\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 229\nCall context: \nTrue\nTMP_44 = SOLIDITY_CALL sha3()(_password,_num)\npass := TMP_44\nREF_29 -> transferToPassword[pass]\nREF_30 -> REF_29.from\nfrom := REF_30\nREF_31 -> transferToPassword[pass]\nREF_32 -> REF_31.amount\nTMP_45 = REF_32 - commissionFee\namount := TMP_45\ntotalFee = totalFee + commissionFee\nREF_33 -> transferToPassword[pass]\nREF_34 -> REF_33.amount\nREF_34 := 0\nTransfer dest:msg.sender value:amount\""
+        ],
+        "executable_instructions": 179,
+        "state_variable": "transferToPassword.amount",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "0x4275525cfdd266885b34d03cd0291fc45ac5b275.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "sendEth",
+                "sendEth"
+            ],
+            "First_function": "sendEth",
+            "Second_function": "sendEth",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 16\nFunction: sendEth\nNode: \nEXPRESSION reentrantCheck = true\nIRS: \nreentrantCheck := true\"",
+                        "\"BlockID: 5\nFunction: sendEth\nNode: \nEXPRESSION require(bool)(! reentrantCheck)\nIRS: \nTMP_3 = SOLIDITY_CALL require(bool)(TMP_2)\""
+                    ],
+                    "state_variable": "reentrantCheck"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 19\nFunction: sendEth\nNode: \nEXPRESSION delete reentrantCheck\nIRS: \nreentrantCheck = delete reentrantCheck \"",
+                        "\"BlockID: 5\nFunction: sendEth\nNode: \nEXPRESSION require(bool)(! reentrantCheck)\nIRS: \nTMP_3 = SOLIDITY_CALL require(bool)(TMP_2)\""
+                    ],
+                    "state_variable": "reentrantCheck"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "sendEth",
+                "sendEth"
+            ],
+            "First_function": "sendEth",
+            "Second_function": "sendEth",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: sendEth\nNode: \nEXPRESSION reentrantCheck = true\nIRS: \nreentrantCheck := true\"",
+                        "\"BlockID: 5\nFunction: sendEth\nNode: \nEXPRESSION require(bool)(! reentrantCheck)\nIRS: \nTMP_3 = SOLIDITY_CALL require(bool)(TMP_2)\""
+                    ],
+                    "state_variable": "reentrantCheck"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: sendEth\nNode: \nEXPRESSION delete reentrantCheck\nIRS: \nreentrantCheck = delete reentrantCheck \"",
+                        "\"BlockID: 5\nFunction: sendEth\nNode: \nEXPRESSION require(bool)(! reentrantCheck)\nIRS: \nTMP_3 = SOLIDITY_CALL require(bool)(TMP_2)\""
+                    ],
+                    "state_variable": "reentrantCheck"
+                }
+            ]
+        }
+    ]
+}

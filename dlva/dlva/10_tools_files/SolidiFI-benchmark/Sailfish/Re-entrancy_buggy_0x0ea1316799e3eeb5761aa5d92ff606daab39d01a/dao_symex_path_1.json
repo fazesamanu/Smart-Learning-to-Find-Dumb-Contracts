@@ -1,0 +1,697 @@
+{
+    "file": "Re-entrancy_buggy_0x0ea1316799e3eeb5761aa5d92ff606daab39d01a.sol",
+    "global_structs": [
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x13"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x14"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x15"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "name",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0x3"
+            ]
+        },
+        {
+            "name": "symbol",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0x6"
+            ]
+        },
+        {
+            "name": "decimals",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x5"
+            ]
+        },
+        {
+            "name": "INITIAL_SUPPLY",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x4"
+            ]
+        },
+        {
+            "name": "balances_re_ent38",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "balances",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "allowed",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer",
+                    "integer"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "totalSupply_",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x9"
+            ]
+        },
+        {
+            "name": "Math",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "SafeMath",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ETDM",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3",
+            "instructions": [
+                "name = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4",
+            "instructions": [
+                "INITIAL_SUPPLY = 700000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5",
+            "instructions": [
+                "decimals = 6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6",
+            "instructions": [
+                "symbol = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x9",
+            "instructions": [
+                "totalSupply_ = 700000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xa",
+            "instructions": [
+                "CLR_0 = balances[msg_sender]",
+                "REF_49 = CLR_0",
+                "balances[msg_sender] = 700000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x13",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x14",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x15",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "balances_re_ent38",
+            "addrs": [
+                "0x2",
+                "0x7"
+            ]
+        },
+        {
+            "name": "allowed",
+            "addrs": [
+                "0x2",
+                "0x8",
+                "0xf",
+                "0x10",
+                "0x11",
+                "0x12"
+            ]
+        },
+        {
+            "name": "balances",
+            "addrs": [
+                "0x2",
+                "0xb",
+                "0xc",
+                "0xd",
+                "0xe"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x7",
+            "instructions": [
+                "CLR_1 = msg.sender",
+                "balances_re_ent38[CLR_1] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x8",
+            "instructions": [
+                "CLR_2 = msg.sender",
+                "CLR_3 = allowed[CLR_2]",
+                "REF_47 = CLR_3",
+                "CLR_4 = REF_47[U]",
+                "REF_48 = CLR_4",
+                "REF_47[0] = U",
+                "REF_47[1] = U",
+                "REF_47[2] = U",
+                "REF_47[3] = U",
+                "REF_47[4] = U",
+                "REF_47[5] = U",
+                "REF_47[6] = U",
+                "REF_47[7] = U",
+                "REF_47[8] = U",
+                "REF_47[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb",
+            "instructions": [
+                "CLR_5 = msg.sender",
+                "CLR_6 = balances[CLR_5]",
+                "REF_50 = CLR_6",
+                "CLR_7 = msg.sender",
+                "balances[CLR_7] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xc",
+            "instructions": [
+                "CLR_8 = balances[U]",
+                "REF_51 = CLR_8",
+                "balances[0] = U",
+                "balances[1] = U",
+                "balances[2] = U",
+                "balances[3] = U",
+                "balances[4] = U",
+                "balances[5] = U",
+                "balances[6] = U",
+                "balances[7] = U",
+                "balances[8] = U",
+                "balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xd",
+            "instructions": [
+                "CLR_9 = balances[U]",
+                "REF_52 = CLR_9",
+                "balances[0] = U",
+                "balances[1] = U",
+                "balances[2] = U",
+                "balances[3] = U",
+                "balances[4] = U",
+                "balances[5] = U",
+                "balances[6] = U",
+                "balances[7] = U",
+                "balances[8] = U",
+                "balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xe",
+            "instructions": [
+                "CLR_10 = balances[U]",
+                "REF_53 = CLR_10",
+                "balances[0] = U",
+                "balances[1] = U",
+                "balances[2] = U",
+                "balances[3] = U",
+                "balances[4] = U",
+                "balances[5] = U",
+                "balances[6] = U",
+                "balances[7] = U",
+                "balances[8] = U",
+                "balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf",
+            "instructions": [
+                "CLR_11 = allowed[U]",
+                "REF_54 = CLR_11",
+                "CLR_12 = msg.sender",
+                "CLR_13 = REF_54[CLR_12]",
+                "REF_55 = CLR_13",
+                "CLR_14 = msg.sender",
+                "REF_54[CLR_14] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10",
+            "instructions": [
+                "CLR_15 = msg.sender",
+                "CLR_16 = allowed[CLR_15]",
+                "REF_56 = CLR_16",
+                "CLR_17 = REF_56[U]",
+                "REF_57 = CLR_17",
+                "REF_56[0] = 0",
+                "REF_56[1] = 0",
+                "REF_56[2] = 0",
+                "REF_56[3] = 0",
+                "REF_56[4] = 0",
+                "REF_56[5] = 0",
+                "REF_56[6] = 0",
+                "REF_56[7] = 0",
+                "REF_56[8] = 0",
+                "REF_56[9] = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11",
+            "instructions": [
+                "CLR_18 = msg.sender",
+                "CLR_19 = allowed[CLR_18]",
+                "REF_58 = CLR_19",
+                "CLR_20 = REF_58[U]",
+                "REF_59 = CLR_20",
+                "REF_58[0] = U",
+                "REF_58[1] = U",
+                "REF_58[2] = U",
+                "REF_58[3] = U",
+                "REF_58[4] = U",
+                "REF_58[5] = U",
+                "REF_58[6] = U",
+                "REF_58[7] = U",
+                "REF_58[8] = U",
+                "REF_58[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x12",
+            "instructions": [
+                "CLR_21 = msg.sender",
+                "CLR_22 = allowed[CLR_21]",
+                "REF_60 = CLR_22",
+                "CLR_23 = REF_60[U]",
+                "REF_61 = CLR_23",
+                "REF_60[0] = U",
+                "REF_60[1] = U",
+                "REF_60[2] = U",
+                "REF_60[3] = U",
+                "REF_60[4] = U",
+                "REF_60[5] = U",
+                "REF_60[6] = U",
+                "REF_60[7] = U",
+                "REF_60[8] = U",
+                "REF_60[9] = U"
+            ]
+        }
+    ],
+    "root_addr": "0x16",
+    "dest_addrs": [
+        "0x1f"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "withdrawFunds_re_ent38_v1",
+            "addr": "0x16",
+            "instructions": [
+                "NOP",
+                "_weiToWithdraw = NEW_VAL integer",
+                "JUMP 0x17"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v1",
+            "addr": "0x17",
+            "instructions": [
+                "CLR_24 = msg.sender",
+                "CLR_25 = balances_re_ent38[CLR_24]",
+                "REF_0 = CLR_25",
+                "TMP_16 = REF_0 >= _weiToWithdraw",
+                "CONDITION TMP_16 0x17_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v1",
+            "addr": "0x17_r0",
+            "instructions": [
+                "JUMP 0x18"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v1",
+            "addr": "0x18",
+            "instructions": [
+                "ATTACK",
+                "TMP_19 = NEW_VAL boolean",
+                "JUMP 0x19"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v2",
+            "addr": "0x19",
+            "instructions": [
+                "NOP",
+                "_weiToWithdraw = NEW_VAL integer",
+                "JUMP 0x1a"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v2",
+            "addr": "0x1a",
+            "instructions": [
+                "CLR_26 = msg.sender",
+                "CLR_27 = balances_re_ent38[CLR_26]",
+                "REF_0 = CLR_27",
+                "TMP_16 = REF_0 >= _weiToWithdraw",
+                "CONDITION TMP_16 0x1a_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v2",
+            "addr": "0x1a_r0",
+            "instructions": [
+                "JUMP 0x1b"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v2",
+            "addr": "0x1b",
+            "instructions": [
+                "CLR_28 = this.balance",
+                "WRP_0 = CLR_28 - _weiToWithdraw",
+                "this.balance = WRP_0",
+                "TMP_19 = NEW_VAL boolean",
+                "JUMP 0x1c"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v2",
+            "addr": "0x1c",
+            "instructions": [
+                "CONDITION TMP_19 0x1c_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v2",
+            "addr": "0x1c_r0",
+            "instructions": [
+                "JUMP 0x1d"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v2",
+            "addr": "0x1d",
+            "instructions": [
+                "CLR_29 = msg.sender",
+                "CLR_30 = balances_re_ent38[CLR_29]",
+                "REF_3 = CLR_30",
+                "CLR_31 = msg.sender",
+                "WRP_1 = REF_3 - _weiToWithdraw",
+                "balances_re_ent38[CLR_31] = WRP_1",
+                "JUMP 0x1e"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v1",
+            "addr": "0x1e",
+            "instructions": [
+                "CONDITION TMP_19 0x1e_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v1",
+            "addr": "0x1e_r0",
+            "instructions": [
+                "JUMP 0x1f"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v1",
+            "addr": "0x1f",
+            "instructions": [
+                "CLR_32 = msg.sender",
+                "CLR_33 = balances_re_ent38[CLR_32]",
+                "REF_3 = CLR_33",
+                "CLR_34 = msg.sender",
+                "WRP_2 = REF_3 - _weiToWithdraw",
+                "balances_re_ent38[CLR_34] = WRP_2"
+            ]
+        },
+        {
+            "scope": "trap",
+            "addr": "0x20",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

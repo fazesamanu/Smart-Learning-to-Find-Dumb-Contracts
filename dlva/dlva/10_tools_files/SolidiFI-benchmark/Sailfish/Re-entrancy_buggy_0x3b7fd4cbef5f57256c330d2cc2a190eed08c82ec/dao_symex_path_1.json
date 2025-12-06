@@ -1,0 +1,528 @@
+{
+    "file": "Re-entrancy_buggy_0x3b7fd4cbef5f57256c330d2cc2a190eed08c82ec.sol",
+    "global_structs": [
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x10"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x11"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x12"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "question",
+            "type": [
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "questionSender",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "responseHash",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "balances_re_ent38",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "guess_it",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x10",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x11",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x12",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "responseHash",
+            "addrs": [
+                "0x2",
+                "0x4",
+                "0xc"
+            ]
+        },
+        {
+            "name": "question",
+            "addrs": [
+                "0x2",
+                "0x6",
+                "0xa"
+            ]
+        },
+        {
+            "name": "questionSender",
+            "addrs": [
+                "0x2",
+                "0x8",
+                "0xe"
+            ]
+        },
+        {
+            "name": "balances_re_ent38",
+            "addrs": [
+                "0x2",
+                "0xf"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4",
+            "instructions": [
+                "RTMP_26 = responseHash == 0",
+                "CONDITION RTMP_26 0x3 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3",
+            "instructions": [
+                "responseHash = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x6",
+            "instructions": [
+                "RTMP_27 = responseHash == 0",
+                "CONDITION RTMP_27 0x5 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5",
+            "instructions": [
+                "question = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x8",
+            "instructions": [
+                "RTMP_28 = responseHash == 0",
+                "CONDITION RTMP_28 0x7 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x7",
+            "instructions": [
+                "CLR_0 = msg.sender",
+                "questionSender = CLR_0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa",
+            "instructions": [
+                "CLR_1 = msg.sender",
+                "RTMP_29 = CLR_1 == questionSender",
+                "CONDITION RTMP_29 0x9 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x9",
+            "instructions": [
+                "question = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xc",
+            "instructions": [
+                "CLR_2 = msg.sender",
+                "RTMP_30 = CLR_2 == questionSender",
+                "CONDITION RTMP_30 0xb 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb",
+            "instructions": [
+                "responseHash = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xe",
+            "instructions": [
+                "CLR_3 = msg.sender",
+                "RTMP_31 = CLR_3 == questionSender",
+                "CONDITION RTMP_31 0xd 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xd",
+            "instructions": [
+                "questionSender = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf",
+            "instructions": [
+                "CLR_4 = msg.sender",
+                "balances_re_ent38[CLR_4] = U"
+            ]
+        }
+    ],
+    "root_addr": "0x13",
+    "dest_addrs": [
+        "0x1c"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "withdrawFunds_re_ent38_v1",
+            "addr": "0x13",
+            "instructions": [
+                "NOP",
+                "_weiToWithdraw = NEW_VAL integer",
+                "JUMP 0x14"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v1",
+            "addr": "0x14",
+            "instructions": [
+                "CLR_5 = msg.sender",
+                "CLR_6 = balances_re_ent38[CLR_5]",
+                "REF_4 = CLR_6",
+                "TMP_14 = REF_4 >= _weiToWithdraw",
+                "CONDITION TMP_14 0x14_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v1",
+            "addr": "0x14_r0",
+            "instructions": [
+                "JUMP 0x15"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v1",
+            "addr": "0x15",
+            "instructions": [
+                "ATTACK",
+                "TMP_17 = NEW_VAL boolean",
+                "JUMP 0x16"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v2",
+            "addr": "0x16",
+            "instructions": [
+                "NOP",
+                "_weiToWithdraw = NEW_VAL integer",
+                "JUMP 0x17"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v2",
+            "addr": "0x17",
+            "instructions": [
+                "CLR_7 = msg.sender",
+                "CLR_8 = balances_re_ent38[CLR_7]",
+                "REF_4 = CLR_8",
+                "TMP_14 = REF_4 >= _weiToWithdraw",
+                "CONDITION TMP_14 0x17_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v2",
+            "addr": "0x17_r0",
+            "instructions": [
+                "JUMP 0x18"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v2",
+            "addr": "0x18",
+            "instructions": [
+                "CLR_9 = this.balance",
+                "WRP_0 = CLR_9 - _weiToWithdraw",
+                "this.balance = WRP_0",
+                "TMP_17 = NEW_VAL boolean",
+                "JUMP 0x19"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v2",
+            "addr": "0x19",
+            "instructions": [
+                "CONDITION TMP_17 0x19_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v2",
+            "addr": "0x19_r0",
+            "instructions": [
+                "JUMP 0x1a"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v2",
+            "addr": "0x1a",
+            "instructions": [
+                "CLR_10 = msg.sender",
+                "CLR_11 = balances_re_ent38[CLR_10]",
+                "REF_7 = CLR_11",
+                "CLR_12 = msg.sender",
+                "WRP_1 = REF_7 - _weiToWithdraw",
+                "balances_re_ent38[CLR_12] = WRP_1",
+                "JUMP 0x1b"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v1",
+            "addr": "0x1c",
+            "instructions": [
+                "CLR_13 = msg.sender",
+                "CLR_14 = balances_re_ent38[CLR_13]",
+                "REF_7 = CLR_14",
+                "CLR_15 = msg.sender",
+                "WRP_2 = REF_7 - _weiToWithdraw",
+                "balances_re_ent38[CLR_15] = WRP_2"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v1",
+            "addr": "0x1b",
+            "instructions": [
+                "CONDITION TMP_17 0x1b_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "withdrawFunds_re_ent38_v1",
+            "addr": "0x1b_r0",
+            "instructions": [
+                "JUMP 0x1c"
+            ]
+        },
+        {
+            "scope": "trap",
+            "addr": "0x1d",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

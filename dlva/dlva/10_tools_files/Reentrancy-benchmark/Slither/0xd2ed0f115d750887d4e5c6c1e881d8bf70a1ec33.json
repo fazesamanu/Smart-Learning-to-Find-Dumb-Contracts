@@ -1,0 +1,797 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 25 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m6\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 25 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m6\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "a950734552a7d41ad3d5a343718489a2e979f21825ca01d4040c634d872a059c",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "DharmaActionRegistryUpgradeBeacon",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 831,
+                  "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                  "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "DharmaActionRegistryUpgradeBeacon",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": [
+                    "Assembly"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 25,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 1,
+            "informational_issues": 6,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_implementation",
+                  "source_mapping": {
+                    "start": 73,
+                    "length": 31,
+                    "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 34
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DharmaActionRegistryUpgradeBeacon",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 831,
+                        "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DharmaActionRegistryUpgradeBeacon._implementation (cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#5) should be constant\n",
+              "markdown": "[DharmaActionRegistryUpgradeBeacon._implementation](cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#L5) should be constant\n",
+              "first_markdown_element": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#L5",
+              "id": "8dc52e6e7cc8f2854ca8172b98a3924432a33c2d821fc9190ee0f1b11a2311f7",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "fallback",
+                  "source_mapping": {
+                    "start": 638,
+                    "length": 217,
+                    "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DharmaActionRegistryUpgradeBeacon",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 831,
+                        "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "fallback()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "",
+                  "source_mapping": {
+                    "start": 718,
+                    "length": 68,
+                    "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17,
+                      18,
+                      19,
+                      20
+                    ],
+                    "starting_column": 7,
+                    "ending_column": 8
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "fallback",
+                      "source_mapping": {
+                        "start": 638,
+                        "length": 217,
+                        "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "DharmaActionRegistryUpgradeBeacon",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 831,
+                            "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                            "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "fallback()"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "",
+                  "source_mapping": {
+                    "start": 806,
+                    "length": 39,
+                    "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      22
+                    ],
+                    "starting_column": 7,
+                    "ending_column": 46
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "fallback",
+                      "source_mapping": {
+                        "start": 638,
+                        "length": 217,
+                        "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "DharmaActionRegistryUpgradeBeacon",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 831,
+                            "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                            "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "fallback()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DharmaActionRegistryUpgradeBeacon.fallback() (cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#15-24) uses assembly\n\t- INLINE ASM (cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#17-20)\n\t- INLINE ASM (cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#22)\n",
+              "markdown": "[DharmaActionRegistryUpgradeBeacon.fallback()](cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#L15-L24) uses assembly\n\t- [INLINE ASM](cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#L17-L20)\n\t- [INLINE ASM](cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#L22)\n",
+              "first_markdown_element": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#L15-L24",
+              "id": "02ace1f1fea7aba3478d821eaf24606937956e0b47a329b9cb3d49308f6370ab",
+              "check": "assembly",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "constructor",
+                  "source_mapping": {
+                    "start": 164,
+                    "length": 468,
+                    "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DharmaActionRegistryUpgradeBeacon",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 831,
+                        "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "constructor(address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "",
+                  "source_mapping": {
+                    "start": 376,
+                    "length": 87,
+                    "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 92
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "constructor",
+                      "source_mapping": {
+                        "start": 164,
+                        "length": 468,
+                        "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "DharmaActionRegistryUpgradeBeacon",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 831,
+                            "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                            "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "constructor(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DharmaActionRegistryUpgradeBeacon.constructor(address) (cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#7-13) uses assembly\n\t- INLINE ASM (cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#10)\n",
+              "markdown": "[DharmaActionRegistryUpgradeBeacon.constructor(address)](cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#L7-L13) uses assembly\n\t- [INLINE ASM](cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#L10)\n",
+              "first_markdown_element": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#L7-L13",
+              "id": "69ac14a05359f2ba33f6c7a7280d43e8080c59669ce93cb5b7ece2da2407c71a",
+              "check": "assembly",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.8.3",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.8",
+                      ".3"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.8.3 (cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.8.3](cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#L1",
+              "id": "20c967b043fb62fd27120104ae14933957729113a7d8e6bee13deb4aa22e373f",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.8.3 is not recommended for deployment\n",
+              "markdown": "solc-0.8.3 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "57164db0f8decf87daf3a75a081354a3ee211b668e6a60f6c5c93e00450a5511",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_UPGRADE_BEACON_CONTROLLER",
+                  "source_mapping": {
+                    "start": 108,
+                    "length": 52,
+                    "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 55
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DharmaActionRegistryUpgradeBeacon",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 831,
+                        "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable DharmaActionRegistryUpgradeBeacon._UPGRADE_BEACON_CONTROLLER (cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#6) is not in mixedCase\n",
+              "markdown": "Variable [DharmaActionRegistryUpgradeBeacon._UPGRADE_BEACON_CONTROLLER](cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#L6) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#L6",
+              "id": "6a3fa150c31badd6d1cd7f11baddac3dc38475396ecd7414cfce29a9f7e37533",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_implementation",
+                  "source_mapping": {
+                    "start": 73,
+                    "length": 31,
+                    "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 34
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DharmaActionRegistryUpgradeBeacon",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 831,
+                        "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "DharmaActionRegistryUpgradeBeacon",
+                  "source_mapping": {
+                    "start": 26,
+                    "length": 831,
+                    "filename_relative": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "filename_short": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  }
+                }
+              ],
+              "description": "DharmaActionRegistryUpgradeBeacon._implementation (cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#5) is never used in DharmaActionRegistryUpgradeBeacon (cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#4-26)\n",
+              "markdown": "[DharmaActionRegistryUpgradeBeacon._implementation](cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#L5) is never used in [DharmaActionRegistryUpgradeBeacon](cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#L4-L26)\n",
+              "first_markdown_element": "cleanSource/0xd2ed0f115d750887d4e5c6c1e881d8bf70a1ec33.sol#L5",
+              "id": "2525249f3cd90b6468a86444f2b51daf852f8e50a50288ab686ba4f07c028fb6",
+              "check": "unused-state",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

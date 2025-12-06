@@ -1,0 +1,173 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 10 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m2\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 10 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m2\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "3004b674f6e0097565f2a1f4039c64b1bd01e5f84a5be51a26f761ba2df064ea",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "BokkyPooBahTrickyStickLeaderboard",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 269,
+                  "filename_relative": "cleanSource/0xa0ecd8ef29750e7c3501c5568fdd9f4f5bcfe3d9.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xa0ecd8ef29750e7c3501c5568fdd9f4f5bcfe3d9.sol",
+                  "filename_short": "cleanSource/0xa0ecd8ef29750e7c3501c5568fdd9f4f5bcfe3d9.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "BokkyPooBahTrickyStickLeaderboard",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 10,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 1,
+            "informational_issues": 2,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "solved",
+                  "source_mapping": {
+                    "start": 152,
+                    "length": 110,
+                    "filename_relative": "cleanSource/0xa0ecd8ef29750e7c3501c5568fdd9f4f5bcfe3d9.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xa0ecd8ef29750e7c3501c5568fdd9f4f5bcfe3d9.sol",
+                    "filename_short": "cleanSource/0xa0ecd8ef29750e7c3501c5568fdd9f4f5bcfe3d9.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5,
+                      6,
+                      7
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "BokkyPooBahTrickyStickLeaderboard",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 269,
+                        "filename_relative": "cleanSource/0xa0ecd8ef29750e7c3501c5568fdd9f4f5bcfe3d9.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xa0ecd8ef29750e7c3501c5568fdd9f4f5bcfe3d9.sol",
+                        "filename_short": "cleanSource/0xa0ecd8ef29750e7c3501c5568fdd9f4f5bcfe3d9.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "solved(string,string)"
+                  }
+                }
+              ],
+              "description": "solved(string,string) should be declared external:\n\t- BokkyPooBahTrickyStickLeaderboard.solved(string,string) (cleanSource/0xa0ecd8ef29750e7c3501c5568fdd9f4f5bcfe3d9.sol#5-7)\n",
+              "markdown": "solved(string,string) should be declared external:\n\t- [BokkyPooBahTrickyStickLeaderboard.solved(string,string)](cleanSource/0xa0ecd8ef29750e7c3501c5568fdd9f4f5bcfe3d9.sol#L5-L7)\n",
+              "first_markdown_element": "cleanSource/0xa0ecd8ef29750e7c3501c5568fdd9f4f5bcfe3d9.sol#L5-L7",
+              "id": "15cc460a6b2758be42c36c20c0b6726d28832c5590609caed15cdc215500a19f",
+              "check": "external-function",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.18",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0xa0ecd8ef29750e7c3501c5568fdd9f4f5bcfe3d9.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xa0ecd8ef29750e7c3501c5568fdd9f4f5bcfe3d9.sol",
+                    "filename_short": "cleanSource/0xa0ecd8ef29750e7c3501c5568fdd9f4f5bcfe3d9.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".18"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.18 (cleanSource/0xa0ecd8ef29750e7c3501c5568fdd9f4f5bcfe3d9.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.18](cleanSource/0xa0ecd8ef29750e7c3501c5568fdd9f4f5bcfe3d9.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0xa0ecd8ef29750e7c3501c5568fdd9f4f5bcfe3d9.sol#L1",
+              "id": "beda9f8ea27403693f5c60e952a3154f533700b2e3041b301c0922cbb65defad",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.18 is not recommended for deployment\n",
+              "markdown": "solc-0.4.18 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "d780a9ee0403516f20d8088a98408a088ad9a9e2173b73cd90b7830e00be1dd4",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

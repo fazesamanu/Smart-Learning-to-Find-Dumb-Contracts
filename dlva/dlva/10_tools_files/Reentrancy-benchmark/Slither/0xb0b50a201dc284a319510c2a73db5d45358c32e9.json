@@ -1,0 +1,473 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 22 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 3\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m5\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 22 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 3\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m5\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "207062f2ea0e282a35067d63c581fb28fdc09e13072ec169589d6bd0aa8281aa",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "freedomStatement",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 755,
+                  "filename_relative": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                  "filename_short": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "freedomStatement",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 5,
+                  "features": [
+                    "Assembly"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 22,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 3,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 1,
+            "informational_issues": 5,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "statement",
+                  "source_mapping": {
+                    "start": 57,
+                    "length": 103,
+                    "filename_relative": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                    "filename_short": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 108
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "freedomStatement",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 755,
+                        "filename_relative": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                        "filename_short": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "freedomStatement.statement (cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol#4) should be constant\n",
+              "markdown": "[freedomStatement.statement](cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol#L4) should be constant\n",
+              "first_markdown_element": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol#L4",
+              "id": "08e269f7fc6db2ed65ff6d0758ed9957631d289fcec7293b33cdc9178fb52972",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "isHuman",
+                  "source_mapping": {
+                    "start": 322,
+                    "length": 159,
+                    "filename_relative": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                    "filename_short": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "freedomStatement",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 755,
+                        "filename_relative": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                        "filename_short": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "isHuman(address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "",
+                  "source_mapping": {
+                    "start": 411,
+                    "length": 53,
+                    "filename_relative": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                    "filename_short": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12,
+                      13
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 15
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "isHuman",
+                      "source_mapping": {
+                        "start": 322,
+                        "length": 159,
+                        "filename_relative": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                        "filename_short": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "freedomStatement",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 755,
+                            "filename_relative": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                            "filename_short": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "isHuman(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "freedomStatement.isHuman(address) (cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol#10-14) uses assembly\n\t- INLINE ASM (cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol#12-13)\n",
+              "markdown": "[freedomStatement.isHuman(address)](cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol#L10-L14) uses assembly\n\t- [INLINE ASM](cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol#L12-L13)\n",
+              "first_markdown_element": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol#L10-L14",
+              "id": "f4ad6ba8e3e3d0e7e267ae89aa6fd7cb8770e1394af2dcb943489143cccbb793",
+              "check": "assembly",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.5.0 is not recommended for deployment\n",
+              "markdown": "solc-0.5.0 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "21539c75e015cde5bdae3a77b39cf5d17be24d0b87a05da1d6b5d5020b7aef22",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.5.0",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                    "filename_short": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.5",
+                      ".0"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.5.0 (cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.5.0](cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol#L1",
+              "id": "6bc260c48b62ce3a0c2f87654145ce41a84b2a7be1c6dbbab56e51c8b6b2413d",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "event",
+                  "name": "wearehere",
+                  "source_mapping": {
+                    "start": 214,
+                    "length": 34,
+                    "filename_relative": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                    "filename_short": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 39
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "freedomStatement",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 755,
+                        "filename_relative": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                        "filename_short": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "wearehere(string)"
+                  },
+                  "additional_fields": {
+                    "target": "event",
+                    "convention": "CapWords"
+                  }
+                }
+              ],
+              "description": "Event freedomStatementwearehere(string) (cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol#6) is not in CapWords\n",
+              "markdown": "Event [freedomStatementwearehere(string)](cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol#L6) is not in CapWords\n",
+              "first_markdown_element": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol#L6",
+              "id": "4c17db4dd5601af4135ee5925833f29ebbe274bacb6154a5ddad8cf0dc87359b",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "contract",
+                  "name": "freedomStatement",
+                  "source_mapping": {
+                    "start": 25,
+                    "length": 755,
+                    "filename_relative": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                    "filename_short": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  },
+                  "additional_fields": {
+                    "target": "contract",
+                    "convention": "CapWords"
+                  }
+                }
+              ],
+              "description": "Contract freedomStatement (cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol#3-23) is not in CapWords\n",
+              "markdown": "Contract [freedomStatement](cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol#L3-L23) is not in CapWords\n",
+              "first_markdown_element": "cleanSource/0xb0b50a201dc284a319510c2a73db5d45358c32e9.sol#L3-L23",
+              "id": "f170647ee93c658ca14163aa8c3abb381094024655f5b753f7935cd7e930d18e",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

@@ -1,0 +1,459 @@
+{
+    "file": "Re-entrancy_buggy_0x3c00a606544daf12be1747eadcc78654b1768e44.sol",
+    "global_structs": [
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x17"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x18"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x19"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "_ethToSphtx",
+            "type": [
+                "array",
+                "integer",
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "_accountToPubKey",
+            "type": [
+                "array",
+                "unknown",
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "balances_re_ent8",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "TokenReclaim",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xa",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x17",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x18",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x19",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "balances_re_ent8",
+            "addrs": [
+                "0x2",
+                "0x3"
+            ]
+        },
+        {
+            "name": "_accountToPubKey",
+            "addrs": [
+                "0x2",
+                "0x5"
+            ]
+        },
+        {
+            "name": "_ethToSphtx",
+            "addrs": [
+                "0x2",
+                "0x8"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3",
+            "instructions": [
+                "CLR_0 = msg.sender",
+                "CLR_1 = balances_re_ent8[CLR_0]",
+                "REF_45 = CLR_1",
+                "CLR_2 = msg.sender",
+                "balances_re_ent8[CLR_2] = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5",
+            "instructions": [
+                "CLR_3 = _accountToPubKey[U]",
+                "REF_47 = CLR_3",
+                "REF_48 = NEW_VAL integer",
+                "RTMP_91 = REF_48 == 0",
+                "CONDITION RTMP_91 0x6 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x6",
+            "instructions": [
+                "CLR_4 = msg.sender",
+                "CLR_5 = _ethToSphtx[CLR_4]",
+                "REF_49 = CLR_5",
+                "REF_50 = NEW_VAL integer",
+                "RTMP_92 = REF_50 == 0",
+                "CONDITION RTMP_92 0x4 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4",
+            "instructions": [
+                "CLR_6 = _accountToPubKey[U]",
+                "REF_46 = CLR_6",
+                "_accountToPubKey[0] = U",
+                "_accountToPubKey[1] = U",
+                "_accountToPubKey[2] = U",
+                "_accountToPubKey[3] = U",
+                "_accountToPubKey[4] = U",
+                "_accountToPubKey[5] = U",
+                "_accountToPubKey[6] = U",
+                "_accountToPubKey[7] = U",
+                "_accountToPubKey[8] = U",
+                "_accountToPubKey[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x8",
+            "instructions": [
+                "CLR_7 = _accountToPubKey[U]",
+                "REF_52 = CLR_7",
+                "REF_53 = NEW_VAL integer",
+                "RTMP_93 = REF_53 == 0",
+                "CONDITION RTMP_93 0x9 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x9",
+            "instructions": [
+                "CLR_8 = msg.sender",
+                "CLR_9 = _ethToSphtx[CLR_8]",
+                "REF_54 = CLR_9",
+                "REF_55 = NEW_VAL integer",
+                "RTMP_94 = REF_55 == 0",
+                "CONDITION RTMP_94 0x7 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x7",
+            "instructions": [
+                "CLR_10 = msg.sender",
+                "CLR_11 = _ethToSphtx[CLR_10]",
+                "REF_51 = CLR_11",
+                "CLR_12 = msg.sender",
+                "_ethToSphtx[CLR_12] = U"
+            ]
+        }
+    ],
+    "root_addr": "0x1c",
+    "dest_addrs": [
+        "0x1b"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "withdraw_balances_re_ent8_v1",
+            "addr": "0x1a",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1b"
+            ]
+        },
+        {
+            "scope": "withdraw_balances_re_ent8_v1",
+            "addr": "0x1b",
+            "instructions": [
+                "NOP",
+                "CLR_13 = msg.sender",
+                "CLR_14 = balances_re_ent8[CLR_13]",
+                "REF_2 = CLR_14",
+                "CLR_15 = this.balance",
+                "WRP_0 = CLR_15 - REF_2",
+                "this.balance = WRP_0",
+                "TMP_1 = NEW_VAL boolean"
+            ]
+        },
+        {
+            "scope": "withdraw_balances_re_ent8_v2",
+            "addr": "0x1c",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1d"
+            ]
+        },
+        {
+            "scope": "withdraw_balances_re_ent8_v2",
+            "addr": "0x1d",
+            "instructions": [
+                "NOP",
+                "CLR_16 = msg.sender",
+                "CLR_17 = balances_re_ent8[CLR_16]",
+                "REF_2 = CLR_17",
+                "CLR_18 = this.balance",
+                "WRP_1 = CLR_18 - REF_2",
+                "this.balance = WRP_1",
+                "TMP_1 = NEW_VAL boolean",
+                "JUMP 0x1e"
+            ]
+        },
+        {
+            "scope": "withdraw_balances_re_ent8_v2",
+            "addr": "0x1e",
+            "instructions": [
+                "success = TMP_1",
+                "CONDITION success 0x1f 0x20"
+            ]
+        },
+        {
+            "scope": "withdraw_balances_re_ent8_v2",
+            "addr": "0x1f",
+            "instructions": [
+                "CLR_19 = msg.sender",
+                "CLR_20 = balances_re_ent8[CLR_19]",
+                "REF_3 = CLR_20",
+                "CLR_21 = msg.sender",
+                "balances_re_ent8[CLR_21] = 0",
+                "JUMP 0x21"
+            ]
+        },
+        {
+            "scope": "withdraw_balances_re_ent8_v2",
+            "addr": "0x21",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1a"
+            ]
+        },
+        {
+            "scope": "withdraw_balances_re_ent8_v1",
+            "addr": "0x20",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

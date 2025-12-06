@@ -1,0 +1,30 @@
+{
+    "tod_symex_path_1.json": {
+        "file_name": "",
+        "from_function": "withdraw",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 36\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 38\nCall context: \nTrue\nTMP_2(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:amount \""
+        ],
+        "executable_instructions": 14,
+        "state_variable": "credit",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_2.json": {
+        "file_name": "",
+        "from_function": "withdraw",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 42\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 44\nCall context: \nTrue\nTMP_2(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:amount \""
+        ],
+        "executable_instructions": 14,
+        "state_variable": "credit",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    }
+}

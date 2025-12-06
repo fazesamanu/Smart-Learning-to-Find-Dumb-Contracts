@@ -1,0 +1,315 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 9 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m5\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 9 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m5\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "9292619ddd452c08a905e76bbc9f5aa5accef8e441912605878d332888aa13ce",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "minishop",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 245,
+                  "filename_relative": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                  "filename_short": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "minishop",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 9,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 5,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [],
+              "description": "solc-0.4.21 is not recommended for deployment\n",
+              "markdown": "solc-0.4.21 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "11c23ced8dbc94c44bd7809b5adfe4054fff8cd744f85723555d37f0b714b15f",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.21",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                    "filename_short": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".21"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.21 (cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.21](cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol#L1",
+              "id": "954d54c9dc8f79355929c3c1786ebc67f5c2d5a7980a058f18ed47b5a1fcc947",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_producer",
+                  "source_mapping": {
+                    "start": 155,
+                    "length": 17,
+                    "filename_relative": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                    "filename_short": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 18,
+                    "ending_column": 35
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "buy",
+                      "source_mapping": {
+                        "start": 142,
+                        "length": 127,
+                        "filename_relative": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                        "filename_short": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7,
+                          8
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "minishop",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 245,
+                            "filename_relative": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                            "filename_short": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "buy(address,bytes32)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter minishop.buy(address,bytes32)._producer (cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol#5) is not in mixedCase\n",
+              "markdown": "Parameter [minishop.buy(address,bytes32)._producer](cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol#L5) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol#L5",
+              "id": "2838788cf1b0abf078fdc62bafe64adc94dd1cbe00d055f91dc4242a3755b26f",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "contract",
+                  "name": "minishop",
+                  "source_mapping": {
+                    "start": 26,
+                    "length": 245,
+                    "filename_relative": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                    "filename_short": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  },
+                  "additional_fields": {
+                    "target": "contract",
+                    "convention": "CapWords"
+                  }
+                }
+              ],
+              "description": "Contract minishop (cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol#3-10) is not in CapWords\n",
+              "markdown": "Contract [minishop](cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol#L3-L10) is not in CapWords\n",
+              "first_markdown_element": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol#L3-L10",
+              "id": "5f17514c9c5347701f1d9657319cd3db61d294f1723ff607b756c82edf440111",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_productHash",
+                  "source_mapping": {
+                    "start": 174,
+                    "length": 20,
+                    "filename_relative": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                    "filename_short": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 37,
+                    "ending_column": 57
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "buy",
+                      "source_mapping": {
+                        "start": 142,
+                        "length": 127,
+                        "filename_relative": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                        "filename_short": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7,
+                          8
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "minishop",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 245,
+                            "filename_relative": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                            "filename_short": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "buy(address,bytes32)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter minishop.buy(address,bytes32)._productHash (cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol#5) is not in mixedCase\n",
+              "markdown": "Parameter [minishop.buy(address,bytes32)._productHash](cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol#L5) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x5f525907032d5e6b4c6d855ee3ae6a0cdf90a3da.sol#L5",
+              "id": "bead3d660e849fa037bbb71c8236ad15ee9501d41422d4083f9017f76b4ffe9e",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

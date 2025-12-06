@@ -1,0 +1,21 @@
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: MAIN
+Function name: _function_0x200b6233
+PC address: 93
+Estimated Gas Usage: 1778 - 36786
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+Initial State:
+
+Account: [ATTACKER], balance: 0x407ffffffffffffff, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0xd00480002000020, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], function: unknown, txdata: 0x200b6233, decoded_data: , value: 0x1
+Caller: [ATTACKER], function: unknown, txdata: 0x200b6233, decoded_data: , value: 0x0
+
+

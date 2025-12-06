@@ -1,0 +1,498 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 18 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 18 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "990b9db36ca2ee8a3d14f4962149bf2c0f4bbd1cfdc83a08b48f97ecd23b5738",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "Coin",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 148,
+                  "filename_relative": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                  "filename_short": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "Coin",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": []
+                }
+              },
+              {
+                "type": "contract",
+                "name": "Caller",
+                "source_mapping": {
+                  "start": 174,
+                  "length": 383,
+                  "filename_relative": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                  "filename_short": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "Caller",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 18,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 3,
+            "low_issues": 2,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [],
+              "description": "solc-0.5.1 is not recommended for deployment\n",
+              "markdown": "solc-0.5.1 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "2f7166358983c53be8a0b31ac26286250fbef36e0c8d78a7a30c0db035fb7c79",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.5.1",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                    "filename_short": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.5",
+                      ".1"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.5.1 (cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.5.1](cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol#L1",
+              "id": "cfa617b20562ddc957828c94a1b92a3fceb83f48ded60c757158eb28b929081d",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "event",
+                  "name": "console",
+                  "source_mapping": {
+                    "start": 196,
+                    "length": 44,
+                    "filename_relative": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                    "filename_short": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 49
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Caller",
+                      "source_mapping": {
+                        "start": 174,
+                        "length": 383,
+                        "filename_relative": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                        "filename_short": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "console(address,uint256)"
+                  },
+                  "additional_fields": {
+                    "target": "event",
+                    "convention": "CapWords"
+                  }
+                }
+              ],
+              "description": "Event Callerconsole(address,uint256) (cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol#8) is not in CapWords\n",
+              "markdown": "Event [Callerconsole(address,uint256)](cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol#L8) is not in CapWords\n",
+              "first_markdown_element": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol#L8",
+              "id": "35f75ef1db9a1ca31c895ebe3eb44380592e66cf6862ae075c34f265ab026949",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "f",
+                  "source_mapping": {
+                    "start": 245,
+                    "length": 310,
+                    "filename_relative": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                    "filename_short": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Caller",
+                      "source_mapping": {
+                        "start": 174,
+                        "length": 383,
+                        "filename_relative": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                        "filename_short": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "f()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "(addr,amount) = c.getOwner(i)",
+                  "source_mapping": {
+                    "start": 462,
+                    "length": 31,
+                    "filename_relative": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                    "filename_short": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      14
+                    ],
+                    "starting_column": 17,
+                    "ending_column": 48
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "f",
+                      "source_mapping": {
+                        "start": 245,
+                        "length": 310,
+                        "filename_relative": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                        "filename_short": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Caller",
+                          "source_mapping": {
+                            "start": 174,
+                            "length": 383,
+                            "filename_relative": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                            "filename_short": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "f()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Caller.f() (cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol#9-17) has external calls inside a loop: (addr,amount) = c.getOwner(i) (cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol#14)\n",
+              "markdown": "[Caller.f()](cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol#L9-L17) has external calls inside a loop: [(addr,amount) = c.getOwner(i)](cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol#L14)\n",
+              "first_markdown_element": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol#L9-L17",
+              "id": "36a814f9e8d37bf853825dba691dc4bcc895f146fcc76f0f9e53ce694655a095",
+              "check": "calls-loop",
+              "impact": "Low",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "f",
+                  "source_mapping": {
+                    "start": 245,
+                    "length": 310,
+                    "filename_relative": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                    "filename_short": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Caller",
+                      "source_mapping": {
+                        "start": 174,
+                        "length": 383,
+                        "filename_relative": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                        "filename_short": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "f()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "i < c.getOwnerCount()",
+                  "source_mapping": {
+                    "start": 362,
+                    "length": 21,
+                    "filename_relative": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                    "filename_short": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11
+                    ],
+                    "starting_column": 29,
+                    "ending_column": 50
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "f",
+                      "source_mapping": {
+                        "start": 245,
+                        "length": 310,
+                        "filename_relative": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                        "filename_short": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Caller",
+                          "source_mapping": {
+                            "start": 174,
+                            "length": 383,
+                            "filename_relative": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                            "filename_short": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "f()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Caller.f() (cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol#9-17) has external calls inside a loop: i < c.getOwnerCount() (cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol#11)\n",
+              "markdown": "[Caller.f()](cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol#L9-L17) has external calls inside a loop: [i < c.getOwnerCount()](cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol#L11)\n",
+              "first_markdown_element": "cleanSource/0xf14a0d8d4de33f7a01693b48734878f76dfbe747.sol#L9-L17",
+              "id": "4aba6aa35c9284bd44d843f4bd8c60a94ed42fb042c52117e2148ab9ab1069c0",
+              "check": "calls-loop",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

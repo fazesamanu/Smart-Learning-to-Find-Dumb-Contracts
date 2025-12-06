@@ -1,0 +1,965 @@
+{
+    "file": "tx.origin_buggy_0xb71cd8f21d5c21edcd113ca2807189ddcaf9dd44.sol",
+    "global_structs": [
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x5a"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x5b"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x5c"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "minPot",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x3"
+            ]
+        },
+        {
+            "name": "minRaise",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x4"
+            ]
+        },
+        {
+            "name": "feeAddress",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x26"
+            ]
+        },
+        {
+            "name": "firstBlock",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x25"
+            ]
+        },
+        {
+            "name": "gameId",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x1e",
+                "0x1f"
+            ]
+        },
+        {
+            "name": "lastBlock",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x23"
+            ]
+        },
+        {
+            "name": "betId",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x24"
+            ]
+        },
+        {
+            "name": "koth",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x21"
+            ]
+        },
+        {
+            "name": "highestBet",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x20"
+            ]
+        },
+        {
+            "name": "pot",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x22"
+            ]
+        },
+        {
+            "name": "koth_v1b",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3",
+            "instructions": [
+                "minPot = 1000000000000000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4",
+            "instructions": [
+                "minRaise = 1000000000000000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1e",
+            "instructions": [
+                "gameId = 0"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1f",
+            "instructions": [
+                "TMP_101 = gameId + 1",
+                "gameId = TMP_101"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x20",
+            "instructions": [
+                "highestBet = 0"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x21",
+            "instructions": [
+                "koth = 0"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x22",
+            "instructions": [
+                "pot = 1000000000000000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x23",
+            "instructions": [
+                "lastBlock = 0"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x24",
+            "instructions": [
+                "betId = 0"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x25",
+            "instructions": [
+                "CLR_0 = block.number",
+                "firstBlock = CLR_0"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x26",
+            "instructions": [
+                "feeAddress = msg_sender"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5a",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5b",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5c",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "betId",
+            "addrs": [
+                "0x2",
+                "0x6",
+                "0x3c"
+            ]
+        },
+        {
+            "name": "highestBet",
+            "addrs": [
+                "0x2",
+                "0xb",
+                "0x2c"
+            ]
+        },
+        {
+            "name": "koth",
+            "addrs": [
+                "0x2",
+                "0x10",
+                "0x30"
+            ]
+        },
+        {
+            "name": "pot",
+            "addrs": [
+                "0x2",
+                "0x15",
+                "0x34"
+            ]
+        },
+        {
+            "name": "lastBlock",
+            "addrs": [
+                "0x2",
+                "0x1a",
+                "0x38"
+            ]
+        },
+        {
+            "name": "gameId",
+            "addrs": [
+                "0x2",
+                "0x28"
+            ]
+        },
+        {
+            "name": "firstBlock",
+            "addrs": [
+                "0x2",
+                "0x40"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x6",
+            "instructions": [
+                "RTMP_57 = lastBlock > 0",
+                "CONDITION RTMP_57 0x1 0x7"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x7",
+            "instructions": [
+                "CLR_1 = block.number",
+                "RTMP_58 = CLR_1 > lastBlock",
+                "CONDITION RTMP_58 0x1 0x8"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x8",
+            "instructions": [
+                "TMP_55 = highestBet + 1000000000000000",
+                "CLR_2 = msg.value",
+                "RTMP_56 = CLR_2 < TMP_55",
+                "CONDITION RTMP_56 0x1 0x9"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x9",
+            "instructions": [
+                "TMP_59 = 5 * pot",
+                "TMP_60 = 3 * pot",
+                "CLR_3 = msg.value",
+                "RTMP_61 = CLR_3 > TMP_59",
+                "CLR_4 = msg.value",
+                "RTMP_62 = CLR_4 > TMP_60",
+                "RTMP_63 = RTMP_61 || RTMP_62",
+                "CONDITION RTMP_63 0x1 0x5"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5",
+            "instructions": [
+                "TMP_54 = betId + 1",
+                "betId = TMP_54"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb",
+            "instructions": [
+                "RTMP_66 = lastBlock > 0",
+                "CONDITION RTMP_66 0x1 0xc"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xc",
+            "instructions": [
+                "CLR_5 = block.number",
+                "RTMP_67 = CLR_5 > lastBlock",
+                "CONDITION RTMP_67 0x1 0xd"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xd",
+            "instructions": [
+                "TMP_64 = highestBet + 1000000000000000",
+                "CLR_6 = msg.value",
+                "RTMP_65 = CLR_6 < TMP_64",
+                "CONDITION RTMP_65 0x1 0xe"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xe",
+            "instructions": [
+                "TMP_68 = 5 * pot",
+                "TMP_69 = 3 * pot",
+                "CLR_7 = msg.value",
+                "RTMP_70 = CLR_7 > TMP_68",
+                "CLR_8 = msg.value",
+                "RTMP_71 = CLR_8 > TMP_69",
+                "RTMP_72 = RTMP_70 || RTMP_71",
+                "CONDITION RTMP_72 0x1 0xa"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa",
+            "instructions": [
+                "CLR_9 = msg.value",
+                "highestBet = CLR_9"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10",
+            "instructions": [
+                "RTMP_75 = lastBlock > 0",
+                "CONDITION RTMP_75 0x1 0x11"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11",
+            "instructions": [
+                "CLR_10 = block.number",
+                "RTMP_76 = CLR_10 > lastBlock",
+                "CONDITION RTMP_76 0x1 0x12"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x12",
+            "instructions": [
+                "TMP_73 = highestBet + 1000000000000000",
+                "CLR_11 = msg.value",
+                "RTMP_74 = CLR_11 < TMP_73",
+                "CONDITION RTMP_74 0x1 0x13"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x13",
+            "instructions": [
+                "TMP_77 = 5 * pot",
+                "TMP_78 = 3 * pot",
+                "CLR_12 = msg.value",
+                "RTMP_79 = CLR_12 > TMP_77",
+                "CLR_13 = msg.value",
+                "RTMP_80 = CLR_13 > TMP_78",
+                "RTMP_81 = RTMP_79 || RTMP_80",
+                "CONDITION RTMP_81 0x1 0xf"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf",
+            "instructions": [
+                "CLR_14 = msg.sender",
+                "koth = CLR_14"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x15",
+            "instructions": [
+                "RTMP_85 = lastBlock > 0",
+                "CONDITION RTMP_85 0x1 0x16"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x16",
+            "instructions": [
+                "CLR_15 = block.number",
+                "RTMP_86 = CLR_15 > lastBlock",
+                "CONDITION RTMP_86 0x1 0x17"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x17",
+            "instructions": [
+                "TMP_83 = highestBet + 1000000000000000",
+                "CLR_16 = msg.value",
+                "RTMP_84 = CLR_16 < TMP_83",
+                "CONDITION RTMP_84 0x1 0x18"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x18",
+            "instructions": [
+                "TMP_87 = 5 * pot",
+                "TMP_88 = 3 * pot",
+                "CLR_17 = msg.value",
+                "RTMP_89 = CLR_17 > TMP_87",
+                "CLR_18 = msg.value",
+                "RTMP_90 = CLR_18 > TMP_88",
+                "RTMP_91 = RTMP_89 || RTMP_90",
+                "CONDITION RTMP_91 0x1 0x14"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x14",
+            "instructions": [
+                "TMP_82 = pot + highestBet",
+                "pot = TMP_82"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a",
+            "instructions": [
+                "RTMP_99 = lastBlock > 0",
+                "CONDITION RTMP_99 0x1 0x1b"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b",
+            "instructions": [
+                "CLR_19 = block.number",
+                "RTMP_100 = CLR_19 > lastBlock",
+                "CONDITION RTMP_100 0x1 0x1c"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1c",
+            "instructions": [
+                "TMP_92 = highestBet + 1000000000000000",
+                "CLR_20 = msg.value",
+                "RTMP_93 = CLR_20 < TMP_92",
+                "CONDITION RTMP_93 0x1 0x1d"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1d",
+            "instructions": [
+                "TMP_94 = 5 * pot",
+                "TMP_95 = 3 * pot",
+                "CLR_21 = msg.value",
+                "RTMP_96 = CLR_21 > TMP_94",
+                "CLR_22 = msg.value",
+                "RTMP_97 = CLR_22 > TMP_95",
+                "RTMP_98 = RTMP_96 || RTMP_97",
+                "CONDITION RTMP_98 0x1 0x19"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x19",
+            "instructions": [
+                "lastBlock = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x28",
+            "instructions": [
+                "CLR_23 = msg.sender",
+                "RTMP_102 = CLR_23 == feeAddress",
+                "CONDITION RTMP_102 0x29 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x29",
+            "instructions": [
+                "RTMP_103 = lastBlock > 0",
+                "CONDITION RTMP_103 0x2a 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2a",
+            "instructions": [
+                "CLR_24 = block.number",
+                "RTMP_104 = CLR_24 > lastBlock",
+                "CONDITION RTMP_104 0x27 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x27",
+            "instructions": [
+                "TMP_101 = gameId + 1",
+                "gameId = TMP_101"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2c",
+            "instructions": [
+                "CLR_25 = msg.sender",
+                "RTMP_105 = CLR_25 == feeAddress",
+                "CONDITION RTMP_105 0x2d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2d",
+            "instructions": [
+                "RTMP_106 = lastBlock > 0",
+                "CONDITION RTMP_106 0x2e 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2e",
+            "instructions": [
+                "CLR_26 = block.number",
+                "RTMP_107 = CLR_26 > lastBlock",
+                "CONDITION RTMP_107 0x2b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2b",
+            "instructions": [
+                "highestBet = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x30",
+            "instructions": [
+                "CLR_27 = msg.sender",
+                "RTMP_108 = CLR_27 == feeAddress",
+                "CONDITION RTMP_108 0x31 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x31",
+            "instructions": [
+                "RTMP_109 = lastBlock > 0",
+                "CONDITION RTMP_109 0x32 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x32",
+            "instructions": [
+                "CLR_28 = block.number",
+                "RTMP_110 = CLR_28 > lastBlock",
+                "CONDITION RTMP_110 0x2f 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2f",
+            "instructions": [
+                "koth = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x34",
+            "instructions": [
+                "CLR_29 = msg.sender",
+                "RTMP_111 = CLR_29 == feeAddress",
+                "CONDITION RTMP_111 0x35 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x35",
+            "instructions": [
+                "RTMP_112 = lastBlock > 0",
+                "CONDITION RTMP_112 0x36 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x36",
+            "instructions": [
+                "CLR_30 = block.number",
+                "RTMP_113 = CLR_30 > lastBlock",
+                "CONDITION RTMP_113 0x33 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x33",
+            "instructions": [
+                "pot = 1000000000000000"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x38",
+            "instructions": [
+                "CLR_31 = msg.sender",
+                "RTMP_114 = CLR_31 == feeAddress",
+                "CONDITION RTMP_114 0x39 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x39",
+            "instructions": [
+                "RTMP_115 = lastBlock > 0",
+                "CONDITION RTMP_115 0x3a 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3a",
+            "instructions": [
+                "CLR_32 = block.number",
+                "RTMP_116 = CLR_32 > lastBlock",
+                "CONDITION RTMP_116 0x37 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x37",
+            "instructions": [
+                "lastBlock = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3c",
+            "instructions": [
+                "CLR_33 = msg.sender",
+                "RTMP_117 = CLR_33 == feeAddress",
+                "CONDITION RTMP_117 0x3d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3d",
+            "instructions": [
+                "RTMP_118 = lastBlock > 0",
+                "CONDITION RTMP_118 0x3e 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3e",
+            "instructions": [
+                "CLR_34 = block.number",
+                "RTMP_119 = CLR_34 > lastBlock",
+                "CONDITION RTMP_119 0x3b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3b",
+            "instructions": [
+                "betId = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x40",
+            "instructions": [
+                "CLR_35 = msg.sender",
+                "RTMP_120 = CLR_35 == feeAddress",
+                "CONDITION RTMP_120 0x41 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x41",
+            "instructions": [
+                "RTMP_121 = lastBlock > 0",
+                "CONDITION RTMP_121 0x42 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x42",
+            "instructions": [
+                "CLR_36 = block.number",
+                "RTMP_122 = CLR_36 > lastBlock",
+                "CONDITION RTMP_122 0x3f 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3f",
+            "instructions": [
+                "CLR_37 = block.number",
+                "firstBlock = CLR_37"
+            ]
+        }
+    ],
+    "root_addr": "0x60",
+    "dest_addrs": [
+        "0x5e"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "fallback",
+            "addr": "0x5d",
+            "instructions": [
+                "TMP_3 = lastBlock > 0",
+                "CLR_38 = block.number",
+                "TMP_4 = CLR_38 > lastBlock",
+                "TMP_5 = TMP_3 && TMP_4",
+                "CONDITION TMP_5 0x5e 0x5f"
+            ]
+        },
+        {
+            "scope": "fallback",
+            "addr": "0x60",
+            "instructions": [
+                "NOP",
+                "maxBet = NEW_VAL integer",
+                "potEther = NEW_VAL integer",
+                "blocksRemaining = NEW_VAL integer",
+                "minBet = NEW_VAL integer",
+                "JUMP 0x5d"
+            ]
+        },
+        {
+            "scope": "fallback",
+            "addr": "0x5e",
+            "instructions": [
+                "CLR_39 = this.balance",
+                "CLR_40 = msg.value",
+                "WRP_0 = CLR_39 - CLR_40",
+                "this.balance = WRP_0"
+            ]
+        },
+        {
+            "scope": "fallback",
+            "addr": "0x5f",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

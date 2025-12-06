@@ -1,0 +1,342 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 76 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m0\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[93m1\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 76 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m0\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[93m1\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "bc4257ea4aeb18d1b22d19c30397f82c09cb568a85d0b02502ab3f7d5adafa5b",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "TwoThirdVotingThreshold",
+                "source_mapping": {
+                  "start": 746,
+                  "length": 1236,
+                  "filename_relative": "cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol",
+                  "filename_short": "cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59,
+                    60,
+                    61,
+                    62,
+                    63,
+                    64,
+                    65,
+                    66,
+                    67,
+                    68,
+                    69,
+                    70,
+                    71,
+                    72,
+                    73,
+                    74,
+                    75
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "TwoThirdVotingThreshold",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 4,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 76,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 0,
+            "low_issues": 0,
+            "medium_issues": 1,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "onProcessProposal",
+                  "source_mapping": {
+                    "start": 1164,
+                    "length": 816,
+                    "filename_relative": "cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol",
+                    "filename_short": "cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      50,
+                      51,
+                      52,
+                      53,
+                      54,
+                      55,
+                      56,
+                      57,
+                      58,
+                      59,
+                      60,
+                      61,
+                      62,
+                      63,
+                      64,
+                      65,
+                      66,
+                      67,
+                      68,
+                      69,
+                      70,
+                      71,
+                      72,
+                      73,
+                      74
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "TwoThirdVotingThreshold",
+                      "source_mapping": {
+                        "start": 746,
+                        "length": 1236,
+                        "filename_relative": "cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol",
+                        "filename_short": "cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68,
+                          69,
+                          70,
+                          71,
+                          72,
+                          73,
+                          74,
+                          75
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "onProcessProposal(bytes32,bytes32,uint256,uint256,uint256,uint256,uint256,uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "twoThird = (totalValueLocked / 3) * 2",
+                  "source_mapping": {
+                    "start": 1455,
+                    "length": 45,
+                    "filename_relative": "cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol",
+                    "filename_short": "cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      60
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 50
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "onProcessProposal",
+                      "source_mapping": {
+                        "start": 1164,
+                        "length": 816,
+                        "filename_relative": "cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol",
+                        "filename_short": "cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68,
+                          69,
+                          70,
+                          71,
+                          72,
+                          73,
+                          74
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "TwoThirdVotingThreshold",
+                          "source_mapping": {
+                            "start": 746,
+                            "length": 1236,
+                            "filename_relative": "cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol",
+                            "filename_short": "cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "onProcessProposal(bytes32,bytes32,uint256,uint256,uint256,uint256,uint256,uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "TwoThirdVotingThreshold.onProcessProposal(bytes32,bytes32,uint256,uint256,uint256,uint256,uint256,uint256) (cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol#50-74) performs a multiplication on the result of a division:\n\t- twoThird = (totalValueLocked / 3) * 2 (cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol#60)\n",
+              "markdown": "[TwoThirdVotingThreshold.onProcessProposal(bytes32,bytes32,uint256,uint256,uint256,uint256,uint256,uint256)](cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol#L50-L74) performs a multiplication on the result of a division:\n\t- [twoThird = (totalValueLocked / 3) * 2](cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol#L60)\n",
+              "first_markdown_element": "cleanSource/0x2e71c39720b41d78fa7f41405d3e25672e239f1d.sol#L50-L74",
+              "id": "1400dc9c11f2c74ffc093de3c33b04f421c6750b04f5836dac3d279a34721531",
+              "check": "divide-before-multiply",
+              "impact": "Medium",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

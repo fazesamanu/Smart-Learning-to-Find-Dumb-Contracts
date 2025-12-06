@@ -1,0 +1,50 @@
+{
+    "0x9fcd683584173c5df0ee47852f5592f68ed72a0c.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "buyBottle",
+                "buyBottle"
+            ],
+            "First_function": "buyBottle",
+            "Second_function": "buyBottle",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: buyBottle\nNode: \nEXPRESSION currentOwner = msg.sender\nIRS: \ncurrentOwner := msg.sender\"",
+                        "\"BlockID: 8\nFunction: buyBottle\nNode: \nEXPRESSION require(bool)(msg.sender != currentOwner)\nIRS: \nTMP_3 = SOLIDITY_CALL require(bool)(TMP_2)\""
+                    ],
+                    "state_variable": "currentOwner"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: buyBottle\nNode: \nEXPRESSION currentOwner = msg.sender\nIRS: \ncurrentOwner := msg.sender\"",
+                        "\"BlockID: 11\nFunction: buyBottle\nNode: \nEXPRESSION previousOwner = currentOwner\nIRS: \npreviousOwner := currentOwner\""
+                    ],
+                    "state_variable": "currentOwner"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: buyBottle\nNode: \nEXPRESSION currentOwner = msg.sender\nIRS: \ncurrentOwner := msg.sender\"",
+                        "\"BlockID: 15\nFunction: buyBottle\nNode: \nEXPRESSION previousOwner.transfer(msg.value)\nIRS: \nTransfer dest:previousOwner value:msg.value\""
+                    ],
+                    "state_variable": "currentOwner"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: buyBottle\nNode: \nEXPRESSION lastPricePaid = msg.value\nIRS: \nlastPricePaid := msg.value\"",
+                        "\"BlockID: 10\nFunction: buyBottle\nNode: \nEXPRESSION require(bool)(msg.value < lastPricePaid)\nIRS: \nTMP_7 = SOLIDITY_CALL require(bool)(TMP_6)\""
+                    ],
+                    "state_variable": "lastPricePaid"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: buyBottle\nNode: \nEXPRESSION previousOwner = currentOwner\nIRS: \npreviousOwner := currentOwner\"",
+                        "\"BlockID: 15\nFunction: buyBottle\nNode: \nEXPRESSION previousOwner.transfer(msg.value)\nIRS: \nTransfer dest:previousOwner value:msg.value\""
+                    ],
+                    "state_variable": "previousOwner"
+                }
+            ]
+        }
+    ]
+}

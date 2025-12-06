@@ -1,0 +1,741 @@
+{
+    "file": "Re-entrancy_buggy_0xa437930bfd1e66ef12ee9c2dce689e7a065859a2.sol",
+    "global_structs": [
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x19"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x1a"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x1b"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "balances",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "allowed",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer",
+                    "integer"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "redeemableEther_re_ent39",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "account_address",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xc"
+            ]
+        },
+        {
+            "name": "name",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0xb"
+            ]
+        },
+        {
+            "name": "symbol",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0xa"
+            ]
+        },
+        {
+            "name": "decimals",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x9"
+            ]
+        },
+        {
+            "name": "initSupply",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x8"
+            ]
+        },
+        {
+            "name": "totalSupply",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x7",
+                "0xd"
+            ]
+        },
+        {
+            "name": "admin_address",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x6"
+            ]
+        },
+        {
+            "name": "BolvarChainX",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6",
+            "instructions": [
+                "admin_address = 854976409229392033529238714678161416873404774739"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x7",
+            "instructions": [
+                "totalSupply = 0"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x8",
+            "instructions": [
+                "initSupply = 810000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x9",
+            "instructions": [
+                "decimals = 18"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xa",
+            "instructions": [
+                "symbol = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb",
+            "instructions": [
+                "name = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc",
+            "instructions": [
+                "account_address = 854976409229392033529238714678161416873404774739"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xd",
+            "instructions": [
+                "TMP_77 = 10 ** decimals",
+                "TMP_78 = initSupply * TMP_77",
+                "totalSupply = 0",
+                "totalSupply = TMP_78"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xe",
+            "instructions": [
+                "CLR_0 = balances[account_address]",
+                "REF_48 = CLR_0",
+                "balances[account_address] = totalSupply"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x19",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1a",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1b",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "redeemableEther_re_ent39",
+            "addrs": [
+                "0x2",
+                "0x4"
+            ]
+        },
+        {
+            "name": "allowed",
+            "addrs": [
+                "0x2",
+                "0x5",
+                "0x13",
+                "0x14",
+                "0x15",
+                "0x16"
+            ]
+        },
+        {
+            "name": "balances",
+            "addrs": [
+                "0x2",
+                "0xf",
+                "0x10",
+                "0x11",
+                "0x12"
+            ]
+        },
+        {
+            "name": "admin_address",
+            "addrs": [
+                "0x2",
+                "0x18"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4",
+            "instructions": [
+                "CLR_1 = msg.sender",
+                "CLR_2 = redeemableEther_re_ent39[CLR_1]",
+                "REF_45 = CLR_2",
+                "RTMP_76 = REF_45 > 0",
+                "CONDITION RTMP_76 0x3 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3",
+            "instructions": [
+                "CLR_3 = msg.sender",
+                "CLR_4 = redeemableEther_re_ent39[CLR_3]",
+                "REF_44 = CLR_4",
+                "CLR_5 = msg.sender",
+                "redeemableEther_re_ent39[CLR_5] = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5",
+            "instructions": [
+                "CLR_6 = msg.sender",
+                "CLR_7 = allowed[CLR_6]",
+                "REF_46 = CLR_7",
+                "CLR_8 = REF_46[U]",
+                "REF_47 = CLR_8",
+                "REF_46[0] = U",
+                "REF_46[1] = U",
+                "REF_46[2] = U",
+                "REF_46[3] = U",
+                "REF_46[4] = U",
+                "REF_46[5] = U",
+                "REF_46[6] = U",
+                "REF_46[7] = U",
+                "REF_46[8] = U",
+                "REF_46[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf",
+            "instructions": [
+                "CLR_9 = msg.sender",
+                "CLR_10 = balances[CLR_9]",
+                "REF_49 = CLR_10",
+                "CLR_11 = msg.sender",
+                "balances[CLR_11] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10",
+            "instructions": [
+                "CLR_12 = balances[U]",
+                "REF_50 = CLR_12",
+                "balances[0] = U",
+                "balances[1] = U",
+                "balances[2] = U",
+                "balances[3] = U",
+                "balances[4] = U",
+                "balances[5] = U",
+                "balances[6] = U",
+                "balances[7] = U",
+                "balances[8] = U",
+                "balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11",
+            "instructions": [
+                "CLR_13 = balances[U]",
+                "REF_51 = CLR_13",
+                "balances[0] = U",
+                "balances[1] = U",
+                "balances[2] = U",
+                "balances[3] = U",
+                "balances[4] = U",
+                "balances[5] = U",
+                "balances[6] = U",
+                "balances[7] = U",
+                "balances[8] = U",
+                "balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x12",
+            "instructions": [
+                "CLR_14 = balances[U]",
+                "REF_52 = CLR_14",
+                "balances[0] = U",
+                "balances[1] = U",
+                "balances[2] = U",
+                "balances[3] = U",
+                "balances[4] = U",
+                "balances[5] = U",
+                "balances[6] = U",
+                "balances[7] = U",
+                "balances[8] = U",
+                "balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x13",
+            "instructions": [
+                "CLR_15 = allowed[U]",
+                "REF_53 = CLR_15",
+                "CLR_16 = msg.sender",
+                "CLR_17 = REF_53[CLR_16]",
+                "REF_54 = CLR_17",
+                "CLR_18 = msg.sender",
+                "REF_53[CLR_18] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x14",
+            "instructions": [
+                "CLR_19 = msg.sender",
+                "CLR_20 = allowed[CLR_19]",
+                "REF_55 = CLR_20",
+                "CLR_21 = REF_55[U]",
+                "REF_56 = CLR_21",
+                "REF_55[0] = 0",
+                "REF_55[1] = 0",
+                "REF_55[2] = 0",
+                "REF_55[3] = 0",
+                "REF_55[4] = 0",
+                "REF_55[5] = 0",
+                "REF_55[6] = 0",
+                "REF_55[7] = 0",
+                "REF_55[8] = 0",
+                "REF_55[9] = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x15",
+            "instructions": [
+                "CLR_22 = msg.sender",
+                "CLR_23 = allowed[CLR_22]",
+                "REF_57 = CLR_23",
+                "CLR_24 = REF_57[U]",
+                "REF_58 = CLR_24",
+                "REF_57[0] = U",
+                "REF_57[1] = U",
+                "REF_57[2] = U",
+                "REF_57[3] = U",
+                "REF_57[4] = U",
+                "REF_57[5] = U",
+                "REF_57[6] = U",
+                "REF_57[7] = U",
+                "REF_57[8] = U",
+                "REF_57[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x16",
+            "instructions": [
+                "CLR_25 = msg.sender",
+                "CLR_26 = allowed[CLR_25]",
+                "REF_59 = CLR_26",
+                "CLR_27 = REF_59[U]",
+                "REF_60 = CLR_27",
+                "REF_59[0] = U",
+                "REF_59[1] = U",
+                "REF_59[2] = U",
+                "REF_59[3] = U",
+                "REF_59[4] = U",
+                "REF_59[5] = U",
+                "REF_59[6] = U",
+                "REF_59[7] = U",
+                "REF_59[8] = U",
+                "REF_59[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x18",
+            "instructions": [
+                "CLR_28 = msg.sender",
+                "RTMP_79 = CLR_28 == admin_address",
+                "CONDITION RTMP_79 0x17 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x17",
+            "instructions": [
+                "admin_address = U"
+            ]
+        }
+    ],
+    "root_addr": "0x1c",
+    "dest_addrs": [
+        "0x23"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "claimReward_re_ent39_v1",
+            "addr": "0x1c",
+            "instructions": [
+                "NOP",
+                "transferValue_re_ent39 = NEW_VAL integer",
+                "JUMP 0x1d"
+            ]
+        },
+        {
+            "scope": "claimReward_re_ent39_v1",
+            "addr": "0x1d",
+            "instructions": [
+                "CLR_29 = msg.sender",
+                "CLR_30 = redeemableEther_re_ent39[CLR_29]",
+                "REF_7 = CLR_30",
+                "TMP_11 = REF_7 > 0",
+                "CONDITION TMP_11 0x1d_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "claimReward_re_ent39_v1",
+            "addr": "0x1d_r0",
+            "instructions": [
+                "JUMP 0x1e"
+            ]
+        },
+        {
+            "scope": "claimReward_re_ent39_v1",
+            "addr": "0x1e",
+            "instructions": [
+                "CLR_31 = msg.sender",
+                "CLR_32 = redeemableEther_re_ent39[CLR_31]",
+                "REF_8 = CLR_32",
+                "transferValue_re_ent39 = REF_8",
+                "ATTACK",
+                "TMP_14 = NEW_VAL boolean",
+                "JUMP 0x1f"
+            ]
+        },
+        {
+            "scope": "claimReward_re_ent39_v2",
+            "addr": "0x1f",
+            "instructions": [
+                "NOP",
+                "transferValue_re_ent39 = NEW_VAL integer",
+                "JUMP 0x20"
+            ]
+        },
+        {
+            "scope": "claimReward_re_ent39_v2",
+            "addr": "0x20",
+            "instructions": [
+                "CLR_33 = msg.sender",
+                "CLR_34 = redeemableEther_re_ent39[CLR_33]",
+                "REF_7 = CLR_34",
+                "TMP_11 = REF_7 > 0",
+                "CONDITION TMP_11 0x20_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "claimReward_re_ent39_v2",
+            "addr": "0x20_r0",
+            "instructions": [
+                "JUMP 0x21"
+            ]
+        },
+        {
+            "scope": "claimReward_re_ent39_v2",
+            "addr": "0x21",
+            "instructions": [
+                "CLR_35 = msg.sender",
+                "CLR_36 = redeemableEther_re_ent39[CLR_35]",
+                "REF_8 = CLR_36",
+                "transferValue_re_ent39 = REF_8",
+                "CLR_37 = this.balance",
+                "WRP_0 = CLR_37 - transferValue_re_ent39",
+                "this.balance = WRP_0",
+                "TMP_14 = NEW_VAL boolean",
+                "JUMP 0x22"
+            ]
+        },
+        {
+            "scope": "claimReward_re_ent39_v2",
+            "addr": "0x22",
+            "instructions": [
+                "CLR_38 = msg.sender",
+                "CLR_39 = redeemableEther_re_ent39[CLR_38]",
+                "REF_11 = CLR_39",
+                "CLR_40 = msg.sender",
+                "redeemableEther_re_ent39[CLR_40] = 0",
+                "JUMP 0x23"
+            ]
+        },
+        {
+            "scope": "claimReward_re_ent39_v1",
+            "addr": "0x23",
+            "instructions": [
+                "CLR_41 = msg.sender",
+                "CLR_42 = redeemableEther_re_ent39[CLR_41]",
+                "REF_11 = CLR_42",
+                "CLR_43 = msg.sender",
+                "redeemableEther_re_ent39[CLR_43] = 0"
+            ]
+        },
+        {
+            "scope": "trap",
+            "addr": "0x24",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

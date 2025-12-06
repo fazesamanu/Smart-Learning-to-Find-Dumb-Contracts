@@ -1,0 +1,559 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 15 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m5\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 15 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m5\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "897e73694a4322eabaf3b9cf006ab5bf26652e2c54173b8f6cb0f7fd630777de",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "FraxProxyFactory",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 444,
+                  "filename_relative": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                  "filename_short": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "FraxProxyFactory",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": [
+                    "Assembly",
+                    "Proxy"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 15,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 5,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "clone",
+                  "source_mapping": {
+                    "start": 54,
+                    "length": 413,
+                    "filename_relative": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "filename_short": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "starting_column": 2,
+                    "ending_column": 3
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "FraxProxyFactory",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 444,
+                        "filename_relative": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                        "filename_short": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "clone(address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "",
+                  "source_mapping": {
+                    "start": 164,
+                    "length": 300,
+                    "filename_relative": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "filename_short": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "clone",
+                      "source_mapping": {
+                        "start": 54,
+                        "length": 413,
+                        "filename_relative": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                        "filename_short": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 2,
+                        "ending_column": 3
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "FraxProxyFactory",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 444,
+                            "filename_relative": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                            "filename_short": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "clone(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "FraxProxyFactory.clone(address) (cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol#4-13) uses assembly\n\t- INLINE ASM (cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol#6-12)\n",
+              "markdown": "[FraxProxyFactory.clone(address)](cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol#L4-L13) uses assembly\n\t- [INLINE ASM](cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol#L6-L12)\n",
+              "first_markdown_element": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol#L4-L13",
+              "id": "94f3f8b585affdd7dc4e8d49549c90e69721bedd71d3f0c1a6bafed0f458737c",
+              "check": "assembly",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.8.7 is not recommended for deployment\n",
+              "markdown": "solc-0.8.7 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "7625fc0b76e6d47f90acb00bf7e2271fd51795d3b2a30f085edbbc0db8832c0c",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.8.7",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "filename_short": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.8",
+                      ".7"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.8.7 (cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.8.7](cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol#L1",
+              "id": "7c251aeb7c669d8e19b7e720190bc1d53532a7da4bbc88e720b1134f2dbed63d",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "clone",
+                  "source_mapping": {
+                    "start": 54,
+                    "length": 413,
+                    "filename_relative": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "filename_short": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "starting_column": 2,
+                    "ending_column": 3
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "FraxProxyFactory",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 444,
+                        "filename_relative": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                        "filename_short": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "clone(address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "mstore(uint256,uint256)(clone_clone_asm_0 + 0x28,0x5af43d82803e903d91602b57fd5bf30000000000000000000000000000000000)",
+                  "source_mapping": {
+                    "start": 332,
+                    "length": 92,
+                    "filename_relative": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "filename_short": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 4,
+                    "ending_column": 96
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "clone",
+                      "source_mapping": {
+                        "start": 54,
+                        "length": 413,
+                        "filename_relative": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                        "filename_short": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 2,
+                        "ending_column": 3
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "FraxProxyFactory",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 444,
+                            "filename_relative": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                            "filename_short": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "clone(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "FraxProxyFactory.clone(address) (cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol#4-13) uses literals with too many digits:\n\t- mstore(uint256,uint256)(clone_clone_asm_0 + 0x28,0x5af43d82803e903d91602b57fd5bf30000000000000000000000000000000000) (cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol#10)\n",
+              "markdown": "[FraxProxyFactory.clone(address)](cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol#L4-L13) uses literals with too many digits:\n\t- [mstore(uint256,uint256)(clone_clone_asm_0 + 0x28,0x5af43d82803e903d91602b57fd5bf30000000000000000000000000000000000)](cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol#L10)\n",
+              "first_markdown_element": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol#L4-L13",
+              "id": "ba26c47e4a795876f002a679a2dfa5dec273185f9caff95972de85d2466f964d",
+              "check": "too-many-digits",
+              "impact": "Informational",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "clone",
+                  "source_mapping": {
+                    "start": 54,
+                    "length": 413,
+                    "filename_relative": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "filename_short": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "starting_column": 2,
+                    "ending_column": 3
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "FraxProxyFactory",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 444,
+                        "filename_relative": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                        "filename_short": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "clone(address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "mstore(uint256,uint256)(clone_clone_asm_0,0x3d602d80600a3d3981f3363d3d373d3d3d363d73000000000000000000000000)",
+                  "source_mapping": {
+                    "start": 206,
+                    "length": 81,
+                    "filename_relative": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "filename_short": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 4,
+                    "ending_column": 85
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "clone",
+                      "source_mapping": {
+                        "start": 54,
+                        "length": 413,
+                        "filename_relative": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                        "filename_short": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 2,
+                        "ending_column": 3
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "FraxProxyFactory",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 444,
+                            "filename_relative": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                            "filename_short": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "clone(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "FraxProxyFactory.clone(address) (cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol#4-13) uses literals with too many digits:\n\t- mstore(uint256,uint256)(clone_clone_asm_0,0x3d602d80600a3d3981f3363d3d373d3d3d363d73000000000000000000000000) (cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol#8)\n",
+              "markdown": "[FraxProxyFactory.clone(address)](cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol#L4-L13) uses literals with too many digits:\n\t- [mstore(uint256,uint256)(clone_clone_asm_0,0x3d602d80600a3d3981f3363d3d373d3d3d363d73000000000000000000000000)](cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol#L8)\n",
+              "first_markdown_element": "cleanSource/0x60d4a8f3947bfc3a836a2b311e9a4c8325f985f5.sol#L4-L13",
+              "id": "c9c85ed2862a66260a10e1d9ef3ed8a14195a318764ac758269ea9a672331769",
+              "check": "too-many-digits",
+              "impact": "Informational",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

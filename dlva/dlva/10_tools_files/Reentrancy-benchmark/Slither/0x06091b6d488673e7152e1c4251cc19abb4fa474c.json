@@ -1,0 +1,371 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 11 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 11 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "86c182b64678c26381cfeeb6eec09e30106a52f91e163c473a502ff5cc9d8e05",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "BubblehouseETHReceiver",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 348,
+                  "filename_relative": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                  "filename_short": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "BubblehouseETHReceiver",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": [
+                    "Receive ETH",
+                    "Send ETH"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 11,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 4,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.8.5",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                    "filename_short": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.8",
+                      ".5"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.8.5 (cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.8.5](cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol#L1",
+              "id": "2e5bdecbc4b690bd7b7db6f5946ec98cce6937170e1bf255bb2e97f3fd032759",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.8.5 is not recommended for deployment\n",
+              "markdown": "solc-0.8.5 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "bd9f4a788f1d608ad0fe39515fa4409bd007657b9827a23897ff44fd9198bd9a",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "beneficiary",
+                  "source_mapping": {
+                    "start": 130,
+                    "length": 97,
+                    "filename_relative": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                    "filename_short": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 100
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "BubblehouseETHReceiver",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 348,
+                        "filename_relative": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                        "filename_short": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable_constant",
+                    "convention": "UPPER_CASE_WITH_UNDERSCORES"
+                  }
+                }
+              ],
+              "description": "Constant BubblehouseETHReceiver.beneficiary (cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol#5) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "markdown": "Constant [BubblehouseETHReceiver.beneficiary](cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol#L5) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "first_markdown_element": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol#L5",
+              "id": "499736aa8446765bf5bca1ad42d6091c7051703bc487c9f8782c5fef9ae0f5c3",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "receive",
+                  "source_mapping": {
+                    "start": 231,
+                    "length": 140,
+                    "filename_relative": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                    "filename_short": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6,
+                      7,
+                      8,
+                      9
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "BubblehouseETHReceiver",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 348,
+                        "filename_relative": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                        "filename_short": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "receive()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "address(beneficiary).transfer(msg.value)",
+                  "source_mapping": {
+                    "start": 264,
+                    "length": 40,
+                    "filename_relative": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                    "filename_short": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 45
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "receive",
+                      "source_mapping": {
+                        "start": 231,
+                        "length": 140,
+                        "filename_relative": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                        "filename_short": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6,
+                          7,
+                          8,
+                          9
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "BubblehouseETHReceiver",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 348,
+                            "filename_relative": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                            "filename_short": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "receive()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "external_calls"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "ETHReceived(msg.sender,msg.value,block.timestamp)",
+                  "source_mapping": {
+                    "start": 310,
+                    "length": 56,
+                    "filename_relative": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                    "filename_short": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 61
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "receive",
+                      "source_mapping": {
+                        "start": 231,
+                        "length": 140,
+                        "filename_relative": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                        "filename_short": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6,
+                          7,
+                          8,
+                          9
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "BubblehouseETHReceiver",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 348,
+                            "filename_relative": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                            "filename_short": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "receive()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "event"
+                  }
+                }
+              ],
+              "description": "Reentrancy in BubblehouseETHReceiver.receive() (cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol#6-9):\n\tExternal calls:\n\t- address(beneficiary).transfer(msg.value) (cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol#7)\n\tEvent emitted after the call(s):\n\t- ETHReceived(msg.sender,msg.value,block.timestamp) (cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol#8)\n",
+              "markdown": "Reentrancy in [BubblehouseETHReceiver.receive()](cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol#L6-L9):\n\tExternal calls:\n\t- [address(beneficiary).transfer(msg.value)](cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol#L7)\n\tEvent emitted after the call(s):\n\t- [ETHReceived(msg.sender,msg.value,block.timestamp)](cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol#L8)\n",
+              "first_markdown_element": "cleanSource/0x06091b6d488673e7152e1c4251cc19abb4fa474c.sol#L6-L9",
+              "id": "66c7c1223973671e5eaceca49f7cee20872d693493858b17591e86515f8c3f90",
+              "check": "reentrancy-unlimited-gas",
+              "impact": "Informational",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+    "tod_symex_path_1.json": {
+        "file_name": "",
+        "from_function": "withdrawReward",
+        "to_function": "withdrawReward",
+        "bug_type": "tod_amount_or_receiver",
+        "src_node": "\"BlockID: 41\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 45\nCall context: \nNone\nREF_0 -> rewardsForA[recipient]\namountToWithdraw := REF_0\nREF_1 -> rewardsForA[recipient]\nREF_1 := 0\nNEW VARIABLE None\nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[''] value:amountToWithdraw \""
+        ],
+        "executable_instructions": 45,
+        "state_variable": "rewardsForA",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_2.json": {
+        "file_name": "",
+        "from_function": "withdrawReward",
+        "to_function": "getFirstWithdrawalBonus",
+        "bug_type": "tod_amount_or_receiver",
+        "src_node": "\"BlockID: 48\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 56\nCall context: \nNone\nREF_0 -> rewardsForA[recipient]\namountToWithdraw := REF_0\nREF_1 -> rewardsForA[recipient]\nREF_1 := 0\nNEW VARIABLE None\nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[''] value:amountToWithdraw \""
+        ],
+        "executable_instructions": 59,
+        "state_variable": "rewardsForA",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_3.json": {
+        "file_name": "",
+        "from_function": "withdrawReward",
+        "to_function": "getFirstWithdrawalBonus",
+        "bug_type": "tod_amount_or_receiver",
+        "src_node": "\"BlockID: 59\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 67\nCall context: \nNone\nREF_0 -> rewardsForA[recipient]\namountToWithdraw := REF_0\nREF_1 -> rewardsForA[recipient]\nREF_1 := 0\nNEW VARIABLE None\nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[''] value:amountToWithdraw \""
+        ],
+        "executable_instructions": 59,
+        "state_variable": "rewardsForA",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_4.json": {
+        "file_name": "",
+        "from_function": "getFirstWithdrawalBonus",
+        "to_function": "withdrawReward",
+        "bug_type": "tod_amount_or_receiver",
+        "src_node": "\"BlockID: 70\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 77\nCall context: getFirstWithdrawalBonus\nNone\nREF_0 -> rewardsForA[recipient]\namountToWithdraw := REF_0\nREF_1 -> rewardsForA[recipient]\nREF_1 := 0\nNEW VARIABLE None\nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[''] value:amountToWithdraw \""
+        ],
+        "executable_instructions": 56,
+        "state_variable": "rewardsForA",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_5.json": {
+        "file_name": "",
+        "from_function": "getFirstWithdrawalBonus",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 82\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 83\nCall context: \nNone\nREF_4 -> claimedBonus[recipient]\nTMP_3 = ! REF_4 \nTMP_4 = SOLIDITY_CALL require(bool)(TMP_3)\""
+        ],
+        "executable_instructions": 29,
+        "state_variable": "claimedBonus",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_6.json": {
+        "file_name": "",
+        "from_function": "getFirstWithdrawalBonus",
+        "to_function": "getFirstWithdrawalBonus",
+        "bug_type": "tod_amount_or_receiver",
+        "src_node": "\"BlockID: 90\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 101\nCall context: getFirstWithdrawalBonus\nNone\nREF_0 -> rewardsForA[recipient]\namountToWithdraw := REF_0\nREF_1 -> rewardsForA[recipient]\nREF_1 := 0\nNEW VARIABLE None\nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[''] value:amountToWithdraw \""
+        ],
+        "executable_instructions": 70,
+        "state_variable": "rewardsForA",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_7.json": {
+        "file_name": "",
+        "from_function": "getFirstWithdrawalBonus",
+        "to_function": "getFirstWithdrawalBonus",
+        "bug_type": "tod_amount_or_receiver",
+        "src_node": "\"BlockID: 105\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 116\nCall context: getFirstWithdrawalBonus\nNone\nREF_0 -> rewardsForA[recipient]\namountToWithdraw := REF_0\nREF_1 -> rewardsForA[recipient]\nREF_1 := 0\nNEW VARIABLE None\nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[''] value:amountToWithdraw \""
+        ],
+        "executable_instructions": 70,
+        "state_variable": "rewardsForA",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    }
+}

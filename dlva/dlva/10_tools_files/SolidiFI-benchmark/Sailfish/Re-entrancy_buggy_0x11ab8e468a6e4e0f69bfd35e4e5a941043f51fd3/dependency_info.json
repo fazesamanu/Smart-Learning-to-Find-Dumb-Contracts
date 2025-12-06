@@ -1,0 +1,140 @@
+{
+    "Re-entrancy_buggy_0x11ab8e468a6e4e0f69bfd35e4e5a941043f51fd3.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdraw_balances_re_ent29",
+                "withdraw_balances_re_ent29"
+            ],
+            "from_function": "withdraw_balances_re_ent29",
+            "to_function": "withdraw_balances_re_ent29",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 69\nFunction: withdraw_balances_re_ent29\nNode: \nIF msg.sender.call.value(balances_re_ent29[msg.sender])()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_2 \"",
+                        "\"BlockID: 4\nFunction: withdraw_balances_re_ent29\nNode: \nEXPRESSION balances_re_ent29[msg.sender] = 0\nIRS: \nREF_3 := 0\""
+                    ],
+                    "state_variable": "balances_re_ent29"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw_balances_re_ent29",
+                "withdraw_balances_re_ent29"
+            ],
+            "First_function": "withdraw_balances_re_ent29",
+            "Second_function": "withdraw_balances_re_ent29",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 76\nFunction: withdraw_balances_re_ent29\nNode: \nEXPRESSION balances_re_ent29[msg.sender] = 0\nIRS: \nREF_3 := 0\"",
+                        "\"BlockID: 2\nFunction: withdraw_balances_re_ent29\nNode: \nIF msg.sender.call.value(balances_re_ent29[msg.sender])()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_2 \""
+                    ],
+                    "state_variable": "balances_re_ent29"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getTransfer",
+                "getTransfer"
+            ],
+            "First_function": "getTransfer",
+            "Second_function": "getTransfer",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 83\nFunction: getTransfer\nNode: \nEXPRESSION transferToPassword[pass].amount = 0\nIRS: \nREF_18 := 0\"",
+                        "\"BlockID: 26\nFunction: getTransfer\nNode: \nEXPRESSION require(bool)(transferToPassword[sha3()(_password)].amount > 0)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "transferToPassword.amount"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 83\nFunction: getTransfer\nNode: \nEXPRESSION transferToPassword[pass].amount = 0\nIRS: \nREF_18 := 0\"",
+                        "\"BlockID: 30\nFunction: getTransfer\nNode: \nEXPRESSION msg.sender.transfer(amount)\nIRS: \nTransfer dest:msg.sender value:amount\""
+                    ],
+                    "state_variable": "transferToPassword.amount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getTransfer",
+                "getAdvancedTransfer"
+            ],
+            "First_function": "getAdvancedTransfer",
+            "Second_function": "getTransfer",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 45\nFunction: getAdvancedTransfer\nNode: \nEXPRESSION transferToPassword[pass].amount = 0\nIRS: \nREF_34 := 0\"",
+                        "\"BlockID: 26\nFunction: getTransfer\nNode: \nEXPRESSION require(bool)(transferToPassword[sha3()(_password)].amount > 0)\nIRS: \nTMP_19 = SOLIDITY_CALL require(bool)(TMP_18)\""
+                    ],
+                    "state_variable": "transferToPassword.amount"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 45\nFunction: getAdvancedTransfer\nNode: \nEXPRESSION transferToPassword[pass].amount = 0\nIRS: \nREF_34 := 0\"",
+                        "\"BlockID: 30\nFunction: getTransfer\nNode: \nEXPRESSION msg.sender.transfer(amount)\nIRS: \nTransfer dest:msg.sender value:amount\""
+                    ],
+                    "state_variable": "transferToPassword.amount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getAdvancedTransfer",
+                "getTransfer"
+            ],
+            "First_function": "getTransfer",
+            "Second_function": "getAdvancedTransfer",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: getTransfer\nNode: \nEXPRESSION transferToPassword[pass].amount = 0\nIRS: \nREF_18 := 0\"",
+                        "\"BlockID: 42\nFunction: getAdvancedTransfer\nNode: \nEXPRESSION require(bool)(_num >= 0 && _num < 1000000 && transferToPassword[sha3()(_password,_num)].amount > 0)\nIRS: \nTMP_43 = SOLIDITY_CALL require(bool)(TMP_42)\""
+                    ],
+                    "state_variable": "transferToPassword.amount"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: getTransfer\nNode: \nEXPRESSION transferToPassword[pass].amount = 0\nIRS: \nREF_18 := 0\"",
+                        "\"BlockID: 46\nFunction: getAdvancedTransfer\nNode: \nEXPRESSION msg.sender.transfer(amount)\nIRS: \nTransfer dest:msg.sender value:amount\""
+                    ],
+                    "state_variable": "transferToPassword.amount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getAdvancedTransfer",
+                "getAdvancedTransfer"
+            ],
+            "First_function": "getAdvancedTransfer",
+            "Second_function": "getAdvancedTransfer",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 91\nFunction: getAdvancedTransfer\nNode: \nEXPRESSION transferToPassword[pass].amount = 0\nIRS: \nREF_34 := 0\"",
+                        "\"BlockID: 42\nFunction: getAdvancedTransfer\nNode: \nEXPRESSION require(bool)(_num >= 0 && _num < 1000000 && transferToPassword[sha3()(_password,_num)].amount > 0)\nIRS: \nTMP_43 = SOLIDITY_CALL require(bool)(TMP_42)\""
+                    ],
+                    "state_variable": "transferToPassword.amount"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 91\nFunction: getAdvancedTransfer\nNode: \nEXPRESSION transferToPassword[pass].amount = 0\nIRS: \nREF_34 := 0\"",
+                        "\"BlockID: 46\nFunction: getAdvancedTransfer\nNode: \nEXPRESSION msg.sender.transfer(amount)\nIRS: \nTransfer dest:msg.sender value:amount\""
+                    ],
+                    "state_variable": "transferToPassword.amount"
+                }
+            ]
+        }
+    ]
+}

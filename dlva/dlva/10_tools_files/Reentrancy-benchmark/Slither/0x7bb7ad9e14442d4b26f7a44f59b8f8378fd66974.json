@@ -1,0 +1,1060 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 57 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m6\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\nERCs: ERC20\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 57 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m6\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\nERCs: ERC20\n",
+        "first_markdown_element": "",
+        "id": "37d3094afea38355ed24a569d37334d072e6f912f43e1fc18263961633395e80",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "STQDistribution",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 888,
+                  "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                  "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "STQDistribution",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 3,
+                  "features": []
+                }
+              },
+              {
+                "type": "contract",
+                "name": "MintableToken",
+                "source_mapping": {
+                  "start": 915,
+                  "length": 80,
+                  "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                  "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    29,
+                    30,
+                    31
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "MintableToken",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              },
+              {
+                "type": "contract",
+                "name": "Token",
+                "source_mapping": {
+                  "start": 997,
+                  "length": 787,
+                  "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                  "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "Token",
+                  "is_complex_code": false,
+                  "is_erc20": true,
+                  "number_functions": 6,
+                  "features": [],
+                  "erc20_pause": false,
+                  "erc20_can_mint": false,
+                  "erc20_race_condition_mitigated": false
+                }
+              }
+            ]
+          },
+          "number_lines": 57,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [
+            "ERC20"
+          ],
+          "number_findings": {
+            "optimization_issues": 1,
+            "informational_issues": 6,
+            "low_issues": 2,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "batchSend",
+                  "source_mapping": {
+                    "start": 436,
+                    "length": 476,
+                    "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "STQDistribution",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 888,
+                        "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "batchSend(Token,uint160,uint256[])"
+                  }
+                }
+              ],
+              "description": "batchSend(Token,uint160,uint256[]) should be declared external:\n\t- STQDistribution.batchSend(Token,uint160,uint256[]) (cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#17-27)\n",
+              "markdown": "batchSend(Token,uint160,uint256[]) should be declared external:\n\t- [STQDistribution.batchSend(Token,uint160,uint256[])](cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#L17-L27)\n",
+              "first_markdown_element": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#L17-L27",
+              "id": "dd33ebc40359ac42e0ad88740fdcc5a6f24256479623c10c00f037ca86b5e7c7",
+              "check": "external-function",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.19 is not recommended for deployment\n",
+              "markdown": "solc-0.4.19 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "6c57d3efd769b2c1ca361b3d06ff1f2677845be92f7b50762125a4196d71725a",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.19",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".19"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.19 (cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.19](cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#L1",
+              "id": "a64ba21af651ca8afdd85d03710e6ceadf46d50cfc9924a6541f47225b0e5fe5",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_to",
+                  "source_mapping": {
+                    "start": 311,
+                    "length": 11,
+                    "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11
+                    ],
+                    "starting_column": 48,
+                    "ending_column": 59
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "encodeTransfer",
+                      "source_mapping": {
+                        "start": 266,
+                        "length": 164,
+                        "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          11,
+                          12,
+                          13,
+                          14,
+                          15
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "STQDistribution",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 888,
+                            "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "encodeTransfer(uint96,address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter STQDistribution.encodeTransfer(uint96,address)._to (cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#11) is not in mixedCase\n",
+              "markdown": "Parameter [STQDistribution.encodeTransfer(uint96,address)._to](cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#L11) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#L11",
+              "id": "6a22f92473ff830c2aa0013a213cc853edd07be3d765a1ee6001954564aadb52",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_lotsNumber",
+                  "source_mapping": {
+                    "start": 291,
+                    "length": 18,
+                    "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11
+                    ],
+                    "starting_column": 28,
+                    "ending_column": 46
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "encodeTransfer",
+                      "source_mapping": {
+                        "start": 266,
+                        "length": 164,
+                        "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          11,
+                          12,
+                          13,
+                          14,
+                          15
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "STQDistribution",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 888,
+                            "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "encodeTransfer(uint96,address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter STQDistribution.encodeTransfer(uint96,address)._lotsNumber (cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#11) is not in mixedCase\n",
+              "markdown": "Parameter [STQDistribution.encodeTransfer(uint96,address)._lotsNumber](cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#L11) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#L11",
+              "id": "87490d058244a9be0f37254478ad59adfb9dfe2fd94d0c42acbd2071c1ce99eb",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_transfers",
+                  "source_mapping": {
+                    "start": 488,
+                    "length": 20,
+                    "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17
+                    ],
+                    "starting_column": 55,
+                    "ending_column": 75
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "batchSend",
+                      "source_mapping": {
+                        "start": 436,
+                        "length": 476,
+                        "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "STQDistribution",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 888,
+                            "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "batchSend(Token,uint160,uint256[])"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter STQDistribution.batchSend(Token,uint160,uint256[])._transfers (cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#17) is not in mixedCase\n",
+              "markdown": "Parameter [STQDistribution.batchSend(Token,uint160,uint256[])._transfers](cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#L17) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#L17",
+              "id": "9076c4b46e08d377ec121f069fd8157c57720fe1b43f0876c1ec0e85ca23c6af",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_lotSize",
+                  "source_mapping": {
+                    "start": 470,
+                    "length": 16,
+                    "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17
+                    ],
+                    "starting_column": 37,
+                    "ending_column": 53
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "batchSend",
+                      "source_mapping": {
+                        "start": 436,
+                        "length": 476,
+                        "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "STQDistribution",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 888,
+                            "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "batchSend(Token,uint160,uint256[])"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter STQDistribution.batchSend(Token,uint160,uint256[])._lotSize (cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#17) is not in mixedCase\n",
+              "markdown": "Parameter [STQDistribution.batchSend(Token,uint160,uint256[])._lotSize](cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#L17) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#L17",
+              "id": "c404ff38a7c864aa47c84fbf1455755491b8a838bcdb3e2c69fc9a9f010e9c91",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_mintableTokenAddress",
+                  "source_mapping": {
+                    "start": 143,
+                    "length": 29,
+                    "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 28,
+                    "ending_column": 57
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "STQDistribution",
+                      "source_mapping": {
+                        "start": 118,
+                        "length": 142,
+                        "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6,
+                          7,
+                          8,
+                          9
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "STQDistribution",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 888,
+                            "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "STQDistribution(address)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "mintableTokenAddress = _mintableTokenAddress",
+                  "source_mapping": {
+                    "start": 187,
+                    "length": 44,
+                    "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 49
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "STQDistribution",
+                      "source_mapping": {
+                        "start": 118,
+                        "length": 142,
+                        "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6,
+                          7,
+                          8,
+                          9
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "STQDistribution",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 888,
+                            "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "STQDistribution(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "STQDistribution.STQDistribution(address)._mintableTokenAddress (cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#6) lacks a zero-check on :\n\t\t- mintableTokenAddress = _mintableTokenAddress (cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#7)\n",
+              "markdown": "[STQDistribution.STQDistribution(address)._mintableTokenAddress](cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#L6) lacks a zero-check on :\n\t\t- [mintableTokenAddress = _mintableTokenAddress](cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#L7)\n",
+              "first_markdown_element": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#L6",
+              "id": "865cd2f1b5ca1d6bd66eb2307846ebb211f3788a17572c90d83c4885fc8a6e1f",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "batchSend",
+                  "source_mapping": {
+                    "start": 436,
+                    "length": 476,
+                    "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "STQDistribution",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 888,
+                        "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "batchSend(Token,uint160,uint256[])"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "token.mint(to,value)",
+                  "source_mapping": {
+                    "start": 880,
+                    "length": 21,
+                    "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      25
+                    ],
+                    "starting_column": 7,
+                    "ending_column": 28
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "batchSend",
+                      "source_mapping": {
+                        "start": 436,
+                        "length": 476,
+                        "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "STQDistribution",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 888,
+                            "filename_relative": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "filename_short": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "batchSend(Token,uint160,uint256[])"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "STQDistribution.batchSend(Token,uint160,uint256[]) (cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#17-27) has external calls inside a loop: token.mint(to,value) (cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#25)\n",
+              "markdown": "[STQDistribution.batchSend(Token,uint160,uint256[])](cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#L17-L27) has external calls inside a loop: [token.mint(to,value)](cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#L25)\n",
+              "first_markdown_element": "cleanSource/0x7bb7ad9e14442d4b26f7a44f59b8f8378fd66974.sol#L17-L27",
+              "id": "939e948710b3715922f04b48773c990eadfac29c4f662ff4a0a237691f11c189",
+              "check": "calls-loop",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

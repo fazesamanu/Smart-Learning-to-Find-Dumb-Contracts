@@ -1,0 +1,76 @@
+{
+    "0xdc5c87ba250b65a83042333f1101940b74312a65.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "refund",
+                "purchase"
+            ],
+            "from_function": "purchase",
+            "to_function": "refund",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 6\nFunction: purchase\nNode: \nEXPRESSION require(bool)(! gotTakoyaki[msg.sender])\nIRS: \nTMP_2 = SOLIDITY_CALL require(bool)(TMP_1)\"",
+                        "\"BlockID: 14\nFunction: refund\nNode: \nEXPRESSION gotTakoyaki[msg.sender] = false\nIRS: \nREF_6 := false\""
+                    ],
+                    "state_variable": "gotTakoyaki"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "refund",
+                "refund"
+            ],
+            "from_function": "refund",
+            "to_function": "refund",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 18\nFunction: refund\nNode: \nEXPRESSION require(bool)(gotTakoyaki[msg.sender])\nIRS: \nTMP_6 = SOLIDITY_CALL require(bool)(REF_3)\"",
+                        "\"BlockID: 14\nFunction: refund\nNode: \nEXPRESSION gotTakoyaki[msg.sender] = false\nIRS: \nREF_6 := false\""
+                    ],
+                    "state_variable": "gotTakoyaki"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "refund",
+                "purchase"
+            ],
+            "First_function": "purchase",
+            "Second_function": "refund",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: purchase\nNode: \nEXPRESSION gotTakoyaki[msg.sender] = true\nIRS: \nREF_2 := true\"",
+                        "\"BlockID: 11\nFunction: refund\nNode: \nEXPRESSION require(bool)(gotTakoyaki[msg.sender])\nIRS: \nTMP_6 = SOLIDITY_CALL require(bool)(REF_3)\""
+                    ],
+                    "state_variable": "gotTakoyaki"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "refund",
+                "refund"
+            ],
+            "First_function": "refund",
+            "Second_function": "refund",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: refund\nNode: \nEXPRESSION gotTakoyaki[msg.sender] = false\nIRS: \nREF_6 := false\"",
+                        "\"BlockID: 11\nFunction: refund\nNode: \nEXPRESSION require(bool)(gotTakoyaki[msg.sender])\nIRS: \nTMP_6 = SOLIDITY_CALL require(bool)(REF_3)\""
+                    ],
+                    "state_variable": "gotTakoyaki"
+                }
+            ]
+        }
+    ]
+}

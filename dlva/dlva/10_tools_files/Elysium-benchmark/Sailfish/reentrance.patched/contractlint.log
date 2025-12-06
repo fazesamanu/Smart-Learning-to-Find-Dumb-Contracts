@@ -1,0 +1,42 @@
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Analysis started at: 2023-05-29 02:42:25 AM
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Version constraints: ['^0.4.26']
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | solc version: v0.4.26
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Callgraph generation started!
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Callgraph generation finished!
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Interprocedural CFG generation started!
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Interprocedural CFG generation finished!
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Storage dependency graph generation started!
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Storage dependency graph generation finished!
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Value Range Analysis started
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Generating return summary for donate
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Return summary generated for donate
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Range graph generated
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Processed function donate
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Generating return summary for balanceOf
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Return summary generated for balanceOf
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | State variable assignement do not exist
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Processed function balanceOf
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Generating return summary for withdraw
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Return summary generated for withdraw
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Range graph generated
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Processed function withdraw
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Generating return summary for fallback
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Return summary generated for fallback
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | State variable assignement do not exist
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Processed function fallback
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Value Range Analysis took 0.004195 seconds
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Value Range Analysis finished
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Storage dependency graph compostion started!
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Storage dependency graph compostion finished!
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Dependency detection started!
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | TOD dependency detected in file reentrance.patched.sol in contract Reentrance in by composing functions withdraw and donate
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | TOD dependency detected in file reentrance.patched.sol in contract Reentrance in by composing functions withdraw and withdraw
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Dependency detection finished!
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Static Analysis took 0.337956 seconds
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Dependency exists
+[INFO] | 2023-05-29 02:42:25 AM | analyzer.reentrance.patched | Invoking symbolic executor!
+[INFO] | 2023-05-29 02:42:29 AM | analyzer.reentrance.patched | Symbolic execution took 4.195361 seconds
+[INFO] | 2023-05-29 02:42:29 AM | analyzer.reentrance.patched | Symbolic execution finished!
+[INFO] | 2023-05-29 02:42:29 AM | analyzer.reentrance.patched | Analysis finished!
+[INFO] | 2023-05-29 02:42:29 AM | analyzer.reentrance.patched | Analysis took 4.534982 seconds
+[INFO] | 2023-05-29 02:42:29 AM | analyzer.reentrance.patched | Analysis finished at: 2023-05-29 02:42:29 AM

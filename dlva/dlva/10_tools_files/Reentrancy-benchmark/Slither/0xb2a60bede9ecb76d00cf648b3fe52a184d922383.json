@@ -1,0 +1,619 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 32 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m7\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 32 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m7\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "5caec72a8310c921c14f9fae5aaa6be9bc89f93437ce7baa094280e5309b2acd",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "CurveFilter",
+                "source_mapping": {
+                  "start": 385,
+                  "length": 784,
+                  "filename_relative": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                  "filename_short": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "CurveFilter",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 4,
+                  "features": [
+                    "Assembly"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 32,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 7,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "getMethod",
+                  "source_mapping": {
+                    "start": 221,
+                    "length": 159,
+                    "filename_relative": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "filename_short": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8,
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "BaseFilter",
+                      "source_mapping": {
+                        "start": 175,
+                        "length": 207,
+                        "filename_relative": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                        "filename_short": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "getMethod(bytes)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "",
+                  "source_mapping": {
+                    "start": 308,
+                    "length": 66,
+                    "filename_relative": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "filename_short": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      9,
+                      10,
+                      11
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 10
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "getMethod",
+                      "source_mapping": {
+                        "start": 221,
+                        "length": 159,
+                        "filename_relative": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                        "filename_short": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "BaseFilter",
+                          "source_mapping": {
+                            "start": 175,
+                            "length": 207,
+                            "filename_relative": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                            "filename_short": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "getMethod(bytes)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "BaseFilter.getMethod(bytes) (cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#8-12) uses assembly\n\t- INLINE ASM (cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#9-11)\n",
+              "markdown": "[BaseFilter.getMethod(bytes)](cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#L8-L12) uses assembly\n\t- [INLINE ASM](cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#L9-L11)\n",
+              "first_markdown_element": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#L8-L12",
+              "id": "5a8e504d723ac61f6b0886e25df98d2f8553eee31ec96323ded4d2e2da0c3f2b",
+              "check": "assembly",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.8.3 is not recommended for deployment\n",
+              "markdown": "solc-0.8.3 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "57164db0f8decf87daf3a75a081354a3ee211b668e6a60f6c5c93e00450a5511",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.8.3",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "filename_short": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.8",
+                      ".3"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.8.3 (cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.8.3](cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#L1",
+              "id": "b596566622667dffc7d39e0e6895d6ed9191bc058964fd5e62571ae92a43e794",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_data",
+                  "source_mapping": {
+                    "start": 240,
+                    "length": 18,
+                    "filename_relative": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "filename_short": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 24,
+                    "ending_column": 42
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "getMethod",
+                      "source_mapping": {
+                        "start": 221,
+                        "length": 159,
+                        "filename_relative": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                        "filename_short": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "BaseFilter",
+                          "source_mapping": {
+                            "start": 175,
+                            "length": 207,
+                            "filename_relative": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                            "filename_short": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "getMethod(bytes)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter BaseFilter.getMethod(bytes)._data (cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#8) is not in mixedCase\n",
+              "markdown": "Parameter [BaseFilter.getMethod(bytes)._data](cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#L8) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#L8",
+              "id": "12d2414200a68afb7283133423909dcf6d71561a7f99da13b287df26815e2789",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_spender",
+                  "source_mapping": {
+                    "start": 768,
+                    "length": 16,
+                    "filename_relative": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "filename_short": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      20
+                    ],
+                    "starting_column": 32,
+                    "ending_column": 48
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "isValid",
+                      "source_mapping": {
+                        "start": 741,
+                        "length": 426,
+                        "filename_relative": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                        "filename_short": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "CurveFilter",
+                          "source_mapping": {
+                            "start": 385,
+                            "length": 784,
+                            "filename_relative": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                            "filename_short": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "isValid(address,address,address,bytes)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter CurveFilter.isValid(address,address,address,bytes)._spender (cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#20) is not in mixedCase\n",
+              "markdown": "Parameter [CurveFilter.isValid(address,address,address,bytes)._spender](cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#L20) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#L20",
+              "id": "3502cc22fcda728a0ffe67e9bb715ddf2f5c75d71012369cfd0989123e5b03e1",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_data",
+                  "source_mapping": {
+                    "start": 799,
+                    "length": 20,
+                    "filename_relative": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "filename_short": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      20
+                    ],
+                    "starting_column": 63,
+                    "ending_column": 83
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "isValid",
+                      "source_mapping": {
+                        "start": 741,
+                        "length": 426,
+                        "filename_relative": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                        "filename_short": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "CurveFilter",
+                          "source_mapping": {
+                            "start": 385,
+                            "length": 784,
+                            "filename_relative": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                            "filename_short": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "isValid(address,address,address,bytes)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter CurveFilter.isValid(address,address,address,bytes)._data (cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#20) is not in mixedCase\n",
+              "markdown": "Parameter [CurveFilter.isValid(address,address,address,bytes)._data](cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#L20) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#L20",
+              "id": "7f275b3477f40eaf4dbe03f6fbe86e257845cd71a30a4b6db14611e6decd4a66",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_to",
+                  "source_mapping": {
+                    "start": 786,
+                    "length": 11,
+                    "filename_relative": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "filename_short": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      20
+                    ],
+                    "starting_column": 50,
+                    "ending_column": 61
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "isValid",
+                      "source_mapping": {
+                        "start": 741,
+                        "length": 426,
+                        "filename_relative": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                        "filename_short": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "CurveFilter",
+                          "source_mapping": {
+                            "start": 385,
+                            "length": 784,
+                            "filename_relative": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                            "filename_short": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "isValid(address,address,address,bytes)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter CurveFilter.isValid(address,address,address,bytes)._to (cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#20) is not in mixedCase\n",
+              "markdown": "Parameter [CurveFilter.isValid(address,address,address,bytes)._to](cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#L20) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xb2a60bede9ecb76d00cf648b3fe52a184d922383.sol#L20",
+              "id": "8115960cf1ad200b4027166eb6208a94f998947b6b794a013144a5d1a2ea5fd3",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

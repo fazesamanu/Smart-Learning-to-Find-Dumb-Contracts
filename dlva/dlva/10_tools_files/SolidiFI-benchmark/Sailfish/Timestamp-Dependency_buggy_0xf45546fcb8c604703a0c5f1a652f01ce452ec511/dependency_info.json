@@ -1,0 +1,238 @@
+{
+    "Timestamp-Dependency_buggy_0xf45546fcb8c604703a0c5f1a652f01ce452ec511.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "safeWithdrawal",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "safeWithdrawal",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: buyTokens\nNode: \nEXPRESSION weiRaised = weiRaised.add(weiAmount)\nIRS: \nweiRaised := TMP_40\"",
+                        "\"BlockID: 49\nFunction: safeWithdrawal\nNode: \nIF weiRaised < fundingGoal && weiRaised < minimumFundingGoal\nIRS: \nCONDITION TMP_45\""
+                    ],
+                    "state_variable": "weiRaised"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: buyTokens\nNode: \nEXPRESSION weiRaised = weiRaised.add(weiAmount)\nIRS: \nweiRaised := TMP_40\"",
+                        "\"BlockID: 53\nFunction: safeWithdrawal\nNode: \nIF (weiRaised >= fundingGoal || weiRaised >= minimumFundingGoal) && wallet == msg.sender\nIRS: \nCONDITION TMP_53\""
+                    ],
+                    "state_variable": "weiRaised"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: buyTokens\nNode: \nEXPRESSION weiRaised = weiRaised.add(weiAmount)\nIRS: \nweiRaised := TMP_40\"",
+                        "\"BlockID: 54\nFunction: safeWithdrawal\nNode: \nIF wallet.send(weiRaised)\nIRS: \nTMP_54 = SEND dest:wallet value:weiRaised\""
+                    ],
+                    "state_variable": "weiRaised"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 33\nFunction: buyTokens\nNode: \nEXPRESSION balanceOf[msg.sender] += weiAmount\nIRS: \nREF_0 = REF_0 + weiAmount\"",
+                        "\"BlockID: 51\nFunction: safeWithdrawal\nNode: \nIF amount > 0\nIRS: \nCONDITION TMP_46\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 33\nFunction: buyTokens\nNode: \nEXPRESSION balanceOf[msg.sender] += weiAmount\nIRS: \nREF_0 = REF_0 + weiAmount\"",
+                        "\"BlockID: 61\nFunction: safeWithdrawal\nNode: \nIF msg.sender.send(amount)\nIRS: \nTMP_47 = SEND dest:msg.sender value:amount\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "safeWithdrawal",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "safeWithdrawal",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: buyTokens\nNode: \nEXPRESSION weiRaised = weiRaised.add(weiAmount)\nIRS: \nweiRaised := TMP_40\"",
+                        "\"BlockID: 49\nFunction: safeWithdrawal\nNode: \nIF weiRaised < fundingGoal && weiRaised < minimumFundingGoal\nIRS: \nCONDITION TMP_45\""
+                    ],
+                    "state_variable": "weiRaised"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 33\nFunction: buyTokens\nNode: \nEXPRESSION balanceOf[msg.sender] += weiAmount\nIRS: \nREF_0 = REF_0 + weiAmount\"",
+                        "\"BlockID: 51\nFunction: safeWithdrawal\nNode: \nIF amount > 0\nIRS: \nCONDITION TMP_46\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 33\nFunction: buyTokens\nNode: \nEXPRESSION balanceOf[msg.sender] += weiAmount\nIRS: \nREF_0 = REF_0 + weiAmount\"",
+                        "\"BlockID: 61\nFunction: safeWithdrawal\nNode: \nIF msg.sender.send(amount)\nIRS: \nTMP_47 = SEND dest:msg.sender value:amount\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "safeWithdrawal",
+                "buyTokens"
+            ],
+            "First_function": "buyTokens",
+            "Second_function": "safeWithdrawal",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: buyTokens\nNode: \nEXPRESSION weiRaised = weiRaised.add(weiAmount)\nIRS: \nweiRaised := TMP_40\"",
+                        "\"BlockID: 49\nFunction: safeWithdrawal\nNode: \nIF weiRaised < fundingGoal && weiRaised < minimumFundingGoal\nIRS: \nCONDITION TMP_45\""
+                    ],
+                    "state_variable": "weiRaised"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: buyTokens\nNode: \nEXPRESSION weiRaised = weiRaised.add(weiAmount)\nIRS: \nweiRaised := TMP_40\"",
+                        "\"BlockID: 53\nFunction: safeWithdrawal\nNode: \nIF (weiRaised >= fundingGoal || weiRaised >= minimumFundingGoal) && wallet == msg.sender\nIRS: \nCONDITION TMP_53\""
+                    ],
+                    "state_variable": "weiRaised"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: buyTokens\nNode: \nEXPRESSION weiRaised = weiRaised.add(weiAmount)\nIRS: \nweiRaised := TMP_40\"",
+                        "\"BlockID: 54\nFunction: safeWithdrawal\nNode: \nIF wallet.send(weiRaised)\nIRS: \nTMP_54 = SEND dest:wallet value:weiRaised\""
+                    ],
+                    "state_variable": "weiRaised"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 48\nFunction: buyTokens\nNode: \nEXPRESSION balanceOf[msg.sender] += weiAmount\nIRS: \nREF_0 = REF_0 + weiAmount\"",
+                        "\"BlockID: 51\nFunction: safeWithdrawal\nNode: \nIF amount > 0\nIRS: \nCONDITION TMP_46\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 48\nFunction: buyTokens\nNode: \nEXPRESSION balanceOf[msg.sender] += weiAmount\nIRS: \nREF_0 = REF_0 + weiAmount\"",
+                        "\"BlockID: 61\nFunction: safeWithdrawal\nNode: \nIF msg.sender.send(amount)\nIRS: \nTMP_47 = SEND dest:msg.sender value:amount\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "safeWithdrawal",
+                "buyTokens"
+            ],
+            "First_function": "buyTokens",
+            "Second_function": "safeWithdrawal",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: buyTokens\nNode: \nEXPRESSION weiRaised = weiRaised.add(weiAmount)\nIRS: \nweiRaised := TMP_40\"",
+                        "\"BlockID: 49\nFunction: safeWithdrawal\nNode: \nIF weiRaised < fundingGoal && weiRaised < minimumFundingGoal\nIRS: \nCONDITION TMP_45\""
+                    ],
+                    "state_variable": "weiRaised"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 48\nFunction: buyTokens\nNode: \nEXPRESSION balanceOf[msg.sender] += weiAmount\nIRS: \nREF_0 = REF_0 + weiAmount\"",
+                        "\"BlockID: 51\nFunction: safeWithdrawal\nNode: \nIF amount > 0\nIRS: \nCONDITION TMP_46\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 48\nFunction: buyTokens\nNode: \nEXPRESSION balanceOf[msg.sender] += weiAmount\nIRS: \nREF_0 = REF_0 + weiAmount\"",
+                        "\"BlockID: 61\nFunction: safeWithdrawal\nNode: \nIF msg.sender.send(amount)\nIRS: \nTMP_47 = SEND dest:msg.sender value:amount\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "safeWithdrawal",
+                "safeWithdrawal"
+            ],
+            "First_function": "safeWithdrawal",
+            "Second_function": "safeWithdrawal",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 75\nFunction: safeWithdrawal\nNode: \nEXPRESSION balanceOf[msg.sender] = 0\nIRS: \nREF_4 := 0\"",
+                        "\"BlockID: 51\nFunction: safeWithdrawal\nNode: \nIF amount > 0\nIRS: \nCONDITION TMP_46\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 90\nFunction: safeWithdrawal\nNode: \nEXPRESSION balanceOf[msg.sender] = amount\nIRS: \nREF_6 := amount\"",
+                        "\"BlockID: 51\nFunction: safeWithdrawal\nNode: \nIF amount > 0\nIRS: \nCONDITION TMP_46\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 75\nFunction: safeWithdrawal\nNode: \nEXPRESSION balanceOf[msg.sender] = 0\nIRS: \nREF_4 := 0\"",
+                        "\"BlockID: 61\nFunction: safeWithdrawal\nNode: \nIF msg.sender.send(amount)\nIRS: \nTMP_47 = SEND dest:msg.sender value:amount\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 90\nFunction: safeWithdrawal\nNode: \nEXPRESSION balanceOf[msg.sender] = amount\nIRS: \nREF_6 := amount\"",
+                        "\"BlockID: 61\nFunction: safeWithdrawal\nNode: \nIF msg.sender.send(amount)\nIRS: \nTMP_47 = SEND dest:msg.sender value:amount\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "safeWithdrawal",
+                "safeWithdrawal"
+            ],
+            "First_function": "safeWithdrawal",
+            "Second_function": "safeWithdrawal",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 95\nFunction: safeWithdrawal\nNode: \nEXPRESSION balanceOf[msg.sender] = 0\nIRS: \nREF_4 := 0\"",
+                        "\"BlockID: 51\nFunction: safeWithdrawal\nNode: \nIF amount > 0\nIRS: \nCONDITION TMP_46\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 110\nFunction: safeWithdrawal\nNode: \nEXPRESSION balanceOf[msg.sender] = amount\nIRS: \nREF_6 := amount\"",
+                        "\"BlockID: 51\nFunction: safeWithdrawal\nNode: \nIF amount > 0\nIRS: \nCONDITION TMP_46\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 95\nFunction: safeWithdrawal\nNode: \nEXPRESSION balanceOf[msg.sender] = 0\nIRS: \nREF_4 := 0\"",
+                        "\"BlockID: 61\nFunction: safeWithdrawal\nNode: \nIF msg.sender.send(amount)\nIRS: \nTMP_47 = SEND dest:msg.sender value:amount\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 110\nFunction: safeWithdrawal\nNode: \nEXPRESSION balanceOf[msg.sender] = amount\nIRS: \nREF_6 := amount\"",
+                        "\"BlockID: 61\nFunction: safeWithdrawal\nNode: \nIF msg.sender.send(amount)\nIRS: \nTMP_47 = SEND dest:msg.sender value:amount\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        }
+    ]
+}

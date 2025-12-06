@@ -1,0 +1,457 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 14 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m2\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 14 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m2\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "f60d6907bda9a8c5f64355efc1a0493d80a99a2667215f87101de957af07fa6d",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "Splitter",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 503,
+                  "filename_relative": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                  "filename_short": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "Splitter",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": [
+                    "Receive ETH",
+                    "Send ETH"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 14,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 2,
+            "informational_issues": 3,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_wallet2",
+                  "source_mapping": {
+                    "start": 124,
+                    "length": 69,
+                    "filename_relative": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                    "filename_short": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 74
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Splitter",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 503,
+                        "filename_relative": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                        "filename_short": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Splitter._wallet2 (cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol#5) should be constant\n",
+              "markdown": "[Splitter._wallet2](cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol#L5) should be constant\n",
+              "first_markdown_element": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol#L5",
+              "id": "557934c2120520120ccedafd661614d10bceecc0eb93ef7a9111c96796980c92",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_wallet1",
+                  "source_mapping": {
+                    "start": 49,
+                    "length": 69,
+                    "filename_relative": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                    "filename_short": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 74
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Splitter",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 503,
+                        "filename_relative": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                        "filename_short": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Splitter._wallet1 (cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol#4) should be constant\n",
+              "markdown": "[Splitter._wallet1](cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol#L4) should be constant\n",
+              "first_markdown_element": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol#L4",
+              "id": "792dad814d2cc00e49d05f796189c96a8b88e9aefbffbce28a68fe6bdc6784cb",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.8.6 is not recommended for deployment\n",
+              "markdown": "solc-0.8.6 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "255b3de3a15cd1b2664d8a250d6fd4366960161ade9e88556c08b98a53789129",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.8.6",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                    "filename_short": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.8",
+                      ".6"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.8.6 (cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.8.6](cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol#L1",
+              "id": "ef95b215222b15f5b420efb60efabcefa6f1b0abdcd853e314edeaa875cc3db2",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "fallback",
+                  "source_mapping": {
+                    "start": 199,
+                    "length": 327,
+                    "filename_relative": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                    "filename_short": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Splitter",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 503,
+                        "filename_relative": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                        "filename_short": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "fallback()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "(success,None) = _wallet1.call{value: msg.value * 95 / 100}()",
+                  "source_mapping": {
+                    "start": 267,
+                    "length": 60,
+                    "filename_relative": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                    "filename_short": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 69
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "fallback",
+                      "source_mapping": {
+                        "start": 199,
+                        "length": 327,
+                        "filename_relative": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                        "filename_short": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Splitter",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 503,
+                            "filename_relative": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                            "filename_short": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "fallback()"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "(success2,None) = _wallet2.call{value: msg.value * 5 / 100}()",
+                  "source_mapping": {
+                    "start": 413,
+                    "length": 60,
+                    "filename_relative": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                    "filename_short": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 69
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "fallback",
+                      "source_mapping": {
+                        "start": 199,
+                        "length": 327,
+                        "filename_relative": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                        "filename_short": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Splitter",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 503,
+                            "filename_relative": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                            "filename_short": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "fallback()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Low level call in Splitter.fallback() (cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol#6-13):\n\t- (success,None) = _wallet1.call{value: msg.value * 95 / 100}() (cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol#8)\n\t- (success2,None) = _wallet2.call{value: msg.value * 5 / 100}() (cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol#11)\n",
+              "markdown": "Low level call in [Splitter.fallback()](cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol#L6-L13):\n\t- [(success,None) = _wallet1.call{value: msg.value * 95 / 100}()](cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol#L8)\n\t- [(success2,None) = _wallet2.call{value: msg.value * 5 / 100}()](cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol#L11)\n",
+              "first_markdown_element": "cleanSource/0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.sol#L6-L13",
+              "id": "2a72acf2c978015cad209ec5d58b9fc2f2b8ee73a21a47ef5db7a6dfec0bc8d6",
+              "check": "low-level-calls",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

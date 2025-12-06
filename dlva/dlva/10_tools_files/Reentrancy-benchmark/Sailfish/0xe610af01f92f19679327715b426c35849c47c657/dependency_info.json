@@ -1,0 +1,90 @@
+{
+    "0xe610af01f92f19679327715b426c35849c47c657.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "Collect",
+                "Collect"
+            ],
+            "from_function": "Collect",
+            "to_function": "Collect",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: Collect\nNode: \nIF Accounts[msg.sender] >= MinSum && _am <= Accounts[msg.sender] && block.number > putBlock\nIRS: \nCONDITION TMP_6\"",
+                        "\"BlockID: 12\nFunction: Collect\nNode: \nEXPRESSION Accounts[msg.sender] -= _am\nIRS: \nREF_6 = REF_6 - _am\""
+                    ],
+                    "state_variable": "Accounts"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "Collect",
+                "Put"
+            ],
+            "First_function": "Put",
+            "Second_function": "Collect",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 4\nFunction: Put\nNode: \nEXPRESSION Accounts[to] += msg.value\nIRS: \nREF_0 = REF_0 + msg.value\"",
+                        "\"BlockID: 8\nFunction: Collect\nNode: \nIF Accounts[msg.sender] >= MinSum && _am <= Accounts[msg.sender] && block.number > putBlock\nIRS: \nCONDITION TMP_6\""
+                    ],
+                    "state_variable": "Accounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 6\nFunction: Put\nNode: \nEXPRESSION putBlock = block.number\nIRS: \nputBlock := block.number\"",
+                        "\"BlockID: 8\nFunction: Collect\nNode: \nIF Accounts[msg.sender] >= MinSum && _am <= Accounts[msg.sender] && block.number > putBlock\nIRS: \nCONDITION TMP_6\""
+                    ],
+                    "state_variable": "putBlock"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "Collect",
+                "Collect"
+            ],
+            "First_function": "Collect",
+            "Second_function": "Collect",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 38\nFunction: Collect\nNode: \nEXPRESSION Accounts[msg.sender] -= _am\nIRS: \nREF_6 = REF_6 - _am\"",
+                        "\"BlockID: 8\nFunction: Collect\nNode: \nIF Accounts[msg.sender] >= MinSum && _am <= Accounts[msg.sender] && block.number > putBlock\nIRS: \nCONDITION TMP_6\""
+                    ],
+                    "state_variable": "Accounts"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "Collect",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "Collect",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 16\nFunction: Put\nNode: \nEXPRESSION Accounts[to] += msg.value\nIRS: \nREF_0 = REF_0 + msg.value\"",
+                        "\"BlockID: 8\nFunction: Collect\nNode: \nIF Accounts[msg.sender] >= MinSum && _am <= Accounts[msg.sender] && block.number > putBlock\nIRS: \nCONDITION TMP_6\""
+                    ],
+                    "state_variable": "Accounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 18\nFunction: Put\nNode: \nEXPRESSION putBlock = block.number\nIRS: \nputBlock := block.number\"",
+                        "\"BlockID: 8\nFunction: Collect\nNode: \nIF Accounts[msg.sender] >= MinSum && _am <= Accounts[msg.sender] && block.number > putBlock\nIRS: \nCONDITION TMP_6\""
+                    ],
+                    "state_variable": "putBlock"
+                }
+            ]
+        }
+    ]
+}

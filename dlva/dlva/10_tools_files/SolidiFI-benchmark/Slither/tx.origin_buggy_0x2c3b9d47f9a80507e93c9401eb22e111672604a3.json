@@ -1,0 +1,3270 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 65 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m16\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[93m2\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\nERCs: ERC20\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 65 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m16\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[93m2\u001b[0m\nNumber of high issues: \u001b[91m1\u001b[0m\nERCs: ERC20\n",
+        "first_markdown_element": "",
+        "id": "a29500c4e13a7f6095c7f4e5422452bda5424fee164571862fa4789dda1bfcfc",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "JCoinz",
+                "source_mapping": {
+                  "start": 698,
+                  "length": 2078,
+                  "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                  "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59,
+                    60,
+                    61,
+                    62,
+                    63,
+                    64,
+                    65,
+                    66
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "JCoinz",
+                  "is_complex_code": false,
+                  "is_erc20": true,
+                  "number_functions": 15,
+                  "features": [
+                    "Send ETH"
+                  ],
+                  "erc20_pause": false,
+                  "erc20_can_mint": false,
+                  "erc20_race_condition_mitigated": false
+                }
+              }
+            ]
+          },
+          "number_lines": 65,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [
+            "ERC20"
+          ],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 16,
+            "low_issues": 2,
+            "medium_issues": 2,
+            "high_issues": 1
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.26",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".26"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.26 (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.26](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L1) allows old versions\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L1",
+              "id": "78a0aaa4d6f193bc4a5f67d759fb451b484e0114ffbf1ed60c290367a05b7d99",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.26 is not recommended for deployment\n",
+              "markdown": "solc-0.4.26 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "e85e93c612cb109c115ab31accf43cd25c590bd8f9b6a43b662115b987f777c3",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_owner",
+                  "source_mapping": {
+                    "start": 2334,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      56
+                    ],
+                    "starting_column": 24,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "allowance",
+                      "source_mapping": {
+                        "start": 2315,
+                        "length": 140,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          56,
+                          57,
+                          58
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "JCoinz",
+                          "source_mapping": {
+                            "start": 698,
+                            "length": 2078,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "allowance(address,address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter JCoinz.allowance(address,address)._owner (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#56) is not in mixedCase\n",
+              "markdown": "Parameter [JCoinz.allowance(address,address)._owner](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L56) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L56",
+              "id": "09059e69c7c3fe94c9500670f007874234186276857a27d45e2ffc53e511f54a",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_spender",
+                  "source_mapping": {
+                    "start": 2128,
+                    "length": 16,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      51
+                    ],
+                    "starting_column": 22,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "approve",
+                      "source_mapping": {
+                        "start": 2111,
+                        "length": 199,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          51,
+                          52,
+                          53,
+                          54,
+                          55
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "JCoinz",
+                          "source_mapping": {
+                            "start": 698,
+                            "length": 2078,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "approve(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter JCoinz.approve(address,uint256)._spender (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#51) is not in mixedCase\n",
+              "markdown": "Parameter [JCoinz.approve(address,uint256)._spender](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L51) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L51",
+              "id": "11c43450a3b8621e3a81a89720f42893d8673fc9108b550f6bf545881faec586",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_to",
+                  "source_mapping": {
+                    "start": 1348,
+                    "length": 11,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      29
+                    ],
+                    "starting_column": 23,
+                    "ending_column": 34
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transfer",
+                      "source_mapping": {
+                        "start": 1330,
+                        "length": 333,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "JCoinz",
+                          "source_mapping": {
+                            "start": 698,
+                            "length": 2078,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transfer(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter JCoinz.transfer(address,uint256)._to (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#29) is not in mixedCase\n",
+              "markdown": "Parameter [JCoinz.transfer(address,uint256)._to](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L29) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L29",
+              "id": "34c3150f7271f76aea5bebc74e14e9d0a1e68facb7ed6c39f862c52011f5a07d",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_totalSupply",
+                  "source_mapping": {
+                    "start": 730,
+                    "length": 70,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      14
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 75
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "JCoinz",
+                      "source_mapping": {
+                        "start": 698,
+                        "length": 2078,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable_constant",
+                    "convention": "UPPER_CASE_WITH_UNDERSCORES"
+                  }
+                }
+              ],
+              "description": "Constant JCoinz._totalSupply (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#14) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "markdown": "Constant [JCoinz._totalSupply](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L14) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L14",
+              "id": "3a1b45c87977c3ed16a2eac179cca06c1178b07e662e8ca21352504430d3de21",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_value",
+                  "source_mapping": {
+                    "start": 1718,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      39
+                    ],
+                    "starting_column": 55,
+                    "ending_column": 69
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferFrom",
+                      "source_mapping": {
+                        "start": 1668,
+                        "length": 438,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "JCoinz",
+                          "source_mapping": {
+                            "start": 698,
+                            "length": 2078,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferFrom(address,address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter JCoinz.transferFrom(address,address,uint256)._value (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#39) is not in mixedCase\n",
+              "markdown": "Parameter [JCoinz.transferFrom(address,address,uint256)._value](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L39) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L39",
+              "id": "3b95c98d0bbaa7afc4e5b5bcbb27c35bc768595f79c5f4627c20a488577cb625",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_value",
+                  "source_mapping": {
+                    "start": 2146,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      51
+                    ],
+                    "starting_column": 40,
+                    "ending_column": 54
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "approve",
+                      "source_mapping": {
+                        "start": 2111,
+                        "length": 199,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          51,
+                          52,
+                          53,
+                          54,
+                          55
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "JCoinz",
+                          "source_mapping": {
+                            "start": 698,
+                            "length": 2078,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "approve(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter JCoinz.approve(address,uint256)._value (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#51) is not in mixedCase\n",
+              "markdown": "Parameter [JCoinz.approve(address,uint256)._value](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L51) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L51",
+              "id": "73a5c0ceeed540369d9e7f66985a273200278d4b708c9d288613252f8403b1f9",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "owner_txorigin35",
+                  "source_mapping": {
+                    "start": 2511,
+                    "length": 24,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      59
+                    ],
+                    "starting_column": 56,
+                    "ending_column": 80
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferTo_txorigin35",
+                      "source_mapping": {
+                        "start": 2456,
+                        "length": 152,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          59,
+                          60,
+                          61,
+                          62
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "JCoinz",
+                          "source_mapping": {
+                            "start": 698,
+                            "length": 2078,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferTo_txorigin35(address,uint256,address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter JCoinz.transferTo_txorigin35(address,uint256,address).owner_txorigin35 (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#59) is not in mixedCase\n",
+              "markdown": "Parameter [JCoinz.transferTo_txorigin35(address,uint256,address).owner_txorigin35](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L59) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L59",
+              "id": "8040b9af6d6180714e699c68249804aeb1a2431f1e34e7d889733f52906bb99f",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_owner",
+                  "source_mapping": {
+                    "start": 1233,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      26
+                    ],
+                    "starting_column": 24,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "balanceOf",
+                      "source_mapping": {
+                        "start": 1214,
+                        "length": 111,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          26,
+                          27,
+                          28
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "JCoinz",
+                          "source_mapping": {
+                            "start": 698,
+                            "length": 2078,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "balanceOf(address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter JCoinz.balanceOf(address)._owner (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#26) is not in mixedCase\n",
+              "markdown": "Parameter [JCoinz.balanceOf(address)._owner](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L26) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L26",
+              "id": "8d14c44efa909dbc3fa3d5d392ec2a09196793db78a71f675da8c32701195160",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_to",
+                  "source_mapping": {
+                    "start": 1705,
+                    "length": 11,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      39
+                    ],
+                    "starting_column": 42,
+                    "ending_column": 53
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferFrom",
+                      "source_mapping": {
+                        "start": 1668,
+                        "length": 438,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "JCoinz",
+                          "source_mapping": {
+                            "start": 698,
+                            "length": 2078,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferFrom(address,address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter JCoinz.transferFrom(address,address,uint256)._to (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#39) is not in mixedCase\n",
+              "markdown": "Parameter [JCoinz.transferFrom(address,address,uint256)._to](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L39) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L39",
+              "id": "8f628a897e9713cd266c283a5aebcbcecca29e83e6617d3bdac11168673a494c",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "transferTo_txorigin35",
+                  "source_mapping": {
+                    "start": 2456,
+                    "length": 152,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      59,
+                      60,
+                      61,
+                      62
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "JCoinz",
+                      "source_mapping": {
+                        "start": 698,
+                        "length": 2078,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "transferTo_txorigin35(address,uint256,address)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function JCoinz.transferTo_txorigin35(address,uint256,address) (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#59-62) is not in mixedCase\n",
+              "markdown": "Function [JCoinz.transferTo_txorigin35(address,uint256,address)](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L59-L62) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L59-L62",
+              "id": "9acde8da9388ec631a9262a9b387f35b551095bcd64d1975e5e7f14851b7a88a",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_value",
+                  "source_mapping": {
+                    "start": 1361,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      29
+                    ],
+                    "starting_column": 36,
+                    "ending_column": 50
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transfer",
+                      "source_mapping": {
+                        "start": 1330,
+                        "length": 333,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "JCoinz",
+                          "source_mapping": {
+                            "start": 698,
+                            "length": 2078,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transfer(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter JCoinz.transfer(address,uint256)._value (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#29) is not in mixedCase\n",
+              "markdown": "Parameter [JCoinz.transfer(address,uint256)._value](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L29) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L29",
+              "id": "a310b05d4dbbd405b8f81994c3b64bf1a92f61eea578a10827640e2688cd7740",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_spender",
+                  "source_mapping": {
+                    "start": 2350,
+                    "length": 16,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      56
+                    ],
+                    "starting_column": 40,
+                    "ending_column": 56
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "allowance",
+                      "source_mapping": {
+                        "start": 2315,
+                        "length": 140,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          56,
+                          57,
+                          58
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "JCoinz",
+                          "source_mapping": {
+                            "start": 698,
+                            "length": 2078,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "allowance(address,address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter JCoinz.allowance(address,address)._spender (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#56) is not in mixedCase\n",
+              "markdown": "Parameter [JCoinz.allowance(address,address)._spender](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L56) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L56",
+              "id": "ce9320f43820bdb95ba6a24e5bc8f73e22f857a52f75fc56847076bfdd4822ba",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_from",
+                  "source_mapping": {
+                    "start": 1690,
+                    "length": 13,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      39
+                    ],
+                    "starting_column": 27,
+                    "ending_column": 40
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferFrom",
+                      "source_mapping": {
+                        "start": 1668,
+                        "length": 438,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "JCoinz",
+                          "source_mapping": {
+                            "start": 698,
+                            "length": 2078,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferFrom(address,address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter JCoinz.transferFrom(address,address,uint256)._from (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#39) is not in mixedCase\n",
+              "markdown": "Parameter [JCoinz.transferFrom(address,address,uint256)._from](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L39) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L39",
+              "id": "cfb232638608b86b3bad57fe856849510267940bb31df34426fc3d35b21020ca",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "slitherConstructorConstantVariables",
+                  "source_mapping": {
+                    "start": 698,
+                    "length": 2078,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39,
+                      40,
+                      41,
+                      42,
+                      43,
+                      44,
+                      45,
+                      46,
+                      47,
+                      48,
+                      49,
+                      50,
+                      51,
+                      52,
+                      53,
+                      54,
+                      55,
+                      56,
+                      57,
+                      58,
+                      59,
+                      60,
+                      61,
+                      62,
+                      63,
+                      64,
+                      65,
+                      66
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "JCoinz",
+                      "source_mapping": {
+                        "start": 698,
+                        "length": 2078,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "slitherConstructorConstantVariables()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "_totalSupply = 1000000000000000000000000000000000",
+                  "source_mapping": {
+                    "start": 730,
+                    "length": 70,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      14
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 75
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "slitherConstructorConstantVariables",
+                      "source_mapping": {
+                        "start": 698,
+                        "length": 2078,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "JCoinz",
+                          "source_mapping": {
+                            "start": 698,
+                            "length": 2078,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "slitherConstructorConstantVariables()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "JCoinz.slitherConstructorConstantVariables() (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#13-66) uses literals with too many digits:\n\t- _totalSupply = 1000000000000000000000000000000000 (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#14)\n",
+              "markdown": "[JCoinz.slitherConstructorConstantVariables()](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L13-L66) uses literals with too many digits:\n\t- [_totalSupply = 1000000000000000000000000000000000](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L14)\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L13-L66",
+              "id": "b6efbb14c0d2158c8eb4e02ac6e64d020aec20780a7a48b66f19e0b00568dfdf",
+              "check": "too-many-digits",
+              "impact": "Informational",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "totalSupply",
+                  "source_mapping": {
+                    "start": 1152,
+                    "length": 19,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      23
+                    ],
+                    "starting_column": 46,
+                    "ending_column": 65
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "totalSupply",
+                      "source_mapping": {
+                        "start": 1111,
+                        "length": 98,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          23,
+                          24,
+                          25
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "JCoinz",
+                          "source_mapping": {
+                            "start": 698,
+                            "length": 2078,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "totalSupply()"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "function",
+                  "name": "totalSupply",
+                  "source_mapping": {
+                    "start": 1111,
+                    "length": 98,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      23,
+                      24,
+                      25
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "JCoinz",
+                      "source_mapping": {
+                        "start": 698,
+                        "length": 2078,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "totalSupply()"
+                  }
+                },
+                {
+                  "type": "function",
+                  "name": "totalSupply",
+                  "source_mapping": {
+                    "start": 49,
+                    "length": 62,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 67
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "IERC20",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 671,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "totalSupply()"
+                  }
+                }
+              ],
+              "description": "JCoinz.totalSupply().totalSupply (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#23) shadows:\n\t- JCoinz.totalSupply() (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#23-25) (function)\n\t- IERC20.totalSupply() (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#4) (function)\n",
+              "markdown": "[JCoinz.totalSupply().totalSupply](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L23) shadows:\n\t- [JCoinz.totalSupply()](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L23-L25) (function)\n\t- [IERC20.totalSupply()](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L4) (function)\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L23",
+              "id": "29dac584133709463cba8d1518501b696c453588adeb9682570421c1db469032",
+              "check": "shadowing-local",
+              "impact": "Low",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "to",
+                  "source_mapping": {
+                    "start": 2487,
+                    "length": 10,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      59
+                    ],
+                    "starting_column": 32,
+                    "ending_column": 42
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferTo_txorigin35",
+                      "source_mapping": {
+                        "start": 2456,
+                        "length": 152,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          59,
+                          60,
+                          61,
+                          62
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "JCoinz",
+                          "source_mapping": {
+                            "start": 698,
+                            "length": 2078,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferTo_txorigin35(address,uint256,address)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "to.send(amount)",
+                  "source_mapping": {
+                    "start": 2590,
+                    "length": 15,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      61
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 18
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferTo_txorigin35",
+                      "source_mapping": {
+                        "start": 2456,
+                        "length": 152,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          59,
+                          60,
+                          61,
+                          62
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "JCoinz",
+                          "source_mapping": {
+                            "start": 698,
+                            "length": 2078,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferTo_txorigin35(address,uint256,address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "JCoinz.transferTo_txorigin35(address,uint256,address).to (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#59) lacks a zero-check on :\n\t\t- to.send(amount) (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#61)\n",
+              "markdown": "[JCoinz.transferTo_txorigin35(address,uint256,address).to](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L59) lacks a zero-check on :\n\t\t- [to.send(amount)](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L61)\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L59",
+              "id": "035bfb1763e9d721f271abeb5a7911001f10497b92b341f0a0b9a1873f66ee38",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "transferTo_txorigin35",
+                  "source_mapping": {
+                    "start": 2456,
+                    "length": 152,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      59,
+                      60,
+                      61,
+                      62
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "JCoinz",
+                      "source_mapping": {
+                        "start": 698,
+                        "length": 2078,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "transferTo_txorigin35(address,uint256,address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "require(bool)(tx.origin == owner_txorigin35)",
+                  "source_mapping": {
+                    "start": 2548,
+                    "length": 38,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      60
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 41
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferTo_txorigin35",
+                      "source_mapping": {
+                        "start": 2456,
+                        "length": 152,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          59,
+                          60,
+                          61,
+                          62
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "JCoinz",
+                          "source_mapping": {
+                            "start": 698,
+                            "length": 2078,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferTo_txorigin35(address,uint256,address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "JCoinz.transferTo_txorigin35(address,uint256,address) (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#59-62) uses tx.origin for authorization: require(bool)(tx.origin == owner_txorigin35) (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#60)\n",
+              "markdown": "[JCoinz.transferTo_txorigin35(address,uint256,address)](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L59-L62) uses tx.origin for authorization: [require(bool)(tx.origin == owner_txorigin35)](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L60)\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L59-L62",
+              "id": "c0364f58f2bae2bb77cdbd84ccddf54f3ea257038e910bc21576a83130f6c2f8",
+              "check": "tx-origin",
+              "impact": "Medium",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "transferTo_txorigin35",
+                  "source_mapping": {
+                    "start": 2456,
+                    "length": 152,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      59,
+                      60,
+                      61,
+                      62
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "JCoinz",
+                      "source_mapping": {
+                        "start": 698,
+                        "length": 2078,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "transferTo_txorigin35(address,uint256,address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "to.send(amount)",
+                  "source_mapping": {
+                    "start": 2590,
+                    "length": 15,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      61
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 18
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferTo_txorigin35",
+                      "source_mapping": {
+                        "start": 2456,
+                        "length": 152,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          59,
+                          60,
+                          61,
+                          62
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "JCoinz",
+                          "source_mapping": {
+                            "start": 698,
+                            "length": 2078,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferTo_txorigin35(address,uint256,address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "JCoinz.transferTo_txorigin35(address,uint256,address) (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#59-62) ignores return value by to.send(amount) (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#61)\n",
+              "markdown": "[JCoinz.transferTo_txorigin35(address,uint256,address)](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L59-L62) ignores return value by [to.send(amount)](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L61)\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L59-L62",
+              "id": "02e3453616973536a83f9d4dc4b3c1493b66b522133b97fcc2e6cc6be8abca28",
+              "check": "unchecked-send",
+              "impact": "Medium",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "transferTo_txorigin35",
+                  "source_mapping": {
+                    "start": 2456,
+                    "length": 152,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      59,
+                      60,
+                      61,
+                      62
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 2
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "JCoinz",
+                      "source_mapping": {
+                        "start": 698,
+                        "length": 2078,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "transferTo_txorigin35(address,uint256,address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "to.send(amount)",
+                  "source_mapping": {
+                    "start": 2590,
+                    "length": 15,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      61
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 18
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferTo_txorigin35",
+                      "source_mapping": {
+                        "start": 2456,
+                        "length": 152,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          59,
+                          60,
+                          61,
+                          62
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "JCoinz",
+                          "source_mapping": {
+                            "start": 698,
+                            "length": 2078,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferTo_txorigin35(address,uint256,address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "JCoinz.transferTo_txorigin35(address,uint256,address) (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#59-62) sends eth to arbitrary user\n\tDangerous calls:\n\t- to.send(amount) (FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#61)\n",
+              "markdown": "[JCoinz.transferTo_txorigin35(address,uint256,address)](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L59-L62) sends eth to arbitrary user\n\tDangerous calls:\n\t- [to.send(amount)](FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L61)\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x2c3b9d47f9a80507e93c9401eb22e111672604a3.sol#L59-L62",
+              "id": "f0e6f2929d0bcf86132611befa467533b63b96804a9f0a9fbb1028977dbd80db",
+              "check": "arbitrary-send-eth",
+              "impact": "High",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

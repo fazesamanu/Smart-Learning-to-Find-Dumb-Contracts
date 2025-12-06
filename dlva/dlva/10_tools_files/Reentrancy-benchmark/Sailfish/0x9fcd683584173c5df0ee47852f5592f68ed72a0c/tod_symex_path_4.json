@@ -1,0 +1,484 @@
+{
+    "file": "0x9fcd683584173c5df0ee47852f5592f68ed72a0c.sol",
+    "global_structs": [
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x32"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x33"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x34"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "lastPricePaid",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x6"
+            ]
+        },
+        {
+            "name": "creator",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x3"
+            ]
+        },
+        {
+            "name": "currentOwner",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x4"
+            ]
+        },
+        {
+            "name": "previousOwner",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x5"
+            ]
+        },
+        {
+            "name": "EtherImp",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3",
+            "instructions": [
+                "creator = msg_sender"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4",
+            "instructions": [
+                "currentOwner = creator"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5",
+            "instructions": [
+                "previousOwner = creator"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6",
+            "instructions": [
+                "CLR_0 = msg.value",
+                "lastPricePaid = CLR_0"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x32",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x33",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x34",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "previousOwner",
+            "addrs": [
+                "0x2",
+                "0x8"
+            ]
+        },
+        {
+            "name": "currentOwner",
+            "addrs": [
+                "0x2",
+                "0xc"
+            ]
+        },
+        {
+            "name": "lastPricePaid",
+            "addrs": [
+                "0x2",
+                "0x10"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x8",
+            "instructions": [
+                "CLR_1 = msg.sender",
+                "RTMP_26 = CLR_1 != currentOwner",
+                "CONDITION RTMP_26 0x9 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x9",
+            "instructions": [
+                "CLR_2 = msg.value",
+                "RTMP_27 = CLR_2 > 0",
+                "CONDITION RTMP_27 0xa 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa",
+            "instructions": [
+                "CLR_3 = msg.value",
+                "RTMP_28 = CLR_3 < lastPricePaid",
+                "CONDITION RTMP_28 0x7 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x7",
+            "instructions": [
+                "previousOwner = currentOwner"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xc",
+            "instructions": [
+                "CLR_4 = msg.sender",
+                "RTMP_29 = CLR_4 != currentOwner",
+                "CONDITION RTMP_29 0xd 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xd",
+            "instructions": [
+                "CLR_5 = msg.value",
+                "RTMP_30 = CLR_5 > 0",
+                "CONDITION RTMP_30 0xe 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xe",
+            "instructions": [
+                "CLR_6 = msg.value",
+                "RTMP_31 = CLR_6 < lastPricePaid",
+                "CONDITION RTMP_31 0xb 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb",
+            "instructions": [
+                "CLR_7 = msg.sender",
+                "currentOwner = CLR_7"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10",
+            "instructions": [
+                "CLR_8 = msg.sender",
+                "RTMP_32 = CLR_8 != currentOwner",
+                "CONDITION RTMP_32 0x11 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11",
+            "instructions": [
+                "CLR_9 = msg.value",
+                "RTMP_33 = CLR_9 > 0",
+                "CONDITION RTMP_33 0x12 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x12",
+            "instructions": [
+                "CLR_10 = msg.value",
+                "RTMP_34 = CLR_10 < lastPricePaid",
+                "CONDITION RTMP_34 0xf 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf",
+            "instructions": [
+                "CLR_11 = msg.value",
+                "lastPricePaid = CLR_11"
+            ]
+        }
+    ],
+    "root_addr": "0x35",
+    "dest_addrs": [
+        "0x38"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "buyBottle",
+            "addr": "0x35",
+            "instructions": [
+                "NOP",
+                "JUMP 0x36"
+            ]
+        },
+        {
+            "scope": "buyBottle",
+            "addr": "0x36",
+            "instructions": [
+                "CLR_12 = msg.sender",
+                "TMP_2 = CLR_12 != currentOwner",
+                "CONDITION TMP_2 0x36_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "buyBottle",
+            "addr": "0x36_r0",
+            "instructions": [
+                "JUMP 0x37"
+            ]
+        },
+        {
+            "scope": "buyBottle",
+            "addr": "0x37",
+            "instructions": [
+                "CLR_13 = msg.value",
+                "TMP_4 = CLR_13 > 0",
+                "CONDITION TMP_4 0x37_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "buyBottle",
+            "addr": "0x37_r0",
+            "instructions": [
+                "JUMP 0x38"
+            ]
+        },
+        {
+            "scope": "buyBottle",
+            "addr": "0x38",
+            "instructions": [
+                "CLR_14 = msg.value",
+                "TMP_6 = CLR_14 < lastPricePaid",
+                "CONDITION TMP_6 0x38_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "buyBottle",
+            "addr": "0x38_r0",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "buyBottle",
+            "addr": "0x39",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

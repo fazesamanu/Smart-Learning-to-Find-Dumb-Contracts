@@ -1,0 +1,83 @@
+Results for Reentrancy_benchmark_0x4efc0af64ddbc1fd323e96066b379ab6aaf5fb4a.json:
+Queries
+query id:       reentrancyCall_0_229
+execution time: 4
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_388(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_355(#8,#9,#10,#3,#4,#5,#6,#7),
+ (>= (:var 8) 2),
+ (= (:var 0) (- (:var 8) 1)),
+ (let ((a!1 (store (store (store (store (:var 10) (:var 8) 0)
+                                (+ (:var 8) 1)
+                                (:var 12))
+                         (+ (:var 8) 2)
+                         384)
+                  (- (:var 8) 2)
+                  (:var 18))))
+  (= (:var 2) (store a!1 (- (:var 8) 3) (:var 20)))),
+ (let ((a!1 (store (store (store (store (:var 9) (:var 8) true)
+                                (+ (:var 8) 1)
+                                (:var 11))
+                         (+ (:var 8) 2)
+                         true)
+                  (- (:var 8) 2)
+                  (:var 17))))
+  (= (:var 1) (store a!1 (- (:var 8) 3) (:var 19)))),
+ (= (:var 20)
+   (ite (and (:var 13) (:var 15))
+        (ite (= (:var 16) 0) 0 (div (:var 14) (:var 16)))
+        0)),
+ (= (:var 19) (and (:var 13) (:var 15))),
+ (= (:var 18) (select (:var 10) (- (:var 8) 3))),
+ (= (:var 17) (select (:var 9) (- (:var 8) 3))),
+ (= (:var 16) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 15) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 1))),
+ (or (not (:var 11)) (not (= (:var 12) 0))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 2))),
+ (< (:var 8) 1022).
+
+query id:       reentrancyCall_0_52
+execution time: 3
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_388(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_355(#8,#9,#10,#3,#4,#5,#6,#7),
+ (>= (:var 8) 2),
+ (= (:var 0) (- (:var 8) 1)),
+ (let ((a!1 (store (store (store (store (:var 10) (:var 8) 0)
+                                (+ (:var 8) 1)
+                                (:var 12))
+                         (+ (:var 8) 2)
+                         384)
+                  (- (:var 8) 2)
+                  (:var 18))))
+  (= (:var 2) (store a!1 (- (:var 8) 3) (:var 20)))),
+ (let ((a!1 (store (store (store (store (:var 9) (:var 8) true)
+                                (+ (:var 8) 1)
+                                (:var 11))
+                         (+ (:var 8) 2)
+                         true)
+                  (- (:var 8) 2)
+                  (:var 17))))
+  (= (:var 1) (store a!1 (- (:var 8) 3) (:var 19)))),
+ (= (:var 20)
+   (ite (and (:var 13) (:var 15))
+        (ite (= (:var 16) 0) 0 (div (:var 14) (:var 16)))
+        0)),
+ (= (:var 19) (and (:var 13) (:var 15))),
+ (= (:var 18) (select (:var 10) (- (:var 8) 3))),
+ (= (:var 17) (select (:var 9) (- (:var 8) 3))),
+ (= (:var 16) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 15) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 1))),
+ (or (not (:var 11)) (not (= (:var 12) 0))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 2))),
+ (< (:var 8) 1022).
+
+

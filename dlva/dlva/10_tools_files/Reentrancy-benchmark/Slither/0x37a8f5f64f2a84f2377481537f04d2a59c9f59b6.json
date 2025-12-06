@@ -1,0 +1,650 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 17 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 17 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "e0d44b7210748993b8a1812074a5cdc8597ffc76c6e54ede4b0b71f1e2d074c6",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "EthereumProxy",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 409,
+                  "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                  "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "EthereumProxy",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": [
+                    "Receive ETH",
+                    "Send ETH",
+                    "Proxy"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 17,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 3,
+            "low_issues": 1,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_paymentReference",
+                  "source_mapping": {
+                    "start": 272,
+                    "length": 32,
+                    "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 55,
+                    "ending_column": 87
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferWithReference",
+                      "source_mapping": {
+                        "start": 220,
+                        "length": 214,
+                        "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EthereumProxy",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 409,
+                            "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                            "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferWithReference(address,bytes)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter EthereumProxy.transferWithReference(address,bytes)._paymentReference (cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol#10) is not in mixedCase\n",
+              "markdown": "Parameter [EthereumProxy.transferWithReference(address,bytes)._paymentReference](cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol#L10) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol#L10",
+              "id": "c49c8383e21bf5928c2888be8387bf16f67684276156eb0aab4baf960088cd4f",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_to",
+                  "source_mapping": {
+                    "start": 251,
+                    "length": 19,
+                    "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 34,
+                    "ending_column": 53
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferWithReference",
+                      "source_mapping": {
+                        "start": 220,
+                        "length": 214,
+                        "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EthereumProxy",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 409,
+                            "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                            "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferWithReference(address,bytes)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter EthereumProxy.transferWithReference(address,bytes)._to (cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol#10) is not in mixedCase\n",
+              "markdown": "Parameter [EthereumProxy.transferWithReference(address,bytes)._to](cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol#L10) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol#L10",
+              "id": "e62424bb4fd8a5e3c08dac6e1e45a0654909b8383758bea094c8ebcf7da9f8dd",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "transferWithReference",
+                  "source_mapping": {
+                    "start": 220,
+                    "length": 214,
+                    "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "EthereumProxy",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 409,
+                        "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "transferWithReference(address,bytes)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "_to.transfer(msg.value)",
+                  "source_mapping": {
+                    "start": 339,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      14
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 28
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferWithReference",
+                      "source_mapping": {
+                        "start": 220,
+                        "length": 214,
+                        "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EthereumProxy",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 409,
+                            "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                            "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferWithReference(address,bytes)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "external_calls"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "TransferWithReference(_to,msg.value,_paymentReference)",
+                  "source_mapping": {
+                    "start": 368,
+                    "length": 61,
+                    "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      15
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 66
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferWithReference",
+                      "source_mapping": {
+                        "start": 220,
+                        "length": 214,
+                        "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EthereumProxy",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 409,
+                            "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                            "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferWithReference(address,bytes)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "event"
+                  }
+                }
+              ],
+              "description": "Reentrancy in EthereumProxy.transferWithReference(address,bytes) (cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol#10-16):\n\tExternal calls:\n\t- _to.transfer(msg.value) (cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol#14)\n\tEvent emitted after the call(s):\n\t- TransferWithReference(_to,msg.value,_paymentReference) (cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol#15)\n",
+              "markdown": "Reentrancy in [EthereumProxy.transferWithReference(address,bytes)](cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol#L10-L16):\n\tExternal calls:\n\t- [_to.transfer(msg.value)](cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol#L14)\n\tEvent emitted after the call(s):\n\t- [TransferWithReference(_to,msg.value,_paymentReference)](cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol#L15)\n",
+              "first_markdown_element": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol#L10-L16",
+              "id": "d5c1c930ea55ce7eba13dfd4dc936e8c3b845eeefe3695d756c6ebb12bbf5542",
+              "check": "reentrancy-unlimited-gas",
+              "impact": "Informational",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_to",
+                  "source_mapping": {
+                    "start": 251,
+                    "length": 19,
+                    "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 34,
+                    "ending_column": 53
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferWithReference",
+                      "source_mapping": {
+                        "start": 220,
+                        "length": 214,
+                        "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EthereumProxy",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 409,
+                            "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                            "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferWithReference(address,bytes)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "_to.transfer(msg.value)",
+                  "source_mapping": {
+                    "start": 339,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      14
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 28
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferWithReference",
+                      "source_mapping": {
+                        "start": 220,
+                        "length": 214,
+                        "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EthereumProxy",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 409,
+                            "filename_relative": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                            "filename_short": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferWithReference(address,bytes)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "EthereumProxy.transferWithReference(address,bytes)._to (cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol#10) lacks a zero-check on :\n\t\t- _to.transfer(msg.value) (cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol#14)\n",
+              "markdown": "[EthereumProxy.transferWithReference(address,bytes)._to](cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol#L10) lacks a zero-check on :\n\t\t- [_to.transfer(msg.value)](cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol#L14)\n",
+              "first_markdown_element": "cleanSource/0x37a8f5f64f2a84f2377481537f04d2a59c9f59b6.sol#L10",
+              "id": "f586b22da3646d30b5df3ba4ef159ea466c0d8a28e1de7987d5f8a29cc709f68",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

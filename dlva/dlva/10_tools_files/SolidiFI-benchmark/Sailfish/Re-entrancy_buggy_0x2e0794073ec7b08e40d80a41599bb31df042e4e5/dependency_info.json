@@ -1,0 +1,94 @@
+{
+    "Re-entrancy_buggy_0x2e0794073ec7b08e40d80a41599bb31df042e4e5.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawBalance_re_ent33",
+                "withdrawBalance_re_ent33"
+            ],
+            "from_function": "withdrawBalance_re_ent33",
+            "to_function": "withdrawBalance_re_ent33",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 37\nFunction: withdrawBalance_re_ent33\nNode: \nEXPRESSION (success) = msg.sender.call.value(userBalance_re_ent33[msg.sender])()\nIRS: \nTMP_15(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_6 \"",
+                        "\"BlockID: 26\nFunction: withdrawBalance_re_ent33\nNode: \nEXPRESSION userBalance_re_ent33[msg.sender] = 0\nIRS: \nREF_7 := 0\""
+                    ],
+                    "state_variable": "userBalance_re_ent33"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "Try",
+                "StartGame"
+            ],
+            "First_function": "StartGame",
+            "Second_function": "Try",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: StartGame\nNode: \nEXPRESSION responseHash = keccak256()(_response)\nIRS: \nresponseHash := TMP_8\"",
+                        "\"BlockID: 4\nFunction: Try\nNode: \nIF responseHash == keccak256()(_response) && msg.value > 1000000000000000000\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "responseHash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "Try",
+                "NewQuestion"
+            ],
+            "First_function": "NewQuestion",
+            "Second_function": "Try",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: NewQuestion\nNode: \nEXPRESSION responseHash = _responseHash\nIRS: \nresponseHash := _responseHash\"",
+                        "\"BlockID: 4\nFunction: Try\nNode: \nIF responseHash == keccak256()(_response) && msg.value > 1000000000000000000\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "responseHash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "StopGame",
+                "StartGame"
+            ],
+            "First_function": "StartGame",
+            "Second_function": "StopGame",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: StartGame\nNode: \nEXPRESSION questionSender = msg.sender\nIRS: \nquestionSender := msg.sender\"",
+                        "\"BlockID: 15\nFunction: StopGame\nNode: \nEXPRESSION require(bool)(msg.sender == questionSender)\nIRS: \nTMP_10 = SOLIDITY_CALL require(bool)(TMP_9)\""
+                    ],
+                    "state_variable": "questionSender"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawBalance_re_ent33",
+                "withdrawBalance_re_ent33"
+            ],
+            "First_function": "withdrawBalance_re_ent33",
+            "Second_function": "withdrawBalance_re_ent33",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 45\nFunction: withdrawBalance_re_ent33\nNode: \nEXPRESSION userBalance_re_ent33[msg.sender] = 0\nIRS: \nREF_7 := 0\"",
+                        "\"BlockID: 23\nFunction: withdrawBalance_re_ent33\nNode: \nEXPRESSION (success) = msg.sender.call.value(userBalance_re_ent33[msg.sender])()\nIRS: \nTMP_15(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_6 \""
+                    ],
+                    "state_variable": "userBalance_re_ent33"
+                }
+            ]
+        }
+    ]
+}

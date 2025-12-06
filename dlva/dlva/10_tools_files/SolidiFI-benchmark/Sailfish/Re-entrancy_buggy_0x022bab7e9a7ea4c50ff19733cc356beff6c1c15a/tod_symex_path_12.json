@@ -1,0 +1,1313 @@
+{
+    "file": "Re-entrancy_buggy_0x022bab7e9a7ea4c50ff19733cc356beff6c1c15a.sol",
+    "global_structs": [
+        {
+            "name": "GameInfo",
+            "fields": {
+                "funderNum": [
+                    "integer"
+                ],
+                "funder": [
+                    "array",
+                    "integer",
+                    "integer"
+                ],
+                "winner": [
+                    "array",
+                    "integer",
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x9a"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x9b"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x9c"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "lastGame",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "funderBalance",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "referrer",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "balances_re_ent8",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "count",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x4a"
+            ]
+        },
+        {
+            "name": "games",
+            "type": [
+                "array",
+                "GameInfo"
+            ],
+            "init": [
+                "0x5"
+            ]
+        },
+        {
+            "name": "gameNum",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x49"
+            ]
+        },
+        {
+            "name": "manager",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x3"
+            ]
+        },
+        {
+            "name": "Game105",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3",
+            "instructions": [
+                "manager = msg_sender"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4",
+            "instructions": [
+                "CLR_0 = referrer[manager]",
+                "REF_100 = CLR_0",
+                "referrer[manager] = manager"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5",
+            "instructions": [
+                "CLR_1 = games.funderNum",
+                "REF_101 = CLR_1",
+                "games.funderNum = 0"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x49",
+            "instructions": [
+                "gameNum = 0"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4a",
+            "instructions": [
+                "count = 50000000000000000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4b",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4c",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4d",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x9a",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x9b",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x9c",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "games",
+            "addrs": [
+                "0x2",
+                "0x7",
+                "0x9",
+                "0xd",
+                "0x10",
+                "0x13",
+                "0x26"
+            ]
+        },
+        {
+            "name": "lastGame",
+            "addrs": [
+                "0x2",
+                "0xb"
+            ]
+        },
+        {
+            "name": "funderBalance",
+            "addrs": [
+                "0x2",
+                "0x16",
+                "0x19",
+                "0x1c",
+                "0x1f",
+                "0x2a",
+                "0x2e",
+                "0x32",
+                "0x36",
+                "0x3a",
+                "0x3e",
+                "0x47"
+            ]
+        },
+        {
+            "name": "gameNum",
+            "addrs": [
+                "0x2",
+                "0x22"
+            ]
+        },
+        {
+            "name": "referrer",
+            "addrs": [
+                "0x2",
+                "0x42",
+                "0x45"
+            ]
+        },
+        {
+            "name": "balances_re_ent8",
+            "addrs": [
+                "0x2",
+                "0x48"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x7",
+            "instructions": [
+                "TMP_42 = 100 * count",
+                "CLR_2 = msg.value",
+                "RTMP_43 = CLR_2 == TMP_42",
+                "CONDITION RTMP_43 0x6 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x6",
+            "instructions": [
+                "CLR_3 = games[gameNum]",
+                "REF_102 = CLR_3",
+                "CLR_4 = REF_102.funder",
+                "REF_103 = CLR_4",
+                "CLR_5 = games[gameNum]",
+                "REF_104 = CLR_5",
+                "CLR_6 = REF_104.funderNum",
+                "REF_105 = CLR_6",
+                "CLR_7 = REF_103[REF_105]",
+                "REF_106 = CLR_7",
+                "CLR_8 = msg.sender",
+                "REF_103[REF_105] = CLR_8"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x9",
+            "instructions": [
+                "TMP_45 = 100 * count",
+                "CLR_9 = msg.value",
+                "RTMP_46 = CLR_9 == TMP_45",
+                "CONDITION RTMP_46 0x8 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x8",
+            "instructions": [
+                "CLR_10 = games[gameNum]",
+                "REF_107 = CLR_10",
+                "CLR_11 = REF_107.funderNum",
+                "REF_108 = CLR_11",
+                "TMP_44 = REF_108 + 1",
+                "CLR_12 = games[gameNum]",
+                "CLR_12.funderNum = TMP_44"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb",
+            "instructions": [
+                "TMP_47 = 100 * count",
+                "CLR_13 = msg.value",
+                "RTMP_48 = CLR_13 == TMP_47",
+                "CONDITION RTMP_48 0xa 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa",
+            "instructions": [
+                "CLR_14 = msg.sender",
+                "CLR_15 = lastGame[CLR_14]",
+                "REF_109 = CLR_15",
+                "CLR_16 = msg.sender",
+                "lastGame[CLR_16] = gameNum"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xd",
+            "instructions": [
+                "TMP_49 = 100 * count",
+                "CLR_17 = msg.value",
+                "RTMP_50 = CLR_17 == TMP_49",
+                "CONDITION RTMP_50 0xe 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xe",
+            "instructions": [
+                "CLR_18 = games[gameNum]",
+                "REF_114 = CLR_18",
+                "CLR_19 = REF_114.funderNum",
+                "REF_115 = CLR_19",
+                "RTMP_51 = REF_115 == 10",
+                "CONDITION RTMP_51 0xc 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xc",
+            "instructions": [
+                "CLR_20 = games.funder",
+                "REF_110 = CLR_20",
+                "CLR_21 = games[gameNum]",
+                "REF_111 = CLR_21",
+                "CLR_22 = REF_111.winner",
+                "REF_112 = CLR_22",
+                "CLR_23 = REF_112[0]",
+                "REF_113 = CLR_23",
+                "REF_112[0] = REF_110"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10",
+            "instructions": [
+                "TMP_52 = 100 * count",
+                "CLR_24 = msg.value",
+                "RTMP_53 = CLR_24 == TMP_52",
+                "CONDITION RTMP_53 0x11 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11",
+            "instructions": [
+                "CLR_25 = games[gameNum]",
+                "REF_120 = CLR_25",
+                "CLR_26 = REF_120.funderNum",
+                "REF_121 = CLR_26",
+                "RTMP_54 = REF_121 == 10",
+                "CONDITION RTMP_54 0xf 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf",
+            "instructions": [
+                "CLR_27 = games.funder",
+                "REF_116 = CLR_27",
+                "CLR_28 = games[gameNum]",
+                "REF_117 = CLR_28",
+                "CLR_29 = REF_117.winner",
+                "REF_118 = CLR_29",
+                "CLR_30 = REF_118[1]",
+                "REF_119 = CLR_30",
+                "REF_118[1] = REF_116"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x13",
+            "instructions": [
+                "TMP_55 = 100 * count",
+                "CLR_31 = msg.value",
+                "RTMP_56 = CLR_31 == TMP_55",
+                "CONDITION RTMP_56 0x14 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x14",
+            "instructions": [
+                "CLR_32 = games[gameNum]",
+                "REF_126 = CLR_32",
+                "CLR_33 = REF_126.funderNum",
+                "REF_127 = CLR_33",
+                "RTMP_57 = REF_127 == 10",
+                "CONDITION RTMP_57 0x12 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x12",
+            "instructions": [
+                "CLR_34 = games.funder",
+                "REF_122 = CLR_34",
+                "CLR_35 = games[gameNum]",
+                "REF_123 = CLR_35",
+                "CLR_36 = REF_123.winner",
+                "REF_124 = CLR_36",
+                "CLR_37 = REF_124[2]",
+                "REF_125 = CLR_37",
+                "REF_124[2] = REF_122"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x16",
+            "instructions": [
+                "TMP_58 = 100 * count",
+                "CLR_38 = msg.value",
+                "RTMP_59 = CLR_38 == TMP_58",
+                "CONDITION RTMP_59 0x17 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x17",
+            "instructions": [
+                "CLR_39 = games[gameNum]",
+                "REF_132 = CLR_39",
+                "CLR_40 = REF_132.funderNum",
+                "REF_133 = CLR_40",
+                "RTMP_60 = REF_133 == 10",
+                "CONDITION RTMP_60 0x15 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x15",
+            "instructions": [
+                "CLR_41 = games[gameNum]",
+                "REF_128 = CLR_41",
+                "CLR_42 = REF_128.winner",
+                "REF_129 = CLR_42",
+                "CLR_43 = REF_129[0]",
+                "REF_130 = CLR_43",
+                "CLR_44 = funderBalance[REF_130]",
+                "REF_131 = CLR_44",
+                "CLR_45 = games[gameNum]",
+                "CLR_46 = CLR_45.winner",
+                "CLR_47 = CLR_46[0]",
+                "funderBalance[CLR_47] = REF_131"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x19",
+            "instructions": [
+                "TMP_61 = 100 * count",
+                "CLR_48 = msg.value",
+                "RTMP_62 = CLR_48 == TMP_61",
+                "CONDITION RTMP_62 0x1a 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a",
+            "instructions": [
+                "CLR_49 = games[gameNum]",
+                "REF_138 = CLR_49",
+                "CLR_50 = REF_138.funderNum",
+                "REF_139 = CLR_50",
+                "RTMP_63 = REF_139 == 10",
+                "CONDITION RTMP_63 0x18 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x18",
+            "instructions": [
+                "CLR_51 = games[gameNum]",
+                "REF_134 = CLR_51",
+                "CLR_52 = REF_134.winner",
+                "REF_135 = CLR_52",
+                "CLR_53 = REF_135[1]",
+                "REF_136 = CLR_53",
+                "CLR_54 = funderBalance[REF_136]",
+                "REF_137 = CLR_54",
+                "CLR_55 = games[gameNum]",
+                "CLR_56 = CLR_55.winner",
+                "CLR_57 = CLR_56[1]",
+                "funderBalance[CLR_57] = REF_137"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1c",
+            "instructions": [
+                "TMP_64 = 100 * count",
+                "CLR_58 = msg.value",
+                "RTMP_65 = CLR_58 == TMP_64",
+                "CONDITION RTMP_65 0x1d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1d",
+            "instructions": [
+                "CLR_59 = games[gameNum]",
+                "REF_144 = CLR_59",
+                "CLR_60 = REF_144.funderNum",
+                "REF_145 = CLR_60",
+                "RTMP_66 = REF_145 == 10",
+                "CONDITION RTMP_66 0x1b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b",
+            "instructions": [
+                "CLR_61 = games[gameNum]",
+                "REF_140 = CLR_61",
+                "CLR_62 = REF_140.winner",
+                "REF_141 = CLR_62",
+                "CLR_63 = REF_141[2]",
+                "REF_142 = CLR_63",
+                "CLR_64 = funderBalance[REF_142]",
+                "REF_143 = CLR_64",
+                "CLR_65 = games[gameNum]",
+                "CLR_66 = CLR_65.winner",
+                "CLR_67 = CLR_66[2]",
+                "funderBalance[CLR_67] = REF_143"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1f",
+            "instructions": [
+                "TMP_67 = 100 * count",
+                "CLR_68 = msg.value",
+                "RTMP_68 = CLR_68 == TMP_67",
+                "CONDITION RTMP_68 0x20 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x20",
+            "instructions": [
+                "CLR_69 = games[gameNum]",
+                "REF_147 = CLR_69",
+                "CLR_70 = REF_147.funderNum",
+                "REF_148 = CLR_70",
+                "RTMP_69 = REF_148 == 10",
+                "CONDITION RTMP_69 0x1e 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e",
+            "instructions": [
+                "CLR_71 = funderBalance[manager]",
+                "REF_146 = CLR_71",
+                "funderBalance[manager] = REF_146"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x22",
+            "instructions": [
+                "RTMP_71 = 0 < 10",
+                "RTMP_72 = 0 < 10",
+                "RTMP_73 = RTMP_71 || RTMP_72",
+                "CONDITION RTMP_73 0x1 0x23"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x23",
+            "instructions": [
+                "TMP_74 = 100 * count",
+                "CLR_72 = msg.value",
+                "RTMP_75 = CLR_72 == TMP_74",
+                "CONDITION RTMP_75 0x24 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x24",
+            "instructions": [
+                "CLR_73 = games[gameNum]",
+                "REF_149 = CLR_73",
+                "CLR_74 = REF_149.funderNum",
+                "REF_150 = CLR_74",
+                "RTMP_76 = REF_150 == 10",
+                "CONDITION RTMP_76 0x21 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x21",
+            "instructions": [
+                "TMP_70 = gameNum + 1",
+                "gameNum = TMP_70"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x26",
+            "instructions": [
+                "RTMP_77 = 0 < 10",
+                "RTMP_78 = 0 < 10",
+                "RTMP_79 = RTMP_77 || RTMP_78",
+                "CONDITION RTMP_79 0x1 0x27"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x27",
+            "instructions": [
+                "TMP_80 = 100 * count",
+                "CLR_75 = msg.value",
+                "RTMP_81 = CLR_75 == TMP_80",
+                "CONDITION RTMP_81 0x28 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x28",
+            "instructions": [
+                "CLR_76 = games[gameNum]",
+                "REF_152 = CLR_76",
+                "CLR_77 = REF_152.funderNum",
+                "REF_153 = CLR_77",
+                "RTMP_82 = REF_153 == 10",
+                "CONDITION RTMP_82 0x25 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x25",
+            "instructions": [
+                "CLR_78 = games.funderNum",
+                "REF_151 = CLR_78",
+                "games.funderNum = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2a",
+            "instructions": [
+                "RTMP_84 = 0 < 10",
+                "RTMP_85 = 0 < 10",
+                "RTMP_86 = RTMP_84 || RTMP_85",
+                "CONDITION RTMP_86 0x2b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2b",
+            "instructions": [
+                "TMP_87 = 100 * count",
+                "CLR_79 = msg.value",
+                "RTMP_88 = CLR_79 == TMP_87",
+                "CONDITION RTMP_88 0x2c 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2c",
+            "instructions": [
+                "CLR_80 = games[gameNum]",
+                "REF_155 = CLR_80",
+                "CLR_81 = REF_155.funderNum",
+                "REF_156 = CLR_81",
+                "RTMP_89 = REF_156 == 10",
+                "CONDITION RTMP_89 0x29 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x29",
+            "instructions": [
+                "CLR_82 = funderBalance[U]",
+                "REF_154 = CLR_82",
+                "TMP_83 = REF_154 + count",
+                "funderBalance[0] = TMP_83",
+                "funderBalance[1] = TMP_83",
+                "funderBalance[2] = TMP_83",
+                "funderBalance[3] = TMP_83",
+                "funderBalance[4] = TMP_83",
+                "funderBalance[5] = TMP_83",
+                "funderBalance[6] = TMP_83",
+                "funderBalance[7] = TMP_83",
+                "funderBalance[8] = TMP_83",
+                "funderBalance[9] = TMP_83"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2e",
+            "instructions": [
+                "RTMP_91 = 0 < 10",
+                "RTMP_92 = 0 < 10",
+                "RTMP_93 = RTMP_91 || RTMP_92",
+                "CONDITION RTMP_93 0x2f 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2f",
+            "instructions": [
+                "TMP_94 = 100 * count",
+                "CLR_83 = msg.value",
+                "RTMP_95 = CLR_83 == TMP_94",
+                "CONDITION RTMP_95 0x30 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x30",
+            "instructions": [
+                "CLR_84 = games[gameNum]",
+                "REF_159 = CLR_84",
+                "CLR_85 = REF_159.funderNum",
+                "REF_160 = CLR_85",
+                "RTMP_96 = REF_160 == 10",
+                "CONDITION RTMP_96 0x2d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2d",
+            "instructions": [
+                "CLR_86 = referrer[U]",
+                "REF_157 = CLR_86",
+                "CLR_87 = funderBalance[REF_157]",
+                "REF_158 = CLR_87",
+                "TMP_90 = REF_158 + count",
+                "CLR_88 = referrer[U]",
+                "funderBalance[CLR_88] = TMP_90"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x32",
+            "instructions": [
+                "RTMP_97 = 0 < 10",
+                "RTMP_98 = 0 < 10",
+                "RTMP_99 = RTMP_97 || RTMP_98",
+                "CONDITION RTMP_99 0x33 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x33",
+            "instructions": [
+                "TMP_100 = 100 * count",
+                "CLR_89 = msg.value",
+                "RTMP_101 = CLR_89 == TMP_100",
+                "CONDITION RTMP_101 0x34 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x34",
+            "instructions": [
+                "CLR_90 = games[gameNum]",
+                "REF_164 = CLR_90",
+                "CLR_91 = REF_164.funderNum",
+                "REF_165 = CLR_91",
+                "RTMP_102 = REF_165 == 10",
+                "CONDITION RTMP_102 0x31 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x31",
+            "instructions": [
+                "CLR_92 = referrer[U]",
+                "REF_161 = CLR_92",
+                "CLR_93 = referrer[REF_161]",
+                "REF_162 = CLR_93",
+                "CLR_94 = funderBalance[REF_162]",
+                "REF_163 = CLR_94",
+                "CLR_95 = referrer[U]",
+                "CLR_96 = referrer[CLR_95]",
+                "funderBalance[CLR_96] = REF_163"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x36",
+            "instructions": [
+                "RTMP_103 = 0 < 10",
+                "RTMP_104 = 0 < 10",
+                "RTMP_105 = RTMP_103 || RTMP_104",
+                "CONDITION RTMP_105 0x37 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x37",
+            "instructions": [
+                "TMP_106 = 100 * count",
+                "CLR_97 = msg.value",
+                "RTMP_107 = CLR_97 == TMP_106",
+                "CONDITION RTMP_107 0x38 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x38",
+            "instructions": [
+                "CLR_98 = games[gameNum]",
+                "REF_170 = CLR_98",
+                "CLR_99 = REF_170.funderNum",
+                "REF_171 = CLR_99",
+                "RTMP_108 = REF_171 == 10",
+                "CONDITION RTMP_108 0x35 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x35",
+            "instructions": [
+                "CLR_100 = referrer[U]",
+                "REF_166 = CLR_100",
+                "CLR_101 = referrer[REF_166]",
+                "REF_167 = CLR_101",
+                "CLR_102 = referrer[REF_167]",
+                "REF_168 = CLR_102",
+                "CLR_103 = funderBalance[REF_168]",
+                "REF_169 = CLR_103",
+                "CLR_104 = referrer[U]",
+                "CLR_105 = referrer[CLR_104]",
+                "CLR_106 = referrer[CLR_105]",
+                "funderBalance[CLR_106] = REF_169"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3a",
+            "instructions": [
+                "RTMP_109 = 0 < 10",
+                "RTMP_110 = 0 < 10",
+                "RTMP_111 = RTMP_109 || RTMP_110",
+                "CONDITION RTMP_111 0x3b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3b",
+            "instructions": [
+                "TMP_112 = 100 * count",
+                "CLR_107 = msg.value",
+                "RTMP_113 = CLR_107 == TMP_112",
+                "CONDITION RTMP_113 0x3c 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3c",
+            "instructions": [
+                "CLR_108 = games[gameNum]",
+                "REF_177 = CLR_108",
+                "CLR_109 = REF_177.funderNum",
+                "REF_178 = CLR_109",
+                "RTMP_114 = REF_178 == 10",
+                "CONDITION RTMP_114 0x39 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x39",
+            "instructions": [
+                "CLR_110 = referrer[U]",
+                "REF_172 = CLR_110",
+                "CLR_111 = referrer[REF_172]",
+                "REF_173 = CLR_111",
+                "CLR_112 = referrer[REF_173]",
+                "REF_174 = CLR_112",
+                "CLR_113 = referrer[REF_174]",
+                "REF_175 = CLR_113",
+                "CLR_114 = funderBalance[REF_175]",
+                "REF_176 = CLR_114",
+                "CLR_115 = referrer[U]",
+                "CLR_116 = referrer[CLR_115]",
+                "CLR_117 = referrer[CLR_116]",
+                "CLR_118 = referrer[CLR_117]",
+                "funderBalance[CLR_118] = REF_176"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3e",
+            "instructions": [
+                "RTMP_115 = 0 < 10",
+                "RTMP_116 = 0 < 10",
+                "RTMP_117 = RTMP_115 || RTMP_116",
+                "CONDITION RTMP_117 0x3f 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3f",
+            "instructions": [
+                "TMP_118 = 100 * count",
+                "CLR_119 = msg.value",
+                "RTMP_119 = CLR_119 == TMP_118",
+                "CONDITION RTMP_119 0x40 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x40",
+            "instructions": [
+                "CLR_120 = games[gameNum]",
+                "REF_185 = CLR_120",
+                "CLR_121 = REF_185.funderNum",
+                "REF_186 = CLR_121",
+                "RTMP_120 = REF_186 == 10",
+                "CONDITION RTMP_120 0x3d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3d",
+            "instructions": [
+                "CLR_122 = referrer[U]",
+                "REF_179 = CLR_122",
+                "CLR_123 = referrer[REF_179]",
+                "REF_180 = CLR_123",
+                "CLR_124 = referrer[REF_180]",
+                "REF_181 = CLR_124",
+                "CLR_125 = referrer[REF_181]",
+                "REF_182 = CLR_125",
+                "CLR_126 = referrer[REF_182]",
+                "REF_183 = CLR_126",
+                "CLR_127 = funderBalance[REF_183]",
+                "REF_184 = CLR_127",
+                "CLR_128 = referrer[U]",
+                "CLR_129 = referrer[CLR_128]",
+                "CLR_130 = referrer[CLR_129]",
+                "CLR_131 = referrer[CLR_130]",
+                "CLR_132 = referrer[CLR_131]",
+                "funderBalance[CLR_132] = REF_184"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x42",
+            "instructions": [
+                "TMP_121 = 100 * count",
+                "CLR_133 = msg.value",
+                "RTMP_122 = CLR_133 == TMP_121",
+                "CONDITION RTMP_122 0x43 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x43",
+            "instructions": [
+                "CLR_134 = msg.sender",
+                "CLR_135 = lastGame[CLR_134]",
+                "REF_188 = CLR_135",
+                "RTMP_123 = REF_188 == 0",
+                "CONDITION RTMP_123 0x41 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x41",
+            "instructions": [
+                "CLR_136 = msg.sender",
+                "CLR_137 = referrer[CLR_136]",
+                "REF_187 = CLR_137",
+                "CLR_138 = msg.sender",
+                "referrer[CLR_138] = manager"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x45",
+            "instructions": [
+                "TMP_124 = 100 * count",
+                "CLR_139 = msg.value",
+                "RTMP_125 = CLR_139 == TMP_124",
+                "CONDITION RTMP_125 0x46 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x46",
+            "instructions": [
+                "CLR_140 = msg.sender",
+                "CLR_141 = lastGame[CLR_140]",
+                "REF_190 = CLR_141",
+                "RTMP_126 = REF_190 == 0",
+                "CONDITION RTMP_126 0x44 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x44",
+            "instructions": [
+                "CLR_142 = msg.sender",
+                "CLR_143 = referrer[CLR_142]",
+                "REF_189 = CLR_143",
+                "CLR_144 = msg.sender",
+                "referrer[CLR_144] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x47",
+            "instructions": [
+                "CLR_145 = msg.sender",
+                "funderBalance[CLR_145] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x48",
+            "instructions": [
+                "CLR_146 = msg.sender",
+                "CLR_147 = balances_re_ent8[CLR_146]",
+                "REF_191 = CLR_147",
+                "CLR_148 = msg.sender",
+                "balances_re_ent8[CLR_148] = 0"
+            ]
+        }
+    ],
+    "root_addr": "0x9f",
+    "dest_addrs": [
+        "0x9d"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "withdraw_balances_re_ent8_v1",
+            "addr": "0x9d",
+            "instructions": [
+                "NOP",
+                "CLR_149 = msg.sender",
+                "CLR_150 = balances_re_ent8[CLR_149]",
+                "REF_98 = CLR_150",
+                "CLR_151 = this.balance",
+                "WRP_0 = CLR_151 - REF_98",
+                "this.balance = WRP_0",
+                "TMP_33 = NEW_VAL boolean"
+            ]
+        },
+        {
+            "scope": "withdraw_balances_re_ent8_v1",
+            "addr": "0x9e",
+            "instructions": [
+                "NOP",
+                "JUMP 0x9d"
+            ]
+        },
+        {
+            "scope": "withdraw_balances_re_ent8_v2",
+            "addr": "0x9f",
+            "instructions": [
+                "NOP",
+                "JUMP 0xa0"
+            ]
+        },
+        {
+            "scope": "withdraw_balances_re_ent8_v2",
+            "addr": "0xa0",
+            "instructions": [
+                "NOP",
+                "CLR_152 = msg.sender",
+                "CLR_153 = balances_re_ent8[CLR_152]",
+                "REF_98 = CLR_153",
+                "CLR_154 = this.balance",
+                "WRP_1 = CLR_154 - REF_98",
+                "this.balance = WRP_1",
+                "TMP_33 = NEW_VAL boolean",
+                "JUMP 0xa1"
+            ]
+        },
+        {
+            "scope": "withdraw_balances_re_ent8_v2",
+            "addr": "0xa1",
+            "instructions": [
+                "success = TMP_33",
+                "CONDITION success 0xa2 0xa3"
+            ]
+        },
+        {
+            "scope": "withdraw_balances_re_ent8_v2",
+            "addr": "0xa2",
+            "instructions": [
+                "CLR_155 = msg.sender",
+                "CLR_156 = balances_re_ent8[CLR_155]",
+                "REF_99 = CLR_156",
+                "CLR_157 = msg.sender",
+                "balances_re_ent8[CLR_157] = 0",
+                "JUMP 0xa4"
+            ]
+        },
+        {
+            "scope": "withdraw_balances_re_ent8_v2",
+            "addr": "0xa4",
+            "instructions": [
+                "NOP",
+                "JUMP 0x9e"
+            ]
+        },
+        {
+            "scope": "withdraw_balances_re_ent8_v1",
+            "addr": "0xa3",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

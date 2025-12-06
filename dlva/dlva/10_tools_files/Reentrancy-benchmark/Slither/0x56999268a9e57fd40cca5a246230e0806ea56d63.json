@@ -1,0 +1,375 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 13 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m1\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 13 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m1\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "6bb7bfbcf13d0386f11241143617e5b25bab83c8f7ee6713b0c7d96ce09ad254",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "Deployer",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 303,
+                  "filename_relative": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                  "filename_short": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "Deployer",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": [
+                    "Assembly"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 13,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 1,
+            "low_issues": 1,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "deploy",
+                  "source_mapping": {
+                    "start": 75,
+                    "length": 251,
+                    "filename_relative": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                    "filename_short": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Deployer",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 303,
+                        "filename_relative": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                        "filename_short": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "deploy(bytes,bytes32)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "",
+                  "source_mapping": {
+                    "start": 215,
+                    "length": 87,
+                    "filename_relative": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                    "filename_short": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "deploy",
+                      "source_mapping": {
+                        "start": 75,
+                        "length": 251,
+                        "filename_relative": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                        "filename_short": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Deployer",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 303,
+                            "filename_relative": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                            "filename_short": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "deploy(bytes,bytes32)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Deployer.deploy(bytes,bytes32) (cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol#5-12) uses assembly\n\t- INLINE ASM (cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol#8-10)\n",
+              "markdown": "[Deployer.deploy(bytes,bytes32)](cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol#L5-L12) uses assembly\n\t- [INLINE ASM](cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol#L8-L10)\n",
+              "first_markdown_element": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol#L5-L12",
+              "id": "87008ec11f3f8c455bca29b867de7ce4852ebfc51bb99ee0081f3954c4e242da",
+              "check": "assembly",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "addr",
+                  "source_mapping": {
+                    "start": 197,
+                    "length": 12,
+                    "filename_relative": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                    "filename_short": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 17
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "deploy",
+                      "source_mapping": {
+                        "start": 75,
+                        "length": 251,
+                        "filename_relative": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                        "filename_short": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Deployer",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 303,
+                            "filename_relative": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                            "filename_short": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "deploy(bytes,bytes32)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "naddr = addr",
+                  "source_mapping": {
+                    "start": 307,
+                    "length": 12,
+                    "filename_relative": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                    "filename_short": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 17
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "deploy",
+                      "source_mapping": {
+                        "start": 75,
+                        "length": 251,
+                        "filename_relative": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                        "filename_short": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Deployer",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 303,
+                            "filename_relative": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                            "filename_short": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "deploy(bytes,bytes32)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Deployer.deploy(bytes,bytes32).addr (cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol#7) lacks a zero-check on :\n\t\t- naddr = addr (cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol#11)\n",
+              "markdown": "[Deployer.deploy(bytes,bytes32).addr](cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol#L7) lacks a zero-check on :\n\t\t- [naddr = addr](cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol#L11)\n",
+              "first_markdown_element": "cleanSource/0x56999268a9e57fd40cca5a246230e0806ea56d63.sol#L7",
+              "id": "ded17f8cd8d476b496d048de45cad0377ab50c0e47714e9aef376ce6c0d2c788",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

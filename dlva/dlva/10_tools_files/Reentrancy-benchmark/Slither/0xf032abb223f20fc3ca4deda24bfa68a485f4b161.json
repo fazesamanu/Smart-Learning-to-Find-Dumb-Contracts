@@ -1,0 +1,426 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 22 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m1\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 22 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m1\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "1daf74cadf25e63d4691d271f3040fd45b46f3ab1b4f4fbd1a2c324370a98090",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "UserProxy",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 465,
+                  "filename_relative": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                  "filename_short": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "UserProxy",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": [
+                    "Proxy"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 22,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 1,
+            "low_issues": 1,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "transfer",
+                  "source_mapping": {
+                    "start": 163,
+                    "length": 326,
+                    "filename_relative": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                    "filename_short": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "UserProxy",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 465,
+                        "filename_relative": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                        "filename_short": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "transfer(address,uint256)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "(result) = punkContract.call(abi.encodeWithSignature(transferPunk(address,uint256),_owner,punkIndex))",
+                  "source_mapping": {
+                    "start": 348,
+                    "length": 111,
+                    "filename_relative": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                    "filename_short": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      19
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 120
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transfer",
+                      "source_mapping": {
+                        "start": 163,
+                        "length": 326,
+                        "filename_relative": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                        "filename_short": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "UserProxy",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 465,
+                            "filename_relative": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                            "filename_short": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transfer(address,uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Low level call in UserProxy.transfer(address,uint256) (cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol#12-21):\n\t- (result) = punkContract.call(abi.encodeWithSignature(transferPunk(address,uint256),_owner,punkIndex)) (cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol#19)\n",
+              "markdown": "Low level call in [UserProxy.transfer(address,uint256)](cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol#L12-L21):\n\t- [(result) = punkContract.call(abi.encodeWithSignature(transferPunk(address,uint256),_owner,punkIndex))](cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol#L19)\n",
+              "first_markdown_element": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol#L12-L21",
+              "id": "7a655177a0b04dd3d00cb720df7b9271fda4a5db7ddf3989e750d3ff1ee5699c",
+              "check": "low-level-calls",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "punkContract",
+                  "source_mapping": {
+                    "start": 181,
+                    "length": 20,
+                    "filename_relative": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                    "filename_short": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 23,
+                    "ending_column": 43
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transfer",
+                      "source_mapping": {
+                        "start": 163,
+                        "length": 326,
+                        "filename_relative": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                        "filename_short": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "UserProxy",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 465,
+                            "filename_relative": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                            "filename_short": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transfer(address,uint256)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "(result) = punkContract.call(abi.encodeWithSignature(transferPunk(address,uint256),_owner,punkIndex))",
+                  "source_mapping": {
+                    "start": 348,
+                    "length": 111,
+                    "filename_relative": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                    "filename_short": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      19
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 120
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transfer",
+                      "source_mapping": {
+                        "start": 163,
+                        "length": 326,
+                        "filename_relative": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                        "filename_short": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "UserProxy",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 465,
+                            "filename_relative": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                            "filename_short": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transfer(address,uint256)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "UserProxy.transfer(address,uint256).punkContract (cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol#12) lacks a zero-check on :\n\t\t- (result) = punkContract.call(abi.encodeWithSignature(transferPunk(address,uint256),_owner,punkIndex)) (cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol#19)\n",
+              "markdown": "[UserProxy.transfer(address,uint256).punkContract](cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol#L12) lacks a zero-check on :\n\t\t- [(result) = punkContract.call(abi.encodeWithSignature(transferPunk(address,uint256),_owner,punkIndex))](cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol#L19)\n",
+              "first_markdown_element": "cleanSource/0xf032abb223f20fc3ca4deda24bfa68a485f4b161.sol#L12",
+              "id": "df80ddb4102690da8cb3a3cbfc672fd6190f6719e173d4dd527020262815974f",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

@@ -1,0 +1,445 @@
+Results for Elysium_benchmark_0xd4cd7c881f5ceece4917d856ce73f510d7d0769e.txt:
+Queries
+query id:       reentrancyCall_0_5304
+execution time: 928
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_5849(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_5842(#8,#9,#10,#3,#4,#5,#6,#7),
+ (= (:var 0) (- (:var 8) 4)),
+ (let ((a!1 (store (store (store (:var 10) (- (:var 8) 6) (:var 18))
+                         (- (:var 8) 2)
+                         (:var 20))
+                  (- (:var 8) 5)
+                  (:var 16))))
+  (= (:var 2) a!1)),
+ (let ((a!1 (store (store (store (:var 9) (- (:var 8) 6) (:var 17))
+                         (- (:var 8) 2)
+                         (:var 19))
+                  (- (:var 8) 5)
+                  (:var 15))))
+  (= (:var 1) a!1)),
+ (= (:var 20) (select (:var 10) (- (:var 8) 5))),
+ (= (:var 19) (select (:var 9) (- (:var 8) 5))),
+ (= (:var 18)
+   (ite (and (:var 11) (:var 13))
+        (ite (= (:var 14) 0) 0 (div (:var 12) (:var 14)))
+        0)),
+ (= (:var 17) (and (:var 11) (:var 13))),
+ (= (:var 16) (select (:var 10) (- (:var 8) 6))),
+ (= (:var 15) (select (:var 9) (- (:var 8) 6))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 1))),
+ (> (:var 8) 5).
+
+query id:       reentrancyCall_0_2553
+execution time: 914
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_5849(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_5842(#8,#9,#10,#3,#4,#5,#6,#7),
+ (= (:var 0) (- (:var 8) 4)),
+ (let ((a!1 (store (store (store (:var 10) (- (:var 8) 6) (:var 18))
+                         (- (:var 8) 2)
+                         (:var 20))
+                  (- (:var 8) 5)
+                  (:var 16))))
+  (= (:var 2) a!1)),
+ (let ((a!1 (store (store (store (:var 9) (- (:var 8) 6) (:var 17))
+                         (- (:var 8) 2)
+                         (:var 19))
+                  (- (:var 8) 5)
+                  (:var 15))))
+  (= (:var 1) a!1)),
+ (= (:var 20) (select (:var 10) (- (:var 8) 5))),
+ (= (:var 19) (select (:var 9) (- (:var 8) 5))),
+ (= (:var 18)
+   (ite (and (:var 11) (:var 13))
+        (ite (= (:var 14) 0) 0 (div (:var 12) (:var 14)))
+        0)),
+ (= (:var 17) (and (:var 11) (:var 13))),
+ (= (:var 16) (select (:var 10) (- (:var 8) 6))),
+ (= (:var 15) (select (:var 9) (- (:var 8) 6))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 1))),
+ (> (:var 8) 5).
+
+query id:       reentrancyCall_0_5113
+execution time: 912
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_5849(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_5842(#8,#9,#10,#3,#4,#5,#6,#7),
+ (= (:var 0) (- (:var 8) 4)),
+ (let ((a!1 (store (store (store (:var 10) (- (:var 8) 6) (:var 18))
+                         (- (:var 8) 2)
+                         (:var 20))
+                  (- (:var 8) 5)
+                  (:var 16))))
+  (= (:var 2) a!1)),
+ (let ((a!1 (store (store (store (:var 9) (- (:var 8) 6) (:var 17))
+                         (- (:var 8) 2)
+                         (:var 19))
+                  (- (:var 8) 5)
+                  (:var 15))))
+  (= (:var 1) a!1)),
+ (= (:var 20) (select (:var 10) (- (:var 8) 5))),
+ (= (:var 19) (select (:var 9) (- (:var 8) 5))),
+ (= (:var 18)
+   (ite (and (:var 11) (:var 13))
+        (ite (= (:var 14) 0) 0 (div (:var 12) (:var 14)))
+        0)),
+ (= (:var 17) (and (:var 11) (:var 13))),
+ (= (:var 16) (select (:var 10) (- (:var 8) 6))),
+ (= (:var 15) (select (:var 9) (- (:var 8) 6))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 1))),
+ (> (:var 8) 5).
+
+query id:       reentrancyCall_0_4526
+execution time: 918
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_5849(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_5842(#8,#9,#10,#3,#4,#5,#6,#7),
+ (= (:var 0) (- (:var 8) 4)),
+ (let ((a!1 (store (store (store (:var 10) (- (:var 8) 6) (:var 18))
+                         (- (:var 8) 2)
+                         (:var 20))
+                  (- (:var 8) 5)
+                  (:var 16))))
+  (= (:var 2) a!1)),
+ (let ((a!1 (store (store (store (:var 9) (- (:var 8) 6) (:var 17))
+                         (- (:var 8) 2)
+                         (:var 19))
+                  (- (:var 8) 5)
+                  (:var 15))))
+  (= (:var 1) a!1)),
+ (= (:var 20) (select (:var 10) (- (:var 8) 5))),
+ (= (:var 19) (select (:var 9) (- (:var 8) 5))),
+ (= (:var 18)
+   (ite (and (:var 11) (:var 13))
+        (ite (= (:var 14) 0) 0 (div (:var 12) (:var 14)))
+        0)),
+ (= (:var 17) (and (:var 11) (:var 13))),
+ (= (:var 16) (select (:var 10) (- (:var 8) 6))),
+ (= (:var 15) (select (:var 9) (- (:var 8) 6))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 1))),
+ (> (:var 8) 5).
+
+query id:       reentrancyCall_0_3281
+execution time: 921
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_5849(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_5842(#8,#9,#10,#3,#4,#5,#6,#7),
+ (= (:var 0) (- (:var 8) 4)),
+ (let ((a!1 (store (store (store (:var 10) (- (:var 8) 6) (:var 18))
+                         (- (:var 8) 2)
+                         (:var 20))
+                  (- (:var 8) 5)
+                  (:var 16))))
+  (= (:var 2) a!1)),
+ (let ((a!1 (store (store (store (:var 9) (- (:var 8) 6) (:var 17))
+                         (- (:var 8) 2)
+                         (:var 19))
+                  (- (:var 8) 5)
+                  (:var 15))))
+  (= (:var 1) a!1)),
+ (= (:var 20) (select (:var 10) (- (:var 8) 5))),
+ (= (:var 19) (select (:var 9) (- (:var 8) 5))),
+ (= (:var 18)
+   (ite (and (:var 11) (:var 13))
+        (ite (= (:var 14) 0) 0 (div (:var 12) (:var 14)))
+        0)),
+ (= (:var 17) (and (:var 11) (:var 13))),
+ (= (:var 16) (select (:var 10) (- (:var 8) 6))),
+ (= (:var 15) (select (:var 9) (- (:var 8) 6))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 1))),
+ (> (:var 8) 5).
+
+query id:       reentrancyCall_0_4390
+execution time: 968
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_5849(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_5842(#8,#9,#10,#3,#4,#5,#6,#7),
+ (= (:var 0) (- (:var 8) 4)),
+ (let ((a!1 (store (store (store (:var 10) (- (:var 8) 6) (:var 18))
+                         (- (:var 8) 2)
+                         (:var 20))
+                  (- (:var 8) 5)
+                  (:var 16))))
+  (= (:var 2) a!1)),
+ (let ((a!1 (store (store (store (:var 9) (- (:var 8) 6) (:var 17))
+                         (- (:var 8) 2)
+                         (:var 19))
+                  (- (:var 8) 5)
+                  (:var 15))))
+  (= (:var 1) a!1)),
+ (= (:var 20) (select (:var 10) (- (:var 8) 5))),
+ (= (:var 19) (select (:var 9) (- (:var 8) 5))),
+ (= (:var 18)
+   (ite (and (:var 11) (:var 13))
+        (ite (= (:var 14) 0) 0 (div (:var 12) (:var 14)))
+        0)),
+ (= (:var 17) (and (:var 11) (:var 13))),
+ (= (:var 16) (select (:var 10) (- (:var 8) 6))),
+ (= (:var 15) (select (:var 9) (- (:var 8) 6))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 1))),
+ (> (:var 8) 5).
+
+query id:       reentrancyCall_0_3617
+execution time: 934
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_5849(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_5842(#8,#9,#10,#3,#4,#5,#6,#7),
+ (= (:var 0) (- (:var 8) 4)),
+ (let ((a!1 (store (store (store (:var 10) (- (:var 8) 6) (:var 18))
+                         (- (:var 8) 2)
+                         (:var 20))
+                  (- (:var 8) 5)
+                  (:var 16))))
+  (= (:var 2) a!1)),
+ (let ((a!1 (store (store (store (:var 9) (- (:var 8) 6) (:var 17))
+                         (- (:var 8) 2)
+                         (:var 19))
+                  (- (:var 8) 5)
+                  (:var 15))))
+  (= (:var 1) a!1)),
+ (= (:var 20) (select (:var 10) (- (:var 8) 5))),
+ (= (:var 19) (select (:var 9) (- (:var 8) 5))),
+ (= (:var 18)
+   (ite (and (:var 11) (:var 13))
+        (ite (= (:var 14) 0) 0 (div (:var 12) (:var 14)))
+        0)),
+ (= (:var 17) (and (:var 11) (:var 13))),
+ (= (:var 16) (select (:var 10) (- (:var 8) 6))),
+ (= (:var 15) (select (:var 9) (- (:var 8) 6))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 1))),
+ (> (:var 8) 5).
+
+query id:       reentrancyCall_0_5175
+execution time: 920
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_5849(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_5842(#8,#9,#10,#3,#4,#5,#6,#7),
+ (= (:var 0) (- (:var 8) 4)),
+ (let ((a!1 (store (store (store (:var 10) (- (:var 8) 6) (:var 18))
+                         (- (:var 8) 2)
+                         (:var 20))
+                  (- (:var 8) 5)
+                  (:var 16))))
+  (= (:var 2) a!1)),
+ (let ((a!1 (store (store (store (:var 9) (- (:var 8) 6) (:var 17))
+                         (- (:var 8) 2)
+                         (:var 19))
+                  (- (:var 8) 5)
+                  (:var 15))))
+  (= (:var 1) a!1)),
+ (= (:var 20) (select (:var 10) (- (:var 8) 5))),
+ (= (:var 19) (select (:var 9) (- (:var 8) 5))),
+ (= (:var 18)
+   (ite (and (:var 11) (:var 13))
+        (ite (= (:var 14) 0) 0 (div (:var 12) (:var 14)))
+        0)),
+ (= (:var 17) (and (:var 11) (:var 13))),
+ (= (:var 16) (select (:var 10) (- (:var 8) 6))),
+ (= (:var 15) (select (:var 9) (- (:var 8) 6))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 1))),
+ (> (:var 8) 5).
+
+query id:       reentrancyCall_0_1576
+execution time: 922
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_5849(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_5842(#8,#9,#10,#3,#4,#5,#6,#7),
+ (= (:var 0) (- (:var 8) 4)),
+ (let ((a!1 (store (store (store (:var 10) (- (:var 8) 6) (:var 18))
+                         (- (:var 8) 2)
+                         (:var 20))
+                  (- (:var 8) 5)
+                  (:var 16))))
+  (= (:var 2) a!1)),
+ (let ((a!1 (store (store (store (:var 9) (- (:var 8) 6) (:var 17))
+                         (- (:var 8) 2)
+                         (:var 19))
+                  (- (:var 8) 5)
+                  (:var 15))))
+  (= (:var 1) a!1)),
+ (= (:var 20) (select (:var 10) (- (:var 8) 5))),
+ (= (:var 19) (select (:var 9) (- (:var 8) 5))),
+ (= (:var 18)
+   (ite (and (:var 11) (:var 13))
+        (ite (= (:var 14) 0) 0 (div (:var 12) (:var 14)))
+        0)),
+ (= (:var 17) (and (:var 11) (:var 13))),
+ (= (:var 16) (select (:var 10) (- (:var 8) 6))),
+ (= (:var 15) (select (:var 9) (- (:var 8) 6))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 1))),
+ (> (:var 8) 5).
+
+query id:       reentrancyCall_0_5422
+execution time: 915
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_5849(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_5842(#8,#9,#10,#3,#4,#5,#6,#7),
+ (= (:var 0) (- (:var 8) 4)),
+ (let ((a!1 (store (store (store (:var 10) (- (:var 8) 6) (:var 18))
+                         (- (:var 8) 2)
+                         (:var 20))
+                  (- (:var 8) 5)
+                  (:var 16))))
+  (= (:var 2) a!1)),
+ (let ((a!1 (store (store (store (:var 9) (- (:var 8) 6) (:var 17))
+                         (- (:var 8) 2)
+                         (:var 19))
+                  (- (:var 8) 5)
+                  (:var 15))))
+  (= (:var 1) a!1)),
+ (= (:var 20) (select (:var 10) (- (:var 8) 5))),
+ (= (:var 19) (select (:var 9) (- (:var 8) 5))),
+ (= (:var 18)
+   (ite (and (:var 11) (:var 13))
+        (ite (= (:var 14) 0) 0 (div (:var 12) (:var 14)))
+        0)),
+ (= (:var 17) (and (:var 11) (:var 13))),
+ (= (:var 16) (select (:var 10) (- (:var 8) 6))),
+ (= (:var 15) (select (:var 9) (- (:var 8) 6))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 1))),
+ (> (:var 8) 5).
+
+query id:       reentrancyCall_0_5724
+execution time: 932
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_5849(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_5842(#8,#9,#10,#3,#4,#5,#6,#7),
+ (= (:var 0) (- (:var 8) 4)),
+ (let ((a!1 (store (store (store (:var 10) (- (:var 8) 6) (:var 18))
+                         (- (:var 8) 2)
+                         (:var 20))
+                  (- (:var 8) 5)
+                  (:var 16))))
+  (= (:var 2) a!1)),
+ (let ((a!1 (store (store (store (:var 9) (- (:var 8) 6) (:var 17))
+                         (- (:var 8) 2)
+                         (:var 19))
+                  (- (:var 8) 5)
+                  (:var 15))))
+  (= (:var 1) a!1)),
+ (= (:var 20) (select (:var 10) (- (:var 8) 5))),
+ (= (:var 19) (select (:var 9) (- (:var 8) 5))),
+ (= (:var 18)
+   (ite (and (:var 11) (:var 13))
+        (ite (= (:var 14) 0) 0 (div (:var 12) (:var 14)))
+        0)),
+ (= (:var 17) (and (:var 11) (:var 13))),
+ (= (:var 16) (select (:var 10) (- (:var 8) 6))),
+ (= (:var 15) (select (:var 9) (- (:var 8) 6))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 1))),
+ (> (:var 8) 5).
+
+query id:       reentrancyCall_0_4651
+execution time: 911
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_5849(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_5842(#8,#9,#10,#3,#4,#5,#6,#7),
+ (= (:var 0) (- (:var 8) 4)),
+ (let ((a!1 (store (store (store (:var 10) (- (:var 8) 6) (:var 18))
+                         (- (:var 8) 2)
+                         (:var 20))
+                  (- (:var 8) 5)
+                  (:var 16))))
+  (= (:var 2) a!1)),
+ (let ((a!1 (store (store (store (:var 9) (- (:var 8) 6) (:var 17))
+                         (- (:var 8) 2)
+                         (:var 19))
+                  (- (:var 8) 5)
+                  (:var 15))))
+  (= (:var 1) a!1)),
+ (= (:var 20) (select (:var 10) (- (:var 8) 5))),
+ (= (:var 19) (select (:var 9) (- (:var 8) 5))),
+ (= (:var 18)
+   (ite (and (:var 11) (:var 13))
+        (ite (= (:var 14) 0) 0 (div (:var 12) (:var 14)))
+        0)),
+ (= (:var 17) (and (:var 11) (:var 13))),
+ (= (:var 16) (select (:var 10) (- (:var 8) 6))),
+ (= (:var 15) (select (:var 9) (- (:var 8) 6))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 1))),
+ (> (:var 8) 5).
+
+query id:       reentrancyCall_0_3399
+execution time: 938
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_5849(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_5842(#8,#9,#10,#3,#4,#5,#6,#7),
+ (= (:var 0) (- (:var 8) 4)),
+ (let ((a!1 (store (store (store (:var 10) (- (:var 8) 6) (:var 18))
+                         (- (:var 8) 2)
+                         (:var 20))
+                  (- (:var 8) 5)
+                  (:var 16))))
+  (= (:var 2) a!1)),
+ (let ((a!1 (store (store (store (:var 9) (- (:var 8) 6) (:var 17))
+                         (- (:var 8) 2)
+                         (:var 19))
+                  (- (:var 8) 5)
+                  (:var 15))))
+  (= (:var 1) a!1)),
+ (= (:var 20) (select (:var 10) (- (:var 8) 5))),
+ (= (:var 19) (select (:var 9) (- (:var 8) 5))),
+ (= (:var 18)
+   (ite (and (:var 11) (:var 13))
+        (ite (= (:var 14) 0) 0 (div (:var 12) (:var 14)))
+        0)),
+ (= (:var 17) (and (:var 11) (:var 13))),
+ (= (:var 16) (select (:var 10) (- (:var 8) 6))),
+ (= (:var 15) (select (:var 9) (- (:var 8) 6))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 1))),
+ (> (:var 8) 5).
+
+

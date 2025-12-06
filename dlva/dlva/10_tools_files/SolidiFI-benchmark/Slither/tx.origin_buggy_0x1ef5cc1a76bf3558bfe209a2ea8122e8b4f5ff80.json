@@ -1,0 +1,842 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 27 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m7\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[93m1\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 27 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m7\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[93m1\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "22678d595feaddd11b4995b5bf26b7c67e4f425eb9d891987790c97050aea530",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "Usernames",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 975,
+                  "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                  "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "Usernames",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 5,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 27,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 1,
+            "informational_issues": 7,
+            "low_issues": 0,
+            "medium_issues": 1,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "checkDupe",
+                  "source_mapping": {
+                    "start": 482,
+                    "length": 112,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      15,
+                      16,
+                      17
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Usernames",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 975,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "checkDupe(string)"
+                  }
+                }
+              ],
+              "description": "checkDupe(string) should be declared external:\n\t- Usernames.checkDupe(string) (FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#15-17)\n",
+              "markdown": "checkDupe(string) should be declared external:\n\t- [Usernames.checkDupe(string)](FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#L15-L17)\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#L15-L17",
+              "id": "1809461d03054066678b0025db21022cde8fc32499b910d1caf08fa646b4be73",
+              "check": "external-function",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.26",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".26"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.26 (FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.26](FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#L1) allows old versions\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#L1",
+              "id": "39b882e3eb5d850b36058fd4f397a40325b23c9d0163dbda76b9164a8e591234",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.26 is not recommended for deployment\n",
+              "markdown": "solc-0.4.26 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "e85e93c612cb109c115ab31accf43cd25c590bd8f9b6a43b662115b987f777c3",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_userName",
+                  "source_mapping": {
+                    "start": 501,
+                    "length": 16,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      15
+                    ],
+                    "starting_column": 24,
+                    "ending_column": 40
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "checkDupe",
+                      "source_mapping": {
+                        "start": 482,
+                        "length": 112,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          15,
+                          16,
+                          17
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Usernames",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 975,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "checkDupe(string)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Usernames.checkDupe(string)._userName (FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#15) is not in mixedCase\n",
+              "markdown": "Parameter [Usernames.checkDupe(string)._userName](FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#L15) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#L15",
+              "id": "0c66c2e6425d032bfce77b4b93aaa21d50f07775970574f24156102be232a622",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_user",
+                  "source_mapping": {
+                    "start": 393,
+                    "length": 13,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 26,
+                    "ending_column": 39
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "getUsername",
+                      "source_mapping": {
+                        "start": 372,
+                        "length": 105,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Usernames",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 975,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "getUsername(address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Usernames.getUsername(address)._user (FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#12) is not in mixedCase\n",
+              "markdown": "Parameter [Usernames.getUsername(address)._user](FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#L12) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#L12",
+              "id": "7e09c8cc60f9f5d4f1e2c259b70e0421bc627973d5f7afcc948c69f9978b7715",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "bug_txorigin12",
+                  "source_mapping": {
+                    "start": 146,
+                    "length": 111,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6,
+                      7,
+                      8
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Usernames",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 975,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "bug_txorigin12(address)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function Usernames.bug_txorigin12(address) (FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#6-8) is not in mixedCase\n",
+              "markdown": "Function [Usernames.bug_txorigin12(address)](FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#L6-L8) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#L6-L8",
+              "id": "a2f3944fcf94421643b6ad99d4f830baba0b12db191c11a5b415634ca965b06c",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "owner_txorigin12",
+                  "source_mapping": {
+                    "start": 170,
+                    "length": 24,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 27,
+                    "ending_column": 51
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "bug_txorigin12",
+                      "source_mapping": {
+                        "start": 146,
+                        "length": 111,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6,
+                          7,
+                          8
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Usernames",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 975,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "bug_txorigin12(address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Usernames.bug_txorigin12(address).owner_txorigin12 (FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#6) is not in mixedCase\n",
+              "markdown": "Parameter [Usernames.bug_txorigin12(address).owner_txorigin12](FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#L6) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#L6",
+              "id": "a4d2a7d3537a5a2399703dfe00af519e6c5d921ec90e4dd505beb4183659ab4d",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_userName",
+                  "source_mapping": {
+                    "start": 623,
+                    "length": 16,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      18
+                    ],
+                    "starting_column": 29,
+                    "ending_column": 45
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "createUsername",
+                      "source_mapping": {
+                        "start": 599,
+                        "length": 400,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Usernames",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 975,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "createUsername(string)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Usernames.createUsername(string)._userName (FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#18) is not in mixedCase\n",
+              "markdown": "Parameter [Usernames.createUsername(string)._userName](FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#L18) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#L18",
+              "id": "bc90bef8be2eb967bf09f81b36619b8e18c3e7f2e8c36f717fe74072af7b34f7",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "bug_txorigin12",
+                  "source_mapping": {
+                    "start": 146,
+                    "length": 111,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6,
+                      7,
+                      8
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Usernames",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 975,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "bug_txorigin12(address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "require(bool)(tx.origin == owner_txorigin12)",
+                  "source_mapping": {
+                    "start": 212,
+                    "length": 38,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 47
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "bug_txorigin12",
+                      "source_mapping": {
+                        "start": 146,
+                        "length": 111,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6,
+                          7,
+                          8
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Usernames",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 975,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "bug_txorigin12(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Usernames.bug_txorigin12(address) (FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#6-8) uses tx.origin for authorization: require(bool)(tx.origin == owner_txorigin12) (FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#7)\n",
+              "markdown": "[Usernames.bug_txorigin12(address)](FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#L6-L8) uses tx.origin for authorization: [require(bool)(tx.origin == owner_txorigin12)](FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#L7)\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x1ef5cc1a76bf3558bfe209a2ea8122e8b4f5ff80.sol#L6-L8",
+              "id": "3d1f47652597c1d2cf9bae379e250d42940680bc12246abb74e85014dbb088fb",
+              "check": "tx-origin",
+              "impact": "Medium",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

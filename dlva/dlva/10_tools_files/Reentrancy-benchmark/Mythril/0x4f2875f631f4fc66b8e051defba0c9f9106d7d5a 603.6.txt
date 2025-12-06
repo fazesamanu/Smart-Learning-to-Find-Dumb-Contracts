@@ -1,0 +1,39 @@
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: MAIN
+Function name: initMultiowned(address[],uint256)
+PC address: 652
+Estimated Gas Usage: 31408 - 157236
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+Initial State:
+
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [SOMEGUY], function: initMultiowned(address[],uint256), txdata: 0xc57c5f60ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdc, value: 0x0
+
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: MAIN
+Function name: initWallet(address[],uint256,uint256)
+PC address: 754
+Estimated Gas Usage: 41582 - 207410
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+Initial State:
+
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [ATTACKER], function: initWallet(address[],uint256,uint256), txdata: 0xe46dcfebffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdc, value: 0x0
+
+

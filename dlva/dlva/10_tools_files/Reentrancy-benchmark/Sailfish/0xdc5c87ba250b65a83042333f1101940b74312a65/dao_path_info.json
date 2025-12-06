@@ -1,0 +1,32 @@
+{
+    "dao_symex_path_1.json": {
+        "file_name": "",
+        "from_function": "refund",
+        "to_function": "purchase",
+        "bug_type": "dao",
+        "src_node": "\"BlockID: 36\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 51\nCall context: \nTrue\nREF_6 -> gotTakoyaki[msg.sender]\nREF_6 := false\nHIGH_LEVEL_CALL, dest:takoyakiRegistrar(TakoyakiRegistrar), function:cancelCommitment, arguments:['msg.sender']  \""
+        ],
+        "executable_instructions": 41,
+        "state_variable": "gotTakoyaki",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "dao_symex_path_2.json": {
+        "file_name": "",
+        "from_function": "refund",
+        "to_function": "refund",
+        "bug_type": "dao",
+        "src_node": "\"BlockID: 54\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 70\nCall context: \nTrue\nREF_6 -> gotTakoyaki[msg.sender]\nREF_6 := false\nHIGH_LEVEL_CALL, dest:takoyakiRegistrar(TakoyakiRegistrar), function:cancelCommitment, arguments:['msg.sender']  \""
+        ],
+        "executable_instructions": 41,
+        "state_variable": "gotTakoyaki",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    }
+}

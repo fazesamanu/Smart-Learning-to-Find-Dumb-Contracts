@@ -1,0 +1,168 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 5 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m1\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 5 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m1\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "664eb8d064aac4287bd874185252dcff4d9d6816580071c5e6d58f8c49896741",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "XXX",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 109,
+                  "filename_relative": "cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol",
+                  "filename_short": "cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "XXX",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 5,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 1,
+            "informational_issues": 1,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "CONSOLE_ADDRESS",
+                  "source_mapping": {
+                    "start": 42,
+                    "length": 90,
+                    "filename_relative": "cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol",
+                    "filename_short": "cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4
+                    ],
+                    "starting_column": 2,
+                    "ending_column": 92
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "XXX",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 109,
+                        "filename_relative": "cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol",
+                        "filename_short": "cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "XXX.CONSOLE_ADDRESS (cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol#4) should be constant\n",
+              "markdown": "[XXX.CONSOLE_ADDRESS](cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol#L4) should be constant\n",
+              "first_markdown_element": "cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol#L4",
+              "id": "94779666233d2f23e6f76fd10290674fa1d8588b352fb9d963641b16c7a5f300",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "CONSOLE_ADDRESS",
+                  "source_mapping": {
+                    "start": 42,
+                    "length": 90,
+                    "filename_relative": "cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol",
+                    "filename_short": "cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4
+                    ],
+                    "starting_column": 2,
+                    "ending_column": 92
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "XXX",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 109,
+                        "filename_relative": "cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol",
+                        "filename_short": "cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable XXX.CONSOLE_ADDRESS (cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol#4) is not in mixedCase\n",
+              "markdown": "Variable [XXX.CONSOLE_ADDRESS](cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol#L4) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xfdcbaaa7bfb5cc75daa8088fa4b3d68ac0b53b60.sol#L4",
+              "id": "afc497bda41d59f8ae4a9dac8b21bc8e4f4c25dda7cc590f6f806f7d6915d7fd",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

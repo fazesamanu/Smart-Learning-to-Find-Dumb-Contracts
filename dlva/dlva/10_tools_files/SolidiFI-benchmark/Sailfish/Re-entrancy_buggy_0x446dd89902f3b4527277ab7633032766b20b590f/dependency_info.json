@@ -1,0 +1,569 @@
+{
+    "Re-entrancy_buggy_0x446dd89902f3b4527277ab7633032766b20b590f.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "callme_re_ent28",
+                "callme_re_ent28"
+            ],
+            "from_function": "callme_re_ent28",
+            "to_function": "callme_re_ent28",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 122\nFunction: callme_re_ent28\nNode: \nEXPRESSION require(bool)(counter_re_ent28 <= 5)\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\"",
+                        "\"BlockID: 6\nFunction: callme_re_ent28\nNode: \nEXPRESSION counter_re_ent28 += 1\nIRS: \ncounter_re_ent28 = counter_re_ent28 + 1\""
+                    ],
+                    "state_variable": "counter_re_ent28"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "callme_re_ent28",
+                "callme_re_ent28"
+            ],
+            "First_function": "callme_re_ent28",
+            "Second_function": "callme_re_ent28",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 132\nFunction: callme_re_ent28\nNode: \nEXPRESSION counter_re_ent28 += 1\nIRS: \ncounter_re_ent28 = counter_re_ent28 + 1\"",
+                        "\"BlockID: 2\nFunction: callme_re_ent28\nNode: \nEXPRESSION require(bool)(counter_re_ent28 <= 5)\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\""
+                    ],
+                    "state_variable": "counter_re_ent28"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "transfer",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "transfer",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 40\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 40\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 41\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 41\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 45\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 45\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "transfer",
+                "transfer"
+            ],
+            "First_function": "transfer",
+            "Second_function": "transfer",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 147\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 40\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 148\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 40\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 154\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 40\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 155\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 40\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 147\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 41\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 148\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 41\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 154\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 41\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 155\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 41\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 147\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 45\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 148\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 45\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 154\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 45\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 155\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 45\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "transfer",
+                "transferFrom"
+            ],
+            "First_function": "transferFrom",
+            "Second_function": "transfer",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 69\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 40\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 70\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 40\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 76\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 40\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 77\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 40\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 69\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 41\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 70\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 41\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 76\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 41\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 77\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 41\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 69\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 45\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 70\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 45\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 76\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 45\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 77\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 45\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "transferFrom",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "transferFrom",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 67\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 67\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 68\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 68\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 72\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 72\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "transferFrom",
+                "transfer"
+            ],
+            "First_function": "transfer",
+            "Second_function": "transferFrom",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 42\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 67\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 43\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 67\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 49\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 67\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 50\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 67\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 42\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 68\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 43\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 68\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 49\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 68\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 50\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 68\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 42\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 72\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 43\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 72\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 49\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 72\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 50\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 72\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "transferFrom",
+                "transferFrom"
+            ],
+            "First_function": "transferFrom",
+            "Second_function": "transferFrom",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 161\nFunction: transferFrom\nNode: \nEXPRESSION allowance[_from][msg.sender] -= _value\nIRS: \nREF_9 = REF_9 - _value\"",
+                        "\"BlockID: 55\nFunction: transferFrom\nNode: \nEXPRESSION require(bool)(_value <= allowance[_from][msg.sender])\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "allowance"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 174\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 67\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 175\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 67\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 181\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 67\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 182\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 67\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 174\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 68\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 175\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 68\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 181\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 68\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 182\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 68\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value > balanceOf[_to])\nIRS: \nTMP_64 = SOLIDITY_CALL require(bool)(TMP_63)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 174\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 72\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 175\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 72\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 181\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_23 = REF_23 - _value\"",
+                        "\"BlockID: 72\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 182\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_24 = REF_24 + _value\"",
+                        "\"BlockID: 72\nFunction: _transfer\nNode: \nEXPRESSION assert(bool)(balanceOf[_from] + balanceOf[_to] == previousBalances)\nIRS: \nTMP_69 = SOLIDITY_CALL assert(bool)(TMP_68)\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "transferFrom",
+                "approve"
+            ],
+            "First_function": "approve",
+            "Second_function": "transferFrom",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 82\nFunction: approve\nNode: \nEXPRESSION allowance[msg.sender][_spender] = _value\nIRS: \nREF_12 := _value\"",
+                        "\"BlockID: 55\nFunction: transferFrom\nNode: \nEXPRESSION require(bool)(_value <= allowance[_from][msg.sender])\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "allowance"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "transferFrom",
+                "approveAndCall"
+            ],
+            "First_function": "approveAndCall",
+            "Second_function": "transferFrom",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 88\nFunction: approve\nNode: \nEXPRESSION allowance[msg.sender][_spender] = _value\nIRS: \nREF_12 := _value\"",
+                        "\"BlockID: 55\nFunction: transferFrom\nNode: \nEXPRESSION require(bool)(_value <= allowance[_from][msg.sender])\nIRS: \nTMP_22 = SOLIDITY_CALL require(bool)(TMP_21)\""
+                    ],
+                    "state_variable": "allowance"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,262 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 24 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 24 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "80cf152d9942ed61462afca3504744ea07b4a3ad5444c9d94717cca00a4971fa",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "ERC20",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 84,
+                  "filename_relative": "cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                  "filename_short": "cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "ERC20",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              },
+              {
+                "type": "contract",
+                "name": "LPUniswapAssetAdapter",
+                "source_mapping": {
+                  "start": 376,
+                  "length": 443,
+                  "filename_relative": "cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                  "filename_short": "cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "LPUniswapAssetAdapter",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 5,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 24,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 4,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [],
+              "description": "solc-0.6.5 is not recommended for deployment\n",
+              "markdown": "solc-0.6.5 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "9886f0142432896cffa3477d9e656b3ba5a2bb573a8e07322b7577bcdda7f4c9",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.6.5",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                    "filename_short": "cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.6",
+                      ".5"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.6.5 (cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.6.5](cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol#L1",
+              "id": "d653f896fe4d353d50eb3182475f74cf2fde215a42bc3568c3125e230e659c96",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "tokenType",
+                  "source_mapping": {
+                    "start": 491,
+                    "length": 67,
+                    "filename_relative": "cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                    "filename_short": "cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      18
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 72
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "LPUniswapAssetAdapter",
+                      "source_mapping": {
+                        "start": 376,
+                        "length": 443,
+                        "filename_relative": "cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                        "filename_short": "cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable_constant",
+                    "convention": "UPPER_CASE_WITH_UNDERSCORES"
+                  }
+                }
+              ],
+              "description": "Constant LPUniswapAssetAdapter.tokenType (cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol#18) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "markdown": "Constant [LPUniswapAssetAdapter.tokenType](cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol#L18) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "first_markdown_element": "cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol#L18",
+              "id": "127703e56c8be40fd0ec77a9a0f3fedf7619f14189ddd94bccda6bd8e963be09",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "adapterType",
+                  "source_mapping": {
+                    "start": 432,
+                    "length": 53,
+                    "filename_relative": "cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                    "filename_short": "cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 58
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "LPUniswapAssetAdapter",
+                      "source_mapping": {
+                        "start": 376,
+                        "length": 443,
+                        "filename_relative": "cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                        "filename_short": "cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable_constant",
+                    "convention": "UPPER_CASE_WITH_UNDERSCORES"
+                  }
+                }
+              ],
+              "description": "Constant LPUniswapAssetAdapter.adapterType (cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol#17) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "markdown": "Constant [LPUniswapAssetAdapter.adapterType](cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol#L17) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "first_markdown_element": "cleanSource/0x977baa429b27fe86689274a6bf0dfcfc5d6f1c12.sol#L17",
+              "id": "a4a623bb776308fd87b4afdaf9d729675bf27712b866ba3b4e91ea5ff65818a4",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

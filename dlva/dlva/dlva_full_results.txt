@@ -1,0 +1,484 @@
+################################################################################
+
+
+
+
+DLVA results:  DLVA_Predictions_for_Elysium_benchmark.csv 
+Ground Truth:  Elysium_benchmark.csv
+================================================================================
+
+
+Vulnerability: suicidal
+************************************************************
+confusion_matrix
+	 TP: 822
+	 TN: 74
+	 FN: 1
+	 FP: 3
+------------------------------------------------------------
+	 Accurcy: 99.6
+------------------------------------------------------------
+	 TPR (detection rate):  99.9	%
+	 FPR (false alarm):     3.9	%
+	 TNR (specificity):     96.1	%
+	 FNR (miss rate):       0.1	%
+------------------------------------------------------------
+	 Precision:             99.6	%
+	 Recall:                99.6	%
+	 F1:                    99.6	%
+------------------------------------------------------------
+classification_report (specificity,sensitivity,f1)
+              precision    recall  f1-score   support
+
+           0       0.99      0.96      0.97        77
+           1       1.00      1.00      1.00       823
+
+    accuracy                           1.00       900
+   macro avg       0.99      0.98      0.99       900
+weighted avg       1.00      1.00      1.00       900
+
+
+
+Vulnerability: reentrancy-eth
+************************************************************
+confusion_matrix
+	 TP: 74
+	 TN: 821
+	 FN: 1
+	 FP: 4
+------------------------------------------------------------
+	 Accurcy: 99.4
+------------------------------------------------------------
+	 TPR (detection rate):  98.7	%
+	 FPR (false alarm):     0.5	%
+	 TNR (specificity):     99.5	%
+	 FNR (miss rate):       1.3	%
+------------------------------------------------------------
+	 Precision:             99.5	%
+	 Recall:                99.4	%
+	 F1:                    99.4	%
+------------------------------------------------------------
+classification_report (specificity,sensitivity,f1)
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       825
+           1       0.95      0.99      0.97        75
+
+    accuracy                           0.99       900
+   macro avg       0.97      0.99      0.98       900
+weighted avg       0.99      0.99      0.99       900
+
+################################################################################
+
+
+
+
+DLVA results:  DLVA_Predictions_for_Elysium_small.csv 
+Ground Truth:  Elysium_small.csv
+================================================================================
+
+
+Vulnerability: suicidal
+************************************************************
+confusion_matrix
+	 TP: 24
+	 TN: 75
+	 FN: 0
+	 FP: 1
+------------------------------------------------------------
+	 Accurcy: 99.0
+------------------------------------------------------------
+	 TPR (detection rate):  100.0	%
+	 FPR (false alarm):     1.3	%
+	 TNR (specificity):     98.7	%
+	 FNR (miss rate):       0.0	%
+------------------------------------------------------------
+	 Precision:             99.0	%
+	 Recall:                99.0	%
+	 F1:                    99.0	%
+------------------------------------------------------------
+classification_report (specificity,sensitivity,f1)
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      0.99        76
+           1       0.96      1.00      0.98        24
+
+    accuracy                           0.99       100
+   macro avg       0.98      0.99      0.99       100
+weighted avg       0.99      0.99      0.99       100
+
+
+
+Vulnerability: reentrancy-eth
+************************************************************
+confusion_matrix
+	 TP: 74
+	 TN: 24
+	 FN: 1
+	 FP: 1
+------------------------------------------------------------
+	 Accurcy: 98.0
+------------------------------------------------------------
+	 TPR (detection rate):  98.7	%
+	 FPR (false alarm):     4.0	%
+	 TNR (specificity):     96.0	%
+	 FNR (miss rate):       1.3	%
+------------------------------------------------------------
+	 Precision:             98.0	%
+	 Recall:                98.0	%
+	 F1:                    98.0	%
+------------------------------------------------------------
+classification_report (specificity,sensitivity,f1)
+              precision    recall  f1-score   support
+
+           0       0.96      0.96      0.96        25
+           1       0.99      0.99      0.99        75
+
+    accuracy                           0.98       100
+   macro avg       0.97      0.97      0.97       100
+weighted avg       0.98      0.98      0.98       100
+
+################################################################################
+
+
+
+
+DLVA results:  DLVA_Predictions_for_Reentrancy_benchmark.csv 
+Ground Truth:  Reentrancy_benchmark.csv
+================================================================================
+
+
+Vulnerability: reentrancy-eth
+************************************************************
+confusion_matrix
+	 TP: 50
+	 TN: 420
+	 FN: 3
+	 FP: 0
+------------------------------------------------------------
+	 Accurcy: 99.4
+------------------------------------------------------------
+	 TPR (detection rate):  94.3	%
+	 FPR (false alarm):     0.0	%
+	 TNR (specificity):     100.0	%
+	 FNR (miss rate):       5.7	%
+------------------------------------------------------------
+	 Precision:             99.4	%
+	 Recall:                99.4	%
+	 F1:                    99.4	%
+------------------------------------------------------------
+classification_report (specificity,sensitivity,f1)
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00       420
+           1       1.00      0.94      0.97        53
+
+    accuracy                           0.99       473
+   macro avg       1.00      0.97      0.98       473
+weighted avg       0.99      0.99      0.99       473
+
+################################################################################
+
+
+
+
+DLVA results:  DLVA_Predictions_for_Reentrancy_small.csv 
+Ground Truth:  Reentrancy_small.csv
+================================================================================
+
+
+Vulnerability: reentrancy-eth
+************************************************************
+confusion_matrix
+	 TP: 50
+	 TN: 47
+	 FN: 3
+	 FP: 0
+------------------------------------------------------------
+	 Accurcy: 97.0
+------------------------------------------------------------
+	 TPR (detection rate):  94.3	%
+	 FPR (false alarm):     0.0	%
+	 TNR (specificity):     100.0	%
+	 FNR (miss rate):       5.7	%
+------------------------------------------------------------
+	 Precision:             97.2	%
+	 Recall:                97.0	%
+	 F1:                    97.0	%
+------------------------------------------------------------
+classification_report (specificity,sensitivity,f1)
+              precision    recall  f1-score   support
+
+           0       0.94      1.00      0.97        47
+           1       1.00      0.94      0.97        53
+
+    accuracy                           0.97       100
+   macro avg       0.97      0.97      0.97       100
+weighted avg       0.97      0.97      0.97       100
+
+################################################################################
+
+
+
+
+DLVA results:  DLVA_Predictions_for_SolidiFI_benchmark.csv 
+Ground Truth:  SolidiFI_benchmark.csv
+================================================================================
+
+
+Vulnerability: tx.origin
+************************************************************
+confusion_matrix
+	 TP: 28
+	 TN: 250
+	 FN: 83
+	 FP: 83
+------------------------------------------------------------
+	 Accurcy: 62.6
+------------------------------------------------------------
+	 TPR (detection rate):  25.2	%
+	 FPR (false alarm):     24.9	%
+	 TNR (specificity):     75.1	%
+	 FNR (miss rate):       74.8	%
+------------------------------------------------------------
+	 Precision:             62.6	%
+	 Recall:                62.6	%
+	 F1:                    62.6	%
+------------------------------------------------------------
+classification_report (specificity,sensitivity,f1)
+              precision    recall  f1-score   support
+
+           0       0.75      0.75      0.75       333
+           1       0.25      0.25      0.25       111
+
+    accuracy                           0.63       444
+   macro avg       0.50      0.50      0.50       444
+weighted avg       0.63      0.63      0.63       444
+
+
+
+Vulnerability: Timestamp-Dependency
+************************************************************
+confusion_matrix
+	 TP: 27
+	 TN: 249
+	 FN: 84
+	 FP: 84
+------------------------------------------------------------
+	 Accurcy: 62.2
+------------------------------------------------------------
+	 TPR (detection rate):  24.3	%
+	 FPR (false alarm):     25.2	%
+	 TNR (specificity):     74.8	%
+	 FNR (miss rate):       75.7	%
+------------------------------------------------------------
+	 Precision:             62.2	%
+	 Recall:                62.2	%
+	 F1:                    62.2	%
+------------------------------------------------------------
+classification_report (specificity,sensitivity,f1)
+              precision    recall  f1-score   support
+
+           0       0.75      0.75      0.75       333
+           1       0.24      0.24      0.24       111
+
+    accuracy                           0.62       444
+   macro avg       0.50      0.50      0.50       444
+weighted avg       0.62      0.62      0.62       444
+
+
+
+Vulnerability: Re-entrancy
+************************************************************
+confusion_matrix
+	 TP: 35
+	 TN: 257
+	 FN: 76
+	 FP: 76
+------------------------------------------------------------
+	 Accurcy: 65.8
+------------------------------------------------------------
+	 TPR (detection rate):  31.5	%
+	 FPR (false alarm):     22.8	%
+	 TNR (specificity):     77.2	%
+	 FNR (miss rate):       68.5	%
+------------------------------------------------------------
+	 Precision:             65.8	%
+	 Recall:                65.8	%
+	 F1:                    65.8	%
+------------------------------------------------------------
+classification_report (specificity,sensitivity,f1)
+              precision    recall  f1-score   support
+
+           0       0.77      0.77      0.77       333
+           1       0.32      0.32      0.32       111
+
+    accuracy                           0.66       444
+   macro avg       0.54      0.54      0.54       444
+weighted avg       0.66      0.66      0.66       444
+
+
+
+Vulnerability: Overflow-Underflow
+************************************************************
+confusion_matrix
+	 TP: 29
+	 TN: 253
+	 FN: 82
+	 FP: 80
+------------------------------------------------------------
+	 Accurcy: 63.5
+------------------------------------------------------------
+	 TPR (detection rate):  26.1	%
+	 FPR (false alarm):     24.0	%
+	 TNR (specificity):     76.0	%
+	 FNR (miss rate):       73.9	%
+------------------------------------------------------------
+	 Precision:             63.3	%
+	 Recall:                63.5	%
+	 F1:                    63.4	%
+------------------------------------------------------------
+classification_report (specificity,sensitivity,f1)
+              precision    recall  f1-score   support
+
+           0       0.76      0.76      0.76       333
+           1       0.27      0.26      0.26       111
+
+    accuracy                           0.64       444
+   macro avg       0.51      0.51      0.51       444
+weighted avg       0.63      0.64      0.63       444
+
+################################################################################
+
+
+
+
+DLVA results:  DLVA_Predictions_for_SolidiFI_small.csv 
+Ground Truth:  SolidiFI_small.csv
+================================================================================
+
+
+Vulnerability: tx.origin
+************************************************************
+confusion_matrix
+	 TP: 28
+	 TN: 72
+	 FN: 0
+	 FP: 0
+------------------------------------------------------------
+	 Accurcy: 100.0
+------------------------------------------------------------
+	 TPR (detection rate):  100.0	%
+	 FPR (false alarm):     0.0	%
+	 TNR (specificity):     100.0	%
+	 FNR (miss rate):       0.0	%
+------------------------------------------------------------
+	 Precision:             100.0	%
+	 Recall:                100.0	%
+	 F1:                    100.0	%
+------------------------------------------------------------
+classification_report (specificity,sensitivity,f1)
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        72
+           1       1.00      1.00      1.00        28
+
+    accuracy                           1.00       100
+   macro avg       1.00      1.00      1.00       100
+weighted avg       1.00      1.00      1.00       100
+
+
+
+Vulnerability: Timestamp-Dependency
+************************************************************
+confusion_matrix
+	 TP: 23
+	 TN: 77
+	 FN: 0
+	 FP: 0
+------------------------------------------------------------
+	 Accurcy: 100.0
+------------------------------------------------------------
+	 TPR (detection rate):  100.0	%
+	 FPR (false alarm):     0.0	%
+	 TNR (specificity):     100.0	%
+	 FNR (miss rate):       0.0	%
+------------------------------------------------------------
+	 Precision:             100.0	%
+	 Recall:                100.0	%
+	 F1:                    100.0	%
+------------------------------------------------------------
+classification_report (specificity,sensitivity,f1)
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        77
+           1       1.00      1.00      1.00        23
+
+    accuracy                           1.00       100
+   macro avg       1.00      1.00      1.00       100
+weighted avg       1.00      1.00      1.00       100
+
+
+
+Vulnerability: Re-entrancy
+************************************************************
+confusion_matrix
+	 TP: 23
+	 TN: 77
+	 FN: 0
+	 FP: 0
+------------------------------------------------------------
+	 Accurcy: 100.0
+------------------------------------------------------------
+	 TPR (detection rate):  100.0	%
+	 FPR (false alarm):     0.0	%
+	 TNR (specificity):     100.0	%
+	 FNR (miss rate):       0.0	%
+------------------------------------------------------------
+	 Precision:             100.0	%
+	 Recall:                100.0	%
+	 F1:                    100.0	%
+------------------------------------------------------------
+classification_report (specificity,sensitivity,f1)
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        77
+           1       1.00      1.00      1.00        23
+
+    accuracy                           1.00       100
+   macro avg       1.00      1.00      1.00       100
+weighted avg       1.00      1.00      1.00       100
+
+
+
+Vulnerability: Overflow-Underflow
+************************************************************
+confusion_matrix
+	 TP: 26
+	 TN: 74
+	 FN: 0
+	 FP: 0
+------------------------------------------------------------
+	 Accurcy: 100.0
+------------------------------------------------------------
+	 TPR (detection rate):  100.0	%
+	 FPR (false alarm):     0.0	%
+	 TNR (specificity):     100.0	%
+	 FNR (miss rate):       0.0	%
+------------------------------------------------------------
+	 Precision:             100.0	%
+	 Recall:                100.0	%
+	 F1:                    100.0	%
+------------------------------------------------------------
+classification_report (specificity,sensitivity,f1)
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        74
+           1       1.00      1.00      1.00        26
+
+    accuracy                           1.00       100
+   macro avg       1.00      1.00      1.00       100
+weighted avg       1.00      1.00      1.00       100
+
+################################################################################
+Done!

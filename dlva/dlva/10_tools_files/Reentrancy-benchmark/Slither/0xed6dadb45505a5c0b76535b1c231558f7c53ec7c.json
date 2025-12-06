@@ -1,0 +1,403 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 24 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m5\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 24 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m5\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "14eb1cc6a759c3c4f24ffb30a4a73171f51a1e69765e8f42d89412ac397b4696",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "IRelease",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 55,
+                  "filename_relative": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                  "filename_short": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "IRelease",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              },
+              {
+                "type": "contract",
+                "name": "IERC20",
+                "source_mapping": {
+                  "start": 81,
+                  "length": 82,
+                  "filename_relative": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                  "filename_short": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    6,
+                    7,
+                    8
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "IERC20",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              },
+              {
+                "type": "contract",
+                "name": "SurfBoardTask",
+                "source_mapping": {
+                  "start": 164,
+                  "length": 536,
+                  "filename_relative": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                  "filename_short": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "SurfBoardTask",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 3,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 24,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 5,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.6.2",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                    "filename_short": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.6",
+                      ".2"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.6.2 (cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.6.2](cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol#L1",
+              "id": "675c9ff73ae272820ca1363218d3bc5cb8dc077bff11a70c6aa96b2959e4ebd0",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.6.2 is not recommended for deployment\n",
+              "markdown": "solc-0.6.2 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "85be45f004356d2929e31227e265fddf1357b605efbb44915ec5bae212e8dc23",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_surfBoards",
+                  "source_mapping": {
+                    "start": 274,
+                    "length": 81,
+                    "filename_relative": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                    "filename_short": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 86
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "SurfBoardTask",
+                      "source_mapping": {
+                        "start": 164,
+                        "length": 536,
+                        "filename_relative": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                        "filename_short": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable_constant",
+                    "convention": "UPPER_CASE_WITH_UNDERSCORES"
+                  }
+                }
+              ],
+              "description": "Constant SurfBoardTask._surfBoards (cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol#11) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "markdown": "Constant [SurfBoardTask._surfBoards](cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol#L11) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "first_markdown_element": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol#L11",
+              "id": "5df18daad613b9496eb3eeef32ebc116afd7bc8f7ae2b6d3e0b765fcfbb24ec6",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_surf",
+                  "source_mapping": {
+                    "start": 193,
+                    "length": 75,
+                    "filename_relative": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                    "filename_short": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 80
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "SurfBoardTask",
+                      "source_mapping": {
+                        "start": 164,
+                        "length": 536,
+                        "filename_relative": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                        "filename_short": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable_constant",
+                    "convention": "UPPER_CASE_WITH_UNDERSCORES"
+                  }
+                }
+              ],
+              "description": "Constant SurfBoardTask._surf (cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol#10) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "markdown": "Constant [SurfBoardTask._surf](cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol#L10) is not in UPPER_CASE_WITH_UNDERSCORES\n",
+              "first_markdown_element": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol#L10",
+              "id": "72137f85a925912d24819689dd7ad2b7d55e1669fe9ca3a32c8abe8d3ebcaf21",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_requirement",
+                  "source_mapping": {
+                    "start": 376,
+                    "length": 17,
+                    "filename_relative": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                    "filename_short": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 20,
+                    "ending_column": 37
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "check",
+                      "source_mapping": {
+                        "start": 361,
+                        "length": 252,
+                        "filename_relative": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                        "filename_short": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "SurfBoardTask",
+                          "source_mapping": {
+                            "start": 164,
+                            "length": 536,
+                            "filename_relative": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                            "filename_short": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "check(uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter SurfBoardTask.check(uint256)._requirement (cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol#12) is not in mixedCase\n",
+              "markdown": "Parameter [SurfBoardTask.check(uint256)._requirement](cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol#L12) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0xed6dadb45505a5c0b76535b1c231558f7c53ec7c.sol#L12",
+              "id": "d9f334e6c8da7aa7556183e3fce19738e2cd7a23cd3103ef0bfae60a3012d9f6",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

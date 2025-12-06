@@ -1,0 +1,149 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 7 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 7 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "c97b9fb7e798e6ecc4d73d8ae172a94a2e2645f6b697829f358f2b04e4a02482",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "empathy",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 106,
+                  "filename_relative": "cleanSource/0xcec98bd71a4817bdc57b7b2b81487edae2c6b922.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xcec98bd71a4817bdc57b7b2b81487edae2c6b922.sol",
+                  "filename_short": "cleanSource/0xcec98bd71a4817bdc57b7b2b81487edae2c6b922.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "empathy",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 7,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 3,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [],
+              "description": "solc-0.4.26 is not recommended for deployment\n",
+              "markdown": "solc-0.4.26 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "e85e93c612cb109c115ab31accf43cd25c590bd8f9b6a43b662115b987f777c3",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.26",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0xcec98bd71a4817bdc57b7b2b81487edae2c6b922.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xcec98bd71a4817bdc57b7b2b81487edae2c6b922.sol",
+                    "filename_short": "cleanSource/0xcec98bd71a4817bdc57b7b2b81487edae2c6b922.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".26"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.26 (cleanSource/0xcec98bd71a4817bdc57b7b2b81487edae2c6b922.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.26](cleanSource/0xcec98bd71a4817bdc57b7b2b81487edae2c6b922.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0xcec98bd71a4817bdc57b7b2b81487edae2c6b922.sol#L1",
+              "id": "f7e08f66da9554bf025bf6445c4e6db91d4c54c3025c2464abbb690457317117",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "contract",
+                  "name": "empathy",
+                  "source_mapping": {
+                    "start": 26,
+                    "length": 106,
+                    "filename_relative": "cleanSource/0xcec98bd71a4817bdc57b7b2b81487edae2c6b922.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xcec98bd71a4817bdc57b7b2b81487edae2c6b922.sol",
+                    "filename_short": "cleanSource/0xcec98bd71a4817bdc57b7b2b81487edae2c6b922.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  },
+                  "additional_fields": {
+                    "target": "contract",
+                    "convention": "CapWords"
+                  }
+                }
+              ],
+              "description": "Contract empathy (cleanSource/0xcec98bd71a4817bdc57b7b2b81487edae2c6b922.sol#3-8) is not in CapWords\n",
+              "markdown": "Contract [empathy](cleanSource/0xcec98bd71a4817bdc57b7b2b81487edae2c6b922.sol#L3-L8) is not in CapWords\n",
+              "first_markdown_element": "cleanSource/0xcec98bd71a4817bdc57b7b2b81487edae2c6b922.sol#L3-L8",
+              "id": "8b0671e24ac4d5ed558a2bbc2584cd276121542c7c649018761c6ab630f0fc44",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

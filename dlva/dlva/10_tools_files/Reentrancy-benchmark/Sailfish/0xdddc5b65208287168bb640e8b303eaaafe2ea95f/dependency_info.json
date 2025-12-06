@@ -1,0 +1,113 @@
+{
+    "0xdddc5b65208287168bb640e8b303eaaafe2ea95f.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 39\nFunction: fallback\nNode: \nEXPRESSION totalPaid[msg.sender] += dailyPayment[msg.sender]\nIRS: \nREF_14 = REF_14 + REF_15\"",
+                        "\"BlockID: 4\nFunction: fallback\nNode: \nIF invested[msg.sender] * 2 > totalPaid[msg.sender] && block.number - lastPaymentBlock[msg.sender] > 5900\nIRS: \nCONDITION TMP_17\""
+                    ],
+                    "state_variable": "totalPaid"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 39\nFunction: fallback\nNode: \nEXPRESSION totalPaid[msg.sender] += dailyPayment[msg.sender]\nIRS: \nREF_14 = REF_14 + REF_15\"",
+                        "\"BlockID: 6\nFunction: fallback\nNode: \nEXPRESSION sender.transfer(dailyPayment[msg.sender])\nIRS: \nTransfer dest:sender value:REF_17\""
+                    ],
+                    "state_variable": "totalPaid"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 47\nFunction: fallback\nNode: \nEXPRESSION invested[refAddress] += msg.value \/ 20\nIRS: \nREF_6 = REF_6 + TMP_8\"",
+                        "\"BlockID: 4\nFunction: fallback\nNode: \nIF invested[msg.sender] * 2 > totalPaid[msg.sender] && block.number - lastPaymentBlock[msg.sender] > 5900\nIRS: \nCONDITION TMP_17\""
+                    ],
+                    "state_variable": "invested"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 49\nFunction: fallback\nNode: \nEXPRESSION invested[msg.sender] += msg.value \/ 20\nIRS: \nREF_7 = REF_7 + TMP_9\"",
+                        "\"BlockID: 4\nFunction: fallback\nNode: \nIF invested[msg.sender] * 2 > totalPaid[msg.sender] && block.number - lastPaymentBlock[msg.sender] > 5900\nIRS: \nCONDITION TMP_17\""
+                    ],
+                    "state_variable": "invested"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 51\nFunction: fallback\nNode: \nEXPRESSION invested[msg.sender] += msg.value\nIRS: \nREF_3 = REF_3 + msg.value\"",
+                        "\"BlockID: 4\nFunction: fallback\nNode: \nIF invested[msg.sender] * 2 > totalPaid[msg.sender] && block.number - lastPaymentBlock[msg.sender] > 5900\nIRS: \nCONDITION TMP_17\""
+                    ],
+                    "state_variable": "invested"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 47\nFunction: fallback\nNode: \nEXPRESSION invested[refAddress] += msg.value \/ 20\nIRS: \nREF_6 = REF_6 + TMP_8\"",
+                        "\"BlockID: 5\nFunction: fallback\nNode: \nEXPRESSION totalPaid[msg.sender] += dailyPayment[msg.sender]\nIRS: \nREF_14 = REF_14 + REF_15\""
+                    ],
+                    "state_variable": "invested"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 49\nFunction: fallback\nNode: \nEXPRESSION invested[msg.sender] += msg.value \/ 20\nIRS: \nREF_7 = REF_7 + TMP_9\"",
+                        "\"BlockID: 5\nFunction: fallback\nNode: \nEXPRESSION totalPaid[msg.sender] += dailyPayment[msg.sender]\nIRS: \nREF_14 = REF_14 + REF_15\""
+                    ],
+                    "state_variable": "invested"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 51\nFunction: fallback\nNode: \nEXPRESSION invested[msg.sender] += msg.value\nIRS: \nREF_3 = REF_3 + msg.value\"",
+                        "\"BlockID: 5\nFunction: fallback\nNode: \nEXPRESSION totalPaid[msg.sender] += dailyPayment[msg.sender]\nIRS: \nREF_14 = REF_14 + REF_15\""
+                    ],
+                    "state_variable": "invested"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 47\nFunction: fallback\nNode: \nEXPRESSION invested[refAddress] += msg.value \/ 20\nIRS: \nREF_6 = REF_6 + TMP_8\"",
+                        "\"BlockID: 6\nFunction: fallback\nNode: \nEXPRESSION sender.transfer(dailyPayment[msg.sender])\nIRS: \nTransfer dest:sender value:REF_17\""
+                    ],
+                    "state_variable": "invested"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 49\nFunction: fallback\nNode: \nEXPRESSION invested[msg.sender] += msg.value \/ 20\nIRS: \nREF_7 = REF_7 + TMP_9\"",
+                        "\"BlockID: 6\nFunction: fallback\nNode: \nEXPRESSION sender.transfer(dailyPayment[msg.sender])\nIRS: \nTransfer dest:sender value:REF_17\""
+                    ],
+                    "state_variable": "invested"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 51\nFunction: fallback\nNode: \nEXPRESSION invested[msg.sender] += msg.value\nIRS: \nREF_3 = REF_3 + msg.value\"",
+                        "\"BlockID: 6\nFunction: fallback\nNode: \nEXPRESSION sender.transfer(dailyPayment[msg.sender])\nIRS: \nTransfer dest:sender value:REF_17\""
+                    ],
+                    "state_variable": "invested"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: fallback\nNode: \nEXPRESSION lastPaymentBlock[msg.sender] = block.number\nIRS: \nREF_2 := block.number\"",
+                        "\"BlockID: 4\nFunction: fallback\nNode: \nIF invested[msg.sender] * 2 > totalPaid[msg.sender] && block.number - lastPaymentBlock[msg.sender] > 5900\nIRS: \nCONDITION TMP_17\""
+                    ],
+                    "state_variable": "lastPaymentBlock"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 50\nFunction: fallback\nNode: \nEXPRESSION dailyPayment[msg.sender] = (invested[msg.sender] * 2 - totalPaid[msg.sender]) \/ 40\nIRS: \nREF_8 := TMP_12\"",
+                        "\"BlockID: 5\nFunction: fallback\nNode: \nEXPRESSION totalPaid[msg.sender] += dailyPayment[msg.sender]\nIRS: \nREF_14 = REF_14 + REF_15\""
+                    ],
+                    "state_variable": "dailyPayment"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 50\nFunction: fallback\nNode: \nEXPRESSION dailyPayment[msg.sender] = (invested[msg.sender] * 2 - totalPaid[msg.sender]) \/ 40\nIRS: \nREF_8 := TMP_12\"",
+                        "\"BlockID: 6\nFunction: fallback\nNode: \nEXPRESSION sender.transfer(dailyPayment[msg.sender])\nIRS: \nTransfer dest:sender value:REF_17\""
+                    ],
+                    "state_variable": "dailyPayment"
+                }
+            ]
+        }
+    ]
+}

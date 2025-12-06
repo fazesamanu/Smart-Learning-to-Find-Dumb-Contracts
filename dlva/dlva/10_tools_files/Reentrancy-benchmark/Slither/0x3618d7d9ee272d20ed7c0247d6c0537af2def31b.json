@@ -1,0 +1,390 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 11 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 11 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m3\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "60be72aa7372ae3d595d4aa16e803edd8f31e416002dd16581ddf72e06b2ca24",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "Forward",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 218,
+                  "filename_relative": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                  "filename_short": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "Forward",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": [
+                    "Receive ETH",
+                    "Send ETH"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 11,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 3,
+            "low_issues": 1,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.16",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                    "filename_short": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".16"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.16 (cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.16](cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol#L1",
+              "id": "096044892d68500bc6a89d1f4b65489b269d792b1fcffabe709cbe35537b169d",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.16 is not recommended for deployment\n",
+              "markdown": "solc-0.4.16 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "82db78248a4c50d5946da334523137ab7364cea2cdbdab8869e6a42d2060c9bc",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "fallback",
+                  "source_mapping": {
+                    "start": 154,
+                    "length": 88,
+                    "filename_relative": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                    "filename_short": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      8,
+                      9,
+                      10
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Forward",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 218,
+                        "filename_relative": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                        "filename_short": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "fallback()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "require(bool)(destination.call.value(msg.value)(msg.data))",
+                  "source_mapping": {
+                    "start": 183,
+                    "length": 52,
+                    "filename_relative": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                    "filename_short": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      9
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 61
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "fallback",
+                      "source_mapping": {
+                        "start": 154,
+                        "length": 88,
+                        "filename_relative": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                        "filename_short": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          8,
+                          9,
+                          10
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Forward",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 218,
+                            "filename_relative": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                            "filename_short": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "fallback()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Low level call in Forward.fallback() (cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol#8-10):\n\t- require(bool)(destination.call.value(msg.value)(msg.data)) (cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol#9)\n",
+              "markdown": "Low level call in [Forward.fallback()](cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol#L8-L10):\n\t- [require(bool)(destination.call.value(msg.value)(msg.data))](cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol#L9)\n",
+              "first_markdown_element": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol#L8-L10",
+              "id": "68ed69748167ae18b7ea4f4de73927d9722335103b1a848536ffa8c66f58d8df",
+              "check": "low-level-calls",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_addr",
+                  "source_mapping": {
+                    "start": 98,
+                    "length": 13,
+                    "filename_relative": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                    "filename_short": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 22,
+                    "ending_column": 35
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "Forward",
+                      "source_mapping": {
+                        "start": 81,
+                        "length": 68,
+                        "filename_relative": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                        "filename_short": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Forward",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 218,
+                            "filename_relative": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                            "filename_short": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "Forward(address)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "destination = _addr",
+                  "source_mapping": {
+                    "start": 123,
+                    "length": 19,
+                    "filename_relative": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                    "filename_short": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 28
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "Forward",
+                      "source_mapping": {
+                        "start": 81,
+                        "length": 68,
+                        "filename_relative": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                        "filename_short": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Forward",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 218,
+                            "filename_relative": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                            "filename_short": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "Forward(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Forward.Forward(address)._addr (cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol#5) lacks a zero-check on :\n\t\t- destination = _addr (cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol#6)\n",
+              "markdown": "[Forward.Forward(address)._addr](cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol#L5) lacks a zero-check on :\n\t\t- [destination = _addr](cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol#L6)\n",
+              "first_markdown_element": "cleanSource/0x3618d7d9ee272d20ed7c0247d6c0537af2def31b.sol#L5",
+              "id": "a4aa3ac17dd52d79f61786b6767a889c5676dea9ad164f4f68f9e2d21270d278",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

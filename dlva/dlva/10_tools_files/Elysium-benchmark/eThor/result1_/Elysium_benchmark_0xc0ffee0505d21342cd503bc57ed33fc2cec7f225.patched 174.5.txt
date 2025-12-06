@@ -1,0 +1,75 @@
+Results for Elysium_benchmark_0xc0ffee0505d21342cd503bc57ed33fc2cec7f225.patched.txt:
+Queries
+query id:       reentrancyCall_0_2260
+execution time: 13092
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_5385(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_5381(#8,#9,#10,#3,#4,#5,#6,#7),
+ (= (:var 0) (- (:var 8) 2)),
+ (= (:var 2)
+   (store (store (:var 10) (- (:var 8) 2) (:var 16)) (- (:var 8) 3) (:var 18))),
+ (= (:var 1)
+   (store (store (:var 9) (- (:var 8) 2) (:var 15)) (- (:var 8) 3) (:var 17))),
+ (= (:var 18)
+   (ite (and (:var 11) (:var 13))
+        (ite (= (:var 14) 0) 0 (div (:var 12) (:var 14)))
+        0)),
+ (= (:var 17) (and (:var 11) (:var 13))),
+ (= (:var 16) (select (:var 10) (- (:var 8) 3))),
+ (= (:var 15) (select (:var 9) (- (:var 8) 3))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 1))),
+ (> (:var 8) 2).
+
+query id:       reentrancyCall_0_2868
+execution time: 13070
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_5385(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_5381(#8,#9,#10,#3,#4,#5,#6,#7),
+ (= (:var 0) (- (:var 8) 2)),
+ (= (:var 2)
+   (store (store (:var 10) (- (:var 8) 2) (:var 16)) (- (:var 8) 3) (:var 18))),
+ (= (:var 1)
+   (store (store (:var 9) (- (:var 8) 2) (:var 15)) (- (:var 8) 3) (:var 17))),
+ (= (:var 18)
+   (ite (and (:var 11) (:var 13))
+        (ite (= (:var 14) 0) 0 (div (:var 12) (:var 14)))
+        0)),
+ (= (:var 17) (and (:var 11) (:var 13))),
+ (= (:var 16) (select (:var 10) (- (:var 8) 3))),
+ (= (:var 15) (select (:var 9) (- (:var 8) 3))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 1))),
+ (> (:var 8) 2).
+
+query id:       reentrancyCreate_0_5357
+execution time: 13208
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_5385(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_5381(#8,#9,#10,#3,#4,#5,#6,#7),
+ (= (:var 0) (- (:var 8) 2)),
+ (= (:var 2)
+   (store (store (:var 10) (- (:var 8) 2) (:var 16)) (- (:var 8) 3) (:var 18))),
+ (= (:var 1)
+   (store (store (:var 9) (- (:var 8) 2) (:var 15)) (- (:var 8) 3) (:var 17))),
+ (= (:var 18)
+   (ite (and (:var 11) (:var 13))
+        (ite (= (:var 14) 0) 0 (div (:var 12) (:var 14)))
+        0)),
+ (= (:var 17) (and (:var 11) (:var 13))),
+ (= (:var 16) (select (:var 10) (- (:var 8) 3))),
+ (= (:var 15) (select (:var 9) (- (:var 8) 3))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 1))),
+ (> (:var 8) 2).
+
+

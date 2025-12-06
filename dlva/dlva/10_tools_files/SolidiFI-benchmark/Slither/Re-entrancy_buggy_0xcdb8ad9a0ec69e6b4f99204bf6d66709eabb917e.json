@@ -1,0 +1,2929 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 78 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m18\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[91m2\u001b[0m\nERCs: ERC20\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 78 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 2 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m18\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[91m2\u001b[0m\nERCs: ERC20\n",
+        "first_markdown_element": "",
+        "id": "c7e2aa5cb88292d53badf8e3180a129b1f104e5ca8b04b90af484a2c73228d7b",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "SafeMath",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 591,
+                  "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                  "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "SafeMath",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 4,
+                  "features": []
+                }
+              },
+              {
+                "type": "contract",
+                "name": "Robedium",
+                "source_mapping": {
+                  "start": 618,
+                  "length": 2059,
+                  "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                  "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59,
+                    60,
+                    61,
+                    62,
+                    63,
+                    64,
+                    65,
+                    66,
+                    67,
+                    68,
+                    69,
+                    70,
+                    71,
+                    72,
+                    73,
+                    74,
+                    75,
+                    76,
+                    77,
+                    78,
+                    79
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "Robedium",
+                  "is_complex_code": false,
+                  "is_erc20": true,
+                  "number_functions": 9,
+                  "features": [
+                    "Send ETH"
+                  ],
+                  "erc20_pause": false,
+                  "erc20_can_mint": false,
+                  "erc20_race_condition_mitigated": false
+                }
+              }
+            ]
+          },
+          "number_lines": 78,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [
+            "ERC20"
+          ],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 18,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 2
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "mul",
+                  "source_mapping": {
+                    "start": 49,
+                    "length": 160,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4,
+                      5,
+                      6,
+                      7,
+                      8
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "SafeMath",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 591,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "mul(uint256,uint256)"
+                  }
+                }
+              ],
+              "description": "SafeMath.mul(uint256,uint256) (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#4-8) is never used and should be removed\n",
+              "markdown": "[SafeMath.mul(uint256,uint256)](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L4-L8) is never used and should be removed\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L4-L8",
+              "id": "01304cc4312b37902daca45f84c38ca41bb71ffe24e353e8143a18f4c9731983",
+              "check": "dead-code",
+              "impact": "Informational",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "div",
+                  "source_mapping": {
+                    "start": 214,
+                    "length": 122,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      9,
+                      10,
+                      11,
+                      12
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "SafeMath",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 591,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "div(uint256,uint256)"
+                  }
+                }
+              ],
+              "description": "SafeMath.div(uint256,uint256) (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#9-12) is never used and should be removed\n",
+              "markdown": "[SafeMath.div(uint256,uint256)](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L9-L12) is never used and should be removed\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L9-L12",
+              "id": "b49b4889f1b304a84f2984119b9a2fc4e67dfb2f730e0a6de8fe6113d3fbcc39",
+              "check": "dead-code",
+              "impact": "Informational",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.26",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".26"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.26 (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.26](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L1) allows old versions\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L1",
+              "id": "44e63a8f6b8bafd8c017a0960a476923ac13dfeb659c5a2f44ebb6309a2f7271",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.26 is not recommended for deployment\n",
+              "markdown": "solc-0.4.26 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "e85e93c612cb109c115ab31accf43cd25c590bd8f9b6a43b662115b987f777c3",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "bug_re_ent6",
+                  "source_mapping": {
+                    "start": 1002,
+                    "length": 196,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39,
+                      40
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Robedium",
+                      "source_mapping": {
+                        "start": 618,
+                        "length": 2059,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68,
+                          69,
+                          70,
+                          71,
+                          72,
+                          73,
+                          74,
+                          75,
+                          76,
+                          77,
+                          78,
+                          79
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "bug_re_ent6()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "! (msg.sender.call.value(1000000000000000000)())",
+                  "source_mapping": {
+                    "start": 1082,
+                    "length": 39,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      36
+                    ],
+                    "starting_column": 13,
+                    "ending_column": 52
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "bug_re_ent6",
+                      "source_mapping": {
+                        "start": 1002,
+                        "length": 196,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Robedium",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 2059,
+                            "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75,
+                              76,
+                              77,
+                              78,
+                              79
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "bug_re_ent6()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Low level call in Robedium.bug_re_ent6() (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#34-40):\n\t- ! (msg.sender.call.value(1000000000000000000)()) (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#36)\n",
+              "markdown": "Low level call in [Robedium.bug_re_ent6()](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L34-L40):\n\t- [! (msg.sender.call.value(1000000000000000000)())](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L36)\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L34-L40",
+              "id": "a8b7e7a5220dc8354c8a2dbcc8e7c9f782aa73bbd858e3fe7737c92132bb6abf",
+              "check": "low-level-calls",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "bug_re_ent6",
+                  "source_mapping": {
+                    "start": 1002,
+                    "length": 196,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39,
+                      40
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Robedium",
+                      "source_mapping": {
+                        "start": 618,
+                        "length": 2059,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68,
+                          69,
+                          70,
+                          71,
+                          72,
+                          73,
+                          74,
+                          75,
+                          76,
+                          77,
+                          78,
+                          79
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "bug_re_ent6()"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function Robedium.bug_re_ent6() (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#34-40) is not in mixedCase\n",
+              "markdown": "Function [Robedium.bug_re_ent6()](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L34-L40) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L34-L40",
+              "id": "01471fd5ca82e84ba3c59f5f86783602edbae442a86324305dc62b9126a369c9",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_from",
+                  "source_mapping": {
+                    "start": 2024,
+                    "length": 13,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      61
+                    ],
+                    "starting_column": 27,
+                    "ending_column": 40
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferFrom",
+                      "source_mapping": {
+                        "start": 2002,
+                        "length": 366,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Robedium",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 2059,
+                            "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75,
+                              76,
+                              77,
+                              78,
+                              79
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferFrom(address,address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Robedium.transferFrom(address,address,uint256)._from (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#61) is not in mixedCase\n",
+              "markdown": "Parameter [Robedium.transferFrom(address,address,uint256)._from](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L61) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L61",
+              "id": "0801564cf9a288a92c6ec08aa2a4626fcd7bb17a3429e1fe132262d2f03f4c8c",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_to",
+                  "source_mapping": {
+                    "start": 1767,
+                    "length": 11,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      55
+                    ],
+                    "starting_column": 23,
+                    "ending_column": 34
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transfer",
+                      "source_mapping": {
+                        "start": 1749,
+                        "length": 248,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Robedium",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 2059,
+                            "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75,
+                              76,
+                              77,
+                              78,
+                              79
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transfer(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Robedium.transfer(address,uint256)._to (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#55) is not in mixedCase\n",
+              "markdown": "Parameter [Robedium.transfer(address,uint256)._to](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L55) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L55",
+              "id": "0cb79bf91db28043a79fdaa0ef29c4c3c115bd62792a717e419dafe359fe269e",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_spender",
+                  "source_mapping": {
+                    "start": 1641,
+                    "length": 16,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      52
+                    ],
+                    "starting_column": 40,
+                    "ending_column": 56
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "allowance",
+                      "source_mapping": {
+                        "start": 1606,
+                        "length": 138,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          52,
+                          53,
+                          54
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Robedium",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 2059,
+                            "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75,
+                              76,
+                              77,
+                              78,
+                              79
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "allowance(address,address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Robedium.allowance(address,address)._spender (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#52) is not in mixedCase\n",
+              "markdown": "Parameter [Robedium.allowance(address,address)._spender](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L52) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L52",
+              "id": "54e7e7e3eb34e9b762e75ec1ccc620de520a551bc53a4a086da21d11fa9a931d",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_owner",
+                  "source_mapping": {
+                    "start": 1511,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      49
+                    ],
+                    "starting_column": 24,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "balanceOf",
+                      "source_mapping": {
+                        "start": 1492,
+                        "length": 109,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          49,
+                          50,
+                          51
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Robedium",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 2059,
+                            "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75,
+                              76,
+                              77,
+                              78,
+                              79
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "balanceOf(address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Robedium.balanceOf(address)._owner (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#49) is not in mixedCase\n",
+              "markdown": "Parameter [Robedium.balanceOf(address)._owner](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L49) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L49",
+              "id": "789ae9643424e4a68c9ca3f4fc5db83b857bbed680af5858b7c9eeee08bd7671",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_owner",
+                  "source_mapping": {
+                    "start": 1625,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      52
+                    ],
+                    "starting_column": 24,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "allowance",
+                      "source_mapping": {
+                        "start": 1606,
+                        "length": 138,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          52,
+                          53,
+                          54
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Robedium",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 2059,
+                            "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75,
+                              76,
+                              77,
+                              78,
+                              79
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "allowance(address,address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Robedium.allowance(address,address)._owner (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#52) is not in mixedCase\n",
+              "markdown": "Parameter [Robedium.allowance(address,address)._owner](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L52) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L52",
+              "id": "935bf902953bc0b6f934c5d36d794fe04164cbe298f94d7e7cf1a221f7fccfae",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_value",
+                  "source_mapping": {
+                    "start": 1780,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      55
+                    ],
+                    "starting_column": 36,
+                    "ending_column": 50
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transfer",
+                      "source_mapping": {
+                        "start": 1749,
+                        "length": 248,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Robedium",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 2059,
+                            "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75,
+                              76,
+                              77,
+                              78,
+                              79
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transfer(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Robedium.transfer(address,uint256)._value (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#55) is not in mixedCase\n",
+              "markdown": "Parameter [Robedium.transfer(address,uint256)._value](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L55) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L55",
+              "id": "c44b53c68bfb08aa91c7a3973afee83b6ff71e457a475b3600c1df524776f946",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_spender",
+                  "source_mapping": {
+                    "start": 2390,
+                    "length": 16,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      69
+                    ],
+                    "starting_column": 22,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "approve",
+                      "source_mapping": {
+                        "start": 2373,
+                        "length": 261,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          69,
+                          70,
+                          71,
+                          72,
+                          73,
+                          74
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Robedium",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 2059,
+                            "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75,
+                              76,
+                              77,
+                              78,
+                              79
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "approve(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Robedium.approve(address,uint256)._spender (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#69) is not in mixedCase\n",
+              "markdown": "Parameter [Robedium.approve(address,uint256)._spender](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L69) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L69",
+              "id": "c90470914270f891833502c322227bdcd74261860c751d223df1f40bab6d79b1",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_to",
+                  "source_mapping": {
+                    "start": 2039,
+                    "length": 11,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      61
+                    ],
+                    "starting_column": 42,
+                    "ending_column": 53
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferFrom",
+                      "source_mapping": {
+                        "start": 2002,
+                        "length": 366,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Robedium",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 2059,
+                            "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75,
+                              76,
+                              77,
+                              78,
+                              79
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferFrom(address,address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Robedium.transferFrom(address,address,uint256)._to (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#61) is not in mixedCase\n",
+              "markdown": "Parameter [Robedium.transferFrom(address,address,uint256)._to](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L61) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L61",
+              "id": "de9865b25590591cf145c6f016da7f18168e68d493fe0988ff69c526604634b2",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "not_called_re_ent6",
+                  "source_mapping": {
+                    "start": 970,
+                    "length": 30,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      33
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 33
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Robedium",
+                      "source_mapping": {
+                        "start": 618,
+                        "length": 2059,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68,
+                          69,
+                          70,
+                          71,
+                          72,
+                          73,
+                          74,
+                          75,
+                          76,
+                          77,
+                          78,
+                          79
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable Robedium.not_called_re_ent6 (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#33) is not in mixedCase\n",
+              "markdown": "Variable [Robedium.not_called_re_ent6](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L33) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L33",
+              "id": "e18e34f5bc8f22e2c445e124b3352a15c8bd4295d3185b07a73afa17c7830db7",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_value",
+                  "source_mapping": {
+                    "start": 2052,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      61
+                    ],
+                    "starting_column": 55,
+                    "ending_column": 69
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferFrom",
+                      "source_mapping": {
+                        "start": 2002,
+                        "length": 366,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Robedium",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 2059,
+                            "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75,
+                              76,
+                              77,
+                              78,
+                              79
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferFrom(address,address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Robedium.transferFrom(address,address,uint256)._value (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#61) is not in mixedCase\n",
+              "markdown": "Parameter [Robedium.transferFrom(address,address,uint256)._value](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L61) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L61",
+              "id": "e9e62afc559fd87028f11bf3866a375ee62cbc89757ad4f3db37da44acbad743",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_value",
+                  "source_mapping": {
+                    "start": 2408,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      69
+                    ],
+                    "starting_column": 40,
+                    "ending_column": 54
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "approve",
+                      "source_mapping": {
+                        "start": 2373,
+                        "length": 261,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          69,
+                          70,
+                          71,
+                          72,
+                          73,
+                          74
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Robedium",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 2059,
+                            "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75,
+                              76,
+                              77,
+                              78,
+                              79
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "approve(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Robedium.approve(address,uint256)._value (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#69) is not in mixedCase\n",
+              "markdown": "Parameter [Robedium.approve(address,uint256)._value](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L69) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L69",
+              "id": "fd2a6430070ef3f0787311f9e513d9e95fc48a02523877f8cb86bdd9d3dd1d64",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "Robedium",
+                  "source_mapping": {
+                    "start": 1285,
+                    "length": 202,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      42,
+                      43,
+                      44,
+                      45,
+                      46,
+                      47,
+                      48
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Robedium",
+                      "source_mapping": {
+                        "start": 618,
+                        "length": 2059,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68,
+                          69,
+                          70,
+                          71,
+                          72,
+                          73,
+                          74,
+                          75,
+                          76,
+                          77,
+                          78,
+                          79
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "Robedium()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "totalSupply = 500000",
+                  "source_mapping": {
+                    "start": 1315,
+                    "length": 20,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      43
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 29
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "Robedium",
+                      "source_mapping": {
+                        "start": 1285,
+                        "length": 202,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Robedium",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 2059,
+                            "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75,
+                              76,
+                              77,
+                              78,
+                              79
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "Robedium()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Robedium.Robedium() (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#42-48) uses literals with too many digits:\n\t- totalSupply = 500000 (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#43)\n",
+              "markdown": "[Robedium.Robedium()](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L42-L48) uses literals with too many digits:\n\t- [totalSupply = 500000](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L43)\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L42-L48",
+              "id": "ceaf1db95373f382b2273f1dbde5656c97c86cfc3087801af8d13cc3703b8728",
+              "check": "too-many-digits",
+              "impact": "Informational",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "bug_re_ent6",
+                  "source_mapping": {
+                    "start": 1002,
+                    "length": 196,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39,
+                      40
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Robedium",
+                      "source_mapping": {
+                        "start": 618,
+                        "length": 2059,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68,
+                          69,
+                          70,
+                          71,
+                          72,
+                          73,
+                          74,
+                          75,
+                          76,
+                          77,
+                          78,
+                          79
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "bug_re_ent6()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "! (msg.sender.call.value(1000000000000000000)())",
+                  "source_mapping": {
+                    "start": 1082,
+                    "length": 39,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      36
+                    ],
+                    "starting_column": 13,
+                    "ending_column": 52
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "bug_re_ent6",
+                      "source_mapping": {
+                        "start": 1002,
+                        "length": 196,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Robedium",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 2059,
+                            "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75,
+                              76,
+                              77,
+                              78,
+                              79
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "bug_re_ent6()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "Robedium.bug_re_ent6() (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#34-40) sends eth to arbitrary user\n\tDangerous calls:\n\t- ! (msg.sender.call.value(1000000000000000000)()) (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#36)\n",
+              "markdown": "[Robedium.bug_re_ent6()](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L34-L40) sends eth to arbitrary user\n\tDangerous calls:\n\t- [! (msg.sender.call.value(1000000000000000000)())](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L36)\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L34-L40",
+              "id": "dd08bd2e8f38c43234b9630efd1a6f6cbf1c8a36776b8726124301cfec735848",
+              "check": "arbitrary-send-eth",
+              "impact": "High",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "bug_re_ent6",
+                  "source_mapping": {
+                    "start": 1002,
+                    "length": 196,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39,
+                      40
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Robedium",
+                      "source_mapping": {
+                        "start": 618,
+                        "length": 2059,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49,
+                          50,
+                          51,
+                          52,
+                          53,
+                          54,
+                          55,
+                          56,
+                          57,
+                          58,
+                          59,
+                          60,
+                          61,
+                          62,
+                          63,
+                          64,
+                          65,
+                          66,
+                          67,
+                          68,
+                          69,
+                          70,
+                          71,
+                          72,
+                          73,
+                          74,
+                          75,
+                          76,
+                          77,
+                          78,
+                          79
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "bug_re_ent6()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "! (msg.sender.call.value(1000000000000000000)())",
+                  "source_mapping": {
+                    "start": 1082,
+                    "length": 39,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      36
+                    ],
+                    "starting_column": 13,
+                    "ending_column": 52
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "bug_re_ent6",
+                      "source_mapping": {
+                        "start": 1002,
+                        "length": 196,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Robedium",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 2059,
+                            "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75,
+                              76,
+                              77,
+                              78,
+                              79
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "bug_re_ent6()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "external_calls"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "not_called_re_ent6 = false",
+                  "source_mapping": {
+                    "start": 1165,
+                    "length": 26,
+                    "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      39
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 35
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "bug_re_ent6",
+                      "source_mapping": {
+                        "start": 1002,
+                        "length": 196,
+                        "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Robedium",
+                          "source_mapping": {
+                            "start": 618,
+                            "length": 2059,
+                            "filename_relative": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "filename_short": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49,
+                              50,
+                              51,
+                              52,
+                              53,
+                              54,
+                              55,
+                              56,
+                              57,
+                              58,
+                              59,
+                              60,
+                              61,
+                              62,
+                              63,
+                              64,
+                              65,
+                              66,
+                              67,
+                              68,
+                              69,
+                              70,
+                              71,
+                              72,
+                              73,
+                              74,
+                              75,
+                              76,
+                              77,
+                              78,
+                              79
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "bug_re_ent6()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "variables_written",
+                    "variable_name": "not_called_re_ent6"
+                  }
+                }
+              ],
+              "description": "Reentrancy in Robedium.bug_re_ent6() (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#34-40):\n\tExternal calls:\n\t- ! (msg.sender.call.value(1000000000000000000)()) (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#36)\n\tState variables written after the call(s):\n\t- not_called_re_ent6 = false (FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#39)\n",
+              "markdown": "Reentrancy in [Robedium.bug_re_ent6()](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L34-L40):\n\tExternal calls:\n\t- [! (msg.sender.call.value(1000000000000000000)())](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L36)\n\tState variables written after the call(s):\n\t- [not_called_re_ent6 = false](FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L39)\n",
+              "first_markdown_element": "FinalTestset444/Re-entrancy_buggy_0xcdb8ad9a0ec69e6b4f99204bf6d66709eabb917e.sol#L34-L40",
+              "id": "19cab9bbca1edaccbd1b18bb39ec118b02c9eeace43c875d1809a1d59bbd4881",
+              "check": "reentrancy-eth",
+              "impact": "High",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

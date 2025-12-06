@@ -1,0 +1,139 @@
+{
+    "Re-entrancy_buggy_0x022bab7e9a7ea4c50ff19733cc356beff6c1c15a.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdraw_balances_re_ent8",
+                "withdraw_balances_re_ent8"
+            ],
+            "from_function": "withdraw_balances_re_ent8",
+            "to_function": "withdraw_balances_re_ent8",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: withdraw_balances_re_ent8\nNode: \nEXPRESSION (success) = msg.sender.call.value(balances_re_ent8[msg.sender])()\nIRS: \nTMP_33(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_98 \"",
+                        "\"BlockID: 45\nFunction: withdraw_balances_re_ent8\nNode: \nEXPRESSION balances_re_ent8[msg.sender] = 0\nIRS: \nREF_99 := 0\""
+                    ],
+                    "state_variable": "balances_re_ent8"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "addIn"
+            ],
+            "First_function": "addIn",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: addIn\nNode: \nEXPRESSION funderBalance[games[gameNum].winner[0]] += 450 * count\nIRS: \nREF_36 = REF_36 + TMP_14\"",
+                        "\"BlockID: 35\nFunction: withdraw\nNode: \nEXPRESSION require(bool,string)(funderBalance[msg.sender] >= amount,ETH Out of balance!)\nIRS: \nTMP_27 = SOLIDITY_CALL require(bool,string)(TMP_26,ETH Out of balance!)\""
+                    ],
+                    "state_variable": "funderBalance"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 18\nFunction: addIn\nNode: \nEXPRESSION funderBalance[games[gameNum].winner[1]] += 300 * count\nIRS: \nREF_40 = REF_40 + TMP_15\"",
+                        "\"BlockID: 35\nFunction: withdraw\nNode: \nEXPRESSION require(bool,string)(funderBalance[msg.sender] >= amount,ETH Out of balance!)\nIRS: \nTMP_27 = SOLIDITY_CALL require(bool,string)(TMP_26,ETH Out of balance!)\""
+                    ],
+                    "state_variable": "funderBalance"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 19\nFunction: addIn\nNode: \nEXPRESSION funderBalance[games[gameNum].winner[2]] += 200 * count\nIRS: \nREF_44 = REF_44 + TMP_16\"",
+                        "\"BlockID: 35\nFunction: withdraw\nNode: \nEXPRESSION require(bool,string)(funderBalance[msg.sender] >= amount,ETH Out of balance!)\nIRS: \nTMP_27 = SOLIDITY_CALL require(bool,string)(TMP_26,ETH Out of balance!)\""
+                    ],
+                    "state_variable": "funderBalance"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: addIn\nNode: \nEXPRESSION funderBalance[manager] += 10 * count\nIRS: \nREF_45 = REF_45 + TMP_17\"",
+                        "\"BlockID: 35\nFunction: withdraw\nNode: \nEXPRESSION require(bool,string)(funderBalance[msg.sender] >= amount,ETH Out of balance!)\nIRS: \nTMP_27 = SOLIDITY_CALL require(bool,string)(TMP_26,ETH Out of balance!)\""
+                    ],
+                    "state_variable": "funderBalance"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 23\nFunction: addIn\nNode: \nEXPRESSION funderBalance[addr] += count\nIRS: \nREF_50 = REF_50 + count\"",
+                        "\"BlockID: 35\nFunction: withdraw\nNode: \nEXPRESSION require(bool,string)(funderBalance[msg.sender] >= amount,ETH Out of balance!)\nIRS: \nTMP_27 = SOLIDITY_CALL require(bool,string)(TMP_26,ETH Out of balance!)\""
+                    ],
+                    "state_variable": "funderBalance"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: addIn\nNode: \nEXPRESSION funderBalance[referrer[addr]] += count\nIRS: \nREF_52 = REF_52 + count\"",
+                        "\"BlockID: 35\nFunction: withdraw\nNode: \nEXPRESSION require(bool,string)(funderBalance[msg.sender] >= amount,ETH Out of balance!)\nIRS: \nTMP_27 = SOLIDITY_CALL require(bool,string)(TMP_26,ETH Out of balance!)\""
+                    ],
+                    "state_variable": "funderBalance"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: addIn\nNode: \nEXPRESSION funderBalance[referrer[referrer[addr]]] += count \/ 2\nIRS: \nREF_55 = REF_55 + TMP_19\"",
+                        "\"BlockID: 35\nFunction: withdraw\nNode: \nEXPRESSION require(bool,string)(funderBalance[msg.sender] >= amount,ETH Out of balance!)\nIRS: \nTMP_27 = SOLIDITY_CALL require(bool,string)(TMP_26,ETH Out of balance!)\""
+                    ],
+                    "state_variable": "funderBalance"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: addIn\nNode: \nEXPRESSION funderBalance[referrer[referrer[referrer[addr]]]] += count \/ 2\nIRS: \nREF_59 = REF_59 + TMP_20\"",
+                        "\"BlockID: 35\nFunction: withdraw\nNode: \nEXPRESSION require(bool,string)(funderBalance[msg.sender] >= amount,ETH Out of balance!)\nIRS: \nTMP_27 = SOLIDITY_CALL require(bool,string)(TMP_26,ETH Out of balance!)\""
+                    ],
+                    "state_variable": "funderBalance"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: addIn\nNode: \nEXPRESSION funderBalance[referrer[referrer[referrer[referrer[addr]]]]] += count \/ 2\nIRS: \nREF_64 = REF_64 + TMP_21\"",
+                        "\"BlockID: 35\nFunction: withdraw\nNode: \nEXPRESSION require(bool,string)(funderBalance[msg.sender] >= amount,ETH Out of balance!)\nIRS: \nTMP_27 = SOLIDITY_CALL require(bool,string)(TMP_26,ETH Out of balance!)\""
+                    ],
+                    "state_variable": "funderBalance"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: addIn\nNode: \nEXPRESSION funderBalance[referrer[referrer[referrer[referrer[referrer[addr]]]]]] += count \/ 2\nIRS: \nREF_70 = REF_70 + TMP_22\"",
+                        "\"BlockID: 35\nFunction: withdraw\nNode: \nEXPRESSION require(bool,string)(funderBalance[msg.sender] >= amount,ETH Out of balance!)\nIRS: \nTMP_27 = SOLIDITY_CALL require(bool,string)(TMP_26,ETH Out of balance!)\""
+                    ],
+                    "state_variable": "funderBalance"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "withdraw"
+            ],
+            "First_function": "withdraw",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 49\nFunction: withdraw\nNode: \nEXPRESSION funderBalance[msg.sender] += - amount\nIRS: \nREF_73 = REF_73 + TMP_28\"",
+                        "\"BlockID: 35\nFunction: withdraw\nNode: \nEXPRESSION require(bool,string)(funderBalance[msg.sender] >= amount,ETH Out of balance!)\nIRS: \nTMP_27 = SOLIDITY_CALL require(bool,string)(TMP_26,ETH Out of balance!)\""
+                    ],
+                    "state_variable": "funderBalance"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw_balances_re_ent8",
+                "withdraw_balances_re_ent8"
+            ],
+            "First_function": "withdraw_balances_re_ent8",
+            "Second_function": "withdraw_balances_re_ent8",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 59\nFunction: withdraw_balances_re_ent8\nNode: \nEXPRESSION balances_re_ent8[msg.sender] = 0\nIRS: \nREF_99 := 0\"",
+                        "\"BlockID: 43\nFunction: withdraw_balances_re_ent8\nNode: \nEXPRESSION (success) = msg.sender.call.value(balances_re_ent8[msg.sender])()\nIRS: \nTMP_33(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:REF_98 \""
+                    ],
+                    "state_variable": "balances_re_ent8"
+                }
+            ]
+        }
+    ]
+}

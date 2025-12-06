@@ -1,0 +1,661 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 18 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 18 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m1\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "a88d3ef95bbe93a9eed010b137b644e7689ed91b86f583c6ee421d3157513edd",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "SafePromo",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 448,
+                  "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                  "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "SafePromo",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 3,
+                  "features": [
+                    "Receive ETH",
+                    "Send ETH"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 18,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 1,
+            "informational_issues": 4,
+            "low_issues": 1,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "promo",
+                  "source_mapping": {
+                    "start": 205,
+                    "length": 238,
+                    "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16
+                    ],
+                    "starting_column": 2,
+                    "ending_column": 3
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "SafePromo",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 448,
+                        "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "promo(address[])"
+                  }
+                }
+              ],
+              "description": "promo(address[]) should be declared external:\n\t- SafePromo.promo(address[]) (cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#10-16)\n",
+              "markdown": "promo(address[]) should be declared external:\n\t- [SafePromo.promo(address[])](cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#L10-L16)\n",
+              "first_markdown_element": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#L10-L16",
+              "id": "3da84d6bf9fbf1db934c7afe8794133836aa25735a065bec26abbfd978a0e2b0",
+              "check": "external-function",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.21 is not recommended for deployment\n",
+              "markdown": "solc-0.4.21 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "11c23ced8dbc94c44bd7809b5adfe4054fff8cd744f85723555d37f0b714b15f",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.21",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".21"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.21 (cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.21](cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#L1",
+              "id": "e5fb778f6c8617338241389285f971ef1b5fb4575cedffe48213b197915e46d1",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_recipients",
+                  "source_mapping": {
+                    "start": 220,
+                    "length": 21,
+                    "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10
+                    ],
+                    "starting_column": 17,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "promo",
+                      "source_mapping": {
+                        "start": 205,
+                        "length": 238,
+                        "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16
+                        ],
+                        "starting_column": 2,
+                        "ending_column": 3
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "SafePromo",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 448,
+                            "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                            "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "promo(address[])"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter SafePromo.promo(address[])._recipients (cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#10) is not in mixedCase\n",
+              "markdown": "Parameter [SafePromo.promo(address[])._recipients](cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#L10) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#L10",
+              "id": "236285fb61a526739b990465f5b5b965aee076cd6f8f003539092a736eae7109",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "promo",
+                  "source_mapping": {
+                    "start": 205,
+                    "length": 238,
+                    "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16
+                    ],
+                    "starting_column": 2,
+                    "ending_column": 3
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "SafePromo",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 448,
+                        "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "promo(address[])"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "_recipients[i].transfer(7777777777)",
+                  "source_mapping": {
+                    "start": 338,
+                    "length": 35,
+                    "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13
+                    ],
+                    "starting_column": 4,
+                    "ending_column": 39
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "promo",
+                      "source_mapping": {
+                        "start": 205,
+                        "length": 238,
+                        "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16
+                        ],
+                        "starting_column": 2,
+                        "ending_column": 3
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "SafePromo",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 448,
+                            "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                            "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "promo(address[])"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "external_calls"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "Transfer(address(this),_recipients[i],77777777777)",
+                  "source_mapping": {
+                    "start": 378,
+                    "length": 57,
+                    "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      14
+                    ],
+                    "starting_column": 4,
+                    "ending_column": 61
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "promo",
+                      "source_mapping": {
+                        "start": 205,
+                        "length": 238,
+                        "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16
+                        ],
+                        "starting_column": 2,
+                        "ending_column": 3
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "SafePromo",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 448,
+                            "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                            "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "promo(address[])"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "event"
+                  }
+                }
+              ],
+              "description": "Reentrancy in SafePromo.promo(address[]) (cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#10-16):\n\tExternal calls:\n\t- _recipients[i].transfer(7777777777) (cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#13)\n\tEvent emitted after the call(s):\n\t- Transfer(address(this),_recipients[i],77777777777) (cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#14)\n",
+              "markdown": "Reentrancy in [SafePromo.promo(address[])](cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#L10-L16):\n\tExternal calls:\n\t- [_recipients[i].transfer(7777777777)](cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#L13)\n\tEvent emitted after the call(s):\n\t- [Transfer(address(this),_recipients[i],77777777777)](cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#L14)\n",
+              "first_markdown_element": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#L10-L16",
+              "id": "096f5d0b2db9529fe918feb7e2a121a1b0247a8d4e9745c36621d8e2f7d1a299",
+              "check": "reentrancy-unlimited-gas",
+              "impact": "Informational",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "promo",
+                  "source_mapping": {
+                    "start": 205,
+                    "length": 238,
+                    "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16
+                    ],
+                    "starting_column": 2,
+                    "ending_column": 3
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "SafePromo",
+                      "source_mapping": {
+                        "start": 27,
+                        "length": 448,
+                        "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "promo(address[])"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "_recipients[i].transfer(7777777777)",
+                  "source_mapping": {
+                    "start": 338,
+                    "length": 35,
+                    "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13
+                    ],
+                    "starting_column": 4,
+                    "ending_column": 39
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "promo",
+                      "source_mapping": {
+                        "start": 205,
+                        "length": 238,
+                        "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16
+                        ],
+                        "starting_column": 2,
+                        "ending_column": 3
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "SafePromo",
+                          "source_mapping": {
+                            "start": 27,
+                            "length": 448,
+                            "filename_relative": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                            "filename_short": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "promo(address[])"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "SafePromo.promo(address[]) (cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#10-16) has external calls inside a loop: _recipients[i].transfer(7777777777) (cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#13)\n",
+              "markdown": "[SafePromo.promo(address[])](cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#L10-L16) has external calls inside a loop: [_recipients[i].transfer(7777777777)](cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#L13)\n",
+              "first_markdown_element": "cleanSource/0x43151cf189e07e1fd75b79731d1f5608df8beb13.sol#L10-L16",
+              "id": "af8692ddbce53ccb5df55edd83ffb0c83856d9f67ed496a66dd18d5a107403e5",
+              "check": "calls-loop",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

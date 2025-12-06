@@ -1,0 +1,579 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 18 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 18 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m4\u001b[0m\nNumber of low issues: \u001b[92m2\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "c23be536278722f65c65f7d4775e068ba87a64601ce43534c7299e9759ac1f6b",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "EthICO",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 405,
+                  "filename_relative": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                  "filename_short": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "EthICO",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 4,
+                  "features": [
+                    "Receive ETH",
+                    "Selfdestruct"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 18,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 4,
+            "low_issues": 2,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.25",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "filename_short": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".25"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.25 (cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.25](cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol#L1",
+              "id": "38845896a417068bbc419162f82324dab622425573dee74c7c18cf2b673d4c35",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.25 is not recommended for deployment\n",
+              "markdown": "solc-0.4.25 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "4d64003d70a62b1c6963f871e841b6cbd633d07d95554e1a50e0f25d9b71ebb3",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "O",
+                  "source_mapping": {
+                    "start": 81,
+                    "length": 9,
+                    "filename_relative": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "filename_short": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 14
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "EthICO",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 405,
+                        "filename_relative": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                        "filename_short": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable EthICO.O (cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol#5) is not in mixedCase\n",
+              "markdown": "Variable [EthICO.O](cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol#L5) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol#L5",
+              "id": "31ec81b0fadd39fbdc1c2e557d12934614d9271048a63fb4598d6ec6ffcc60fd",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "X",
+                  "source_mapping": {
+                    "start": 110,
+                    "length": 9,
+                    "filename_relative": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "filename_short": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 19,
+                    "ending_column": 28
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "setO",
+                      "source_mapping": {
+                        "start": 96,
+                        "length": 52,
+                        "filename_relative": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                        "filename_short": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 57
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EthICO",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 405,
+                            "filename_relative": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                            "filename_short": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "setO(address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter EthICO.setO(address).X (cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol#6) is not in mixedCase\n",
+              "markdown": "Parameter [EthICO.setO(address).X](cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol#L6) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol#L6",
+              "id": "6ac5c9016370582acb01f3a124f93d05663818a06d5d5646a59729fa5de91b4b",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "X",
+                  "source_mapping": {
+                    "start": 110,
+                    "length": 9,
+                    "filename_relative": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "filename_short": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 19,
+                    "ending_column": 28
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "setO",
+                      "source_mapping": {
+                        "start": 96,
+                        "length": 52,
+                        "filename_relative": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                        "filename_short": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 57
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EthICO",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 405,
+                            "filename_relative": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                            "filename_short": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "setO(address)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "O = X",
+                  "source_mapping": {
+                    "start": 140,
+                    "length": 5,
+                    "filename_relative": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "filename_short": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 49,
+                    "ending_column": 54
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "setO",
+                      "source_mapping": {
+                        "start": 96,
+                        "length": 52,
+                        "filename_relative": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                        "filename_short": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          6
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 57
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EthICO",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 405,
+                            "filename_relative": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                            "filename_short": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "setO(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "EthICO.setO(address).X (cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol#6) lacks a zero-check on :\n\t\t- O = X (cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol#6)\n",
+              "markdown": "[EthICO.setO(address).X](cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol#L6) lacks a zero-check on :\n\t\t- [O = X](cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol#L6)\n",
+              "first_markdown_element": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol#L6",
+              "id": "ac5f91a286f60ea99614e0cd7f483d82b12ca46d3ee2c2176e8209c6ebea28af",
+              "check": "missing-zero-check",
+              "impact": "Low",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "close",
+                  "source_mapping": {
+                    "start": 306,
+                    "length": 123,
+                    "filename_relative": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "filename_short": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13,
+                      14,
+                      15,
+                      16,
+                      17
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "EthICO",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 405,
+                        "filename_relative": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                        "filename_short": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "close()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "msg.sender == O && now >= open",
+                  "source_mapping": {
+                    "start": 344,
+                    "length": 28,
+                    "filename_relative": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "filename_short": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      14
+                    ],
+                    "starting_column": 13,
+                    "ending_column": 41
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "close",
+                      "source_mapping": {
+                        "start": 306,
+                        "length": 123,
+                        "filename_relative": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                        "filename_short": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          13,
+                          14,
+                          15,
+                          16,
+                          17
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "EthICO",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 405,
+                            "filename_relative": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                            "filename_short": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "close()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "EthICO.close() (cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol#13-17) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- msg.sender == O && now >= open (cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol#14)\n",
+              "markdown": "[EthICO.close()](cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol#L13-L17) uses timestamp for comparisons\n\tDangerous comparisons:\n\t- [msg.sender == O && now >= open](cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol#L14)\n",
+              "first_markdown_element": "cleanSource/0x9f63a5d92162975a08555f54752503b96277526d.sol#L13-L17",
+              "id": "1d6a92b1ed22d4922a7f1d0ebc9c988ff0085e142d610bba506c530a1aedb2b7",
+              "check": "timestamp",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2110 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 42 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m3\u001b[0m\nNumber of informational issues: \u001b[92m13\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[93m2\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\nERCs: ERC20\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 42 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m3\u001b[0m\nNumber of informational issues: \u001b[92m13\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[93m2\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\nERCs: ERC20\n",
+        "first_markdown_element": "",
+        "id": "521a33a36942de2309a92615702777515ccc132de011b3266335433adbfd7e7e",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "ApplicationQualityCoin",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 1788,
+                  "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                  "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "ApplicationQualityCoin",
+                  "is_complex_code": false,
+                  "is_erc20": true,
+                  "number_functions": 7,
+                  "features": [],
+                  "erc20_pause": false,
+                  "erc20_can_mint": false,
+                  "erc20_race_condition_mitigated": false
+                }
+              }
+            ]
+          },
+          "number_lines": 42,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [
+            "ERC20"
+          ],
+          "number_findings": {
+            "optimization_issues": 3,
+            "informational_issues": 13,
+            "low_issues": 0,
+            "medium_issues": 2,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "name",
+                  "source_mapping": {
+                    "start": 64,
+                    "length": 47,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 52
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ApplicationQualityCoin",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1788,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "ApplicationQualityCoin.name (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#4) should be constant\n",
+              "markdown": "[ApplicationQualityCoin.name](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L4) should be constant\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L4",
+              "id": "268938897ee28937d2603cb1d4bca5dbe95ec5e0e73a175f91ef03160ba7e5c8",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "symbol",
+                  "source_mapping": {
+                    "start": 117,
+                    "length": 28,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 33
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ApplicationQualityCoin",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1788,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "ApplicationQualityCoin.symbol (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#5) should be constant\n",
+              "markdown": "[ApplicationQualityCoin.symbol](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L5) should be constant\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L5",
+              "id": "9faa9d0dc2e1f36311f38edbd04c0c802086fe83dbda7f1b915bcf82ebf367df",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "decimals",
+                  "source_mapping": {
+                    "start": 151,
+                    "length": 26,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 31
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ApplicationQualityCoin",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1788,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "ApplicationQualityCoin.decimals (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#6) should be constant\n",
+              "markdown": "[ApplicationQualityCoin.decimals](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L6) should be constant\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L6",
+              "id": "c19b769ae8c65bff57e3f3ee38dbb4ba11e1e78df0caf538cc3168c2be2fd1ff",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "totalSupply",
+                  "source_mapping": {
+                    "start": 183,
+                    "length": 67,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 72
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ApplicationQualityCoin",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1788,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "ApplicationQualityCoin.totalSupply (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#7) is set pre-construction with a non-constant function or state variable:\n\t- 100000000000 * 10 ** uint256(decimals)\n",
+              "markdown": "[ApplicationQualityCoin.totalSupply](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L7) is set pre-construction with a non-constant function or state variable:\n\t- 100000000000 * 10 ** uint256(decimals)\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L7",
+              "id": "8b8e381ad071b5f7836561ceb3f97bebb69a4d54bb4b0f7203d8eaedb4b55873",
+              "check": "function-init-state",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.26",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".26"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.26 (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.26](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L1) allows old versions\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L1",
+              "id": "86c35d4c83f7f66360ecd7c6ce56bf5df2e0b33844bab773b34521b073e6d8b7",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.26 is not recommended for deployment\n",
+              "markdown": "solc-0.4.26 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "e85e93c612cb109c115ab31accf43cd25c590bd8f9b6a43b662115b987f777c3",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "owner_txorigin16",
+                  "source_mapping": {
+                    "start": 478,
+                    "length": 24,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11
+                    ],
+                    "starting_column": 27,
+                    "ending_column": 51
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "bug_txorigin16",
+                      "source_mapping": {
+                        "start": 454,
+                        "length": 111,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ApplicationQualityCoin",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1788,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "bug_txorigin16(address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter ApplicationQualityCoin.bug_txorigin16(address).owner_txorigin16 (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#11) is not in mixedCase\n",
+              "markdown": "Parameter [ApplicationQualityCoin.bug_txorigin16(address).owner_txorigin16](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L11) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L11",
+              "id": "00de20c4531306c746a60ba8acb1f2449682bb33f5034ab894241e0379d7d58e",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_spender",
+                  "source_mapping": {
+                    "start": 1617,
+                    "length": 16,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      37
+                    ],
+                    "starting_column": 22,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "approve",
+                      "source_mapping": {
+                        "start": 1600,
+                        "length": 212,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          37,
+                          38,
+                          39,
+                          40,
+                          41
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ApplicationQualityCoin",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1788,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "approve(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter ApplicationQualityCoin.approve(address,uint256)._spender (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#37) is not in mixedCase\n",
+              "markdown": "Parameter [ApplicationQualityCoin.approve(address,uint256)._spender](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L37) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L37",
+              "id": "0d7db3ccb8eef039054fc9e7c74eaf07c352e29ec8ff60d142d97a7dcb9475c0",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_from",
+                  "source_mapping": {
+                    "start": 1349,
+                    "length": 13,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      31
+                    ],
+                    "starting_column": 27,
+                    "ending_column": 40
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferFrom",
+                      "source_mapping": {
+                        "start": 1327,
+                        "length": 268,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ApplicationQualityCoin",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1788,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferFrom(address,address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter ApplicationQualityCoin.transferFrom(address,address,uint256)._from (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#31) is not in mixedCase\n",
+              "markdown": "Parameter [ApplicationQualityCoin.transferFrom(address,address,uint256)._from](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L31) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L31",
+              "id": "20bdd551b5ddf57a59a6bec8b178b8b47ece6e5ff76b98e18ceab79b5423f43f",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_to",
+                  "source_mapping": {
+                    "start": 1364,
+                    "length": 11,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      31
+                    ],
+                    "starting_column": 42,
+                    "ending_column": 53
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferFrom",
+                      "source_mapping": {
+                        "start": 1327,
+                        "length": 268,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ApplicationQualityCoin",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1788,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferFrom(address,address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter ApplicationQualityCoin.transferFrom(address,address,uint256)._to (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#31) is not in mixedCase\n",
+              "markdown": "Parameter [ApplicationQualityCoin.transferFrom(address,address,uint256)._to](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L31) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L31",
+              "id": "23e39ae1cf6c1a76d6d6e64b9d82e193fae9dfde47044ac6247ee17eb8411350",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_value",
+                  "source_mapping": {
+                    "start": 1377,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      31
+                    ],
+                    "starting_column": 55,
+                    "ending_column": 69
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferFrom",
+                      "source_mapping": {
+                        "start": 1327,
+                        "length": 268,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ApplicationQualityCoin",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1788,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferFrom(address,address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter ApplicationQualityCoin.transferFrom(address,address,uint256)._value (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#31) is not in mixedCase\n",
+              "markdown": "Parameter [ApplicationQualityCoin.transferFrom(address,address,uint256)._value](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L31) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L31",
+              "id": "37d2540513bad28c52fefee2009b854fd0bace2273a4f22d04ef44672390063c",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_value",
+                  "source_mapping": {
+                    "start": 1248,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      28
+                    ],
+                    "starting_column": 36,
+                    "ending_column": 50
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transfer",
+                      "source_mapping": {
+                        "start": 1217,
+                        "length": 105,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          28,
+                          29,
+                          30
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ApplicationQualityCoin",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1788,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transfer(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter ApplicationQualityCoin.transfer(address,uint256)._value (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#28) is not in mixedCase\n",
+              "markdown": "Parameter [ApplicationQualityCoin.transfer(address,uint256)._value](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L28) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L28",
+              "id": "65a37c6089461ba1de1349417d046dc829290415a026190b960324dfae77fc67",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_to",
+                  "source_mapping": {
+                    "start": 1235,
+                    "length": 11,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      28
+                    ],
+                    "starting_column": 23,
+                    "ending_column": 34
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transfer",
+                      "source_mapping": {
+                        "start": 1217,
+                        "length": 105,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          28,
+                          29,
+                          30
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ApplicationQualityCoin",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1788,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transfer(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter ApplicationQualityCoin.transfer(address,uint256)._to (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#28) is not in mixedCase\n",
+              "markdown": "Parameter [ApplicationQualityCoin.transfer(address,uint256)._to](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L28) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L28",
+              "id": "9785f80ef63f1de628d630570419e2dbdb90d5a66f366d9befd2386833617df5",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_value",
+                  "source_mapping": {
+                    "start": 1635,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      37
+                    ],
+                    "starting_column": 40,
+                    "ending_column": 54
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "approve",
+                      "source_mapping": {
+                        "start": 1600,
+                        "length": 212,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          37,
+                          38,
+                          39,
+                          40,
+                          41
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ApplicationQualityCoin",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1788,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "approve(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter ApplicationQualityCoin.approve(address,uint256)._value (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#37) is not in mixedCase\n",
+              "markdown": "Parameter [ApplicationQualityCoin.approve(address,uint256)._value](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L37) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L37",
+              "id": "e0184e8700e2fd8a1c0bc14234ceccf05964ce7e5f8d3e2466c52abbda53c37d",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "bug_txorigin16",
+                  "source_mapping": {
+                    "start": 454,
+                    "length": 111,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11,
+                      12,
+                      13
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ApplicationQualityCoin",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1788,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "bug_txorigin16(address)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function ApplicationQualityCoin.bug_txorigin16(address) (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#11-13) is not in mixedCase\n",
+              "markdown": "Function [ApplicationQualityCoin.bug_txorigin16(address)](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L11-L13) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L11-L13",
+              "id": "efd270a476647fa1be699475f50ce9b56f1322ea54d386c7508341cd9fb3b86b",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "slitherConstructorVariables",
+                  "source_mapping": {
+                    "start": 26,
+                    "length": 1788,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39,
+                      40,
+                      41,
+                      42,
+                      43
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ApplicationQualityCoin",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1788,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "slitherConstructorVariables()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "totalSupply = 100000000000 * 10 ** uint256(decimals)",
+                  "source_mapping": {
+                    "start": 183,
+                    "length": 67,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 72
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "slitherConstructorVariables",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1788,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ApplicationQualityCoin",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1788,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "slitherConstructorVariables()"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "ApplicationQualityCoin.slitherConstructorVariables() (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#3-43) uses literals with too many digits:\n\t- totalSupply = 100000000000 * 10 ** uint256(decimals) (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#7)\n",
+              "markdown": "[ApplicationQualityCoin.slitherConstructorVariables()](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L3-L43) uses literals with too many digits:\n\t- [totalSupply = 100000000000 * 10 ** uint256(decimals)](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L7)\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L3-L43",
+              "id": "19554c1a352ffef1c6ab25461d54c088236c188c70d42ce80ed4b7aec6c19502",
+              "check": "too-many-digits",
+              "impact": "Informational",
+              "confidence": "Medium"
+            },
+            {
+              "elements": [
+                {
+                  "type": "contract",
+                  "name": "ApplicationQualityCoin",
+                  "source_mapping": {
+                    "start": 26,
+                    "length": 1788,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16,
+                      17,
+                      18,
+                      19,
+                      20,
+                      21,
+                      22,
+                      23,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      31,
+                      32,
+                      33,
+                      34,
+                      35,
+                      36,
+                      37,
+                      38,
+                      39,
+                      40,
+                      41,
+                      42,
+                      43
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  }
+                },
+                {
+                  "type": "function",
+                  "name": "transfer",
+                  "source_mapping": {
+                    "start": 1217,
+                    "length": 105,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      28,
+                      29,
+                      30
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ApplicationQualityCoin",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1788,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "transfer(address,uint256)"
+                  }
+                }
+              ],
+              "description": "ApplicationQualityCoin (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#3-43) has incorrect ERC20 function interface:ApplicationQualityCoin.transfer(address,uint256) (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#28-30)\n",
+              "markdown": "[ApplicationQualityCoin](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L3-L43) has incorrect ERC20 function interface:[ApplicationQualityCoin.transfer(address,uint256)](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L28-L30)\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L3-L43",
+              "id": "cffdfc2837f74a6bdc7c8b9e30365b54a9fbf1a0500cf325ad6edd14ea82ac14",
+              "check": "erc20-interface",
+              "impact": "Medium",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "bug_txorigin16",
+                  "source_mapping": {
+                    "start": 454,
+                    "length": 111,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11,
+                      12,
+                      13
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "ApplicationQualityCoin",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1788,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "bug_txorigin16(address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "require(bool)(tx.origin == owner_txorigin16)",
+                  "source_mapping": {
+                    "start": 520,
+                    "length": 38,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 47
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "bug_txorigin16",
+                      "source_mapping": {
+                        "start": 454,
+                        "length": 111,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          11,
+                          12,
+                          13
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "ApplicationQualityCoin",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1788,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "bug_txorigin16(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "ApplicationQualityCoin.bug_txorigin16(address) (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#11-13) uses tx.origin for authorization: require(bool)(tx.origin == owner_txorigin16) (FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#12)\n",
+              "markdown": "[ApplicationQualityCoin.bug_txorigin16(address)](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L11-L13) uses tx.origin for authorization: [require(bool)(tx.origin == owner_txorigin16)](FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L12)\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0x378965e2a5d31f6f5fd029c1fc456caacb6d04b2.sol#L11-L13",
+              "id": "6bdd2e9d52b4a218f771b9e0df3663560a7582081eb2d33b39f73be700a14d63",
+              "check": "tx-origin",
+              "impact": "Medium",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

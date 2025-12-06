@@ -1,0 +1,1719 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 48 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m3\u001b[0m\nNumber of informational issues: \u001b[92m11\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[93m1\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\nERCs: ERC20\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 48 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m3\u001b[0m\nNumber of informational issues: \u001b[92m11\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[93m1\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\nERCs: ERC20\n",
+        "first_markdown_element": "",
+        "id": "785530aebe6f094a16732d8a6f0b626f8a451a30356195de5dbaf9a1023c48cd",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "DappToken",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 1669,
+                  "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                  "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "DappToken",
+                  "is_complex_code": false,
+                  "is_erc20": true,
+                  "number_functions": 6,
+                  "features": [],
+                  "erc20_pause": false,
+                  "erc20_can_mint": false,
+                  "erc20_race_condition_mitigated": false
+                }
+              }
+            ]
+          },
+          "number_lines": 48,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [
+            "ERC20"
+          ],
+          "number_findings": {
+            "optimization_issues": 3,
+            "informational_issues": 11,
+            "low_issues": 0,
+            "medium_issues": 1,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "standard",
+                  "source_mapping": {
+                    "start": 131,
+                    "length": 43,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 48
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DappToken",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1669,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DappToken.standard (FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#6) should be constant\n",
+              "markdown": "[DappToken.standard](FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L6) should be constant\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L6",
+              "id": "078858eb57f68e660f1cec91cf808a3404544df2de476159c9ed61e577293b7c",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "symbol",
+                  "source_mapping": {
+                    "start": 95,
+                    "length": 30,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      5
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 35
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DappToken",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1669,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DappToken.symbol (FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#5) should be constant\n",
+              "markdown": "[DappToken.symbol](FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L5) should be constant\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L5",
+              "id": "6d7bb97d924e998ccd8691204fadacf566a2e1fcf5d73953cfef472fe42b24ad",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "name",
+                  "source_mapping": {
+                    "start": 51,
+                    "length": 38,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 43
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DappToken",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1669,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DappToken.name (FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#4) should be constant\n",
+              "markdown": "[DappToken.name](FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L4) should be constant\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L4",
+              "id": "72a53eb327d582442c3d786ae0c36bbc2ad0ede728e11f5649dc423949bb60fb",
+              "check": "constable-states",
+              "impact": "Optimization",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.4.26",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 24,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 25
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.4",
+                      ".26"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.4.26 (FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.4.26](FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L1) allows old versions\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L1",
+              "id": "61da006f1ab9ba8bfc8e117cac547e70305ddf8db7b42fc665719e060cbabf83",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.4.26 is not recommended for deployment\n",
+              "markdown": "solc-0.4.26 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "e85e93c612cb109c115ab31accf43cd25c590bd8f9b6a43b662115b987f777c3",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_to",
+                  "source_mapping": {
+                    "start": 1348,
+                    "length": 11,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      39
+                    ],
+                    "starting_column": 42,
+                    "ending_column": 53
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferFrom",
+                      "source_mapping": {
+                        "start": 1311,
+                        "length": 382,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "DappToken",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1669,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferFrom(address,address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter DappToken.transferFrom(address,address,uint256)._to (FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#39) is not in mixedCase\n",
+              "markdown": "Parameter [DappToken.transferFrom(address,address,uint256)._to](FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L39) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L39",
+              "id": "547950b4c54f88a049878cf0cf440be9da59744f1b32ccfa48da885bf1b6554f",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_value",
+                  "source_mapping": {
+                    "start": 1134,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      34
+                    ],
+                    "starting_column": 40,
+                    "ending_column": 54
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "approve",
+                      "source_mapping": {
+                        "start": 1099,
+                        "length": 207,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "DappToken",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1669,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "approve(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter DappToken.approve(address,uint256)._value (FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#34) is not in mixedCase\n",
+              "markdown": "Parameter [DappToken.approve(address,uint256)._value](FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L34) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L34",
+              "id": "8255b58b3c7bfe7196b8dd003926de482a390ef747e3405cf45f9429ba81f0b1",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_from",
+                  "source_mapping": {
+                    "start": 1333,
+                    "length": 13,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      39
+                    ],
+                    "starting_column": 27,
+                    "ending_column": 40
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferFrom",
+                      "source_mapping": {
+                        "start": 1311,
+                        "length": 382,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "DappToken",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1669,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferFrom(address,address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter DappToken.transferFrom(address,address,uint256)._from (FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#39) is not in mixedCase\n",
+              "markdown": "Parameter [DappToken.transferFrom(address,address,uint256)._from](FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L39) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L39",
+              "id": "8ce1c94bc177a0101a0c15291f3b4ed2a87f7c7fd731922a98392a4257b46931",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "bug_txorigin32",
+                  "source_mapping": {
+                    "start": 320,
+                    "length": 113,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13,
+                      14,
+                      15
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DappToken",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1669,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "bug_txorigin32(address)"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function DappToken.bug_txorigin32(address) (FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#13-15) is not in mixedCase\n",
+              "markdown": "Function [DappToken.bug_txorigin32(address)](FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L13-L15) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L13-L15",
+              "id": "8eb9b9ac37de01aa58bcbfa72a8fbd233bfbf1023677b5183ef79a5f8bf2f76b",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_value",
+                  "source_mapping": {
+                    "start": 852,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      27
+                    ],
+                    "starting_column": 36,
+                    "ending_column": 50
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transfer",
+                      "source_mapping": {
+                        "start": 821,
+                        "length": 273,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "DappToken",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1669,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transfer(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter DappToken.transfer(address,uint256)._value (FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#27) is not in mixedCase\n",
+              "markdown": "Parameter [DappToken.transfer(address,uint256)._value](FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L27) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L27",
+              "id": "9c00124002ecd21bf243b1253c5c7816385111034518d46c123543e3e541ac88",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_value",
+                  "source_mapping": {
+                    "start": 1361,
+                    "length": 14,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      39
+                    ],
+                    "starting_column": 55,
+                    "ending_column": 69
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transferFrom",
+                      "source_mapping": {
+                        "start": 1311,
+                        "length": 382,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "DappToken",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1669,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transferFrom(address,address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter DappToken.transferFrom(address,address,uint256)._value (FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#39) is not in mixedCase\n",
+              "markdown": "Parameter [DappToken.transferFrom(address,address,uint256)._value](FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L39) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L39",
+              "id": "a4326ef9bef0e5088de1dc84eb4da61afd99d6dee97f9339f26bed278373b610",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_spender",
+                  "source_mapping": {
+                    "start": 1116,
+                    "length": 16,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      34
+                    ],
+                    "starting_column": 22,
+                    "ending_column": 38
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "approve",
+                      "source_mapping": {
+                        "start": 1099,
+                        "length": 207,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          34,
+                          35,
+                          36,
+                          37,
+                          38
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "DappToken",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1669,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "approve(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter DappToken.approve(address,uint256)._spender (FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#34) is not in mixedCase\n",
+              "markdown": "Parameter [DappToken.approve(address,uint256)._spender](FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L34) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L34",
+              "id": "a90c877d1c6f2087bbabe134b9995decc54d430b13a6f65f4179e550d542f534",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_to",
+                  "source_mapping": {
+                    "start": 839,
+                    "length": 11,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      27
+                    ],
+                    "starting_column": 23,
+                    "ending_column": 34
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "transfer",
+                      "source_mapping": {
+                        "start": 821,
+                        "length": 273,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "DappToken",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1669,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "transfer(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter DappToken.transfer(address,uint256)._to (FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#27) is not in mixedCase\n",
+              "markdown": "Parameter [DappToken.transfer(address,uint256)._to](FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L27) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L27",
+              "id": "abe6e522ab3581b8a5d25eed7e617971f907473223b68d82c686de60c3f5d8ab",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "owner_txorigin32",
+                  "source_mapping": {
+                    "start": 346,
+                    "length": 24,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13
+                    ],
+                    "starting_column": 29,
+                    "ending_column": 53
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "bug_txorigin32",
+                      "source_mapping": {
+                        "start": 320,
+                        "length": 113,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          13,
+                          14,
+                          15
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "DappToken",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1669,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "bug_txorigin32(address)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter DappToken.bug_txorigin32(address).owner_txorigin32 (FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#13) is not in mixedCase\n",
+              "markdown": "Parameter [DappToken.bug_txorigin32(address).owner_txorigin32](FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L13) is not in mixedCase\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L13",
+              "id": "c6aeee2b93b6bc5229dc31e6c3238e829b6ec56724881835740f0b86a783edaa",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "bug_txorigin32",
+                  "source_mapping": {
+                    "start": 320,
+                    "length": 113,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13,
+                      14,
+                      15
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "DappToken",
+                      "source_mapping": {
+                        "start": 26,
+                        "length": 1669,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28,
+                          29,
+                          30,
+                          31,
+                          32,
+                          33,
+                          34,
+                          35,
+                          36,
+                          37,
+                          38,
+                          39,
+                          40,
+                          41,
+                          42,
+                          43,
+                          44,
+                          45,
+                          46,
+                          47,
+                          48,
+                          49
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "bug_txorigin32(address)"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "require(bool)(tx.origin == owner_txorigin32)",
+                  "source_mapping": {
+                    "start": 388,
+                    "length": 38,
+                    "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      14
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 47
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "bug_txorigin32",
+                      "source_mapping": {
+                        "start": 320,
+                        "length": 113,
+                        "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          13,
+                          14,
+                          15
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "DappToken",
+                          "source_mapping": {
+                            "start": 26,
+                            "length": 1669,
+                            "filename_relative": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/SolidiFIbenchmark/FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "filename_short": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21,
+                              22,
+                              23,
+                              24,
+                              25,
+                              26,
+                              27,
+                              28,
+                              29,
+                              30,
+                              31,
+                              32,
+                              33,
+                              34,
+                              35,
+                              36,
+                              37,
+                              38,
+                              39,
+                              40,
+                              41,
+                              42,
+                              43,
+                              44,
+                              45,
+                              46,
+                              47,
+                              48,
+                              49
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "bug_txorigin32(address)"
+                      }
+                    }
+                  }
+                }
+              ],
+              "description": "DappToken.bug_txorigin32(address) (FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#13-15) uses tx.origin for authorization: require(bool)(tx.origin == owner_txorigin32) (FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#14)\n",
+              "markdown": "[DappToken.bug_txorigin32(address)](FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L13-L15) uses tx.origin for authorization: [require(bool)(tx.origin == owner_txorigin32)](FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L14)\n",
+              "first_markdown_element": "FinalTestset444/tx.origin_buggy_0xa62952e46b112226ac94e4943eb61f14fb5e62ef.sol#L13-L15",
+              "id": "2fe1be7a3cad653b2190ea0f40ee6cf1b4ab0e22b1de57b8ba9d7c3be10ada30",
+              "check": "tx-origin",
+              "impact": "Medium",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

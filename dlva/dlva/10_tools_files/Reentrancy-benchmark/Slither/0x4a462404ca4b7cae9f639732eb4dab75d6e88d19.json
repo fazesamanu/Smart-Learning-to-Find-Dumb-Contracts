@@ -1,0 +1,125 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 7 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m1\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 7 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m1\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "ec3efd52f9b9497a982ae9086508d0225509118e2937e6e4401921e3d141ead5",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "AnimalSanctuary",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 148,
+                  "filename_relative": "cleanSource/0x4a462404ca4b7cae9f639732eb4dab75d6e88d19.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4a462404ca4b7cae9f639732eb4dab75d6e88d19.sol",
+                  "filename_short": "cleanSource/0x4a462404ca4b7cae9f639732eb4dab75d6e88d19.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "AnimalSanctuary",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 7,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 1,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "WaveAtAnimals",
+                  "source_mapping": {
+                    "start": 56,
+                    "length": 115,
+                    "filename_relative": "cleanSource/0x4a462404ca4b7cae9f639732eb4dab75d6e88d19.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4a462404ca4b7cae9f639732eb4dab75d6e88d19.sol",
+                    "filename_short": "cleanSource/0x4a462404ca4b7cae9f639732eb4dab75d6e88d19.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4,
+                      5,
+                      6
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "AnimalSanctuary",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 148,
+                        "filename_relative": "cleanSource/0x4a462404ca4b7cae9f639732eb4dab75d6e88d19.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4a462404ca4b7cae9f639732eb4dab75d6e88d19.sol",
+                        "filename_short": "cleanSource/0x4a462404ca4b7cae9f639732eb4dab75d6e88d19.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "WaveAtAnimals()"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function AnimalSanctuary.WaveAtAnimals() (cleanSource/0x4a462404ca4b7cae9f639732eb4dab75d6e88d19.sol#4-6) is not in mixedCase\n",
+              "markdown": "Function [AnimalSanctuary.WaveAtAnimals()](cleanSource/0x4a462404ca4b7cae9f639732eb4dab75d6e88d19.sol#L4-L6) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x4a462404ca4b7cae9f639732eb4dab75d6e88d19.sol#L4-L6",
+              "id": "f78b8fd2334c327f7e6bda076aecd82a2ac3460bccb49b47e5b0a30be712adc8",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

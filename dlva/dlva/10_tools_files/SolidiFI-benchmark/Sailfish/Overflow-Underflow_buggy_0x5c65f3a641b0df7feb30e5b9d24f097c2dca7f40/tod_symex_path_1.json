@@ -1,0 +1,656 @@
+{
+    "file": "Overflow-Underflow_buggy_0x5c65f3a641b0df7feb30e5b9d24f097c2dca7f40.sol",
+    "global_structs": [
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x20"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x21"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x22"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "lockTime_intou25",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "inMiniPoolEdit_2",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0xd"
+            ]
+        },
+        {
+            "name": "inMiniPoolEdit_3",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0xc"
+            ]
+        },
+        {
+            "name": "inMiniPoolEdit_4",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0xb"
+            ]
+        },
+        {
+            "name": "inMiniPoolEdit_5",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0xa"
+            ]
+        },
+        {
+            "name": "inMiniPoolEdit_6",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0x9"
+            ]
+        },
+        {
+            "name": "inMiniPoolEdit_7",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0x8"
+            ]
+        },
+        {
+            "name": "inMiniPoolEdit_8",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0x7"
+            ]
+        },
+        {
+            "name": "inMiniPoolEdit_9",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0x6"
+            ]
+        },
+        {
+            "name": "owner",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x3"
+            ]
+        },
+        {
+            "name": "inMiniPoolEdit_1",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0x5"
+            ]
+        },
+        {
+            "name": "MiniPoolEdit_2",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3",
+            "instructions": [
+                "owner = msg_sender"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5",
+            "instructions": [
+                "inMiniPoolEdit_1 = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6",
+            "instructions": [
+                "inMiniPoolEdit_9 = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x7",
+            "instructions": [
+                "inMiniPoolEdit_8 = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x8",
+            "instructions": [
+                "inMiniPoolEdit_7 = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x9",
+            "instructions": [
+                "inMiniPoolEdit_6 = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xa",
+            "instructions": [
+                "inMiniPoolEdit_5 = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb",
+            "instructions": [
+                "inMiniPoolEdit_4 = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc",
+            "instructions": [
+                "inMiniPoolEdit_3 = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xd",
+            "instructions": [
+                "inMiniPoolEdit_2 = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x20",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x21",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x22",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "lockTime_intou25",
+            "addrs": [
+                "0x2",
+                "0x4"
+            ]
+        },
+        {
+            "name": "inMiniPoolEdit_1",
+            "addrs": [
+                "0x2",
+                "0xf"
+            ]
+        },
+        {
+            "name": "inMiniPoolEdit_2",
+            "addrs": [
+                "0x2",
+                "0x11"
+            ]
+        },
+        {
+            "name": "inMiniPoolEdit_3",
+            "addrs": [
+                "0x2",
+                "0x13"
+            ]
+        },
+        {
+            "name": "inMiniPoolEdit_4",
+            "addrs": [
+                "0x2",
+                "0x15"
+            ]
+        },
+        {
+            "name": "inMiniPoolEdit_5",
+            "addrs": [
+                "0x2",
+                "0x17"
+            ]
+        },
+        {
+            "name": "inMiniPoolEdit_6",
+            "addrs": [
+                "0x2",
+                "0x19"
+            ]
+        },
+        {
+            "name": "inMiniPoolEdit_7",
+            "addrs": [
+                "0x2",
+                "0x1b"
+            ]
+        },
+        {
+            "name": "inMiniPoolEdit_8",
+            "addrs": [
+                "0x2",
+                "0x1d"
+            ]
+        },
+        {
+            "name": "inMiniPoolEdit_9",
+            "addrs": [
+                "0x2",
+                "0x1f"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4",
+            "instructions": [
+                "CLR_0 = msg.sender",
+                "lockTime_intou25[CLR_0] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf",
+            "instructions": [
+                "CLR_1 = msg.sender",
+                "RTMP_46 = CLR_1 == owner",
+                "CONDITION RTMP_46 0xe 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xe",
+            "instructions": [
+                "inMiniPoolEdit_1 = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11",
+            "instructions": [
+                "CLR_2 = msg.sender",
+                "RTMP_47 = CLR_2 == owner",
+                "CONDITION RTMP_47 0x10 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10",
+            "instructions": [
+                "inMiniPoolEdit_2 = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x13",
+            "instructions": [
+                "CLR_3 = msg.sender",
+                "RTMP_48 = CLR_3 == owner",
+                "CONDITION RTMP_48 0x12 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x12",
+            "instructions": [
+                "inMiniPoolEdit_3 = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x15",
+            "instructions": [
+                "CLR_4 = msg.sender",
+                "RTMP_49 = CLR_4 == owner",
+                "CONDITION RTMP_49 0x14 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x14",
+            "instructions": [
+                "inMiniPoolEdit_4 = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x17",
+            "instructions": [
+                "CLR_5 = msg.sender",
+                "RTMP_50 = CLR_5 == owner",
+                "CONDITION RTMP_50 0x16 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x16",
+            "instructions": [
+                "inMiniPoolEdit_5 = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x19",
+            "instructions": [
+                "CLR_6 = msg.sender",
+                "RTMP_51 = CLR_6 == owner",
+                "CONDITION RTMP_51 0x18 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x18",
+            "instructions": [
+                "inMiniPoolEdit_6 = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b",
+            "instructions": [
+                "CLR_7 = msg.sender",
+                "RTMP_52 = CLR_7 == owner",
+                "CONDITION RTMP_52 0x1a 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a",
+            "instructions": [
+                "inMiniPoolEdit_7 = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1d",
+            "instructions": [
+                "CLR_8 = msg.sender",
+                "RTMP_53 = CLR_8 == owner",
+                "CONDITION RTMP_53 0x1c 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1c",
+            "instructions": [
+                "inMiniPoolEdit_8 = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1f",
+            "instructions": [
+                "CLR_9 = msg.sender",
+                "RTMP_54 = CLR_9 == owner",
+                "CONDITION RTMP_54 0x1e 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e",
+            "instructions": [
+                "inMiniPoolEdit_9 = U"
+            ]
+        }
+    ],
+    "root_addr": "0x23",
+    "dest_addrs": [
+        "0x24"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "withdraw_intou25",
+            "addr": "0x23",
+            "instructions": [
+                "NOP",
+                "transferValue_intou25 = NEW_VAL integer",
+                "JUMP 0x24"
+            ]
+        },
+        {
+            "scope": "withdraw_intou25",
+            "addr": "0x24",
+            "instructions": [
+                "CLR_10 = msg.sender",
+                "CLR_11 = lockTime_intou25[CLR_10]",
+                "REF_1 = CLR_11",
+                "TMP_18 = now > REF_1",
+                "CONDITION TMP_18 0x24_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "withdraw_intou25",
+            "addr": "0x24_r0",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "withdraw_intou25",
+            "addr": "0x25",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

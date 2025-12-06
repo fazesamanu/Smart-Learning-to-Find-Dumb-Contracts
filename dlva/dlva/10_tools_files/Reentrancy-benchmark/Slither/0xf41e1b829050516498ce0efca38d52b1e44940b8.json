@@ -1,0 +1,306 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 20 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m0\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 20 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 3 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m0\u001b[0m\nNumber of low issues: \u001b[92m1\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "1a12aa79af3751adc4f03ec58f6cc0aeb42575cc59c6a266ffc236cd33a568a9",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "ILendingPoolAddressesProvider",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 98,
+                  "filename_relative": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                  "filename_short": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "ILendingPoolAddressesProvider",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              },
+              {
+                "type": "contract",
+                "name": "UpdateLendingPoolV1Payload",
+                "source_mapping": {
+                  "start": 189,
+                  "length": 499,
+                  "filename_relative": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                  "filename_short": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "UpdateLendingPoolV1Payload",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 3,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 20,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 0,
+            "low_issues": 1,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "execute",
+                  "source_mapping": {
+                    "start": 536,
+                    "length": 150,
+                    "filename_relative": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                    "filename_short": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      16,
+                      17,
+                      18,
+                      19
+                    ],
+                    "starting_column": 3,
+                    "ending_column": 4
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "UpdateLendingPoolV1Payload",
+                      "source_mapping": {
+                        "start": 189,
+                        "length": 499,
+                        "filename_relative": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                        "filename_short": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 0
+                      }
+                    },
+                    "signature": "execute()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "LENDING_POOL_ADDRESSES_PROVIDER.setLendingPoolImpl(NEW_LENDING_POOL_IMPL)",
+                  "source_mapping": {
+                    "start": 579,
+                    "length": 73,
+                    "filename_relative": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                    "filename_short": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      17
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 78
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "execute",
+                      "source_mapping": {
+                        "start": 536,
+                        "length": 150,
+                        "filename_relative": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                        "filename_short": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "UpdateLendingPoolV1Payload",
+                          "source_mapping": {
+                            "start": 189,
+                            "length": 499,
+                            "filename_relative": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                            "filename_short": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "execute()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "external_calls"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "ProposalExecuted()",
+                  "source_mapping": {
+                    "start": 658,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                    "filename_short": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      18
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 28
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "execute",
+                      "source_mapping": {
+                        "start": 536,
+                        "length": 150,
+                        "filename_relative": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                        "filename_short": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          16,
+                          17,
+                          18,
+                          19
+                        ],
+                        "starting_column": 3,
+                        "ending_column": 4
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "UpdateLendingPoolV1Payload",
+                          "source_mapping": {
+                            "start": 189,
+                            "length": 499,
+                            "filename_relative": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                            "filename_short": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18,
+                              19,
+                              20,
+                              21
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "execute()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "event"
+                  }
+                }
+              ],
+              "description": "Reentrancy in UpdateLendingPoolV1Payload.execute() (cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol#16-19):\n\tExternal calls:\n\t- LENDING_POOL_ADDRESSES_PROVIDER.setLendingPoolImpl(NEW_LENDING_POOL_IMPL) (cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol#17)\n\tEvent emitted after the call(s):\n\t- ProposalExecuted() (cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol#18)\n",
+              "markdown": "Reentrancy in [UpdateLendingPoolV1Payload.execute()](cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol#L16-L19):\n\tExternal calls:\n\t- [LENDING_POOL_ADDRESSES_PROVIDER.setLendingPoolImpl(NEW_LENDING_POOL_IMPL)](cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol#L17)\n\tEvent emitted after the call(s):\n\t- [ProposalExecuted()](cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol#L18)\n",
+              "first_markdown_element": "cleanSource/0xf41e1b829050516498ce0efca38d52b1e44940b8.sol#L16-L19",
+              "id": "c82ef1a6070281cfe012a15124166042f2f683e7cbc7b0b6386f973d4e3400a2",
+              "check": "reentrancy-events",
+              "impact": "Low",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

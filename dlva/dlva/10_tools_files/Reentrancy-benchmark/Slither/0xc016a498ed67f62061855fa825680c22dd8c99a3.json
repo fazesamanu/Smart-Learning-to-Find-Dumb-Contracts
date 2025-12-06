@@ -1,0 +1,99 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 5 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m1\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 5 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m1\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "119701dc550164845a002b1dab7988e0dc3b99b387d9cb6c64b60dcdd5627207",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "perfectSquarePrinciple",
+                "source_mapping": {
+                  "start": 26,
+                  "length": 35,
+                  "filename_relative": "cleanSource/0xc016a498ed67f62061855fa825680c22dd8c99a3.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xc016a498ed67f62061855fa825680c22dd8c99a3.sol",
+                  "filename_short": "cleanSource/0xc016a498ed67f62061855fa825680c22dd8c99a3.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "perfectSquarePrinciple",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 0,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 5,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 1,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "contract",
+                  "name": "perfectSquarePrinciple",
+                  "source_mapping": {
+                    "start": 26,
+                    "length": 35,
+                    "filename_relative": "cleanSource/0xc016a498ed67f62061855fa825680c22dd8c99a3.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0xc016a498ed67f62061855fa825680c22dd8c99a3.sol",
+                    "filename_short": "cleanSource/0xc016a498ed67f62061855fa825680c22dd8c99a3.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      3,
+                      4,
+                      5,
+                      6
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  },
+                  "additional_fields": {
+                    "target": "contract",
+                    "convention": "CapWords"
+                  }
+                }
+              ],
+              "description": "Contract perfectSquarePrinciple (cleanSource/0xc016a498ed67f62061855fa825680c22dd8c99a3.sol#3-6) is not in CapWords\n",
+              "markdown": "Contract [perfectSquarePrinciple](cleanSource/0xc016a498ed67f62061855fa825680c22dd8c99a3.sol#L3-L6) is not in CapWords\n",
+              "first_markdown_element": "cleanSource/0xc016a498ed67f62061855fa825680c22dd8c99a3.sol#L3-L6",
+              "id": "9c496bfe301419d6ed5e4343e594a8d649e591666f446dbe0b0ac7876254ac3c",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

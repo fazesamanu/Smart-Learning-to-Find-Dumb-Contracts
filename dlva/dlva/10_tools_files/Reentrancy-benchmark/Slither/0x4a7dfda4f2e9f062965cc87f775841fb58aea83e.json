@@ -1,0 +1,277 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 10 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m2\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 10 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m2\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "4218c9d7049c9dd8a474cb0230f2dba05ec0aea5e4574dff564e48b39f7fe588",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "Claims",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 201,
+                  "filename_relative": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                  "filename_short": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 0
+                },
+                "additional_fields": {
+                  "contract_name": "Claims",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 1,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 10,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 2,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "node",
+                  "name": "format",
+                  "source_mapping": {
+                    "start": 160,
+                    "length": 6,
+                    "filename_relative": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                    "filename_short": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      6
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 15
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "claim",
+                      "source_mapping": {
+                        "start": 88,
+                        "length": 136,
+                        "filename_relative": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                        "filename_short": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7,
+                          8,
+                          9
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Claims",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 201,
+                            "filename_relative": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                            "filename_short": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "claim(uint256,bytes)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "Claims",
+                  "source_mapping": {
+                    "start": 25,
+                    "length": 201,
+                    "filename_relative": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                    "filename_short": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  }
+                }
+              ],
+              "description": "Redundant expression \"format (cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol#6)\" inClaims (cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol#3-11)\n",
+              "markdown": "Redundant expression \"[format](cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol#L6)\" in[Claims](cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol#L3-L11)\n",
+              "first_markdown_element": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol#L6",
+              "id": "23c1ab295e18beb02d5f30c3799a62732cfd37001f03c5adde8104538c21fadd",
+              "check": "redundant-statements",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "node",
+                  "name": "payload",
+                  "source_mapping": {
+                    "start": 176,
+                    "length": 7,
+                    "filename_relative": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                    "filename_short": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      7
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 16
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "claim",
+                      "source_mapping": {
+                        "start": 88,
+                        "length": 136,
+                        "filename_relative": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                        "filename_short": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          5,
+                          6,
+                          7,
+                          8,
+                          9
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Claims",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 201,
+                            "filename_relative": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                            "filename_short": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 0
+                          }
+                        },
+                        "signature": "claim(uint256,bytes)"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "contract",
+                  "name": "Claims",
+                  "source_mapping": {
+                    "start": 25,
+                    "length": 201,
+                    "filename_relative": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                    "filename_short": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 0
+                  }
+                }
+              ],
+              "description": "Redundant expression \"payload (cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol#7)\" inClaims (cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol#3-11)\n",
+              "markdown": "Redundant expression \"[payload](cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol#L7)\" in[Claims](cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol#L3-L11)\n",
+              "first_markdown_element": "cleanSource/0x4a7dfda4f2e9f062965cc87f775841fb58aea83e.sol#L7",
+              "id": "fda51ee6024bfdc842f2e7a54bb933090afa005058a4546818a6ec1757b9046a",
+              "check": "redundant-statements",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

@@ -1,0 +1,652 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 19 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m6\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 19 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m6\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "8bb73e67fe2d4e1db572261caa18b94f3dbb8aee841093d6e6378483e961d8b0",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "Auctioneer",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 593,
+                  "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                  "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "Auctioneer",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 3,
+                  "features": [
+                    "Receive ETH",
+                    "Send ETH"
+                  ]
+                }
+              }
+            ]
+          },
+          "number_lines": 19,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 6,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.8.2",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.8",
+                      ".2"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.8.2 (cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.8.2](cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#L1",
+              "id": "994b249369d0cfc4b6a4ec5f2f23cbce7c7084e2e51b5b8dd4bd3de84b2fce8d",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [],
+              "description": "solc-0.8.2 is not recommended for deployment\n",
+              "markdown": "solc-0.8.2 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "d989ba8f728e7c2f755b30684e6f45fec617ae1d2844fc5c1574140f6882826e",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "Invest",
+                  "source_mapping": {
+                    "start": 310,
+                    "length": 185,
+                    "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Auctioneer",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 593,
+                        "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "Invest()"
+                  },
+                  "additional_fields": {
+                    "target": "function",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Function Auctioneer.Invest() (cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#10-14) is not in mixedCase\n",
+              "markdown": "Function [Auctioneer.Invest()](cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#L10-L14) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#L10-L14",
+              "id": "15106fe162ad5477159e055f35e200ed6c96c395584cc5bf1f803e6e81e6cc70",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_amt",
+                  "source_mapping": {
+                    "start": 529,
+                    "length": 12,
+                    "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      15
+                    ],
+                    "starting_column": 34,
+                    "ending_column": 46
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "check",
+                      "source_mapping": {
+                        "start": 500,
+                        "length": 116,
+                        "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          15,
+                          16,
+                          17
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Auctioneer",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 593,
+                            "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                            "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "check(address,uint256)"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "parameter",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Parameter Auctioneer.check(address,uint256)._amt (cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#15) is not in mixedCase\n",
+              "markdown": "Parameter [Auctioneer.check(address,uint256)._amt](cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#L15) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#L15",
+              "id": "62b38b195d2cc2eba4d282f7cb6c269f40bc5b6160c7992c8f56166068a4aa44",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "variable",
+                  "name": "_safe",
+                  "source_mapping": {
+                    "start": 50,
+                    "length": 22,
+                    "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      4
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 27
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Auctioneer",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 593,
+                        "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "target": "variable",
+                    "convention": "mixedCase"
+                  }
+                }
+              ],
+              "description": "Variable Auctioneer._safe (cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#4) is not in mixedCase\n",
+              "markdown": "Variable [Auctioneer._safe](cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#L4) is not in mixedCase\n",
+              "first_markdown_element": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#L4",
+              "id": "a6d7d029f707ba056f9d43dfcd660eb4de85de26e336b0858abe67342a39a7ec",
+              "check": "naming-convention",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "function",
+                  "name": "Invest",
+                  "source_mapping": {
+                    "start": 310,
+                    "length": 185,
+                    "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "starting_column": 5,
+                    "ending_column": 6
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "contract",
+                      "name": "Auctioneer",
+                      "source_mapping": {
+                        "start": 25,
+                        "length": 593,
+                        "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18
+                        ],
+                        "starting_column": 1,
+                        "ending_column": 2
+                      }
+                    },
+                    "signature": "Invest()"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "address(_safe).transfer(address(this).balance)",
+                  "source_mapping": {
+                    "start": 355,
+                    "length": 46,
+                    "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      11
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 55
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "Invest",
+                      "source_mapping": {
+                        "start": 310,
+                        "length": 185,
+                        "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Auctioneer",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 593,
+                            "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                            "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "Invest()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "external_calls"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "deposits[msg.sender] += msg.value",
+                  "source_mapping": {
+                    "start": 411,
+                    "length": 33,
+                    "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      12
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 42
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "Invest",
+                      "source_mapping": {
+                        "start": 310,
+                        "length": 185,
+                        "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Auctioneer",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 593,
+                            "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                            "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "Invest()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "variables_written",
+                    "variable_name": "deposits"
+                  }
+                },
+                {
+                  "type": "node",
+                  "name": "Action(msg.sender,msg.value)",
+                  "source_mapping": {
+                    "start": 454,
+                    "length": 34,
+                    "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      13
+                    ],
+                    "starting_column": 9,
+                    "ending_column": 43
+                  },
+                  "type_specific_fields": {
+                    "parent": {
+                      "type": "function",
+                      "name": "Invest",
+                      "source_mapping": {
+                        "start": 310,
+                        "length": 185,
+                        "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                        "is_dependency": false,
+                        "lines": [
+                          10,
+                          11,
+                          12,
+                          13,
+                          14
+                        ],
+                        "starting_column": 5,
+                        "ending_column": 6
+                      },
+                      "type_specific_fields": {
+                        "parent": {
+                          "type": "contract",
+                          "name": "Auctioneer",
+                          "source_mapping": {
+                            "start": 25,
+                            "length": 593,
+                            "filename_relative": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                            "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                            "filename_short": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol",
+                            "is_dependency": false,
+                            "lines": [
+                              3,
+                              4,
+                              5,
+                              6,
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13,
+                              14,
+                              15,
+                              16,
+                              17,
+                              18
+                            ],
+                            "starting_column": 1,
+                            "ending_column": 2
+                          }
+                        },
+                        "signature": "Invest()"
+                      }
+                    }
+                  },
+                  "additional_fields": {
+                    "underlying_type": "event"
+                  }
+                }
+              ],
+              "description": "Reentrancy in Auctioneer.Invest() (cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#10-14):\n\tExternal calls:\n\t- address(_safe).transfer(address(this).balance) (cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#11)\n\tState variables written after the call(s):\n\t- deposits[msg.sender] += msg.value (cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#12)\n\tEvent emitted after the call(s):\n\t- Action(msg.sender,msg.value) (cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#13)\n",
+              "markdown": "Reentrancy in [Auctioneer.Invest()](cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#L10-L14):\n\tExternal calls:\n\t- [address(_safe).transfer(address(this).balance)](cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#L11)\n\tState variables written after the call(s):\n\t- [deposits[msg.sender] += msg.value](cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#L12)\n\tEvent emitted after the call(s):\n\t- [Action(msg.sender,msg.value)](cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#L13)\n",
+              "first_markdown_element": "cleanSource/0x93c039f5da13ae650e6497963ef5fceec9f3a92a.sol#L10-L14",
+              "id": "ddb470a37e38bfc0cffc117968f16871cc8dd313aaff0c8acaa0c6a367472142",
+              "check": "reentrancy-unlimited-gas",
+              "impact": "Informational",
+              "confidence": "Medium"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+    "Overflow-Underflow_buggy_0x3b7fd4cbef5f57256c330d2cc2a190eed08c82ec.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "Try",
+                "set_game"
+            ],
+            "First_function": "set_game",
+            "Second_function": "Try",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: set_game\nNode: \nEXPRESSION responseHash = keccak256()(_response)\nIRS: \nresponseHash := TMP_8\"",
+                        "\"BlockID: 4\nFunction: Try\nNode: \nIF responseHash == keccak256()(_response) && msg.value > 3000000000000000000\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "responseHash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "Try",
+                "NewQuestion"
+            ],
+            "First_function": "NewQuestion",
+            "Second_function": "Try",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: NewQuestion\nNode: \nEXPRESSION responseHash = _responseHash\nIRS: \nresponseHash := _responseHash\"",
+                        "\"BlockID: 4\nFunction: Try\nNode: \nIF responseHash == keccak256()(_response) && msg.value > 3000000000000000000\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "responseHash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "StopGame",
+                "set_game"
+            ],
+            "First_function": "set_game",
+            "Second_function": "StopGame",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: set_game\nNode: \nEXPRESSION questionSender = msg.sender\nIRS: \nquestionSender := msg.sender\"",
+                        "\"BlockID: 15\nFunction: StopGame\nNode: \nEXPRESSION require(bool)(msg.sender == questionSender)\nIRS: \nTMP_10 = SOLIDITY_CALL require(bool)(TMP_9)\""
+                    ],
+                    "state_variable": "questionSender"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "StopGame",
+                "newQuestioner"
+            ],
+            "First_function": "newQuestioner",
+            "Second_function": "StopGame",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: newQuestioner\nNode: \nEXPRESSION questionSender = newAddress\nIRS: \nquestionSender := newAddress\"",
+                        "\"BlockID: 15\nFunction: StopGame\nNode: \nEXPRESSION require(bool)(msg.sender == questionSender)\nIRS: \nTMP_10 = SOLIDITY_CALL require(bool)(TMP_9)\""
+                    ],
+                    "state_variable": "questionSender"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw_intou25",
+                "increaseLockTime_intou25"
+            ],
+            "First_function": "increaseLockTime_intou25",
+            "Second_function": "withdraw_intou25",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: increaseLockTime_intou25\nNode: \nEXPRESSION lockTime_intou25[msg.sender] += _secondsToIncrease\nIRS: \nREF_4 = REF_4 + _secondsToIncrease\"",
+                        "\"BlockID: 30\nFunction: withdraw_intou25\nNode: \nEXPRESSION require(bool)(now > lockTime_intou25[msg.sender])\nIRS: \nTMP_15 = SOLIDITY_CALL require(bool)(TMP_14)\""
+                    ],
+                    "state_variable": "lockTime_intou25"
+                }
+            ]
+        }
+    ]
+}

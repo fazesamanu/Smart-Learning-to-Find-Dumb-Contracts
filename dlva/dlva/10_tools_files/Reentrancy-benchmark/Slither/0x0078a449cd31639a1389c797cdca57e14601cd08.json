@@ -1,0 +1,117 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "printers": [
+      {
+        "elements": [],
+        "description": "\nCompiled with solc\nNumber of lines: 14 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m2\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "markdown": "\nCompiled with solc\nNumber of lines: 14 (+ 0 in dependencies, + 0 in tests)\nNumber of assembly lines: 0\nNumber of contracts: 1 (+ 0 in dependencies, + 0 tests) \n\nNumber of optimization issues: \u001b[92m0\u001b[0m\nNumber of informational issues: \u001b[92m2\u001b[0m\nNumber of low issues: \u001b[92m0\u001b[0m\nNumber of medium issues: \u001b[92m0\u001b[0m\nNumber of high issues: \u001b[92m0\u001b[0m\n\n",
+        "first_markdown_element": "",
+        "id": "28ec88cb62e158b336f9b16692347b2f5deb8e3c886b44d284db2911282c611b",
+        "additional_fields": {
+          "contracts": {
+            "elements": [
+              {
+                "type": "contract",
+                "name": "Counter",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 221,
+                  "filename_relative": "cleanSource/0x0078a449cd31639a1389c797cdca57e14601cd08.sol",
+                  "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x0078a449cd31639a1389c797cdca57e14601cd08.sol",
+                  "filename_short": "cleanSource/0x0078a449cd31639a1389c797cdca57e14601cd08.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                },
+                "additional_fields": {
+                  "contract_name": "Counter",
+                  "is_complex_code": false,
+                  "is_erc20": false,
+                  "number_functions": 2,
+                  "features": []
+                }
+              }
+            ]
+          },
+          "number_lines": 14,
+          "number_lines_in_dependencies": 0,
+          "number_lines_assembly": 0,
+          "standard_libraries": [],
+          "ercs": [],
+          "number_findings": {
+            "optimization_issues": 0,
+            "informational_issues": 2,
+            "low_issues": 0,
+            "medium_issues": 0,
+            "high_issues": 0
+          },
+          "detectors": [
+            {
+              "elements": [],
+              "description": "solc-0.8.4 is not recommended for deployment\n",
+              "markdown": "solc-0.8.4 is not recommended for deployment\n",
+              "first_markdown_element": "",
+              "id": "2d6b35864ac3d65d7e6d059f2d4d759caf96afb3e33f0c5c78a032aa1ee2c310",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            },
+            {
+              "elements": [
+                {
+                  "type": "pragma",
+                  "name": "^0.8.4",
+                  "source_mapping": {
+                    "start": 0,
+                    "length": 23,
+                    "filename_relative": "cleanSource/0x0078a449cd31639a1389c797cdca57e14601cd08.sol",
+                    "filename_absolute": "/media/anas/DATA/_Work/USE/DLVA_Bug_Injection/Reentrancybenchmark/cleanSource/0x0078a449cd31639a1389c797cdca57e14601cd08.sol",
+                    "filename_short": "cleanSource/0x0078a449cd31639a1389c797cdca57e14601cd08.sol",
+                    "is_dependency": false,
+                    "lines": [
+                      1
+                    ],
+                    "starting_column": 1,
+                    "ending_column": 24
+                  },
+                  "type_specific_fields": {
+                    "directive": [
+                      "solidity",
+                      "^",
+                      "0.8",
+                      ".4"
+                    ]
+                  }
+                }
+              ],
+              "description": "Pragma version^0.8.4 (cleanSource/0x0078a449cd31639a1389c797cdca57e14601cd08.sol#1) allows old versions\n",
+              "markdown": "Pragma version[^0.8.4](cleanSource/0x0078a449cd31639a1389c797cdca57e14601cd08.sol#L1) allows old versions\n",
+              "first_markdown_element": "cleanSource/0x0078a449cd31639a1389c797cdca57e14601cd08.sol#L1",
+              "id": "c09b20f56b497bb741a08663f9c0b6a739433c8f0d87e04ef3f65709b8a934f8",
+              "check": "solc-version",
+              "impact": "Informational",
+              "confidence": "High"
+            }
+          ],
+          "number_lines__dependencies": 0
+        },
+        "printer": "human-summary"
+      }
+    ]
+  }
+}

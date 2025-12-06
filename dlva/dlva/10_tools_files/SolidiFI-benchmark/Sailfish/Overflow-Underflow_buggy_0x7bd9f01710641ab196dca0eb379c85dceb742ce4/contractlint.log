@@ -1,0 +1,46 @@
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Analysis started at: 2023-06-04 02:21:29 PM
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Version constraints: ['^0.4.26']
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | solc version: v0.4.26
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Callgraph generation started!
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Callgraph generation finished!
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Interprocedural CFG generation started!
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Interprocedural CFG generation finished!
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Storage dependency graph generation started!
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Storage dependency graph generation finished!
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Value Range Analysis started
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Generating return summary for SimpleERC20Token
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Return summary generated for SimpleERC20Token
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Range graph generated
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Processed function SimpleERC20Token
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Generating return summary for transfer
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Return summary generated for transfer
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Range graph generated
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Processed function transfer
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Generating return summary for bug_intou32
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Return summary generated for bug_intou32
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | State variable assignement do not exist
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Processed function bug_intou32
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Generating return summary for approve
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Return summary generated for approve
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Range graph generated
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Processed function approve
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Generating return summary for transferFrom
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Return summary generated for transferFrom
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Range graph generated
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Processed function transferFrom
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Generating return summary for slitherConstructorVariables
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Return summary generated for slitherConstructorVariables
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Range graph generated
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Processed function slitherConstructorVariables
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Value Range Analysis took 0.006443 seconds
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Value Range Analysis finished
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Storage dependency graph compostion started!
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Storage dependency graph compostion finished!
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Dependency detection started!
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Dependency detection finished!
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Static Analysis took 0.374369 seconds
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Dependency does not exist
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Symbolic execution is not needed!
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Analysis finished!
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Analysis took 0.375036 seconds
+[INFO] | 2023-06-04 02:21:29 PM | analyzer.Overflow-Underflow_buggy_0x7bd9f01710641ab196dca0eb379c85dceb742ce4 | Analysis finished at: 2023-06-04 02:21:29 PM

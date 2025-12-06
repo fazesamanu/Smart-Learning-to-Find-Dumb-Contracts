@@ -1,0 +1,38 @@
+Results for Reentrancy_benchmark_0x4b8246a462f66efab5cd7bd301cd0b9e7b470e41.txt:
+Queries
+query id:       reentrancyStaticCall_0_162
+execution time: 3
+result:         UNKNOWN
+info:           Z3Exception: Uninterpreted 'div' in <null>:
+MState_0_338(#0,#1,#2,#3,#4,#5,#6,#7) :- 
+ MState_0_327(#8,#9,#10,#3,#4,#5,#6,#7),
+ (> (:var 8) 2),
+ (let ((a!1 (store (:var 10)
+                  (- (:var 8) 3)
+                  (ite (and (:var 15) (:var 17))
+                       (ite (= (:var 16) (:var 18)) 1 0)
+                       0))))
+  (= (:var 2) (store a!1 (- (:var 8) 2) 338))),
+ (= (:var 1)
+   (store (store (:var 9) (- (:var 8) 3) (and (:var 15) (:var 17)))
+          (- (:var 8) 2)
+          true)),
+ (= (:var 0) (- (:var 8) 3)),
+ (or (not (:var 19)) (not (= (:var 20) 0))),
+ (= (:var 20)
+   (ite (and (:var 15) (:var 17)) (ite (= (:var 16) (:var 18)) 1 0) 0)),
+ (= (:var 19) (and (:var 15) (:var 17))),
+ (= (:var 18) (select (:var 10) (- (:var 8) 3))),
+ (= (:var 17) (select (:var 9) (- (:var 8) 3))),
+ (= (:var 16)
+   (ite (and (:var 11) (:var 13))
+        (ite (= (:var 14) 0) 0 (div (:var 12) (:var 14)))
+        0)),
+ (= (:var 15) (and (:var 11) (:var 13))),
+ (= (:var 14) (select (:var 10) (- (:var 8) 2))),
+ (= (:var 13) (select (:var 9) (- (:var 8) 2))),
+ (= (:var 12) (select (:var 10) (- (:var 8) 1))),
+ (= (:var 11) (select (:var 9) (- (:var 8) 1))),
+ (< (:var 8) 1026).
+
+
